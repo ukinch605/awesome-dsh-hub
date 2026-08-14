@@ -1,9 +1,9 @@
-# 🐋 dsh-hub
+# 🐋 awesome-dsh-hub
 
 ![Last updated]({{UPDATED_BADGE}})
 
-> 汇聚 DeepSeek Harness（`dsh`）生态插件，构建自动维护、机器可读的聚合目录。Everything is a Plugin. 🐋
-> A community-maintained, machine-readable directory of the DeepSeek Harness (`dsh`) plugin ecosystem. Everything is a Plugin. 🐋
+> 自动维护的 DeepSeek Harness（`dsh`）插件精品目录：机器可读 Registry、中英双语目录与可检索站点。Everything is a Plugin. 🐋
+> An auto-maintained, awesome-style directory of the DeepSeek Harness (`dsh`) plugin ecosystem: machine-readable registry, bilingual catalogs and a searchable site. Everything is a Plugin. 🐋
 
 ## 生态统计 / Ecosystem Stats
 
@@ -63,11 +63,6 @@ The registry refreshes every hour; compliant repos appear after the next run.
 - Fix categories, descriptions or exclude mirrors via `data/overrides.json` PRs
 - 详见 / See [`CONTRIBUTING.md`](./CONTRIBUTING.md)
 
-## 致谢 / Credits
-
-- [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) — dsh 本体 / the harness itself
-- [like-study1/Oh-My-DSH](https://github.com/like-study1/Oh-My-DSH) · [wangshunnn/oh-my-dsh](https://github.com/wangshunnn/oh-my-dsh) — 生态目录参考 / ecosystem catalogs (reference)
-
 ## License
 
-MIT © dsh-hub contributors
+MIT © awesome-dsh-hub contributors

@@ -1,6 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { validateMeta, validateRegistry } from '../lib/validate.js';
+import {
+  checkCatalog,
+  checkReadme,
+  validateMeta,
+  validateRegistry,
+} from '../lib/validate.js';
 import { INSTALL_PREFIX } from '../lib/constants.js';
 
 const goodEntry = (repo = 'owner/name') => ({
@@ -55,4 +60,25 @@ test('validateMeta: checks generatedAt and counts', () => {
   );
   const errors = validateMeta({ generatedAt: 'bad', pluginCount: 9, monitoredRepos: 1, totalStars: 0 }, registry);
   assert.ok(errors.length >= 3);
+});
+
+test('checkReadme: passes when count and date are present', () => {
+  const registry = [goodEntry()];
+  const meta = { generatedAt: '2026-08-15T00:00:00Z' };
+  const text = '**1** plugins 2026-08-15';
+  assert.deepEqual(checkReadme(text, registry, meta, 'README.en.md'), []);
+});
+
+test('checkReadme: fails on missing count or date, with label', () => {
+  const registry = [goodEntry()];
+  const meta = { generatedAt: '2026-08-15T00:00:00Z' };
+  const errors = checkReadme('no numbers here', registry, meta, 'README.en.md');
+  assert.ok(errors.some((e) => e.includes('README.en.md: missing plugin count')));
+  assert.ok(errors.some((e) => e.includes('README.en.md: missing last-updated date')));
+});
+
+test('checkCatalog: fails when a registry url is missing', () => {
+  const registry = [goodEntry()];
+  const errors = checkCatalog('no links', registry, 'catalog.en.md');
+  assert.ok(errors.some((e) => e.includes('catalog.en.md: missing https://github.com/owner/name')));
 });

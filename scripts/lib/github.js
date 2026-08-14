@@ -4,11 +4,21 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function gitRequest(url, { fetchFn = fetch, token, retries = 3 } = {}) {
+async function gitRequest(url, { fetchFn = fetch, token, retries = 5 } = {}) {
   for (let attempt = 0; ; attempt++) {
-    const res = await fetchFn(url, {
-      headers: { ...UA, ...(token ? { Authorization: `Bearer ${token}` } : {}) },
-    });
+    let res;
+    try {
+      res = await fetchFn(url, {
+        headers: { ...UA, ...(token ? { Authorization: `Bearer ${token}` } : {}) },
+        signal: AbortSignal.timeout(30_000),
+      });
+    } catch {
+      if (attempt < retries) {
+        await sleep(2000 * (attempt + 1));
+        continue;
+      }
+      throw new Error(`GitHub API network failure for ${url}`);
+    }
     if (res.status === 200) {
       const remaining = Number(res.headers.get('x-ratelimit-remaining') ?? -1);
       if (remaining >= 0 && remaining <= 2) {

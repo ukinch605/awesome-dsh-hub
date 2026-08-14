@@ -31,7 +31,23 @@ export const ACTIVITY_LEVELS = [
 
 export const ACTIVITY_IDS = new Set(ACTIVITY_LEVELS.map((a) => a.id));
 
-export const SEARCH_QUERIES = ['topic:dsh-plugin', 'topic:dsh-plugin'];
-export const SEARCH_SORTS = ['stars', 'updated'];
+// GitHub's search API caps a single query at 1000 results, so the topic is
+// split into disjoint star-range segments; each segment stays under the cap
+// and together they cover the whole topic.
+export const STAR_SEGMENTS = [
+  'stars:>=1000',
+  'stars:500..999',
+  'stars:100..499',
+  'stars:10..99',
+  'stars:7..9',
+  'stars:4..6',
+  'stars:3',
+  'stars:2',
+  'stars:1',
+  'stars:0',
+];
+
+export const SEARCH_QUERIES = STAR_SEGMENTS.map((s) => `topic:dsh-plugin ${s}`);
+export const SEARCH_SORTS = SEARCH_QUERIES.map(() => 'stars');
 
 export const REPO_PATTERN = /^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/;

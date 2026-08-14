@@ -1,55 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { CATEGORY_IDS } from './lib/constants.js';
-import { validateMeta, validateRegistry } from './lib/validate.js';
+import {
+  checkCatalog,
+  checkOverrides,
+  checkReadme,
+  validateMeta,
+  validateRegistry,
+} from './lib/validate.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => fs.readFileSync(path.join(ROOT, p), 'utf8');
 const exists = (p) => fs.existsSync(path.join(ROOT, p));
-
-function checkReadme(readme, registry, meta) {
-  const errors = [];
-  if (!readme.includes(`**${registry.length}**`)) {
-    errors.push(`README: missing plugin count **${registry.length}**`);
-  }
-  const date = meta.generatedAt.slice(0, 10);
-  if (!readme.includes(date)) errors.push(`README: missing last-updated date ${date}`);
-  return errors;
-}
-
-function checkCatalog(text, registry, label) {
-  const errors = [];
-  if (!text.includes(`**${registry.length}**`) && !text.includes(`${registry.length} plugins`)) {
-    errors.push(`${label}: missing plugin count ${registry.length}`);
-  }
-  for (const e of registry) {
-    if (!text.includes(e.url)) {
-      errors.push(`${label}: missing ${e.url}`);
-      break;
-    }
-  }
-  return errors;
-}
-
-function checkOverrides(overrides, registry) {
-  const errors = [];
-  const repos = new Set(registry.map((e) => e.repo.toLowerCase()));
-  for (const [repo, cats] of Object.entries(overrides.categories || {})) {
-    if (!repos.has(repo.toLowerCase())) {
-      errors.push(`overrides: category entry ${repo} not in registry`);
-    }
-    for (const c of cats) {
-      if (!CATEGORY_IDS.has(c)) errors.push(`overrides: unknown category ${c} for ${repo}`);
-    }
-  }
-  for (const repo of Object.keys(overrides.descriptions || {})) {
-    if (!repos.has(repo.toLowerCase())) {
-      errors.push(`overrides: description entry ${repo} not in registry`);
-    }
-  }
-  return errors;
-}
 
 function main() {
   const errors = [];
@@ -62,8 +24,10 @@ function main() {
   errors.push(...validateRegistry(registry));
   errors.push(...validateMeta(meta, registry));
 
-  const readme = read('README.md');
-  errors.push(...checkReadme(readme, registry, meta));
+  for (const file of ['README.md', 'README.en.md']) {
+    if (exists(file)) errors.push(...checkReadme(read(file), registry, meta, file));
+    else errors.push(`${file}: missing`);
+  }
   for (const [file, label] of [
     ['docs/catalog.zh.md', 'catalog.zh.md'],
     ['docs/catalog.en.md', 'catalog.en.md'],

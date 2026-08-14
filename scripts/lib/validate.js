@@ -53,3 +53,46 @@ export function validateMeta(meta, registry) {
   if (meta.totalStars !== sum) errors.push(`meta: totalStars ${meta.totalStars} != computed ${sum}`);
   return errors;
 }
+
+export function checkReadme(text, registry, meta, label = 'README') {
+  const errors = [];
+  if (!text.includes(`**${registry.length}**`)) {
+    errors.push(`${label}: missing plugin count **${registry.length}**`);
+  }
+  const date = meta.generatedAt.slice(0, 10);
+  if (!text.includes(date)) errors.push(`${label}: missing last-updated date ${date}`);
+  return errors;
+}
+
+export function checkCatalog(text, registry, label) {
+  const errors = [];
+  if (!text.includes(`**${registry.length}**`) && !text.includes(`${registry.length} plugins`)) {
+    errors.push(`${label}: missing plugin count ${registry.length}`);
+  }
+  for (const e of registry) {
+    if (!text.includes(e.url)) {
+      errors.push(`${label}: missing ${e.url}`);
+      break;
+    }
+  }
+  return errors;
+}
+
+export function checkOverrides(overrides, registry) {
+  const errors = [];
+  const repos = new Set(registry.map((e) => e.repo.toLowerCase()));
+  for (const [repo, cats] of Object.entries(overrides.categories || {})) {
+    if (!repos.has(repo.toLowerCase())) {
+      errors.push(`overrides: category entry ${repo} not in registry`);
+    }
+    for (const c of cats) {
+      if (!CATEGORY_IDS.has(c)) errors.push(`overrides: unknown category ${c} for ${repo}`);
+    }
+  }
+  for (const repo of Object.keys(overrides.descriptions || {})) {
+    if (!repos.has(repo.toLowerCase())) {
+      errors.push(`overrides: description entry ${repo} not in registry`);
+    }
+  }
+  return errors;
+}

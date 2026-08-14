@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { hasBundlePatch, normalizeRepo, searchTopicRepos } from '../lib/github.js';
+import { SEARCH_QUERIES } from '../lib/constants.js';
 
 test('hasBundlePatch: accepts declared patch', () => {
   assert.equal(hasBundlePatch('{"dsh":{"bundle":{"patch":{}}}}'), true);
@@ -68,4 +69,14 @@ test('searchTopicRepos: paginates, dedupes across queries, respects page cap', a
   const repos = await searchTopicRepos({ fetchFn: fakeFetch, token: 't', pageSize: 100 });
   assert.equal(calls, 4); // 2 queries x 2 pages (150 total -> 2 pages)
   assert.equal(repos.length, 4); // s1/s2 + u1/u2, s1==u1 deduped by full_name
+});
+
+test('SEARCH_QUERIES: star-segmented queries cover the full range', () => {
+  assert.ok(SEARCH_QUERIES.length >= 6);
+  for (const q of SEARCH_QUERIES) assert.ok(q.startsWith('topic:dsh-plugin '));
+  assert.ok(SEARCH_QUERIES.some((q) => q.includes('stars:>=1000')));
+  assert.ok(SEARCH_QUERIES.some((q) => q.includes('stars:100..499')));
+  assert.ok(SEARCH_QUERIES.includes('topic:dsh-plugin stars:3'));
+  assert.ok(SEARCH_QUERIES.includes('topic:dsh-plugin stars:1'));
+  assert.ok(SEARCH_QUERIES.includes('topic:dsh-plugin stars:0'));
 });

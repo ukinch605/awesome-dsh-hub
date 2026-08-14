@@ -1,37 +1,37 @@
-# 🐋 dsh-hub
+# 🐋 awesome-dsh-hub
 
 ![Last updated](https://img.shields.io/badge/last%20updated-2026--08--14-orange)
 
-> 汇聚 DeepSeek Harness（`dsh`）生态插件，构建自动维护、机器可读的聚合目录。Everything is a Plugin. 🐋
-> A community-maintained, machine-readable directory of the DeepSeek Harness (`dsh`) plugin ecosystem. Everything is a Plugin. 🐋
+> 自动维护的 DeepSeek Harness（`dsh`）插件精品目录：机器可读 Registry、中英双语目录与可检索站点。Everything is a Plugin. 🐋
+> An auto-maintained, awesome-style directory of the DeepSeek Harness (`dsh`) plugin ecosystem: machine-readable registry, bilingual catalogs and a searchable site. Everything is a Plugin. 🐋
 
 ## 生态统计 / Ecosystem Stats
 
 | 指标 / Metric | 数值 / Value |
 | --- | ---: |
-| 收录插件 / Plugins | **899** |
-| 监测仓库 / Monitored repos | 1504 |
-| 累计 Star / Total stars | 8,587 |
-| 最近更新 / Last updated | 2026-08-14 16:36:19.987 UTC |
+| 收录插件 / Plugins | **1387** |
+| 监测仓库 / Monitored repos | 2314 |
+| 累计 Star / Total stars | 9,253 |
+| 最近更新 / Last updated | 2026-08-14 18:59:15.212 UTC |
 
 ### 分类构成 / Categories
 
-Web UI 增强 129 · Agent 能力 349 · 编码开发 72 · 消息通讯 35 · 视觉与多模态 77 · 浏览器与网络 44 · 皮肤与娱乐 37 · 文件与数据 117 · 开发工具与教程 23 · 合集与发行版 5 · 生态项目 11
+Web UI 增强 179 · Agent 能力 562 · 编码开发 119 · 消息通讯 50 · 视觉与多模态 127 · 浏览器与网络 71 · 皮肤与娱乐 45 · 文件与数据 179 · 开发工具与教程 27 · 合集与发行版 15 · 生态项目 13
 
 ### Top 10 插件 / Top Plugins
 
 | # | 插件 / Plugin | Stars | 类型 / Type | 说明 / Description |
 | --- | --- | ---: | --- | --- |
-| 1 | [liustack/modlens](https://github.com/liustack/modlens) | 1,246 | 视觉与多模态 | The first vision plugin for DeepSeek Harness, and the visio… |
-| 2 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 859 | 编码开发 | 解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插… |
-| 3 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 725 | Web UI 增强 | 一个侧边栏的完整工作台，支持三方拓展注册新Tab页面，内置文件渲染编辑/终端/Git/子代理 |
+| 1 | [liustack/modlens](https://github.com/liustack/modlens) | 1,264 | 视觉与多模态 | The first vision plugin for DeepSeek Harness, and the visio… |
+| 2 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 879 | 编码开发 | 解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插… |
+| 3 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 748 | Web UI 增强 | 一个侧边栏的完整工作台，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/Git/子代理 |
 | 4 | [sandbaseai/sandbase-harness](https://github.com/sandbaseai/sandbase-harness) | 574 | Agent 能力 | Open-source CMA-compatible agent runtime for any model, wit… |
-| 5 | [mnemon-dev/mnemon](https://github.com/mnemon-dev/mnemon) | 430 | 文件与数据 | LLM-supervised persistent memory for AI agents — graph-base… |
-| 6 | [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) | 328 | 皮肤与娱乐 | 把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for … |
-| 7 | [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 312 | 视觉与多模态 | 让纯文本模型更好地做视觉任务的DeepSeek Harness插件：带意图的图片问答、长截图 OCR、UI 还原等｜D… |
-| 8 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 239 | Agent 能力 | AgentTeams plugin for DeepSeek Harness |
-| 9 | [hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) | 164 | 编码开发 | 一站式 DeepSeek Harness 社区发行版：TUI、桌面端与 Web UI 三种形态统一体验，支持分层安装、… |
-| 10 | [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | 132 | 编码开发 | dsh-tianshu-tui — DeepSeek Harness terminal UI +harness wor… |
+| 5 | [mnemon-dev/mnemon](https://github.com/mnemon-dev/mnemon) | 433 | 文件与数据 | LLM-supervised persistent memory for AI agents — graph-base… |
+| 6 | [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) | 330 | 皮肤与娱乐 | 把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for … |
+| 7 | [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 324 | 视觉与多模态 | 让纯文本模型更好地做视觉任务的DeepSeek Harness插件：带意图的图片问答、长截图 OCR、UI 还原等｜D… |
+| 8 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 246 | Agent 能力 | AgentTeams plugin for DeepSeek Harness |
+| 9 | [hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) | 165 | 编码开发 | 一站式 DeepSeek Harness 社区发行版：TUI、桌面端与 Web UI 三种形态统一体验，支持分层安装、… |
+| 10 | [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | 133 | 编码开发 | dsh-tianshu-tui — DeepSeek Harness terminal UI +harness wor… |
 
 ## 快速使用 / Quick Start
 
@@ -72,11 +72,6 @@ The registry refreshes every hour; compliant repos appear after the next run.
 - Fix categories, descriptions or exclude mirrors via `data/overrides.json` PRs
 - 详见 / See [`CONTRIBUTING.md`](./CONTRIBUTING.md)
 
-## 致谢 / Credits
-
-- [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) — dsh 本体 / the harness itself
-- [like-study1/Oh-My-DSH](https://github.com/like-study1/Oh-My-DSH) · [wangshunnn/oh-my-dsh](https://github.com/wangshunnn/oh-my-dsh) — 生态目录参考 / ecosystem catalogs (reference)
-
 ## License
 
-MIT © dsh-hub contributors
+MIT © awesome-dsh-hub contributors
