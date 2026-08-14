@@ -1,0 +1,19 @@
+{
+  "name": "dsh-hub",
+  "version": "0.1.0",
+  "description": "Community-maintained, machine-readable directory of the DeepSeek Harness (dsh) plugin ecosystem. Everything is a plugin.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "update": "node scripts/update.js",
+    "generate": "node scripts/generate.js",
+    "check": "node scripts/check.js",
+    "serve": "node scripts/serve.js",
+    "test": "node --test \"scripts/test/*.test.js\"",
+    "refresh": "node scripts/update.js && node scripts/generate.js && node scripts/check.js"
+  },
+  "license": "MIT"
+}

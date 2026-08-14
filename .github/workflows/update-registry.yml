@@ -1,0 +1,50 @@
+name: Update Registry
+
+on:
+  schedule:
+    - cron: '0 */8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-registry
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install
+        run: npm install
+
+      - name: Update registry
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npm run update
+
+      - name: Generate artifacts
+        run: npm run generate
+
+      - name: Check consistency
+        run: npm run check
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "dsh-hub[bot]"
+          git config user.email "dsh-hub[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: refresh registry $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi

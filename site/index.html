@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dsh-hub · DeepSeek Harness 插件目录</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🐋 dsh-hub</div>
+    <div class="lang-toggle">
+      <button id="lang-zh" class="lang-btn active">中文</button>
+      <button id="lang-en" class="lang-btn">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 data-i18n="heroTitle">DeepSeek Harness 插件目录</h1>
+      <p class="sub" data-i18n="heroSub">自动维护、机器可读的 dsh 插件聚合目录 · Everything is a Plugin</p>
+      <div class="stats">
+        <div class="stat">
+          <span class="num" id="stat-plugins">0</span>
+          <span class="label" data-i18n="statPlugins">收录插件</span>
+        </div>
+        <div class="stat">
+          <span class="num" id="stat-stars">0</span>
+          <span class="label" data-i18n="statStars">累计 Star</span>
+        </div>
+        <div class="stat">
+          <span class="num" id="stat-updated">—</span>
+          <span class="label" data-i18n="statUpdated">最近更新</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <input id="search" type="search"
+        data-i18n-placeholder="searchPlaceholder"
+        placeholder="搜索插件 / Search plugins…">
+      <select id="filter-category"></select>
+      <select id="filter-license"></select>
+      <select id="filter-activity"></select>
+    </section>
+
+    <p class="result-count">
+      <span id="result-count">0</span>
+      <span data-i18n="results">个结果</span>
+    </p>
+
+    <div class="table-wrap">
+      <table class="plugins">
+        <thead>
+          <tr>
+            <th data-i18n="colPlugin">插件</th>
+            <th class="num-col" data-i18n="colStars">Stars</th>
+            <th data-i18n="colCategory">分类</th>
+            <th data-i18n="colLicense">许可证</th>
+            <th data-i18n="colActivity">活跃度</th>
+            <th data-i18n="colInstall">安装命令</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+
+    <p class="empty" id="empty" hidden data-i18n="empty">没有匹配的插件</p>
+  </main>
+
+  <footer data-i18n="disclaimer">
+    收录不代表兼容性或安全认证；安装第三方插件前请自行核验源码、许可证与权限范围。
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
