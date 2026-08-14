@@ -50,8 +50,8 @@ npx @deepseek-ai/dsh plugin --profile web add github:owner/repo
 1. 仓库添加 [`dsh-plugin`](https://github.com/topics/dsh-plugin) 话题 / add the topic
 2. 根目录 `package.json` 声明 `dsh.bundle.patch` / declare `dsh.bundle.patch` in the root `package.json`
 
-Registry 每 8 小时自动刷新；符合规则的项目将在下一次运行后自动出现。
-The registry refreshes every 8 hours; compliant repos appear after the next run.
+Registry 每小时自动刷新；符合规则的项目将在下一次运行后自动出现。
+The registry refreshes every hour; compliant repos appear after the next run.
 
 > [!CAUTION]
 > 收录不代表兼容性或安全认证。安装第三方插件前，请自行核验源码、许可证与权限范围。

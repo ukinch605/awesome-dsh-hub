@@ -2,7 +2,7 @@
 
 ## 收录（自动） / Being listed (automatic)
 
-只要你的仓库满足以下两条，下一次自动刷新（每 8 小时）后就会出现在目录中：
+只要你的仓库满足以下两条，下一次自动刷新（每小时）后就会出现在目录中：
 
 1. 添加 [`dsh-plugin`](https://github.com/topics/dsh-plugin) 话题；
 2. 根目录 `package.json` 声明 `dsh.bundle.patch`。
