@@ -9,29 +9,29 @@
 
 | 指标 / Metric | 数值 / Value |
 | --- | ---: |
-| 收录插件 / Plugins | **883** |
-| 监测仓库 / Monitored repos | 1483 |
-| 累计 Star / Total stars | 7,327 |
-| 最近更新 / Last updated | 2026-08-14 13:26:05.788 UTC |
+| 收录插件 / Plugins | **891** |
+| 监测仓库 / Monitored repos | 1500 |
+| 累计 Star / Total stars | 7,821 |
+| 最近更新 / Last updated | 2026-08-14 13:46:39.652 UTC |
 
 ### 分类构成 / Categories
 
-Web UI 增强 124 · Agent 能力 351 · 编码开发 72 · 消息通讯 35 · 视觉与多模态 82 · 浏览器与网络 40 · 皮肤与娱乐 35 · 文件与数据 110 · 开发工具与教程 18 · 合集与发行版 7 · 生态项目 9
+Web UI 增强 122 · Agent 能力 355 · 编码开发 72 · 消息通讯 36 · 视觉与多模态 82 · 浏览器与网络 39 · 皮肤与娱乐 35 · 文件与数据 115 · 开发工具与教程 19 · 合集与发行版 7 · 生态项目 9
 
 ### Top 10 插件 / Top Plugins
 
 | # | 插件 / Plugin | Stars | 类型 / Type | 说明 / Description |
 | --- | --- | ---: | --- | --- |
-| 1 | [liustack/modlens](https://github.com/liustack/modlens) | 1,143 | 视觉与多模态 | The first vision plugin for DeepSeek Harness, and the visio… |
-| 2 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 790 | 编码开发 | 解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插… |
-| 3 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 671 | Web UI 增强 | 一个侧边栏的完整工作台，支持三方拓展注册新Tab页面，内置文件渲染编辑/终端/Git/子代理 |
-| 4 | [sandbaseai/sandbase-harness](https://github.com/sandbaseai/sandbase-harness) | 572 | Agent 能力 | Open-source CMA-compatible agent runtime for any model, wit… |
-| 5 | [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) | 304 | 皮肤与娱乐 | 是兄弟就来蹬我！DSH Web UI 广告：2005 年中文站点风格的侧栏广告 / 对话内信息流 / 角落弹窗 + 一… |
-| 6 | [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 301 | 视觉与多模态 | 让纯文本模型更好地做视觉任务的DeepSeek Harness插件：带意图的图片问答、长截图 OCR、UI 还原等｜D… |
-| 7 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 222 | Agent 能力 | AgentTeams plugin for DeepSeek Harness |
-| 8 | [hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) | 156 | 编码开发 | 一站式 DeepSeek Harness 社区发行版：TUI、桌面端与 Web UI 三种形态统一体验，支持分层安装、… |
-| 9 | [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | 124 | 编码开发 | dsh-tianshu-tui — DeepSeek Harness terminal UI +harness wor… |
-| 10 | [vlln/whale-girl](https://github.com/vlln/whale-girl) | 116 | 皮肤与娱乐 | DSH Web GUI 桌面宠物插件（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍的积累型伙伴。官方 reposi… |
+| 1 | [liustack/modlens](https://github.com/liustack/modlens) | 1,148 | 视觉与多模态 | The first vision plugin for DeepSeek Harness, and the visio… |
+| 2 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 792 | 编码开发 | 解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插… |
+| 3 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 682 | Web UI 增强 | 一个侧边栏的完整工作台，支持三方拓展注册新Tab页面，内置文件渲染编辑/终端/Git/子代理 |
+| 4 | [sandbaseai/sandbase-harness](https://github.com/sandbaseai/sandbase-harness) | 573 | Agent 能力 | Open-source CMA-compatible agent runtime for any model, wit… |
+| 5 | [mnemon-dev/mnemon](https://github.com/mnemon-dev/mnemon) | 430 | 文件与数据 | LLM-supervised persistent memory for AI agents — graph-base… |
+| 6 | [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) | 306 | 皮肤与娱乐 | 是兄弟就来蹬我！DSH Web UI 广告：2005 年中文站点风格的侧栏广告 / 对话内信息流 / 角落弹窗 + 一… |
+| 7 | [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 301 | 视觉与多模态 | 让纯文本模型更好地做视觉任务的DeepSeek Harness插件：带意图的图片问答、长截图 OCR、UI 还原等｜D… |
+| 8 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 222 | Agent 能力 | AgentTeams plugin for DeepSeek Harness |
+| 9 | [hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) | 158 | 编码开发 | 一站式 DeepSeek Harness 社区发行版：TUI、桌面端与 Web UI 三种形态统一体验，支持分层安装、… |
+| 10 | [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | 125 | 编码开发 | dsh-tianshu-tui — DeepSeek Harness terminal UI +harness wor… |
 
 ## 快速使用 / Quick Start
 
