@@ -1,0 +1,40 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@liustack/modlens':
+        specifier: github:liustack/modlens
+        version: https://codeload.github.com/liustack/modlens/tar.gz/28181920f6b064e33c6b235221e1a3a5d360a897
+
+packages:
+
+  '@liustack/modlens@https://codeload.github.com/liustack/modlens/tar.gz/28181920f6b064e33c6b235221e1a3a5d360a897':
+    resolution: {gitHosted: true, integrity: sha512-7dhVxV6gyXvkgbbodgPndBNjVDwf6De0UIhYcataGQtkQcxY+hD7mwt4kJCJfTBqi6jdIkhY0F40OLbDNCvoSg==, tarball: https://codeload.github.com/liustack/modlens/tar.gz/28181920f6b064e33c6b235221e1a3a5d360a897}
+    version: 3.16.6
+    engines: {node: '>=22.19'}
+    hasBin: true
+
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
+
+  undici@8.10.0:
+    resolution: {integrity: sha512-HvltHd7avK13QIw/oLe4qoOLyoVSoafqJ2jYOrtMRBkbYT31eiBQ8O0ehRKZiEZCMEyLFQNIADpgCWC5fALvYQ==}
+    engines: {node: '>=22.19.0'}
+
+snapshots:
+
+  '@liustack/modlens@https://codeload.github.com/liustack/modlens/tar.gz/28181920f6b064e33c6b235221e1a3a5d360a897':
+    dependencies:
+      commander: 13.1.0
+      undici: 8.10.0
+
+  commander@13.1.0: {}
+
+  undici@8.10.0: {}

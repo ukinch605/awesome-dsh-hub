@@ -1,0 +1,43 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@dsh-external/dsh-automation':
+        specifier: github:titanwings/dsh-automation
+        version: https://codeload.github.com/titanwings/dsh-automation/tar.gz/a622b1b1758c6dc6bd476dc66d74a20a4b6762a3
+
+packages:
+
+  '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/a622b1b1758c6dc6bd476dc66d74a20a4b6762a3':
+    resolution: {gitHosted: true, integrity: sha512-b90g+YrSwVxEYpzpPdT5EsGSqjjgYlQN9glcicU7COKqNuz5AXDfe6gWnFkgKEkAUyvM/4OWt4c72Lw9jz3QdQ==, tarball: https://codeload.github.com/titanwings/dsh-automation/tar.gz/a622b1b1758c6dc6bd476dc66d74a20a4b6762a3}
+    version: 0.1.5
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  luxon@3.7.2:
+    resolution: {integrity: sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew==}
+    engines: {node: '>=12'}
+
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
+snapshots:
+
+  '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/a622b1b1758c6dc6bd476dc66d74a20a4b6762a3':
+    dependencies:
+      luxon: 3.7.2
+      zod: 4.4.3
+
+  luxon@3.7.2: {}
+
+  zod@4.4.3: {}

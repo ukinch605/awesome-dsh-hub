@@ -1,0 +1,60 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dsh-open-in-vscode:
+        specifier: github:omdsh-dev/dsh-open-in-vscode
+        version: https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/149f21aed3d05d2b392206394c4a023e35d694c7
+
+packages:
+
+  dsh-open-in-vscode@https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/149f21aed3d05d2b392206394c4a023e35d694c7:
+    resolution: {gitHosted: true, integrity: sha512-uALcqEjStOr5bWj5NG8BcmqqSodK/JiNoZ06SUj4Q0TZZJ1kdkdSCz4O0VifCEQ9tbZYq2bZe/xNfGRhe5GcHg==, tarball: https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/149f21aed3d05d2b392206394c4a023e35d694c7}
+    version: 0.1.5
+    engines: {node: ^22.19 || >=24}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-runtime': '*'
+      '@deepseek-ai/dsh-client-ui-primitives': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-client-ui-workspace': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      '@deepseek-ai/dsh-typert-registry': '*'
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-primitives':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-workspace':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      '@deepseek-ai/dsh-typert-registry':
+        optional: true
+      react:
+        optional: true
+
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
+snapshots:
+
+  dsh-open-in-vscode@https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/149f21aed3d05d2b392206394c4a023e35d694c7:
+    dependencies:
+      zod: 4.4.3
+
+  zod@4.4.3: {}

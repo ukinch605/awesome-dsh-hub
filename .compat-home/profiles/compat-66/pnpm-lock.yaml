@@ -1,0 +1,37 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      zat-dsh-engine:
+        specifier: github:mishibeikejie/zat-dsh-engine
+        version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/cd7990fcd4491bcaf6b02b6a17fbe70fbbf50014
+
+packages:
+
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/cd7990fcd4491bcaf6b02b6a17fbe70fbbf50014:
+    resolution: {gitHosted: true, integrity: sha512-lkFUvXW+NXQPlmli+vosGq01J+s0XXGo84ElPI0C2WXHcAigHmW77gnR8Spk4dZvlAUxiFcQeC8SowFHYeWpmw==, tarball: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/cd7990fcd4491bcaf6b02b6a17fbe70fbbf50014}
+    version: 0.3.1
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-fs': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-subprocess': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      react: ^18.2.0
+
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
+snapshots:
+
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/cd7990fcd4491bcaf6b02b6a17fbe70fbbf50014:
+    dependencies:
+      zod: 4.4.3
+
+  zod@4.4.3: {}

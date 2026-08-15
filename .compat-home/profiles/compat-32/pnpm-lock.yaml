@@ -1,0 +1,60 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dsh-skill-viewer:
+        specifier: github:Fishquito7/dsh-skill-viewer
+        version: https://codeload.github.com/Fishquito7/dsh-skill-viewer/tar.gz/9eba3d23d5a09db492002d1483b0fc1d495329c9
+
+packages:
+
+  '@deepseek-ai/dsh-home-paths@0.0.1-rc.3':
+    resolution: {integrity: sha512-q86/+w2Oz/bOnURenQwiGT8ob1R84/gBgGV4n62yPqeNLuMMW5hv8tPV7oFMrRGZnM+S5VwtPRkhpOzYvsFT4Q==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-invariants': ^0.0.1-rc.3
+
+  '@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6':
+    resolution: {integrity: sha512-weWzN8r01YCkoDCAM7BsKw2YhRrD4zL8N2SAZu9hovYtXSq8xHXsP4Zh8RLYIlYcuotjyff/6hic+0TJPd14YA==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.6
+
+  dsh-skill-viewer@https://codeload.github.com/Fishquito7/dsh-skill-viewer/tar.gz/9eba3d23d5a09db492002d1483b0fc1d495329c9:
+    resolution: {gitHosted: true, integrity: sha512-cl8z9eGwLj+9EZLBKhVmfWN9J8xEdlzvyor0uVo1fXuLW9SxwONw3FaEOgfhq5c5mOS5XOJ4FahtzmMYUZlNbw==, tarball: https://codeload.github.com/Fishquito7/dsh-skill-viewer/tar.gz/9eba3d23d5a09db492002d1483b0fc1d495329c9}
+    version: 0.3.1
+    hasBin: true
+
+  yaml@2.9.0:
+    resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
+snapshots:
+
+  '@deepseek-ai/dsh-home-paths@0.0.1-rc.3': {}
+
+  '@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6': {}
+
+  dsh-skill-viewer@https://codeload.github.com/Fishquito7/dsh-skill-viewer/tar.gz/9eba3d23d5a09db492002d1483b0fc1d495329c9:
+    dependencies:
+      '@deepseek-ai/dsh-home-paths': 0.0.1-rc.3
+      '@deepseek-ai/dsh-typert-protocol': 0.1.0-rc.6
+      yaml: 2.9.0
+      zod: 4.4.3
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis'
+      - '@deepseek-ai/dsh-invariants'
+
+  yaml@2.9.0: {}
+
+  zod@4.4.3: {}

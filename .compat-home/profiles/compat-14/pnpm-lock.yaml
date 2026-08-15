@@ -1,0 +1,40 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@liustack/modsearch':
+        specifier: github:liustack/modsearch
+        version: https://codeload.github.com/liustack/modsearch/tar.gz/e1dba224b72651dfe7891990dcaf674098100df2
+
+packages:
+
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/e1dba224b72651dfe7891990dcaf674098100df2':
+    resolution: {gitHosted: true, integrity: sha512-94LyoxoQICoyfaAaJx/L7DewPGbiCJx2pg8K6Cb8CmXyyFHG2fW33iJMdyZaGII3dVeZGKH5EwgeQEbz/Ct79g==, tarball: https://codeload.github.com/liustack/modsearch/tar.gz/e1dba224b72651dfe7891990dcaf674098100df2}
+    version: 5.4.2
+    engines: {node: '>=22.13'}
+    hasBin: true
+
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
+
+  undici@7.29.0:
+    resolution: {integrity: sha512-IDxfleLmmbSskfWSUATiN1nfn2rDuvnMOqb5CWR92iIfojA0Ud+ulOAAEQ57LPr9rWmsreUyf5lwyao+7GNNVw==}
+    engines: {node: '>=20.18.1'}
+
+snapshots:
+
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/e1dba224b72651dfe7891990dcaf674098100df2':
+    dependencies:
+      commander: 13.1.0
+      undici: 7.29.0
+
+  commander@13.1.0: {}
+
+  undici@7.29.0: {}

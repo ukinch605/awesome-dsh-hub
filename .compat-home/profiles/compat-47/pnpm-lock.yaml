@@ -1,0 +1,66 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dsh-mnemon:
+        specifier: github:omdsh-dev/dsh-mnemon
+        version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ade5a7b395f2d0578ae1d8807b8df7d54ac03c3c
+
+packages:
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ade5a7b395f2d0578ae1d8807b8df7d54ac03c3c:
+    resolution: {gitHosted: true, integrity: sha512-ZFHk9qlj2+Yy9ROidZ4XGemIwq+MT+tA/bTsg1dXgF20KEgMLSszF9VQFrdhr/PSdnRdUDmsMhaG5/t+IPwQuA==, tarball: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ade5a7b395f2d0578ae1d8807b8df7d54ac03c3c}
+    version: 0.1.4
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
+  fflate@0.8.3:
+    resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
+
+  markdown-to-jsx@7.7.17:
+    resolution: {integrity: sha512-7mG/1feQ0TX5I7YyMZVDgCC/y2I3CiEhIRQIhyov9nGBP5eoVrOXXHuL5ZP8GRfxVZKRiXWJgwXkb9It+nQZfQ==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      react: '>= 0.14.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
+
+snapshots:
+
+  '@standard-schema/spec@1.1.0': {}
+
+  cosmokit@1.8.1: {}
+
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ade5a7b395f2d0578ae1d8807b8df7d54ac03c3c:
+    dependencies:
+      fflate: 0.8.3
+      markdown-to-jsx: 7.7.17
+      schemastery: 3.18.0
+
+  fflate@0.8.3: {}
+
+  markdown-to-jsx@7.7.17: {}
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1
