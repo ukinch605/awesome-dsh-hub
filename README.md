@@ -2,7 +2,7 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/ukinch605/awesome-dsh-hub)
 ![License](https://img.shields.io/github/license/ukinch605/awesome-dsh-hub)
-![Plugins](https://img.shields.io/badge/plugins-1710-4dabf7)
+![Plugins](https://img.shields.io/badge/plugins-1784-4dabf7)
 ![Last updated](https://img.shields.io/badge/last%20updated-2026--08--15-orange)
 
 > 自动维护的 DeepSeek Harness（`dsh`）插件精品目录：机器可读 Registry、中英双语目录与可检索站点。Everything is a Plugin. 🐋
@@ -14,29 +14,29 @@
 
 | 指标 / Metric | 数值 / Value |
 | --- | ---: |
-| 收录插件 / Plugins | **1710** |
-| 监测仓库 / Monitored repos | 2797 |
-| 累计 Star / Total stars | 12,361 |
-| 最近更新 / Last updated | 2026-08-15 05:54:52.082 UTC |
+| 收录插件 / Plugins | **1784** |
+| 监测仓库 / Monitored repos | 2900 |
+| 累计 Star / Total stars | 13,219 |
+| 最近更新 / Last updated | 2026-08-15 07:18:14.561 UTC |
 
 ### 分类构成 / Categories
 
-Web UI 增强 226 · Agent 能力 678 · 编码开发 151 · 消息通讯 70 · 视觉与多模态 153 · 浏览器与网络 87 · 皮肤与娱乐 53 · 文件与数据 219 · 开发工具与教程 38 · 合集与发行版 19 · 生态项目 16
+Web UI 增强 240 · Agent 能力 703 · 编码开发 160 · 消息通讯 70 · 视觉与多模态 162 · 浏览器与网络 90 · 皮肤与娱乐 55 · 文件与数据 227 · 开发工具与教程 40 · 合集与发行版 20 · 生态项目 17
 
 ### Top 10 插件 / Top Plugins
 
 | # | 插件 / Plugin | Stars | 类型 / Type | 说明 / Description |
 | --- | --- | ---: | --- | --- |
-| 1 | [liustack/modlens](https://github.com/liustack/modlens) | 1,430 | 视觉与多模态 | The first vision plugin for DeepSeek Harness, and the visio… |
-| 2 | [GanyuanRan/Aegis](https://github.com/GanyuanRan/Aegis) | 1,006 | 编码开发 | Make AI coding agents architecture-aware: baseline-first, e… |
-| 3 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 973 | 编码开发 | 解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插… |
-| 4 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 850 | Web UI 增强 | 一个侧边栏的完整工作台，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/Git/子代理 |
-| 5 | [sandbaseai/sandbase-harness](https://github.com/sandbaseai/sandbase-harness) | 579 | Agent 能力 | Open-source CMA-compatible agent runtime for any model, wit… |
-| 6 | [mnemon-dev/mnemon](https://github.com/mnemon-dev/mnemon) | 440 | 文件与数据 | LLM-supervised persistent memory for AI agents — graph-base… |
-| 7 | [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 366 | 视觉与多模态 | 让纯文本模型更好地做视觉任务的DeepSeek Harness插件：带意图的图片问答、长截图 OCR、UI 还原等｜D… |
-| 8 | [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) | 359 | 皮肤与娱乐 | 把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for … |
-| 9 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 268 | Agent 能力 | AgentTeams plugin for DeepSeek Harness |
-| 10 | [hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) | 176 | 编码开发 | 一站式 DeepSeek Harness 社区发行版：TUI、桌面端与 Web UI 三种形态统一体验，支持分层安装、… |
+| 1 | [liustack/modlens](https://github.com/liustack/modlens) | 1,470 | 视觉与多模态 | The first vision plugin for DeepSeek Harness, and the visio… |
+| 2 | [GanyuanRan/Aegis](https://github.com/GanyuanRan/Aegis) | 1,008 | 编码开发 | Make AI coding agents architecture-aware: baseline-first, e… |
+| 3 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 1,008 | 编码开发 | 解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插… |
+| 4 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 876 | Web UI 增强 | 一个侧边栏的完整工作台，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/Git/子代理 |
+| 5 | [sandbaseai/sandbase-harness](https://github.com/sandbaseai/sandbase-harness) | 580 | Agent 能力 | Open-source CMA-compatible agent runtime for any model, wit… |
+| 6 | [adoresever/graph-memory](https://github.com/adoresever/graph-memory) | 513 | 文件与数据 | Openclaw记忆插件Knowledge Graph + Memory；Knowledge Graph Contex… |
+| 7 | [mnemon-dev/mnemon](https://github.com/mnemon-dev/mnemon) | 442 | 文件与数据 | LLM-supervised persistent memory for AI agents — graph-base… |
+| 8 | [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 375 | 视觉与多模态 | 让纯文本模型更好地做视觉任务的DeepSeek Harness插件：带意图的图片问答、长截图 OCR、UI 还原等｜D… |
+| 9 | [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) | 366 | 皮肤与娱乐 | 把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for … |
+| 10 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 278 | Agent 能力 | AgentTeams plugin for DeepSeek Harness |
 
 ## 快速使用 / Quick Start
 
