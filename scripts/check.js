@@ -7,6 +7,8 @@ import {
   checkReadme,
   validateMeta,
   validateRegistry,
+  validateCompatibilityFile,
+  weeklyFreshnessWarnings,
 } from './lib/validate.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -23,6 +25,14 @@ function main() {
 
   errors.push(...validateRegistry(registry));
   errors.push(...validateMeta(meta, registry));
+  if (exists('registry/compatibility.json')) {
+    errors.push(
+      ...validateCompatibilityFile(
+        JSON.parse(read('registry/compatibility.json')),
+        registry,
+      ),
+    );
+  }
 
   for (const file of ['README.md', 'README.en.md']) {
     if (exists(file)) errors.push(...checkReadme(read(file), registry, meta, file));
@@ -46,11 +56,20 @@ function main() {
 
   errors.push(...checkOverrides(overrides, registry));
 
+  const warnings = weeklyFreshnessWarnings(
+    ['WEEKLY.zh.md', 'WEEKLY.en.md'].map((name) => ({
+      name,
+      exists: exists(name),
+      content: exists(name) ? read(name) : '',
+    })),
+  );
+
   if (errors.length > 0) {
     console.error(`dsh-hub check failed (${errors.length}):`);
     for (const e of errors) console.error(`  - ${e}`);
     process.exit(1);
   }
+  for (const w of warnings) console.warn(`  ! ${w}`);
   console.log(
     `dsh-hub check OK: ${registry.length} plugins, ${meta?.monitoredRepos ?? '?'} monitored, generated ${meta?.generatedAt ?? '?'}`,
   );

@@ -1,9 +1,14 @@
 # 🐋 awesome-dsh-hub
 
+![GitHub stars](https://img.shields.io/github/stars/ukinch605/awesome-dsh-hub)
+![License](https://img.shields.io/github/license/ukinch605/awesome-dsh-hub)
+![Plugins](https://img.shields.io/badge/plugins-1710-4dabf7)
 ![Last updated](https://img.shields.io/badge/last%20updated-2026--08--15-orange)
 
 > 自动维护的 DeepSeek Harness（`dsh`）插件精品目录：机器可读 Registry、中英双语目录与可检索站点。Everything is a Plugin. 🐋
 > An auto-maintained, awesome-style directory of the DeepSeek Harness (`dsh`) plugin ecosystem: machine-readable registry, bilingual catalogs and a searchable site. Everything is a Plugin. 🐋
+>
+> 本仓库已参与 LINUX DO 开源推广：完整开源、无未开源部分、接受社区监督。
 
 ## 生态统计 / Ecosystem Stats
 
@@ -71,6 +76,15 @@ The registry refreshes every hour; compliant repos appear after the next run.
 - 修正分类、描述或排除镜像仓库：编辑 [`data/overrides.json`](./data/overrides.json) 并提交 PR
 - Fix categories, descriptions or exclude mirrors via `data/overrides.json` PRs
 - 详见 / See [`CONTRIBUTING.md`](./CONTRIBUTING.md)
+
+## 收录徽章 / Listing Badge
+
+插件作者可把下面的徽章贴到自己的 README，为你的插件增加曝光：
+Plugin authors can embed this badge in their README to gain exposure:
+
+[![Listed on awesome-dsh-hub](https://img.shields.io/badge/Listed%20on-awesome_dsh_hub-4dabf7)](https://github.com/ukinch605/awesome-dsh-hub)
+
+    [![Listed on awesome-dsh-hub](https://img.shields.io/badge/Listed%20on-awesome_dsh_hub-4dabf7)](https://github.com/ukinch605/awesome-dsh-hub)
 
 ## License
 

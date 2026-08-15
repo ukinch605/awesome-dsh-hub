@@ -12,6 +12,7 @@ const I18N = {
     colCategory: '分类',
     colLicense: '许可证',
     colActivity: '活跃度',
+    colCompat: '兼容性',
     colInstall: '安装命令',
     empty: '没有匹配的插件',
     disclaimer: '收录不代表兼容性或安全认证；安装第三方插件前请自行核验源码、许可证与权限范围。',
@@ -20,7 +21,9 @@ const I18N = {
     categoryAll: '全部分类',
     licenseAll: '全部许可证',
     activityAll: '全部活跃度',
+    compatAll: '全部兼容性',
     activityLabel: { active: '活跃', watching: '关注', slowing: '放缓', stale: '停更' },
+    compatLabel: { verified: '已验证', failed: '失败', unknown: '未知', pending: '待测' },
     categoryLabel: {
       'web-ui': 'Web UI 增强', agent: 'Agent 能力', coding: '编码开发',
       messaging: '消息通讯', vision: '视觉与多模态', browser: '浏览器与网络',
@@ -41,6 +44,7 @@ const I18N = {
     colCategory: 'Category',
     colLicense: 'License',
     colActivity: 'Activity',
+    colCompat: 'Compat',
     colInstall: 'Install',
     empty: 'No matching plugins',
     disclaimer: 'Listing does not imply compatibility or security. Review source, license and permissions before installing.',
@@ -49,7 +53,9 @@ const I18N = {
     categoryAll: 'All categories',
     licenseAll: 'All licenses',
     activityAll: 'All activity',
+    compatAll: 'All compatibility',
     activityLabel: { active: 'Active', watching: 'Watching', slowing: 'Slowing', stale: 'Stale' },
+    compatLabel: { verified: 'Verified', failed: 'Failed', unknown: 'Unknown', pending: 'Pending' },
     categoryLabel: {
       'web-ui': 'Web UI', agent: 'Agent Capabilities', coding: 'Coding & Engineering',
       messaging: 'Messaging & Notifications', vision: 'Vision & Multimodal',
@@ -63,6 +69,7 @@ const I18N = {
 let lang = localStorage.getItem('dsh-hub-lang') || 'zh';
 let plugins = [];
 let state = { q: '', category: '', license: '', activity: '' };
+let stateCompat = '';
 
 const $ = (id) => document.getElementById(id);
 
@@ -97,6 +104,7 @@ function render() {
     if (state.category && !p.categories.includes(state.category)) return false;
     if (state.license && p.license !== state.license) return false;
     if (state.activity && p.activity !== state.activity) return false;
+    if (stateCompat && p.compatibility?.status !== stateCompat) return false;
     if (!q) return true;
     return `${p.name} ${p.repo} ${p.description}`.toLowerCase().includes(q);
   });
@@ -106,6 +114,8 @@ function render() {
     .map((p) => {
       const cats = p.categories.map((c) => t.categoryLabel[c] || c).join(' / ');
       const act = t.activityLabel[p.activity] || p.activity;
+      const comp = p.compatibility?.status || 'pending';
+      const compLabel = t.compatLabel[comp] || comp;
       return `<tr>
         <td>
           <div class="plugin-name"><a href="${escapeHtml(p.url)}" target="_blank" rel="noopener">${escapeHtml(p.repo)}</a></div>
@@ -115,6 +125,7 @@ function render() {
         <td><span class="badge">${escapeHtml(cats)}</span></td>
         <td>${escapeHtml(p.license)}</td>
         <td><span class="badge ${escapeHtml(p.activity)}">${escapeHtml(act)}</span></td>
+        <td><span class="badge ${escapeHtml(comp)}">${escapeHtml(compLabel)}</span></td>
         <td>
           <div class="install">
             <code title="${escapeHtml(p.installCommand)}">github:${escapeHtml(p.repo)}</code>
@@ -162,6 +173,7 @@ async function init() {
   fillSelect($('filter-category'), [...new Set(plugins.flatMap((p) => p.categories))].map((c) => t.categoryLabel[c] || c), t.categoryAll);
   fillSelect($('filter-license'), [...new Set(plugins.map((p) => p.license))].sort(), t.licenseAll);
   fillSelect($('filter-activity'), [...new Set(plugins.map((p) => p.activity))].map((a) => t.activityLabel[a] || a), t.activityAll);
+  fillSelect($('filter-compat'), ['verified', 'failed', 'unknown', 'pending'].map((c) => t.compatLabel[c]), t.compatAll);
 
   $('search').addEventListener('input', (e) => { state.q = e.target.value; render(); });
   $('filter-category').addEventListener('change', (e) => {
@@ -175,6 +187,12 @@ async function init() {
     const label = e.target.value;
     const t2 = I18N[lang];
     state.activity = Object.keys(t2.activityLabel).find((k) => t2.activityLabel[k] === label) || '';
+    render();
+  });
+  $('filter-compat').addEventListener('change', (e) => {
+    const label = e.target.value;
+    const t2 = I18N[lang];
+    stateCompat = Object.keys(t2.compatLabel).find((k) => t2.compatLabel[k] === label) || '';
     render();
   });
   $('rows').addEventListener('click', (e) => {

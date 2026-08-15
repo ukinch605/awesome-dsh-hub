@@ -1,0 +1,50 @@
+name: Compatibility Matrix
+
+on:
+  schedule:
+    - cron: '30 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: compat-matrix
+  cancel-in-progress: false
+
+jobs:
+  compat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install
+        run: npm install
+      - name: Install pnpm and pinned dsh CLI
+        run: |
+          npm i -g pnpm
+          npm i -g @deepseek-ai/dsh@0.1.0-rc.6
+      - name: Run compatibility matrix (top 100)
+        env:
+          DSH_VERSION: 0.1.0-rc.6
+          CI: 'true'
+        run: npm run compat
+      - name: Regenerate artifacts
+        run: npm run generate
+      - name: Consistency check
+        run: npm run check
+      - name: Commit and push changes
+        run: |
+          git config user.name "dsh-hub[bot]"
+          git config user.email "dsh-hub[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: compatibility matrix $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi

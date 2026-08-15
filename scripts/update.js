@@ -116,6 +116,47 @@ async function main() {
     )}\n`,
   );
 
+  // Changelog + last-run snapshot feed the weekly digest.
+  const lastRunFile = path.join(ROOT, 'registry', 'last-run.json');
+  const changelogFile = path.join(ROOT, 'registry', 'changelog.json');
+  const prev = fs.existsSync(lastRunFile)
+    ? JSON.parse(fs.readFileSync(lastRunFile, 'utf8'))
+    : null;
+  const prevRepos = new Set(
+    (prev?.repos || []).map((r) => (typeof r === 'string' ? r : r.repo)),
+  );
+  let changelog = fs.existsSync(changelogFile)
+    ? JSON.parse(fs.readFileSync(changelogFile, 'utf8'))
+    : [];
+  if (prev) {
+    const added = finalEntries
+      .filter((e) => !prevRepos.has(e.repo))
+      .map((e) => ({
+        repo: e.repo,
+        addedAt: generatedAt,
+        stars: e.stars,
+        description: (e.description || '').slice(0, 200),
+        url: e.url,
+      }));
+    changelog = [...changelog, ...added];
+  }
+  const changelogCutoff = Date.now() - 14 * 86_400_000;
+  changelog = changelog
+    .filter((e) => Date.parse(e.addedAt) >= changelogCutoff)
+    .slice(-1000);
+  fs.writeFileSync(
+    lastRunFile,
+    `${JSON.stringify(
+      {
+        generatedAt,
+        repos: finalEntries.map((e) => ({ repo: e.repo, stars: e.stars })),
+      },
+      null,
+      2,
+    )}\n`,
+  );
+  fs.writeFileSync(changelogFile, `${JSON.stringify(changelog, null, 2)}\n`);
+
   console.log(`dsh-hub: done. admitted=${counts.admitted} skipped={archived:${counts.archived}, fork:${counts.fork}, noBranch:${counts.noBranch}, manifestMissing:${counts.manifestMissing}, fetchFailed:${counts.fetchFailed}}`);
 }
 

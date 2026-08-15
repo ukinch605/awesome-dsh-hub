@@ -5,6 +5,8 @@ import {
   checkReadme,
   validateMeta,
   validateRegistry,
+  validateCompatibilityFile,
+  weeklyFreshnessWarnings,
 } from '../lib/validate.js';
 import { INSTALL_PREFIX } from '../lib/constants.js';
 
@@ -81,4 +83,44 @@ test('checkCatalog: fails when a registry url is missing', () => {
   const registry = [goodEntry()];
   const errors = checkCatalog('no links', registry, 'catalog.en.md');
   assert.ok(errors.some((e) => e.includes('catalog.en.md: missing https://github.com/owner/name')));
+});
+
+test('validateRegistry: accepts and rejects compatibility field', () => {
+  const ok = goodEntry();
+  ok.compatibility = { dshVersion: '0.1.0-rc.6', status: 'verified', lastCheckedAt: '2026-08-15T00:00:00Z' };
+  assert.deepEqual(validateRegistry([ok]), []);
+  const bad = goodEntry();
+  bad.compatibility = { dshVersion: 'x', status: 'nope', lastCheckedAt: 'bad' };
+  const errors = validateRegistry([bad]);
+  assert.ok(errors.some((e) => e.includes('invalid compatibility status')));
+});
+
+test('validateCompatibilityFile: checks version, statuses and repo existence', () => {
+  const registry = [goodEntry('owner/name')];
+  const compat = {
+    dshVersion: '0.1.0-rc.6',
+    results: [
+      { repo: 'owner/name', status: 'verified', checkedAt: '2026-08-15T00:00:00Z' },
+      { repo: 'ghost/repo', status: 'nope', checkedAt: 'bad' },
+    ],
+  };
+  const errors = validateCompatibilityFile(compat, registry);
+  assert.ok(errors.some((e) => e.includes('ghost/repo')));
+  assert.ok(errors.length >= 3);
+});
+
+test('weeklyFreshnessWarnings: warns on missing or stale weekly files', () => {
+  const stale = `<!-- WEEK_END: ${new Date(Date.now() - 20 * 86_400_000).toISOString().slice(0, 10)} -->`;
+  const warnings = weeklyFreshnessWarnings([
+    { name: 'WEEKLY.zh.md', exists: false, content: '' },
+    { name: 'WEEKLY.en.md', exists: true, content: stale },
+  ]);
+  assert.ok(warnings.some((w) => w.includes('missing')));
+  assert.ok(warnings.some((w) => w.includes('stale')));
+  assert.deepEqual(
+    weeklyFreshnessWarnings([
+      { name: 'WEEKLY.en.md', exists: true, content: `<!-- WEEK_END: ${new Date().toISOString().slice(0, 10)} -->` },
+    ]),
+    [],
+  );
 });

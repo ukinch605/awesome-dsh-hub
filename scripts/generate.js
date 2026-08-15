@@ -18,6 +18,21 @@ function main() {
   meta.pluginCount = registry.length;
   meta.totalStars = registry.reduce((acc, e) => acc + e.stars, 0);
 
+  // Merge compatibility results into each entry (pending by default).
+  const compatFile = path.join(ROOT, 'registry', 'compatibility.json');
+  const compat = fs.existsSync(compatFile)
+    ? JSON.parse(fs.readFileSync(compatFile, 'utf8'))
+    : null;
+  const compatByRepo = new Map(
+    (compat?.results || []).map((r) => [r.repo.toLowerCase(), r]),
+  );
+  for (const e of registry) {
+    const c = compatByRepo.get(e.repo.toLowerCase());
+    e.compatibility = c
+      ? { dshVersion: c.dshVersion, status: c.status, lastCheckedAt: c.checkedAt }
+      : { dshVersion: compat?.dshVersion || meta.compatDshVersion || null, status: 'pending', lastCheckedAt: null };
+  }
+
   fs.writeFileSync(REGISTRY_FILE, `${JSON.stringify(registry, null, 2)}\n`);
   fs.writeFileSync(META_FILE, `${JSON.stringify(meta, null, 2)}\n`);
 

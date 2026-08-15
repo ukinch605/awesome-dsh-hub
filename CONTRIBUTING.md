@@ -27,6 +27,14 @@ npm test
 npm run check
 ```
 
+## 收录后如何宣传 / Promote your listing
+
+你的插件被收录后，可以把下面的徽章贴到自己的 README，为你的插件增加曝光，同时也让更多用户发现本目录：
+
+    [![Listed on awesome-dsh-hub](https://img.shields.io/badge/Listed%20on-awesome_dsh_hub-4dabf7)](https://github.com/ukinch605/awesome-dsh-hub)
+
+如需中英文推广文案模板（LINUX DO 帖、掘金文章、Reddit/HN 帖、GitHub Discussions），见 [`docs/promotion/`](./docs/promotion/)。
+
 ## 其他改动 / Other changes
 
 - 脚本与站点：`scripts/`、`site/`，需附带测试；

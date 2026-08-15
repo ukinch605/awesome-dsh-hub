@@ -1,8 +1,13 @@
 # 🐋 awesome-dsh-hub
 
+![GitHub stars](https://img.shields.io/github/stars/ukinch605/awesome-dsh-hub)
+![License](https://img.shields.io/github/license/ukinch605/awesome-dsh-hub)
+![Plugins](https://img.shields.io/badge/plugins-1710-4dabf7)
 ![Last updated](https://img.shields.io/badge/last%20updated-2026--08--15-orange)
 
 > An auto-maintained, awesome-style directory of the DeepSeek Harness (`dsh`) plugin ecosystem: machine-readable registry, bilingual catalogs and a searchable site. Everything is a Plugin. 🐋
+>
+> Participating in LINUX DO open-source promotion: fully open source, no closed parts, open to community supervision.
 
 ## Ecosystem Stats
 
@@ -67,6 +72,14 @@ The registry refreshes every hour; compliant repos appear after the next run.
 
 - Fix categories, descriptions or exclude mirrors via `data/overrides.json` PRs
 - See [`CONTRIBUTING.md`](./CONTRIBUTING.md)
+
+## Listing Badge
+
+Plugin authors can embed this badge in their README to gain exposure:
+
+[![Listed on awesome-dsh-hub](https://img.shields.io/badge/Listed%20on-awesome_dsh_hub-4dabf7)](https://github.com/ukinch605/awesome-dsh-hub)
+
+    [![Listed on awesome-dsh-hub](https://img.shields.io/badge/Listed%20on-awesome_dsh_hub-4dabf7)](https://github.com/ukinch605/awesome-dsh-hub)
 
 ## License
 

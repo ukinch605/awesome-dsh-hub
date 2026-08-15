@@ -27,11 +27,55 @@ export function validateEntry(entry, errors, seen) {
   if (!ACTIVITY_IDS.has(activity)) errors.push(`${repo}: invalid activity ${activity}`);
   if (installCommand !== `${INSTALL_PREFIX}${repo}`) errors.push(`${repo}: invalid installCommand`);
   if (!updatedAt || Number.isNaN(Date.parse(updatedAt))) errors.push(`${repo}: invalid updatedAt`);
+  if (entry.compatibility !== undefined) {
+    const c = entry.compatibility;
+    if (!['verified', 'failed', 'unknown', 'pending'].includes(c?.status)) {
+      errors.push(`${repo}: invalid compatibility status`);
+    }
+    if (c?.dshVersion !== null && typeof c?.dshVersion !== 'string') {
+      errors.push(`${repo}: invalid compatibility dshVersion`);
+    }
+    if (c?.lastCheckedAt !== null && (typeof c?.lastCheckedAt !== 'string' || Number.isNaN(Date.parse(c.lastCheckedAt)))) {
+      errors.push(`${repo}: invalid compatibility lastCheckedAt`);
+    }
+  }
   if (repo) {
     const key = repo.toLowerCase();
     if (seen.has(key)) errors.push(`${repo}: duplicate repo`);
     seen.add(key);
   }
+}
+
+export function validateCompatibilityFile(compat, registry) {
+  const errors = [];
+  const statuses = new Set(['verified', 'failed', 'unknown', 'pending']);
+  if (!compat || typeof compat !== 'object') return ['compatibility.json is missing or invalid'];
+  if (typeof compat.dshVersion !== 'string' || !compat.dshVersion) errors.push('compatibility: missing dshVersion');
+  const repos = new Set(registry.map((e) => e.repo.toLowerCase()));
+  for (const r of compat.results || []) {
+    if (!repos.has(r.repo.toLowerCase())) errors.push(`compatibility: unknown repo ${r.repo}`);
+    if (!statuses.has(r.status)) errors.push(`compatibility: ${r.repo} invalid status`);
+    if (!r.checkedAt || Number.isNaN(Date.parse(r.checkedAt))) errors.push(`compatibility: ${r.repo} invalid checkedAt`);
+  }
+  return errors;
+}
+
+export function weeklyFreshnessWarnings(weekFiles, now = Date.now()) {
+  const warnings = [];
+  for (const file of weekFiles) {
+    if (!file.exists) {
+      warnings.push(`${file.name}: missing (expected after first weekly run)`);
+      continue;
+    }
+    const m = file.content.match(/<!-- WEEK_END:\s*(\d{4}-\d{2}-\d{2})\s*-->/);
+    if (!m) {
+      warnings.push(`${file.name}: missing WEEK_END marker`);
+      continue;
+    }
+    const days = Math.floor((now - Date.parse(m[1])) / 86_400_000);
+    if (days > 8) warnings.push(`${file.name}: stale (${days} days old)`);
+  }
+  return warnings;
 }
 
 export function validateRegistry(registry) {
