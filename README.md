@@ -9,29 +9,29 @@
 
 | 指标 / Metric | 数值 / Value |
 | --- | ---: |
-| 收录插件 / Plugins | **1559** |
-| 监测仓库 / Monitored repos | 2579 |
-| 累计 Star / Total stars | 11,666 |
-| 最近更新 / Last updated | 2026-08-15 02:41:14.853 UTC |
+| 收录插件 / Plugins | **1638** |
+| 监测仓库 / Monitored repos | 2695 |
+| 累计 Star / Total stars | 12,049 |
+| 最近更新 / Last updated | 2026-08-15 04:15:27.291 UTC |
 
 ### 分类构成 / Categories
 
-Web UI 增强 201 · Agent 能力 624 · 编码开发 138 · 消息通讯 63 · 视觉与多模态 144 · 浏览器与网络 82 · 皮肤与娱乐 46 · 文件与数据 197 · 开发工具与教程 32 · 合集与发行版 17 · 生态项目 15
+Web UI 增强 216 · Agent 能力 651 · 编码开发 147 · 消息通讯 67 · 视觉与多模态 148 · 浏览器与网络 83 · 皮肤与娱乐 50 · 文件与数据 207 · 开发工具与教程 34 · 合集与发行版 19 · 生态项目 16
 
 ### Top 10 插件 / Top Plugins
 
 | # | 插件 / Plugin | Stars | 类型 / Type | 说明 / Description |
 | --- | --- | ---: | --- | --- |
-| 1 | [liustack/modlens](https://github.com/liustack/modlens) | 1,345 | 视觉与多模态 | The first vision plugin for DeepSeek Harness, and the visio… |
-| 2 | [GanyuanRan/Aegis](https://github.com/GanyuanRan/Aegis) | 1,004 | 编码开发 | Make AI coding agents architecture-aware: baseline-first, e… |
-| 3 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 928 | 编码开发 | 解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插… |
-| 4 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 810 | Web UI 增强 | 一个侧边栏的完整工作台，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/Git/子代理 |
-| 5 | [sandbaseai/sandbase-harness](https://github.com/sandbaseai/sandbase-harness) | 576 | Agent 能力 | Open-source CMA-compatible agent runtime for any model, wit… |
-| 6 | [mnemon-dev/mnemon](https://github.com/mnemon-dev/mnemon) | 437 | 文件与数据 | LLM-supervised persistent memory for AI agents — graph-base… |
-| 7 | [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) | 351 | 皮肤与娱乐 | 把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for … |
-| 8 | [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 343 | 视觉与多模态 | 让纯文本模型更好地做视觉任务的DeepSeek Harness插件：带意图的图片问答、长截图 OCR、UI 还原等｜D… |
-| 9 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 256 | Agent 能力 | AgentTeams plugin for DeepSeek Harness |
-| 10 | [hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) | 170 | 编码开发 | 一站式 DeepSeek Harness 社区发行版：TUI、桌面端与 Web UI 三种形态统一体验，支持分层安装、… |
+| 1 | [liustack/modlens](https://github.com/liustack/modlens) | 1,393 | 视觉与多模态 | The first vision plugin for DeepSeek Harness, and the visio… |
+| 2 | [GanyuanRan/Aegis](https://github.com/GanyuanRan/Aegis) | 1,006 | 编码开发 | Make AI coding agents architecture-aware: baseline-first, e… |
+| 3 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 957 | 编码开发 | 解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插… |
+| 4 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 833 | Web UI 增强 | 一个侧边栏的完整工作台，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/Git/子代理 |
+| 5 | [sandbaseai/sandbase-harness](https://github.com/sandbaseai/sandbase-harness) | 578 | Agent 能力 | Open-source CMA-compatible agent runtime for any model, wit… |
+| 6 | [mnemon-dev/mnemon](https://github.com/mnemon-dev/mnemon) | 439 | 文件与数据 | LLM-supervised persistent memory for AI agents — graph-base… |
+| 7 | [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 359 | 视觉与多模态 | 让纯文本模型更好地做视觉任务的DeepSeek Harness插件：带意图的图片问答、长截图 OCR、UI 还原等｜D… |
+| 8 | [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) | 357 | 皮肤与娱乐 | 把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for … |
+| 9 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 262 | Agent 能力 | AgentTeams plugin for DeepSeek Harness |
+| 10 | [hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) | 173 | 编码开发 | 一站式 DeepSeek Harness 社区发行版：TUI、桌面端与 Web UI 三种形态统一体验，支持分层安装、… |
 
 ## 快速使用 / Quick Start
 
