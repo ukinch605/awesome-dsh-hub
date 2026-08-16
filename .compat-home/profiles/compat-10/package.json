@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-10",
   "private": true,
   "dependencies": {
+    "@dsh-external/dsh-ads": "github:Nagi-ovo/dsh-ads",
     "dsh-at-file": "github:omdsh-dev/dsh-at-file"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-at-file"
+        "dsh-at-file",
+        "@dsh-external/dsh-ads"
       ]
     }
   }

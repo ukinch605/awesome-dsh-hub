@@ -10,16 +10,26 @@ importers:
     dependencies:
       '@dsh-external/dsh-navbar':
         specifier: github:vlln/dsh-navbar
-        version: https://codeload.github.com/vlln/dsh-navbar/tar.gz/6e23640bd60c0157043ae5c29a6d80034287b41b
+        version: '@vlln/dsh-navbar@https://codeload.github.com/vlln/dsh-navbar/tar.gz/10e9d1546db28c499687d66a369e548cd3f52237'
+      superpowers-dsh:
+        specifier: github:LayneChai/superpowers-dsh
+        version: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/49e2d65db55b4d3ec065ad824efe9b09465c8a26
 
 packages:
 
-  '@dsh-external/dsh-navbar@https://codeload.github.com/vlln/dsh-navbar/tar.gz/6e23640bd60c0157043ae5c29a6d80034287b41b':
-    resolution: {gitHosted: true, integrity: sha512-f0sJKUpauLd1iX2h68ebByc6Au9qeRcS2/K7OYBGIqn70pZ9B0XdpjPZXOdmoyz4W1+C9uBW0PpbBshJolPwSg==, tarball: https://codeload.github.com/vlln/dsh-navbar/tar.gz/6e23640bd60c0157043ae5c29a6d80034287b41b}
+  '@vlln/dsh-navbar@https://codeload.github.com/vlln/dsh-navbar/tar.gz/10e9d1546db28c499687d66a369e548cd3f52237':
+    resolution: {gitHosted: true, integrity: sha512-VzKLBBXPBPUFiLkdutBYs1disLJfWjwx00OykH2Zz/v5WIZ3xLZePSOpqg6dAluDMyHPvIILjhbZDesVIyCEVg==, tarball: https://codeload.github.com/vlln/dsh-navbar/tar.gz/10e9d1546db28c499687d66a369e548cd3f52237}
     version: 0.3.0
+    engines: {dsh: '>=0.1.0-rc.5', node: '>=22.19.0'}
     peerDependencies:
-      cordis: ^4.0.0-rc.7
+      '@deepseek-ai/cordis': ^4.0.1
+
+  superpowers-dsh@https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/49e2d65db55b4d3ec065ad824efe9b09465c8a26:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/49e2d65db55b4d3ec065ad824efe9b09465c8a26}
+    version: 0.1.0
 
 snapshots:
 
-  '@dsh-external/dsh-navbar@https://codeload.github.com/vlln/dsh-navbar/tar.gz/6e23640bd60c0157043ae5c29a6d80034287b41b': {}
+  '@vlln/dsh-navbar@https://codeload.github.com/vlln/dsh-navbar/tar.gz/10e9d1546db28c499687d66a369e548cd3f52237': {}
+
+  superpowers-dsh@https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/49e2d65db55b4d3ec065ad824efe9b09465c8a26: {}

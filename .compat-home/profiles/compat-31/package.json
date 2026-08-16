@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-31",
   "private": true,
   "dependencies": {
+    "@dsh-external/dsh-super-injector": "github:yjh051108/dsh-super-injector",
     "dsh-chat-import": "github:Nwflower/dsh-chat-import"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-chat-import"
+        "dsh-chat-import",
+        "@dsh-external/dsh-super-injector"
       ]
     }
   }

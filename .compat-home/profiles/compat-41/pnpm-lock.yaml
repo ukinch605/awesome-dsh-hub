@@ -8,15 +8,50 @@ importers:
 
   .:
     dependencies:
+      '@oil-oil/dsh-vision':
+        specifier: github:oil-oil/dsh-vision
+        version: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/a12800eeb02eb6dd45f5e2cda6c7db3c16088883
       dsh-custom-tool:
         specifier: github:omdsh-dev/dsh-custom-tool
-        version: https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/b0392bb332cc7bfad65279e160b4b015c6c6d3ca
+        version: https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/7cb95649dca9b380c9a30af96bdbef87a76a2259
 
 packages:
 
-  dsh-custom-tool@https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/b0392bb332cc7bfad65279e160b4b015c6c6d3ca:
-    resolution: {gitHosted: true, integrity: sha512-w1mRMbBQVcAtG0mDfezSzayWXl7TQtUnYwJRU7aVMsqs8iRo92FB04nJHaZeG5Yu/8D3Sgkgc8H/zsHJs8zCPw==, tarball: https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/b0392bb332cc7bfad65279e160b4b015c6c6d3ca}
-    version: 0.1.1
+  '@deepseek-ai/cosmokit@1.8.2':
+    resolution: {integrity: sha512-muBOKtSrUKU5m/xpq8ZXWL6hQ/jgd4PhU2PqH97bcxIiLEJfNwZOGQEx4t/aS/GgxRAR+ra9pMHPMtTHU4sqqA==}
+
+  '@deepseek-ai/schemastery@3.18.1':
+    resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
+  '@oil-oil/dsh-vision@https://codeload.github.com/oil-oil/dsh-vision/tar.gz/a12800eeb02eb6dd45f5e2cda6c7db3c16088883':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/a12800eeb02eb6dd45f5e2cda6c7db3c16088883}
+    version: 0.1.0
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': 4.0.1
+      '@deepseek-ai/dsh-anonymous-user-id': 0.1.0-rc.6
+      '@deepseek-ai/dsh-api-remotes': 0.1.0-rc.6
+      '@deepseek-ai/dsh-attachment': 0.1.0-rc.6
+      '@deepseek-ai/dsh-client-connection': 0.1.0-rc.6
+      '@deepseek-ai/dsh-client-locale': 0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': 0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-primitives': 0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings': 0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings-plugins': 0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': 0.1.0-rc.6
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6
+      '@deepseek-ai/dsh-launch-environment': 0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': 0.1.0-rc.6
+      '@deepseek-ai/dsh-llm-deepseek': 0.1.0-rc.6
+      '@deepseek-ai/dsh-settings': 0.1.0-rc.6
+      react: ^18.2.0
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  dsh-custom-tool@https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/7cb95649dca9b380c9a30af96bdbef87a76a2259:
+    resolution: {gitHosted: true, integrity: sha512-v1TTywyraYFCrWt0jc2KsmN1IUiQPXNWv5sAy/lDsCuNxyh/sGI/ZfJS8gtxw4ZVvsjU4A0FzeWdESafqFo+ig==, tarball: https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/7cb95649dca9b380c9a30af96bdbef87a76a2259}
+    version: 0.1.2
     engines: {node: ^22.19 || >=24}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1-rc.1
@@ -50,4 +85,17 @@ packages:
 
 snapshots:
 
-  dsh-custom-tool@https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/b0392bb332cc7bfad65279e160b4b015c6c6d3ca: {}
+  '@deepseek-ai/cosmokit@1.8.2': {}
+
+  '@deepseek-ai/schemastery@3.18.1':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.2
+      '@standard-schema/spec': 1.1.0
+
+  '@oil-oil/dsh-vision@https://codeload.github.com/oil-oil/dsh-vision/tar.gz/a12800eeb02eb6dd45f5e2cda6c7db3c16088883':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
+
+  '@standard-schema/spec@1.1.0': {}
+
+  dsh-custom-tool@https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/7cb95649dca9b380c9a30af96bdbef87a76a2259: {}

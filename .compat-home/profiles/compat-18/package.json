@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-18",
   "private": true,
   "dependencies": {
+    "@liustack/modsearch": "github:liustack/modsearch",
     "sealos": "github:labring/sealos-skills"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "sealos"
+        "sealos",
+        "@liustack/modsearch"
       ]
     }
   }

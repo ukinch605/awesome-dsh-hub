@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-24",
   "private": true,
   "dependencies": {
+    "@icelily/dsh-gitbash-preset": "github:liceses/dsh-gitbash-preset",
     "dsh-notification": "github:omdsh-dev/dsh-notification"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-notification"
+        "dsh-notification",
+        "@icelily/dsh-gitbash-preset"
       ]
     }
   }

@@ -1,11 +1,14 @@
 {
   "name": "dsh-profile-compat-13",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "dsh-at-file": "github:omdsh-dev/dsh-at-file"
+  },
   "dsh": {
     "profile": {
       "bundles": [
-        "@deepseek-ai/dsh-base"
+        "@deepseek-ai/dsh-base",
+        "dsh-at-file"
       ]
     }
   }

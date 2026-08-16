@@ -8,11 +8,21 @@ importers:
 
   .:
     dependencies:
+      '@vlln/dsh-navbar':
+        specifier: github:vlln/dsh-navbar
+        version: https://codeload.github.com/vlln/dsh-navbar/tar.gz/10e9d1546db28c499687d66a369e548cd3f52237
       dsh-unitarylab-quantum-practices:
         specifier: github:unitarylab/quantum-practices
         version: https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e
 
 packages:
+
+  '@vlln/dsh-navbar@https://codeload.github.com/vlln/dsh-navbar/tar.gz/10e9d1546db28c499687d66a369e548cd3f52237':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/vlln/dsh-navbar/tar.gz/10e9d1546db28c499687d66a369e548cd3f52237}
+    version: 0.3.0
+    engines: {dsh: '>=0.1.0-rc.5', node: '>=22.19.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
 
   dsh-unitarylab-quantum-practices@https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e:
     resolution: {gitHosted: true, integrity: sha512-+ACxEizjWHmYbA4bQSf4QBobBgHNEJzFGn+m2FdFGlTS735ohJcdITsoFg7CbIaLGBvgyuaa2Jd7G1MQ5L5F/g==, tarball: https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e}
@@ -23,5 +33,7 @@ packages:
       '@deepseek-ai/dsh-tools': '>=0.0.1-rc.1 <0.2.0'
 
 snapshots:
+
+  '@vlln/dsh-navbar@https://codeload.github.com/vlln/dsh-navbar/tar.gz/10e9d1546db28c499687d66a369e548cd3f52237': {}
 
   dsh-unitarylab-quantum-practices@https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e: {}

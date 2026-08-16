@@ -8,20 +8,32 @@ importers:
 
   .:
     dependencies:
+      dsh-unitarylab-quantum-practices:
+        specifier: github:unitarylab/quantum-practices
+        version: https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e
       zat-dsh-engine:
         specifier: github:mishibeikejie/zat-dsh-engine
-        version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/cd7990fcd4491bcaf6b02b6a17fbe70fbbf50014
+        version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735
 
 packages:
 
-  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/cd7990fcd4491bcaf6b02b6a17fbe70fbbf50014:
-    resolution: {gitHosted: true, integrity: sha512-lkFUvXW+NXQPlmli+vosGq01J+s0XXGo84ElPI0C2WXHcAigHmW77gnR8Spk4dZvlAUxiFcQeC8SowFHYeWpmw==, tarball: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/cd7990fcd4491bcaf6b02b6a17fbe70fbbf50014}
-    version: 0.3.1
+  dsh-unitarylab-quantum-practices@https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e}
+    version: 0.1.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-tools': '>=0.0.1-rc.1 <0.2.0'
+
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735}
+    version: 0.5.0
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-fs': '*'
       '@deepseek-ai/dsh-llm': '*'
       '@deepseek-ai/dsh-subprocess': '*'
+      '@deepseek-ai/dsh-tools': '*'
       '@deepseek-ai/dsh-typert-protocol': '*'
       react: ^18.2.0
 
@@ -30,7 +42,9 @@ packages:
 
 snapshots:
 
-  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/cd7990fcd4491bcaf6b02b6a17fbe70fbbf50014:
+  dsh-unitarylab-quantum-practices@https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e: {}
+
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735:
     dependencies:
       zod: 4.4.3
 

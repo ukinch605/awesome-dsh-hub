@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-47",
   "private": true,
   "dependencies": {
+    "dsh-cost-meter": "github:Han-1413141/dsh-cost-meter",
     "dsh-mnemon": "github:omdsh-dev/dsh-mnemon"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-mnemon"
+        "dsh-mnemon",
+        "dsh-cost-meter"
       ]
     }
   }

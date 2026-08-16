@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-96",
   "private": true,
   "dependencies": {
+    "deepseek-pet": "github:keleus/deepseek-pet",
     "dsh-remote": "github:flymysql/dsh-remote"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-remote"
+        "dsh-remote",
+        "deepseek-pet"
       ]
     }
   }

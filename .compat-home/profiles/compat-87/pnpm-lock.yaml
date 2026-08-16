@@ -8,15 +8,25 @@ importers:
 
   .:
     dependencies:
+      '@dhicoc/dsh-reverse-skill':
+        specifier: github:dhicoc/dsh-reverse-skill
+        version: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/ff9c693fb5936178c9ed0cbb2b951cd0521a2f72
       dsh-recommend:
         specifier: github:zp-home/dsh-recommend
-        version: https://codeload.github.com/zp-home/dsh-recommend/tar.gz/c720299617d6967e0100b4cd717faa6bf25b9fd1
+        version: https://codeload.github.com/zp-home/dsh-recommend/tar.gz/fa011ce705df7a4a077a51745ec2a990c5aecfda
 
 packages:
 
-  dsh-recommend@https://codeload.github.com/zp-home/dsh-recommend/tar.gz/c720299617d6967e0100b4cd717faa6bf25b9fd1:
-    resolution: {gitHosted: true, integrity: sha512-V+J8fmpAgOCMIR4nnZ2Xq9+2ZFVGDsngRvVxfZK85qGoi16i9PtGk8BHAvLGXkHI6wtAvcE8GLL1BtBcgiLl6w==, tarball: https://codeload.github.com/zp-home/dsh-recommend/tar.gz/c720299617d6967e0100b4cd717faa6bf25b9fd1}
-    version: 0.2.0
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/ff9c693fb5936178c9ed0cbb2b951cd0521a2f72':
+    resolution: {gitHosted: true, integrity: sha512-alOpyChO6Wx4c/R1U6uSRzxfvswojFxfot7b/9n2UTlYGsly/RJDWJUwtpA3OmzSxiCMK5Pes9qhstLvz54x6w==, tarball: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/ff9c693fb5936178c9ed0cbb2b951cd0521a2f72}
+    version: 1.0.2
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-skill': ^0.0.1-rc.1
+
+  dsh-recommend@https://codeload.github.com/zp-home/dsh-recommend/tar.gz/fa011ce705df7a4a077a51745ec2a990c5aecfda:
+    resolution: {gitHosted: true, integrity: sha512-Lsoz5m677KdGqwYfCgaJ8QAlx105jcSVLrTlNCKUoYSM4iGhNFAbeit21ya6HLmSKTB8z02bUiAilfDD0ceyNg==, tarball: https://codeload.github.com/zp-home/dsh-recommend/tar.gz/fa011ce705df7a4a077a51745ec2a990c5aecfda}
+    version: 0.3.0
     engines: {node: '>=18.17'}
     peerDependencies:
       '@deepseek-ai/cordis': '*'
@@ -44,4 +54,6 @@ packages:
 
 snapshots:
 
-  dsh-recommend@https://codeload.github.com/zp-home/dsh-recommend/tar.gz/c720299617d6967e0100b4cd717faa6bf25b9fd1: {}
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/ff9c693fb5936178c9ed0cbb2b951cd0521a2f72': {}
+
+  dsh-recommend@https://codeload.github.com/zp-home/dsh-recommend/tar.gz/fa011ce705df7a4a077a51745ec2a990c5aecfda: {}

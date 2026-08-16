@@ -11,14 +11,60 @@ importers:
       '@icelily/dsh-gitbash-preset':
         specifier: github:liceses/dsh-gitbash-preset
         version: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/fc475f4836ed9ea45b5c624878fdc3acf9e598c6
+      dsh-skill-viewer:
+        specifier: github:Fishquito7/dsh-skill-viewer
+        version: https://codeload.github.com/Fishquito7/dsh-skill-viewer/tar.gz/df22b4f99387144e7529a604d5df3ea644274bcd
 
 packages:
 
+  '@deepseek-ai/dsh-home-paths@0.0.1-rc.3':
+    resolution: {integrity: sha512-q86/+w2Oz/bOnURenQwiGT8ob1R84/gBgGV4n62yPqeNLuMMW5hv8tPV7oFMrRGZnM+S5VwtPRkhpOzYvsFT4Q==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-invariants': ^0.0.1-rc.3
+
+  '@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6':
+    resolution: {integrity: sha512-weWzN8r01YCkoDCAM7BsKw2YhRrD4zL8N2SAZu9hovYtXSq8xHXsP4Zh8RLYIlYcuotjyff/6hic+0TJPd14YA==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.6
+
   '@icelily/dsh-gitbash-preset@https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/fc475f4836ed9ea45b5c624878fdc3acf9e598c6':
-    resolution: {gitHosted: true, integrity: sha512-orXE0pZVG0gpLj1ZGjRlhS56MWGLILrr6y8N3RaahMaIMpCHYH546lpVDGCUaeUdu8cSpTTJcf4KmQMHdti9ew==, tarball: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/fc475f4836ed9ea45b5c624878fdc3acf9e598c6}
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/fc475f4836ed9ea45b5c624878fdc3acf9e598c6}
     version: 0.1.1
     engines: {node: '>=20'}
 
+  dsh-skill-viewer@https://codeload.github.com/Fishquito7/dsh-skill-viewer/tar.gz/df22b4f99387144e7529a604d5df3ea644274bcd:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/Fishquito7/dsh-skill-viewer/tar.gz/df22b4f99387144e7529a604d5df3ea644274bcd}
+    version: 0.6.4
+    hasBin: true
+
+  yaml@2.9.0:
+    resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
 snapshots:
 
+  '@deepseek-ai/dsh-home-paths@0.0.1-rc.3': {}
+
+  '@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6': {}
+
   '@icelily/dsh-gitbash-preset@https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/fc475f4836ed9ea45b5c624878fdc3acf9e598c6': {}
+
+  dsh-skill-viewer@https://codeload.github.com/Fishquito7/dsh-skill-viewer/tar.gz/df22b4f99387144e7529a604d5df3ea644274bcd:
+    dependencies:
+      '@deepseek-ai/dsh-home-paths': 0.0.1-rc.3
+      '@deepseek-ai/dsh-typert-protocol': 0.1.0-rc.6
+      yaml: 2.9.0
+      zod: 4.4.3
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis'
+      - '@deepseek-ai/dsh-invariants'
+
+  yaml@2.9.0: {}
+
+  zod@4.4.3: {}

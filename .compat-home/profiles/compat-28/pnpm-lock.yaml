@@ -11,6 +11,9 @@ importers:
       '@multica-ai/dsh-runtime':
         specifier: github:multica-ai/dsh-multica-runtime
         version: https://codeload.github.com/multica-ai/dsh-multica-runtime/tar.gz/e29aae228449dfe50e88af60ef4281e38ca44e2a
+      dsh-notification:
+        specifier: github:omdsh-dev/dsh-notification
+        version: https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/2399457a1f96ed86f761f3bc771539d131eb684f
 
 packages:
 
@@ -51,6 +54,48 @@ packages:
       '@deepseek-ai/dsh-user-approval':
         optional: true
 
+  dsh-notification@https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/2399457a1f96ed86f761f3bc771539d131eb684f:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/2399457a1f96ed86f761f3bc771539d131eb684f}
+    version: 0.1.2
+    peerDependencies:
+      '@deepseek-ai/cordis': '*'
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-runtime': '*'
+      '@deepseek-ai/dsh-client-ui-settings': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-invariants': '*'
+      '@deepseek-ai/dsh-session': '*'
+      '@deepseek-ai/dsh-session-projection': '*'
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-invariants':
+        optional: true
+      '@deepseek-ai/dsh-session':
+        optional: true
+      '@deepseek-ai/dsh-session-projection':
+        optional: true
+      react:
+        optional: true
+
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
 snapshots:
 
   '@multica-ai/dsh-runtime@https://codeload.github.com/multica-ai/dsh-multica-runtime/tar.gz/e29aae228449dfe50e88af60ef4281e38ca44e2a': {}
+
+  dsh-notification@https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/2399457a1f96ed86f761f3bc771539d131eb684f:
+    dependencies:
+      zod: 4.4.3
+
+  zod@4.4.3: {}

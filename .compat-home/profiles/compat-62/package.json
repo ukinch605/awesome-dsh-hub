@@ -1,11 +1,14 @@
 {
   "name": "dsh-profile-compat-62",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@dsh-external/dsh-minigames": "github:lhh010/dsh-minigames"
+  },
   "dsh": {
     "profile": {
       "bundles": [
-        "@deepseek-ai/dsh-base"
+        "@deepseek-ai/dsh-base",
+        "@dsh-external/dsh-minigames"
       ]
     }
   }

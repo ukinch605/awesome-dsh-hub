@@ -8,11 +8,51 @@ importers:
 
   .:
     dependencies:
+      '@huanlin/dsh-plugin-mineru':
+        specifier: github:HuanLinOTO/dsh-plugin-mineru
+        version: https://codeload.github.com/HuanLinOTO/dsh-plugin-mineru/tar.gz/79809aa57bd19be0ca548be52b76161514d02e11
       '@loserfox/distill':
         specifier: github:LoserFox/distill
         version: https://codeload.github.com/LoserFox/distill/tar.gz/d2aaa395adeffe88e429be796c12d829752cbad1
 
 packages:
+
+  '@huanlin/dsh-plugin-mineru@https://codeload.github.com/HuanLinOTO/dsh-plugin-mineru/tar.gz/79809aa57bd19be0ca548be52b76161514d02e11':
+    resolution: {gitHosted: true, integrity: sha512-2uF7kVYt7tbHbBS8VfCGQhCggITrkuRzXyKk737h3nJOXXrT7XKjc/4aFH8v5BdD/ojaVUdxKZyX3UA7ZZ224Q==, tarball: https://codeload.github.com/HuanLinOTO/dsh-plugin-mineru/tar.gz/79809aa57bd19be0ca548be52b76161514d02e11}
+    version: 0.2.2
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh-client-connection': ^0.0.1-rc.1
+      '@deepseek-ai/dsh-client-locale': ^0.0.1-rc.1
+      '@deepseek-ai/dsh-client-runtime': ^0.0.1-rc.1
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.0.1-rc.1
+      '@deepseek-ai/dsh-client-ui-settings': ^0.0.1-rc.1
+      '@deepseek-ai/dsh-client-ui-slots': ^0.0.1-rc.1
+      '@deepseek-ai/dsh-host-apiproxy': ^0.0.1-rc.1
+      '@deepseek-ai/dsh-tools': ^0.0.1-rc.1
+      cordis: ^4.0.0-rc.7
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-client-connection':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-primitives':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-host-apiproxy':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      cordis:
+        optional: true
+      react:
+        optional: true
 
   '@loserfox/distill@https://codeload.github.com/LoserFox/distill/tar.gz/d2aaa395adeffe88e429be796c12d829752cbad1':
     resolution: {gitHosted: true, integrity: sha512-OFN0e5DjeqIRbLMhV6OrOIH457ff3wqrVbFrVpZ8P2aMxDdBP9VnVsQQQFqKXeLTmDm+3T1jpk1WEW/l6OaFJQ==, tarball: https://codeload.github.com/LoserFox/distill/tar.gz/d2aaa395adeffe88e429be796c12d829752cbad1}
@@ -28,6 +68,28 @@ packages:
       '@deepseek-ai/dsh-tools': ^0.0.1-rc.1
       '@deepseek-ai/schemastery': ^3.18.1
 
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
+
 snapshots:
 
+  '@huanlin/dsh-plugin-mineru@https://codeload.github.com/HuanLinOTO/dsh-plugin-mineru/tar.gz/79809aa57bd19be0ca548be52b76161514d02e11':
+    dependencies:
+      schemastery: 3.18.0
+
   '@loserfox/distill@https://codeload.github.com/LoserFox/distill/tar.gz/d2aaa395adeffe88e429be796c12d829752cbad1': {}
+
+  '@standard-schema/spec@1.1.0': {}
+
+  cosmokit@1.8.1: {}
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1

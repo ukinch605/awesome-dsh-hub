@@ -1,11 +1,14 @@
 {
   "name": "dsh-profile-compat-61",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "dsh-share": "github:hellodigua/dsh-share"
+  },
   "dsh": {
     "profile": {
       "bundles": [
-        "@deepseek-ai/dsh-base"
+        "@deepseek-ai/dsh-base",
+        "dsh-share"
       ]
     }
   }

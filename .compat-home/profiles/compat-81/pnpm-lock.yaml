@@ -10,18 +10,35 @@ importers:
     dependencies:
       dsh-client-auto-continue:
         specifier: github:HsiangNianian/dsh-auto-continue
-        version: https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/be19b6b6bec6f4b23ddc46364e7842710f09c28f
+        version: https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/98181b0e5e0afd33ca89b314fc3957a2634602e4
+      dsh-milestone:
+        specifier: github:SnowCrescenter-tech/dsh-milestone
+        version: https://codeload.github.com/SnowCrescenter-tech/dsh-milestone/tar.gz/c238f8c5d4afe153ede8559e5f7e3d1a652b6327
 
 packages:
 
-  dsh-client-auto-continue@https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/be19b6b6bec6f4b23ddc46364e7842710f09c28f:
-    resolution: {gitHosted: true, integrity: sha512-vf+tMBhQTEtSDgDCvYMktbnzaSiCtupcJ4w1fxgBUaluxFRpqVJB6y0SI9Xb0mCiO5cPz3V2ScxbsOxZFv+pzA==, tarball: https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/be19b6b6bec6f4b23ddc46364e7842710f09c28f}
-    version: 0.4.0
+  dsh-client-auto-continue@https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/98181b0e5e0afd33ca89b314fc3957a2634602e4:
+    resolution: {gitHosted: true, integrity: sha512-EASW3rC/NQB31lmBTFcK0EPEAKlNqv4CeI946eUL0fFO0kCtnwLckypY8rSYo4Pjl4ZOHsC2RI04rW2sqMEvSw==, tarball: https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/98181b0e5e0afd33ca89b314fc3957a2634602e4}
+    version: 0.6.0
+    hasBin: true
     peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
 
+  dsh-milestone@https://codeload.github.com/SnowCrescenter-tech/dsh-milestone/tar.gz/c238f8c5d4afe153ede8559e5f7e3d1a652b6327:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/SnowCrescenter-tech/dsh-milestone/tar.gz/c238f8c5d4afe153ede8559e5f7e3d1a652b6327}
+    version: 0.6.0
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      react: ^18.2.0
+
 snapshots:
 
-  dsh-client-auto-continue@https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/be19b6b6bec6f4b23ddc46364e7842710f09c28f: {}
+  dsh-client-auto-continue@https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/98181b0e5e0afd33ca89b314fc3957a2634602e4: {}
+
+  dsh-milestone@https://codeload.github.com/SnowCrescenter-tech/dsh-milestone/tar.gz/c238f8c5d4afe153ede8559e5f7e3d1a652b6327: {}

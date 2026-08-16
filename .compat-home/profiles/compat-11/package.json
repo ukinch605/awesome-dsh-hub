@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-11",
   "private": true,
   "dependencies": {
+    "@nanmicoder/dsh-agent-teams": "github:NanmiCoder/dsh-agent-teams",
     "whale-girl": "github:vlln/whale-girl"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "whale-girl"
+        "whale-girl",
+        "@nanmicoder/dsh-agent-teams"
       ]
     }
   }

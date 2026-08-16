@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-22",
   "private": true,
   "dependencies": {
-    "@anionex/dsh-turn-rewind": "github:Anionex/dsh-turn-rewind"
+    "@anionex/dsh-turn-rewind": "github:Anionex/dsh-turn-rewind",
+    "sealos": "github:labring/sealos-skills"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "@anionex/dsh-turn-rewind"
+        "@anionex/dsh-turn-rewind",
+        "sealos"
       ]
     }
   }

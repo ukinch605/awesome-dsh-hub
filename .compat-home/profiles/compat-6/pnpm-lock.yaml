@@ -10,12 +10,15 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/29850a83871d4b7a7cc13e251420c5a440e2f69e
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/6fd7a03a12caaefdac36f3d418718149ba2d1b46
+      '@mnemon-dev/dsh-mnemon':
+        specifier: github:mnemon-dev/mnemon
+        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2dc6304ac21550aca93659751f682045a05bba8d
 
 packages:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/29850a83871d4b7a7cc13e251420c5a440e2f69e':
-    resolution: {gitHosted: true, integrity: sha512-kdll2glNRBv3+3ae4TJ4OJwZMHFvdsxSL6HaBN52MXMV1zeN/6PFHYJWvETSXam/sjntIVZdxLPnUsg2IjZWug==, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/29850a83871d4b7a7cc13e251420c5a440e2f69e}
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/6fd7a03a12caaefdac36f3d418718149ba2d1b46':
+    resolution: {gitHosted: true, integrity: sha512-BXruG9UpA6l2O2xoOm+WDA9BDBmMPk/VpIqlSqLgTpxvcCya2e1o86ofqf5RJc8vAv14iCSmQ56uVvJc9n/6Lw==, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/6fd7a03a12caaefdac36f3d418718149ba2d1b46}
     version: 0.1.7
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
@@ -44,21 +47,76 @@ packages:
       '@deepseek-ai/dsh-host-webserver':
         optional: true
 
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2dc6304ac21550aca93659751f682045a05bba8d':
+    resolution: {gitHosted: true, integrity: sha512-UmlaP2hCDxmLwMwbnIQQ321Pzz5gtd0RhuyvVbzqKE5yGv8GbNF0gD1s+bNTfHD66Dmo5Gw6hIxcXTZUrbYhfQ==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2dc6304ac21550aca93659751f682045a05bba8d}
+    version: 0.1.0
+    engines: {node: '>=20'}
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
+  dsh-mnemon@0.1.0:
+    resolution: {integrity: sha512-vE6AjSrghJjatJnL4eK1YL0mciKxT3+K1xgmLh3sFn7R+Rj2lbM/nFdESLDlvKWulmNAR2i0uN4L0oVgyVbHxA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      cordis: ^4.0.0-rc.7
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
+  markdown-to-jsx@7.7.17:
+    resolution: {integrity: sha512-7mG/1feQ0TX5I7YyMZVDgCC/y2I3CiEhIRQIhyov9nGBP5eoVrOXXHuL5ZP8GRfxVZKRiXWJgwXkb9It+nQZfQ==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      react: '>= 0.14.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+
   saxes@6.0.0:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
     engines: {node: '>=v12.22.7'}
+
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
   xmlchars@2.2.0:
     resolution: {integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==}
 
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/29850a83871d4b7a7cc13e251420c5a440e2f69e':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/6fd7a03a12caaefdac36f3d418718149ba2d1b46':
     dependencies:
       saxes: 6.0.0
+
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2dc6304ac21550aca93659751f682045a05bba8d':
+    dependencies:
+      dsh-mnemon: 0.1.0
+    transitivePeerDependencies:
+      - cordis
+      - react
+      - react-dom
+
+  '@standard-schema/spec@1.1.0': {}
+
+  cosmokit@1.8.1: {}
+
+  dsh-mnemon@0.1.0:
+    dependencies:
+      markdown-to-jsx: 7.7.17
+      schemastery: 3.18.0
+
+  markdown-to-jsx@7.7.17: {}
 
   saxes@6.0.0:
     dependencies:
       xmlchars: 2.2.0
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1
 
   xmlchars@2.2.0: {}

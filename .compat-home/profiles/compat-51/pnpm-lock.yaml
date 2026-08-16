@@ -11,6 +11,9 @@ importers:
       dsh-message-edit:
         specifier: github:Moeblack/dsh-message-edit
         version: https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/e950651786e916feebe5a49c8e4ca46afdca379d
+      zat-dsh-engine:
+        specifier: github:mishibeikejie/zat-dsh-engine
+        version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735
 
 packages:
 
@@ -18,6 +21,27 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-mI/rYdxcJbGqywj0KybZ2klWzyrYgmUfTzzPsCci329aGHT8U4iT3n7Z0+ohjBa+J7aP6s0vfsEkVn/j2wyl8g==, tarball: https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/e950651786e916feebe5a49c8e4ca46afdca379d}
     version: 0.2.1
 
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735:
+    resolution: {gitHosted: true, integrity: sha512-nFmknIV3AoWoaRbfO9eVDu6GedhTVgotXNGjJiMpHWiNgDDEf13d63YfMDUIfHtNFqcNX5eT6/nxmpFsDwiMRQ==, tarball: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735}
+    version: 0.5.0
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-fs': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-subprocess': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      react: ^18.2.0
+
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
 snapshots:
 
   dsh-message-edit@https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/e950651786e916feebe5a49c8e4ca46afdca379d: {}
+
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735:
+    dependencies:
+      zod: 4.4.3
+
+  zod@4.4.3: {}

@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-91",
   "private": true,
   "dependencies": {
+    "@bill9109/dsh-web-ui-notify": "github:bill9109/dsh-web-ui-notify",
     "dsh-models-config-plugin": "github:MarvekG/deepseek-harness-model-config"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-models-config-plugin"
+        "dsh-models-config-plugin",
+        "@bill9109/dsh-web-ui-notify"
       ]
     }
   }

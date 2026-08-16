@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-63",
   "private": true,
   "dependencies": {
+    "@huanlin/dsh-plugin-mineru": "github:HuanLinOTO/dsh-plugin-mineru",
     "@loserfox/distill": "github:LoserFox/distill"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "@loserfox/distill"
+        "@loserfox/distill",
+        "@huanlin/dsh-plugin-mineru"
       ]
     }
   }

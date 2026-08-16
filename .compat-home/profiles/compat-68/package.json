@@ -1,11 +1,14 @@
 {
   "name": "dsh-profile-compat-68",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "upstash-skills": "github:upstash/skills"
+  },
   "dsh": {
     "profile": {
       "bundles": [
-        "@deepseek-ai/dsh-base"
+        "@deepseek-ai/dsh-base",
+        "upstash-skills"
       ]
     }
   }

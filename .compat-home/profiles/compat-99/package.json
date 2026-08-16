@@ -1,11 +1,14 @@
 {
   "name": "dsh-profile-compat-99",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "dsh-remote": "github:flymysql/dsh-remote"
+  },
   "dsh": {
     "profile": {
       "bundles": [
-        "@deepseek-ai/dsh-base"
+        "@deepseek-ai/dsh-base",
+        "dsh-remote"
       ]
     }
   }

@@ -8,18 +8,47 @@ importers:
 
   .:
     dependencies:
+      '@tencent-connect/dsh-qqbot':
+        specifier: github:tencent-connect/dsh-qqbot
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/fcb128f277366c77c1df8ec233b6fa91ae2853f7
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
-        version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/56871019e984aa43c01d7913013f25cee0ef2cbe
+        version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/78b29b5f91b7dc283f3499507621970f62b89e3f
 
 packages:
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/56871019e984aa43c01d7913013f25cee0ef2cbe':
-    resolution: {gitHosted: true, integrity: sha512-jqPnhfGUqehjs4iNmBlKivkxOFvF0vFlBl1WCRITSgH+ta7oqrvJil5V1ZJZpZ8ZgQAuBBfLcs+LYg0RZRaQtg==, tarball: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/56871019e984aa43c01d7913013f25cee0ef2cbe}
-    version: 0.0.3
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/fcb128f277366c77c1df8ec233b6fa91ae2853f7':
+    resolution: {gitHosted: true, integrity: sha512-TPcz1ZbNSEpdHapjgGpXYqkyi+7z/iZA4QpPQ2hm9BIVvDNiL5vXwRrMdMEaGNZfPKxOagYNys4u+Dbw72pCXw==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/fcb128f277366c77c1df8ec233b6fa91ae2853f7}
+    version: 0.4.0
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.1'
+      '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-session': '>=0.1.0-rc.6'
+      '@deepseek-ai/schemastery': '>=3.18.1'
+
+  '@tencent-connect/qqbot-connector@1.2.0':
+    resolution: {integrity: sha512-FAOUCvgxP4M9UiYbHrtVgJ7BavSlh1CHJPjeEQuTAkP9MZ91lX4yATqv6I/lB9yp15nVq+G2DaGSSJwQTSoSsA==}
+    engines: {node: '>=18.0.0'}
+
+  '@tencent-connect/qqbot-nodejs@1.0.4':
+    resolution: {integrity: sha512-gU5HySLplczZXMUjM7NtiUACY7YfX9YlI/R9PKzCLMgLmHvwsX9L2sitsrYPMentGUr9b8NLfSaSTsndF77NBA==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      mpg123-decoder: ^1.0.3
+      silk-wasm: ^3.7.1
+    peerDependenciesMeta:
+      mpg123-decoder:
+        optional: true
+      silk-wasm:
+        optional: true
+
+  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/78b29b5f91b7dc283f3499507621970f62b89e3f':
+    resolution: {gitHosted: true, integrity: sha512-oQJENKqiZhfvEPB3vtYa50tR5YgB3K0CF0IPtRAY5LSqdqPFkJZVgKgq0ZaYxAoV0oC9sprmMU/LpfuM+HBtHw==, tarball: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/78b29b5f91b7dc283f3499507621970f62b89e3f}
+    version: 0.0.6
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
@@ -33,23 +62,78 @@ packages:
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
       react: ^18.2.0
 
+  argparse@2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
+  js-yaml@4.3.1:
+    resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
+    hasBin: true
+
+  qrcode-terminal@0.12.0:
+    resolution: {integrity: sha512-EXtzRZmC+YGmGlDFbXKxQiMZNwCLEO6BANKXG4iCtSIM0yqc/pappSx3RIKr4r0uh5JsBckOXeKrB3Iz7mdQpQ==}
+    hasBin: true
+
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
+
+  ws@8.21.3:
+    resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
 
 snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/56871019e984aa43c01d7913013f25cee0ef2cbe':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/fcb128f277366c77c1df8ec233b6fa91ae2853f7':
+    dependencies:
+      '@tencent-connect/qqbot-connector': 1.2.0
+      '@tencent-connect/qqbot-nodejs': 1.0.4
+      js-yaml: 4.3.1
+    transitivePeerDependencies:
+      - bufferutil
+      - mpg123-decoder
+      - silk-wasm
+      - utf-8-validate
+
+  '@tencent-connect/qqbot-connector@1.2.0':
+    dependencies:
+      qrcode-terminal: 0.12.0
+
+  '@tencent-connect/qqbot-nodejs@1.0.4':
+    dependencies:
+      ws: 8.21.3
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
+  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/78b29b5f91b7dc283f3499507621970f62b89e3f':
     dependencies:
       schemastery: 3.18.0
 
+  argparse@2.0.1: {}
+
   cosmokit@1.8.1: {}
+
+  js-yaml@4.3.1:
+    dependencies:
+      argparse: 2.0.1
+
+  qrcode-terminal@0.12.0: {}
 
   schemastery@3.18.0:
     dependencies:
       '@standard-schema/spec': 1.1.0
       cosmokit: 1.8.1
+
+  ws@8.21.3: {}

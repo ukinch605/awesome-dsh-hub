@@ -8,21 +8,35 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/dsh-super-injector':
+        specifier: github:yjh051108/dsh-super-injector
+        version: https://codeload.github.com/yjh051108/dsh-super-injector/tar.gz/f4ef59fb31439225abefe45d6e793235a2a9d5e0
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/eea0b4f937d92d51683620cacedac4f112000adb
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4e2f1931416ee9704ce014e84cda9faa4f83244d
 
 packages:
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/eea0b4f937d92d51683620cacedac4f112000adb:
-    resolution: {gitHosted: true, integrity: sha512-NNHufd5ZK6fuXuMZeFn9mUESBI6/+3LQUpviDDgY73qCjEcf+wtrEHWo+IJ3AKX/HaBztkBvOuetJG4kJ7l6mA==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/eea0b4f937d92d51683620cacedac4f112000adb}
-    version: 0.3.1
+  '@dsh-external/dsh-super-injector@https://codeload.github.com/yjh051108/dsh-super-injector/tar.gz/f4ef59fb31439225abefe45d6e793235a2a9d5e0':
+    resolution: {gitHosted: true, integrity: sha512-3W9E+wAkpYabGGACehpcZno7gztla24Z5q/Ut1Obj8ZF/VMeT3E7sqJOXmHUOYxVlsXqY5TAN03F3qZkY+ewSg==, tarball: https://codeload.github.com/yjh051108/dsh-super-injector/tar.gz/f4ef59fb31439225abefe45d6e793235a2a9d5e0}
+    version: 0.3.3
+    peerDependencies:
+      '@deepseek-ai/dsh-tools': '>=0.0.1-rc <2'
+      cordis: '>=4.0.0-rc <5'
+      schemastery: ^3.18.0
+
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4e2f1931416ee9704ce014e84cda9faa4f83244d:
+    resolution: {gitHosted: true, integrity: sha512-WgQQmxkXrTczki4RiY2i9GmVqN/bZCVtETVE4bbwQ1PrcdFfj1mgk8BznC5X8JLo2VnQvU8f62Tot4K8lTSJcg==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4e2f1931416ee9704ce014e84cda9faa4f83244d}
+    version: 0.4.0
     engines: {node: '>=22.13'}
     peerDependencies:
       '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6'
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      cordis: '>=4.0.0-rc.8 <5.0.0'
       react: '>=18.0.0'
 
 snapshots:
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/eea0b4f937d92d51683620cacedac4f112000adb: {}
+  '@dsh-external/dsh-super-injector@https://codeload.github.com/yjh051108/dsh-super-injector/tar.gz/f4ef59fb31439225abefe45d6e793235a2a9d5e0': {}
+
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4e2f1931416ee9704ce014e84cda9faa4f83244d: {}

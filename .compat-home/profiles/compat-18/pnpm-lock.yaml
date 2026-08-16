@@ -8,15 +8,32 @@ importers:
 
   .:
     dependencies:
+      '@liustack/modsearch':
+        specifier: github:liustack/modsearch
+        version: https://codeload.github.com/liustack/modsearch/tar.gz/e1dba224b72651dfe7891990dcaf674098100df2
       sealos:
         specifier: github:labring/sealos-skills
         version: https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31
 
 packages:
 
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/e1dba224b72651dfe7891990dcaf674098100df2':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/liustack/modsearch/tar.gz/e1dba224b72651dfe7891990dcaf674098100df2}
+    version: 5.4.2
+    engines: {node: '>=22.13'}
+    hasBin: true
+
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
+
   sealos@https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31:
     resolution: {gitHosted: true, integrity: sha512-k4O8Qr/RhSdyBCMlabqcPycRf05f75XQ91JvL8asWjz6dU1jxKqT8e4A1lEQ2qYOT5dCHBvwhY4fHilHD7cBwQ==, tarball: https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31}
     version: 1.2.5
+
+  undici@7.29.0:
+    resolution: {integrity: sha512-IDxfleLmmbSskfWSUATiN1nfn2rDuvnMOqb5CWR92iIfojA0Ud+ulOAAEQ57LPr9rWmsreUyf5lwyao+7GNNVw==}
+    engines: {node: '>=20.18.1'}
 
   yaml@2.9.0:
     resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
@@ -25,8 +42,17 @@ packages:
 
 snapshots:
 
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/e1dba224b72651dfe7891990dcaf674098100df2':
+    dependencies:
+      commander: 13.1.0
+      undici: 7.29.0
+
+  commander@13.1.0: {}
+
   sealos@https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31:
     dependencies:
       yaml: 2.9.0
+
+  undici@7.29.0: {}
 
   yaml@2.9.0: {}

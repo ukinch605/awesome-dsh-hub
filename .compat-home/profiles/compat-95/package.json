@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-95",
   "private": true,
   "dependencies": {
+    "@dsh-external/dsh-deep-research": "github:omdsh-dev/dsh-deep-research",
     "@huanlin/dsh-plugin-session-delete": "github:lsz-asd/dsh-plugin-session-delete"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "@huanlin/dsh-plugin-session-delete"
+        "@huanlin/dsh-plugin-session-delete",
+        "@dsh-external/dsh-deep-research"
       ]
     }
   }

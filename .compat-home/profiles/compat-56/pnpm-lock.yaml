@@ -10,14 +10,26 @@ importers:
     dependencies:
       '@dsh-external/dsh-plugin-workshop':
         specifier: github:yyyyukari/dsh-plugin-workshop
-        version: https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/5169bed1e9dcf471f0ce61ef2d190aaa0be93375
+        version: https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/acc2d75eaa976afab8e1e4ea2176bc9b51b139fa
+      dsh-find-plugin:
+        specifier: github:awesome-dsh-plugin/dsh-find-plugin
+        version: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e75dc2e865c3cfbfd336f7b4bb753fec25d373e1
 
 packages:
 
-  '@dsh-external/dsh-plugin-workshop@https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/5169bed1e9dcf471f0ce61ef2d190aaa0be93375':
-    resolution: {gitHosted: true, integrity: sha512-4g+W3ANKP9Rw+xzl90yUAWf7sdir2PpvHkC06xdxVFMO8ByIfhgR4WMqdNz+ZJpFsedTV6rLk0OC7fMI5Skc1w==, tarball: https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/5169bed1e9dcf471f0ce61ef2d190aaa0be93375}
-    version: 1.5.1
+  '@dsh-external/dsh-plugin-workshop@https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/acc2d75eaa976afab8e1e4ea2176bc9b51b139fa':
+    resolution: {gitHosted: true, integrity: sha512-/QHAzsZ1GSM7MZy7MxXdIaeyZyxaa/wrCEKxAbhQ6kjvJP6zX/WlTWzAo+kzM2aBgQBXWmA3aTxZV4tz95Sihg==, tarball: https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/acc2d75eaa976afab8e1e4ea2176bc9b51b139fa}
+    version: 1.6.1
+
+  dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e75dc2e865c3cfbfd336f7b4bb753fec25d373e1:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e75dc2e865c3cfbfd336f7b4bb753fec25d373e1}
+    version: 0.3.6
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-tools': ^0.0.1-rc.1
 
 snapshots:
 
-  '@dsh-external/dsh-plugin-workshop@https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/5169bed1e9dcf471f0ce61ef2d190aaa0be93375': {}
+  '@dsh-external/dsh-plugin-workshop@https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/acc2d75eaa976afab8e1e4ea2176bc9b51b139fa': {}
+
+  dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e75dc2e865c3cfbfd336f7b4bb753fec25d373e1: {}

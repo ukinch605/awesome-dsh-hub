@@ -8,16 +8,31 @@ importers:
 
   .:
     dependencies:
+      '@sanqi-normal/dsh-webui-market-plugin':
+        specifier: github:Sanqi-normal/dsh-webui-market-plugin
+        version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/0a09c21bae41318bc2fed51c274b2496b22988d5
       superpowers-dsh:
         specifier: github:LayneChai/superpowers-dsh
         version: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/49e2d65db55b4d3ec065ad824efe9b09465c8a26
 
 packages:
 
+  '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/0a09c21bae41318bc2fed51c274b2496b22988d5':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/0a09c21bae41318bc2fed51c274b2496b22988d5}
+    version: 0.5.2
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': '*'
+      '@deepseek-ai/dsh-client-runtime': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      react: ^18.2.0
+
   superpowers-dsh@https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/49e2d65db55b4d3ec065ad824efe9b09465c8a26:
     resolution: {gitHosted: true, integrity: sha512-yEKsbP2LvBqs6mx/5QZG+BqIlcpbHyp0mJULbGsmdP8veB7bFtd4f9OYjK1ik8ZKQoChK7yF0lctEzYo/ZnT0Q==, tarball: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/49e2d65db55b4d3ec065ad824efe9b09465c8a26}
     version: 0.1.0
 
 snapshots:
+
+  '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/0a09c21bae41318bc2fed51c274b2496b22988d5': {}
 
   superpowers-dsh@https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/49e2d65db55b4d3ec065ad824efe9b09465c8a26: {}

@@ -10,13 +10,16 @@ importers:
     dependencies:
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/378540b916e3aa0b06221d449509313daa46813f
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/fcb128f277366c77c1df8ec233b6fa91ae2853f7
+      dsh-chat-import:
+        specifier: github:Nwflower/dsh-chat-import
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4e2f1931416ee9704ce014e84cda9faa4f83244d
 
 packages:
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/378540b916e3aa0b06221d449509313daa46813f':
-    resolution: {gitHosted: true, integrity: sha512-/nnCYWQnEJAnvjJ7ouyB97UIFP7W4vUrQq4PqXK5BnnZYDqiust363RVseOB0FuRcfgpB5PB8D4lHYjtN/A+MA==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/378540b916e3aa0b06221d449509313daa46813f}
-    version: 0.1.0
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/fcb128f277366c77c1df8ec233b6fa91ae2853f7':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/fcb128f277366c77c1df8ec233b6fa91ae2853f7}
+    version: 0.4.0
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1'
       '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6'
@@ -43,6 +46,16 @@ packages:
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4e2f1931416ee9704ce014e84cda9faa4f83244d:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4e2f1931416ee9704ce014e84cda9faa4f83244d}
+    version: 0.4.0
+    engines: {node: '>=22.13'}
+    peerDependencies:
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      cordis: '>=4.0.0-rc.8 <5.0.0'
+      react: '>=18.0.0'
+
   js-yaml@4.3.1:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
     hasBin: true
@@ -65,7 +78,7 @@ packages:
 
 snapshots:
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/378540b916e3aa0b06221d449509313daa46813f':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/fcb128f277366c77c1df8ec233b6fa91ae2853f7':
     dependencies:
       '@tencent-connect/qqbot-connector': 1.2.0
       '@tencent-connect/qqbot-nodejs': 1.0.4
@@ -88,6 +101,8 @@ snapshots:
       - utf-8-validate
 
   argparse@2.0.1: {}
+
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4e2f1931416ee9704ce014e84cda9faa4f83244d: {}
 
   js-yaml@4.3.1:
     dependencies:

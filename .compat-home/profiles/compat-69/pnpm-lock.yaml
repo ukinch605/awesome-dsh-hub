@@ -8,14 +8,26 @@ importers:
 
   .:
     dependencies:
+      '@deepseek-ai/dsh-plugin-check':
+        specifier: github:omdsh-dev/dsh-plugin-check
+        version: https://codeload.github.com/omdsh-dev/dsh-plugin-check/tar.gz/397aa26df241aca530aa65a08484a664f7d555ad
       tabbit-browser:
         specifier: github:Tabbit-Browser/dsh-plugin
-        version: https://codeload.github.com/Tabbit-Browser/dsh-plugin/tar.gz/80e2f5726b0eac01f4dd32a3f6e451504881bcb3
+        version: https://codeload.github.com/Tabbit-Browser/dsh-plugin/tar.gz/b0438aa28c43a9f1fe41c8639430890fb8f79b79
 
 packages:
 
-  tabbit-browser@https://codeload.github.com/Tabbit-Browser/dsh-plugin/tar.gz/80e2f5726b0eac01f4dd32a3f6e451504881bcb3:
-    resolution: {gitHosted: true, integrity: sha512-RXtuVNj2RlVA1VcN7AmzA2gdHA7JXeazRV40JNKyxmLUJP9pnNnWL9EhvYf7n33wwnbKGsMp0OEtQx1t7eXkug==, tarball: https://codeload.github.com/Tabbit-Browser/dsh-plugin/tar.gz/80e2f5726b0eac01f4dd32a3f6e451504881bcb3}
+  '@deepseek-ai/dsh-plugin-check@https://codeload.github.com/omdsh-dev/dsh-plugin-check/tar.gz/397aa26df241aca530aa65a08484a664f7d555ad':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/omdsh-dev/dsh-plugin-check/tar.gz/397aa26df241aca530aa65a08484a664f7d555ad}
+    version: 0.0.1
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-invariants': '>=0.0.1-rc.1 <0.2.0'
+      '@deepseek-ai/dsh-tools': '>=0.0.1-rc.1 <0.2.0'
+
+  tabbit-browser@https://codeload.github.com/Tabbit-Browser/dsh-plugin/tar.gz/b0438aa28c43a9f1fe41c8639430890fb8f79b79:
+    resolution: {gitHosted: true, integrity: sha512-B0RhlzcTgAUE0rS/UBzlBr6ilXQ9nMuTM6rrX7aPjaGW7KOI7rDVfT0iOrpS4bEIXKtWVRJGMZhH2utNmDGXYg==, tarball: https://codeload.github.com/Tabbit-Browser/dsh-plugin/tar.gz/b0438aa28c43a9f1fe41c8639430890fb8f79b79}
     version: 0.1.0
     engines: {node: '>=20'}
     peerDependencies:
@@ -26,4 +38,6 @@ packages:
 
 snapshots:
 
-  tabbit-browser@https://codeload.github.com/Tabbit-Browser/dsh-plugin/tar.gz/80e2f5726b0eac01f4dd32a3f6e451504881bcb3: {}
+  '@deepseek-ai/dsh-plugin-check@https://codeload.github.com/omdsh-dev/dsh-plugin-check/tar.gz/397aa26df241aca530aa65a08484a664f7d555ad': {}
+
+  tabbit-browser@https://codeload.github.com/Tabbit-Browser/dsh-plugin/tar.gz/b0438aa28c43a9f1fe41c8639430890fb8f79b79: {}

@@ -11,11 +11,14 @@ importers:
       '@huanlin/dsh-plugin-mineru':
         specifier: github:HuanLinOTO/dsh-plugin-mineru
         version: https://codeload.github.com/HuanLinOTO/dsh-plugin-mineru/tar.gz/79809aa57bd19be0ca548be52b76161514d02e11
+      '@loserfox/distill':
+        specifier: github:LoserFox/distill
+        version: https://codeload.github.com/LoserFox/distill/tar.gz/d2aaa395adeffe88e429be796c12d829752cbad1
 
 packages:
 
   '@huanlin/dsh-plugin-mineru@https://codeload.github.com/HuanLinOTO/dsh-plugin-mineru/tar.gz/79809aa57bd19be0ca548be52b76161514d02e11':
-    resolution: {gitHosted: true, integrity: sha512-2uF7kVYt7tbHbBS8VfCGQhCggITrkuRzXyKk737h3nJOXXrT7XKjc/4aFH8v5BdD/ojaVUdxKZyX3UA7ZZ224Q==, tarball: https://codeload.github.com/HuanLinOTO/dsh-plugin-mineru/tar.gz/79809aa57bd19be0ca548be52b76161514d02e11}
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/HuanLinOTO/dsh-plugin-mineru/tar.gz/79809aa57bd19be0ca548be52b76161514d02e11}
     version: 0.2.2
     engines: {node: '>=18.0.0'}
     peerDependencies:
@@ -51,6 +54,20 @@ packages:
       react:
         optional: true
 
+  '@loserfox/distill@https://codeload.github.com/LoserFox/distill/tar.gz/d2aaa395adeffe88e429be796c12d829752cbad1':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/LoserFox/distill/tar.gz/d2aaa395adeffe88e429be796c12d829752cbad1}
+    version: 0.1.0
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-agent': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': ^0.0.1-rc.1
+      '@deepseek-ai/dsh-session': ^0.0.1-rc.1
+      '@deepseek-ai/dsh-skill': ^0.0.1-rc.1
+      '@deepseek-ai/dsh-subagent': ^0.0.1-rc.1
+      '@deepseek-ai/dsh-timeout': ^0.0.1-rc.1
+      '@deepseek-ai/dsh-tools': ^0.0.1-rc.1
+      '@deepseek-ai/schemastery': ^3.18.1
+
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
@@ -65,6 +82,8 @@ snapshots:
   '@huanlin/dsh-plugin-mineru@https://codeload.github.com/HuanLinOTO/dsh-plugin-mineru/tar.gz/79809aa57bd19be0ca548be52b76161514d02e11':
     dependencies:
       schemastery: 3.18.0
+
+  '@loserfox/distill@https://codeload.github.com/LoserFox/distill/tar.gz/d2aaa395adeffe88e429be796c12d829752cbad1': {}
 
   '@standard-schema/spec@1.1.0': {}
 

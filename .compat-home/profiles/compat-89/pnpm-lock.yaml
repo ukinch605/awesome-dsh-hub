@@ -8,15 +8,25 @@ importers:
 
   .:
     dependencies:
+      '@feiyang666/deepseekharnessdesktop':
+        specifier: github:feiyang-dev/dsh-usage-plugin
+        version: https://codeload.github.com/feiyang-dev/dsh-usage-plugin/tar.gz/e5fdaca7a8e93cee1e8dec168c6e20650efe515e
       dsh-skin:
         specifier: github:KinGao294/dsh-skin
-        version: https://codeload.github.com/KinGao294/dsh-skin/tar.gz/13554dfcb170cd0a629c0ed9b6b0cdce0b01e075
+        version: https://codeload.github.com/KinGao294/dsh-skin/tar.gz/65c79b09d4c5f23e72076ff6b6b6b26c883f935c
 
 packages:
 
-  dsh-skin@https://codeload.github.com/KinGao294/dsh-skin/tar.gz/13554dfcb170cd0a629c0ed9b6b0cdce0b01e075:
-    resolution: {gitHosted: true, integrity: sha512-t9h/7ZJJN9XE2B4JIvESiPGIB2TIY/L8gztyAxMpCi3/LKPc+xbaY0t9GY7hTiTcCVeq1MyoZqNFCGmZbCDypg==, tarball: https://codeload.github.com/KinGao294/dsh-skin/tar.gz/13554dfcb170cd0a629c0ed9b6b0cdce0b01e075}
-    version: 0.2.0
+  '@feiyang666/deepseekharnessdesktop@https://codeload.github.com/feiyang-dev/dsh-usage-plugin/tar.gz/e5fdaca7a8e93cee1e8dec168c6e20650efe515e':
+    resolution: {gitHosted: true, integrity: sha512-qYQgaIleNOH6mtb7vdJ/t8wZ1SaudraIFiYOX8vkohfFc+U1i6I/AWfoogs1clnvxOedBmfPDtZ6PuNDK0raHA==, tarball: https://codeload.github.com/feiyang-dev/dsh-usage-plugin/tar.gz/e5fdaca7a8e93cee1e8dec168c6e20650efe515e}
+    version: 1.4.0
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+
+  dsh-skin@https://codeload.github.com/KinGao294/dsh-skin/tar.gz/65c79b09d4c5f23e72076ff6b6b6b26c883f935c:
+    resolution: {gitHosted: true, integrity: sha512-5DvCpEA4GHNjb8G+p7zwUMznLyFdd9TKWwFD46qMmbwTUp91h3o0HNBNXj9tPLqYwqOwth8CDYOGxOu+ADGiJQ==, tarball: https://codeload.github.com/KinGao294/dsh-skin/tar.gz/65c79b09d4c5f23e72076ff6b6b6b26c883f935c}
+    version: 0.3.1
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
@@ -27,4 +37,6 @@ packages:
 
 snapshots:
 
-  dsh-skin@https://codeload.github.com/KinGao294/dsh-skin/tar.gz/13554dfcb170cd0a629c0ed9b6b0cdce0b01e075: {}
+  '@feiyang666/deepseekharnessdesktop@https://codeload.github.com/feiyang-dev/dsh-usage-plugin/tar.gz/e5fdaca7a8e93cee1e8dec168c6e20650efe515e': {}
+
+  dsh-skin@https://codeload.github.com/KinGao294/dsh-skin/tar.gz/65c79b09d4c5f23e72076ff6b6b6b26c883f935c: {}

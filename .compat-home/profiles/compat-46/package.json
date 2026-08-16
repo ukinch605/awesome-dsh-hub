@@ -1,11 +1,14 @@
 {
   "name": "dsh-profile-compat-46",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "dsh-interconnect": "github:Chinesezjc/dsh-interconnect"
+  },
   "dsh": {
     "profile": {
       "bundles": [
-        "@deepseek-ai/dsh-base"
+        "@deepseek-ai/dsh-base",
+        "dsh-interconnect"
       ]
     }
   }

@@ -11,6 +11,9 @@ importers:
       '@anionex/dsh-turn-rewind':
         specifier: github:Anionex/dsh-turn-rewind
         version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/27ebefa76a2d39b0ecb8f6f92b33946b4a575500
+      sealos:
+        specifier: github:labring/sealos-skills
+        version: https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31
 
 packages:
 
@@ -21,6 +24,21 @@ packages:
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
 
+  sealos@https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31}
+    version: 1.2.5
+
+  yaml@2.9.0:
+    resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
 snapshots:
 
   '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/27ebefa76a2d39b0ecb8f6f92b33946b4a575500': {}
+
+  sealos@https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31:
+    dependencies:
+      yaml: 2.9.0
+
+  yaml@2.9.0: {}

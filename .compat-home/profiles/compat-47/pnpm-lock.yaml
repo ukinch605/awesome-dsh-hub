@@ -8,11 +8,27 @@ importers:
 
   .:
     dependencies:
+      dsh-cost-meter:
+        specifier: github:Han-1413141/dsh-cost-meter
+        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/889303bc0f2faa7a31fe7aed43da5c316952a39b
       dsh-mnemon:
         specifier: github:omdsh-dev/dsh-mnemon
-        version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ade5a7b395f2d0578ae1d8807b8df7d54ac03c3c
+        version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/1cec7a2d4ca69cf3bdf4d75ecf6349eb4d3b3dd2
 
 packages:
+
+  '@deepseek-ai/dsh-credentials@0.1.0-rc.6':
+    resolution: {integrity: sha512-zyYRs3A9gxfZjZfONzJdMhM0Gzbslpha+FGYkLDRAozgPj0N7mZdE+Qflx2V4WNrCnsSjuvOW0HFBxWtSRUTUw==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-brand': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.6
+
+  '@deepseek-ai/dsh-home-paths@0.1.0-rc.6':
+    resolution: {integrity: sha512-gIiUBmqB3L8inFr+hvjZv2/i6EVJOHIHCHg7bBFVhcl4HDK94+8wUCXTLGy80tcuISzIQiIaLuJq/NhSmV9Amw==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.6
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -20,9 +36,13 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
-  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ade5a7b395f2d0578ae1d8807b8df7d54ac03c3c:
-    resolution: {gitHosted: true, integrity: sha512-ZFHk9qlj2+Yy9ROidZ4XGemIwq+MT+tA/bTsg1dXgF20KEgMLSszF9VQFrdhr/PSdnRdUDmsMhaG5/t+IPwQuA==, tarball: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ade5a7b395f2d0578ae1d8807b8df7d54ac03c3c}
-    version: 0.1.4
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/889303bc0f2faa7a31fe7aed43da5c316952a39b:
+    resolution: {gitHosted: true, integrity: sha512-4YPV7bqEvONBR0Hd+TT9lyiRhdfBW928zxNXtEUiB65Mz/qJKwFnXA3BZx6Pbw4TzVmzo1fG7U4Fekrz0rUVcg==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/889303bc0f2faa7a31fe7aed43da5c316952a39b}
+    version: 1.3.1
+
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/1cec7a2d4ca69cf3bdf4d75ecf6349eb4d3b3dd2:
+    resolution: {gitHosted: true, integrity: sha512-0qeWq2KtV/kkBv+ek5gtUvuN/bTcgVc+eUx5eD/2konsd6IiX5YT9F1M3TDzjRweS1K9J7kibMwp10rc3snCkQ==, tarball: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/1cec7a2d4ca69cf3bdf4d75ecf6349eb4d3b3dd2}
+    version: 0.1.5
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
@@ -44,13 +64,30 @@ packages:
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
 snapshots:
+
+  '@deepseek-ai/dsh-credentials@0.1.0-rc.6': {}
+
+  '@deepseek-ai/dsh-home-paths@0.1.0-rc.6': {}
 
   '@standard-schema/spec@1.1.0': {}
 
   cosmokit@1.8.1: {}
 
-  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ade5a7b395f2d0578ae1d8807b8df7d54ac03c3c:
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/889303bc0f2faa7a31fe7aed43da5c316952a39b:
+    dependencies:
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6
+      '@deepseek-ai/dsh-home-paths': 0.1.0-rc.6
+      zod: 4.4.3
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis'
+      - '@deepseek-ai/dsh-brand'
+      - '@deepseek-ai/dsh-invariants'
+
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/1cec7a2d4ca69cf3bdf4d75ecf6349eb4d3b3dd2:
     dependencies:
       fflate: 0.8.3
       markdown-to-jsx: 7.7.17
@@ -64,3 +101,5 @@ snapshots:
     dependencies:
       '@standard-schema/spec': 1.1.0
       cosmokit: 1.8.1
+
+  zod@4.4.3: {}

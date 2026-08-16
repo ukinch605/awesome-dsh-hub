@@ -8,9 +8,12 @@ importers:
 
   .:
     dependencies:
+      deepseek-pet:
+        specifier: github:keleus/deepseek-pet
+        version: https://codeload.github.com/keleus/deepseek-pet/tar.gz/287414d31c9a8fe4122109e85d8fe9dc0299cdc4
       dsh-remote:
         specifier: github:flymysql/dsh-remote
-        version: https://codeload.github.com/flymysql/dsh-remote/tar.gz/393782c39619f37450ec3fc19920e1ff9cd19ee5
+        version: https://codeload.github.com/flymysql/dsh-remote/tar.gz/bd56bcd6435aec08e6ac583c21d39bb9e81f1022
 
 packages:
 
@@ -37,9 +40,29 @@ packages:
     resolution: {integrity: sha512-9IkYqtX3YHPCzoVg1Py+o9057a3i0fp7S530UWokCSaFVTc7CwXPRiOjRjBQQ18ZCNafx78YfnG+HALxtVmOGA==}
     engines: {node: '>=10.0.0'}
 
-  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/393782c39619f37450ec3fc19920e1ff9cd19ee5:
-    resolution: {gitHosted: true, integrity: sha512-2PQGJT9/XF6hhuoUgWU0DdPEP7Ne65vBer8AQbBv/f870Rh6YpB63t21XSMcT/KvqQ+v4T0AX7GZi9N4bz3Hhw==, tarball: https://codeload.github.com/flymysql/dsh-remote/tar.gz/393782c39619f37450ec3fc19920e1ff9cd19ee5}
-    version: 0.5.4
+  deepseek-pet@https://codeload.github.com/keleus/deepseek-pet/tar.gz/287414d31c9a8fe4122109e85d8fe9dc0299cdc4:
+    resolution: {gitHosted: true, integrity: sha512-QI+QUEmbF3CizMeGAahPuhnWmABEhqCSvbXW/MtjST44/Mcuq1tZ0uh2Vf47UozOa2Zamu5jnC3gZFOGzKKhjg==, tarball: https://codeload.github.com/keleus/deepseek-pet/tar.gz/287414d31c9a8fe4122109e85d8fe9dc0299cdc4}
+    version: 0.1.0
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': '*'
+      '@deepseek-ai/dsh-client-runtime': '*'
+      '@deepseek-ai/dsh-client-ui-layout': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-layout':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+
+  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/bd56bcd6435aec08e6ac583c21d39bb9e81f1022:
+    resolution: {gitHosted: true, integrity: sha512-gkEd2Ow7rx+vHjy2LwxZVvPqdGnjZpNt9C4x9XdIMri6cu+w6RoeWhNexrsinKWbaP+SEVawz6wXU9jSuEELLA==, tarball: https://codeload.github.com/flymysql/dsh-remote/tar.gz/bd56bcd6435aec08e6ac583c21d39bb9e81f1022}
+    version: 0.5.7
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
@@ -90,7 +113,9 @@ snapshots:
       nan: 2.28.0
     optional: true
 
-  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/393782c39619f37450ec3fc19920e1ff9cd19ee5:
+  deepseek-pet@https://codeload.github.com/keleus/deepseek-pet/tar.gz/287414d31c9a8fe4122109e85d8fe9dc0299cdc4: {}
+
+  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/bd56bcd6435aec08e6ac583c21d39bb9e81f1022:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
       ssh2: 1.17.0

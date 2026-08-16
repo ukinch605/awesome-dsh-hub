@@ -8,11 +8,28 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/dsh-visualize':
+        specifier: github:Nagi-ovo/dsh-visualize
+        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/dd41b388db67f146c928772c6242c0acdb5bbeae
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/49b0417a6d6fe7a55056bb1a82d4c348a21a6ca6
 
 packages:
+
+  '@dsh-external/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/dd41b388db67f146c928772c6242c0acdb5bbeae':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/dd41b388db67f146c928772c6242c0acdb5bbeae}
+    version: 0.1.2
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-fs': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-sandbox-policy': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-skill': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
 
   '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/49b0417a6d6fe7a55056bb1a82d4c348a21a6ca6':
     resolution: {gitHosted: true, integrity: sha512-J1B7tmYcDMG4RqkNjiAh5YH/pJ2c2x9V+Iemi8w2S6sguFK9vYVq4kz3vkkQx8/QEQSf00h5K8vgKHc5ZK0Wcw==, tarball: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/49b0417a6d6fe7a55056bb1a82d4c348a21a6ca6}
@@ -35,5 +52,7 @@ packages:
       react-dom: ^18.2.0
 
 snapshots:
+
+  '@dsh-external/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/dd41b388db67f146c928772c6242c0acdb5bbeae': {}
 
   '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/49b0417a6d6fe7a55056bb1a82d4c348a21a6ca6': {}

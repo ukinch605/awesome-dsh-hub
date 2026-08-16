@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-56",
   "private": true,
   "dependencies": {
-    "@dsh-external/dsh-plugin-workshop": "github:yyyyukari/dsh-plugin-workshop"
+    "@dsh-external/dsh-plugin-workshop": "github:yyyyukari/dsh-plugin-workshop",
+    "dsh-find-plugin": "github:awesome-dsh-plugin/dsh-find-plugin"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "@dsh-external/dsh-plugin-workshop"
+        "@dsh-external/dsh-plugin-workshop",
+        "dsh-find-plugin"
       ]
     }
   }

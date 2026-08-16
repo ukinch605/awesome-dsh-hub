@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-41",
   "private": true,
   "dependencies": {
+    "@oil-oil/dsh-vision": "github:oil-oil/dsh-vision",
     "dsh-custom-tool": "github:omdsh-dev/dsh-custom-tool"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-custom-tool"
+        "dsh-custom-tool",
+        "@oil-oil/dsh-vision"
       ]
     }
   }

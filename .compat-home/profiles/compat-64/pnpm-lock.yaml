@@ -1,0 +1,39 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dsh-model-router:
+        specifier: github:tianji-qingtian/dsh-model-router
+        version: https://codeload.github.com/tianji-qingtian/dsh-model-router/tar.gz/121ee7d4d9f0b7e063ff1533d8ac20c2bf63f128
+
+packages:
+
+  dsh-model-router@https://codeload.github.com/tianji-qingtian/dsh-model-router/tar.gz/121ee7d4d9f0b7e063ff1533d8ac20c2bf63f128:
+    resolution: {gitHosted: true, integrity: sha512-W2wZrIojvQ9nLT0p3Hjb5/zq2nkpJKPwfct0clGZoMkNiBBRqDQOX6hYSk/IPXMZnttkbiNKWrtmo6QOTo58Rw==, tarball: https://codeload.github.com/tianji-qingtian/dsh-model-router/tar.gz/121ee7d4d9f0b7e063ff1533d8ac20c2bf63f128}
+    version: 0.8.1
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-commands': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session-projection': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      react: ^18.2.0
+
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
+snapshots:
+
+  dsh-model-router@https://codeload.github.com/tianji-qingtian/dsh-model-router/tar.gz/121ee7d4d9f0b7e063ff1533d8ac20c2bf63f128:
+    dependencies:
+      zod: 4.4.3
+
+  zod@4.4.3: {}

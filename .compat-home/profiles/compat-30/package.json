@@ -1,11 +1,14 @@
 {
   "name": "dsh-profile-compat-30",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@nanmicoder/dsh-auto-mode": "github:NanmiCoder/dsh-auto-mode"
+  },
   "dsh": {
     "profile": {
       "bundles": [
-        "@deepseek-ai/dsh-base"
+        "@deepseek-ai/dsh-base",
+        "@nanmicoder/dsh-auto-mode"
       ]
     }
   }

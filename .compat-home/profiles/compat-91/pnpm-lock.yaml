@@ -8,16 +8,26 @@ importers:
 
   .:
     dependencies:
+      '@bill9109/dsh-web-ui-notify':
+        specifier: github:bill9109/dsh-web-ui-notify
+        version: https://codeload.github.com/bill9109/dsh-web-ui-notify/tar.gz/865d2f6fc93f2e0d051d53df772646cb831a43ed
       dsh-models-config-plugin:
         specifier: github:MarvekG/deepseek-harness-model-config
         version: https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/a703fb8232e11034fff921e9b01d0bae86c304c2
 
 packages:
 
+  '@bill9109/dsh-web-ui-notify@https://codeload.github.com/bill9109/dsh-web-ui-notify/tar.gz/865d2f6fc93f2e0d051d53df772646cb831a43ed':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/bill9109/dsh-web-ui-notify/tar.gz/865d2f6fc93f2e0d051d53df772646cb831a43ed}
+    version: 0.1.3
+    engines: {node: ^20.0.0 || >=22.0.0}
+
   dsh-models-config-plugin@https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/a703fb8232e11034fff921e9b01d0bae86c304c2:
     resolution: {gitHosted: true, integrity: sha512-dFG3N+VuFgYKAYdkJnEzi5iAG7i2uNjZPB+l8hwbamSXnboiqn2PJ8IxpDu+p4KYL4+re5NDBsE9OqbIgBiu6g==, tarball: https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/a703fb8232e11034fff921e9b01d0bae86c304c2}
     version: 0.1.0
 
 snapshots:
+
+  '@bill9109/dsh-web-ui-notify@https://codeload.github.com/bill9109/dsh-web-ui-notify/tar.gz/865d2f6fc93f2e0d051d53df772646cb831a43ed': {}
 
   dsh-models-config-plugin@https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/a703fb8232e11034fff921e9b01d0bae86c304c2: {}

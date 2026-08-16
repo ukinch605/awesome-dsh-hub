@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-20",
   "private": true,
   "dependencies": {
+    "@omdsh-dev/dsh-genui": "github:omdsh-dev/dsh-genui",
     "forkprobe-dsh": "github:Jayden-X-L/forkprobe"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "forkprobe-dsh"
+        "forkprobe-dsh",
+        "@omdsh-dev/dsh-genui"
       ]
     }
   }

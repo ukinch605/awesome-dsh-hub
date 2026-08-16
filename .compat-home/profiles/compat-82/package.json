@@ -1,11 +1,14 @@
 {
   "name": "dsh-profile-compat-82",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "dsh-file-explorer": "github:joejojoking-cloud/dsh-file-explorer"
+  },
   "dsh": {
     "profile": {
       "bundles": [
-        "@deepseek-ai/dsh-base"
+        "@deepseek-ai/dsh-base",
+        "dsh-file-explorer"
       ]
     }
   }

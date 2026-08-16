@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-26",
   "private": true,
   "dependencies": {
+    "@anionex/dsh-turn-rewind": "github:Anionex/dsh-turn-rewind",
     "dsh-toy": "github:c3ll256/dsh-toy"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-toy"
+        "dsh-toy",
+        "@anionex/dsh-turn-rewind"
       ]
     }
   }

@@ -10,12 +10,15 @@ importers:
     dependencies:
       '@dsh-external/workflow':
         specifier: github:icetomoyo/dsh_workflow
-        version: https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f
+        version: git+https://github.com/icetomoyo/dsh_workflow.git#44b83c182aa02d1be8a0803e8446cb495f93cd8f
+      '@zseven-w/dsh-openpencil':
+        specifier: github:ZSeven-W/dsh-openpencil
+        version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/49b0417a6d6fe7a55056bb1a82d4c348a21a6ca6
 
 packages:
 
-  '@dsh-external/workflow@https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
-    resolution: {gitHosted: true, integrity: sha512-SvSTrCT/R1o8MDOemrO66M1qqUOL6fOiHaUFKx+HzwFZDEdir54jKHKLn7x7dECQ9tDC2UmbM0s04sbCdbn6PA==, tarball: https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f}
+  '@dsh-external/workflow@git+https://github.com/icetomoyo/dsh_workflow.git#44b83c182aa02d1be8a0803e8446cb495f93cd8f':
+    resolution: {commit: 44b83c182aa02d1be8a0803e8446cb495f93cd8f, repo: https://github.com/icetomoyo/dsh_workflow.git, type: git}
     version: 0.1.2
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
@@ -48,6 +51,26 @@ packages:
   '@jitl/quickjs-wasmfile-release-sync@0.32.0':
     resolution: {integrity: sha512-BKNDI/TPBfGlLNGYpLrhcDGXmIk4xHm4MRAisOBnOzpXVn9HZWsfmMAc9WMBrAHjvvds6HOikKeaOBKdPdpVrg==}
 
+  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/49b0417a6d6fe7a55056bb1a82d4c348a21a6ca6':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/49b0417a6d6fe7a55056bb1a82d4c348a21a6ca6}
+    version: 0.1.0-rc.1
+    engines: {node: '>=24.11.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-fs': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-sandbox-policy': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
   quickjs-emscripten-core@0.32.0:
     resolution: {integrity: sha512-QFnPfjFey8EqknSrSxe1hZrf1/8z7/6s1QzGOmKo6++02r7QRRX7ZoyNaZh7JuVjWsVW87KnQrbZqnHkOAzUyg==}
 
@@ -57,7 +80,7 @@ packages:
 
 snapshots:
 
-  '@dsh-external/workflow@https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
+  '@dsh-external/workflow@git+https://github.com/icetomoyo/dsh_workflow.git#44b83c182aa02d1be8a0803e8446cb495f93cd8f':
     dependencies:
       quickjs-emscripten: 0.32.0
 
@@ -78,6 +101,8 @@ snapshots:
   '@jitl/quickjs-wasmfile-release-sync@0.32.0':
     dependencies:
       '@jitl/quickjs-ffi-types': 0.32.0
+
+  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/49b0417a6d6fe7a55056bb1a82d4c348a21a6ca6': {}
 
   quickjs-emscripten-core@0.32.0:
     dependencies:

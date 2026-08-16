@@ -1,11 +1,14 @@
 {
   "name": "dsh-profile-compat-86",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@yejiming/dsh-gomoku": "github:omdsh-dev/dsh-gomoku"
+  },
   "dsh": {
     "profile": {
       "bundles": [
-        "@deepseek-ai/dsh-base"
+        "@deepseek-ai/dsh-base",
+        "@yejiming/dsh-gomoku"
       ]
     }
   }

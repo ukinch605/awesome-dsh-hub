@@ -8,11 +8,36 @@ importers:
 
   .:
     dependencies:
+      '@yejiming/dsh-data-agent':
+        specifier: github:omdsh-dev/dsh-data-agent
+        version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/78b29b5f91b7dc283f3499507621970f62b89e3f
       dsh-find-plugin:
         specifier: github:awesome-dsh-plugin/dsh-find-plugin
         version: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e75dc2e865c3cfbfd336f7b4bb753fec25d373e1
 
 packages:
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/78b29b5f91b7dc283f3499507621970f62b89e3f':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/78b29b5f91b7dc283f3499507621970f62b89e3f}
+    version: 0.0.6
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-subprocess': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      react: ^18.2.0
+
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
   dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e75dc2e865c3cfbfd336f7b4bb753fec25d373e1:
     resolution: {gitHosted: true, integrity: sha512-x+8sRfP5xtDxjb8r2mhpVAMqMGgbkL3ntBk3QvjQ50QKUFpM0PbAHv5Cvw0EUpiqlnd1wodTi6cRB+glj1h9FA==, tarball: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e75dc2e865c3cfbfd336f7b4bb753fec25d373e1}
@@ -21,6 +46,22 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-tools': ^0.0.1-rc.1
 
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
+
 snapshots:
 
+  '@standard-schema/spec@1.1.0': {}
+
+  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/78b29b5f91b7dc283f3499507621970f62b89e3f':
+    dependencies:
+      schemastery: 3.18.0
+
+  cosmokit@1.8.1: {}
+
   dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e75dc2e865c3cfbfd336f7b4bb753fec25d373e1: {}
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1

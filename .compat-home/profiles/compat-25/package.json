@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-25",
   "private": true,
   "dependencies": {
+    "@dsh-external/workflow": "git+https://github.com/icetomoyo/dsh_workflow.git",
     "dsh-open-in-vscode": "github:omdsh-dev/dsh-open-in-vscode"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-open-in-vscode"
+        "dsh-open-in-vscode",
+        "@dsh-external/workflow"
       ]
     }
   }

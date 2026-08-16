@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-43",
   "private": true,
   "dependencies": {
-    "@tencent-connect/dsh-qqbot": "github:tencent-connect/dsh-qqbot"
+    "@tencent-connect/dsh-qqbot": "github:tencent-connect/dsh-qqbot",
+    "dsh-chat-import": "github:Nwflower/dsh-chat-import"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "@tencent-connect/dsh-qqbot"
+        "@tencent-connect/dsh-qqbot",
+        "dsh-chat-import"
       ]
     }
   }

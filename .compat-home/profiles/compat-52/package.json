@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-52",
   "private": true,
   "dependencies": {
-    "@anionex/dsh-computer-use": "github:Anionex/dsh-computer-use"
+    "@anionex/dsh-computer-use": "github:Anionex/dsh-computer-use",
+    "dsh-custom-tool": "github:omdsh-dev/dsh-custom-tool"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "@anionex/dsh-computer-use"
+        "@anionex/dsh-computer-use",
+        "dsh-custom-tool"
       ]
     }
   }

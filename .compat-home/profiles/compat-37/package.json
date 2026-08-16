@@ -1,11 +1,14 @@
 {
   "name": "dsh-profile-compat-37",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@multica-ai/dsh-runtime": "github:multica-ai/dsh-multica-runtime"
+  },
   "dsh": {
     "profile": {
       "bundles": [
-        "@deepseek-ai/dsh-base"
+        "@deepseek-ai/dsh-base",
+        "@multica-ai/dsh-runtime"
       ]
     }
   }

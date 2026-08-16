@@ -10,12 +10,15 @@ importers:
     dependencies:
       '@dsh-external/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
-        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/e3254f762cbe4dbf796eca05d73a293f0e8e4a87
+        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/dd41b388db67f146c928772c6242c0acdb5bbeae
+      whale-girl:
+        specifier: github:vlln/whale-girl
+        version: https://codeload.github.com/vlln/whale-girl/tar.gz/d8203296eb598cf616be76e0ebdd8eba51c7c54c
 
 packages:
 
-  '@dsh-external/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/e3254f762cbe4dbf796eca05d73a293f0e8e4a87':
-    resolution: {gitHosted: true, integrity: sha512-d0r8BNJqnAaMilmxs0XEJWB7kcuAX6KSQ61sI7QPr0UwKl/AYWZIk+tyAA7R9QcMwWGP2xDY0PBBqvGzllwSXw==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/e3254f762cbe4dbf796eca05d73a293f0e8e4a87}
+  '@dsh-external/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/dd41b388db67f146c928772c6242c0acdb5bbeae':
+    resolution: {gitHosted: true, integrity: sha512-SmG1JJYebojmfpIH1Q42H6niSFjNecmcsqkK+5lD8FSXQhRsaah37DQKTuLwx/cjtmzsrT4W802EsB32/mNV8g==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/dd41b388db67f146c928772c6242c0acdb5bbeae}
     version: 0.1.2
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -28,6 +31,32 @@ packages:
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
 
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
+
+  whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/d8203296eb598cf616be76e0ebdd8eba51c7c54c:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/vlln/whale-girl/tar.gz/d8203296eb598cf616be76e0ebdd8eba51c7c54c}
+    version: 0.1.0
+
 snapshots:
 
-  '@dsh-external/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/e3254f762cbe4dbf796eca05d73a293f0e8e4a87': {}
+  '@dsh-external/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/dd41b388db67f146c928772c6242c0acdb5bbeae': {}
+
+  '@standard-schema/spec@1.1.0': {}
+
+  cosmokit@1.8.1: {}
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1
+
+  whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/d8203296eb598cf616be76e0ebdd8eba51c7c54c:
+    dependencies:
+      schemastery: 3.18.0

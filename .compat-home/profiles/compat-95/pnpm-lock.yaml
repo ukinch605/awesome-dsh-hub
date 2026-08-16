@@ -8,19 +8,33 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/dsh-deep-research':
+        specifier: github:omdsh-dev/dsh-deep-research
+        version: https://codeload.github.com/omdsh-dev/dsh-deep-research/tar.gz/c0b329e02cd0195f810a7c3608cb58701a7fe0f1
       '@huanlin/dsh-plugin-session-delete':
         specifier: github:lsz-asd/dsh-plugin-session-delete
         version: https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5
 
 packages:
 
+  '@dsh-external/dsh-deep-research@https://codeload.github.com/omdsh-dev/dsh-deep-research/tar.gz/c0b329e02cd0195f810a7c3608cb58701a7fe0f1':
+    resolution: {gitHosted: true, integrity: sha512-hqTuG/gYpw3BtkiXezFVwkf5osCMwEigKhQc8wEuz9znr77yidvM6srWss7oIHt+U00F/qbygxTEe3ERdDOotQ==, tarball: https://codeload.github.com/omdsh-dev/dsh-deep-research/tar.gz/c0b329e02cd0195f810a7c3608cb58701a7fe0f1}
+    version: 0.1.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/dsh-tools': ^0.0.1
+      '@deepseek-ai/dsh-workflow': ^0.0.1
+      cordis: ^4.0.0-rc.7
+
   '@huanlin/dsh-plugin-session-delete@https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5':
-    resolution: {gitHosted: true, integrity: sha512-dRrFbjLNF0XYGCRZhBi3RMzqYDmh4sA72Xc0ge85e0FNzLTk+JUHGwWYbHNSYfOu52e8pUn7vpUyjGT5XjMooQ==, tarball: https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5}
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5}
     version: 0.3.1
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
 
 snapshots:
+
+  '@dsh-external/dsh-deep-research@https://codeload.github.com/omdsh-dev/dsh-deep-research/tar.gz/c0b329e02cd0195f810a7c3608cb58701a7fe0f1': {}
 
   '@huanlin/dsh-plugin-session-delete@https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5': {}

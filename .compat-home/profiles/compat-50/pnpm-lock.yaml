@@ -10,14 +10,66 @@ importers:
     dependencies:
       '@deepseek-ai/dsh-plugin-console':
         specifier: github:Noob-stupid/dsh-plugin-hub
-        version: https://codeload.github.com/Noob-stupid/dsh-plugin-hub/tar.gz/4f4a5be6e44f2944cba0e168cff2ef1fb0ff4eb8
+        version: https://codeload.github.com/Noob-stupid/dsh-plugin-hub/tar.gz/6bd855610dfaca76eb75f37fe8ec2c38dc53558c
+      dsh-mnemon:
+        specifier: github:omdsh-dev/dsh-mnemon
+        version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/1cec7a2d4ca69cf3bdf4d75ecf6349eb4d3b3dd2
 
 packages:
 
-  '@deepseek-ai/dsh-plugin-console@https://codeload.github.com/Noob-stupid/dsh-plugin-hub/tar.gz/4f4a5be6e44f2944cba0e168cff2ef1fb0ff4eb8':
-    resolution: {gitHosted: true, integrity: sha512-h8i12oIv+Jt1snsUq9v8Npzfdk2PE2ItYWFm8scwvYb5pPWVI6gkpmJfwwe9MHGnayplDBTAY+G4/VLkd6a3sQ==, tarball: https://codeload.github.com/Noob-stupid/dsh-plugin-hub/tar.gz/4f4a5be6e44f2944cba0e168cff2ef1fb0ff4eb8}
+  '@deepseek-ai/dsh-plugin-console@https://codeload.github.com/Noob-stupid/dsh-plugin-hub/tar.gz/6bd855610dfaca76eb75f37fe8ec2c38dc53558c':
+    resolution: {gitHosted: true, integrity: sha512-hsF4RmypDepzqbd/Gbnn2+VvEbEit/2FuiGAYB9jzieA8HrTaiRYJXJSQoJOivJfYW5kCKULVxkVkFInC4xxvA==, tarball: https://codeload.github.com/Noob-stupid/dsh-plugin-hub/tar.gz/6bd855610dfaca76eb75f37fe8ec2c38dc53558c}
     version: 0.1.0-rc.6
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/1cec7a2d4ca69cf3bdf4d75ecf6349eb4d3b3dd2:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/1cec7a2d4ca69cf3bdf4d75ecf6349eb4d3b3dd2}
+    version: 0.1.5
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
+  fflate@0.8.3:
+    resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
+
+  markdown-to-jsx@7.7.17:
+    resolution: {integrity: sha512-7mG/1feQ0TX5I7YyMZVDgCC/y2I3CiEhIRQIhyov9nGBP5eoVrOXXHuL5ZP8GRfxVZKRiXWJgwXkb9It+nQZfQ==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      react: '>= 0.14.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
 snapshots:
 
-  '@deepseek-ai/dsh-plugin-console@https://codeload.github.com/Noob-stupid/dsh-plugin-hub/tar.gz/4f4a5be6e44f2944cba0e168cff2ef1fb0ff4eb8': {}
+  '@deepseek-ai/dsh-plugin-console@https://codeload.github.com/Noob-stupid/dsh-plugin-hub/tar.gz/6bd855610dfaca76eb75f37fe8ec2c38dc53558c': {}
+
+  '@standard-schema/spec@1.1.0': {}
+
+  cosmokit@1.8.1: {}
+
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/1cec7a2d4ca69cf3bdf4d75ecf6349eb4d3b3dd2:
+    dependencies:
+      fflate: 0.8.3
+      markdown-to-jsx: 7.7.17
+      schemastery: 3.18.0
+
+  fflate@0.8.3: {}
+
+  markdown-to-jsx@7.7.17: {}
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1

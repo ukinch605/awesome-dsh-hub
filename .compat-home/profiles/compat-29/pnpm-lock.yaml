@@ -11,6 +11,9 @@ importers:
       '@dsh-external/dsh-automation':
         specifier: github:titanwings/dsh-automation
         version: https://codeload.github.com/titanwings/dsh-automation/tar.gz/a622b1b1758c6dc6bd476dc66d74a20a4b6762a3
+      dsh-open-in-vscode:
+        specifier: github:omdsh-dev/dsh-open-in-vscode
+        version: https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751
 
 packages:
 
@@ -21,6 +24,40 @@ packages:
     peerDependencies:
       react: ^18.2.0
     peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-open-in-vscode@https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751}
+    version: 0.1.6
+    engines: {node: ^22.19 || >=24}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-runtime': '*'
+      '@deepseek-ai/dsh-client-ui-primitives': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-client-ui-workspace': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      '@deepseek-ai/dsh-typert-registry': '*'
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-primitives':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-workspace':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      '@deepseek-ai/dsh-typert-registry':
+        optional: true
       react:
         optional: true
 
@@ -36,6 +73,10 @@ snapshots:
   '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/a622b1b1758c6dc6bd476dc66d74a20a4b6762a3':
     dependencies:
       luxon: 3.7.2
+      zod: 4.4.3
+
+  dsh-open-in-vscode@https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751:
+    dependencies:
       zod: 4.4.3
 
   luxon@3.7.2: {}

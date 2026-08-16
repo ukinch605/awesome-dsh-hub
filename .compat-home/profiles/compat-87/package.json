@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-87",
   "private": true,
   "dependencies": {
+    "@dhicoc/dsh-reverse-skill": "github:dhicoc/dsh-reverse-skill",
     "dsh-recommend": "github:zp-home/dsh-recommend"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-recommend"
+        "dsh-recommend",
+        "@dhicoc/dsh-reverse-skill"
       ]
     }
   }

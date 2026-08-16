@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-60",
   "private": true,
   "dependencies": {
+    "@dsh-external/dsh-plugin-workshop": "github:yyyyukari/dsh-plugin-workshop",
     "upstash-skills": "github:upstash/skills"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "upstash-skills"
+        "upstash-skills",
+        "@dsh-external/dsh-plugin-workshop"
       ]
     }
   }

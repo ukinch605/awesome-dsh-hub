@@ -8,11 +8,21 @@ importers:
 
   .:
     dependencies:
+      '@huanlin/dsh-plugin-session-delete':
+        specifier: github:lsz-asd/dsh-plugin-session-delete
+        version: https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5
       dsh-composer-polish:
         specifier: github:tianji-qingtian/dsh-composer-polish
         version: https://codeload.github.com/tianji-qingtian/dsh-composer-polish/tar.gz/ce4daad54dcd174f5fb43a1bb290a29bb1ceec4f
 
 packages:
+
+  '@huanlin/dsh-plugin-session-delete@https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5':
+    resolution: {gitHosted: true, integrity: sha512-dRrFbjLNF0XYGCRZhBi3RMzqYDmh4sA72Xc0ge85e0FNzLTk+JUHGwWYbHNSYfOu52e8pUn7vpUyjGT5XjMooQ==, tarball: https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5}
+    version: 0.3.1
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
 
   dsh-composer-polish@https://codeload.github.com/tianji-qingtian/dsh-composer-polish/tar.gz/ce4daad54dcd174f5fb43a1bb290a29bb1ceec4f:
     resolution: {gitHosted: true, integrity: sha512-4zoyPp668RyjkgQ9mJHAefertPvoSE2LMThayAoK+EpeXHXIH0Sz3YB8OngPl/9pTi+Spd9M1W5qzlQp4sy4mw==, tarball: https://codeload.github.com/tianji-qingtian/dsh-composer-polish/tar.gz/ce4daad54dcd174f5fb43a1bb290a29bb1ceec4f}
@@ -25,5 +35,7 @@ packages:
       react: ^18.2.0
 
 snapshots:
+
+  '@huanlin/dsh-plugin-session-delete@https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5': {}
 
   dsh-composer-polish@https://codeload.github.com/tianji-qingtian/dsh-composer-polish/tar.gz/ce4daad54dcd174f5fb43a1bb290a29bb1ceec4f: {}
