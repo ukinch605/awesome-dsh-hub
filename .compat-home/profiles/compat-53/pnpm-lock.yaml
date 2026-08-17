@@ -10,16 +10,25 @@ importers:
     dependencies:
       dsh-reasoning-effort:
         specifier: github:HanaAyane/dsh-reasoning-effort
-        version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/a837e101a59648f0013ff463a407fe61953f1e0f
+        version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/f94622b46078ac8c064f91bdc10ab27e8cf32270
       dsh-share:
         specifier: github:hellodigua/dsh-share
         version: https://codeload.github.com/hellodigua/dsh-share/tar.gz/3f4cbcf2148d0d3cdd86c83b9f3bd48068b1c179
 
 packages:
 
-  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/a837e101a59648f0013ff463a407fe61953f1e0f:
-    resolution: {gitHosted: true, integrity: sha512-RAhDBmuxJBEm6NEQFH0CFKKMGkqK9cuujGjPSTEfMWQAPF3VaYnqjS06TTjCyYtcTuQ+H7MJ1AnE9FppkSiDVw==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/a837e101a59648f0013ff463a407fe61953f1e0f}
-    version: 0.4.0
+  '@deepseek-ai/cosmokit@1.8.2':
+    resolution: {integrity: sha512-muBOKtSrUKU5m/xpq8ZXWL6hQ/jgd4PhU2PqH97bcxIiLEJfNwZOGQEx4t/aS/GgxRAR+ra9pMHPMtTHU4sqqA==}
+
+  '@deepseek-ai/schemastery@3.18.1':
+    resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/f94622b46078ac8c064f91bdc10ab27e8cf32270:
+    resolution: {gitHosted: true, integrity: sha512-Exgx7VBbRY9I+qguzhuT3I5fvdKXq2MqUfVIAccffnewt61CU3ebLs+CKGm4YSncLD2UdonOyu2oe9skDrQDTA==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/f94622b46078ac8c064f91bdc10ab27e8cf32270}
+    version: 0.6.0
     engines: {node: '>=22.19'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -45,6 +54,17 @@ packages:
 
 snapshots:
 
-  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/a837e101a59648f0013ff463a407fe61953f1e0f: {}
+  '@deepseek-ai/cosmokit@1.8.2': {}
+
+  '@deepseek-ai/schemastery@3.18.1':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.2
+      '@standard-schema/spec': 1.1.0
+
+  '@standard-schema/spec@1.1.0': {}
+
+  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/f94622b46078ac8c064f91bdc10ab27e8cf32270:
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
 
   dsh-share@https://codeload.github.com/hellodigua/dsh-share/tar.gz/3f4cbcf2148d0d3cdd86c83b9f3bd48068b1c179: {}

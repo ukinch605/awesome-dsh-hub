@@ -10,18 +10,18 @@ importers:
     dependencies:
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/fcb128f277366c77c1df8ec233b6fa91ae2853f7
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c3033618af8860bdb09dab47aa109ce025dd63b1
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
-        version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/78b29b5f91b7dc283f3499507621970f62b89e3f
+        version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/844e3589c1ded9880d9d12bd3f800eb8705bc502
 
 packages:
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/fcb128f277366c77c1df8ec233b6fa91ae2853f7':
-    resolution: {gitHosted: true, integrity: sha512-TPcz1ZbNSEpdHapjgGpXYqkyi+7z/iZA4QpPQ2hm9BIVvDNiL5vXwRrMdMEaGNZfPKxOagYNys4u+Dbw72pCXw==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/fcb128f277366c77c1df8ec233b6fa91ae2853f7}
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c3033618af8860bdb09dab47aa109ce025dd63b1':
+    resolution: {gitHosted: true, integrity: sha512-DeKOA9IOYXTLOW3wnze47HZGSntLrUpwu2CGUlEflFYgskRr0FPXhAawYXxKdogV/1lBsPVJBYuCHuyY702w2A==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c3033618af8860bdb09dab47aa109ce025dd63b1}
     version: 0.4.0
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1'
@@ -46,27 +46,57 @@ packages:
       silk-wasm:
         optional: true
 
-  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/78b29b5f91b7dc283f3499507621970f62b89e3f':
-    resolution: {gitHosted: true, integrity: sha512-oQJENKqiZhfvEPB3vtYa50tR5YgB3K0CF0IPtRAY5LSqdqPFkJZVgKgq0ZaYxAoV0oC9sprmMU/LpfuM+HBtHw==, tarball: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/78b29b5f91b7dc283f3499507621970f62b89e3f}
-    version: 0.0.6
+  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/844e3589c1ded9880d9d12bd3f800eb8705bc502':
+    resolution: {gitHosted: true, integrity: sha512-JvkH1dhamkl92cpgKMdrYU8tDuFj6GiRoh8x5lulfjoHHGbh2g4htyZbPq1d8Qc21G/flSE2O45fIt9Q21C1LQ==, tarball: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/844e3589c1ded9880d9d12bd3f800eb8705bc502}
+    version: 0.0.9
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-agent': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-commands': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-credentials': ^0.1.0-rc.6
       '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
       '@deepseek-ai/dsh-invariants': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-storage': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-storage-domain': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-storage-json': ^0.1.0-rc.6
       '@deepseek-ai/dsh-subprocess': ^0.1.0-rc.6
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
-      react: ^18.2.0
+      '@deepseek-ai/dsh-user-questions': ^0.1.0-rc.6
+      react: ^18.2.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-primitives':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-tool':
+        optional: true
+      '@deepseek-ai/dsh-host-webserver':
+        optional: true
+      '@deepseek-ai/dsh-user-questions':
+        optional: true
+      react:
+        optional: true
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
+  echarts@6.1.0:
+    resolution: {integrity: sha512-q0yaFPggC9FUdsWH4blavRWFmxdrIodbkoKNAjJudAI6CA9gNPxHtV2RcZNEepZVlk4yvBYkOkbk6HIVpIyHZA==}
 
   js-yaml@4.3.1:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
@@ -78,6 +108,9 @@ packages:
 
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
+
+  tslib@2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
 
   ws@8.21.3:
     resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
@@ -91,11 +124,17 @@ packages:
       utf-8-validate:
         optional: true
 
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
+  zrender@6.1.0:
+    resolution: {integrity: sha512-oEGMDB6pOP2S6OwRR4PdVv610zrjnA3Bh+JnSG12fYJlBKjtNAoEb5fSUoCOOINlH96I2fU38/A2UpRKs67xYQ==}
+
 snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/fcb128f277366c77c1df8ec233b6fa91ae2853f7':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c3033618af8860bdb09dab47aa109ce025dd63b1':
     dependencies:
       '@tencent-connect/qqbot-connector': 1.2.0
       '@tencent-connect/qqbot-nodejs': 1.0.4
@@ -117,13 +156,20 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/78b29b5f91b7dc283f3499507621970f62b89e3f':
+  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/844e3589c1ded9880d9d12bd3f800eb8705bc502':
     dependencies:
+      echarts: 6.1.0
       schemastery: 3.18.0
+      zod: 4.4.3
 
   argparse@2.0.1: {}
 
   cosmokit@1.8.1: {}
+
+  echarts@6.1.0:
+    dependencies:
+      tslib: 2.3.0
+      zrender: 6.1.0
 
   js-yaml@4.3.1:
     dependencies:
@@ -136,4 +182,12 @@ snapshots:
       '@standard-schema/spec': 1.1.0
       cosmokit: 1.8.1
 
+  tslib@2.3.0: {}
+
   ws@8.21.3: {}
+
+  zod@4.4.3: {}
+
+  zrender@6.1.0:
+    dependencies:
+      tslib: 2.3.0

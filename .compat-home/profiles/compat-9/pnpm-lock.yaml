@@ -10,21 +10,22 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/6fd7a03a12caaefdac36f3d418718149ba2d1b46
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/86fcf711a669552ca39ccaad7cf441cc70a7859b
       '@oh-dsh/desktop':
         specifier: github:hust-open-atom-club/oh-dsh
-        version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/1490ba31c1e0f7a84c0b730e970a9c711f5934da
+        version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/883098a85f23416a2ba81cd48f2d349733af5d24
 
 packages:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/6fd7a03a12caaefdac36f3d418718149ba2d1b46':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/6fd7a03a12caaefdac36f3d418718149ba2d1b46}
-    version: 0.1.7
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/86fcf711a669552ca39ccaad7cf441cc70a7859b':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/86fcf711a669552ca39ccaad7cf441cc70a7859b}
+    version: 0.1.24
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-agent': ^0.1.0-rc.6
       '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-attachment': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
@@ -47,8 +48,8 @@ packages:
       '@deepseek-ai/dsh-host-webserver':
         optional: true
 
-  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/1490ba31c1e0f7a84c0b730e970a9c711f5934da':
-    resolution: {gitHosted: true, integrity: sha512-kzOknybDtKMm/ZujzSPjSUw+FtlvaZzOKVLVKZrcQH8PrvpCmfoSOdEdVq5JwXHucqUZlutMfCST65pKRaMWGg==, tarball: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/1490ba31c1e0f7a84c0b730e970a9c711f5934da}
+  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/883098a85f23416a2ba81cd48f2d349733af5d24':
+    resolution: {gitHosted: true, integrity: sha512-pP0vWKpZlJVx2iPaNsWyGkyHBJdjDbP5FrGgmUBgxOUTllENs5M45Gd2caSe+wMghIq+/daq1FH+rxWqsUTxkA==, tarball: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/883098a85f23416a2ba81cd48f2d349733af5d24}
     version: 0.1.5
     engines: {node: '>=24'}
     hasBin: true
@@ -124,11 +125,11 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/6fd7a03a12caaefdac36f3d418718149ba2d1b46':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/86fcf711a669552ca39ccaad7cf441cc70a7859b':
     dependencies:
       saxes: 6.0.0
 
-  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/1490ba31c1e0f7a84c0b730e970a9c711f5934da':
+  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/883098a85f23416a2ba81cd48f2d349733af5d24':
     dependencies:
       electron-updater: 6.8.9
       semver: 7.7.4

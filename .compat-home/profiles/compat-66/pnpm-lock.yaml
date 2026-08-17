@@ -13,9 +13,12 @@ importers:
         version: https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e
       zat-dsh-engine:
         specifier: github:mishibeikejie/zat-dsh-engine
-        version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735
+        version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/db252f3b08eacc1de3d179a6031b9b5be8063240
 
 packages:
+
+  argparse@2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
   dsh-unitarylab-quantum-practices@https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e}
@@ -25,9 +28,13 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-tools': '>=0.0.1-rc.1 <0.2.0'
 
-  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735}
-    version: 0.5.0
+  js-yaml@4.3.1:
+    resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
+    hasBin: true
+
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/db252f3b08eacc1de3d179a6031b9b5be8063240:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/db252f3b08eacc1de3d179a6031b9b5be8063240}
+    version: 0.6.1
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-fs': '*'
@@ -42,10 +49,17 @@ packages:
 
 snapshots:
 
+  argparse@2.0.1: {}
+
   dsh-unitarylab-quantum-practices@https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e: {}
 
-  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735:
+  js-yaml@4.3.1:
     dependencies:
+      argparse: 2.0.1
+
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/db252f3b08eacc1de3d179a6031b9b5be8063240:
+    dependencies:
+      js-yaml: 4.3.1
       zod: 4.4.3
 
   zod@4.4.3: {}

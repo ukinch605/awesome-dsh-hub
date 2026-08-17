@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@nanmicoder/dsh-auto-mode':
         specifier: github:NanmiCoder/dsh-auto-mode
-        version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/db3a2ed8e310b1392e43f7272510b0690852dc45
+        version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a87533e638a88b1dec6eab2dc3a1d32815811a4a
 
 packages:
 
@@ -20,15 +20,16 @@ packages:
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
 
-  '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/db3a2ed8e310b1392e43f7272510b0690852dc45':
-    resolution: {gitHosted: true, integrity: sha512-vJpLByzwB5e9oHps1UT9KFlIlfk9bCM9YXUCqmXeWtUUCW4Y04H2r3OI4Qw6JaRtRBKgNwWUWSBlJE5a7yJmqw==, tarball: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/db3a2ed8e310b1392e43f7272510b0690852dc45}
-    version: 0.1.2
+  '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a87533e638a88b1dec6eab2dc3a1d32815811a4a':
+    resolution: {gitHosted: true, integrity: sha512-rvCjtLRsKx1qOhCvyizikZCQ1gkypfRA/YWOyu+Q0GVXbDbrTTrDwTV9ZJvbEv99hLuAfaXG0ozi8q7LvTSjQg==, tarball: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a87533e638a88b1dec6eab2dc3a1d32815811a4a}
+    version: 0.1.4
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-llm': ^0.1.0-rc.6
       '@deepseek-ai/dsh-permission-presets': ^0.1.0-rc.6
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-user-approval': ^0.1.0-rc.6
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
         optional: true
@@ -37,6 +38,8 @@ packages:
       '@deepseek-ai/dsh-permission-presets':
         optional: true
       '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/dsh-user-approval':
         optional: true
 
   '@standard-schema/spec@1.1.0':
@@ -51,7 +54,7 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
 
-  '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/db3a2ed8e310b1392e43f7272510b0690852dc45':
+  '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a87533e638a88b1dec6eab2dc3a1d32815811a4a':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
 

@@ -10,20 +10,27 @@ importers:
     dependencies:
       dsh-message-edit:
         specifier: github:Moeblack/dsh-message-edit
-        version: https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/e950651786e916feebe5a49c8e4ca46afdca379d
+        version: https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/b78a167064ca612f1c400060d2bfc1dc9bc46436
       zat-dsh-engine:
         specifier: github:mishibeikejie/zat-dsh-engine
-        version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735
+        version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/db252f3b08eacc1de3d179a6031b9b5be8063240
 
 packages:
 
-  dsh-message-edit@https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/e950651786e916feebe5a49c8e4ca46afdca379d:
-    resolution: {gitHosted: true, integrity: sha512-mI/rYdxcJbGqywj0KybZ2klWzyrYgmUfTzzPsCci329aGHT8U4iT3n7Z0+ohjBa+J7aP6s0vfsEkVn/j2wyl8g==, tarball: https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/e950651786e916feebe5a49c8e4ca46afdca379d}
-    version: 0.2.1
+  argparse@2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
-  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735:
-    resolution: {gitHosted: true, integrity: sha512-nFmknIV3AoWoaRbfO9eVDu6GedhTVgotXNGjJiMpHWiNgDDEf13d63YfMDUIfHtNFqcNX5eT6/nxmpFsDwiMRQ==, tarball: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735}
-    version: 0.5.0
+  dsh-message-edit@https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/b78a167064ca612f1c400060d2bfc1dc9bc46436:
+    resolution: {gitHosted: true, integrity: sha512-YtottVkN3dtZMf3JJeq9rQJ2V8m/liaNKlK3D53/mdehUET95avPm0hwdFtS7raN7wpD9jrkHIeMs34fh/ytSg==, tarball: https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/b78a167064ca612f1c400060d2bfc1dc9bc46436}
+    version: 0.2.3
+
+  js-yaml@4.3.1:
+    resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
+    hasBin: true
+
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/db252f3b08eacc1de3d179a6031b9b5be8063240:
+    resolution: {gitHosted: true, integrity: sha512-pzG6z2jk9fdEWigWZ2WLXPPY1Yp7KdLZ/NOAgOIJII0BV9jo3eDtimYpmJhePxKA3qUa78F3LGVVQHl0HidCvw==, tarball: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/db252f3b08eacc1de3d179a6031b9b5be8063240}
+    version: 0.6.1
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-fs': '*'
@@ -38,10 +45,17 @@ packages:
 
 snapshots:
 
-  dsh-message-edit@https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/e950651786e916feebe5a49c8e4ca46afdca379d: {}
+  argparse@2.0.1: {}
 
-  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/a2409b5d2b0dcb044fa09dd1b22cea36a451e735:
+  dsh-message-edit@https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/b78a167064ca612f1c400060d2bfc1dc9bc46436: {}
+
+  js-yaml@4.3.1:
     dependencies:
+      argparse: 2.0.1
+
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/db252f3b08eacc1de3d179a6031b9b5be8063240:
+    dependencies:
+      js-yaml: 4.3.1
       zod: 4.4.3
 
   zod@4.4.3: {}
