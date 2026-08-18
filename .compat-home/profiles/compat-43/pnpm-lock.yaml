@@ -13,7 +13,7 @@ importers:
         version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c3033618af8860bdb09dab47aa109ce025dd63b1
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/cd476356bcc6e4192aed8bec6211bd68a529e061
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/ed7a3d5e084092f62ec6b4947af7362e8235fb8e
 
 packages:
 
@@ -46,15 +46,19 @@ packages:
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/cd476356bcc6e4192aed8bec6211bd68a529e061:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/cd476356bcc6e4192aed8bec6211bd68a529e061}
-    version: 0.5.1
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/ed7a3d5e084092f62ec6b4947af7362e8235fb8e:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/ed7a3d5e084092f62ec6b4947af7362e8235fb8e}
+    version: 0.6.1
     engines: {node: '>=22.13'}
+    hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6'
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
       react: '>=18.0.0'
+
+  fzstd@0.1.1:
+    resolution: {integrity: sha512-dkuVSOKKwh3eas5VkJy1AW1vFpet8TA/fGmVA5krThl8YcOVE/8ZIoEA1+U1vEn5ckxxhLirSdY837azmbaNHA==}
 
   js-yaml@4.3.1:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
@@ -102,7 +106,11 @@ snapshots:
 
   argparse@2.0.1: {}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/cd476356bcc6e4192aed8bec6211bd68a529e061: {}
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/ed7a3d5e084092f62ec6b4947af7362e8235fb8e:
+    dependencies:
+      fzstd: 0.1.1
+
+  fzstd@0.1.1: {}
 
   js-yaml@4.3.1:
     dependencies:

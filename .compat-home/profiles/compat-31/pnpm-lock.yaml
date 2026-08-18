@@ -13,7 +13,7 @@ importers:
         version: https://codeload.github.com/yjh051108/dsh-super-injector/tar.gz/f4ef59fb31439225abefe45d6e793235a2a9d5e0
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/cd476356bcc6e4192aed8bec6211bd68a529e061
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/ed7a3d5e084092f62ec6b4947af7362e8235fb8e
 
 packages:
 
@@ -25,18 +25,26 @@ packages:
       cordis: '>=4.0.0-rc <5'
       schemastery: ^3.18.0
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/cd476356bcc6e4192aed8bec6211bd68a529e061:
-    resolution: {gitHosted: true, integrity: sha512-bc9buXwsr8X7x+imTVq4jeqkEiOLBPsjDUcHzNQ9CAt2ZyjH/An4+CuzjZt7WtSbFBNycEGU8Rpk26JsFBocDg==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/cd476356bcc6e4192aed8bec6211bd68a529e061}
-    version: 0.5.1
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/ed7a3d5e084092f62ec6b4947af7362e8235fb8e:
+    resolution: {gitHosted: true, integrity: sha512-PBRiYXLjS/rW3MoOFYj3dymb1YExgdNa91ncCjuHaB8jMAItJQsLzkmDanCb5sM3VoBkMmyeRlyDsh/C583p9A==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/ed7a3d5e084092f62ec6b4947af7362e8235fb8e}
+    version: 0.6.1
     engines: {node: '>=22.13'}
+    hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6'
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
       react: '>=18.0.0'
 
+  fzstd@0.1.1:
+    resolution: {integrity: sha512-dkuVSOKKwh3eas5VkJy1AW1vFpet8TA/fGmVA5krThl8YcOVE/8ZIoEA1+U1vEn5ckxxhLirSdY837azmbaNHA==}
+
 snapshots:
 
   '@dsh-external/dsh-super-injector@https://codeload.github.com/yjh051108/dsh-super-injector/tar.gz/f4ef59fb31439225abefe45d6e793235a2a9d5e0': {}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/cd476356bcc6e4192aed8bec6211bd68a529e061: {}
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/ed7a3d5e084092f62ec6b4947af7362e8235fb8e:
+    dependencies:
+      fzstd: 0.1.1
+
+  fzstd@0.1.1: {}

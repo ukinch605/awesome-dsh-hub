@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/86fcf711a669552ca39ccaad7cf441cc70a7859b
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/a6858846b9570f31cb36261fab778208095ebae0
       '@oh-dsh/desktop':
         specifier: github:hust-open-atom-club/oh-dsh
-        version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/883098a85f23416a2ba81cd48f2d349733af5d24
+        version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/47e9b1e3784fa408de8ef91b5e9439641c240185
 
 packages:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/86fcf711a669552ca39ccaad7cf441cc70a7859b':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/86fcf711a669552ca39ccaad7cf441cc70a7859b}
-    version: 0.1.24
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/a6858846b9570f31cb36261fab778208095ebae0':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/a6858846b9570f31cb36261fab778208095ebae0}
+    version: 0.1.31
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -48,8 +48,18 @@ packages:
       '@deepseek-ai/dsh-host-webserver':
         optional: true
 
-  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/883098a85f23416a2ba81cd48f2d349733af5d24':
-    resolution: {gitHosted: true, integrity: sha512-pP0vWKpZlJVx2iPaNsWyGkyHBJdjDbP5FrGgmUBgxOUTllENs5M45Gd2caSe+wMghIq+/daq1FH+rxWqsUTxkA==, tarball: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/883098a85f23416a2ba81cd48f2d349733af5d24}
+  '@deepseek-ai/node-addon-landlock-run-linux-x64@0.1.1':
+    resolution: {integrity: sha512-OHAzPW2Coe/iYobAJAAA8CeVrBoKV4BnNHsgwvXwOfishxkUVSWSvdyxrZPiwYRXutpIGVrSo9zV3WOQy2euBA==}
+    engines: {node: '>=20'}
+    cpu: [x64]
+    os: [linux]
+
+  '@isaacs/fs-minipass@4.0.1':
+    resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
+    engines: {node: '>=18.0.0'}
+
+  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/47e9b1e3784fa408de8ef91b5e9439641c240185':
+    resolution: {gitHosted: true, integrity: sha512-6IxuU6wBZpkaY7XO3eRCmRp+oRSFc1o+ra+kqOR9CcUSn9v7cSEHzs3q8F4dr6/AYFh6SNuBJZksyOAwdrKgBA==, tarball: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/47e9b1e3784fa408de8ef91b5e9439641c240185}
     version: 0.1.5
     engines: {node: '>=24'}
     hasBin: true
@@ -60,6 +70,10 @@ packages:
   builder-util-runtime@9.7.0:
     resolution: {integrity: sha512-g/kR520giAFYkSXTzcmF3kqQq7wi8F6N6SzeDgZrqTBN+VHdmgWOyTdD1yD7AATDId/yXLvuP34CxW46/BwCdw==}
     engines: {node: '>=12.0.0'}
+
+  chownr@3.0.0:
+    resolution: {integrity: sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==}
+    engines: {node: '>=18'}
 
   debug@4.4.3:
     resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
@@ -97,6 +111,14 @@ packages:
     resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
     deprecated: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
 
+  minipass@7.1.3:
+    resolution: {integrity: sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==}
+    engines: {node: '>=16 || 14 >=14.17'}
+
+  minizlib@3.1.0:
+    resolution: {integrity: sha512-KZxYo1BUkWD2TVFLr0MQoM8vUUigWD3LlD83a/75BqC+4qE0Hb1Vo5v1FgcfaNXvfXzr+5EhQ6ing/CaBijTlw==}
+    engines: {node: '>= 18'}
+
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
@@ -113,8 +135,16 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  tar@7.5.22:
+    resolution: {integrity: sha512-MFO/QzvtAOmJbkhOaCTvbGcFN9L9b+JunIsDwaKljSOdcLMea3NJ1k9Usz/rjdfSXTq4dfzfeS7W4p4YOAAHeA==}
+    engines: {node: '>=18'}
+
   tiny-typed-emitter@2.1.0:
     resolution: {integrity: sha512-qVtvMxeXbVej0cQWKqVSSAHmKZEHAvxdF8HEUBFWts8h+xEo5m/lEiPakuyZ3BnCBjOD8i24kzNOiOLLgsSxhA==}
+
+  undici@8.10.0:
+    resolution: {integrity: sha512-HvltHd7avK13QIw/oLe4qoOLyoVSoafqJ2jYOrtMRBkbYT31eiBQ8O0ehRKZiEZCMEyLFQNIADpgCWC5fALvYQ==}
+    engines: {node: '>=22.19.0'}
 
   universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
@@ -123,16 +153,31 @@ packages:
   xmlchars@2.2.0:
     resolution: {integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==}
 
+  yallist@5.0.0:
+    resolution: {integrity: sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==}
+    engines: {node: '>=18'}
+
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/86fcf711a669552ca39ccaad7cf441cc70a7859b':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/a6858846b9570f31cb36261fab778208095ebae0':
     dependencies:
       saxes: 6.0.0
+      tar: 7.5.22
+      undici: 8.10.0
 
-  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/883098a85f23416a2ba81cd48f2d349733af5d24':
+  '@deepseek-ai/node-addon-landlock-run-linux-x64@0.1.1':
+    optional: true
+
+  '@isaacs/fs-minipass@4.0.1':
+    dependencies:
+      minipass: 7.1.3
+
+  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/47e9b1e3784fa408de8ef91b5e9439641c240185':
     dependencies:
       electron-updater: 6.8.9
       semver: 7.7.4
+    optionalDependencies:
+      '@deepseek-ai/node-addon-landlock-run-linux-x64': 0.1.1
     transitivePeerDependencies:
       - supports-color
 
@@ -144,6 +189,8 @@ snapshots:
       sax: 1.6.1
     transitivePeerDependencies:
       - supports-color
+
+  chownr@3.0.0: {}
 
   debug@4.4.3:
     dependencies:
@@ -186,6 +233,12 @@ snapshots:
 
   lodash.isequal@4.5.0: {}
 
+  minipass@7.1.3: {}
+
+  minizlib@3.1.0:
+    dependencies:
+      minipass: 7.1.3
+
   ms@2.1.3: {}
 
   sax@1.6.1: {}
@@ -196,8 +249,20 @@ snapshots:
 
   semver@7.7.4: {}
 
+  tar@7.5.22:
+    dependencies:
+      '@isaacs/fs-minipass': 4.0.1
+      chownr: 3.0.0
+      minipass: 7.1.3
+      minizlib: 3.1.0
+      yallist: 5.0.0
+
   tiny-typed-emitter@2.1.0: {}
+
+  undici@8.10.0: {}
 
   universalify@2.0.1: {}
 
   xmlchars@2.2.0: {}
+
+  yallist@5.0.0: {}
