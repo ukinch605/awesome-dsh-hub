@@ -10,7 +10,7 @@ importers:
     dependencies:
       dsh-vision-router:
         specifier: github:ysr666/dsh-vision-router
-        version: https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/66a49df144a766cbd0af328fa34a2228df6964c5
+        version: https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/ad38b49b5b495532d71d9961c0c9c8efc6d9da70
 
 packages:
 
@@ -251,15 +251,22 @@ packages:
   dom-walk@0.1.2:
     resolution: {integrity: sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==}
 
-  dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/66a49df144a766cbd0af328fa34a2228df6964c5:
-    resolution: {gitHosted: true, integrity: sha512-pQgsKxCNmLN1olnXqviwAd/CdMNIXyqWi5S1IepPWJCmTdwnV04gmbG6Z50DVnsBSOv2a8Vhr45kgB6GKeHEKA==, tarball: https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/66a49df144a766cbd0af328fa34a2228df6964c5}
-    version: 1.5.3
-    engines: {node: '>=22'}
+  dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/ad38b49b5b495532d71d9961c0c9c8efc6d9da70:
+    resolution: {gitHosted: true, integrity: sha512-8uZMQ/tuE5qzDnT2fJHMomF9ifoglsPeQps/upsUmGxZvq0XWlpKHYFaAGL1sDURZw4wVxTkZDmhuZbyhjQx9A==, tarball: https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/ad38b49b5b495532d71d9961c0c9c8efc6d9da70}
+    version: 1.6.3
+    engines: {node: ^22.19.0 || >=24.0.0}
     hasBin: true
     peerDependencies:
       '@deepseek-ai/dsh-anonymous-user-id': ^0.1.0-rc.6
       '@deepseek-ai/dsh-llm-deepseek': ^0.1.0-rc.6
       sharp: '>=0.35.3 <1'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-anonymous-user-id':
+        optional: true
+      '@deepseek-ai/dsh-llm-deepseek':
+        optional: true
+      sharp:
+        optional: true
 
   emoji-regex@10.6.0:
     resolution: {integrity: sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==}
@@ -779,7 +786,7 @@ snapshots:
 
   dom-walk@0.1.2: {}
 
-  dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/66a49df144a766cbd0af328fa34a2228df6964c5:
+  dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/ad38b49b5b495532d71d9961c0c9c8efc6d9da70:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
       potrace: 2.1.8

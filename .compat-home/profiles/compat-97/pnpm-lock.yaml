@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@dsh-external/dsh-mobile':
         specifier: github:lehhair/dsh-mobile
-        version: https://codeload.github.com/lehhair/dsh-mobile/tar.gz/4cbd69b781a16aae098f2263aa726e976b967e95
+        version: https://codeload.github.com/lehhair/dsh-mobile/tar.gz/4cbd69b781a16aae098f2263aa726e976b967e95(react@18.3.1)
       dsh-science:
         specifier: github:biociao/dsh-science
-        version: https://codeload.github.com/biociao/dsh-science/tar.gz/05d038969cffa8f6907a8cfb0df3ca127c495c69
+        version: https://codeload.github.com/biociao/dsh-science/tar.gz/23767ab2f8d7bcf84a0820daa4c6ae79549da000
 
 packages:
 
@@ -26,13 +26,45 @@ packages:
       cordis: ^4.0.0-rc.7
       react: ^18.2.0
 
-  dsh-science@https://codeload.github.com/biociao/dsh-science/tar.gz/05d038969cffa8f6907a8cfb0df3ca127c495c69:
-    resolution: {gitHosted: true, integrity: sha512-ruHiWeSfwrQXpmB71wcCTI9Q2xv5Ofz3bl7jB63mFsyR/oR4aR8rpWF7h7q6HKIPz7UCQTHiMBDVPXGndyDhFA==, tarball: https://codeload.github.com/biociao/dsh-science/tar.gz/05d038969cffa8f6907a8cfb0df3ca127c495c69}
-    version: 0.1.1
+  dsh-model-tier@0.1.0:
+    resolution: {integrity: sha512-xLfvANHei1KT5GL32EazIx6rbs4vVy+zCdaAQokIM9IX5gQWRAtnKH0BAR56zTr8wKACwjwyroo4GEanvd7IDg==}
     engines: {node: '>=18'}
+
+  dsh-science@https://codeload.github.com/biociao/dsh-science/tar.gz/23767ab2f8d7bcf84a0820daa4c6ae79549da000:
+    resolution: {gitHosted: true, integrity: sha512-k5vIN+STbhM21dERDNfUu10E+HL7rV+2QwgLH4JHaGQriT/FiztTFmVwMuVHjWF/rPR8YY99tVnNnD8dE9TUYA==, tarball: https://codeload.github.com/biociao/dsh-science/tar.gz/23767ab2f8d7bcf84a0820daa4c6ae79549da000}
+    version: 0.2.0
+    engines: {node: '>=18'}
+
+  js-tokens@4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+
+  loose-envify@1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+
+  react@18.3.1:
+    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
+    engines: {node: '>=0.10.0'}
 
 snapshots:
 
-  '@dsh-external/dsh-mobile@https://codeload.github.com/lehhair/dsh-mobile/tar.gz/4cbd69b781a16aae098f2263aa726e976b967e95': {}
+  '@dsh-external/dsh-mobile@https://codeload.github.com/lehhair/dsh-mobile/tar.gz/4cbd69b781a16aae098f2263aa726e976b967e95(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
 
-  dsh-science@https://codeload.github.com/biociao/dsh-science/tar.gz/05d038969cffa8f6907a8cfb0df3ca127c495c69: {}
+  dsh-model-tier@0.1.0: {}
+
+  dsh-science@https://codeload.github.com/biociao/dsh-science/tar.gz/23767ab2f8d7bcf84a0820daa4c6ae79549da000:
+    dependencies:
+      dsh-model-tier: 0.1.0
+      react: 18.3.1
+
+  js-tokens@4.0.0: {}
+
+  loose-envify@1.4.0:
+    dependencies:
+      js-tokens: 4.0.0
+
+  react@18.3.1:
+    dependencies:
+      loose-envify: 1.4.0

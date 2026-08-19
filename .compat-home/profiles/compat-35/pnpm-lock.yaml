@@ -8,18 +8,26 @@ importers:
 
   .:
     dependencies:
+      dsh-context:
+        specifier: github:bowenliang123/dsh-context
+        version: https://codeload.github.com/bowenliang123/dsh-context/tar.gz/72025f9d313721afab0d80d0b64ad4315b7b19f3
       dsh-interconnect:
         specifier: github:Chinesezjc/dsh-interconnect
-        version: https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/75488fbc4cbfef180e3f36a24438b42f00f43c5c
+        version: https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/e55cc08311b4003b1bfd71157addfa4955c77a7c
 
 packages:
 
-  dsh-interconnect@https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/75488fbc4cbfef180e3f36a24438b42f00f43c5c:
-    resolution: {gitHosted: true, integrity: sha512-MHw38MQG4LwI2MkagFIb8hSZXtDh0hxGGBsVE8eqsmHgIB9r4TS3UeOF4HKHa80dNp9f00rskbyfHU3LdPmLNQ==, tarball: https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/75488fbc4cbfef180e3f36a24438b42f00f43c5c}
-    version: 0.2.0
+  dsh-context@https://codeload.github.com/bowenliang123/dsh-context/tar.gz/72025f9d313721afab0d80d0b64ad4315b7b19f3:
+    resolution: {gitHosted: true, integrity: sha512-5pIjiNjuT/y9FIOSSCgGkswZgQ20X5WxNPCg5xIxNT59Mmnxk7bmrdoKhmKK7rs3o6NsY1975JwO6mgc7aoczA==, tarball: https://codeload.github.com/bowenliang123/dsh-context/tar.gz/72025f9d313721afab0d80d0b64ad4315b7b19f3}
+    version: 0.13.0
+
+  dsh-interconnect@https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/e55cc08311b4003b1bfd71157addfa4955c77a7c:
+    resolution: {gitHosted: true, integrity: sha512-pK+HneUoKxQ48mfs22k9VwFIRaKyiqEFjE3ETWYHHATl4GC0Rl++nMx20MZdQFVrRykvorCBb2L/P0w+1QCluQ==, tarball: https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/e55cc08311b4003b1bfd71157addfa4955c77a7c}
+    version: 0.6.4
     peerDependencies:
       '@deepseek-ai/cordis': '*'
       '@deepseek-ai/dsh-agent': '*'
+      '@deepseek-ai/dsh-api-remotes': '*'
       '@deepseek-ai/dsh-credentials': '*'
       '@deepseek-ai/dsh-host-apiproxy': '*'
       '@deepseek-ai/dsh-host-webserver': '*'
@@ -31,6 +39,23 @@ packages:
       '@deepseek-ai/schemastery': '*'
       ws: '*'
 
+  playwright-core@1.62.1:
+    resolution: {integrity: sha512-wPYSwEBJY9GHraISXqyqtx0na0LpO3XEX7jNDhntbex7tzUS7kLnZsOlFruFJB4Hi/rhDMjXGqHewDZ68nYZVw==}
+    engines: {node: '>=20'}
+    hasBin: true
+
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
 snapshots:
 
-  dsh-interconnect@https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/75488fbc4cbfef180e3f36a24438b42f00f43c5c: {}
+  dsh-context@https://codeload.github.com/bowenliang123/dsh-context/tar.gz/72025f9d313721afab0d80d0b64ad4315b7b19f3:
+    dependencies:
+      playwright-core: 1.62.1
+      zod: 4.4.3
+
+  dsh-interconnect@https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/e55cc08311b4003b1bfd71157addfa4955c77a7c: {}
+
+  playwright-core@1.62.1: {}
+
+  zod@4.4.3: {}
