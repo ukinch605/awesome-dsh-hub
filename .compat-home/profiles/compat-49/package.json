@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-49",
   "private": true,
   "dependencies": {
+    "@ychris12138/dsh-usage-stats": "github:Ychris12138/dsh-usage-stats",
     "dsh-usage-stats": "github:Ychris12138/dsh-usage-stats"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-usage-stats"
+        "dsh-usage-stats",
+        "@ychris12138/dsh-usage-stats"
       ]
     }
   }

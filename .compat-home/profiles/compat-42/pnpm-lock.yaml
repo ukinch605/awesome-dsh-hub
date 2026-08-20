@@ -13,9 +13,33 @@ importers:
         version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/5b5e9b8a374f7289bd398b266dd845137a081784
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
-        version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/428a6b36d283434eb97386c0f97f66235894ae52
+        version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/7caa266c1036d7e3b42d4bc710350c1406b56957
 
 packages:
+
+  '@clickhouse/client@1.23.1':
+    resolution: {integrity: sha512-vs3/Zc1dHvT171btW5nMoPsPCJ6QVJ5pp7obxzO5sjqwFx/jjz9wwCAqcFOdc2DhprugDBaVn+4dVY8hG3A9nw==}
+    engines: {node: '>=20'}
+
+  '@dsh-std/composition@0.1.0-rc1':
+    resolution: {integrity: sha512-sXZOjgicYfJNNhVu2erE8aExY/LFQuWJbdjDuNdCHe6DEvHOol2MdOxTyi4KeOEKPZmIMp8roA4OemTWo1Ak+w==}
+    engines: {node: ^22.19 || >=24}
+
+  '@dsh-std/core@0.1.0-rc1':
+    resolution: {integrity: sha512-jzr2BpH0wQ+peq0ywA+QazjeO6hRpuXLKd4x3EupozUYzynVkXJzf07xk89c9DzO9yfB1WNh9T+LCGcpxRq8PA==}
+    engines: {node: ^22.19 || >=24}
+
+  '@dsh-std/lifecycle@0.1.0-rc1':
+    resolution: {integrity: sha512-e13Atp+cnp/VaY44F2Cni9G3ki2OrvGLoHgGY91/gnq0B2tp587XmSqJvfK9VpeaIqW6WDJVqsHBigtml3Y40w==}
+    engines: {node: ^22.19 || >=24}
+
+  '@dsh-std/manifest@0.1.0-rc1':
+    resolution: {integrity: sha512-u4iaXOg8N03tPZYgwPwtrzvy7zODdjriQYolS6SyfYFCo5ojZCsACCPK0NZxQgHTVnQVZr8XMBHt/+GvQ++xmg==}
+    engines: {node: ^22.19 || >=24}
+
+  '@dsh-std/sdk@0.1.0-rc1':
+    resolution: {integrity: sha512-qWGGoJ5TZC8uckbpnFcg6mhXV3/YohPOoxCWVkoZPG/vRmmRUfAdG0l5Ci/XPljekHR9dko2747fhk81l6CBaw==}
+    engines: {node: ^22.19 || >=24}
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -46,9 +70,9 @@ packages:
       silk-wasm:
         optional: true
 
-  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/428a6b36d283434eb97386c0f97f66235894ae52':
-    resolution: {gitHosted: true, integrity: sha512-jWTVn6/qGFIeY5OEbxL3v+44rTJ3unGjCg1j/7p8M0NFJNd2cyz2U1Rhee8vgSzMrYbIQJtXZsNWFTeFLRuyrQ==, tarball: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/428a6b36d283434eb97386c0f97f66235894ae52}
-    version: 0.0.12
+  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/7caa266c1036d7e3b42d4bc710350c1406b56957':
+    resolution: {gitHosted: true, integrity: sha512-vjA/Yl9dw8KVnGv6AoTTsVb0o2Srs2PTrJgMpFn4vhzSEA9XdpXSz7+ReQL4yHv54zDoiT7xYs8tLPE7tNpTXA==, tarball: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/7caa266c1036d7e3b42d4bc710350c1406b56957}
+    version: 0.0.13
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-agent': ^0.1.0-rc.7
@@ -100,6 +124,9 @@ packages:
   echarts@6.1.0:
     resolution: {integrity: sha512-q0yaFPggC9FUdsWH4blavRWFmxdrIodbkoKNAjJudAI6CA9gNPxHtV2RcZNEepZVlk4yvBYkOkbk6HIVpIyHZA==}
 
+  fflate@0.8.3:
+    resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
+
   js-yaml@4.3.1:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
     hasBin: true
@@ -134,6 +161,30 @@ packages:
 
 snapshots:
 
+  '@clickhouse/client@1.23.1': {}
+
+  '@dsh-std/composition@0.1.0-rc1':
+    dependencies:
+      '@dsh-std/core': 0.1.0-rc1
+      '@dsh-std/manifest': 0.1.0-rc1
+
+  '@dsh-std/core@0.1.0-rc1': {}
+
+  '@dsh-std/lifecycle@0.1.0-rc1':
+    dependencies:
+      '@dsh-std/composition': 0.1.0-rc1
+      '@dsh-std/core': 0.1.0-rc1
+      '@dsh-std/manifest': 0.1.0-rc1
+
+  '@dsh-std/manifest@0.1.0-rc1':
+    dependencies:
+      '@dsh-std/core': 0.1.0-rc1
+
+  '@dsh-std/sdk@0.1.0-rc1':
+    dependencies:
+      '@dsh-std/core': 0.1.0-rc1
+      '@dsh-std/lifecycle': 0.1.0-rc1
+
   '@standard-schema/spec@1.1.0': {}
 
   '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/5b5e9b8a374f7289bd398b266dd845137a081784':
@@ -158,9 +209,12 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/428a6b36d283434eb97386c0f97f66235894ae52':
+  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/7caa266c1036d7e3b42d4bc710350c1406b56957':
     dependencies:
+      '@clickhouse/client': 1.23.1
+      '@dsh-std/sdk': 0.1.0-rc1
       echarts: 6.1.0
+      fflate: 0.8.3
       schemastery: 3.18.0
       zod: 4.4.3
 
@@ -172,6 +226,8 @@ snapshots:
     dependencies:
       tslib: 2.3.0
       zrender: 6.1.0
+
+  fflate@0.8.3: {}
 
   js-yaml@4.3.1:
     dependencies:

@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/2012069c477c473a394c36918dea94e65a152173
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/7eb3776a011a009883cf81f6d98c25ffeec1ca2b
       '@mnemon-dev/dsh-mnemon':
         specifier: github:mnemon-dev/mnemon
-        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/aa74266ac7b3269c49d1c5c47170c2e098221271
+        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3fbb6852c78516e270083860fb06cf05c6c29d4d
 
 packages:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/2012069c477c473a394c36918dea94e65a152173':
-    resolution: {gitHosted: true, integrity: sha512-sNrDPWQ8woDvuryTeKoFVW8bFVjThD/YNOYlNdf9u4wMVmIuXygfHOtY2h0LXIxOqxdR1xlmpBD2KEfcoTYdlw==, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/2012069c477c473a394c36918dea94e65a152173}
-    version: 0.1.34
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/7eb3776a011a009883cf81f6d98c25ffeec1ca2b':
+    resolution: {gitHosted: true, integrity: sha512-F1QQo5mH+PYEd6d6gbxGrWgHekslCkm7iUs1TI8/l+O2eBtLTSnjBLKB5MOS2bG2ZZJE4RtDudCuAxRAPlEw2A==, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/7eb3776a011a009883cf81f6d98c25ffeec1ca2b}
+    version: 0.1.35
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -52,8 +52,8 @@ packages:
     resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
     engines: {node: '>=18.0.0'}
 
-  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/aa74266ac7b3269c49d1c5c47170c2e098221271':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/aa74266ac7b3269c49d1c5c47170c2e098221271}
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3fbb6852c78516e270083860fb06cf05c6c29d4d':
+    resolution: {gitHosted: true, integrity: sha512-ebMYwqMTRn0RlzviBkpyZ/AfkYghBS8xoPvMEtF21D6kvZqWrSK6FHbhVwHktb68ezoPQy0M9GRSS59//v9S3Q==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3fbb6852c78516e270083860fb06cf05c6c29d4d}
     version: 0.1.0
     engines: {node: '>=20'}
 
@@ -67,8 +67,8 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
-  dsh-mnemon@0.2.9:
-    resolution: {integrity: sha512-xwCIMuEkoJNhUtm4Lwtbpqu83ELmxYuhtEcVHwz5q2kbRHjNzZqkfJmCO6wt5HPCH1+Y932rr425mHteVwI9Jw==}
+  dsh-mnemon@0.2.13:
+    resolution: {integrity: sha512-Y5h4BCYTv8vrUIHB56hvImNNPEJIUGvIKidy5BRTYWFo2eeoSAxk/dtf/2xI1rs4TDitBYGPHNYdkNhI5/ao2g==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
@@ -119,7 +119,7 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/2012069c477c473a394c36918dea94e65a152173':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/7eb3776a011a009883cf81f6d98c25ffeec1ca2b':
     dependencies:
       saxes: 6.0.0
       tar: 7.5.22
@@ -129,9 +129,9 @@ snapshots:
     dependencies:
       minipass: 7.1.3
 
-  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/aa74266ac7b3269c49d1c5c47170c2e098221271':
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3fbb6852c78516e270083860fb06cf05c6c29d4d':
     dependencies:
-      dsh-mnemon: 0.2.9
+      dsh-mnemon: 0.2.13
     transitivePeerDependencies:
       - '@deepseek-ai/dsh-client-ui-primitives'
       - react
@@ -143,7 +143,7 @@ snapshots:
 
   cosmokit@1.8.1: {}
 
-  dsh-mnemon@0.2.9:
+  dsh-mnemon@0.2.13:
     dependencies:
       fflate: 0.8.3
       markdown-to-jsx: 7.7.17

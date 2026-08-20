@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@omdsh-dev/dsh-genui':
         specifier: github:omdsh-dev/dsh-genui
-        version: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/dab48fae600edb97859591ff6a25feb363d10721(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-tools@0.1.0-rc.6(@deepseek-ai/cordis@4.0.1))
+        version: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/dd7a6ea3126dd70dda30552fa724cb90e8af26e5(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-tools@0.1.0-rc.6(@deepseek-ai/cordis@4.0.1))
       forkprobe-dsh:
         specifier: github:Jayden-X-L/forkprobe
-        version: https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/defe0b47e0d69c12ce586d4d85bfe4f3ec34edd3
+        version: https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e
 
 packages:
 
@@ -48,27 +48,30 @@ packages:
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
 
-  '@omdsh-dev/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/dab48fae600edb97859591ff6a25feb363d10721':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/dab48fae600edb97859591ff6a25feb363d10721}
+  '@omdsh-dev/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/dd7a6ea3126dd70dda30552fa724cb90e8af26e5':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/dd7a6ea3126dd70dda30552fa724cb90e8af26e5}
     version: 0.8.7
     engines: {node: ^22.19.0 || >=24.0.0, pnpm: '>=11.7.0 <12'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.8
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.8
+      '@deepseek-ai/dsh-client-ui-input-trigger': ^0.1.0-rc.8
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.8
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.8
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.8
+      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.8
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.8
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.8
+      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.8
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.8
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  forkprobe-dsh@https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/defe0b47e0d69c12ce586d4d85bfe4f3ec34edd3:
-    resolution: {gitHosted: true, integrity: sha512-3ziyo2Z2e8J+s5o0Ng9YmrwyOuUTjsmTqvnMNu4hpxG8xhTtTwub3YOQtR+caUiPKjU4fJVfhEuAop3+84BCFg==, tarball: https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/defe0b47e0d69c12ce586d4d85bfe4f3ec34edd3}
-    version: 0.10.0
+  forkprobe-dsh@https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e:
+    resolution: {gitHosted: true, integrity: sha512-m9fwK3x3LCUugg4Xi54I0EWw1qEqojVCoNuI3WLqTXY5P2Zxyx2VEU3z1twHqr9gYcVWm3qPAm40gZiGNow9uQ==, tarball: https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e}
+    version: 1.1.0
     engines: {node: '>=22.19'}
     peerDependencies:
       '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6'
@@ -105,7 +108,7 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
 
-  '@omdsh-dev/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/dab48fae600edb97859591ff6a25feb363d10721(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-tools@0.1.0-rc.6(@deepseek-ai/cordis@4.0.1))':
+  '@omdsh-dev/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/dd7a6ea3126dd70dda30552fa724cb90e8af26e5(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-tools@0.1.0-rc.6(@deepseek-ai/cordis@4.0.1))':
     dependencies:
       '@deepseek-ai/cordis': 4.0.1
       '@deepseek-ai/dsh-tools': 0.1.0-rc.6(@deepseek-ai/cordis@4.0.1)
@@ -113,7 +116,7 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  forkprobe-dsh@https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/defe0b47e0d69c12ce586d4d85bfe4f3ec34edd3:
+  forkprobe-dsh@https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e:
     dependencies:
       '@deepseek-ai/cordis': 4.0.1
       '@deepseek-ai/dsh-tools': 0.1.0-rc.6(@deepseek-ai/cordis@4.0.1)
