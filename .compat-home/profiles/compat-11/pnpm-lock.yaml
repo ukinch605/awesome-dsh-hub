@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@nanmicoder/dsh-agent-teams':
         specifier: github:NanmiCoder/dsh-agent-teams
-        version: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/801954dd7be67213cf4adc1aeb6f97bd3daa12cc
+        version: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/83ef213dd2bdad995afee2461639b08459be704e
       whale-girl:
         specifier: github:vlln/whale-girl
         version: https://codeload.github.com/vlln/whale-girl/tar.gz/e22e1fd918746e610f7bfb1713cef1e57a56f37c
 
 packages:
 
-  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/801954dd7be67213cf4adc1aeb6f97bd3daa12cc':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/801954dd7be67213cf4adc1aeb6f97bd3daa12cc}
-    version: 0.1.8
+  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/83ef213dd2bdad995afee2461639b08459be704e':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/83ef213dd2bdad995afee2461639b08459be704e}
+    version: 0.1.10
     engines: {node: ^22.19.0 || >=24}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1-rc.1
@@ -27,6 +27,7 @@ packages:
       '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-layout': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
       '@deepseek-ai/dsh-commands': ^0.1.0-rc.6
@@ -47,6 +48,8 @@ packages:
       '@deepseek-ai/dsh-client-runtime':
         optional: true
       '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-layout':
         optional: true
       '@deepseek-ai/dsh-client-ui-primitives':
         optional: true
@@ -84,7 +87,7 @@ packages:
 
 snapshots:
 
-  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/801954dd7be67213cf4adc1aeb6f97bd3daa12cc': {}
+  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/83ef213dd2bdad995afee2461639b08459be704e': {}
 
   '@standard-schema/spec@1.1.0': {}
 

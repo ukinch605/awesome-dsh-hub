@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/7eb3776a011a009883cf81f6d98c25ffeec1ca2b
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/ca07cda11c5e5a9454203eb829098c6fb44f17f1
       '@mnemon-dev/dsh-mnemon':
         specifier: github:mnemon-dev/mnemon
         version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3fbb6852c78516e270083860fb06cf05c6c29d4d
 
 packages:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/7eb3776a011a009883cf81f6d98c25ffeec1ca2b':
-    resolution: {gitHosted: true, integrity: sha512-F1QQo5mH+PYEd6d6gbxGrWgHekslCkm7iUs1TI8/l+O2eBtLTSnjBLKB5MOS2bG2ZZJE4RtDudCuAxRAPlEw2A==, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/7eb3776a011a009883cf81f6d98c25ffeec1ca2b}
-    version: 0.1.35
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/ca07cda11c5e5a9454203eb829098c6fb44f17f1':
+    resolution: {gitHosted: true, integrity: sha512-Kp4PjC312P1yppkEhdwT2E1UkG1JneRYoKK/QGLa9q5f3zaD736lAN2D4flkjtaHXtb2OZE4TKUMoaxLb4heTA==, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/ca07cda11c5e5a9454203eb829098c6fb44f17f1}
+    version: 0.1.38
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -40,6 +40,7 @@ packages:
       '@deepseek-ai/dsh-session': ^0.1.0-rc.6
       '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
       '@deepseek-ai/dsh-skill': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-storage-domain': ^0.1.0-rc.6
       '@deepseek-ai/dsh-subprocess': ^0.1.0-rc.6
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
       '@deepseek-ai/schemastery': ^3.18.1
@@ -67,8 +68,8 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
-  dsh-mnemon@0.2.13:
-    resolution: {integrity: sha512-Y5h4BCYTv8vrUIHB56hvImNNPEJIUGvIKidy5BRTYWFo2eeoSAxk/dtf/2xI1rs4TDitBYGPHNYdkNhI5/ao2g==}
+  dsh-mnemon@0.2.14:
+    resolution: {integrity: sha512-cleCeAHxuQGETanJtg+CUkMC0Xp763+vus3mu1vcgvUJvTwCGIM8Sem7mGbB8KvZhi9c6VGZJyr3L0ThFj83Jw==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
@@ -117,13 +118,17 @@ packages:
     resolution: {integrity: sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==}
     engines: {node: '>=18'}
 
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/7eb3776a011a009883cf81f6d98c25ffeec1ca2b':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/ca07cda11c5e5a9454203eb829098c6fb44f17f1':
     dependencies:
       saxes: 6.0.0
       tar: 7.5.22
       undici: 8.10.0
+      zod: 4.4.3
 
   '@isaacs/fs-minipass@4.0.1':
     dependencies:
@@ -131,7 +136,7 @@ snapshots:
 
   '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3fbb6852c78516e270083860fb06cf05c6c29d4d':
     dependencies:
-      dsh-mnemon: 0.2.13
+      dsh-mnemon: 0.2.14
     transitivePeerDependencies:
       - '@deepseek-ai/dsh-client-ui-primitives'
       - react
@@ -143,7 +148,7 @@ snapshots:
 
   cosmokit@1.8.1: {}
 
-  dsh-mnemon@0.2.13:
+  dsh-mnemon@0.2.14:
     dependencies:
       fflate: 0.8.3
       markdown-to-jsx: 7.7.17
@@ -181,3 +186,5 @@ snapshots:
   xmlchars@2.2.0: {}
 
   yallist@5.0.0: {}
+
+  zod@4.4.3: {}

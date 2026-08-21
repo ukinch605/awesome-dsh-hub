@@ -10,16 +10,26 @@ importers:
     dependencies:
       dsh-context:
         specifier: github:bowenliang123/dsh-context
-        version: https://codeload.github.com/bowenliang123/dsh-context/tar.gz/19731afd862f0281ce5999c9663f70b72f4313fe
+        version: https://codeload.github.com/bowenliang123/dsh-context/tar.gz/dec8b16e62ad10152b832b5c36c679bd8e66b956
       dsh-interconnect:
         specifier: github:Chinesezjc/dsh-interconnect
         version: https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/32ca0ec0441983f7eded7c6d2bfbecfda02087b0
 
 packages:
 
-  dsh-context@https://codeload.github.com/bowenliang123/dsh-context/tar.gz/19731afd862f0281ce5999c9663f70b72f4313fe:
-    resolution: {gitHosted: true, integrity: sha512-teYrKxmrxzmhpDAqhDjj7IDU+3Teia4kk26Ube7lb2ekbuOP44nmk7WQ84Hk7x04ngr2FMhjwD82H1jXfy5M7g==, tarball: https://codeload.github.com/bowenliang123/dsh-context/tar.gz/19731afd862f0281ce5999c9663f70b72f4313fe}
-    version: 0.17.0
+  dsh-context@https://codeload.github.com/bowenliang123/dsh-context/tar.gz/dec8b16e62ad10152b832b5c36c679bd8e66b956:
+    resolution: {gitHosted: true, integrity: sha512-gGAZDuBI7JgKURR6I0wmPeRIZuulAdzlrQCjBP9wZR+I9u26rs+g1y0MCpuBNw0/A0tTI9fXcwdj+0Oz9IFnMw==, tarball: https://codeload.github.com/bowenliang123/dsh-context/tar.gz/dec8b16e62ad10152b832b5c36c679bd8e66b956}
+    version: 0.19.2
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.7
+      react: ^18.3.1
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-client-ui-primitives':
+        optional: true
+      react:
+        optional: true
 
   dsh-interconnect@https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/32ca0ec0441983f7eded7c6d2bfbecfda02087b0:
     resolution: {gitHosted: true, integrity: sha512-b5BWHI9vM5bJPmCMZJO3DzBOqx6xobXphMyKv5YqFsAQ3vge/uZlHVLhSk6Vyrn7uW0UVPfEhmjnGQhRBdkajg==, tarball: https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/32ca0ec0441983f7eded7c6d2bfbecfda02087b0}
@@ -44,7 +54,7 @@ packages:
 
 snapshots:
 
-  dsh-context@https://codeload.github.com/bowenliang123/dsh-context/tar.gz/19731afd862f0281ce5999c9663f70b72f4313fe:
+  dsh-context@https://codeload.github.com/bowenliang123/dsh-context/tar.gz/dec8b16e62ad10152b832b5c36c679bd8e66b956:
     dependencies:
       zod: 4.4.3
 
