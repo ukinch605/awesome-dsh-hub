@@ -10,15 +10,15 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/ca07cda11c5e5a9454203eb829098c6fb44f17f1
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/5a33bf6e9ff38f2d05d32fd6ee41479b8340ac5c
       '@mnemon-dev/dsh-mnemon':
         specifier: github:mnemon-dev/mnemon
         version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3fbb6852c78516e270083860fb06cf05c6c29d4d
 
 packages:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/ca07cda11c5e5a9454203eb829098c6fb44f17f1':
-    resolution: {gitHosted: true, integrity: sha512-Kp4PjC312P1yppkEhdwT2E1UkG1JneRYoKK/QGLa9q5f3zaD736lAN2D4flkjtaHXtb2OZE4TKUMoaxLb4heTA==, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/ca07cda11c5e5a9454203eb829098c6fb44f17f1}
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/5a33bf6e9ff38f2d05d32fd6ee41479b8340ac5c':
+    resolution: {gitHosted: true, integrity: sha512-urAKuxLdrTmzLjmeehRDycLLA1Zrp6zjlj5bpDoJLjkzPOUmB9ysr4TDieUgK7DicAYk+EKZHEbVyCRa3DItXQ==, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/5a33bf6e9ff38f2d05d32fd6ee41479b8340ac5c}
     version: 0.1.38
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
@@ -68,11 +68,11 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
-  dsh-mnemon@0.2.14:
-    resolution: {integrity: sha512-cleCeAHxuQGETanJtg+CUkMC0Xp763+vus3mu1vcgvUJvTwCGIM8Sem7mGbB8KvZhi9c6VGZJyr3L0ThFj83Jw==}
+  dsh-mnemon@0.2.15:
+    resolution: {integrity: sha512-k6s6ZxckDaZ8RNo1ur8o8FIXKVnM1j1fSUEJn/0AJAP4grb+MtC0VRHn3osTd5zEMX5nJtgf+wU5AVc4wu11Xw==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6 || ^0.1.1-rc.1
       react: ^18.2.0
       react-dom: ^18.2.0
 
@@ -123,7 +123,7 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/ca07cda11c5e5a9454203eb829098c6fb44f17f1':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/5a33bf6e9ff38f2d05d32fd6ee41479b8340ac5c':
     dependencies:
       saxes: 6.0.0
       tar: 7.5.22
@@ -136,7 +136,7 @@ snapshots:
 
   '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3fbb6852c78516e270083860fb06cf05c6c29d4d':
     dependencies:
-      dsh-mnemon: 0.2.14
+      dsh-mnemon: 0.2.15
     transitivePeerDependencies:
       - '@deepseek-ai/dsh-client-ui-primitives'
       - react
@@ -148,7 +148,7 @@ snapshots:
 
   cosmokit@1.8.1: {}
 
-  dsh-mnemon@0.2.14:
+  dsh-mnemon@0.2.15:
     dependencies:
       fflate: 0.8.3
       markdown-to-jsx: 7.7.17

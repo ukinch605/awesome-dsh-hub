@@ -9,13 +9,13 @@ importers:
   .:
     dependencies:
       dsh-at-file:
-        specifier: github:omdsh-dev/dsh-at-file
-        version: https://codeload.github.com/omdsh-dev/dsh-at-file/tar.gz/c57849b27e378cf6b41d082b17c8a8750cee370f
+        specifier: git+https://github.com/omdsh-dev/dsh-at-file.git
+        version: git+https://github.com/omdsh-dev/dsh-at-file.git#c57849b27e378cf6b41d082b17c8a8750cee370f
 
 packages:
 
-  dsh-at-file@https://codeload.github.com/omdsh-dev/dsh-at-file/tar.gz/c57849b27e378cf6b41d082b17c8a8750cee370f:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/omdsh-dev/dsh-at-file/tar.gz/c57849b27e378cf6b41d082b17c8a8750cee370f}
+  dsh-at-file@git+https://github.com/omdsh-dev/dsh-at-file.git#c57849b27e378cf6b41d082b17c8a8750cee370f:
+    resolution: {commit: c57849b27e378cf6b41d082b17c8a8750cee370f, repo: https://github.com/omdsh-dev/dsh-at-file.git, type: git}
     version: 0.6.7
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1-rc.1
@@ -70,7 +70,7 @@ packages:
 
 snapshots:
 
-  dsh-at-file@https://codeload.github.com/omdsh-dev/dsh-at-file/tar.gz/c57849b27e378cf6b41d082b17c8a8750cee370f:
+  dsh-at-file@git+https://github.com/omdsh-dev/dsh-at-file.git#c57849b27e378cf6b41d082b17c8a8750cee370f:
     dependencies:
       zod: 4.4.3
 

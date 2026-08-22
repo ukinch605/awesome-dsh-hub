@@ -13,7 +13,7 @@ importers:
         version: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/3a2ba704bc383099c686d3288ff6e0d61fc391e5
       dsh-at-file:
         specifier: github:omdsh-dev/dsh-at-file
-        version: https://codeload.github.com/omdsh-dev/dsh-at-file/tar.gz/c57849b27e378cf6b41d082b17c8a8750cee370f
+        version: git+https://github.com/omdsh-dev/dsh-at-file.git#c57849b27e378cf6b41d082b17c8a8750cee370f
 
 packages:
 
@@ -26,8 +26,8 @@ packages:
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
 
-  dsh-at-file@https://codeload.github.com/omdsh-dev/dsh-at-file/tar.gz/c57849b27e378cf6b41d082b17c8a8750cee370f:
-    resolution: {gitHosted: true, integrity: sha512-90+PtYgkTa72zM5Ui24D6yulDmVn3pUWmBdwoHjyNNKWLPFMZ22u49/faU+Ymr9Y8VJs5swOuRlt6r8RdhUtnA==, tarball: https://codeload.github.com/omdsh-dev/dsh-at-file/tar.gz/c57849b27e378cf6b41d082b17c8a8750cee370f}
+  dsh-at-file@git+https://github.com/omdsh-dev/dsh-at-file.git#c57849b27e378cf6b41d082b17c8a8750cee370f:
+    resolution: {commit: c57849b27e378cf6b41d082b17c8a8750cee370f, repo: https://github.com/omdsh-dev/dsh-at-file.git, type: git}
     version: 0.6.7
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1-rc.1
@@ -84,7 +84,7 @@ snapshots:
 
   '@dsh-external/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/3a2ba704bc383099c686d3288ff6e0d61fc391e5': {}
 
-  dsh-at-file@https://codeload.github.com/omdsh-dev/dsh-at-file/tar.gz/c57849b27e378cf6b41d082b17c8a8750cee370f:
+  dsh-at-file@git+https://github.com/omdsh-dev/dsh-at-file.git#c57849b27e378cf6b41d082b17c8a8750cee370f:
     dependencies:
       zod: 4.4.3
 

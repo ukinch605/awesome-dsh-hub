@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-74",
   "private": true,
   "dependencies": {
+    "dsh-tabbit": "git+https://github.com/Tabbit-Browser/dsh-plugin.git",
     "tabbit-browser": "github:Tabbit-Browser/dsh-plugin"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "tabbit-browser"
+        "tabbit-browser",
+        "dsh-tabbit"
       ]
     }
   }
