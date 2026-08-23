@@ -13,7 +13,7 @@ importers:
         version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/5a33bf6e9ff38f2d05d32fd6ee41479b8340ac5c
       '@mnemon-dev/dsh-mnemon':
         specifier: github:mnemon-dev/mnemon
-        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3fbb6852c78516e270083860fb06cf05c6c29d4d
+        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3d788947f3d9f3b6823d40bee35b3c64b3f035ef
 
 packages:
 
@@ -53,8 +53,8 @@ packages:
     resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
     engines: {node: '>=18.0.0'}
 
-  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3fbb6852c78516e270083860fb06cf05c6c29d4d':
-    resolution: {gitHosted: true, integrity: sha512-ebMYwqMTRn0RlzviBkpyZ/AfkYghBS8xoPvMEtF21D6kvZqWrSK6FHbhVwHktb68ezoPQy0M9GRSS59//v9S3Q==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3fbb6852c78516e270083860fb06cf05c6c29d4d}
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3d788947f3d9f3b6823d40bee35b3c64b3f035ef':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3d788947f3d9f3b6823d40bee35b3c64b3f035ef}
     version: 0.1.0
     engines: {node: '>=20'}
 
@@ -68,8 +68,8 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
-  dsh-mnemon@0.2.15:
-    resolution: {integrity: sha512-k6s6ZxckDaZ8RNo1ur8o8FIXKVnM1j1fSUEJn/0AJAP4grb+MtC0VRHn3osTd5zEMX5nJtgf+wU5AVc4wu11Xw==}
+  dsh-mnemon@0.2.16:
+    resolution: {integrity: sha512-aol5V3Xf9DaJq+qZSpWc4uP8c/u5O7ItBoE47fKj5FON9sVFrMsLKid9HbVyFv44arhRugg1W2Idlr5SvO/MxA==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6 || ^0.1.1-rc.1
@@ -134,9 +134,9 @@ snapshots:
     dependencies:
       minipass: 7.1.3
 
-  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3fbb6852c78516e270083860fb06cf05c6c29d4d':
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/3d788947f3d9f3b6823d40bee35b3c64b3f035ef':
     dependencies:
-      dsh-mnemon: 0.2.15
+      dsh-mnemon: 0.2.16
     transitivePeerDependencies:
       - '@deepseek-ai/dsh-client-ui-primitives'
       - react
@@ -148,7 +148,7 @@ snapshots:
 
   cosmokit@1.8.1: {}
 
-  dsh-mnemon@0.2.15:
+  dsh-mnemon@0.2.16:
     dependencies:
       fflate: 0.8.3
       markdown-to-jsx: 7.7.17
