@@ -13,9 +13,27 @@ importers:
         version: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/2adee4387850e23099a617cddf8f85300c404988
       '@omdsh-dev/dsh-genui':
         specifier: github:omdsh-dev/dsh-genui
-        version: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/1ca5da4eb9394972cce2c1ccacfedc22eec3166b
+        version: '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/8183de81da25ab50dd63d005d22a566a91250d30'
 
 packages:
+
+  '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/8183de81da25ab50dd63d005d22a566a91250d30':
+    resolution: {gitHosted: true, integrity: sha512-juX5XR8TCGfk7W0suHGo8qGd9Z2n3AAbv4GIZB7kzsKkUf3gEF1ZoLVb3BIda3n6sS73RqgS2k5xtrBRXzpLEA==, tarball: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/8183de81da25ab50dd63d005d22a566a91250d30}
+    version: 0.9.2
+    engines: {node: ^22.19.0 || >=24.0.0, pnpm: '>=11.7.0 <12'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-client-ui-input-trigger': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
 
   '@huiliyi37/dsh-tianshu-tui@https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/2adee4387850e23099a617cddf8f85300c404988':
     resolution: {gitHosted: true, integrity: sha512-3xXcUBxDP/vWs+BzD0HfWKKtWGpc5DqrCAnVdanuc+0bNGVZJNctCDcLgVeZOTiS3/nk3R5He1erLgxcwObpYA==, tarball: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/2adee4387850e23099a617cddf8f85300c404988}
@@ -37,24 +55,6 @@ packages:
       '@deepseek-ai/dsh-user-approval': ^0.1.0-rc.8
       '@deepseek-ai/dsh-user-questions': ^0.1.0-rc.8
       '@deepseek-ai/dsh-workflow': ^0.1.0-rc.8
-
-  '@omdsh-dev/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/1ca5da4eb9394972cce2c1ccacfedc22eec3166b':
-    resolution: {gitHosted: true, integrity: sha512-V1mfHpVY8luDA6UnN23sonqtEhkoYhtgTwnOE6JPunEmshBrKNStFcJcffq3ksnRb4dWGH4ruAmZjIUAkIbZVw==, tarball: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/1ca5da4eb9394972cce2c1ccacfedc22eec3166b}
-    version: 0.9.1
-    engines: {node: ^22.19.0 || >=24.0.0, pnpm: '>=11.7.0 <12'}
-    peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
-      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
-      '@deepseek-ai/dsh-client-ui-input-trigger': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
-      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
-      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
-      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
-      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
-      '@deepseek-ai/dsh-llm': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
-      '@deepseek-ai/dsh-session': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
-      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
-      '@deepseek-ai/dsh-tools': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
 
   ansi-regex@6.3.0:
     resolution: {integrity: sha512-WpDfL7NO6j7tH88IDBNVdUJxDh9nmCteAVW9dsep846XdwF4naCBK+/tGLX3KJgcpgMRXCFlTM2hKGoK9FsdrQ==}
@@ -93,16 +93,16 @@ packages:
 
 snapshots:
 
+  '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/8183de81da25ab50dd63d005d22a566a91250d30':
+    dependencies:
+      react: 18.3.1
+
   '@huiliyi37/dsh-tianshu-tui@https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/2adee4387850e23099a617cddf8f85300c404988':
     dependencies:
       chalk: 6.0.0
       diff: 9.0.0
       get-east-asian-width: 1.6.0
       string-width: 8.2.2
-
-  '@omdsh-dev/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/1ca5da4eb9394972cce2c1ccacfedc22eec3166b':
-    dependencies:
-      react: 18.3.1
 
   ansi-regex@6.3.0: {}
 

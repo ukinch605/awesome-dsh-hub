@@ -8,19 +8,22 @@ importers:
 
   .:
     dependencies:
+      '@changfenhuang/dsh-annotation':
+        specifier: github:omdsh-dev/dsh-annotation
+        version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/d49951bd3b4810b81ebdb7eb232c414ed3ed6adb
       '@omdsh-dev/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
-        version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/599cd1e68c320da2def27574a57a4e5e786d757b
+        version: '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/d49951bd3b4810b81ebdb7eb232c414ed3ed6adb'
 
 packages:
 
-  '@omdsh-dev/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/599cd1e68c320da2def27574a57a4e5e786d757b':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/599cd1e68c320da2def27574a57a4e5e786d757b}
-    version: 1.4.1
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/d49951bd3b4810b81ebdb7eb232c414ed3ed6adb':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/d49951bd3b4810b81ebdb7eb232c414ed3ed6adb}
+    version: 1.4.2
     engines: {node: '>=20'}
     peerDependencies:
       cordis: ^4.0.0-rc.7 || ^4.0.1
 
 snapshots:
 
-  '@omdsh-dev/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/599cd1e68c320da2def27574a57a4e5e786d757b': {}
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/d49951bd3b4810b81ebdb7eb232c414ed3ed6adb': {}
