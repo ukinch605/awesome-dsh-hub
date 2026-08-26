@@ -1,6 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { classifyCompatRun, validateCompatResults } from '../compat.js';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {
+  addAllowBuild,
+  allowBuildSpec,
+  allowBuildsHint,
+  classifyCompatRun,
+  validateCompatResults,
+} from '../compat.js';
 
 test('classifyCompatRun: exit 0 is verified', () => {
   assert.deepEqual(classifyCompatRun({ exitCode: 0, timedOut: false, output: 'ok' }), {
@@ -36,4 +45,34 @@ test('validateCompatResults: rejects invalid status and missing fields', () => {
   ];
   const errors = validateCompatResults(results);
   assert.ok(errors.length >= 3);
+});
+
+test('allowBuildsHint / allowBuildSpec: extracts the exact blocked git spec', () => {
+  const output =
+    'something\n"@scope/name@https://codeload.github.com/o/r/tar.gz/abc123" is blocked\n' +
+    'dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed';
+  assert.equal(allowBuildsHint(output), true);
+  assert.equal(allowBuildSpec(output), '@scope/name@https://codeload.github.com/o/r/tar.gz/abc123');
+  assert.equal(allowBuildsHint('plain failure'), false);
+  assert.equal(allowBuildSpec('no spec here'), null);
+});
+
+test('addAllowBuild: appends a block or inserts under an existing one', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'dsh-hub-'));
+  try {
+    const bare = path.join(dir, 'bare.yml');
+    fs.writeFileSync(bare, 'packages:\n  - .\n');
+    addAllowBuild(bare, 'pkg@https://x/y');
+    const bareText = fs.readFileSync(bare, 'utf8');
+    assert.ok(bareText.includes("allowBuilds:\n  'pkg@https://x/y': true"));
+
+    const existing = path.join(dir, 'existing.yml');
+    fs.writeFileSync(existing, 'packages:\n  - .\n\nallowBuilds:\n  esbuild: true\n');
+    addAllowBuild(existing, 'pkg@https://x/y');
+    const existingText = fs.readFileSync(existing, 'utf8');
+    // The new entry lands right under the allowBuilds header.
+    assert.ok(existingText.includes("allowBuilds:\n  'pkg@https://x/y': true\n  esbuild: true"));
+  } finally {
+    fs.rmSync(dir, { recursive: true, force: true });
+  }
 });

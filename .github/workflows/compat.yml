@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: compat-matrix
@@ -24,19 +25,28 @@ jobs:
           cache: npm
       - name: Install
         run: npm install
-      - name: Install pnpm and pinned dsh CLI
+      - name: Install pnpm and latest dsh CLI
         run: |
           npm i -g pnpm
-          npm i -g @deepseek-ai/dsh@0.1.0-rc.6
+          npm i -g @deepseek-ai/dsh
       - name: Run compatibility matrix (top 100)
         env:
-          DSH_VERSION: 0.1.0-rc.6
           CI: 'true'
         run: npm run compat
       - name: Regenerate artifacts
         run: npm run generate
       - name: Consistency check
         run: npm run check
+      - name: Open failure alert
+        if: failure()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          GITHUB_RUN_NUMBER: ${{ github.run_number }}
+          GITHUB_WORKFLOW: ${{ github.workflow }}
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+        run: node scripts/notify-failure.js open
       - name: Commit and push changes
         run: |
           git config user.name "dsh-hub[bot]"
@@ -48,3 +58,13 @@ jobs:
             git commit -m "chore: compatibility matrix $(date -u +%Y-%m-%dT%H:%M:%SZ)"
             git push
           fi
+      - name: Close resolved alerts
+        if: success()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          GITHUB_RUN_NUMBER: ${{ github.run_number }}
+          GITHUB_WORKFLOW: ${{ github.workflow }}
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+        run: node scripts/notify-failure.js close

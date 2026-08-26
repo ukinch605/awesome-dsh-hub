@@ -8,7 +8,8 @@ import {
   hasBundlePatch,
   searchTopicRepos,
 } from './lib/github.js';
-import { applyOverrides, loadOverrides } from './lib/overrides.js';
+import { applyOverrides, loadOverrides, pruneOverrides } from './lib/overrides.js';
+import { pruneCompatResults } from './lib/validate.js';
 import { INSTALL_PREFIX, SEARCH_QUERIES, SEARCH_SORTS } from './lib/constants.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -64,7 +65,7 @@ async function main() {
   console.log(`dsh-hub: checking package.json manifests (${eligible.length} repos)…`);
 
   const rawTexts = await mapLimit(eligible, 12, (r) =>
-    fetchRawPackageJson(r.owner, r.name, r.default_branch),
+    fetchRawPackageJson(r.owner, r.name, r.default_branch, { token }),
   );
 
   const entries = [];
@@ -92,6 +93,38 @@ async function main() {
     .sort((a, b) => b.stars - a.stars);
   counts.admitted = finalEntries.length;
 
+  // Self-healing: drop cross-file references whose repo is no longer in the
+  // registry, so a renamed or vanished plugin degrades gracefully instead of
+  // failing the consistency check and freezing the registry for days (the
+  // 11-day stall of 2026-08 was caused by exactly this kind of stale entry).
+  const registryRepos = finalEntries.map((e) => e.repo);
+  const compatFile = path.join(ROOT, 'registry', 'compatibility.json');
+  let prunedCompat = 0;
+  if (fs.existsSync(compatFile)) {
+    const compat = JSON.parse(fs.readFileSync(compatFile, 'utf8'));
+    const { compat: pruned, removed } = pruneCompatResults(compat, registryRepos);
+    prunedCompat = removed.length;
+    if (removed.length > 0) {
+      fs.writeFileSync(compatFile, `${JSON.stringify(pruned, null, 2)}\n`);
+      console.log(`dsh-hub: pruned stale compat entries (${removed.join(', ')})`);
+    }
+  }
+  const overridesFile = path.join(ROOT, 'data', 'overrides.json');
+  let prunedOverrides = 0;
+  if (fs.existsSync(overridesFile)) {
+    const overridesRaw = JSON.parse(fs.readFileSync(overridesFile, 'utf8'));
+    const removed = pruneOverrides(overridesRaw, registryRepos);
+    prunedOverrides = removed.length;
+    if (removed.length > 0) {
+      fs.writeFileSync(overridesFile, `${JSON.stringify(overridesRaw, null, 2)}\n`);
+      console.log(`dsh-hub: pruned stale override entries (${removed.join(', ')})`);
+    }
+  }
+
+  const prevMeta = fs.existsSync(META_FILE)
+    ? JSON.parse(fs.readFileSync(META_FILE, 'utf8'))
+    : null;
+
   fs.mkdirSync(path.dirname(REGISTRY_FILE), { recursive: true });
   fs.writeFileSync(REGISTRY_FILE, `${JSON.stringify(finalEntries, null, 2)}\n`);
   fs.writeFileSync(
@@ -102,6 +135,7 @@ async function main() {
         pluginCount: finalEntries.length,
         monitoredRepos: counts.fetched,
         totalStars: finalEntries.reduce((acc, e) => acc + e.stars, 0),
+        compatDshVersion: prevMeta?.compatDshVersion || null,
         skipped: {
           archived: counts.archived,
           fork: counts.fork,
@@ -157,7 +191,7 @@ async function main() {
   );
   fs.writeFileSync(changelogFile, `${JSON.stringify(changelog, null, 2)}\n`);
 
-  console.log(`dsh-hub: done. admitted=${counts.admitted} skipped={archived:${counts.archived}, fork:${counts.fork}, noBranch:${counts.noBranch}, manifestMissing:${counts.manifestMissing}, fetchFailed:${counts.fetchFailed}}`);
+  console.log(`dsh-hub: done. admitted=${counts.admitted} skipped={archived:${counts.archived}, fork:${counts.fork}, noBranch:${counts.noBranch}, manifestMissing:${counts.manifestMissing}, fetchFailed:${counts.fetchFailed}} pruned={compat:${prunedCompat}, overrides:${prunedOverrides}}`);
 }
 
 main().catch((err) => {

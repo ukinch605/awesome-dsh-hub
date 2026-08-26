@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { hasBundlePatch, normalizeRepo, searchTopicRepos } from '../lib/github.js';
+import { fetchRawPackageJson, hasBundlePatch, normalizeRepo, searchTopicRepos } from '../lib/github.js';
 import { SEARCH_QUERIES } from '../lib/constants.js';
 
 test('hasBundlePatch: accepts declared patch', () => {
@@ -79,4 +79,50 @@ test('SEARCH_QUERIES: star-segmented queries cover the full range', () => {
   assert.ok(SEARCH_QUERIES.includes('topic:dsh-plugin stars:3'));
   assert.ok(SEARCH_QUERIES.includes('topic:dsh-plugin stars:1'));
   assert.ok(SEARCH_QUERIES.includes('topic:dsh-plugin stars:0'));
+});
+
+test('fetchRawPackageJson: uses the authenticated contents API when a token is set', async () => {
+  let called;
+  const fakeFetch = async (url, opts) => {
+    called = { url, headers: opts.headers };
+    return { status: 200, text: async () => '{"name":"x"}' };
+  };
+  const text = await fetchRawPackageJson('owner', 'name', 'main', {
+    fetchFn: fakeFetch,
+    token: 'tok',
+  });
+  assert.equal(text, '{"name":"x"}');
+  assert.ok(called.url.startsWith('https://api.github.com/repos/owner/name/contents/package.json'));
+  assert.ok(called.url.includes('ref=main'));
+  assert.equal(called.headers.Authorization, 'Bearer tok');
+  assert.equal(called.headers.Accept, 'application/vnd.github.raw+json');
+});
+
+test('fetchRawPackageJson: falls back to the raw URL without a token', async () => {
+  let called;
+  const fakeFetch = async (url, opts) => {
+    called = { url, headers: opts.headers };
+    return { status: 200, text: async () => '{"name":"x"}' };
+  };
+  await fetchRawPackageJson('owner', 'name', 'main', { fetchFn: fakeFetch });
+  assert.ok(called.url.startsWith('https://raw.githubusercontent.com/owner/name/main/package.json'));
+  assert.equal(called.headers.Authorization, undefined);
+});
+
+test('fetchRawPackageJson: 404 returns null, rate limit retries then fails', async () => {
+  const notFound = await fetchRawPackageJson('owner', 'name', 'main', {
+    fetchFn: async () => ({ status: 404, text: async () => '' }),
+  });
+  assert.equal(notFound, null);
+
+  let calls = 0;
+  const throttled = await fetchRawPackageJson('owner', 'name', 'main', {
+    retries: 1,
+    fetchFn: async () => {
+      calls++;
+      return { status: 403, headers: new Map(), text: async () => 'rate limited' };
+    },
+  });
+  assert.equal(throttled, null);
+  assert.ok(calls >= 2, 'should have retried at least once on 403');
 });

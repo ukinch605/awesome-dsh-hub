@@ -15,10 +15,52 @@ export function classifyCompatRun({ exitCode, timedOut, output }) {
   const tail = String(output || '')
     .trim()
     .split('\n')
-    .slice(-3)
+    .slice(-6)
     .join(' ')
-    .slice(0, 300);
+    .slice(0, 1500);
   return { status: 'failed', reason: tail || `exit ${exitCode}` };
+}
+
+// pnpm >=10 blocks the prepare scripts of git-hosted dependencies until they
+// are explicitly allowlisted. dsh prints the exact spec pnpm rejected; match
+// it and add it to the profile's pnpm-workspace.yaml, then retry once.
+const BLOCKED_SPEC = /"([^"]+@(?:https?:|github:|git\+)[^"]+)"/;
+
+export function allowBuildsHint(output) {
+  return /allowBuilds|approve-builds|Ignored build scripts|blocks? until allowed/i.test(
+    output || '',
+  );
+}
+
+export function allowBuildSpec(output) {
+  const m = BLOCKED_SPEC.exec(output || '');
+  return m ? m[1] : null;
+}
+
+export function addAllowBuild(workspaceFile, spec) {
+  const text = fs.readFileSync(workspaceFile, 'utf8');
+  const block = `allowBuilds:\n  '${spec}': true`;
+  if (/^\s*allowBuilds:/m.test(text)) {
+    // Insert under the existing block, right after its header line.
+    const lines = text.split('\n');
+    const idx = lines.findIndex((l) => /^\s*allowBuilds:/.test(l));
+    lines.splice(idx + 1, 0, `  '${spec}': true`);
+    fs.writeFileSync(workspaceFile, lines.join('\n'));
+  } else {
+    fs.writeFileSync(workspaceFile, `${text.trimEnd()}\n\n${block}\n`);
+  }
+}
+
+async function addWithAllowBuildsRetry(profile, repo, homeDir, timeoutMs) {
+  const args = ['plugin', '--profile', profile, 'add', `github:${repo}`];
+  const env = { DSH_HOME: homeDir, CI: 'true', NO_COLOR: '1' };
+  const first = await runCmd('dsh', args, { timeoutMs, env });
+  if (first.exitCode === 0 || !allowBuildsHint(first.output)) return first;
+  const spec = allowBuildSpec(first.output);
+  const workspaceFile = path.join(homeDir, 'profiles', profile, 'pnpm-workspace.yaml');
+  if (!spec || !fs.existsSync(workspaceFile)) return first;
+  addAllowBuild(workspaceFile, spec);
+  return runCmd('dsh', args, { timeoutMs, env });
 }
 
 export function validateCompatResults(results) {
@@ -91,11 +133,7 @@ async function main() {
       const e = targets[idx];
       const t0 = Date.now();
       const profile = `compat-${idx}`;
-      const run = await runCmd(
-        'dsh',
-        ['plugin', '--profile', profile, 'add', `github:${e.repo}`],
-        { timeoutMs: PER_TIMEOUT_MS, env: { DSH_HOME: homeDir, CI: 'true', NO_COLOR: '1' } },
-      );
+      const run = await addWithAllowBuildsRetry(profile, e.repo, homeDir, PER_TIMEOUT_MS);
       const cls = classifyCompatRun(run);
       results.push({
         repo: e.repo,
