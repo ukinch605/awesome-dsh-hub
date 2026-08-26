@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-5",
   "private": true,
   "dependencies": {
-    "@mnemon-dev/dsh-mnemon": "github:mnemon-dev/mnemon"
+    "@mnemon-dev/dsh-mnemon": "github:mnemon-dev/mnemon",
+    "graph-memory": "github:adoresever/graph-memory"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "@mnemon-dev/dsh-mnemon"
+        "@mnemon-dev/dsh-mnemon",
+        "graph-memory"
       ]
     }
   }
