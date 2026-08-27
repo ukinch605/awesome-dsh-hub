@@ -10,13 +10,16 @@ importers:
     dependencies:
       '@changfenhuang/dsh-genui':
         specifier: github:omdsh-dev/dsh-genui
-        version: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-tools@0.1.0-rc.6(@deepseek-ai/cordis@4.0.1))
+        version: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae(@deepseek-ai/cordis@4.0.1)
       '@omdsh-dev/dsh-genui':
         specifier: github:omdsh-dev/dsh-genui
-        version: '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-tools@0.1.0-rc.6(@deepseek-ai/cordis@4.0.1))'
+        version: '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae(@deepseek-ai/cordis@4.0.1)'
       forkprobe-dsh:
         specifier: github:Jayden-X-L/forkprobe
         version: https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e
+      superdesign-dsh:
+        specifier: github:superdesigndev/superdesign-skill
+        version: https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b
 
 packages:
 
@@ -92,12 +95,15 @@ packages:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
     engines: {node: '>=0.10.0'}
 
+  superdesign-dsh@https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b:
+    resolution: {gitHosted: true, integrity: sha512-YqjjdfYvduaj69lrs/aCmcAvm+teYea6be3m/MTOn/k+cszwRUaxvmSRKzFNd0bKYfZgNBCq8DRF8ZyHK9Cvrw==, tarball: https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b}
+    version: 0.6.0
+
 snapshots:
 
-  '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-tools@0.1.0-rc.6(@deepseek-ai/cordis@4.0.1))':
+  '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae(@deepseek-ai/cordis@4.0.1)':
     dependencies:
       '@deepseek-ai/cordis': 4.0.1
-      '@deepseek-ai/dsh-tools': 0.1.0-rc.6(@deepseek-ai/cordis@4.0.1)
       react: 18.3.1
 
   '@deepseek-ai/cordis@4.0.1':
@@ -143,3 +149,5 @@ snapshots:
   react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
+
+  superdesign-dsh@https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b: {}

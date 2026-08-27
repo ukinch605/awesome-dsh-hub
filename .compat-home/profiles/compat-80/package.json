@@ -1,11 +1,14 @@
 {
   "name": "dsh-profile-compat-80",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "dsh-turn-delete": "github:hanshenmesen/dsh-turn-delete"
+  },
   "dsh": {
     "profile": {
       "bundles": [
-        "@deepseek-ai/dsh-base"
+        "@deepseek-ai/dsh-base",
+        "dsh-turn-delete"
       ]
     }
   }

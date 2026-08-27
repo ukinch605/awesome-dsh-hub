@@ -14,6 +14,9 @@ importers:
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
         version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/1e7f3c7e48b137a8fb870e7db9c6d63d6c5969ce
+      open-sea-skin:
+        specifier: github:d-dev0101/open-sea-skin
+        version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025
 
 packages:
 
@@ -134,6 +137,11 @@ packages:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
     hasBin: true
 
+  open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025:
+    resolution: {gitHosted: true, integrity: sha512-OJE631gvjMwzNfZvjoUpEO7IKuderwmm1EfG5CfvkpirFr9f/rPxoacVV5g+uykBBO41JEvSE3AFaTccUUej8A==, tarball: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025}
+    version: 1.2.1
+    engines: {node: '>=20'}
+
   qrcode-terminal@0.12.0:
     resolution: {integrity: sha512-EXtzRZmC+YGmGlDFbXKxQiMZNwCLEO6BANKXG4iCtSIM0yqc/pappSx3RIKr4r0uh5JsBckOXeKrB3Iz7mdQpQ==}
     hasBin: true
@@ -235,6 +243,8 @@ snapshots:
   js-yaml@4.3.1:
     dependencies:
       argparse: 2.0.1
+
+  open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025: {}
 
   qrcode-terminal@0.12.0: {}
 

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@anionex/dsh-turn-rewind':
+        specifier: github:Anionex/dsh-turn-rewind
+        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/d3734cb183a5d2483600e8caec3ece04c28c8f45
       dsh-client-auto-continue:
         specifier: github:HsiangNianian/dsh-auto-continue
         version: https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/e865b0b179331769cdce4a1e407a488056c1633d
@@ -16,6 +19,13 @@ importers:
         version: https://codeload.github.com/SnowCrescenter-tech/dsh-milestone/tar.gz/7568fc271aa2ac54f541d725989de2720ffe3a5b
 
 packages:
+
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/d3734cb183a5d2483600e8caec3ece04c28c8f45':
+    resolution: {gitHosted: true, integrity: sha512-4zcCLyQpduSko8+oEzHCuw4jqxXBDMaz2zyZUZEzsoWydnqcIJcO+5pkzK5SGH/TIOUn1uXuSPEFoXv3Yuhovg==, tarball: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/d3734cb183a5d2483600e8caec3ece04c28c8f45}
+    version: 0.1.2
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
 
   dsh-client-auto-continue@https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/e865b0b179331769cdce4a1e407a488056c1633d:
     resolution: {gitHosted: true, integrity: sha512-GLanwHbpBKjPAbN2tY/axseW00dzIIfl7ayLwxV4lpj86C2lXbSturQCy7jDq7SKK3Y+62p+7KHOPJodh70HSA==, tarball: https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/e865b0b179331769cdce4a1e407a488056c1633d}
@@ -38,6 +48,8 @@ packages:
       react: ^18.2.0
 
 snapshots:
+
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/d3734cb183a5d2483600e8caec3ece04c28c8f45': {}
 
   dsh-client-auto-continue@https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/e865b0b179331769cdce4a1e407a488056c1633d: {}
 

@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-75",
   "private": true,
   "dependencies": {
+    "dsh-git-memory": "github:seriousz158/dsh-memory",
     "dsh-model-router": "github:tianji-qingtian/dsh-model-router"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-model-router"
+        "dsh-model-router",
+        "dsh-git-memory"
       ]
     }
   }

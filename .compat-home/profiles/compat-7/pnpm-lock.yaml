@@ -11,6 +11,9 @@ importers:
       '@dsh-external/dsh-ads':
         specifier: github:Nagi-ovo/dsh-ads
         version: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22
+      dsh-context:
+        specifier: github:bowenliang123/dsh-context
+        version: https://codeload.github.com/bowenliang123/dsh-context/tar.gz/0330a94ccd1291f96beb06c1deaaca7eb72083ac
       treg-dsh:
         specifier: github:superdesigndev/treg
         version: https://codeload.github.com/superdesigndev/treg/tar.gz/6facb09fffcb26e40fd6bf0a9078d9f64ac1ffdf
@@ -26,6 +29,23 @@ packages:
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
 
+  dsh-context@https://codeload.github.com/bowenliang123/dsh-context/tar.gz/0330a94ccd1291f96beb06c1deaaca7eb72083ac:
+    resolution: {gitHosted: true, integrity: sha512-TM+FPeUUJhcDyQU6+prtTV8nlNDv23a8aKEQeZ+f4MhLEKDZcxtCDiGyf9sqkxBt4S760l4tH2OTFEOKGh8a2w==, tarball: https://codeload.github.com/bowenliang123/dsh-context/tar.gz/0330a94ccd1291f96beb06c1deaaca7eb72083ac}
+    version: 0.34.1
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.7
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.3.1
+      zod: ^4.4.3
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-client-ui-primitives':
+        optional: true
+      react:
+        optional: true
+
   treg-dsh@https://codeload.github.com/superdesigndev/treg/tar.gz/6facb09fffcb26e40fd6bf0a9078d9f64ac1ffdf:
     resolution: {gitHosted: true, integrity: sha512-+CMyKou1UEYSavX5yHWAUJyqCcFrC6CYk7Y+Pvs4RVk9so5WOi6l4SsXbt1nW2/khAtMZ6pNub+DeGBIed3+zw==, tarball: https://codeload.github.com/superdesigndev/treg/tar.gz/6facb09fffcb26e40fd6bf0a9078d9f64ac1ffdf}
     version: 0.12.1
@@ -33,5 +53,7 @@ packages:
 snapshots:
 
   '@dsh-external/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22': {}
+
+  dsh-context@https://codeload.github.com/bowenliang123/dsh-context/tar.gz/0330a94ccd1291f96beb06c1deaaca7eb72083ac: {}
 
   treg-dsh@https://codeload.github.com/superdesigndev/treg/tar.gz/6facb09fffcb26e40fd6bf0a9078d9f64ac1ffdf: {}

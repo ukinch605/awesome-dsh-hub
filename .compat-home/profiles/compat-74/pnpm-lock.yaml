@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      argo-search:
+        specifier: github:taxueseek/argo
+        version: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146
       dsh-tabbit:
         specifier: git+https://github.com/Tabbit-Browser/dsh-plugin.git
         version: git+https://github.com/Tabbit-Browser/dsh-plugin.git#64dfa964aac38754ca7a38da0ce2810a7603934c
@@ -16,6 +19,12 @@ importers:
         version: dsh-tabbit@git+https://github.com/Tabbit-Browser/dsh-plugin.git#64dfa964aac38754ca7a38da0ce2810a7603934c
 
 packages:
+
+  argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146:
+    resolution: {gitHosted: true, integrity: sha512-FIDMg6H6slarKzFLNzaxIX5eASEVCZ1MmncmjjAb4OUXyrjmVyyDnfVcy3MmviD9QU3Vs7NQVbiwnaalpAIPrw==, tarball: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146}
+    version: 2.8.4
+    engines: {node: '>=18'}
+    hasBin: true
 
   dsh-tabbit@git+https://github.com/Tabbit-Browser/dsh-plugin.git#64dfa964aac38754ca7a38da0ce2810a7603934c:
     resolution: {commit: 64dfa964aac38754ca7a38da0ce2810a7603934c, repo: https://github.com/Tabbit-Browser/dsh-plugin.git, type: git}
@@ -28,5 +37,7 @@ packages:
       '@deepseek-ai/dsh-tools': '>=0.1.0-rc.5'
 
 snapshots:
+
+  argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146: {}
 
   dsh-tabbit@git+https://github.com/Tabbit-Browser/dsh-plugin.git#64dfa964aac38754ca7a38da0ce2810a7603934c: {}

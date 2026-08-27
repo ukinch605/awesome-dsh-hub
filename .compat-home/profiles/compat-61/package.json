@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-61",
   "private": true,
   "dependencies": {
+    "@nanmicoder/dsh-auto-mode": "github:NanmiCoder/dsh-auto-mode",
     "dsh-share": "github:hellodigua/dsh-share"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-share"
+        "dsh-share",
+        "@nanmicoder/dsh-auto-mode"
       ]
     }
   }

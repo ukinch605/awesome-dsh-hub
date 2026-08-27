@@ -8,11 +8,24 @@ importers:
 
   .:
     dependencies:
+      '@sanqi-normal/dsh-webui-market-plugin':
+        specifier: github:Sanqi-normal/dsh-webui-market-plugin
+        version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41
       dsh-file-explorer:
         specifier: github:joejojoking-cloud/dsh-file-explorer
         version: https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/9e1f3ea7baa43d737c51ffc68adb5eb95b024c32
 
 packages:
+
+  '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41':
+    resolution: {gitHosted: true, integrity: sha512-YXbHkVgNb104GXaKZuzl6t3cV/66E/4YGQbXZ70ZTgubqk/lQRLiXNXhtv/BLwmafSZxLDSYevQzABuynPhDig==, tarball: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41}
+    version: 0.5.5
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-client-runtime': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
+      react: ^18.2.0
 
   dsh-file-explorer@https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/9e1f3ea7baa43d737c51ffc68adb5eb95b024c32:
     resolution: {gitHosted: true, integrity: sha512-Dk6wjlersPh4KgHTA4ZAl1JIvYWgEyvUdy0vHnCm2BNsdm4x326m5LTC83cWubKlXAOt7SzJRNrsgtQX2uXAKQ==, tarball: https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/9e1f3ea7baa43d737c51ffc68adb5eb95b024c32}
@@ -26,5 +39,7 @@ packages:
       react: ^18.2.0
 
 snapshots:
+
+  '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41': {}
 
   dsh-file-explorer@https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/9e1f3ea7baa43d737c51ffc68adb5eb95b024c32: {}

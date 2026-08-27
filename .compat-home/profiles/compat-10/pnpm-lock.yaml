@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@anionex/dsh-vision-toolkit':
+        specifier: github:Anionex/dsh-vision-toolkit
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/097a7f78290737e0a4676d5ef1a7d98324c3ee06
       '@dsh-external/dsh-ads':
         specifier: github:Nagi-ovo/dsh-ads
         version: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22
@@ -17,6 +20,38 @@ importers:
 
 packages:
 
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/097a7f78290737e0a4676d5ef1a7d98324c3ee06':
+    resolution: {gitHosted: true, integrity: sha512-S+i9elcibaFjKTd0RbXgOSM+mdwo4Dbrx9Ps6vp+5kwEfxxTvjPj8GPTCi9S1olp/EFHymro7mqbr8wo+9tG/g==, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/097a7f78290737e0a4676d5ef1a7d98324c3ee06}
+    version: 0.1.39
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-agent': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-attachment': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-input-trigger': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-credentials': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-skill': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-storage-domain': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-subprocess': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-host-webserver':
+        optional: true
+
   '@dsh-external/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22':
     resolution: {gitHosted: true, tarball: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22}
     version: 0.1.0
@@ -25,6 +60,14 @@ packages:
       '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
+
+  '@isaacs/fs-minipass@4.0.1':
+    resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
+    engines: {node: '>=18.0.0'}
+
+  chownr@3.0.0:
+    resolution: {integrity: sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==}
+    engines: {node: '>=18'}
 
   dsh-at-file@git+https://github.com/omdsh-dev/dsh-at-file.git#c37b0ed9e8bf3585bf9f272462dcf01886efe2a3:
     resolution: {commit: c37b0ed9e8bf3585bf9f272462dcf01886efe2a3, repo: https://github.com/omdsh-dev/dsh-at-file.git, type: git}
@@ -77,15 +120,79 @@ packages:
       react:
         optional: true
 
+  minipass@7.1.3:
+    resolution: {integrity: sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==}
+    engines: {node: '>=16 || 14 >=14.17'}
+
+  minizlib@3.1.0:
+    resolution: {integrity: sha512-KZxYo1BUkWD2TVFLr0MQoM8vUUigWD3LlD83a/75BqC+4qE0Hb1Vo5v1FgcfaNXvfXzr+5EhQ6ing/CaBijTlw==}
+    engines: {node: '>= 18'}
+
+  saxes@6.0.0:
+    resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
+    engines: {node: '>=v12.22.7'}
+
+  tar@7.5.22:
+    resolution: {integrity: sha512-MFO/QzvtAOmJbkhOaCTvbGcFN9L9b+JunIsDwaKljSOdcLMea3NJ1k9Usz/rjdfSXTq4dfzfeS7W4p4YOAAHeA==}
+    engines: {node: '>=18'}
+
+  undici@8.10.0:
+    resolution: {integrity: sha512-HvltHd7avK13QIw/oLe4qoOLyoVSoafqJ2jYOrtMRBkbYT31eiBQ8O0ehRKZiEZCMEyLFQNIADpgCWC5fALvYQ==}
+    engines: {node: '>=22.19.0'}
+
+  xmlchars@2.2.0:
+    resolution: {integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==}
+
+  yallist@5.0.0:
+    resolution: {integrity: sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==}
+    engines: {node: '>=18'}
+
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
 
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/097a7f78290737e0a4676d5ef1a7d98324c3ee06':
+    dependencies:
+      saxes: 6.0.0
+      tar: 7.5.22
+      undici: 8.10.0
+      zod: 4.4.3
+
   '@dsh-external/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22': {}
+
+  '@isaacs/fs-minipass@4.0.1':
+    dependencies:
+      minipass: 7.1.3
+
+  chownr@3.0.0: {}
 
   dsh-at-file@git+https://github.com/omdsh-dev/dsh-at-file.git#c37b0ed9e8bf3585bf9f272462dcf01886efe2a3:
     dependencies:
       zod: 4.4.3
+
+  minipass@7.1.3: {}
+
+  minizlib@3.1.0:
+    dependencies:
+      minipass: 7.1.3
+
+  saxes@6.0.0:
+    dependencies:
+      xmlchars: 2.2.0
+
+  tar@7.5.22:
+    dependencies:
+      '@isaacs/fs-minipass': 4.0.1
+      chownr: 3.0.0
+      minipass: 7.1.3
+      minizlib: 3.1.0
+      yallist: 5.0.0
+
+  undici@8.10.0: {}
+
+  xmlchars@2.2.0: {}
+
+  yallist@5.0.0: {}
 
   zod@4.4.3: {}

@@ -14,6 +14,9 @@ importers:
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
         version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/2a29395619ef89fe191bfc04d29b3140c820402a
+      dsh-dafeiyu:
+        specifier: github:QCYTSN/dsh-dafeiyu
+        version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/3bbe6e25c87c043bd1fa4b37ad99bd5dd03a3b90
 
 packages:
 
@@ -37,6 +40,15 @@ packages:
       '@deepseek-ai/schemastery': '>=3.0.0'
       react: '>=18.0.0'
 
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/3bbe6e25c87c043bd1fa4b37ad99bd5dd03a3b90:
+    resolution: {gitHosted: true, integrity: sha512-TrwxgT22UCR7CBR+2QbxC8ifxza2avejAKlYpR4TkMEXtPHFZtrcAAW680YKPwcVRhbUYggaVf6m4RyD7oaRzA==, tarball: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/3bbe6e25c87c043bd1fa4b37ad99bd5dd03a3b90}
+    version: 0.1.6
+    engines: {node: '>=22.19'}
+    bundledDependencies:
+      - '@deepseek-ai/cosmokit'
+      - '@deepseek-ai/schemastery'
+      - '@standard-schema/spec'
+
   fzstd@0.1.1:
     resolution: {integrity: sha512-dkuVSOKKwh3eas5VkJy1AW1vFpet8TA/fGmVA5krThl8YcOVE/8ZIoEA1+U1vEn5ckxxhLirSdY837azmbaNHA==}
 
@@ -47,5 +59,7 @@ snapshots:
   dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/2a29395619ef89fe191bfc04d29b3140c820402a:
     dependencies:
       fzstd: 0.1.1
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/3bbe6e25c87c043bd1fa4b37ad99bd5dd03a3b90: {}
 
   fzstd@0.1.1: {}

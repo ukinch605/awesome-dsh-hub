@@ -11,6 +11,9 @@ importers:
       '@anionex/dsh-turn-rewind':
         specifier: github:Anionex/dsh-turn-rewind
         version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/d3734cb183a5d2483600e8caec3ece04c28c8f45
+      '@changfenhuang/dsh-genui':
+        specifier: github:omdsh-dev/dsh-genui
+        version: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/dc2d7bd92513c52e425ba2b581fb6983a9fbe9c6
       sealos:
         specifier: github:labring/sealos-skills
         version: https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31
@@ -24,6 +27,35 @@ packages:
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
 
+  '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/dc2d7bd92513c52e425ba2b581fb6983a9fbe9c6':
+    resolution: {gitHosted: true, integrity: sha512-WMQku4wnr7lQoeBJBHhbfVXhEFotJoZqod5MOPUXmk4D7PO7B7aEJJm7AGs3s2X8gMnng5U7eJJsWL5llwEgIA==, tarball: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/dc2d7bd92513c52e425ba2b581fb6983a9fbe9c6}
+    version: 0.9.5
+    engines: {node: ^22.19.0 || >=24.0.0, pnpm: '>=11.7.0 <12'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-client-ui-input-trigger': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+
+  js-tokens@4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+
+  loose-envify@1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+
+  react@18.3.1:
+    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
+    engines: {node: '>=0.10.0'}
+
   sealos@https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31}
     version: 1.2.5
@@ -36,6 +68,20 @@ packages:
 snapshots:
 
   '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/d3734cb183a5d2483600e8caec3ece04c28c8f45': {}
+
+  '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/dc2d7bd92513c52e425ba2b581fb6983a9fbe9c6':
+    dependencies:
+      react: 18.3.1
+
+  js-tokens@4.0.0: {}
+
+  loose-envify@1.4.0:
+    dependencies:
+      js-tokens: 4.0.0
+
+  react@18.3.1:
+    dependencies:
+      loose-envify: 1.4.0
 
   sealos@https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31:
     dependencies:

@@ -14,6 +14,9 @@ importers:
       dsh-models-config-plugin:
         specifier: github:MarvekG/deepseek-harness-model-config
         version: https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a
+      zat-dsh-engine:
+        specifier: github:mishibeikejie/zat-dsh-engine
+        version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0
 
 packages:
 
@@ -32,12 +35,47 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
+  argparse@2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+
   dsh-models-config-plugin@https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a}
     version: 0.1.0
+
+  js-yaml@4.3.1:
+    resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
+    hasBin: true
+
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0:
+    resolution: {gitHosted: true, integrity: sha512-sgFFP+UzenEYwOQ7VCENNqiLYfaCp+M15oZINcFQK2Q4lg9/LSb4lEXrlHgTqQpYrmUQsChfoX9Q4q8M70ctKw==, tarball: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0}
+    version: 0.7.0
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-fs': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-subprocess': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      react: ^18.2.0
+
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
 
   '@linxin666/freestyle-dsh-theme@https://codeload.github.com/suzike/freestyle-dsh-theme/tar.gz/cd9e9eb53ccbaded4cf6123919e24392daeda0d4': {}
 
+  argparse@2.0.1: {}
+
   dsh-models-config-plugin@https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a: {}
+
+  js-yaml@4.3.1:
+    dependencies:
+      argparse: 2.0.1
+
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0:
+    dependencies:
+      js-yaml: 4.3.1
+      zod: 4.4.3
+
+  zod@4.4.3: {}

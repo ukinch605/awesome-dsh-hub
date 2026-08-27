@@ -14,6 +14,9 @@ importers:
       '@mnemon-dev/dsh-mnemon':
         specifier: github:mnemon-dev/mnemon
         version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033
+      '@nanmicoder/dsh-agent-teams':
+        specifier: github:NanmiCoder/dsh-agent-teams
+        version: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/5fe388f1a30da7b1374294b25bd6f8ad74ab6aa5
 
 packages:
 
@@ -57,6 +60,64 @@ packages:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033}
     version: 0.1.0
     engines: {node: '>=20'}
+
+  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/5fe388f1a30da7b1374294b25bd6f8ad74ab6aa5':
+    resolution: {gitHosted: true, integrity: sha512-19631i6VIG04QwSFT9xySS9JMfkIYDVJovyK1b+Y4mq1IzAJEf6+zXmXDPj1gUr1xSrcAMtLmWll1IfB5OG+fQ==, tarball: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/5fe388f1a30da7b1374294b25bd6f8ad74ab6aa5}
+    version: 0.1.14
+    engines: {node: ^22.19.0 || >=24}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-agent': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-layout': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-model-selection': ^0.1.0-rc.8
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-commands': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-subagent': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': ^3.18.1-rc.1
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-layout':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-model-selection':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-primitives':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-commands':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-session':
+        optional: true
+      '@deepseek-ai/dsh-subagent':
+        optional: true
+      '@deepseek-ai/dsh-system-prompt':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+      react:
+        optional: true
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -141,6 +202,8 @@ snapshots:
       - '@deepseek-ai/dsh-client-ui-primitives'
       - react
       - react-dom
+
+  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/5fe388f1a30da7b1374294b25bd6f8ad74ab6aa5': {}
 
   '@standard-schema/spec@1.1.0': {}
 

@@ -17,6 +17,9 @@ importers:
       dsh-skin:
         specifier: github:KinGao294/dsh-skin
         version: https://codeload.github.com/KinGao294/dsh-skin/tar.gz/0a571a27adcc5f780b7b72386c9c294243eec5b3
+      dsh-tabbit:
+        specifier: github:Tabbit-Browser/dsh-tabbit
+        version: https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c
 
 packages:
 
@@ -38,8 +41,20 @@ packages:
       '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
       react: ^18.2.0
 
+  dsh-tabbit@https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c:
+    resolution: {gitHosted: true, integrity: sha512-aZma7FhF9dazBRyCAettDpJyL9XkLWHZKVPICXU9N27tTt12t8YnJq1xf/RNM+nmZkhFpre6M80lZo+SOY+jHQ==, tarball: https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c}
+    version: 0.2.3
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.0'
+      '@deepseek-ai/dsh-jobs': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-skill': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-tools': '>=0.1.0-rc.5'
+
 snapshots:
 
   '@feiyang666/dsh-usage-plugin@https://codeload.github.com/feiyang-dev/dsh-usage-plugin/tar.gz/6583cc39c30efed3a4af0396f034f15cc7fe45df': {}
 
   dsh-skin@https://codeload.github.com/KinGao294/dsh-skin/tar.gz/0a571a27adcc5f780b7b72386c9c294243eec5b3: {}
+
+  dsh-tabbit@https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c: {}

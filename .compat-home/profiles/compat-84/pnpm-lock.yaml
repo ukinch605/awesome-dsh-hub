@@ -14,6 +14,9 @@ importers:
       dsh-client-auto-continue:
         specifier: github:HsiangNianian/dsh-auto-continue
         version: https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/e865b0b179331769cdce4a1e407a488056c1633d
+      dsh-find-plugin:
+        specifier: github:awesome-dsh-plugin/dsh-find-plugin
+        version: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc
 
 packages:
 
@@ -31,8 +34,17 @@ packages:
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
 
+  dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc:
+    resolution: {gitHosted: true, integrity: sha512-UC1ymDcgy/utPXFdnUWoxWK1JTlwajSjUrgGnhCVnJJHn9oNevq31NWud6FO3lOl6uGbqxIypp0CJwkkGA3QUQ==, tarball: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc}
+    version: 0.3.7
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+
 snapshots:
 
   '@bill9109/dsh-web-ui-notify@https://codeload.github.com/bill9109/dsh-web-ui-notify/tar.gz/865d2f6fc93f2e0d051d53df772646cb831a43ed': {}
 
   dsh-client-auto-continue@https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/e865b0b179331769cdce4a1e407a488056c1633d: {}
+
+  dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc: {}

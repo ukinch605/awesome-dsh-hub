@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/dsh-ads':
+        specifier: github:Nagi-ovo/dsh-ads
+        version: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22(react@18.3.1)
       '@huiliyi37/dsh-tianshu-tui':
         specifier: github:huiliyi37/dsh-tianshu-tui
         version: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/dc5f7afe72bf1e8ecc9b87588d8de6f3bc5c8067
@@ -34,6 +37,15 @@ packages:
       '@deepseek-ai/dsh-session': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
       '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.8 || >=0.1.1-rc.0 <0.2.0
+
+  '@dsh-external/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22':
+    resolution: {gitHosted: true, integrity: sha512-IWbquxiiA5CojGcxplwiwIeEpGsYM/hjiWGwu4H9IOBpZXu2PF75Dq9tZvsZ7eZbVDLJXYOSoKSMWw2/eEG9MA==, tarball: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22}
+    version: 0.1.0
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
 
   '@emnapi/runtime@1.11.3':
     resolution: {integrity: sha512-Xz4Tpyki7XyrpbUK1jR1AhdAdaXyhhY4lZ3neLodmhpuWfy2PAQN5B46sAiU4liOXGLkHypn/qU+jvfWSCYYLA==}
@@ -280,6 +292,10 @@ packages:
 snapshots:
 
   '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae':
+    dependencies:
+      react: 18.3.1
+
+  '@dsh-external/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22(react@18.3.1)':
     dependencies:
       react: 18.3.1
 

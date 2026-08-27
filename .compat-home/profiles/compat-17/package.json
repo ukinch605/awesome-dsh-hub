@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-17",
   "private": true,
   "dependencies": {
+    "@mnemon-dev/dsh-mnemon": "github:mnemon-dev/mnemon",
     "dsh-vision-router": "github:ysr666/dsh-vision-router"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-vision-router"
+        "dsh-vision-router",
+        "@mnemon-dev/dsh-mnemon"
       ]
     }
   }

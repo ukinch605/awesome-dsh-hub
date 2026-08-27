@@ -11,6 +11,9 @@ importers:
       '@deepseek-ai/dsh-toolkit':
         specifier: github:omdsh-dev/dsh-toolkit
         version: https://codeload.github.com/omdsh-dev/dsh-toolkit/tar.gz/aa8d88122adb2b9dc34259696ce3bd80a3e850d9
+      dsh-dream-skin:
+        specifier: github:RevolutionLA/dsh-dream-skin
+        version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/919b76dd9b0ed7d3848619b978f4631fb849fb9c
 
 packages:
 
@@ -23,6 +26,21 @@ packages:
       '@deepseek-ai/dsh-invariants': '>=0.0.1-rc.1 <0.2.0'
       '@deepseek-ai/dsh-tools': '>=0.0.1-rc.1 <0.2.0'
 
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/919b76dd9b0ed7d3848619b978f4631fb849fb9c:
+    resolution: {gitHosted: true, integrity: sha512-/cLDsZHMH1GeGn9MDTQr3YtC95ahm3KuwbXPbXrmRhWSFei/7QDjcRxZxf+NuIox8KA35bv/DsqipMyKukY58Q==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/919b76dd9b0ed7d3848619b978f4631fb849fb9c}
+    version: 8.28.0
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings-general': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
+      react: ^18.2.0
+
 snapshots:
 
   '@deepseek-ai/dsh-toolkit@https://codeload.github.com/omdsh-dev/dsh-toolkit/tar.gz/aa8d88122adb2b9dc34259696ce3bd80a3e850d9': {}
+
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/919b76dd9b0ed7d3848619b978f4631fb849fb9c: {}

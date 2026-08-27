@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-64",
   "private": true,
   "dependencies": {
+    "@ychris12138/dsh-usage-stats": "github:Ychris12138/dsh-usage-stats",
     "dsh-model-router": "github:tianji-qingtian/dsh-model-router"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-model-router"
+        "dsh-model-router",
+        "@ychris12138/dsh-usage-stats"
       ]
     }
   }

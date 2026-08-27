@@ -8,11 +8,21 @@ importers:
 
   .:
     dependencies:
+      '@changfenhuang/dsh-annotation':
+        specifier: github:omdsh-dev/dsh-annotation
+        version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/5949675671d84d5c1b81f223344456d7e7216620
       '@yejiming/dsh-gomoku':
         specifier: github:omdsh-dev/dsh-gomoku
         version: https://codeload.github.com/omdsh-dev/dsh-gomoku/tar.gz/5b27af9808f5bd8f2d753dfdf6157d86a54a4947
 
 packages:
+
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/5949675671d84d5c1b81f223344456d7e7216620':
+    resolution: {gitHosted: true, integrity: sha512-7CM+vWYsVNyL5QE3BsYzbwD/jnIdPWdBDg7eTCZ9Q90RM5hxRc6N3HYO128erDE32SqL7EYiqLKTrPJ1KBSzqg==, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/5949675671d84d5c1b81f223344456d7e7216620}
+    version: 1.4.4
+    engines: {node: '>=20'}
+    peerDependencies:
+      cordis: ^4.0.0-rc.7 || ^4.0.1
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -40,6 +50,8 @@ packages:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
 snapshots:
+
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/5949675671d84d5c1b81f223344456d7e7216620': {}
 
   '@standard-schema/spec@1.1.0': {}
 

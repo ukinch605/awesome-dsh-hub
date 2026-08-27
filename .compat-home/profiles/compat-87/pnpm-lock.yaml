@@ -14,6 +14,9 @@ importers:
       dsh-recommend:
         specifier: github:zp-home/dsh-recommend
         version: https://codeload.github.com/zp-home/dsh-recommend/tar.gz/430a854c40e432f3e39cd74fb3b87ce4b91ae81a
+      dsh-skin-market:
+        specifier: github:kingOfSoySauce/dsh-skin-market
+        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/87342ef8f34d1c5f2306fc8cfe005f969b61899e
 
 packages:
 
@@ -23,6 +26,22 @@ packages:
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-skill': ^0.0.1-rc.1
+
+  '@phosphor-icons/react@2.1.10':
+    resolution: {integrity: sha512-vt8Tvq8GLjheAZZYa+YG/pW7HDbov8El/MANW8pOAz4eGxrwhnbfrQZq0Cp4q8zBEu8NIhHdnr+r8thnfRSNYA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>= 16.8'
+      react-dom: '>= 16.8'
+
+  '@primer/octicons-react@19.33.0':
+    resolution: {integrity: sha512-7VL8WuLXXZvUV/DP895ESFXPl/FJq816amCT3KZcmpQgxM1uv6lJGCcsEFpLX3K6SE+3qcmsftPpxn3ctr06+g==}
+    engines: {node: '>=8'}
+    peerDependencies:
+      react: '>=16.3'
+
+  ajv@8.20.0:
+    resolution: {integrity: sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==}
 
   dsh-recommend@https://codeload.github.com/zp-home/dsh-recommend/tar.gz/430a854c40e432f3e39cd74fb3b87ce4b91ae81a:
     resolution: {gitHosted: true, integrity: sha512-v+L7WuM+RaZu5kWraBw8UO3/hbM+H8yrR3aOiZJzxe4luJoEPRLpo4zukBM9RBGNpXFwRL4qwwcJOC4MSwrbGQ==, tarball: https://codeload.github.com/zp-home/dsh-recommend/tar.gz/430a854c40e432f3e39cd74fb3b87ce4b91ae81a}
@@ -52,8 +71,64 @@ packages:
       '@deepseek-ai/dsh-tools':
         optional: true
 
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/87342ef8f34d1c5f2306fc8cfe005f969b61899e:
+    resolution: {gitHosted: true, integrity: sha512-bmTiX1bLNzBydBXbhHTRnlpWBV0IoFAow/NyqXqF1MZ4wN1F/d/+t+SdEhxT6s0dvan98BncZwKsDh2oafZ5BQ==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/87342ef8f34d1c5f2306fc8cfe005f969b61899e}
+    version: 0.1.46
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+
+  fast-deep-equal@3.1.3:
+    resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
+
+  fast-uri@3.1.6:
+    resolution: {integrity: sha512-7Ical1vFEMr0onbVzEDIreM22I4khW+fzyQPwvAFWBp1iwdshSZRsL4jjRvPG9JP1uiqMHRto+YU6R2/CzDz5Q==}
+
+  json-schema-traverse@1.0.0:
+    resolution: {integrity: sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==}
+
+  require-from-string@2.0.2:
+    resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
+    engines: {node: '>=0.10.0'}
+
+  yaml@2.9.0:
+    resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
 snapshots:
 
   '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/1bc4d63ee9a5268419170f4c5fb4a4e59e0e815c': {}
 
+  '@phosphor-icons/react@2.1.10': {}
+
+  '@primer/octicons-react@19.33.0': {}
+
+  ajv@8.20.0:
+    dependencies:
+      fast-deep-equal: 3.1.3
+      fast-uri: 3.1.6
+      json-schema-traverse: 1.0.0
+      require-from-string: 2.0.2
+
   dsh-recommend@https://codeload.github.com/zp-home/dsh-recommend/tar.gz/430a854c40e432f3e39cd74fb3b87ce4b91ae81a: {}
+
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/87342ef8f34d1c5f2306fc8cfe005f969b61899e:
+    dependencies:
+      '@phosphor-icons/react': 2.1.10
+      '@primer/octicons-react': 19.33.0
+      ajv: 8.20.0
+      yaml: 2.9.0
+    transitivePeerDependencies:
+      - react
+      - react-dom
+
+  fast-deep-equal@3.1.3: {}
+
+  fast-uri@3.1.6: {}
+
+  json-schema-traverse@1.0.0: {}
+
+  require-from-string@2.0.2: {}
+
+  yaml@2.9.0: {}

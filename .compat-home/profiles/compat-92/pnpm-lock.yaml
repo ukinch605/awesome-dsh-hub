@@ -11,6 +11,9 @@ importers:
       '@deepseek-ai/dsh-security-audit':
         specifier: github:omdsh-dev/dsh-security-audit
         version: https://codeload.github.com/omdsh-dev/dsh-security-audit/tar.gz/deeb194dc9bf03047acf77013d17bbd5257e965a
+      '@dhicoc/dsh-reverse-skill':
+        specifier: github:dhicoc/dsh-reverse-skill
+        version: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732
       dsh-composer-polish:
         specifier: github:tianji-qingtian/dsh-composer-polish
         version: https://codeload.github.com/tianji-qingtian/dsh-composer-polish/tar.gz/4787f0ca103005046c6bdbdfb51edd3f06b52544
@@ -26,6 +29,13 @@ packages:
       '@deepseek-ai/dsh-invariants': '>=0.0.1-rc.1 <0.2.0'
       '@deepseek-ai/dsh-tools': '>=0.0.1-rc.1 <0.2.0'
 
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732':
+    resolution: {gitHosted: true, integrity: sha512-zipAcJI7kY6FuOA8hd12MRNW8Ul76p7cuHYvevxX/ThboMurlsSjcsrS/yq+o+qzvNIJM6/nu3bgiiBqYTdL6A==, tarball: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732}
+    version: 1.0.5
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-skill': ^0.0.1-rc.1
+
   dsh-composer-polish@https://codeload.github.com/tianji-qingtian/dsh-composer-polish/tar.gz/4787f0ca103005046c6bdbdfb51edd3f06b52544:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/tianji-qingtian/dsh-composer-polish/tar.gz/4787f0ca103005046c6bdbdfb51edd3f06b52544}
     version: 0.1.4
@@ -39,5 +49,7 @@ packages:
 snapshots:
 
   '@deepseek-ai/dsh-security-audit@https://codeload.github.com/omdsh-dev/dsh-security-audit/tar.gz/deeb194dc9bf03047acf77013d17bbd5257e965a': {}
+
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732': {}
 
   dsh-composer-polish@https://codeload.github.com/tianji-qingtian/dsh-composer-polish/tar.gz/4787f0ca103005046c6bdbdfb51edd3f06b52544: {}

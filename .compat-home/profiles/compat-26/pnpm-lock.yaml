@@ -11,6 +11,9 @@ importers:
       '@anionex/dsh-turn-rewind':
         specifier: github:Anionex/dsh-turn-rewind
         version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/d3734cb183a5d2483600e8caec3ece04c28c8f45
+      '@liustack/modsearch':
+        specifier: github:liustack/modsearch
+        version: https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80
       dsh-toy:
         specifier: github:c3ll256/dsh-toy
         version: https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c
@@ -30,8 +33,18 @@ packages:
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
 
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80':
+    resolution: {gitHosted: true, integrity: sha512-vWyQIygu+3TKVEvDGMGXV+xi0PWn/9KS+N1zNfA9SQ42dGwnqwbakQe1cutaLieydrUQClTL5HUKOKnFZRCbsA==, tarball: https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80}
+    version: 5.10.0
+    engines: {node: '>=22.13'}
+    hasBin: true
+
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
 
   dsh-toy@https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c:
     resolution: {gitHosted: true, integrity: sha512-x0Tef7RdVbPagAvv8r74cPVVil1wiH1dGm5kzI3HzrReuxeWZTe/fgGImyH1ylFZvSSOOJE6OwCtrr4njxWMdQ==, tarball: https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c}
@@ -42,6 +55,10 @@ packages:
     peerDependenciesMeta:
       '@deepseek-ai/dsh-tools':
         optional: true
+
+  undici@7.29.0:
+    resolution: {integrity: sha512-IDxfleLmmbSskfWSUATiN1nfn2rDuvnMOqb5CWR92iIfojA0Ud+ulOAAEQ57LPr9rWmsreUyf5lwyao+7GNNVw==}
+    engines: {node: '>=20.18.1'}
 
   ws@8.21.3:
     resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
@@ -66,7 +83,14 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
 
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80':
+    dependencies:
+      commander: 13.1.0
+      undici: 7.29.0
+
   '@standard-schema/spec@1.1.0': {}
+
+  commander@13.1.0: {}
 
   dsh-toy@https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c:
     dependencies:
@@ -75,5 +99,7 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+
+  undici@7.29.0: {}
 
   ws@8.21.3: {}

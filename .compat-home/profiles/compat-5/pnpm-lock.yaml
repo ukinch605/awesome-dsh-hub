@@ -11,6 +11,9 @@ importers:
       '@mnemon-dev/dsh-mnemon':
         specifier: github:mnemon-dev/mnemon
         version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033
+      aegis:
+        specifier: github:GanyuanRan/Aegis
+        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/064cb379be322edfdcb60026d968cbc79fd619e6
       graph-memory:
         specifier: github:adoresever/graph-memory
         version: https://codeload.github.com/adoresever/graph-memory/tar.gz/e674b34ad9f035eeaf00f98a0b9ffdac6c0e3a57
@@ -27,6 +30,21 @@ packages:
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/064cb379be322edfdcb60026d968cbc79fd619e6:
+    resolution: {gitHosted: true, integrity: sha512-xMkqwRctGv6XRVUjG1SIW3Vv20/fOZvHFi3aHR1SISVI/OFCBiziH1cfpi1MgFomg/DvYe6bJ5HhMSC4Ndjzyw==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/064cb379be322edfdcb60026d968cbc79fd619e6}
+    version: 2.8.9
+    peerDependencies:
+      '@deepseek-ai/dsh-agent': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-skill-filesystem': ^0.1.0-rc.6
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-skill-filesystem':
+        optional: true
 
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
@@ -83,6 +101,8 @@ snapshots:
   '@sinclair/typebox@0.34.52': {}
 
   '@standard-schema/spec@1.1.0': {}
+
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/064cb379be322edfdcb60026d968cbc79fd619e6: {}
 
   cosmokit@1.8.1: {}
 

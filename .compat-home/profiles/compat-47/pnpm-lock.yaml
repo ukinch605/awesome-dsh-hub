@@ -14,6 +14,9 @@ importers:
       dsh-mnemon:
         specifier: github:omdsh-dev/dsh-mnemon
         version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/9c0c5a16bf533366dd9ac18713502c68813dd60c
+      dsh-tokenledger:
+        specifier: github:zh667/TokenLedger
+        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/8ad73de520a711ab37d38170c094b7e901044358
 
 packages:
 
@@ -48,6 +51,16 @@ packages:
       '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6 || ^0.1.1-rc.1
       react: ^18.2.0
       react-dom: ^18.2.0
+
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/8ad73de520a711ab37d38170c094b7e901044358:
+    resolution: {gitHosted: true, integrity: sha512-SIUoX7A3/Wcu41io6DAk8PPRmYgWwXjmG74yko7q70brkqKmXf2JwX3ZyXnEuPTBMSFnqZQoxWARsgZTDwcpqg==, tarball: https://codeload.github.com/zh667/TokenLedger/tar.gz/8ad73de520a711ab37d38170c094b7e901044358}
+    version: 0.1.0
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/schemastery': ^3.18.1
+    peerDependenciesMeta:
+      '@deepseek-ai/schemastery':
+        optional: true
 
   fflate@0.8.3:
     resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
@@ -92,6 +105,8 @@ snapshots:
       fflate: 0.8.3
       markdown-to-jsx: 7.7.17
       schemastery: 3.18.0
+
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/8ad73de520a711ab37d38170c094b7e901044358: {}
 
   fflate@0.8.3: {}
 

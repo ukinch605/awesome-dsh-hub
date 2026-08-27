@@ -11,6 +11,9 @@ importers:
       '@liustack/modsearch':
         specifier: github:liustack/modsearch
         version: https://codeload.github.com/liustack/modsearch/tar.gz/1492d7b921dc526ccc21b65a3afbe91a7fbae12e
+      dsh-infinite-gen-2:
+        specifier: github:Minglink/dsh-infinite-gen-2
+        version: https://codeload.github.com/Minglink/dsh-infinite-gen-2/tar.gz/3a701c334dd15e59c6ac663d93d313489385bbc5
       sealos:
         specifier: github:labring/sealos-skills
         version: https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31
@@ -26,6 +29,10 @@ packages:
   commander@13.1.0:
     resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
     engines: {node: '>=18'}
+
+  dsh-infinite-gen-2@https://codeload.github.com/Minglink/dsh-infinite-gen-2/tar.gz/3a701c334dd15e59c6ac663d93d313489385bbc5:
+    resolution: {gitHosted: true, integrity: sha512-a8lYP7JjQe4sNWmoSFPrYNF8MMqIjwO5tV44JU/6D1K7sgA4KROeKicTIYM7z3k9RT3qp6ZuCcwmU6V9onwfZA==, tarball: https://codeload.github.com/Minglink/dsh-infinite-gen-2/tar.gz/3a701c334dd15e59c6ac663d93d313489385bbc5}
+    version: 0.2.3
 
   sealos@https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31:
     resolution: {gitHosted: true, integrity: sha512-k4O8Qr/RhSdyBCMlabqcPycRf05f75XQ91JvL8asWjz6dU1jxKqT8e4A1lEQ2qYOT5dCHBvwhY4fHilHD7cBwQ==, tarball: https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31}
@@ -48,6 +55,8 @@ snapshots:
       undici: 7.29.0
 
   commander@13.1.0: {}
+
+  dsh-infinite-gen-2@https://codeload.github.com/Minglink/dsh-infinite-gen-2/tar.gz/3a701c334dd15e59c6ac663d93d313489385bbc5: {}
 
   sealos@https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31:
     dependencies:

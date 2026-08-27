@@ -8,11 +8,48 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/workflow':
+        specifier: github:omdsh-dev/dsh_workflow
+        version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f
       '@yejiming/dsh-gomoku':
         specifier: github:omdsh-dev/dsh-gomoku
         version: https://codeload.github.com/omdsh-dev/dsh-gomoku/tar.gz/5b27af9808f5bd8f2d753dfdf6157d86a54a4947
 
 packages:
+
+  '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
+    resolution: {gitHosted: true, integrity: sha512-SvSTrCT/R1o8MDOemrO66M1qqUOL6fOiHaUFKx+HzwFZDEdir54jKHKLn7x7dECQ9tDC2UmbM0s04sbCdbn6PA==, tarball: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f}
+    version: 0.1.2
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-agent': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-commands': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-jobs': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-llm': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-session': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-subagent': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-system-prompt': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-tools': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-user-approval': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-user-questions': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-workflow': ^0.0.1-rc.2
+      '@deepseek-ai/schemastery': ^3.18.1-rc.1
+
+  '@jitl/quickjs-ffi-types@0.32.0':
+    resolution: {integrity: sha512-v9T+GQpmk43VDJ7d72sf0Nexhk+ArvtUihW27dy7lqAl0zBObFKtSBBIm5RBjwIhE8VwsPPm9PNuvPvNqLWUEg==}
+
+  '@jitl/quickjs-wasmfile-debug-asyncify@0.32.0':
+    resolution: {integrity: sha512-EX8zbXwGqCgAE764M+qvkHtyXDi/FUoMBea0JnES7vCM3P7a2+EOZOjGv85wtZ2sJhI1oJ+nekmqpOODFDY+hw==}
+
+  '@jitl/quickjs-wasmfile-debug-sync@0.32.0':
+    resolution: {integrity: sha512-LeYWrPGC1uNCTBWvibo3ZLJj0CSVNYUXvJpXMCmuQ5Sap2cCACc3uvGvYV4homHHBAzfw5akoTqMMS4YFRtw+Q==}
+
+  '@jitl/quickjs-wasmfile-release-asyncify@0.32.0':
+    resolution: {integrity: sha512-3oSwPfja12ICz4aIblB58cuY8JlEq5Txt8Cut4VLo+LH47QN+mzCnSgnbB03hWzg1LBcc+VyyI9UOag7a1NF+Q==}
+
+  '@jitl/quickjs-wasmfile-release-sync@0.32.0':
+    resolution: {integrity: sha512-BKNDI/TPBfGlLNGYpLrhcDGXmIk4xHm4MRAisOBnOzpXVn9HZWsfmMAc9WMBrAHjvvds6HOikKeaOBKdPdpVrg==}
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -36,10 +73,39 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
+  quickjs-emscripten-core@0.32.0:
+    resolution: {integrity: sha512-QFnPfjFey8EqknSrSxe1hZrf1/8z7/6s1QzGOmKo6++02r7QRRX7ZoyNaZh7JuVjWsVW87KnQrbZqnHkOAzUyg==}
+
+  quickjs-emscripten@0.32.0:
+    resolution: {integrity: sha512-So0Sqw869y/S2oE3Nuc0uT3Dhqgvsj8FSrwBdsuTosVsG8ME5/OcudU1GxsrIFdFABgy17GHnTVO9TYV/bLQcA==}
+    engines: {node: '>=16.0.0'}
+
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
 snapshots:
+
+  '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
+    dependencies:
+      quickjs-emscripten: 0.32.0
+
+  '@jitl/quickjs-ffi-types@0.32.0': {}
+
+  '@jitl/quickjs-wasmfile-debug-asyncify@0.32.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
+
+  '@jitl/quickjs-wasmfile-debug-sync@0.32.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
+
+  '@jitl/quickjs-wasmfile-release-asyncify@0.32.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
+
+  '@jitl/quickjs-wasmfile-release-sync@0.32.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
 
   '@standard-schema/spec@1.1.0': {}
 
@@ -48,6 +114,18 @@ snapshots:
       schemastery: 3.18.0
 
   cosmokit@1.8.1: {}
+
+  quickjs-emscripten-core@0.32.0:
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
+
+  quickjs-emscripten@0.32.0:
+    dependencies:
+      '@jitl/quickjs-wasmfile-debug-asyncify': 0.32.0
+      '@jitl/quickjs-wasmfile-debug-sync': 0.32.0
+      '@jitl/quickjs-wasmfile-release-asyncify': 0.32.0
+      '@jitl/quickjs-wasmfile-release-sync': 0.32.0
+      quickjs-emscripten-core: 0.32.0
 
   schemastery@3.18.0:
     dependencies:

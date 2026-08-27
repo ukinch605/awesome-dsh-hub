@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@mnemon-dev/dsh-mnemon':
+        specifier: github:mnemon-dev/mnemon
+        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033
       dsh-vision-router:
         specifier: github:ysr666/dsh-vision-router
         version: https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/44039c95aea0a4a6b2c9e96b1b9fe360ae9dcc0d
@@ -189,6 +192,11 @@ packages:
   '@jimp/utils@0.14.0':
     resolution: {integrity: sha512-MY5KFYUru0y74IsgM/9asDwb3ERxWxXEu3CRCZEvE7DtT86y1bR1XgtlSliMrptjz4qbivNGMQSvUBpEFJDp1A==}
 
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033':
+    resolution: {gitHosted: true, integrity: sha512-8doJjEhkxHQv0duDjpLrMuO5VQFRfZlGWMLpysp7akUVDC5oDOIsl4yrYMkA/riViljJTz3WtvOqM5DgcHesXw==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033}
+    version: 0.1.0
+    engines: {node: '>=20'}
+
   '@puppeteer/browsers@3.2.0':
     resolution: {integrity: sha512-LlBrE8oqGfU7b1Nk2d5Q1SbuPhZxTj0cJEMDPEws28OjNMELlflekmPPuf4FnK03x0ZRjKaYwJElUcKK4kyqJA==}
     engines: {node: '>=22.12.0'}
@@ -245,11 +253,22 @@ packages:
     resolution: {integrity: sha512-k7ndgKhwoQveBL+/1tqGJYNz097I7WOvwbmmU2AR5+magtbjPWQTS1C5vzGkBC8Ym8UWRzfKUzUUqFLypY4Q+w==}
     engines: {node: '>=20'}
 
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
   devtools-protocol@0.0.1666840:
     resolution: {integrity: sha512-gCcO42XCHKEs7Ag0S7aGYsnJ7hlgrO3qderYqeiY0Eqk+0GFfuvT13IA0hHreJTa2KCdDVyGMeOhdMNmrrTjVg==}
 
   dom-walk@0.1.2:
     resolution: {integrity: sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==}
+
+  dsh-mnemon@0.3.2:
+    resolution: {integrity: sha512-EaWSdTxMYNICqK0jbwEBB6UsggBik2kMNw3Yb51FpPcYzTRi73WbXM31Fdz5Z3KRM/E5SaWTHqoJkUUnrTMSrw==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6 || ^0.1.1-rc.1
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/44039c95aea0a4a6b2c9e96b1b9fe360ae9dcc0d:
     resolution: {gitHosted: true, integrity: sha512-qgm6rGuu+4UZ3Cg7N72XoLqYhu6J4htHLL30o4yKvfd0HcspmdxLpiktkB656oIXsFCRFDcIB/8H5+iyYbqM+Q==, tarball: https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/44039c95aea0a4a6b2c9e96b1b9fe360ae9dcc0d}
@@ -277,6 +296,9 @@ packages:
 
   exif-parser@0.1.12:
     resolution: {integrity: sha512-c2bQfLNbMzLPmzQuOr8fy0csy84WmwnER81W88DzTp9CYNPJ6yzOj2EZAh9pywYpqHnshVLHQJ8WzldAyfY+Iw==}
+
+  fflate@0.8.3:
+    resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
 
   file-type@9.0.0:
     resolution: {integrity: sha512-Qe/5NJrgIOlwijpq3B7BEpzPFcgzggOTagZmkXQY4LA6bsXKTUstK7Wp12lEJ/mLKTpvIZxmIuRcLYWT6ov9lw==}
@@ -322,6 +344,15 @@ packages:
 
   load-bmfont@1.4.2:
     resolution: {integrity: sha512-qElWkmjW9Oq1F9EI5Gt7aD9zcdHb9spJCW1L/dmPf7KzCCEJxq8nhHz5eCgI9aMf7vrG/wyaCqdsI+Iy9ZTlog==}
+
+  markdown-to-jsx@7.7.17:
+    resolution: {integrity: sha512-7mG/1feQ0TX5I7YyMZVDgCC/y2I3CiEhIRQIhyov9nGBP5eoVrOXXHuL5ZP8GRfxVZKRiXWJgwXkb9It+nQZfQ==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      react: '>= 0.14.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
 
   mime@1.6.0:
     resolution: {integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==}
@@ -397,6 +428,9 @@ packages:
   sax@1.6.1:
     resolution: {integrity: sha512-42tBVwLWnaQvW5zc4HbZrTuWccECCZfBi92FDuwtqxasH+JbPB3/FOKb1m222K42R4WxuxzzMsTswfzgtSu64Q==}
     engines: {node: '>=11.0.0'}
+
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
   string-width@7.2.0:
     resolution: {integrity: sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==}
@@ -738,6 +772,14 @@ snapshots:
       '@babel/runtime': 7.29.7
       regenerator-runtime: 0.13.11
 
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033':
+    dependencies:
+      dsh-mnemon: 0.3.2
+    transitivePeerDependencies:
+      - '@deepseek-ai/dsh-client-ui-primitives'
+      - react
+      - react-dom
+
   '@puppeteer/browsers@3.2.0':
     dependencies:
       modern-tar: 0.8.4
@@ -782,9 +824,17 @@ snapshots:
       strip-ansi: 7.2.0
       wrap-ansi: 9.0.2
 
+  cosmokit@1.8.1: {}
+
   devtools-protocol@0.0.1666840: {}
 
   dom-walk@0.1.2: {}
+
+  dsh-mnemon@0.3.2:
+    dependencies:
+      fflate: 0.8.3
+      markdown-to-jsx: 7.7.17
+      schemastery: 3.18.0
 
   dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/44039c95aea0a4a6b2c9e96b1b9fe360ae9dcc0d:
     dependencies:
@@ -804,6 +854,8 @@ snapshots:
   escalade@3.2.0: {}
 
   exif-parser@0.1.12: {}
+
+  fflate@0.8.3: {}
 
   file-type@9.0.0: {}
 
@@ -855,6 +907,8 @@ snapshots:
       xtend: 4.0.2
     transitivePeerDependencies:
       - debug
+
+  markdown-to-jsx@7.7.17: {}
 
   mime@1.6.0: {}
 
@@ -926,6 +980,11 @@ snapshots:
   regenerator-runtime@0.13.11: {}
 
   sax@1.6.1: {}
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1
 
   string-width@7.2.0:
     dependencies:

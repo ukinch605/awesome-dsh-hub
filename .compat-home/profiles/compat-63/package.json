@@ -3,14 +3,16 @@
   "private": true,
   "dependencies": {
     "@huanlin/dsh-plugin-mineru": "github:HuanLinOTO/dsh-plugin-mineru",
-    "@loserfox/distill": "github:LoserFox/distill"
+    "@loserfox/distill": "github:LoserFox/distill",
+    "dsh-undo-savepoint": "github:lire1131/dsh-undo-savepoint"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
         "@loserfox/distill",
-        "@huanlin/dsh-plugin-mineru"
+        "@huanlin/dsh-plugin-mineru",
+        "dsh-undo-savepoint"
       ]
     }
   }

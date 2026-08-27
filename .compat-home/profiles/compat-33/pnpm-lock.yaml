@@ -14,6 +14,9 @@ importers:
       dsh-toy:
         specifier: github:c3ll256/dsh-toy
         version: https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c
+      perfect-web-clone:
+        specifier: github:ericshang98/Perfect-Web-Clone
+        version: https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5
 
 packages:
 
@@ -59,6 +62,13 @@ packages:
       '@deepseek-ai/dsh-tools':
         optional: true
 
+  perfect-web-clone@https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5:
+    resolution: {gitHosted: true, integrity: sha512-PogS83E4MJqMynMODNxxxFgFNKplIXlauB3qsQA2MpDo1/EvziGFgUN0wK4D7B/J2QlxMcYixm+u5dbuuLlEcw==, tarball: https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5}
+    version: 3.0.0
+    peerDependencies:
+      '@deepseek-ai/cordis': '*'
+      '@deepseek-ai/dsh-tools': '*'
+
   ws@8.21.3:
     resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
     engines: {node: '>=10.0.0'}
@@ -93,5 +103,7 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+
+  perfect-web-clone@https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5: {}
 
   ws@8.21.3: {}
