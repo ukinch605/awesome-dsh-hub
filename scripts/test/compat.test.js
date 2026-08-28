@@ -1,6 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { classifyCompatRun, validateCompatResults } from '../compat.js';
+import {
+  classifyCompatRun,
+  validateCompatResults,
+} from '../compat.js';
 
 test('classifyCompatRun: exit 0 is verified', () => {
   assert.deepEqual(classifyCompatRun({ exitCode: 0, timedOut: false, output: 'ok' }), {

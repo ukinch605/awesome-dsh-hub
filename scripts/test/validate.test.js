@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {
   checkCatalog,
   checkReadme,
+  pruneCompatResults,
   validateMeta,
   validateRegistry,
   validateCompatibilityFile,
@@ -107,6 +108,25 @@ test('validateCompatibilityFile: checks version, statuses and repo existence', (
   const errors = validateCompatibilityFile(compat, registry);
   assert.ok(errors.some((e) => e.includes('ghost/repo')));
   assert.ok(errors.length >= 3);
+});
+
+test('pruneCompatResults: drops results for repos missing from the registry', () => {
+  const compat = {
+    dshVersion: '0.1.0-rc.6',
+    results: [
+      { repo: 'owner/name', status: 'verified', checkedAt: '2026-08-15T00:00:00Z' },
+      { repo: 'renamed/x', status: 'failed', checkedAt: '2026-08-15T00:00:00Z' },
+      { repo: 'gone/y', status: 'verified', checkedAt: '2026-08-15T00:00:00Z' },
+    ],
+  };
+  const { compat: pruned, removed } = pruneCompatResults(compat, ['OWNER/NAME']);
+  assert.deepEqual(removed.sort(), ['gone/y', 'renamed/x']);
+  assert.equal(pruned.dshVersion, '0.1.0-rc.6');
+  assert.deepEqual(pruned.results.map((r) => r.repo), ['owner/name']);
+  // No stale entries -> the object is returned untouched.
+  const clean = pruneCompatResults(compat, ['owner/name', 'renamed/x', 'gone/y']);
+  assert.deepEqual(clean.removed, []);
+  assert.equal(clean.compat, compat);
 });
 
 test('weeklyFreshnessWarnings: warns on missing or stale weekly files', () => {

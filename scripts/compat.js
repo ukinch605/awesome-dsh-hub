@@ -15,9 +15,9 @@ export function classifyCompatRun({ exitCode, timedOut, output }) {
   const tail = String(output || '')
     .trim()
     .split('\n')
-    .slice(-3)
+    .slice(-6)
     .join(' ')
-    .slice(0, 300);
+    .slice(0, 1500);
   return { status: 'failed', reason: tail || `exit ${exitCode}` };
 }
 
@@ -92,8 +92,7 @@ async function main() {
       const t0 = Date.now();
       const profile = `compat-${idx}`;
       const run = await runCmd(
-        'dsh',
-        ['plugin', '--profile', profile, 'add', `github:${e.repo}`],
+        'dsh', ['plugin', '--profile', profile, 'add', `github:${e.repo}`],
         { timeoutMs: PER_TIMEOUT_MS, env: { DSH_HOME: homeDir, CI: 'true', NO_COLOR: '1' } },
       );
       const cls = classifyCompatRun(run);

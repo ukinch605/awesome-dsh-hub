@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { applyOverrides } from '../lib/overrides.js';
+import { applyOverrides, pruneOverrides } from '../lib/overrides.js';
 
 const entry = (repo, categories, description) => ({
   name: repo.split('/')[1],
@@ -31,4 +31,19 @@ test('applyOverrides: descriptions override', () => {
   const entries = [entry('a/x', ['agent'], 'old')];
   const out = applyOverrides(entries, { descriptions: { 'a/x': 'new text' } });
   assert.equal(out[0].description, 'new text');
+});
+
+test('pruneOverrides: drops stale repos, keeps comment and exclude intent', () => {
+  const overrides = {
+    _comment: 'keep me',
+    exclude: ['ghost/old'],
+    categories: { 'a/x': ['coding'], 'renamed/y': ['web-ui'] },
+    descriptions: { 'a/x': 'ok', 'gone/z': 'stale' },
+  };
+  const removed = pruneOverrides(overrides, ['a/x']);
+  assert.deepEqual(removed.sort(), ['categories: renamed/y', 'descriptions: gone/z']);
+  assert.equal(overrides._comment, 'keep me');
+  assert.deepEqual(overrides.exclude, ['ghost/old']);
+  assert.deepEqual(overrides.categories, { 'a/x': ['coding'] });
+  assert.deepEqual(overrides.descriptions, { 'a/x': 'ok' });
 });

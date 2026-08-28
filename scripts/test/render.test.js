@@ -58,7 +58,8 @@ test('renderReadme: en template uses English labels and has no credits', () => {
 
 test('renderReadme: category counts and top10 order are computed', () => {
   const out = renderReadme(registry, meta, zhTemplate, 'zh');
-  assert.ok(out.includes('视觉与多模态 1 · 编码开发 1'));
+  // Counts follow the CATEGORIES constant order (coding precedes vision).
+  assert.ok(out.includes('编码开发 1 · 视觉与多模态 1'));
   assert.ok(out.indexOf('a/one') < out.indexOf('b/two'));
 });
 

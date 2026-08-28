@@ -98,17 +98,42 @@ export async function fetchRawPackageJson(
   owner,
   repo,
   branch,
-  { fetchFn = fetch, retries = 2 } = {},
+  { fetchFn = fetch, retries = 2, token = '' } = {},
 ) {
-  const url = `https://raw.githubusercontent.com/${owner}/${repo}/${encodeURIComponent(branch)}/package.json`;
+  const result = await fetchRawPackageJsonResult(owner, repo, branch, { fetchFn, retries, token });
+  return result.kind === 'success' ? result.text : null;
+}
+
+export async function fetchRawPackageJsonResult(
+  owner,
+  repo,
+  branch,
+  { fetchFn = fetch, retries = 2, token = '' } = {},
+) {
+  // Authenticated runs use the contents API so the hourly refresh is not
+  // throttled by raw.githubusercontent's unauthenticated limits on shared CI
+  // IPs (this was the main source of `fetchFailed` skips). Local dev without a
+  // token falls back to the raw URL.
+  const url = token
+    ? `https://api.github.com/repos/${owner}/${repo}/contents/package.json?ref=${encodeURIComponent(branch)}`
+    : `https://raw.githubusercontent.com/${owner}/${repo}/${encodeURIComponent(branch)}/package.json`;
+  const headers = { ...UA };
+  if (token) {
+    headers.Authorization = `Bearer ${token}`;
+    headers.Accept = 'application/vnd.github.raw+json';
+  }
   for (let attempt = 0; ; attempt++) {
     try {
       const res = await fetchFn(url, {
-        headers: UA,
+        headers,
         signal: AbortSignal.timeout(20_000),
       });
-      if (res.status === 200) return await res.text();
-      if (res.status === 404) return null;
+      if (res.status === 200) return { kind: 'success', text: await res.text() };
+      if (res.status === 404) return { kind: 'confirmed-missing' };
+      if ((res.status === 403 || res.status === 429) && attempt < retries) {
+        await sleep(2000 * (attempt + 1));
+        continue;
+      }
     } catch {
       // Network/abort errors are treated as a failed fetch attempt.
     }
@@ -116,7 +141,7 @@ export async function fetchRawPackageJson(
       await sleep(1500 * (attempt + 1));
       continue;
     }
-    return null;
+    return { kind: 'transient-failure' };
   }
 }
 

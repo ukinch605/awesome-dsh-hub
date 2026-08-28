@@ -60,6 +60,29 @@ export function validateCompatibilityFile(compat, registry) {
   return errors;
 }
 
+/**
+ * Drop compatibility results whose repo is no longer in the registry. Called
+ * from the refresh pipeline so a renamed repo degrades gracefully instead of
+ * failing `validateCompatibilityFile` and freezing the registry (the 11-day
+ * stall of 2026-08). `check` still rejects unknown repos — the prune runs
+ * first, keeping the check strict as a backstop.
+ */
+export function pruneCompatResults(compat, registryRepos) {
+  if (!compat || typeof compat !== 'object') return { compat, removed: [] };
+  const repos = new Set((registryRepos || []).map((r) => r.toLowerCase()));
+  const removed = [];
+  const kept = [];
+  for (const r of compat.results || []) {
+    if (r && typeof r.repo === 'string' && !repos.has(r.repo.toLowerCase())) {
+      removed.push(r.repo);
+    } else {
+      kept.push(r);
+    }
+  }
+  if (removed.length === 0) return { compat, removed: [] };
+  return { compat: { ...compat, results: kept }, removed };
+}
+
 export function weeklyFreshnessWarnings(weekFiles, now = Date.now()) {
   const warnings = [];
   for (const file of weekFiles) {
