@@ -100,6 +100,16 @@ export async function fetchRawPackageJson(
   branch,
   { fetchFn = fetch, retries = 2, token = '' } = {},
 ) {
+  const result = await fetchRawPackageJsonResult(owner, repo, branch, { fetchFn, retries, token });
+  return result.kind === 'success' ? result.text : null;
+}
+
+export async function fetchRawPackageJsonResult(
+  owner,
+  repo,
+  branch,
+  { fetchFn = fetch, retries = 2, token = '' } = {},
+) {
   // Authenticated runs use the contents API so the hourly refresh is not
   // throttled by raw.githubusercontent's unauthenticated limits on shared CI
   // IPs (this was the main source of `fetchFailed` skips). Local dev without a
@@ -118,8 +128,8 @@ export async function fetchRawPackageJson(
         headers,
         signal: AbortSignal.timeout(20_000),
       });
-      if (res.status === 200) return await res.text();
-      if (res.status === 404) return null;
+      if (res.status === 200) return { kind: 'success', text: await res.text() };
+      if (res.status === 404) return { kind: 'confirmed-missing' };
       if ((res.status === 403 || res.status === 429) && attempt < retries) {
         await sleep(2000 * (attempt + 1));
         continue;
@@ -131,7 +141,7 @@ export async function fetchRawPackageJson(
       await sleep(1500 * (attempt + 1));
       continue;
     }
-    return null;
+    return { kind: 'transient-failure' };
   }
 }
 

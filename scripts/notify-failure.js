@@ -3,7 +3,12 @@
 // Actions token/context. Dependency-free: talks to api.github.com via fetch.
 //
 // Usage: node scripts/notify-failure.js open | close
-const MARKER = '[dsh-hub]';
+import { pathToFileURL } from 'node:url';
+
+export function alertMarker(workflow = 'pipeline') {
+  return `[dsh-hub:${workflow.replace(/[^A-Za-z0-9_-]/g, '-')}]`;
+}
+const MARKER = alertMarker(process.env.GITHUB_WORKFLOW || 'pipeline');
 
 const repo = process.env.GITHUB_REPOSITORY || '';
 const token = process.env.GITHUB_TOKEN || '';
@@ -82,17 +87,24 @@ async function closeAlerts() {
   }
 }
 
-const action = process.argv[2];
-if (!repo || !token || !runId) {
-  console.log('notify-failure: not running inside GitHub Actions, skipping');
-  process.exit(0);
-}
-try {
+async function main() {
+  const action = process.argv[2];
+  if (!repo || !token || !runId) {
+    console.log('notify-failure: not running inside GitHub Actions, skipping');
+    return;
+  }
   if (action === 'open') await openAlert();
   else if (action === 'close') await closeAlerts();
   else throw new Error(`unknown action: ${action}`);
   console.log(`notify-failure: ${action} done`);
-} catch (err) {
-  console.error(`notify-failure: ${err.message}`);
-  process.exit(1);
+}
+
+if (
+  process.argv[1] &&
+  import.meta.url === pathToFileURL(process.argv[1]).href
+) {
+  main().catch((err) => {
+    console.error(`notify-failure: ${err.message}`);
+    process.exitCode = 1;
+  });
 }

@@ -4,12 +4,13 @@ import { fileURLToPath } from 'node:url';
 import { activityLevel } from './lib/activity.js';
 import { classify } from './lib/classify.js';
 import {
-  fetchRawPackageJson,
+  fetchRawPackageJsonResult,
   hasBundlePatch,
   searchTopicRepos,
 } from './lib/github.js';
 import { applyOverrides, loadOverrides, pruneOverrides } from './lib/overrides.js';
 import { pruneCompatResults } from './lib/validate.js';
+import { preserveTransientEntry } from './lib/registry-state.js';
 import { INSTALL_PREFIX, SEARCH_QUERIES, SEARCH_SORTS } from './lib/constants.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -35,6 +36,9 @@ function mapLimit(items, limit, fn) {
 async function main() {
   const token = process.env.GITHUB_TOKEN || '';
   const generatedAt = new Date().toISOString();
+  const previous = fs.existsSync(REGISTRY_FILE)
+    ? JSON.parse(fs.readFileSync(REGISTRY_FILE, 'utf8')) : [];
+  const previousByRepo = new Map(previous.map((e) => [e.repo.toLowerCase(), e]));
   const counts = {
     fetched: 0,
     archived: 0,
@@ -65,13 +69,18 @@ async function main() {
   console.log(`dsh-hub: checking package.json manifests (${eligible.length} repos)…`);
 
   const rawTexts = await mapLimit(eligible, 12, (r) =>
-    fetchRawPackageJson(r.owner, r.name, r.default_branch, { token }),
+    fetchRawPackageJsonResult(r.owner, r.name, r.default_branch, { token }),
   );
 
   const entries = [];
   eligible.forEach((r, i) => {
-    const text = rawTexts[i];
-    if (text === null) { counts.fetchFailed++; return; }
+    const result = rawTexts[i];
+    if (result.kind === 'transient-failure') {
+      counts.fetchFailed++;
+      preserveTransientEntry(result, r.full_name, previousByRepo, entries);
+      return;
+    }
+    const text = result.kind === 'success' ? result.text : null;
     if (!hasBundlePatch(text)) { counts.manifestMissing++; return; }
     entries.push({
       name: r.name,

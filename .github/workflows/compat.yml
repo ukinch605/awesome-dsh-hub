@@ -28,9 +28,10 @@ jobs:
       - name: Install pnpm and latest dsh CLI
         run: |
           npm i -g pnpm
-          npm i -g @deepseek-ai/dsh
+          npm i -g @deepseek-ai/dsh@0.1.0-rc.6
       - name: Run compatibility matrix (top 100)
         env:
+          DSH_VERSION: 0.1.0-rc.6
           CI: 'true'
         run: npm run compat
       - name: Regenerate artifacts

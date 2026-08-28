@@ -14,7 +14,7 @@
     "compat": "node scripts/compat.js",
     "weekly": "node scripts/weekly.js",
     "serve": "node scripts/serve.js",
-    "test": "node --test scripts/test/activity.test.js scripts/test/classify.test.js scripts/test/compat.test.js scripts/test/github.test.js scripts/test/overrides.test.js scripts/test/render.test.js scripts/test/validate.test.js scripts/test/weekly.test.js",
+    "test": "node --test scripts/test/*.test.js",
     "refresh": "node scripts/update.js && node scripts/generate.js && node scripts/check.js"
   },
   "license": "MIT"
