@@ -3,14 +3,16 @@
   "private": true,
   "dependencies": {
     "@changfenhuang/dsh-annotation": "github:omdsh-dev/dsh-annotation",
-    "@yejiming/dsh-gomoku": "github:omdsh-dev/dsh-gomoku"
+    "@yejiming/dsh-gomoku": "github:omdsh-dev/dsh-gomoku",
+    "dsh-find-plugin": "github:awesome-dsh-plugin/dsh-find-plugin"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
         "@yejiming/dsh-gomoku",
-        "@changfenhuang/dsh-annotation"
+        "@changfenhuang/dsh-annotation",
+        "dsh-find-plugin"
       ]
     }
   }

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@changfenhuang/dsh-annotation':
+        specifier: github:omdsh-dev/dsh-annotation
+        version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/5949675671d84d5c1b81f223344456d7e7216620
       project-blueprint:
         specifier: github:shuguang1994/project-blueprint
         version: https://codeload.github.com/shuguang1994/project-blueprint/tar.gz/f227ce5c61703e041ec56b6e27b2af550d585fb2
@@ -16,6 +19,13 @@ importers:
         version: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663
 
 packages:
+
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/5949675671d84d5c1b81f223344456d7e7216620':
+    resolution: {gitHosted: true, integrity: sha512-7CM+vWYsVNyL5QE3BsYzbwD/jnIdPWdBDg7eTCZ9Q90RM5hxRc6N3HYO128erDE32SqL7EYiqLKTrPJ1KBSzqg==, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/5949675671d84d5c1b81f223344456d7e7216620}
+    version: 1.4.4
+    engines: {node: '>=20'}
+    peerDependencies:
+      cordis: ^4.0.0-rc.7 || ^4.0.1
 
   project-blueprint@https://codeload.github.com/shuguang1994/project-blueprint/tar.gz/f227ce5c61703e041ec56b6e27b2af550d585fb2:
     resolution: {gitHosted: true, integrity: sha512-XVpAGn4Ayf3mYJkMev8eAXQ7oriam7rppNaEx2uPKhamAgMdIR/hm7Sq9Euo9aCsoumLP5qWeQvw2ypzjrmZ+g==, tarball: https://codeload.github.com/shuguang1994/project-blueprint/tar.gz/f227ce5c61703e041ec56b6e27b2af550d585fb2}
@@ -37,6 +47,8 @@ packages:
     version: 0.1.0
 
 snapshots:
+
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/5949675671d84d5c1b81f223344456d7e7216620': {}
 
   project-blueprint@https://codeload.github.com/shuguang1994/project-blueprint/tar.gz/f227ce5c61703e041ec56b6e27b2af550d585fb2: {}
 

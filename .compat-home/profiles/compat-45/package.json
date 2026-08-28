@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-45",
   "private": true,
   "dependencies": {
+    "dsh-tokenledger": "github:zh667/TokenLedger",
     "dsh-usage-stats": "github:Ychris12138/dsh-usage-stats"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "dsh-usage-stats"
+        "dsh-usage-stats",
+        "dsh-tokenledger"
       ]
     }
   }

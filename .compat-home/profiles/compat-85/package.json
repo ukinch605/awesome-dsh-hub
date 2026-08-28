@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-85",
   "private": true,
   "dependencies": {
+    "@sanqi-normal/dsh-webui-market-plugin": "github:Sanqi-normal/dsh-webui-market-plugin",
     "project-blueprint": "github:shuguang1994/project-blueprint"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "project-blueprint"
+        "project-blueprint",
+        "@sanqi-normal/dsh-webui-market-plugin"
       ]
     }
   }

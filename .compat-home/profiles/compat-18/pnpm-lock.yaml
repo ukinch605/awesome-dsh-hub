@@ -11,6 +11,9 @@ importers:
       '@liustack/modsearch':
         specifier: github:liustack/modsearch
         version: https://codeload.github.com/liustack/modsearch/tar.gz/1492d7b921dc526ccc21b65a3afbe91a7fbae12e
+      '@mnemon-dev/dsh-mnemon':
+        specifier: github:mnemon-dev/mnemon
+        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033
       dsh-infinite-gen-2:
         specifier: github:Minglink/dsh-infinite-gen-2
         version: https://codeload.github.com/Minglink/dsh-infinite-gen-2/tar.gz/3a701c334dd15e59c6ac663d93d313489385bbc5
@@ -26,13 +29,47 @@ packages:
     engines: {node: '>=22.13'}
     hasBin: true
 
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033':
+    resolution: {gitHosted: true, integrity: sha512-8doJjEhkxHQv0duDjpLrMuO5VQFRfZlGWMLpysp7akUVDC5oDOIsl4yrYMkA/riViljJTz3WtvOqM5DgcHesXw==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033}
+    version: 0.1.0
+    engines: {node: '>=20'}
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
   commander@13.1.0:
     resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
     engines: {node: '>=18'}
 
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
   dsh-infinite-gen-2@https://codeload.github.com/Minglink/dsh-infinite-gen-2/tar.gz/3a701c334dd15e59c6ac663d93d313489385bbc5:
     resolution: {gitHosted: true, integrity: sha512-a8lYP7JjQe4sNWmoSFPrYNF8MMqIjwO5tV44JU/6D1K7sgA4KROeKicTIYM7z3k9RT3qp6ZuCcwmU6V9onwfZA==, tarball: https://codeload.github.com/Minglink/dsh-infinite-gen-2/tar.gz/3a701c334dd15e59c6ac663d93d313489385bbc5}
     version: 0.2.3
+
+  dsh-mnemon@0.3.4:
+    resolution: {integrity: sha512-EIYvV2xcyeRBrFanUuLdNaclwiFerJyhvfT6mVAEQ9JHZhkfqKkGqi2oExysg1+MAHElg7wjqRrMBGi7HXrGgw==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6 || ^0.1.1-rc.1
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
+  fflate@0.8.3:
+    resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
+
+  markdown-to-jsx@7.7.17:
+    resolution: {integrity: sha512-7mG/1feQ0TX5I7YyMZVDgCC/y2I3CiEhIRQIhyov9nGBP5eoVrOXXHuL5ZP8GRfxVZKRiXWJgwXkb9It+nQZfQ==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      react: '>= 0.14.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
   sealos@https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31:
     resolution: {gitHosted: true, integrity: sha512-k4O8Qr/RhSdyBCMlabqcPycRf05f75XQ91JvL8asWjz6dU1jxKqT8e4A1lEQ2qYOT5dCHBvwhY4fHilHD7cBwQ==, tarball: https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31}
@@ -47,6 +84,9 @@ packages:
     engines: {node: '>= 14.6'}
     hasBin: true
 
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
 snapshots:
 
   '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/1492d7b921dc526ccc21b65a3afbe91a7fbae12e':
@@ -54,9 +94,37 @@ snapshots:
       commander: 13.1.0
       undici: 7.29.0
 
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033':
+    dependencies:
+      dsh-mnemon: 0.3.4
+    transitivePeerDependencies:
+      - '@deepseek-ai/dsh-client-ui-primitives'
+      - react
+      - react-dom
+
+  '@standard-schema/spec@1.1.0': {}
+
   commander@13.1.0: {}
 
+  cosmokit@1.8.1: {}
+
   dsh-infinite-gen-2@https://codeload.github.com/Minglink/dsh-infinite-gen-2/tar.gz/3a701c334dd15e59c6ac663d93d313489385bbc5: {}
+
+  dsh-mnemon@0.3.4:
+    dependencies:
+      fflate: 0.8.3
+      markdown-to-jsx: 7.7.17
+      schemastery: 3.18.0
+      zod: 4.4.3
+
+  fflate@0.8.3: {}
+
+  markdown-to-jsx@7.7.17: {}
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1
 
   sealos@https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31:
     dependencies:
@@ -65,3 +133,5 @@ snapshots:
   undici@7.29.0: {}
 
   yaml@2.9.0: {}
+
+  zod@4.4.3: {}

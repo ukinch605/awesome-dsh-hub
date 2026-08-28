@@ -14,6 +14,9 @@ importers:
       dsh-plugin-bridge:
         specifier: github:Totoro-qaq/dsh-plugin-bridge
         version: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/0b15a2e49a64e2322e0cd5ad8f6cd5ac770462af
+      dsh-plugin-marketplace:
+        specifier: github:bradeGithub/DSH-Plugins-Marketplace
+        version: https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/1e72ce48c01b01149c0c65d4b07df6057e386700
 
 packages:
 
@@ -108,6 +111,10 @@ packages:
         optional: true
       react:
         optional: true
+
+  dsh-plugin-marketplace@https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/1e72ce48c01b01149c0c65d4b07df6057e386700:
+    resolution: {gitHosted: true, integrity: sha512-KbTC4DiC+lYlZUXpkHEN07Zr0oCla/YdRAs9HcCe2XsrcuuCnJio+gHWqaq90NbbxxWbGSImPpWux6Tm2p62bg==, tarball: https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/1e72ce48c01b01149c0c65d4b07df6057e386700}
+    version: 1.5.5
 
   fflate@0.8.3:
     resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
@@ -242,6 +249,8 @@ snapshots:
   dsh-plugin-bridge@https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/0b15a2e49a64e2322e0cd5ad8f6cd5ac770462af:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
+
+  dsh-plugin-marketplace@https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/1e72ce48c01b01149c0c65d4b07df6057e386700: {}
 
   fflate@0.8.3: {}
 

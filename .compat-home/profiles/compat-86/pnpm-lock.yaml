@@ -14,6 +14,9 @@ importers:
       '@yejiming/dsh-gomoku':
         specifier: github:omdsh-dev/dsh-gomoku
         version: https://codeload.github.com/omdsh-dev/dsh-gomoku/tar.gz/5b27af9808f5bd8f2d753dfdf6157d86a54a4947
+      dsh-find-plugin:
+        specifier: github:awesome-dsh-plugin/dsh-find-plugin
+        version: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc
 
 packages:
 
@@ -46,6 +49,13 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
+  dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc:
+    resolution: {gitHosted: true, integrity: sha512-UC1ymDcgy/utPXFdnUWoxWK1JTlwajSjUrgGnhCVnJJHn9oNevq31NWud6FO3lOl6uGbqxIypp0CJwkkGA3QUQ==, tarball: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc}
+    version: 0.3.7
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
@@ -60,6 +70,8 @@ snapshots:
       schemastery: 3.18.0
 
   cosmokit@1.8.1: {}
+
+  dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc: {}
 
   schemastery@3.18.0:
     dependencies:

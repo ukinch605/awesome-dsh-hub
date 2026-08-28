@@ -1,11 +1,14 @@
 {
   "name": "dsh-profile-compat-73",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "dsh-git-memory": "github:seriousz158/dsh-memory"
+  },
   "dsh": {
     "profile": {
       "bundles": [
-        "@deepseek-ai/dsh-base"
+        "@deepseek-ai/dsh-base",
+        "dsh-git-memory"
       ]
     }
   }

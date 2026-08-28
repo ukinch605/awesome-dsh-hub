@@ -14,6 +14,9 @@ importers:
       dsh-models-config-plugin:
         specifier: github:MarvekG/deepseek-harness-model-config
         version: https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a
+      dsh-tabbit:
+        specifier: github:Tabbit-Browser/dsh-tabbit
+        version: https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c
       seektty:
         specifier: github:Hilbert-beinghappy/seektty
         version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/a05debe447407068a434e85cce679c6dd41dbd0f
@@ -93,6 +96,16 @@ packages:
   dsh-models-config-plugin@https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a:
     resolution: {gitHosted: true, integrity: sha512-ni62A+8jLvvqXnK6cC3+4HUsVCUTqriL7s/GKNEa4qSNmkDdq6YQ8vktemXtO88j/3+kn6XzWSen3uz14r0DXQ==, tarball: https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a}
     version: 0.1.0
+
+  dsh-tabbit@https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c:
+    resolution: {gitHosted: true, integrity: sha512-aZma7FhF9dazBRyCAettDpJyL9XkLWHZKVPICXU9N27tTt12t8YnJq1xf/RNM+nmZkhFpre6M80lZo+SOY+jHQ==, tarball: https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c}
+    version: 0.2.3
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.0'
+      '@deepseek-ai/dsh-jobs': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-skill': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-tools': '>=0.1.0-rc.5'
 
   hast-util-to-html@9.0.5:
     resolution: {integrity: sha512-OguPdidb+fbHQSU4Q4ZiLKnzWo8Wwsf5bZfbvu7//a9oTYoqD/fWpe96NuHkoS9h0ccGOTe0C4NGXdtS0iObOw==}
@@ -420,6 +433,8 @@ snapshots:
       dequal: 2.0.3
 
   dsh-models-config-plugin@https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a: {}
+
+  dsh-tabbit@https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c: {}
 
   hast-util-to-html@9.0.5:
     dependencies:

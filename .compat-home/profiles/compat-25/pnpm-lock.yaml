@@ -14,6 +14,9 @@ importers:
       dsh-open-in-vscode:
         specifier: github:omdsh-dev/dsh-open-in-vscode
         version: https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751
+      easyeda-agent-dsh:
+        specifier: github:zhoushoujianwork/easyeda-agent
+        version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd
 
 packages:
 
@@ -85,6 +88,11 @@ packages:
       react:
         optional: true
 
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd:
+    resolution: {gitHosted: true, integrity: sha512-0FQ1cA19iAnHY1dH6PvL6i69bxspWRBeLodsMo+QW7rjhClIcSvhnXH0Ati/pGS5gZU+p5dEbL1UtkXdHf4t7g==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd}
+    version: 0.25.1
+    engines: {node: '>=20.17.0'}
+
   quickjs-emscripten-core@0.32.0:
     resolution: {integrity: sha512-QFnPfjFey8EqknSrSxe1hZrf1/8z7/6s1QzGOmKo6++02r7QRRX7ZoyNaZh7JuVjWsVW87KnQrbZqnHkOAzUyg==}
 
@@ -122,6 +130,8 @@ snapshots:
   dsh-open-in-vscode@https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751:
     dependencies:
       zod: 4.4.3
+
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd: {}
 
   quickjs-emscripten-core@0.32.0:
     dependencies:

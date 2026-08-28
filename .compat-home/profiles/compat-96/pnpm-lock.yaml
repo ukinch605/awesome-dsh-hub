@@ -8,12 +8,12 @@ importers:
 
   .:
     dependencies:
-      '@dsh-external/dsh-automation':
-        specifier: github:titanwings/dsh-automation
-        version: https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67
       deepseek-pet:
         specifier: github:keleus/deepseek-pet
         version: https://codeload.github.com/keleus/deepseek-pet/tar.gz/35132a4fcfa1a40e4cab7e0163939cc5b25de38b
+      dsh-recall-unread:
+        specifier: github:hg1048596-pixel/dsh-recall-unread
+        version: https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72
       dsh-remote:
         specifier: github:flymysql/dsh-remote
         version: https://codeload.github.com/flymysql/dsh-remote/tar.gz/5ae197a94c0fe4f0a8ffe5de14822f79418dc3bd
@@ -100,16 +100,6 @@ packages:
 
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
-
-  '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67':
-    resolution: {gitHosted: true, integrity: sha512-7HfrypViNCacPXsJiickMH2oSnIY3jIl4z2xLawhJVX0E0ZvCkqDSZQFEJk9+VJ85OR5pwnpDO3PQShOBM/6Mg==, tarball: https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67}
-    version: 0.1.7
-    engines: {node: ^22.19.0 || >=24.0.0}
-    peerDependencies:
-      react: ^18.2.0
-    peerDependenciesMeta:
-      react:
-        optional: true
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -525,6 +515,10 @@ packages:
       cordis:
         optional: true
 
+  dsh-recall-unread@https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72:
+    resolution: {gitHosted: true, integrity: sha512-3S73Yr11Da3uuL95XIXxWtdova6NVRTYBYm+JOS/3LORWj0+xu27pjW4Ugni4QHUXlFSVuus0N1C4O0NitqPIA==, tarball: https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72}
+    version: 1.1.0
+
   dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/5ae197a94c0fe4f0a8ffe5de14822f79418dc3bd:
     resolution: {gitHosted: true, integrity: sha512-CUZ06d05dxKoEvKalQ4BeA9KbAYBQYzEqF1SgMG23e2rmD5ZC2XTJ20Wcq5WkXIaJTRvY8ACb8XMrInrmoNehw==, tarball: https://codeload.github.com/flymysql/dsh-remote/tar.gz/5ae197a94c0fe4f0a8ffe5de14822f79418dc3bd}
     version: 0.8.8
@@ -575,10 +569,6 @@ packages:
 
   lodash-es@4.18.1:
     resolution: {integrity: sha512-J8xewKD/Gk22OZbhpOVSwcs60zhd95ESDwezOFuA3/099925PdHJ7OFHNTGtajL3AlZkykD32HykiMo+BIBI8A==}
-
-  luxon@3.7.2:
-    resolution: {integrity: sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew==}
-    engines: {node: '>=12'}
 
   marked@16.4.2:
     resolution: {integrity: sha512-TI3V8YYWvkVf3KJe1dRkpnjs68JUPyEa5vjKrp1XEEJUAOaQc+Qj+L1qWbPd0SJuAdQkFU0h73sXXqwDYxsiDA==}
@@ -672,9 +662,6 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
-
-  zod@4.4.3:
-    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
 
@@ -855,11 +842,6 @@ snapshots:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
-
-  '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67':
-    dependencies:
-      luxon: 3.7.2
-      zod: 4.4.3
 
   '@iconify/types@2.0.0': {}
 
@@ -1355,6 +1337,8 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
+  dsh-recall-unread@https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72: {}
+
   dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/5ae197a94c0fe4f0a8ffe5de14822f79418dc3bd:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
@@ -1407,8 +1391,6 @@ snapshots:
   layout-base@2.0.1: {}
 
   lodash-es@4.18.1: {}
-
-  luxon@3.7.2: {}
 
   marked@16.4.2: {}
 
@@ -1506,5 +1488,3 @@ snapshots:
   w3c-keyname@2.2.8: {}
 
   ws@8.21.3: {}
-
-  zod@4.4.3: {}

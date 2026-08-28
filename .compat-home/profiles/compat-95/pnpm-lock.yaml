@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dhicoc/dsh-reverse-skill':
+        specifier: github:dhicoc/dsh-reverse-skill
+        version: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732
       '@dsh-external/dsh-deep-research':
         specifier: github:omdsh-dev/dsh-deep-research
         version: https://codeload.github.com/omdsh-dev/dsh-deep-research/tar.gz/c0b329e02cd0195f810a7c3608cb58701a7fe0f1
@@ -19,6 +22,13 @@ importers:
         version: https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5
 
 packages:
+
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732':
+    resolution: {gitHosted: true, integrity: sha512-zipAcJI7kY6FuOA8hd12MRNW8Ul76p7cuHYvevxX/ThboMurlsSjcsrS/yq+o+qzvNIJM6/nu3bgiiBqYTdL6A==, tarball: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732}
+    version: 1.0.5
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-skill': ^0.0.1-rc.1
 
   '@dsh-external/dsh-deep-research@https://codeload.github.com/omdsh-dev/dsh-deep-research/tar.gz/c0b329e02cd0195f810a7c3608cb58701a7fe0f1':
     resolution: {gitHosted: true, tarball: https://codeload.github.com/omdsh-dev/dsh-deep-research/tar.gz/c0b329e02cd0195f810a7c3608cb58701a7fe0f1}
@@ -44,6 +54,8 @@ packages:
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
 
 snapshots:
+
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732': {}
 
   '@dsh-external/dsh-deep-research@https://codeload.github.com/omdsh-dev/dsh-deep-research/tar.gz/c0b329e02cd0195f810a7c3608cb58701a7fe0f1': {}
 

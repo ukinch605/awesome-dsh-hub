@@ -11,6 +11,9 @@ importers:
       '@dsh-external/dsh-deep-research':
         specifier: github:omdsh-dev/dsh-deep-research
         version: https://codeload.github.com/omdsh-dev/dsh-deep-research/tar.gz/c0b329e02cd0195f810a7c3608cb58701a7fe0f1
+      '@oil-oil/dsh-vision':
+        specifier: github:oil-oil/dsh-vision
+        version: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7(react@18.3.1)
       deepseek-plugin-store:
         specifier: github:Ericwong5021/deepseek-plugin-store
         version: https://codeload.github.com/Ericwong5021/deepseek-plugin-store/tar.gz/514cc93d88ecd18af86ab8f631403b636d69282e
@@ -20,6 +23,12 @@ importers:
 
 packages:
 
+  '@deepseek-ai/cosmokit@1.8.2':
+    resolution: {integrity: sha512-muBOKtSrUKU5m/xpq8ZXWL6hQ/jgd4PhU2PqH97bcxIiLEJfNwZOGQEx4t/aS/GgxRAR+ra9pMHPMtTHU4sqqA==}
+
+  '@deepseek-ai/schemastery@3.18.1':
+    resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
   '@dsh-external/dsh-deep-research@https://codeload.github.com/omdsh-dev/dsh-deep-research/tar.gz/c0b329e02cd0195f810a7c3608cb58701a7fe0f1':
     resolution: {gitHosted: true, integrity: sha512-hqTuG/gYpw3BtkiXezFVwkf5osCMwEigKhQc8wEuz9znr77yidvM6srWss7oIHt+U00F/qbygxTEe3ERdDOotQ==, tarball: https://codeload.github.com/omdsh-dev/dsh-deep-research/tar.gz/c0b329e02cd0195f810a7c3608cb58701a7fe0f1}
     version: 0.1.0
@@ -28,6 +37,32 @@ packages:
       '@deepseek-ai/dsh-tools': ^0.0.1
       '@deepseek-ai/dsh-workflow': ^0.0.1
       cordis: ^4.0.0-rc.7
+
+  '@oil-oil/dsh-vision@https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7':
+    resolution: {gitHosted: true, integrity: sha512-S0tz+HJOiRM57Ebqu+ZjbYKKO9w+ITYZbWYxADrCD9CKrU0EM0f6fp0chYA6HOkMHEOOtM5As8eBVHLHpxBWnw==, tarball: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7}
+    version: 0.1.2
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': 4.0.1
+      '@deepseek-ai/dsh-anonymous-user-id': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-api-remotes': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-attachment': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-connection': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-locale': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-runtime': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-ui-primitives': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-ui-settings': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-ui-settings-plugins': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-ui-slots': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-launch-environment': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-llm': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-llm-deepseek': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-settings': 0.1.0-rc.6 || 0.1.0-rc.7
+      react: ^18.2.0
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
   clsx@2.1.1:
     resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
@@ -218,7 +253,21 @@ packages:
 
 snapshots:
 
+  '@deepseek-ai/cosmokit@1.8.2': {}
+
+  '@deepseek-ai/schemastery@3.18.1':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.2
+      '@standard-schema/spec': 1.1.0
+
   '@dsh-external/dsh-deep-research@https://codeload.github.com/omdsh-dev/dsh-deep-research/tar.gz/c0b329e02cd0195f810a7c3608cb58701a7fe0f1': {}
+
+  '@oil-oil/dsh-vision@https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7(react@18.3.1)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
+      react: 18.3.1
+
+  '@standard-schema/spec@1.1.0': {}
 
   clsx@2.1.1: {}
 

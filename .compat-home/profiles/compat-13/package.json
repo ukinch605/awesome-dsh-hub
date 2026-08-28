@@ -3,14 +3,16 @@
   "private": true,
   "dependencies": {
     "dsh-at-file": "git+https://github.com/omdsh-dev/dsh-at-file.git",
-    "managed-agents": "github:sandbaseai/sandbase-harness"
+    "managed-agents": "github:sandbaseai/sandbase-harness",
+    "treg-dsh": "github:superdesigndev/treg"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
         "dsh-at-file",
-        "managed-agents"
+        "managed-agents",
+        "treg-dsh"
       ]
     }
   }

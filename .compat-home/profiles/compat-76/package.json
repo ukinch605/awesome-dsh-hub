@@ -3,14 +3,16 @@
   "private": true,
   "dependencies": {
     "@dsh-external/workflow": "github:omdsh-dev/dsh_workflow",
-    "@yejiming/dsh-gomoku": "github:omdsh-dev/dsh-gomoku"
+    "@yejiming/dsh-gomoku": "github:omdsh-dev/dsh-gomoku",
+    "argo-search": "github:taxueseek/argo"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
         "@yejiming/dsh-gomoku",
-        "@dsh-external/workflow"
+        "@dsh-external/workflow",
+        "argo-search"
       ]
     }
   }

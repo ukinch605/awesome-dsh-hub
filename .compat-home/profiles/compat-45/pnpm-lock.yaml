@@ -8,11 +8,24 @@ importers:
 
   .:
     dependencies:
+      dsh-tokenledger:
+        specifier: github:zh667/TokenLedger
+        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c
       dsh-usage-stats:
         specifier: github:Ychris12138/dsh-usage-stats
         version: https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/1f220b9d8e025087c9fdbd9efcf8d3d85659fead
 
 packages:
+
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c:
+    resolution: {gitHosted: true, integrity: sha512-VRjl6C11B2IHhS1EUsBq6o8Xk4+72ZG1Zt7Tcv3Gps9JdzFux0UdyFhAUHL4Y5tRSkXwkbzOv1K0akIJKf08Mw==, tarball: https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c}
+    version: 0.1.0
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/schemastery': ^3.18.1
+    peerDependenciesMeta:
+      '@deepseek-ai/schemastery':
+        optional: true
 
   dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/1f220b9d8e025087c9fdbd9efcf8d3d85659fead:
     resolution: {gitHosted: true, integrity: sha512-+yVCFk0G0+U3SEOsLiRIaCD2wLMXUDMyUpYxxuJX8ORtOCILpT3GSMhIRZtBpquGL3OGwpPVntewNFZ5aII6EQ==, tarball: https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/1f220b9d8e025087c9fdbd9efcf8d3d85659fead}
@@ -20,5 +33,7 @@ packages:
     hasBin: true
 
 snapshots:
+
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c: {}
 
   dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/1f220b9d8e025087c9fdbd9efcf8d3d85659fead: {}

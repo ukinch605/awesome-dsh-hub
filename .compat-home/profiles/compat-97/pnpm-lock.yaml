@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/dsh-automation':
+        specifier: github:titanwings/dsh-automation
+        version: https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67(react@18.3.1)
       '@dsh-external/dsh-mobile':
         specifier: github:lehhair/dsh-mobile
         version: https://codeload.github.com/lehhair/dsh-mobile/tar.gz/4cbd69b781a16aae098f2263aa726e976b967e95(react@18.3.1)
@@ -19,6 +22,16 @@ importers:
         version: https://codeload.github.com/biociao/dsh-science/tar.gz/23767ab2f8d7bcf84a0820daa4c6ae79549da000
 
 packages:
+
+  '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67':
+    resolution: {gitHosted: true, integrity: sha512-7HfrypViNCacPXsJiickMH2oSnIY3jIl4z2xLawhJVX0E0ZvCkqDSZQFEJk9+VJ85OR5pwnpDO3PQShOBM/6Mg==, tarball: https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67}
+    version: 0.1.7
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
 
   '@dsh-external/dsh-mobile@https://codeload.github.com/lehhair/dsh-mobile/tar.gz/4cbd69b781a16aae098f2263aa726e976b967e95':
     resolution: {gitHosted: true, tarball: https://codeload.github.com/lehhair/dsh-mobile/tar.gz/4cbd69b781a16aae098f2263aa726e976b967e95}
@@ -83,6 +96,10 @@ packages:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
 
+  luxon@3.7.2:
+    resolution: {integrity: sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew==}
+    engines: {node: '>=12'}
+
   qrcode-terminal@0.12.0:
     resolution: {integrity: sha512-EXtzRZmC+YGmGlDFbXKxQiMZNwCLEO6BANKXG4iCtSIM0yqc/pappSx3RIKr4r0uh5JsBckOXeKrB3Iz7mdQpQ==}
     hasBin: true
@@ -103,7 +120,17 @@ packages:
       utf-8-validate:
         optional: true
 
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
 snapshots:
+
+  '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67(react@18.3.1)':
+    dependencies:
+      luxon: 3.7.2
+      zod: 4.4.3
+    optionalDependencies:
+      react: 18.3.1
 
   '@dsh-external/dsh-mobile@https://codeload.github.com/lehhair/dsh-mobile/tar.gz/4cbd69b781a16aae098f2263aa726e976b967e95(react@18.3.1)':
     dependencies:
@@ -150,6 +177,8 @@ snapshots:
     dependencies:
       js-tokens: 4.0.0
 
+  luxon@3.7.2: {}
+
   qrcode-terminal@0.12.0: {}
 
   react@18.3.1:
@@ -157,3 +186,5 @@ snapshots:
       loose-envify: 1.4.0
 
   ws@8.21.3: {}
+
+  zod@4.4.3: {}

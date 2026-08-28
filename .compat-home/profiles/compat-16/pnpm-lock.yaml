@@ -17,6 +17,9 @@ importers:
       '@omdsh-dev/dsh-genui':
         specifier: github:omdsh-dev/dsh-genui
         version: '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae'
+      graph-memory:
+        specifier: github:adoresever/graph-memory
+        version: https://codeload.github.com/adoresever/graph-memory/tar.gz/443e6ccb9d1d37169404977199398f4b4935c4fc
 
 packages:
 
@@ -233,6 +236,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@sinclair/typebox@0.34.52':
+    resolution: {integrity: sha512-XiMQh7qqVlxZzcVD+kkGMNGMzcTrDMLWI7S4x7z1MkCkbDPrekpZXEUK0eZqZFMuHQg2a2DZOcDIh9o5v3Gonw==}
+
   ansi-regex@6.3.0:
     resolution: {integrity: sha512-WpDfL7NO6j7tH88IDBNVdUJxDh9nmCteAVW9dsep846XdwF4naCBK+/tGLX3KJgcpgMRXCFlTM2hKGoK9FsdrQ==}
     engines: {node: '>=12'}
@@ -252,6 +258,22 @@ packages:
   get-east-asian-width@1.6.0:
     resolution: {integrity: sha512-QRbvDIbx6YklUe6RxeTeleMR0yv3cYH6PsPZHcnVn7xv7zO1BHN8r0XETu8n6Ye3Q+ahtSarc3WgtNWmehIBfA==}
     engines: {node: '>=18'}
+
+  graph-memory@https://codeload.github.com/adoresever/graph-memory/tar.gz/443e6ccb9d1d37169404977199398f4b4935c4fc:
+    resolution: {gitHosted: true, integrity: sha512-iFaGgJ+H+wRGgIZIfSH/umujWvZkatNNlRcJJXnN8nGVsq4GIV2S91/L2UA/UVbI8nD3RzQwq8xzWkb4wp2DjA==, tarball: https://codeload.github.com/adoresever/graph-memory/tar.gz/443e6ccb9d1d37169404977199398f4b4935c4fc}
+    version: 1.6.0-beta.9
+    engines: {node: '>=22.13.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4'
+      '@deepseek-ai/dsh-typert-protocol': '>=0.1.0-rc.5'
+      openclaw: '*'
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      openclaw:
+        optional: true
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -420,6 +442,8 @@ snapshots:
   '@img/sharp-win32-x64@0.35.3':
     optional: true
 
+  '@sinclair/typebox@0.34.52': {}
+
   ansi-regex@6.3.0: {}
 
   chalk@6.0.0: {}
@@ -429,6 +453,10 @@ snapshots:
   diff@9.0.0: {}
 
   get-east-asian-width@1.6.0: {}
+
+  graph-memory@https://codeload.github.com/adoresever/graph-memory/tar.gz/443e6ccb9d1d37169404977199398f4b4935c4fc:
+    dependencies:
+      '@sinclair/typebox': 0.34.52
 
   js-tokens@4.0.0: {}
 

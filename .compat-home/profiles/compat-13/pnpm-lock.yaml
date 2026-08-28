@@ -14,6 +14,9 @@ importers:
       managed-agents:
         specifier: github:sandbaseai/sandbase-harness
         version: https://codeload.github.com/sandbaseai/sandbase-harness/tar.gz/964763189c25a1d3b17ed94aff9b45e5d633d0e2
+      treg-dsh:
+        specifier: github:superdesigndev/treg
+        version: https://codeload.github.com/superdesigndev/treg/tar.gz/3befcbff001a5f631f13421068d78a9468e4c47f
 
 packages:
 
@@ -509,6 +512,10 @@ packages:
   toidentifier@1.0.1:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
     engines: {node: '>=0.6'}
+
+  treg-dsh@https://codeload.github.com/superdesigndev/treg/tar.gz/3befcbff001a5f631f13421068d78a9468e4c47f:
+    resolution: {gitHosted: true, integrity: sha512-bZxbhVRHPRjSxSTrdVUE+r7gLAPZBE6j78KszpUGNxyMqkKRMc0+9W6kxx+54WSlEViVWLrAK34CNqmGZgtiow==, tarball: https://codeload.github.com/superdesigndev/treg/tar.gz/3befcbff001a5f631f13421068d78a9468e4c47f}
+    version: 0.12.1
 
   type-is@2.1.0:
     resolution: {integrity: sha512-faYHw0anBbc/kWF3zFTEnxSFOAGUX9GFbOBthvDdLsIlEoWOFOtS0zgCiQYwIskL9iGXZL3kAXD8OoZ4GmMATA==}
@@ -1032,6 +1039,8 @@ snapshots:
   throttleit@2.1.0: {}
 
   toidentifier@1.0.1: {}
+
+  treg-dsh@https://codeload.github.com/superdesigndev/treg/tar.gz/3befcbff001a5f631f13421068d78a9468e4c47f: {}
 
   type-is@2.1.0:
     dependencies:
