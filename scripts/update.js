@@ -46,6 +46,9 @@ async function main() {
     noBranch: 0,
     manifestMissing: 0,
     fetchFailed: 0,
+    rawFetches: 0,
+    apiFallbacks: 0,
+    fallbackRecovered: 0,
     admitted: 0,
   };
 
@@ -75,6 +78,9 @@ async function main() {
   const entries = [];
   eligible.forEach((r, i) => {
     const result = rawTexts[i];
+    counts.rawFetches += result.rawFetches || 0;
+    counts.apiFallbacks += result.apiFallbacks || 0;
+    if (result.fallbackRecovered) counts.fallbackRecovered++;
     if (result.kind === 'transient-failure') {
       counts.fetchFailed++;
       preserveTransientEntry(result, r.full_name, previousByRepo, entries);
@@ -152,6 +158,12 @@ async function main() {
           manifestMissing: counts.manifestMissing,
           fetchFailed: counts.fetchFailed,
         },
+        manifestFetch: {
+          rawFetches: counts.rawFetches,
+          apiFallbacks: counts.apiFallbacks,
+          fallbackRecovered: counts.fallbackRecovered,
+          transientFailures: counts.fetchFailed,
+        },
         queries: SEARCH_QUERIES.map((q, i) => `${q}&sort=${SEARCH_SORTS[i]}`),
       },
       null,
@@ -200,7 +212,7 @@ async function main() {
   );
   fs.writeFileSync(changelogFile, `${JSON.stringify(changelog, null, 2)}\n`);
 
-  console.log(`dsh-hub: done. admitted=${counts.admitted} skipped={archived:${counts.archived}, fork:${counts.fork}, noBranch:${counts.noBranch}, manifestMissing:${counts.manifestMissing}, fetchFailed:${counts.fetchFailed}} pruned={compat:${prunedCompat}, overrides:${prunedOverrides}}`);
+  console.log(`dsh-hub: done. admitted=${counts.admitted} skipped={archived:${counts.archived}, fork:${counts.fork}, noBranch:${counts.noBranch}, manifestMissing:${counts.manifestMissing}, fetchFailed:${counts.fetchFailed}} manifestFetch={raw:${counts.rawFetches}, apiFallbacks:${counts.apiFallbacks}, recovered:${counts.fallbackRecovered}, transient:${counts.fetchFailed}} pruned={compat:${prunedCompat}, overrides:${prunedOverrides}}`);
 }
 
 main().catch((err) => {

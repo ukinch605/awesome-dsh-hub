@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { fetchRawPackageJson, hasBundlePatch, normalizeRepo, searchTopicRepos } from '../lib/github.js';
+import { fetchRawPackageJson, fetchRawPackageJsonResult, hasBundlePatch, normalizeRepo, searchTopicRepos } from '../lib/github.js';
 import { SEARCH_QUERIES } from '../lib/constants.js';
 
 test('hasBundlePatch: accepts declared patch', () => {
@@ -81,10 +81,10 @@ test('SEARCH_QUERIES: star-segmented queries cover the full range', () => {
   assert.ok(SEARCH_QUERIES.includes('topic:dsh-plugin stars:0'));
 });
 
-test('fetchRawPackageJson: uses the authenticated contents API when a token is set', async () => {
-  let called;
+test('fetchRawPackageJson: uses raw first even when a token is set', async () => {
+  const calls = [];
   const fakeFetch = async (url, opts) => {
-    called = { url, headers: opts.headers };
+    calls.push({ url, headers: opts.headers });
     return { status: 200, text: async () => '{"name":"x"}' };
   };
   const text = await fetchRawPackageJson('owner', 'name', 'main', {
@@ -92,10 +92,9 @@ test('fetchRawPackageJson: uses the authenticated contents API when a token is s
     token: 'tok',
   });
   assert.equal(text, '{"name":"x"}');
-  assert.ok(called.url.startsWith('https://api.github.com/repos/owner/name/contents/package.json'));
-  assert.ok(called.url.includes('ref=main'));
-  assert.equal(called.headers.Authorization, 'Bearer tok');
-  assert.equal(called.headers.Accept, 'application/vnd.github.raw+json');
+  assert.equal(calls.length, 1);
+  assert.ok(calls[0].url.startsWith('https://raw.githubusercontent.com/owner/name/main/package.json'));
+  assert.equal(calls[0].headers.Authorization, undefined);
 });
 
 test('fetchRawPackageJson: falls back to the raw URL without a token', async () => {
@@ -109,20 +108,52 @@ test('fetchRawPackageJson: falls back to the raw URL without a token', async () 
   assert.equal(called.headers.Authorization, undefined);
 });
 
-test('fetchRawPackageJson: 404 returns null, rate limit retries then fails', async () => {
+test('fetchRawPackageJson: confirmed raw 404 does not fall back', async () => {
+  let calls = 0;
   const notFound = await fetchRawPackageJson('owner', 'name', 'main', {
-    fetchFn: async () => ({ status: 404, text: async () => '' }),
+    token: 'tok',
+    fetchFn: async () => {
+      calls++;
+      return { status: 404, text: async () => '' };
+    },
   });
   assert.equal(notFound, null);
+  assert.equal(calls, 1);
+});
 
+test('fetchRawPackageJsonResult: authenticated API fallback recovers a transient raw failure', async () => {
+  const calls = [];
+  const result = await fetchRawPackageJsonResult('owner', 'name', 'main', {
+    token: 'tok',
+    fetchFn: async (url, opts) => {
+      calls.push({ url, headers: opts.headers });
+      if (calls.length === 1) return { status: 503, headers: new Map() };
+      return { status: 200, headers: new Map(), text: async () => '{"name":"x"}' };
+    },
+  });
+  assert.equal(result.kind, 'success');
+  assert.equal(result.fallbackRecovered, true);
+  assert.equal(result.rawFetches, 1);
+  assert.equal(result.apiFallbacks, 1);
+  assert.ok(calls[1].url.startsWith('https://api.github.com/repos/owner/name/contents/package.json'));
+  assert.equal(calls[1].headers.Authorization, 'Bearer tok');
+});
+
+test('fetchRawPackageJsonResult: API fallback honors retry headers and retains transient failure', async () => {
+  const waits = [];
   let calls = 0;
-  const throttled = await fetchRawPackageJson('owner', 'name', 'main', {
+  const result = await fetchRawPackageJsonResult('owner', 'name', 'main', {
+    token: 'tok',
     retries: 1,
     fetchFn: async () => {
       calls++;
-      return { status: 403, headers: new Map(), text: async () => 'rate limited' };
+      if (calls === 1) return { status: 503, headers: new Map() };
+      return { status: 429, headers: new Map([['retry-after', '7']]) };
     },
+    sleepFn: async (ms) => waits.push(ms),
   });
-  assert.equal(throttled, null);
-  assert.ok(calls >= 2, 'should have retried at least once on 403');
+  assert.equal(result.kind, 'transient-failure');
+  assert.equal(result.apiFallbacks, 1);
+  assert.equal(calls, 3);
+  assert.deepEqual(waits, [7000]);
 });
