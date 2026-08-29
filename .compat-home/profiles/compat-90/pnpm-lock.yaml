@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@changfenhuang/dsh-annotation':
+        specifier: github:omdsh-dev/dsh-annotation
+        version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/41731ecf943a0e8e759493a7a9791ec9d691d039
       '@sanqi-normal/dsh-webui-market-plugin':
         specifier: github:Sanqi-normal/dsh-webui-market-plugin
         version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41
@@ -19,6 +22,13 @@ importers:
         version: https://codeload.github.com/Make0209/dsh-usage-stats/tar.gz/8992d306cdca8857b4362868d591fde3689765b0
 
 packages:
+
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/41731ecf943a0e8e759493a7a9791ec9d691d039':
+    resolution: {gitHosted: true, integrity: sha512-4SJUJHdyqDudg4C75qcFp/GfF14Q9w6y4CbC4oo0VByB/ga/cd3ko6GE3nrG9gVE406JPRC8KEubmFaSrUp1Ng==, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/41731ecf943a0e8e759493a7a9791ec9d691d039}
+    version: 1.4.5
+    engines: {node: '>=20'}
+    peerDependencies:
+      cordis: ^4.0.0-rc.7 || ^4.0.1
 
   '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41':
     resolution: {gitHosted: true, integrity: sha512-YXbHkVgNb104GXaKZuzl6t3cV/66E/4YGQbXZ70ZTgubqk/lQRLiXNXhtv/BLwmafSZxLDSYevQzABuynPhDig==, tarball: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41}
@@ -63,6 +73,8 @@ packages:
     version: 1.0.0
 
 snapshots:
+
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/41731ecf943a0e8e759493a7a9791ec9d691d039': {}
 
   '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41': {}
 
