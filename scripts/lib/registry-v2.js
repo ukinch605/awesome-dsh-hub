@@ -6,6 +6,15 @@ export const EVENT_TYPES = new Set([
   'package_version_changed', 'activity_changed', 'install_probe_changed',
 ]);
 
+export function migrateInstallProbeStatus(status, reason = '') {
+  if (status !== 'failed') {
+    return { verified: 'installed', unknown: 'not-tested', pending: 'not-tested' }[status] || status;
+  }
+  if (/allowBuilds|approve-builds|ignored build scripts/i.test(String(reason))) return 'blocked';
+  if (/^timeout$|timed?\s*out|time limit exceeded|exceeded (?:the )?time limit/i.test(String(reason).trim())) return 'timeout';
+  return 'failed';
+}
+
 const identity = (entry) => entry.githubRepoId == null ? null : String(entry.githubRepoId);
 
 /** Add the v2 contract without inventing history for a v1 snapshot. */
@@ -67,4 +76,30 @@ export function appendEvents(ledger, generated) {
     schemaVersion: 1,
     events: [...(ledger.events || []), ...generated.filter((e) => !seen.has(e.id))],
   };
+}
+
+/** Compare a completed probe snapshot with the states embedded in the registry. */
+export function recordInstallProbeEvents(registry, results, ledger, occurredAt) {
+  const byRepo = new Map((results || []).map((result) => [result.repo.toLowerCase(), result]));
+  const latestRecorded = new Map();
+  for (const event of ledger.events || []) {
+    if (event.type === 'install_probe_changed') latestRecorded.set(String(event.repositoryId), event.changes?.to);
+  }
+  const baseline = registry.map((entry) => {
+    const recordedStatus = latestRecorded.get(String(entry.githubRepoId));
+    return recordedStatus === undefined
+      ? entry
+      : { ...entry, installProbe: { ...(entry.installProbe || {}), status: recordedStatus } };
+  });
+  const current = baseline.map((entry) => {
+    const result = byRepo.get(entry.repo.toLowerCase());
+    if (!result) return entry;
+    return {
+      ...entry,
+      installProbe: {
+        status: migrateInstallProbeStatus(result.status, result.reason),
+      },
+    };
+  });
+  return appendEvents(ledger, generateEvents(baseline, current, occurredAt));
 }

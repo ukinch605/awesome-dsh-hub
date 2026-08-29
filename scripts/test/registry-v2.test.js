@@ -1,6 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { appendEvents, generateEvents, migrateV1Entry, preserveLifecycle } from '../lib/registry-v2.js';
+import {
+  appendEvents,
+  generateEvents,
+  migrateInstallProbeStatus,
+  migrateV1Entry,
+  preserveLifecycle,
+  recordInstallProbeEvents,
+} from '../lib/registry-v2.js';
 import { validateEventLedger } from '../lib/validate.js';
 
 const at = '2026-08-29T12:00:00Z';
@@ -44,4 +51,26 @@ test('preserved transient state emits no false removal or version event', () => 
   const old = plugin();
   assert.deepEqual(generateEvents([old], [old], at), []);
   assert.deepEqual(generateEvents([plugin({ packageVersion: null })], [plugin()], at), []);
+});
+
+test('legacy failed probe migration distinguishes policy blocks and timeouts', () => {
+  assert.equal(migrateInstallProbeStatus('failed', 'pnpm requires this key under allowBuilds'), 'blocked');
+  assert.equal(migrateInstallProbeStatus('failed', 'Ignored build scripts: esbuild; run pnpm approve-builds'), 'blocked');
+  assert.equal(migrateInstallProbeStatus('failed', 'timeout'), 'timeout');
+  assert.equal(migrateInstallProbeStatus('failed', 'install timed out'), 'timeout');
+  assert.equal(migrateInstallProbeStatus('failed', 'dependency resolution failed'), 'failed');
+});
+
+test('production probe transition appends exactly once and rerun is idempotent', () => {
+  const before = [plugin({ installProbe: { status: 'failed' } })];
+  const results = [{ repo: 'owner/plugin', status: 'installed', reason: null }];
+  const once = recordInstallProbeEvents(before, results, { schemaVersion: 1, events: [] }, at);
+  assert.equal(once.events.length, 1);
+  assert.equal(once.events[0].type, 'install_probe_changed');
+  assert.deepEqual(once.events[0].changes, { from: 'failed', to: 'installed' });
+
+  // A retry is idempotent even if generation has not persisted the new state yet.
+  const twice = recordInstallProbeEvents(before, results, once, '2026-08-29T13:00:00Z');
+  assert.equal(twice.events.length, 1);
+  assert.deepEqual(twice, once);
 });

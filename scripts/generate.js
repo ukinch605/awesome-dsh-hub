@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { applyOverrides, loadOverrides } from './lib/overrides.js';
 import { registryStats, renderCatalog, renderReadme } from './lib/render.js';
+import { migrateInstallProbeStatus } from './lib/registry-v2.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const REGISTRY_FILE = path.join(ROOT, 'registry', 'plugins.json');
@@ -29,9 +30,8 @@ function main() {
   );
   for (const e of registry) {
     const c = compatByRepo.get(e.repo.toLowerCase());
-    const legacyStatus = { verified: 'installed', failed: 'failed', unknown: 'not-tested', pending: 'not-tested' };
     e.installProbe = c
-      ? { dshVersion: c.dshVersion, status: legacyStatus[c.status] || c.status, checkedAt: c.checkedAt, scope: c.scope || compat?.scope || { kind: 'top-by-stars', limit: 100 }, reason: c.reason || null }
+      ? { dshVersion: c.dshVersion, status: migrateInstallProbeStatus(c.status, c.reason), checkedAt: c.checkedAt, scope: c.scope || compat?.scope || { kind: 'top-by-stars', limit: 100 }, reason: c.reason || null }
       : { dshVersion: compat?.dshVersion || meta.compatDshVersion || null, status: 'not-tested', checkedAt: null, scope: { kind: 'top-by-stars', limit: 100 }, reason: null };
     delete e.compatibility;
   }

@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { spawn } from 'node:child_process';
+import { recordInstallProbeEvents } from './lib/registry-v2.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const TOP_N = Number(process.env.COMPAT_TOP_N || 100);
@@ -122,10 +123,20 @@ async function main() {
     throw new Error('compat: invalid results');
   }
 
+  const checkedAt = new Date().toISOString();
+  const eventsFile = path.join(ROOT, 'registry', 'events.json');
+  const ledger = fs.existsSync(eventsFile)
+    ? JSON.parse(fs.readFileSync(eventsFile, 'utf8'))
+    : { schemaVersion: 1, events: [] };
+  fs.writeFileSync(
+    eventsFile,
+    `${JSON.stringify(recordInstallProbeEvents(registry, results, ledger, checkedAt), null, 2)}\n`,
+  );
+
   fs.writeFileSync(
     path.join(ROOT, 'registry', 'compatibility.json'),
     `${JSON.stringify(
-      { schemaVersion: 2, semantics: 'install-probe', checkedAt: new Date().toISOString(), dshVersion, scope: { kind: 'top-by-stars', limit: TOP_N }, results },
+      { schemaVersion: 2, semantics: 'install-probe', checkedAt, dshVersion, scope: { kind: 'top-by-stars', limit: TOP_N }, results },
       null,
       2,
     )}\n`,
