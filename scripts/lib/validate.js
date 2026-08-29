@@ -39,6 +39,22 @@ export function validateEntry(entry, errors, seen) {
       errors.push(`${repo}: invalid compatibility lastCheckedAt`);
     }
   }
+  if (entry.installProbe !== undefined) {
+    const p = entry.installProbe;
+    if (!['installed', 'blocked', 'failed', 'timeout', 'not-tested'].includes(p?.status)) errors.push(`${repo}: invalid installProbe status`);
+    if (p?.dshVersion !== null && typeof p?.dshVersion !== 'string') errors.push(`${repo}: invalid installProbe dshVersion`);
+    if (p?.checkedAt !== null && (!p?.checkedAt || Number.isNaN(Date.parse(p.checkedAt)))) errors.push(`${repo}: invalid installProbe checkedAt`);
+    if (p?.scope?.kind !== 'top-by-stars' || !Number.isInteger(p?.scope?.limit)) errors.push(`${repo}: invalid installProbe scope`);
+  }
+  if (entry.githubRepoId !== undefined) {
+    if (!Number.isInteger(entry.githubRepoId) || entry.githubRepoId <= 0) errors.push(`${repo}: invalid githubRepoId`);
+    for (const field of ['defaultBranch', 'repoPushedAt', 'lastSeenAt', 'lastManifestCheckedAt', 'discoverySource']) {
+      if (typeof entry[field] !== 'string' || !entry[field]) errors.push(`${repo}: missing ${field}`);
+    }
+    if (entry.firstSeenAt !== null && (!entry.firstSeenAt || Number.isNaN(Date.parse(entry.firstSeenAt)))) errors.push(`${repo}: invalid firstSeenAt`);
+    if (entry.packageName !== null && typeof entry.packageName !== 'string') errors.push(`${repo}: invalid packageName`);
+    if (entry.packageVersion !== null && typeof entry.packageVersion !== 'string') errors.push(`${repo}: invalid packageVersion`);
+  }
   if (repo) {
     const key = repo.toLowerCase();
     if (seen.has(key)) errors.push(`${repo}: duplicate repo`);
@@ -48,7 +64,9 @@ export function validateEntry(entry, errors, seen) {
 
 export function validateCompatibilityFile(compat, registry) {
   const errors = [];
-  const statuses = new Set(['verified', 'failed', 'unknown', 'pending']);
+  const statuses = compat?.schemaVersion === 2
+    ? new Set(['installed', 'blocked', 'failed', 'timeout', 'not-tested'])
+    : new Set(['verified', 'failed', 'unknown', 'pending']);
   if (!compat || typeof compat !== 'object') return ['compatibility.json is missing or invalid'];
   if (typeof compat.dshVersion !== 'string' || !compat.dshVersion) errors.push('compatibility: missing dshVersion');
   const repos = new Set(registry.map((e) => e.repo.toLowerCase()));
@@ -56,6 +74,7 @@ export function validateCompatibilityFile(compat, registry) {
     if (!repos.has(r.repo.toLowerCase())) errors.push(`compatibility: unknown repo ${r.repo}`);
     if (!statuses.has(r.status)) errors.push(`compatibility: ${r.repo} invalid status`);
     if (!r.checkedAt || Number.isNaN(Date.parse(r.checkedAt))) errors.push(`compatibility: ${r.repo} invalid checkedAt`);
+    if (compat.schemaVersion === 2 && (r.scope?.kind !== 'top-by-stars' || !Number.isInteger(r.scope?.limit))) errors.push(`compatibility: ${r.repo} invalid scope`);
   }
   return errors;
 }
@@ -118,6 +137,22 @@ export function validateMeta(meta, registry) {
   if (!Number.isInteger(meta.monitoredRepos) || meta.monitoredRepos < meta.pluginCount) errors.push('meta: invalid monitoredRepos');
   const sum = registry.reduce((acc, e) => acc + e.stars, 0);
   if (meta.totalStars !== sum) errors.push(`meta: totalStars ${meta.totalStars} != computed ${sum}`);
+  return errors;
+}
+
+export function validateEventLedger(ledger) {
+  if (!ledger || ledger.schemaVersion !== 1 || !Array.isArray(ledger.events)) return ['events: invalid ledger'];
+  const errors = [];
+  const ids = new Set();
+  const types = new Set(['plugin_added', 'plugin_removed', 'repo_renamed', 'package_version_changed', 'activity_changed', 'install_probe_changed']);
+  for (const event of ledger.events) {
+    if (typeof event.id !== 'string' || !event.id) errors.push('events: missing id');
+    else if (ids.has(event.id)) errors.push(`events: duplicate id ${event.id}`);
+    else ids.add(event.id);
+    if (!types.has(event.type)) errors.push(`events: invalid type ${event.type}`);
+    if (typeof event.repositoryId !== 'string' || !event.repositoryId) errors.push(`events: ${event.id || '?'} missing repositoryId`);
+    if (!event.occurredAt || Number.isNaN(Date.parse(event.occurredAt))) errors.push(`events: ${event.id || '?'} invalid occurredAt`);
+  }
   return errors;
 }
 

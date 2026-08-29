@@ -17,6 +17,7 @@ test('hasBundlePatch: rejects missing or invalid manifests', () => {
 
 test('normalizeRepo: maps search item fields', () => {
   const norm = normalizeRepo({
+    id: 123,
     full_name: 'a/b',
     owner: { login: 'a' },
     name: 'b',
@@ -31,6 +32,7 @@ test('normalizeRepo: maps search item fields', () => {
     topics: ['dsh-plugin'],
   });
   assert.equal(norm.stars, 42);
+  assert.equal(norm.id, 123);
   assert.equal(norm.license, 'MIT');
   assert.equal(norm.fork, true);
   assert.deepEqual(norm.topics, ['dsh-plugin']);

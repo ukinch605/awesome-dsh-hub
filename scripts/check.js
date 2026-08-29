@@ -8,6 +8,7 @@ import {
   validateMeta,
   validateRegistry,
   validateCompatibilityFile,
+  validateEventLedger,
   weeklyFreshnessWarnings,
 } from './lib/validate.js';
 
@@ -33,6 +34,7 @@ function main() {
       ),
     );
   }
+  if (exists('registry/events.json')) errors.push(...validateEventLedger(JSON.parse(read('registry/events.json'))));
 
   for (const file of ['README.md', 'README.en.md']) {
     if (exists(file)) errors.push(...checkReadme(read(file), registry, meta, file));

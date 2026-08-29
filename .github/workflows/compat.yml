@@ -1,4 +1,4 @@
-name: Compatibility Matrix
+name: Install Probe
 
 on:
   schedule:
@@ -29,11 +29,11 @@ jobs:
         run: |
           npm i -g pnpm
           npm i -g @deepseek-ai/dsh@0.1.0-rc.6
-      - name: Run compatibility matrix (top 100)
+      - name: Run install probe (top 100 by stars)
         env:
           DSH_VERSION: 0.1.0-rc.6
           CI: 'true'
-        run: npm run compat
+        run: npm run install-probe
       - name: Regenerate artifacts
         run: npm run generate
       - name: Consistency check
@@ -56,7 +56,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: compatibility matrix $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git commit -m "chore: install probe $(date -u +%Y-%m-%dT%H:%M:%SZ)"
             git push
           fi
       - name: Close resolved alerts

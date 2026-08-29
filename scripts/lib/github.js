@@ -44,6 +44,7 @@ async function gitRequest(url, { fetchFn = fetch, token, retries = 5 } = {}) {
 
 export function normalizeRepo(item) {
   return {
+    id: item.id ?? null,
     full_name: item.full_name,
     owner: item.owner?.login,
     name: item.name,
@@ -57,6 +58,18 @@ export function normalizeRepo(item) {
     default_branch: item.default_branch,
     topics: Array.isArray(item.topics) ? item.topics : [],
   };
+}
+
+export function packageMetadata(packageJsonText) {
+  try {
+    const pkg = JSON.parse(packageJsonText);
+    return {
+      packageName: typeof pkg.name === 'string' ? pkg.name : null,
+      packageVersion: typeof pkg.version === 'string' ? pkg.version : null,
+    };
+  } catch {
+    return { packageName: null, packageVersion: null };
+  }
 }
 
 export async function searchTopicRepos({

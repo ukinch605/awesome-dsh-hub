@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { applyOverrides, loadOverrides } from './lib/overrides.js';
 import { registryStats, renderCatalog, renderReadme } from './lib/render.js';
+import { migrateInstallProbeStatus } from './lib/registry-v2.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const REGISTRY_FILE = path.join(ROOT, 'registry', 'plugins.json');
@@ -18,7 +19,8 @@ function main() {
   meta.pluginCount = registry.length;
   meta.totalStars = registry.reduce((acc, e) => acc + e.stars, 0);
 
-  // Merge compatibility results into each entry (pending by default).
+  // Merge install probe results. Legacy v1 results remain readable until the
+  // first post-merge probe refresh replaces them.
   const compatFile = path.join(ROOT, 'registry', 'compatibility.json');
   const compat = fs.existsSync(compatFile)
     ? JSON.parse(fs.readFileSync(compatFile, 'utf8'))
@@ -28,9 +30,10 @@ function main() {
   );
   for (const e of registry) {
     const c = compatByRepo.get(e.repo.toLowerCase());
-    e.compatibility = c
-      ? { dshVersion: c.dshVersion, status: c.status, lastCheckedAt: c.checkedAt }
-      : { dshVersion: compat?.dshVersion || meta.compatDshVersion || null, status: 'pending', lastCheckedAt: null };
+    e.installProbe = c
+      ? { dshVersion: c.dshVersion, status: migrateInstallProbeStatus(c.status, c.reason), checkedAt: c.checkedAt, scope: c.scope || compat?.scope || { kind: 'top-by-stars', limit: 100 }, reason: c.reason || null }
+      : { dshVersion: compat?.dshVersion || meta.compatDshVersion || null, status: 'not-tested', checkedAt: null, scope: { kind: 'top-by-stars', limit: 100 }, reason: null };
+    delete e.compatibility;
   }
 
   fs.writeFileSync(REGISTRY_FILE, `${JSON.stringify(registry, null, 2)}\n`);
