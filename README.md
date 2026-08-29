@@ -2,7 +2,7 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/ukinch605/awesome-dsh-hub)
 ![License](https://img.shields.io/github/license/ukinch605/awesome-dsh-hub)
-![Plugins](https://img.shields.io/badge/plugins-4607-4dabf7)
+![Plugins](https://img.shields.io/badge/plugins-4528-4dabf7)
 ![Last updated](https://img.shields.io/badge/last%20updated-2026--08--29-orange)
 
 > 自动维护的 DeepSeek Harness（`dsh`）插件精品目录：机器可读 Registry、中英双语目录与可检索站点。Everything is a Plugin. 🐋
@@ -14,28 +14,28 @@
 
 | 指标 / Metric | 数值 / Value |
 | --- | ---: |
-| 收录插件 / Plugins | **4607** |
-| 监测仓库 / Monitored repos | 6241 |
-| 累计 Star / Total stars | 67,899 |
-| 最近更新 / Last updated | 2026-08-29 09:26:17.429 UTC |
+| 收录插件 / Plugins | **4528** |
+| 监测仓库 / Monitored repos | 6136 |
+| 累计 Star / Total stars | 67,555 |
+| 最近更新 / Last updated | 2026-08-29 12:19:25.777 UTC |
 
 ### 分类构成 / Categories
 
-Web UI 增强 650 · Agent 能力 1866 · 编码开发 376 · 消息通讯 191 · 视觉与多模态 369 · 浏览器与网络 250 · 皮肤与娱乐 133 · 文件与数据 555 · 开发工具与教程 106 · 合集与发行版 68 · 生态项目 43
+Web UI 增强 634 · Agent 能力 1845 · 编码开发 373 · 消息通讯 188 · 视觉与多模态 362 · 浏览器与网络 241 · 皮肤与娱乐 131 · 文件与数据 541 · 开发工具与教程 106 · 合集与发行版 66 · 生态项目 41
 
 ### Top 10 插件 / Top Plugins
 
 | # | 插件 / Plugin | Stars | 类型 / Type | 说明 / Description |
 | --- | --- | ---: | --- | --- |
-| 1 | [yjh051108/dsh-routing-suite](https://github.com/yjh051108/dsh-routing-suite) | 6,937 | Agent 能力 | dsh-routing-suite — injector + router-standard kit: install… |
+| 1 | [yjh051108/dsh-routing-suite](https://github.com/yjh051108/dsh-routing-suite) | 6,940 | Agent 能力 | dsh-routing-suite — injector + router-standard kit: install… |
 | 2 | [liustack/modlens](https://github.com/liustack/modlens) | 3,751 | 视觉与多模态 | The first vision plugin for DeepSeek Harness, and the visio… |
-| 3 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 3,083 | Web UI 增强 | 开放的侧边栏底座，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/侧边对话/Git/子代理页面 ｜ Open s… |
-| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 2,728 | Agent 能力 | The plugin market inside DeepSeek Harness — browse, search,… |
-| 5 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 2,674 | 消息通讯 | DSH 官方公众号收录的 TUI 补位插件：Claude Code 风，鲸鱼顶栏/实时状态/流式思考/双击 Esc 回… |
-| 6 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 1,285 | Web UI 增强 | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
-| 7 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 1,169 | Agent 能力 | AgentTeams plugin for DeepSeek Harness |
-| 8 | [bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) | 1,155 | 浏览器与网络 | The best DeepSeek Harness plugin for context insight and ma… |
-| 9 | [GanyuanRan/Aegis](https://github.com/GanyuanRan/Aegis) | 1,148 | 编码开发 | Make AI coding agents architecture-aware: baseline-first, e… |
+| 3 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 3,089 | Web UI 增强 | 开放的侧边栏底座，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/侧边对话/Git/子代理页面 ｜ Open s… |
+| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 2,743 | Agent 能力 | The plugin market inside DeepSeek Harness — browse, search,… |
+| 5 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 2,677 | 消息通讯 | DSH 官方公众号收录的 TUI 补位插件：Claude Code 风，鲸鱼顶栏/实时状态/流式思考/双击 Esc 回… |
+| 6 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 1,298 | Web UI 增强 | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
+| 7 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 1,173 | Agent 能力 | AgentTeams plugin for DeepSeek Harness |
+| 8 | [bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) | 1,159 | 浏览器与网络 | The best DeepSeek Harness plugin for context insight and ma… |
+| 9 | [GanyuanRan/Aegis](https://github.com/GanyuanRan/Aegis) | 1,149 | 编码开发 | Make AI coding agents architecture-aware: baseline-first, e… |
 | 10 | [ysr666/dsh-vision-router](https://github.com/ysr666/dsh-vision-router) | 1,020 | 视觉与多模态 | Eyes for text-only DeepSeek Harness agents: built-in free v… |
 
 ## 快速使用 / Quick Start
