@@ -6,16 +6,19 @@ import { classify } from './lib/classify.js';
 import {
   fetchRawPackageJsonResult,
   hasBundlePatch,
+  packageMetadata,
   searchTopicRepos,
 } from './lib/github.js';
 import { applyOverrides, loadOverrides, pruneOverrides } from './lib/overrides.js';
 import { pruneCompatResults } from './lib/validate.js';
 import { preserveTransientEntry } from './lib/registry-state.js';
+import { appendEvents, generateEvents, preserveLifecycle, REGISTRY_VERSION } from './lib/registry-v2.js';
 import { INSTALL_PREFIX, SEARCH_QUERIES, SEARCH_SORTS } from './lib/constants.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const REGISTRY_FILE = path.join(ROOT, 'registry', 'plugins.json');
 const META_FILE = path.join(ROOT, 'registry', 'meta.json');
+const EVENTS_FILE = path.join(ROOT, 'registry', 'events.json');
 
 function mapLimit(items, limit, fn) {
   const results = new Array(items.length);
@@ -39,6 +42,7 @@ async function main() {
   const previous = fs.existsSync(REGISTRY_FILE)
     ? JSON.parse(fs.readFileSync(REGISTRY_FILE, 'utf8')) : [];
   const previousByRepo = new Map(previous.map((e) => [e.repo.toLowerCase(), e]));
+  const previousById = new Map(previous.filter((e) => e.githubRepoId != null).map((e) => [String(e.githubRepoId), e]));
   const counts = {
     fetched: 0,
     archived: 0,
@@ -83,14 +87,25 @@ async function main() {
     if (result.fallbackRecovered) counts.fallbackRecovered++;
     if (result.kind === 'transient-failure') {
       counts.fetchFailed++;
-      preserveTransientEntry(result, r.full_name, previousByRepo, entries);
+      const prior = previousById.get(String(r.id)) || previousByRepo.get(r.full_name.toLowerCase());
+      preserveTransientEntry(result, r.full_name, new Map([[r.full_name.toLowerCase(), prior]].filter(([, value]) => value)), entries);
       return;
     }
     const text = result.kind === 'success' ? result.text : null;
     if (!hasBundlePatch(text)) { counts.manifestMissing++; return; }
-    entries.push({
+    const prior = previousById.get(String(r.id)) || previousByRepo.get(r.full_name.toLowerCase());
+    const manifest = packageMetadata(text);
+    entries.push(preserveLifecycle({
       name: r.name,
+      githubRepoId: r.id,
       repo: r.full_name,
+      defaultBranch: r.default_branch,
+      packageName: manifest.packageName,
+      packageVersion: manifest.packageVersion,
+      repoPushedAt: r.pushed_at,
+      lastManifestCheckedAt: generatedAt,
+      discoverySource: 'github-topic:dsh-plugin',
+      ...(prior?.installProbe ? { installProbe: prior.installProbe } : {}),
       url: r.html_url,
       description: (r.description || '').trim(),
       stars: r.stars,
@@ -99,7 +114,7 @@ async function main() {
       activity: activityLevel(r.pushed_at),
       installCommand: `${INSTALL_PREFIX}${r.full_name}`,
       updatedAt: generatedAt,
-    });
+    }, prior, generatedAt));
   });
   counts.admitted = entries.length;
 
@@ -107,6 +122,10 @@ async function main() {
   const finalEntries = applyOverrides(entries, overrides)
     .sort((a, b) => b.stars - a.stars);
   counts.admitted = finalEntries.length;
+
+  const ledger = fs.existsSync(EVENTS_FILE)
+    ? JSON.parse(fs.readFileSync(EVENTS_FILE, 'utf8')) : { schemaVersion: 1, events: [] };
+  const events = appendEvents(ledger, generateEvents(previous, finalEntries, generatedAt));
 
   // Self-healing: drop cross-file references whose repo is no longer in the
   // registry, so a renamed or vanished plugin degrades gracefully instead of
@@ -146,6 +165,7 @@ async function main() {
     META_FILE,
     `${JSON.stringify(
       {
+        schemaVersion: REGISTRY_VERSION,
         generatedAt,
         pluginCount: finalEntries.length,
         monitoredRepos: counts.fetched,
@@ -170,6 +190,7 @@ async function main() {
       2,
     )}\n`,
   );
+  fs.writeFileSync(EVENTS_FILE, `${JSON.stringify(events, null, 2)}\n`);
 
   // Changelog + last-run snapshot feed the weekly digest.
   const lastRunFile = path.join(ROOT, 'registry', 'last-run.json');
