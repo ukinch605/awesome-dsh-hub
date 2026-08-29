@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-0",
   "private": true,
   "dependencies": {
+    "@dsh-external/dsh-super-injector": "github:yjh051108/dsh-routing-suite",
     "@liustack/modlens": "github:liustack/modlens"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "@liustack/modlens"
+        "@liustack/modlens",
+        "@dsh-external/dsh-super-injector"
       ]
     }
   }

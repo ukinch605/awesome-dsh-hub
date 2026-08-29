@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-1",
   "private": true,
   "dependencies": {
+    "@liustack/modlens": "github:liustack/modlens",
     "aegis": "github:GanyuanRan/Aegis"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "aegis"
+        "aegis",
+        "@liustack/modlens"
       ]
     }
   }

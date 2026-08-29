@@ -17,6 +17,9 @@ importers:
       dsh-toy:
         specifier: github:c3ll256/dsh-toy
         version: https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c
+      easyeda-agent-dsh:
+        specifier: github:zhoushoujianwork/easyeda-agent
+        version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd
 
 packages:
 
@@ -55,6 +58,11 @@ packages:
     peerDependenciesMeta:
       '@deepseek-ai/dsh-tools':
         optional: true
+
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd:
+    resolution: {gitHosted: true, integrity: sha512-0FQ1cA19iAnHY1dH6PvL6i69bxspWRBeLodsMo+QW7rjhClIcSvhnXH0Ati/pGS5gZU+p5dEbL1UtkXdHf4t7g==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd}
+    version: 0.25.1
+    engines: {node: '>=20.17.0'}
 
   undici@7.29.0:
     resolution: {integrity: sha512-IDxfleLmmbSskfWSUATiN1nfn2rDuvnMOqb5CWR92iIfojA0Ud+ulOAAEQ57LPr9rWmsreUyf5lwyao+7GNNVw==}
@@ -99,6 +107,8 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd: {}
 
   undici@7.29.0: {}
 

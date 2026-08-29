@@ -11,6 +11,9 @@ importers:
       '@sanqi-normal/dsh-webui-market-plugin':
         specifier: github:Sanqi-normal/dsh-webui-market-plugin
         version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41
+      '@zseven-w/dsh-ios':
+        specifier: github:ZSeven-W/dsh-ios
+        version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c
       dsh-memory-evolve:
         specifier: github:csyangwen/dsh-memory-evolve
         version: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/1e6e7eb15ce515b0f2bd2142bdee9a36c46c8b91
@@ -33,6 +36,26 @@ packages:
       '@deepseek-ai/dsh-client-ui-slots': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
       react: ^18.2.0
 
+  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c':
+    resolution: {gitHosted: true, integrity: sha512-wD69QZHNKiDPv4VJKvg5Qqgpwq1Jo965D84nofntkiVlnXdDaIUuGzZ5OTNhcfKCdx4VngZ8FQ2y0jHMJ9iQoA==, tarball: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c}
+    version: 0.1.0-rc.5
+    engines: {node: '>=24.11.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-fs': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-sandbox-policy': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
   dsh-memory-evolve@https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/1e6e7eb15ce515b0f2bd2142bdee9a36c46c8b91:
     resolution: {gitHosted: true, integrity: sha512-34GJ0xHQmTLGoRAYBJUsFoqKA15B3l4jQ5K+8T8GIWHpafj4hUFPFSqwGfhGypG7B81BcQg7CA4YqTvhwHiB+Q==, tarball: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/1e6e7eb15ce515b0f2bd2142bdee9a36c46c8b91}
     version: 0.1.0
@@ -41,6 +64,12 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-zVpjAExArNW6aZIUdTjieY6olq4Oec4QD5dTMJ5a8UyIksT/b7WlBHjdqSWSP83ExId+9rL/8WCNKDBjyk2zQg==, tarball: https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a}
     version: 0.3.3
 
+  inspect-webkit@0.0.5:
+    resolution: {integrity: sha512-584wP/2nJO1LX74nqHP2j0tQzlK9ZTi+D0Z9qeLQjtUR/LCMXQHGX8M0vrsqBwTeGakF7q5GMFpg81nxUYlCvw==}
+    hasBin: true
+    peerDependencies:
+      typescript: ^5
+
   perfect-web-clone@https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5:
     resolution: {gitHosted: true, integrity: sha512-PogS83E4MJqMynMODNxxxFgFNKplIXlauB3qsQA2MpDo1/EvziGFgUN0wK4D7B/J2QlxMcYixm+u5dbuuLlEcw==, tarball: https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5}
     version: 3.0.0
@@ -48,12 +77,67 @@ packages:
       '@deepseek-ai/cordis': '*'
       '@deepseek-ai/dsh-tools': '*'
 
+  serve-sim@0.1.46:
+    resolution: {integrity: sha512-zdKNOv+6qbdCkhtUMEbzX0ymrb2EJK54dZvs+n3YOK15LEcpapGA9/NpSSYEphpI420kTgUWqKNmkxLoWWaVzg==}
+    engines: {node: '>=20'}
+    hasBin: true
+
+  sonner@2.0.8:
+    resolution: {integrity: sha512-UM/ByIoFra8yzV75n1o0Puu0bw5U/9UNnDacrJNspekBewIfsQ3D6ez1nvlWpt7aTsO6rujQtifBpycwIivqlg==}
+    peerDependencies:
+      '@types/react': ^18.0.0 || ^19.0.0
+      react: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+      react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  ws@8.21.3:
+    resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
 snapshots:
 
   '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41': {}
+
+  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c':
+    dependencies:
+      serve-sim: 0.1.46
+    transitivePeerDependencies:
+      - '@types/react'
+      - bufferutil
+      - typescript
+      - utf-8-validate
 
   dsh-memory-evolve@https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/1e6e7eb15ce515b0f2bd2142bdee9a36c46c8b91: {}
 
   gal-view@https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a: {}
 
+  inspect-webkit@0.0.5: {}
+
   perfect-web-clone@https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5: {}
+
+  serve-sim@0.1.46:
+    dependencies:
+      inspect-webkit: 0.0.5
+      sonner: 2.0.8
+      ws: 8.21.3
+    transitivePeerDependencies:
+      - '@types/react'
+      - bufferutil
+      - react
+      - react-dom
+      - typescript
+      - utf-8-validate
+
+  sonner@2.0.8: {}
+
+  ws@8.21.3: {}

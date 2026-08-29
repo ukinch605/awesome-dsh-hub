@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@sanqi-normal/dsh-webui-market-plugin':
+        specifier: github:Sanqi-normal/dsh-webui-market-plugin
+        version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41
       dsh-provider-model-configurator:
         specifier: github:LiangYin233/dsh-provider-model-configurator
         version: https://codeload.github.com/LiangYin233/dsh-provider-model-configurator/tar.gz/70f88112c7d92fadeb93e46f5dcb8b1f3ae6eba3
@@ -16,6 +19,16 @@ importers:
         version: https://codeload.github.com/Make0209/dsh-usage-stats/tar.gz/8992d306cdca8857b4362868d591fde3689765b0
 
 packages:
+
+  '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41':
+    resolution: {gitHosted: true, integrity: sha512-YXbHkVgNb104GXaKZuzl6t3cV/66E/4YGQbXZ70ZTgubqk/lQRLiXNXhtv/BLwmafSZxLDSYevQzABuynPhDig==, tarball: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41}
+    version: 0.5.5
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-client-runtime': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
+      react: ^18.2.0
 
   dsh-provider-model-configurator@https://codeload.github.com/LiangYin233/dsh-provider-model-configurator/tar.gz/70f88112c7d92fadeb93e46f5dcb8b1f3ae6eba3:
     resolution: {gitHosted: true, integrity: sha512-hKdmrBCiX00LuBO6cI4k4KvwH5JFVjF5bYphG7dqkpsW0ejw1u5yGf7SYuVorcmeDqJCMtJmXF74pYY0fKsnAg==, tarball: https://codeload.github.com/LiangYin233/dsh-provider-model-configurator/tar.gz/70f88112c7d92fadeb93e46f5dcb8b1f3ae6eba3}
@@ -50,6 +63,8 @@ packages:
     version: 1.0.0
 
 snapshots:
+
+  '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41': {}
 
   dsh-provider-model-configurator@https://codeload.github.com/LiangYin233/dsh-provider-model-configurator/tar.gz/70f88112c7d92fadeb93e46f5dcb8b1f3ae6eba3: {}
 

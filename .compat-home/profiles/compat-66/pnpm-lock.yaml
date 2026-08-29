@@ -11,6 +11,9 @@ importers:
       '@zseven-w/dsh-noema':
         specifier: github:ZSeven-W/dsh-noema
         version: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2
+      dsh-git-memory:
+        specifier: github:seriousz158/dsh-memory
+        version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03
       dsh-popout-sidebar:
         specifier: github:e2mcc/dsh-popout-sidebar
         version: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162
@@ -82,6 +85,21 @@ packages:
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
+  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03:
+    resolution: {gitHosted: true, integrity: sha512-6muo6yn+AsSDqSAKi9yqKId9h60B+/0h7RqOrEdBMdt97zcdxMy27Jw4Lbk8sD7v3wUPKzDSPD60Kaf13kIu6A==, tarball: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03}
+    version: 0.8.2
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-connection': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-typert-protocol': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
+
   dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162:
     resolution: {gitHosted: true, integrity: sha512-PCPmu+5404fhKEjozKvKGHhDj3PPkL1eYfjQXWCKlMpVO1xQ53v+Q2rZKsujdPozlgMbEDGlV/ATdM5qnPClFQ==, tarball: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162}
     version: 1.0.1
@@ -144,6 +162,8 @@ snapshots:
       '@zseven-w/dsh-noema-win32-x64': 0.1.0-rc.3
 
   argparse@2.0.1: {}
+
+  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03: {}
 
   dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162: {}
 

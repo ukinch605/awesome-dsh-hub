@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/dsh-ads':
+        specifier: github:Nagi-ovo/dsh-ads
+        version: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/8eef607d2ab15737ec93233094d77aff7e5e8da3(@deepseek-ai/schemastery@3.18.1)
       '@mnemon-dev/dsh-mnemon':
         specifier: github:mnemon-dev/mnemon
         version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033
@@ -29,6 +32,15 @@ packages:
 
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
+  '@dsh-external/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/8eef607d2ab15737ec93233094d77aff7e5e8da3':
+    resolution: {gitHosted: true, integrity: sha512-U86vJhXeb7aFJ1I06tk+ZUxL/D2edHH9uRQ7W+Zw4PZF6ILHVdUI62Wm+wFU8gRft2X/JsI9TPSdYTN1cU/tuw==, tarball: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/8eef607d2ab15737ec93233094d77aff7e5e8da3}
+    version: 0.1.0
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
 
   '@jimp/bmp@0.14.0':
     resolution: {integrity: sha512-5RkX6tSS7K3K3xNEb2ygPuvyL9whjanhoaB/WmmXlJS6ub4DjTqrapu8j4qnIWmO4YYtFeTbDTXV6v9P1yMA5A==}
@@ -529,6 +541,10 @@ snapshots:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
+
+  '@dsh-external/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/8eef607d2ab15737ec93233094d77aff7e5e8da3(@deepseek-ai/schemastery@3.18.1)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
 
   '@jimp/bmp@0.14.0(@jimp/custom@0.14.0)':
     dependencies:

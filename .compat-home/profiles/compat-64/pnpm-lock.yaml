@@ -17,6 +17,9 @@ importers:
       dsh-popout-sidebar:
         specifier: github:e2mcc/dsh-popout-sidebar
         version: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162
+      dsh-undo-savepoint:
+        specifier: github:lire1131/dsh-undo-savepoint
+        version: https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/ebd6a12b3097b57e57393f0ea7bb8055426e091b
 
 packages:
 
@@ -43,6 +46,11 @@ packages:
     version: 1.0.1
     engines: {node: '>=20'}
 
+  dsh-undo-savepoint@https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/ebd6a12b3097b57e57393f0ea7bb8055426e091b:
+    resolution: {gitHosted: true, integrity: sha512-Zm7sevLTr286QvGD9ffm5LUkb/nFem9kqfKkQrnMatuuh+glEw1B9+LwZIFxjbMD3GoSH+vFGc3/Ct/4bB+pYQ==, tarball: https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/ebd6a12b3097b57e57393f0ea7bb8055426e091b}
+    version: 0.4.3
+    engines: {dsh: '>=0.0.1-0 || >=0.1.0-rc.2 || >=0.1.1-rc.1', node: '>=20.0.0'}
+
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
@@ -55,5 +63,7 @@ snapshots:
       zod: 4.4.3
 
   dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162: {}
+
+  dsh-undo-savepoint@https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/ebd6a12b3097b57e57393f0ea7bb8055426e091b: {}
 
   zod@4.4.3: {}

@@ -8,11 +8,23 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/dsh-super-injector':
+        specifier: github:yjh051108/dsh-routing-suite
+        version: https://codeload.github.com/yjh051108/dsh-routing-suite/tar.gz/f753bb1cd793a8e74b01d8fa5ad2c3d87a2e3c30
       '@liustack/modlens':
         specifier: github:liustack/modlens
         version: https://codeload.github.com/liustack/modlens/tar.gz/00f3658c30655314b013edbb5687c4ec5f5dab27
 
 packages:
+
+  '@dsh-external/dsh-super-injector@https://codeload.github.com/yjh051108/dsh-routing-suite/tar.gz/f753bb1cd793a8e74b01d8fa5ad2c3d87a2e3c30':
+    resolution: {gitHosted: true, integrity: sha512-61+LJ3gzMVOb22yGcztDIObXU83gwl19etXfGcnlUG8prwa0PVlu+cK5InGpcWulaxKRHN9xf4d5AZpDZkif3w==, tarball: https://codeload.github.com/yjh051108/dsh-routing-suite/tar.gz/f753bb1cd793a8e74b01d8fa5ad2c3d87a2e3c30}
+    version: 0.3.3
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/dsh-tools': '>=0.0.1-rc <2'
+      cordis: '>=4.0.0-rc <5'
+      schemastery: ^3.18.0
 
   '@liustack/modlens@https://codeload.github.com/liustack/modlens/tar.gz/00f3658c30655314b013edbb5687c4ec5f5dab27':
     resolution: {gitHosted: true, integrity: sha512-8BsEyGYJzob0wyQyf+9CGVlXpYrWfBs2a6c+v8Pa41U9EONavvhBKLp3+VfuL68cqHGM/98Y/FPrU28zGGVGDg==, tarball: https://codeload.github.com/liustack/modlens/tar.gz/00f3658c30655314b013edbb5687c4ec5f5dab27}
@@ -29,6 +41,8 @@ packages:
     engines: {node: '>=22.19.0'}
 
 snapshots:
+
+  '@dsh-external/dsh-super-injector@https://codeload.github.com/yjh051108/dsh-routing-suite/tar.gz/f753bb1cd793a8e74b01d8fa5ad2c3d87a2e3c30': {}
 
   '@liustack/modlens@https://codeload.github.com/liustack/modlens/tar.gz/00f3658c30655314b013edbb5687c4ec5f5dab27':
     dependencies:

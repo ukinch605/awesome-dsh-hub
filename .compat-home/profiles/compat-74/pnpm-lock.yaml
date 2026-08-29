@@ -14,6 +14,9 @@ importers:
       ds-harness-remote:
         specifier: github:liguobao/deepseek-harness-remote
         version: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/94c7b72b84e230b8bf8b7da6f42de895352d55b0
+      dsh-reasoning-effort:
+        specifier: github:HanaAyane/dsh-reasoning-effort
+        version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994
       dsh-tabbit:
         specifier: git+https://github.com/Tabbit-Browser/dsh-plugin.git
         version: git+https://github.com/Tabbit-Browser/dsh-plugin.git#64dfa964aac38754ca7a38da0ce2810a7603934c
@@ -200,6 +203,21 @@ packages:
         optional: true
       '@deepseek-ai/dsh-host-apiproxy':
         optional: true
+
+  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994:
+    resolution: {gitHosted: true, integrity: sha512-gj3ZW3p/RO9Tpg3gazWJetcwQtaJtsPWYeS+mMxBUSONHj1D7SbINaeOErJiUfZaV9IWmS7zbigDWBLFYSS/4g==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994}
+    version: 0.6.2
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-connection': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-model-selection': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      react: ^18.2.0
 
   dsh-tabbit@git+https://github.com/Tabbit-Browser/dsh-plugin.git#64dfa964aac38754ca7a38da0ce2810a7603934c:
     resolution: {commit: 64dfa964aac38754ca7a38da0ce2810a7603934c, repo: https://github.com/Tabbit-Browser/dsh-plugin.git, type: git}
@@ -468,6 +486,10 @@ snapshots:
       '@roamhq/wrtc': 0.10.0
     transitivePeerDependencies:
       - supports-color
+
+  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994:
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
 
   dsh-tabbit@git+https://github.com/Tabbit-Browser/dsh-plugin.git#64dfa964aac38754ca7a38da0ce2810a7603934c: {}
 

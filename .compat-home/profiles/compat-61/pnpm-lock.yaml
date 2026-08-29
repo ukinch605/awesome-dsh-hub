@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@icelily/dsh-gitbash-preset':
+        specifier: github:liceses/dsh-gitbash-preset
+        version: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8
       '@nanmicoder/dsh-auto-mode':
         specifier: github:NanmiCoder/dsh-auto-mode
         version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f
@@ -22,6 +25,11 @@ packages:
 
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
+  '@icelily/dsh-gitbash-preset@https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8':
+    resolution: {gitHosted: true, integrity: sha512-JeoS0JZoqCz3uuGVb+W38w08uegiYWtgI5esN+3yJbnK+uXmS0TG1oXYpS3m96l27WzDX5wATaGmvULFnmWqSQ==, tarball: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8}
+    version: 0.1.2
+    engines: {node: '>=20'}
 
   '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f':
     resolution: {gitHosted: true, integrity: sha512-lMIct43lNedA+ruu00X8rKCHbhJXtwn58ruT3YvgQyQpsdox7SEBwYS9cJKfKPxgMF6Oq2LG/wAJIrpWowXOkQ==, tarball: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f}
@@ -70,6 +78,8 @@ snapshots:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
+
+  '@icelily/dsh-gitbash-preset@https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8': {}
 
   '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f':
     dependencies:

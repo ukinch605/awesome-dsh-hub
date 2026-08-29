@@ -11,6 +11,9 @@ importers:
       '@nanmicoder/dsh-agent-teams':
         specifier: github:NanmiCoder/dsh-agent-teams
         version: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/912aae5225d3d85fa841a1b0c8a5c77021876c25(@deepseek-ai/schemastery@3.18.1)
+      aegis:
+        specifier: github:GanyuanRan/Aegis
+        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/296160cf2e8752a707483d291004a525509c57ea
       dsh-vision-router:
         specifier: github:ysr666/dsh-vision-router
         version: https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/f473911c48fee2c75efae6853f7cd4ed5cf08647
@@ -268,6 +271,21 @@ packages:
 
   '@types/node@16.9.1':
     resolution: {integrity: sha512-QpLcX9ZSsq3YYUUnD3nFDY8H7wctAhQj/TFKL8Ya8v5fMm3CFXxo8zStsLAl780ltoYoo1WvKUVGBQK+1ifr7g==}
+
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/296160cf2e8752a707483d291004a525509c57ea:
+    resolution: {gitHosted: true, integrity: sha512-0FNjreDwT3o+OVqYLsVCPKjPaYsJVHc4sM+Nfo3ZQewkYoV5tYtHEctFLVX0WXRy0uxGrB39z9tzsOWgw3Xb9w==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/296160cf2e8752a707483d291004a525509c57ea}
+    version: 2.9.1
+    peerDependencies:
+      '@deepseek-ai/dsh-agent': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-skill-filesystem': ^0.1.0-rc.6
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-skill-filesystem':
+        optional: true
 
   ansi-regex@6.3.0:
     resolution: {integrity: sha512-WpDfL7NO6j7tH88IDBNVdUJxDh9nmCteAVW9dsep846XdwF4naCBK+/tGLX3KJgcpgMRXCFlTM2hKGoK9FsdrQ==}
@@ -815,6 +833,8 @@ snapshots:
   '@standard-schema/spec@1.1.0': {}
 
   '@types/node@16.9.1': {}
+
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/296160cf2e8752a707483d291004a525509c57ea: {}
 
   ansi-regex@6.3.0: {}
 

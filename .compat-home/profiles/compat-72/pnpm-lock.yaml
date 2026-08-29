@@ -8,11 +8,26 @@ importers:
 
   .:
     dependencies:
+      dsh-chat-import:
+        specifier: github:Nwflower/dsh-chat-import
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689
       dsh-plugin-marketplace:
         specifier: github:YELEBAI/dsh-plugin-marketplace
         version: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/5c64f87239012088002b667a9e3821a232d2760f
 
 packages:
+
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689:
+    resolution: {gitHosted: true, integrity: sha512-Wi4Khs7EJD4W3CVWCkI+vWaCtIymT2VPGXOjsZa6RblXDfOrqCvOIJIXhOAG+6M70BoLwoariqAJJifGX7QYQw==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689}
+    version: 0.8.1
+    engines: {node: '>=22.13'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': '>=3.0.0'
+      react: '>=18.0.0'
 
   dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/5c64f87239012088002b667a9e3821a232d2760f:
     resolution: {gitHosted: true, integrity: sha512-mQW3uXqoAdqXuXl4KwNyovGpircNlu2YppuekxGG6PxLWBQb1+BxMbcGT0aWLPF30tX51Q4yLZLty0PMa+MQIQ==, tarball: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/5c64f87239012088002b667a9e3821a232d2760f}
@@ -22,13 +37,22 @@ packages:
       '@deepseek-ai/dsh-app-boot': ^0.1.0-rc.5
       '@deepseek-ai/dsh-typert-protocol': ^0.1.0-rc.5
 
+  fzstd@0.1.1:
+    resolution: {integrity: sha512-dkuVSOKKwh3eas5VkJy1AW1vFpet8TA/fGmVA5krThl8YcOVE/8ZIoEA1+U1vEn5ckxxhLirSdY837azmbaNHA==}
+
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
 
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689:
+    dependencies:
+      fzstd: 0.1.1
+
   dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/5c64f87239012088002b667a9e3821a232d2760f:
     dependencies:
       zod: 4.4.3
+
+  fzstd@0.1.1: {}
 
   zod@4.4.3: {}

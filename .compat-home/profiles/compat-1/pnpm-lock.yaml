@@ -8,11 +8,20 @@ importers:
 
   .:
     dependencies:
+      '@liustack/modlens':
+        specifier: github:liustack/modlens
+        version: https://codeload.github.com/liustack/modlens/tar.gz/147356e6dde04c69a6a3eeb95d1e21ffeb057d6c
       aegis:
         specifier: github:GanyuanRan/Aegis
         version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/21b27d23598ef492834427e2a1381b744f66b787
 
 packages:
+
+  '@liustack/modlens@https://codeload.github.com/liustack/modlens/tar.gz/147356e6dde04c69a6a3eeb95d1e21ffeb057d6c':
+    resolution: {gitHosted: true, integrity: sha512-szwQUUM9CP/n58yj0xpEz0OVqvgWY8rrusN6ZHv0SoiRhp0Trh1/vzmz7smb1Nmf3eWv/yDmfgzxEWUnVO0InA==, tarball: https://codeload.github.com/liustack/modlens/tar.gz/147356e6dde04c69a6a3eeb95d1e21ffeb057d6c}
+    version: 3.25.2
+    engines: {node: '>=22.19'}
+    hasBin: true
 
   aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/21b27d23598ef492834427e2a1381b744f66b787:
     resolution: {gitHosted: true, integrity: sha512-AuKHB++CQuvNaJwOeT8kK3tcpPUkE1kyzYrtfadsdi/5MlL89iTmmYPbzc0yotPZ3qR5GpOkGEjld15oOhAt4A==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/21b27d23598ef492834427e2a1381b744f66b787}
@@ -23,6 +32,23 @@ packages:
       '@deepseek-ai/dsh-skill-filesystem':
         optional: true
 
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
+
+  undici@8.10.0:
+    resolution: {integrity: sha512-HvltHd7avK13QIw/oLe4qoOLyoVSoafqJ2jYOrtMRBkbYT31eiBQ8O0ehRKZiEZCMEyLFQNIADpgCWC5fALvYQ==}
+    engines: {node: '>=22.19.0'}
+
 snapshots:
 
+  '@liustack/modlens@https://codeload.github.com/liustack/modlens/tar.gz/147356e6dde04c69a6a3eeb95d1e21ffeb057d6c':
+    dependencies:
+      commander: 13.1.0
+      undici: 8.10.0
+
   aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/21b27d23598ef492834427e2a1381b744f66b787: {}
+
+  commander@13.1.0: {}
+
+  undici@8.10.0: {}

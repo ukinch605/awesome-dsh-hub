@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-83",
   "private": true,
   "dependencies": {
+    "@dsh-external/dsh-redteam-model": "github:SeaOf0/dsh-redteam-model",
     "deepseek-plugin-store": "github:Ericwong5021/deepseek-plugin-store"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "deepseek-plugin-store"
+        "deepseek-plugin-store",
+        "@dsh-external/dsh-redteam-model"
       ]
     }
   }

@@ -20,6 +20,9 @@ importers:
       dsh-auth-in-one:
         specifier: github:Stormycry-cryp/dsh-AuthInOne
         version: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(react@18.3.1)
+      dsh-tabbit:
+        specifier: github:Tabbit-Browser/dsh-tabbit
+        version: https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c
 
 packages:
 
@@ -155,6 +158,16 @@ packages:
       react:
         optional: true
 
+  dsh-tabbit@https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c:
+    resolution: {gitHosted: true, integrity: sha512-aZma7FhF9dazBRyCAettDpJyL9XkLWHZKVPICXU9N27tTt12t8YnJq1xf/RNM+nmZkhFpre6M80lZo+SOY+jHQ==, tarball: https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c}
+    version: 0.2.3
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.0'
+      '@deepseek-ai/dsh-jobs': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-skill': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-tools': '>=0.1.0-rc.5'
+
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -285,6 +298,8 @@ snapshots:
       zod: 4.4.3
     optionalDependencies:
       react: 18.3.1
+
+  dsh-tabbit@https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c: {}
 
   js-tokens@4.0.0: {}
 

@@ -11,6 +11,9 @@ importers:
       '@huiliyi37/dsh-tianshu-tui':
         specifier: github:huiliyi37/dsh-tianshu-tui
         version: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/7c7bf0accb2e476e03c2b42ac504ed364db8ce66
+      dsh-api-relay-audit:
+        specifier: github:toby-bridges/api-relay-audit
+        version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce
       dsh-pocket:
         specifier: github:shaobeichen/dsh-pocket
         version: https://codeload.github.com/shaobeichen/dsh-pocket/tar.gz/13e52db3ece072a17ee76fcd5125cebd66c809eb
@@ -77,6 +80,18 @@ packages:
 
   dijkstrajs@1.0.3:
     resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
+
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce:
+    resolution: {gitHosted: true, integrity: sha512-/QtdIAVhWwuX8PYwGC4zxe/KBrp1en0fIjE6ShWzjDL3nHTdmVPkJH20RWofvnEG7SnAA3V7jsaz6p5IuPkHAA==, tarball: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce}
+    version: 2.4.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-commands': 0.1.0-rc.6
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': 0.1.0-rc.6
+      '@deepseek-ai/dsh-settings': 0.1.0-rc.6
+      '@deepseek-ai/dsh-subprocess': 0.1.0-rc.6
 
   dsh-pocket@https://codeload.github.com/shaobeichen/dsh-pocket/tar.gz/13e52db3ece072a17ee76fcd5125cebd66c809eb:
     resolution: {gitHosted: true, integrity: sha512-ANdA1AqDpQNrjYZpImnpy9vW19ewRh9JDWJ8k22HQwE9boA+z2Dt9SiSK8nqAZoRqxNJwoUzwQWh0gk+5+PAfw==, tarball: https://codeload.github.com/shaobeichen/dsh-pocket/tar.gz/13e52db3ece072a17ee76fcd5125cebd66c809eb}
@@ -220,6 +235,8 @@ snapshots:
   diff@9.0.0: {}
 
   dijkstrajs@1.0.3: {}
+
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce: {}
 
   dsh-pocket@https://codeload.github.com/shaobeichen/dsh-pocket/tar.gz/13e52db3ece072a17ee76fcd5125cebd66c809eb:
     dependencies:

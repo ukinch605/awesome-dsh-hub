@@ -17,6 +17,9 @@ importers:
       dsh-infinite-gen-2:
         specifier: github:Minglink/dsh-infinite-gen-2
         version: https://codeload.github.com/Minglink/dsh-infinite-gen-2/tar.gz/3a701c334dd15e59c6ac663d93d313489385bbc5
+      graph-memory:
+        specifier: github:adoresever/graph-memory
+        version: https://codeload.github.com/adoresever/graph-memory/tar.gz/443e6ccb9d1d37169404977199398f4b4935c4fc
       sealos:
         specifier: github:labring/sealos-skills
         version: https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31
@@ -33,6 +36,9 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-8doJjEhkxHQv0duDjpLrMuO5VQFRfZlGWMLpysp7akUVDC5oDOIsl4yrYMkA/riViljJTz3WtvOqM5DgcHesXw==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033}
     version: 0.1.0
     engines: {node: '>=20'}
+
+  '@sinclair/typebox@0.34.52':
+    resolution: {integrity: sha512-XiMQh7qqVlxZzcVD+kkGMNGMzcTrDMLWI7S4x7z1MkCkbDPrekpZXEUK0eZqZFMuHQg2a2DZOcDIh9o5v3Gonw==}
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -58,6 +64,22 @@ packages:
 
   fflate@0.8.3:
     resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
+
+  graph-memory@https://codeload.github.com/adoresever/graph-memory/tar.gz/443e6ccb9d1d37169404977199398f4b4935c4fc:
+    resolution: {gitHosted: true, integrity: sha512-iFaGgJ+H+wRGgIZIfSH/umujWvZkatNNlRcJJXnN8nGVsq4GIV2S91/L2UA/UVbI8nD3RzQwq8xzWkb4wp2DjA==, tarball: https://codeload.github.com/adoresever/graph-memory/tar.gz/443e6ccb9d1d37169404977199398f4b4935c4fc}
+    version: 1.6.0-beta.9
+    engines: {node: '>=22.13.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4'
+      '@deepseek-ai/dsh-typert-protocol': '>=0.1.0-rc.5'
+      openclaw: '*'
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      openclaw:
+        optional: true
 
   markdown-to-jsx@7.7.17:
     resolution: {integrity: sha512-7mG/1feQ0TX5I7YyMZVDgCC/y2I3CiEhIRQIhyov9nGBP5eoVrOXXHuL5ZP8GRfxVZKRiXWJgwXkb9It+nQZfQ==}
@@ -102,6 +124,8 @@ snapshots:
       - react
       - react-dom
 
+  '@sinclair/typebox@0.34.52': {}
+
   '@standard-schema/spec@1.1.0': {}
 
   commander@13.1.0: {}
@@ -118,6 +142,10 @@ snapshots:
       zod: 4.4.3
 
   fflate@0.8.3: {}
+
+  graph-memory@https://codeload.github.com/adoresever/graph-memory/tar.gz/443e6ccb9d1d37169404977199398f4b4935c4fc:
+    dependencies:
+      '@sinclair/typebox': 0.34.52
 
   markdown-to-jsx@7.7.17: {}
 

@@ -11,6 +11,9 @@ importers:
       '@dsh-external/workflow':
         specifier: git+https://github.com/icetomoyo/dsh_workflow.git
         version: git+https://github.com/icetomoyo/dsh_workflow.git#44b83c182aa02d1be8a0803e8446cb495f93cd8f
+      '@liustack/modsearch':
+        specifier: github:liustack/modsearch
+        version: https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80
       dsh-open-in-vscode:
         specifier: github:omdsh-dev/dsh-open-in-vscode
         version: https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751
@@ -53,6 +56,16 @@ packages:
 
   '@jitl/quickjs-wasmfile-release-sync@0.32.0':
     resolution: {integrity: sha512-BKNDI/TPBfGlLNGYpLrhcDGXmIk4xHm4MRAisOBnOzpXVn9HZWsfmMAc9WMBrAHjvvds6HOikKeaOBKdPdpVrg==}
+
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80':
+    resolution: {gitHosted: true, integrity: sha512-vWyQIygu+3TKVEvDGMGXV+xi0PWn/9KS+N1zNfA9SQ42dGwnqwbakQe1cutaLieydrUQClTL5HUKOKnFZRCbsA==, tarball: https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80}
+    version: 5.10.0
+    engines: {node: '>=22.13'}
+    hasBin: true
+
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
 
   dsh-open-in-vscode@https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751:
     resolution: {gitHosted: true, integrity: sha512-wh4e8umhYWcBrJ1jqTyQGEMioTD+h4vlbMN83hzXMQJszKt+1gPKpVwWzT2FbzIb631JbN7eBfLibHaYsI/CQg==, tarball: https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751}
@@ -100,6 +113,10 @@ packages:
     resolution: {integrity: sha512-So0Sqw869y/S2oE3Nuc0uT3Dhqgvsj8FSrwBdsuTosVsG8ME5/OcudU1GxsrIFdFABgy17GHnTVO9TYV/bLQcA==}
     engines: {node: '>=16.0.0'}
 
+  undici@7.29.0:
+    resolution: {integrity: sha512-IDxfleLmmbSskfWSUATiN1nfn2rDuvnMOqb5CWR92iIfojA0Ud+ulOAAEQ57LPr9rWmsreUyf5lwyao+7GNNVw==}
+    engines: {node: '>=20.18.1'}
+
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
@@ -127,6 +144,13 @@ snapshots:
     dependencies:
       '@jitl/quickjs-ffi-types': 0.32.0
 
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80':
+    dependencies:
+      commander: 13.1.0
+      undici: 7.29.0
+
+  commander@13.1.0: {}
+
   dsh-open-in-vscode@https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751:
     dependencies:
       zod: 4.4.3
@@ -144,5 +168,7 @@ snapshots:
       '@jitl/quickjs-wasmfile-release-asyncify': 0.32.0
       '@jitl/quickjs-wasmfile-release-sync': 0.32.0
       quickjs-emscripten-core: 0.32.0
+
+  undici@7.29.0: {}
 
   zod@4.4.3: {}

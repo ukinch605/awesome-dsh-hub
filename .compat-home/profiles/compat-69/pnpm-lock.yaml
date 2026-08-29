@@ -14,6 +14,9 @@ importers:
       '@omdsh-dev/dsh-plugin-check':
         specifier: github:omdsh-dev/dsh-plugin-check
         version: https://codeload.github.com/omdsh-dev/dsh-plugin-check/tar.gz/5e51cb7e56f68e54cf50c36e1e0e9e959af696a7
+      '@zseven-w/dsh-android':
+        specifier: github:ZSeven-W/dsh-android
+        version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4
       '@zseven-w/dsh-crew':
         specifier: github:ZSeven-W/dsh-crew
         version: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/de3babcefd4e261ae003385262694d6ae02904b2
@@ -46,6 +49,26 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-invariants': '>=0.0.1-rc.1 <0.2.0'
       '@deepseek-ai/dsh-tools': '>=0.0.1-rc.1 <0.2.0'
+
+  '@zseven-w/dsh-android@https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4':
+    resolution: {gitHosted: true, integrity: sha512-pTLifdVKWNfg+QvGm3x2AExeqSyWGi+ec8dvbqZZPu+G30xugUDtUR7zPOB3juhP/Cl7Y7f5l8i69VWy5Kk4CQ==, tarball: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4}
+    version: 0.1.0-rc.4
+    engines: {node: '>=24.11.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-fs': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-sandbox-policy': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   '@zseven-w/dsh-crew@https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/de3babcefd4e261ae003385262694d6ae02904b2':
     resolution: {gitHosted: true, integrity: sha512-FLWxmmkEeXP9nkubKI7hQgQv+sqHm51kYoPzMutqPHDG2KtCOff1pF515ZULALviiV4npKGGR5e2dQzsbIJFWQ==, tarball: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/de3babcefd4e261ae003385262694d6ae02904b2}
@@ -442,6 +465,8 @@ snapshots:
       - supports-color
 
   '@omdsh-dev/dsh-plugin-check@https://codeload.github.com/omdsh-dev/dsh-plugin-check/tar.gz/5e51cb7e56f68e54cf50c36e1e0e9e959af696a7': {}
+
+  '@zseven-w/dsh-android@https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4': {}
 
   '@zseven-w/dsh-crew@https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/de3babcefd4e261ae003385262694d6ae02904b2':
     dependencies:

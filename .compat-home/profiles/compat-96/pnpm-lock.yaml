@@ -8,12 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@oil-oil/dsh-vision':
+        specifier: github:oil-oil/dsh-vision
+        version: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7
       deepseek-pet:
         specifier: github:keleus/deepseek-pet
         version: https://codeload.github.com/keleus/deepseek-pet/tar.gz/35132a4fcfa1a40e4cab7e0163939cc5b25de38b
-      dsh-recall-unread:
-        specifier: github:hg1048596-pixel/dsh-recall-unread
-        version: https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72
       dsh-remote:
         specifier: github:flymysql/dsh-remote
         version: https://codeload.github.com/flymysql/dsh-remote/tar.gz/5ae197a94c0fe4f0a8ffe5de14822f79418dc3bd
@@ -160,6 +160,29 @@ packages:
 
   '@mermaid-js/parser@1.2.1':
     resolution: {integrity: sha512-n12NohV3mrUyUL2o93IgG/ifeW9FTyeJn3zDxkhwa8MJ9Fxg3HQMlA3RiGmD/3UnJvheztkjjQAjA2T4LmUcpw==}
+
+  '@oil-oil/dsh-vision@https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7':
+    resolution: {gitHosted: true, integrity: sha512-S0tz+HJOiRM57Ebqu+ZjbYKKO9w+ITYZbWYxADrCD9CKrU0EM0f6fp0chYA6HOkMHEOOtM5As8eBVHLHpxBWnw==, tarball: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7}
+    version: 0.1.2
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': 4.0.1
+      '@deepseek-ai/dsh-anonymous-user-id': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-api-remotes': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-attachment': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-connection': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-locale': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-runtime': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-ui-primitives': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-ui-settings': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-ui-settings-plugins': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-client-ui-slots': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-launch-environment': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-llm': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-llm-deepseek': 0.1.0-rc.6 || 0.1.0-rc.7
+      '@deepseek-ai/dsh-settings': 0.1.0-rc.6 || 0.1.0-rc.7
+      react: ^18.2.0
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -514,10 +537,6 @@ packages:
     peerDependenciesMeta:
       cordis:
         optional: true
-
-  dsh-recall-unread@https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72:
-    resolution: {gitHosted: true, integrity: sha512-3S73Yr11Da3uuL95XIXxWtdova6NVRTYBYm+JOS/3LORWj0+xu27pjW4Ugni4QHUXlFSVuus0N1C4O0NitqPIA==, tarball: https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72}
-    version: 1.1.0
 
   dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/5ae197a94c0fe4f0a8ffe5de14822f79418dc3bd:
     resolution: {gitHosted: true, integrity: sha512-CUZ06d05dxKoEvKalQ4BeA9KbAYBQYzEqF1SgMG23e2rmD5ZC2XTJ20Wcq5WkXIaJTRvY8ACb8XMrInrmoNehw==, tarball: https://codeload.github.com/flymysql/dsh-remote/tar.gz/5ae197a94c0fe4f0a8ffe5de14822f79418dc3bd}
@@ -944,6 +963,10 @@ snapshots:
     dependencies:
       '@chevrotain/types': 11.1.2
 
+  '@oil-oil/dsh-vision@https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
+
   '@standard-schema/spec@1.1.0': {}
 
   '@types/d3-array@3.2.2': {}
@@ -1336,8 +1359,6 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
-
-  dsh-recall-unread@https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72: {}
 
   dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/5ae197a94c0fe4f0a8ffe5de14822f79418dc3bd:
     dependencies:

@@ -17,6 +17,9 @@ importers:
       dsh-engramory:
         specifier: github:tinqiao-oss/engramory
         version: https://codeload.github.com/tinqiao-oss/engramory/tar.gz/39efc183a55cb3d2c56e11a42b2b5e059a193ce3
+      open-sea-skin:
+        specifier: github:d-dev0101/open-sea-skin
+        version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025
 
 packages:
 
@@ -73,6 +76,11 @@ packages:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
     hasBin: true
 
+  open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025:
+    resolution: {gitHosted: true, integrity: sha512-OJE631gvjMwzNfZvjoUpEO7IKuderwmm1EfG5CfvkpirFr9f/rPxoacVV5g+uykBBO41JEvSE3AFaTccUUej8A==, tarball: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025}
+    version: 1.2.1
+    engines: {node: '>=20'}
+
   qrcode-terminal@0.12.0:
     resolution: {integrity: sha512-EXtzRZmC+YGmGlDFbXKxQiMZNwCLEO6BANKXG4iCtSIM0yqc/pappSx3RIKr4r0uh5JsBckOXeKrB3Iz7mdQpQ==}
     hasBin: true
@@ -126,6 +134,8 @@ snapshots:
   js-yaml@4.3.1:
     dependencies:
       argparse: 2.0.1
+
+  open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025: {}
 
   qrcode-terminal@0.12.0: {}
 

@@ -14,6 +14,9 @@ importers:
       '@feiyang666/dsh-usage-plugin':
         specifier: github:feiyang-dev/dsh-usage-plugin
         version: https://codeload.github.com/feiyang-dev/dsh-usage-plugin/tar.gz/6583cc39c30efed3a4af0396f034f15cc7fe45df
+      dsh-find-plugin:
+        specifier: github:awesome-dsh-plugin/dsh-find-plugin
+        version: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc
       dsh-skin:
         specifier: github:KinGao294/dsh-skin
         version: https://codeload.github.com/KinGao294/dsh-skin/tar.gz/0a571a27adcc5f780b7b72386c9c294243eec5b3
@@ -97,6 +100,13 @@ packages:
 
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
+
+  dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc:
+    resolution: {gitHosted: true, integrity: sha512-UC1ymDcgy/utPXFdnUWoxWK1JTlwajSjUrgGnhCVnJJHn9oNevq31NWud6FO3lOl6uGbqxIypp0CJwkkGA3QUQ==, tarball: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc}
+    version: 0.3.7
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
 
   dsh-skin@https://codeload.github.com/KinGao294/dsh-skin/tar.gz/0a571a27adcc5f780b7b72386c9c294243eec5b3:
     resolution: {gitHosted: true, integrity: sha512-quA+1NZWCs8icNMYQ9xCNlJi/7/bRzgEqgyuUDL8wjdQ/hVnoc7FXZmKkyN8ozcsFl205GmehZFm/zC3Eb6vqw==, tarball: https://codeload.github.com/KinGao294/dsh-skin/tar.gz/0a571a27adcc5f780b7b72386c9c294243eec5b3}
@@ -443,6 +453,8 @@ snapshots:
   devlop@1.1.0:
     dependencies:
       dequal: 2.0.3
+
+  dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc: {}
 
   dsh-skin@https://codeload.github.com/KinGao294/dsh-skin/tar.gz/0a571a27adcc5f780b7b72386c9c294243eec5b3: {}
 

@@ -14,6 +14,9 @@ importers:
       '@omdsh-dev/dsh-genui':
         specifier: github:omdsh-dev/dsh-genui
         version: '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae(@deepseek-ai/cordis@4.0.1)'
+      dsh-at-file:
+        specifier: github:FSMargoo/dsh-at-file
+        version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb(@deepseek-ai/cordis@4.0.1)(react@18.3.1)
       forkprobe-dsh:
         specifier: github:Jayden-X-L/forkprobe
         version: https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e
@@ -75,6 +78,57 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb:
+    resolution: {gitHosted: true, integrity: sha512-noxd7rkfRYdooA3ZZGTkT2sshbifl95XI0rgJ1MTbKirfJtujgxke4cQJQRjlZdq13QzWD4d4Ggf3yLsIYaMwQ==, tarball: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb}
+    version: 0.6.9
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-agent': '*'
+      '@deepseek-ai/dsh-api-remotes': '*'
+      '@deepseek-ai/dsh-client-connection': '*'
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-runtime': '*'
+      '@deepseek-ai/dsh-client-ui-conversation': '*'
+      '@deepseek-ai/dsh-client-ui-input-trigger': '*'
+      '@deepseek-ai/dsh-client-ui-settings': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-settings': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      '@deepseek-ai/dsh-typert-registry': '*'
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-api-remotes':
+        optional: true
+      '@deepseek-ai/dsh-client-connection':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-input-trigger':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-settings':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      '@deepseek-ai/dsh-typert-registry':
+        optional: true
+      react:
+        optional: true
+
   forkprobe-dsh@https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e:
     resolution: {gitHosted: true, integrity: sha512-m9fwK3x3LCUugg4Xi54I0EWw1qEqojVCoNuI3WLqTXY5P2Zxyx2VEU3z1twHqr9gYcVWm3qPAm40gZiGNow9uQ==, tarball: https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e}
     version: 1.1.0
@@ -98,6 +152,9 @@ packages:
   superdesign-dsh@https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b:
     resolution: {gitHosted: true, integrity: sha512-YqjjdfYvduaj69lrs/aCmcAvm+teYea6be3m/MTOn/k+cszwRUaxvmSRKzFNd0bKYfZgNBCq8DRF8ZyHK9Cvrw==, tarball: https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b}
     version: 0.6.0
+
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
 
@@ -125,6 +182,13 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
+  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb(@deepseek-ai/cordis@4.0.1)(react@18.3.1):
+    dependencies:
+      zod: 4.4.3
+    optionalDependencies:
+      '@deepseek-ai/cordis': 4.0.1
+      react: 18.3.1
+
   forkprobe-dsh@https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e:
     dependencies:
       '@deepseek-ai/cordis': 4.0.1
@@ -151,3 +215,5 @@ snapshots:
       loose-envify: 1.4.0
 
   superdesign-dsh@https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b: {}
+
+  zod@4.4.3: {}

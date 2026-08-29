@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@anionex/dsh-vision-toolkit':
+        specifier: github:Anionex/dsh-vision-toolkit
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/5cab6ee47c343032ca6d1739204f51eb361f5b14
       '@nanmicoder/dsh-agent-teams':
         specifier: github:NanmiCoder/dsh-agent-teams
         version: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/912aae5225d3d85fa841a1b0c8a5c77021876c25
@@ -19,6 +22,42 @@ importers:
         version: https://codeload.github.com/vlln/whale-girl/tar.gz/e22e1fd918746e610f7bfb1713cef1e57a56f37c
 
 packages:
+
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/5cab6ee47c343032ca6d1739204f51eb361f5b14':
+    resolution: {gitHosted: true, integrity: sha512-l6PrXrslHtZUWZu7/FWvTwjfal2TZkkkkvXdBphNpRSKtVAyz0dCwE3/Gq6C3KokaoytDKhmcFxvX4dk1NL2SQ==, tarball: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/5cab6ee47c343032ca6d1739204f51eb361f5b14}
+    version: 0.1.39
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-agent': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-attachment': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-input-trigger': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-credentials': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-skill': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-storage-domain': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-subprocess': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-host-webserver':
+        optional: true
+
+  '@isaacs/fs-minipass@4.0.1':
+    resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
+    engines: {node: '>=18.0.0'}
 
   '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/912aae5225d3d85fa841a1b0c8a5c77021876c25':
     resolution: {gitHosted: true, tarball: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/912aae5225d3d85fa841a1b0c8a5c77021876c25}
@@ -78,6 +117,10 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  chownr@3.0.0:
+    resolution: {integrity: sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==}
+    engines: {node: '>=18'}
+
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
@@ -93,28 +136,97 @@ packages:
       '@deepseek-ai/dsh-settings': 0.1.0-rc.6
       '@deepseek-ai/dsh-subprocess': 0.1.0-rc.6
 
+  minipass@7.1.3:
+    resolution: {integrity: sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==}
+    engines: {node: '>=16 || 14 >=14.17'}
+
+  minizlib@3.1.0:
+    resolution: {integrity: sha512-KZxYo1BUkWD2TVFLr0MQoM8vUUigWD3LlD83a/75BqC+4qE0Hb1Vo5v1FgcfaNXvfXzr+5EhQ6ing/CaBijTlw==}
+    engines: {node: '>= 18'}
+
+  saxes@6.0.0:
+    resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
+    engines: {node: '>=v12.22.7'}
+
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
+
+  tar@7.5.22:
+    resolution: {integrity: sha512-MFO/QzvtAOmJbkhOaCTvbGcFN9L9b+JunIsDwaKljSOdcLMea3NJ1k9Usz/rjdfSXTq4dfzfeS7W4p4YOAAHeA==}
+    engines: {node: '>=18'}
+
+  undici@8.10.0:
+    resolution: {integrity: sha512-HvltHd7avK13QIw/oLe4qoOLyoVSoafqJ2jYOrtMRBkbYT31eiBQ8O0ehRKZiEZCMEyLFQNIADpgCWC5fALvYQ==}
+    engines: {node: '>=22.19.0'}
 
   whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/e22e1fd918746e610f7bfb1713cef1e57a56f37c:
     resolution: {gitHosted: true, integrity: sha512-mBodKyQXjvqqe2uwzddHxyk10tQjlD4+bRwFyRsXZhZANtUjnrFHJMFdQH2KavAZ+KawPPHTEqxTyliNgF6MGg==, tarball: https://codeload.github.com/vlln/whale-girl/tar.gz/e22e1fd918746e610f7bfb1713cef1e57a56f37c}
     version: 0.1.0
 
+  xmlchars@2.2.0:
+    resolution: {integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==}
+
+  yallist@5.0.0:
+    resolution: {integrity: sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==}
+    engines: {node: '>=18'}
+
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
 snapshots:
+
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/5cab6ee47c343032ca6d1739204f51eb361f5b14':
+    dependencies:
+      saxes: 6.0.0
+      tar: 7.5.22
+      undici: 8.10.0
+      zod: 4.4.3
+
+  '@isaacs/fs-minipass@4.0.1':
+    dependencies:
+      minipass: 7.1.3
 
   '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/912aae5225d3d85fa841a1b0c8a5c77021876c25': {}
 
   '@standard-schema/spec@1.1.0': {}
 
+  chownr@3.0.0: {}
+
   cosmokit@1.8.1: {}
 
   dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce: {}
+
+  minipass@7.1.3: {}
+
+  minizlib@3.1.0:
+    dependencies:
+      minipass: 7.1.3
+
+  saxes@6.0.0:
+    dependencies:
+      xmlchars: 2.2.0
 
   schemastery@3.18.0:
     dependencies:
       '@standard-schema/spec': 1.1.0
       cosmokit: 1.8.1
 
+  tar@7.5.22:
+    dependencies:
+      '@isaacs/fs-minipass': 4.0.1
+      chownr: 3.0.0
+      minipass: 7.1.3
+      minizlib: 3.1.0
+      yallist: 5.0.0
+
+  undici@8.10.0: {}
+
   whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/e22e1fd918746e610f7bfb1713cef1e57a56f37c:
     dependencies:
       schemastery: 3.18.0
+
+  xmlchars@2.2.0: {}
+
+  yallist@5.0.0: {}
+
+  zod@4.4.3: {}

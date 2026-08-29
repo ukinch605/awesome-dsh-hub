@@ -14,6 +14,9 @@ importers:
       '@zseven-w/dsh-ios':
         specifier: github:ZSeven-W/dsh-ios
         version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c
+      dsh-dafeiyu:
+        specifier: github:QCYTSN/dsh-dafeiyu
+        version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98
       dsh-toy:
         specifier: github:c3ll256/dsh-toy
         version: https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c
@@ -74,6 +77,15 @@ packages:
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
       react: ^18.2.0
       react-dom: ^18.2.0
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98:
+    resolution: {gitHosted: true, integrity: sha512-Eo/JhKwo9OAZm5N24g4qatTY6Uq64D8dMg/J/gDZVbcT1BG+F3PMsB4dkIMqErBbjyvCTNXheS+H47UBz8dCVw==, tarball: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98}
+    version: 0.1.6
+    engines: {node: '>=22.19'}
+    bundledDependencies:
+      - '@deepseek-ai/cosmokit'
+      - '@deepseek-ai/schemastery'
+      - '@standard-schema/spec'
 
   dsh-toy@https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c}
@@ -148,6 +160,8 @@ snapshots:
       - bufferutil
       - typescript
       - utf-8-validate
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98: {}
 
   dsh-toy@https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c:
     dependencies:

@@ -17,6 +17,9 @@ importers:
       dsh-mnemon:
         specifier: github:omdsh-dev/dsh-mnemon
         version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/e118094b9836fafbcbd057e4c5fa59572a9df9df
+      perfect-web-clone:
+        specifier: github:ericshang98/Perfect-Web-Clone
+        version: https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5
 
 packages:
 
@@ -83,6 +86,13 @@ packages:
       react:
         optional: true
 
+  perfect-web-clone@https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5:
+    resolution: {gitHosted: true, integrity: sha512-PogS83E4MJqMynMODNxxxFgFNKplIXlauB3qsQA2MpDo1/EvziGFgUN0wK4D7B/J2QlxMcYixm+u5dbuuLlEcw==, tarball: https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5}
+    version: 3.0.0
+    peerDependencies:
+      '@deepseek-ai/cordis': '*'
+      '@deepseek-ai/dsh-tools': '*'
+
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
@@ -111,6 +121,8 @@ snapshots:
   fflate@0.8.3: {}
 
   markdown-to-jsx@7.7.17: {}
+
+  perfect-web-clone@https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5: {}
 
   schemastery@3.18.0:
     dependencies:

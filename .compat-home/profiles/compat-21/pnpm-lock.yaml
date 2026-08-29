@@ -17,6 +17,9 @@ importers:
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
         version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/847ca363da07d9123d18436c27a4fe4e1109e947
+      superdesign-dsh:
+        specifier: github:superdesigndev/superdesign-skill
+        version: https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b
 
 packages:
 
@@ -122,6 +125,10 @@ packages:
     resolution: {integrity: sha512-So0Sqw869y/S2oE3Nuc0uT3Dhqgvsj8FSrwBdsuTosVsG8ME5/OcudU1GxsrIFdFABgy17GHnTVO9TYV/bLQcA==}
     engines: {node: '>=16.0.0'}
 
+  superdesign-dsh@https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b:
+    resolution: {gitHosted: true, integrity: sha512-YqjjdfYvduaj69lrs/aCmcAvm+teYea6be3m/MTOn/k+cszwRUaxvmSRKzFNd0bKYfZgNBCq8DRF8ZyHK9Cvrw==, tarball: https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b}
+    version: 0.6.0
+
 snapshots:
 
   '@dsh-external/workflow@git+https://github.com/icetomoyo/dsh_workflow.git#44b83c182aa02d1be8a0803e8446cb495f93cd8f':
@@ -186,3 +193,5 @@ snapshots:
       '@jitl/quickjs-wasmfile-release-asyncify': 0.32.0
       '@jitl/quickjs-wasmfile-release-sync': 0.32.0
       quickjs-emscripten-core: 0.32.0
+
+  superdesign-dsh@https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b: {}
