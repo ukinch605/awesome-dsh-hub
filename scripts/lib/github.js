@@ -108,40 +108,69 @@ export async function fetchRawPackageJsonResult(
   owner,
   repo,
   branch,
-  { fetchFn = fetch, retries = 2, token = '' } = {},
+  { fetchFn = fetch, retries = 2, token = '', sleepFn = sleep } = {},
 ) {
-  // Authenticated runs use the contents API so the hourly refresh is not
-  // throttled by raw.githubusercontent's unauthenticated limits on shared CI
-  // IPs (this was the main source of `fetchFailed` skips). Local dev without a
-  // token falls back to the raw URL.
-  const url = token
-    ? `https://api.github.com/repos/${owner}/${repo}/contents/package.json?ref=${encodeURIComponent(branch)}`
-    : `https://raw.githubusercontent.com/${owner}/${repo}/${encodeURIComponent(branch)}/package.json`;
-  const headers = { ...UA };
-  if (token) {
-    headers.Authorization = `Bearer ${token}`;
-    headers.Accept = 'application/vnd.github.raw+json';
+  const rawUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${encodeURIComponent(branch)}/package.json`;
+  try {
+    const res = await fetchFn(rawUrl, {
+      headers: UA,
+      signal: AbortSignal.timeout(20_000),
+    });
+    if (res.status === 200) {
+      return { kind: 'success', text: await res.text(), rawFetches: 1, apiFallbacks: 0 };
+    }
+    // A raw 404 is authoritative and must not spend API quota on a fallback.
+    if (res.status === 404) {
+      return { kind: 'confirmed-missing', rawFetches: 1, apiFallbacks: 0 };
+    }
+  } catch {
+    // Network and timeout errors may be recovered by the authenticated API.
   }
+
+  if (!token) {
+    return { kind: 'transient-failure', rawFetches: 1, apiFallbacks: 0 };
+  }
+
+  const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/package.json?ref=${encodeURIComponent(branch)}`;
+  const headers = {
+    ...UA,
+    Authorization: `Bearer ${token}`,
+    Accept: 'application/vnd.github.raw+json',
+  };
   for (let attempt = 0; ; attempt++) {
     try {
-      const res = await fetchFn(url, {
+      const res = await fetchFn(apiUrl, {
         headers,
         signal: AbortSignal.timeout(20_000),
       });
-      if (res.status === 200) return { kind: 'success', text: await res.text() };
-      if (res.status === 404) return { kind: 'confirmed-missing' };
-      if ((res.status === 403 || res.status === 429) && attempt < retries) {
-        await sleep(2000 * (attempt + 1));
+      if (res.status === 200) {
+        return {
+          kind: 'success',
+          text: await res.text(),
+          rawFetches: 1,
+          apiFallbacks: 1,
+          fallbackRecovered: true,
+        };
+      }
+      if (res.status === 404) {
+        return { kind: 'confirmed-missing', rawFetches: 1, apiFallbacks: 1 };
+      }
+      if (attempt < retries) {
+        const retryAfter = Number(res.headers?.get?.('retry-after') ?? 0) * 1000;
+        const resetAt = Number(res.headers?.get?.('x-ratelimit-reset') ?? 0) * 1000;
+        const rateLimitWait = resetAt ? Math.max(0, resetAt - Date.now()) + 1000 : 0;
+        const backoff = 1500 * (attempt + 1);
+        await sleepFn(Math.min(Math.max(retryAfter, rateLimitWait, backoff), 120_000));
         continue;
       }
     } catch {
       // Network/abort errors are treated as a failed fetch attempt.
     }
     if (attempt < retries) {
-      await sleep(1500 * (attempt + 1));
+      await sleepFn(1500 * (attempt + 1));
       continue;
     }
-    return { kind: 'transient-failure' };
+    return { kind: 'transient-failure', rawFetches: 1, apiFallbacks: 1 };
   }
 }
 
