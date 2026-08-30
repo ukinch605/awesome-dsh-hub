@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      argo-search:
+        specifier: github:taxueseek/argo
+        version: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146
       ds-harness-remote:
         specifier: github:liguobao/deepseek-harness-remote
         version: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/4c9ce2995e2ccd0b13129eac4dbb6c3016a9ae88(react@18.3.1)
@@ -175,6 +178,12 @@ packages:
 
   ajv@8.20.0:
     resolution: {integrity: sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==}
+
+  argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146:
+    resolution: {gitHosted: true, integrity: sha512-FIDMg6H6slarKzFLNzaxIX5eASEVCZ1MmncmjjAb4OUXyrjmVyyDnfVcy3MmviD9QU3Vs7NQVbiwnaalpAIPrw==, tarball: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146}
+    version: 2.8.4
+    engines: {node: '>=18'}
+    hasBin: true
 
   asn1js@3.0.10:
     resolution: {integrity: sha512-S2s3aOytiKdFRdulw2qPE51MzjzVOisppcVv7jVFR+Kw0kxwvFrDcYA0h7Ndqbmj0HkMIXYWaoj7fli8kgx1eg==}
@@ -877,6 +886,8 @@ snapshots:
       fast-uri: 3.1.6
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
+
+  argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146: {}
 
   asn1js@3.0.10:
     dependencies:

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/dsh-automation':
+        specifier: github:titanwings/dsh-automation
+        version: https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67(react@18.3.1)
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
         version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/56db053cf27c46f2f1a30fa9b040b181d3ed725a(@deepseek-ai/dsh-llm@0.1.1-rc.2)(@deepseek-ai/schemastery@3.18.1)
@@ -181,6 +184,16 @@ packages:
 
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
+  '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67':
+    resolution: {gitHosted: true, integrity: sha512-7HfrypViNCacPXsJiickMH2oSnIY3jIl4z2xLawhJVX0E0ZvCkqDSZQFEJk9+VJ85OR5pwnpDO3PQShOBM/6Mg==, tarball: https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67}
+    version: 0.1.7
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -674,6 +687,10 @@ packages:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
 
+  luxon@3.7.2:
+    resolution: {integrity: sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew==}
+    engines: {node: '>=12'}
+
   marked@16.4.2:
     resolution: {integrity: sha512-TI3V8YYWvkVf3KJe1dRkpnjs68JUPyEa5vjKrp1XEEJUAOaQc+Qj+L1qWbPd0SJuAdQkFU0h73sXXqwDYxsiDA==}
     engines: {node: '>= 20'}
@@ -779,6 +796,9 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
+
+  zod@4.5.2:
+    resolution: {integrity: sha512-XkYXCol10+ba/6F/cueWV+TezUeOqXW0hdeJt5CdXjTYeAgAQg5N03RQdJ80mhfFE72+pblvYMW4wy2Qp4Qbrg==}
 
   zustand@4.4.7:
     resolution: {integrity: sha512-QFJWJMdlETcI69paJwhSMJz7PPWjVP8Sjhclxmxmxv/RYI7ZOvR5BHX+ktH0we9gTWQMxcne8q1OY8xxz604gw==}
@@ -1003,6 +1023,13 @@ snapshots:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
+
+  '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67(react@18.3.1)':
+    dependencies:
+      luxon: 3.7.2
+      zod: 4.5.2
+    optionalDependencies:
+      react: 18.3.1
 
   '@iconify/types@2.0.0': {}
 
@@ -1592,6 +1619,8 @@ snapshots:
     dependencies:
       js-tokens: 4.0.0
 
+  luxon@3.7.2: {}
+
   marked@16.4.2: {}
 
   mermaid@11.17.0:
@@ -1698,6 +1727,8 @@ snapshots:
   w3c-keyname@2.2.8: {}
 
   ws@8.21.3: {}
+
+  zod@4.5.2: {}
 
   zustand@4.4.7(immer@10.2.0)(react@18.3.1):
     dependencies:

@@ -11,6 +11,9 @@ importers:
       '@dsh-external/dsh-plugin-workshop':
         specifier: github:yyyyukari/dsh-plugin-workshop
         version: https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/f53a7e466948a6c5636f2079b2382976a1eea4c8
+      '@zseven-w/dsh-openpencil':
+        specifier: github:ZSeven-W/dsh-openpencil
+        version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/99e05cdbae5e26c920cc20e0793c66446685b0cd
       dsh-client-liang-intensity-skin:
         specifier: github:kingOfSoySauce/dsh-liang-skin
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3
@@ -23,6 +26,64 @@ packages:
   '@dsh-external/dsh-plugin-workshop@https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/f53a7e466948a6c5636f2079b2382976a1eea4c8':
     resolution: {gitHosted: true, integrity: sha512-/jbNLMhrDvnnq1C+Jz93ZFadq0XUzmWg7V/1nVKtKPapkGS5kYk3wHEb/WIrHG2agyP1woBdgxy81G/qqCuQ9w==, tarball: https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/f53a7e466948a6c5636f2079b2382976a1eea4c8}
     version: 1.6.2
+
+  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.9':
+    resolution: {integrity: sha512-twzCO0WgFThZ2XTfx987Ohp8Ybi8hkvcVE4IBpdELIZs2rybd5nHcI+bSiOMQMrxll+qL3BMYst4DdIkIAMwrw==}
+    engines: {node: '>=24.11.0'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.9':
+    resolution: {integrity: sha512-W+If+vr1WPWbvu4kWjUp0tGO3Ijq4Rkyexc4aPzAHYG/v5Lcq4fLCEVjtoEVSTMyI1Q75lq8G2kEyq91Gs3+IQ==}
+    engines: {node: '>=24.11.0'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.9':
+    resolution: {integrity: sha512-KBpKhRUOTQT71EL4TdOL2LrqNlX2564WrhxQDYhMh+Upj859zJIsmHy4C5p/hMv9TA+kpN+NqVbw2fJgRRsycA==}
+    engines: {node: '>=24.11.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.9':
+    resolution: {integrity: sha512-MV5hXqY1GG/tJQ81FksbtkhugzdDu90QMe7HgMcJgmeIwid0wsM1M3U7DlS6YnbW5KInkhypzJwzY0g2N1Y08g==}
+    engines: {node: '>=24.11.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.9':
+    resolution: {integrity: sha512-0IsWMWh8zBiV8JyrIZ8zkpOXyhDXAI0KQrPfyahaisDzKmkPSs9eiUiqa9avaLbh83w0SP+KpkQGQ8hN1Q5dTQ==}
+    engines: {node: '>=24.11.0'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.9':
+    resolution: {integrity: sha512-0D2Y101nI/DngGfo2BI0ig+QGu8O7ozHV52SnJP6th02xaopIWxfvPFqTenuwI3FK6tEjxNHsNSmOHQ62FApvw==}
+    engines: {node: '>=24.11.0'}
+    cpu: [x64]
+    os: [win32]
+
+  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/99e05cdbae5e26c920cc20e0793c66446685b0cd':
+    resolution: {gitHosted: true, integrity: sha512-z5UmMpfxi20X2O9kGGbEUr+j0zrT9+cLZnSaMarzuJB8VXOwjO+eLKlGvAFMzS44SGLAP/G5KmGeHub9luN1QA==, tarball: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/99e05cdbae5e26c920cc20e0793c66446685b0cd}
+    version: 0.1.0-rc.9
+    engines: {node: '>=24.11.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-fs': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-sandbox-policy': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3:
     resolution: {gitHosted: true, integrity: sha512-okn8dw8JWDvkky4SNeh7igGtnLH6x1ntFZ1swKN7TEI0GGOx0E3RRAj0mpf6fWtlBkv408LUHajObFi2NNYi7w==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3}
@@ -38,6 +99,33 @@ packages:
 snapshots:
 
   '@dsh-external/dsh-plugin-workshop@https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/f53a7e466948a6c5636f2079b2382976a1eea4c8': {}
+
+  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.9':
+    optional: true
+
+  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.9':
+    optional: true
+
+  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.9':
+    optional: true
+
+  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.9':
+    optional: true
+
+  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.9':
+    optional: true
+
+  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.9':
+    optional: true
+
+  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/99e05cdbae5e26c920cc20e0793c66446685b0cd':
+    optionalDependencies:
+      '@zseven-w/dsh-openpencil-darwin-arm64': 0.1.0-rc.9
+      '@zseven-w/dsh-openpencil-darwin-x64': 0.1.0-rc.9
+      '@zseven-w/dsh-openpencil-linux-arm64': 0.1.0-rc.9
+      '@zseven-w/dsh-openpencil-linux-x64': 0.1.0-rc.9
+      '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.9
+      '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.9
 
   dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3: {}
 

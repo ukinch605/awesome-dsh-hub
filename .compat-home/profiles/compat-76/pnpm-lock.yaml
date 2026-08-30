@@ -10,15 +10,24 @@ importers:
     dependencies:
       '@dsh-external/workflow':
         specifier: github:omdsh-dev/dsh_workflow
-        version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f
+        version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.18.1)
       '@yejiming/dsh-gomoku':
         specifier: github:omdsh-dev/dsh-gomoku
         version: https://codeload.github.com/omdsh-dev/dsh-gomoku/tar.gz/5b27af9808f5bd8f2d753dfdf6157d86a54a4947
       argo-search:
         specifier: github:taxueseek/argo
         version: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146
+      dsh-reasoning-effort:
+        specifier: github:HanaAyane/dsh-reasoning-effort
+        version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994
 
 packages:
+
+  '@deepseek-ai/cosmokit@1.8.2':
+    resolution: {integrity: sha512-muBOKtSrUKU5m/xpq8ZXWL6hQ/jgd4PhU2PqH97bcxIiLEJfNwZOGQEx4t/aS/GgxRAR+ra9pMHPMtTHU4sqqA==}
+
+  '@deepseek-ai/schemastery@3.18.1':
+    resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
 
   '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
     resolution: {gitHosted: true, integrity: sha512-SvSTrCT/R1o8MDOemrO66M1qqUOL6fOiHaUFKx+HzwFZDEdir54jKHKLn7x7dECQ9tDC2UmbM0s04sbCdbn6PA==, tarball: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f}
@@ -82,6 +91,21 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
+  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994:
+    resolution: {gitHosted: true, integrity: sha512-gj3ZW3p/RO9Tpg3gazWJetcwQtaJtsPWYeS+mMxBUSONHj1D7SbINaeOErJiUfZaV9IWmS7zbigDWBLFYSS/4g==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994}
+    version: 0.6.2
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-connection': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-model-selection': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      react: ^18.2.0
+
   quickjs-emscripten-core@0.32.0:
     resolution: {integrity: sha512-QFnPfjFey8EqknSrSxe1hZrf1/8z7/6s1QzGOmKo6++02r7QRRX7ZoyNaZh7JuVjWsVW87KnQrbZqnHkOAzUyg==}
 
@@ -94,8 +118,16 @@ packages:
 
 snapshots:
 
-  '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
+  '@deepseek-ai/cosmokit@1.8.2': {}
+
+  '@deepseek-ai/schemastery@3.18.1':
     dependencies:
+      '@deepseek-ai/cosmokit': 1.8.2
+      '@standard-schema/spec': 1.1.0
+
+  '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.18.1)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
       quickjs-emscripten: 0.32.0
 
   '@jitl/quickjs-ffi-types@0.32.0': {}
@@ -125,6 +157,10 @@ snapshots:
   argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146: {}
 
   cosmokit@1.8.1: {}
+
+  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994:
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
 
   quickjs-emscripten-core@0.32.0:
     dependencies:

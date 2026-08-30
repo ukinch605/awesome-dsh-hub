@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dhicoc/dsh-reverse-skill':
+        specifier: github:dhicoc/dsh-reverse-skill
+        version: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
         version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/0c53efec724b51232b839413e124bf84f0a40b12
@@ -100,6 +103,13 @@ packages:
 
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732':
+    resolution: {gitHosted: true, integrity: sha512-zipAcJI7kY6FuOA8hd12MRNW8Ul76p7cuHYvevxX/ThboMurlsSjcsrS/yq+o+qzvNIJM6/nu3bgiiBqYTdL6A==, tarball: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732}
+    version: 1.0.5
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-skill': ^0.0.1-rc.1
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -958,6 +968,8 @@ snapshots:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
+
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732': {}
 
   '@iconify/types@2.0.0': {}
 

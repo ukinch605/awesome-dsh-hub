@@ -14,6 +14,9 @@ importers:
       '@nanmicoder/dsh-auto-mode':
         specifier: github:NanmiCoder/dsh-auto-mode
         version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f
+      dsh-git-memory:
+        specifier: github:seriousz158/dsh-memory
+        version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03(@deepseek-ai/schemastery@3.18.1)
       dsh-share:
         specifier: github:hellodigua/dsh-share
         version: https://codeload.github.com/hellodigua/dsh-share/tar.gz/c109330b755c793cbc701a4e6a972d620a6667da
@@ -59,6 +62,21 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03:
+    resolution: {gitHosted: true, integrity: sha512-6muo6yn+AsSDqSAKi9yqKId9h60B+/0h7RqOrEdBMdt97zcdxMy27Jw4Lbk8sD7v3wUPKzDSPD60Kaf13kIu6A==, tarball: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03}
+    version: 0.8.2
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-connection': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-typert-protocol': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
+
   dsh-share@https://codeload.github.com/hellodigua/dsh-share/tar.gz/c109330b755c793cbc701a4e6a972d620a6667da:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/hellodigua/dsh-share/tar.gz/c109330b755c793cbc701a4e6a972d620a6667da}
     version: 0.3.1
@@ -86,5 +104,9 @@ snapshots:
       '@deepseek-ai/schemastery': 3.18.1
 
   '@standard-schema/spec@1.1.0': {}
+
+  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03(@deepseek-ai/schemastery@3.18.1):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
 
   dsh-share@https://codeload.github.com/hellodigua/dsh-share/tar.gz/c109330b755c793cbc701a4e6a972d620a6667da: {}

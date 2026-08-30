@@ -14,6 +14,9 @@ importers:
       '@howmp/dsh-pentest':
         specifier: github:howmp/dsh-pentest
         version: https://codeload.github.com/howmp/dsh-pentest/tar.gz/9cc3a10c3701965bf355b1eee9af5971a0d92cc6
+      '@liustack/modsearch':
+        specifier: github:liustack/modsearch
+        version: https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80
       '@omdsh-dev/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
         version: '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/bc4d7926d0e22e0db6c1f6a94539bcf93fe07ac9'
@@ -43,8 +46,22 @@ packages:
       '@deepseek-ai/dsh-storage-domain': 0.1.0-rc.6
       '@deepseek-ai/dsh-tools': 0.1.0-rc.6
 
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80':
+    resolution: {gitHosted: true, integrity: sha512-vWyQIygu+3TKVEvDGMGXV+xi0PWn/9KS+N1zNfA9SQ42dGwnqwbakQe1cutaLieydrUQClTL5HUKOKnFZRCbsA==, tarball: https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80}
+    version: 5.10.0
+    engines: {node: '>=22.13'}
+    hasBin: true
+
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
+
+  undici@7.29.0:
+    resolution: {integrity: sha512-IDxfleLmmbSskfWSUATiN1nfn2rDuvnMOqb5CWR92iIfojA0Ud+ulOAAEQ57LPr9rWmsreUyf5lwyao+7GNNVw==}
+    engines: {node: '>=20.18.1'}
 
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
@@ -65,6 +82,15 @@ snapshots:
       '@deepseek-ai/schemastery': 3.18.1
       zod: 4.4.3
 
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80':
+    dependencies:
+      commander: 13.1.0
+      undici: 7.29.0
+
   '@standard-schema/spec@1.1.0': {}
+
+  commander@13.1.0: {}
+
+  undici@7.29.0: {}
 
   zod@4.4.3: {}

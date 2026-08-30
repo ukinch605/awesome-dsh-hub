@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@anionex/dsh-turn-rewind':
+        specifier: github:Anionex/dsh-turn-rewind
+        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/df0a18e565043ba48150b82f5243533099b1922d
       '@feiyang666/deepseekharnessdesktop':
         specifier: github:feiyang-dev/dsh-usage-plugin
         version: '@feiyang666/dsh-usage-plugin@https://codeload.github.com/feiyang-dev/dsh-usage-plugin/tar.gz/6583cc39c30efed3a4af0396f034f15cc7fe45df'
@@ -28,6 +31,15 @@ importers:
         version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/8b41904278a207edc546477cdebba24cb2008971
 
 packages:
+
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/df0a18e565043ba48150b82f5243533099b1922d':
+    resolution: {gitHosted: true, integrity: sha512-ys6XU8sOR0jA4gUG+zGyRFjso8s0HQyckEhz4FERKK4luMv0bsYQTmwM75+iB6BVpsoDVFsMtBjYb0i2rIumBg==, tarball: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/df0a18e565043ba48150b82f5243533099b1922d}
+    version: 0.2.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-settings': '>=0.1.0-rc.8 <0.2.0'
+      '@deepseek-ai/schemastery': ^3.18.1
 
   '@feiyang666/dsh-usage-plugin@https://codeload.github.com/feiyang-dev/dsh-usage-plugin/tar.gz/6583cc39c30efed3a4af0396f034f15cc7fe45df':
     resolution: {gitHosted: true, integrity: sha512-AjfPlR+cPLDfj5DAxPZKeV6HVxHY6WMxxbsMLpTfWYnHExJnK/9U4BUFXm8nyZ7a3xQUTAFwbf4UmlfpX4xQyg==, tarball: https://codeload.github.com/feiyang-dev/dsh-usage-plugin/tar.gz/6583cc39c30efed3a4af0396f034f15cc7fe45df}
@@ -384,6 +396,8 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
 snapshots:
+
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/df0a18e565043ba48150b82f5243533099b1922d': {}
 
   '@feiyang666/dsh-usage-plugin@https://codeload.github.com/feiyang-dev/dsh-usage-plugin/tar.gz/6583cc39c30efed3a4af0396f034f15cc7fe45df': {}
 

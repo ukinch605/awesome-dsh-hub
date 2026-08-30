@@ -11,6 +11,9 @@ importers:
       '@zseven-w/dsh-android':
         specifier: github:ZSeven-W/dsh-android
         version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4
+      '@zseven-w/dsh-noema':
+        specifier: github:ZSeven-W/dsh-noema
+        version: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2
       dsh-dream-skin:
         specifier: github:RevolutionLA/dsh-dream-skin
         version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/d519514ebbd4cc1c4199d524d1b4704f9d95e028
@@ -40,6 +43,62 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
+  '@zseven-w/dsh-noema-darwin-arm64@0.1.0-rc.3':
+    resolution: {integrity: sha512-ZRL7Xzaaoq1roNLbflLGZizUiFahT9imrWG7WTVRgwqu4TPaAH8tw7FZDRfO6NCgcRjkrYOJZMDwtrtxUdUveA==}
+    engines: {node: '>=24.11.0'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@zseven-w/dsh-noema-darwin-x64@0.1.0-rc.3':
+    resolution: {integrity: sha512-L+laBZ4bmY5TvKqFp7KN54Rp4azw6xuSEttsRYl7TMnM2tp7Bdf1YRYMv015jdcFhpl8xp6B/VzHt4QIZQvH4g==}
+    engines: {node: '>=24.11.0'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@zseven-w/dsh-noema-linux-arm64@0.1.0-rc.3':
+    resolution: {integrity: sha512-xvVsXPN+9j5OQM+WUAdnTdudbxxo529GG7hZQ9vjz0AujyAa3mhgMRNHDu7AGzkUPEz0IVngbshdX3Y/VPx0vg==}
+    engines: {node: '>=24.11.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@zseven-w/dsh-noema-linux-x64@0.1.0-rc.3':
+    resolution: {integrity: sha512-lbJ5xS0vJhmNiZ377r0f7JayFaIqKau4hEkO8Gl+gW7PXE3hAlexKwIyC/8oxqwR38j+FUdGO94ye+8W0ca6CQ==}
+    engines: {node: '>=24.11.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@zseven-w/dsh-noema-win32-arm64@0.1.0-rc.3':
+    resolution: {integrity: sha512-aoAPKBUHsPFvXfMZi/H/2fv5BAVoYf7p6Sfh6CvW1ZmpWr6N7glKRSrn/x0pNsp6fxyelj9ubovc4aAFTn/hog==}
+    engines: {node: '>=24.11.0'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@zseven-w/dsh-noema-win32-x64@0.1.0-rc.3':
+    resolution: {integrity: sha512-PbvItTpbQMhkj3i62QHk9/tWWhmodlJ/804wLfL7w97/wBN56GGOyzcSdDKWZ3bDC8Toa14ZdnKH3d7oLlQSow==}
+    engines: {node: '>=24.11.0'}
+    cpu: [x64]
+    os: [win32]
+
+  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2':
+    resolution: {gitHosted: true, integrity: sha512-2bSjjWQjLIi8VGKHGXpShBm89PFYyiDYbKyVSMlYNnFDeCLUOetv8cnREb5D7cL0yuJyVsm9M4WsT5C/i4RroQ==, tarball: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2}
+    version: 0.1.0-rc.3
+    engines: {node: '>=24.11.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': ^3.0.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
   dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/d519514ebbd4cc1c4199d524d1b4704f9d95e028:
     resolution: {gitHosted: true, integrity: sha512-NQov8knePW6Pfehwdftsfm2FlwRFwryUqqRB+X35TiYgQSe5INxTOXvBwto+jy0v/zQXiBpLzsGr9ln1avqYfA==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/d519514ebbd4cc1c4199d524d1b4704f9d95e028}
     version: 8.29.0
@@ -61,6 +120,33 @@ packages:
 snapshots:
 
   '@zseven-w/dsh-android@https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4': {}
+
+  '@zseven-w/dsh-noema-darwin-arm64@0.1.0-rc.3':
+    optional: true
+
+  '@zseven-w/dsh-noema-darwin-x64@0.1.0-rc.3':
+    optional: true
+
+  '@zseven-w/dsh-noema-linux-arm64@0.1.0-rc.3':
+    optional: true
+
+  '@zseven-w/dsh-noema-linux-x64@0.1.0-rc.3':
+    optional: true
+
+  '@zseven-w/dsh-noema-win32-arm64@0.1.0-rc.3':
+    optional: true
+
+  '@zseven-w/dsh-noema-win32-x64@0.1.0-rc.3':
+    optional: true
+
+  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2':
+    optionalDependencies:
+      '@zseven-w/dsh-noema-darwin-arm64': 0.1.0-rc.3
+      '@zseven-w/dsh-noema-darwin-x64': 0.1.0-rc.3
+      '@zseven-w/dsh-noema-linux-arm64': 0.1.0-rc.3
+      '@zseven-w/dsh-noema-linux-x64': 0.1.0-rc.3
+      '@zseven-w/dsh-noema-win32-arm64': 0.1.0-rc.3
+      '@zseven-w/dsh-noema-win32-x64': 0.1.0-rc.3
 
   dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/d519514ebbd4cc1c4199d524d1b4704f9d95e028: {}
 

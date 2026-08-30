@@ -14,6 +14,9 @@ importers:
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
         version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/bdc4380e2cb49639dfb09260db0d88d89272323e
+      open-sea-skin:
+        specifier: github:d-dev0101/open-sea-skin
+        version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025
       superpowers-dsh:
         specifier: github:LayneChai/superpowers-dsh
         version: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663
@@ -110,6 +113,11 @@ packages:
   fflate@0.8.3:
     resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
 
+  open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025:
+    resolution: {gitHosted: true, integrity: sha512-OJE631gvjMwzNfZvjoUpEO7IKuderwmm1EfG5CfvkpirFr9f/rPxoacVV5g+uykBBO41JEvSE3AFaTccUUej8A==, tarball: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025}
+    version: 1.2.1
+    engines: {node: '>=20'}
+
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
@@ -173,6 +181,8 @@ snapshots:
       zrender: 6.1.0
 
   fflate@0.8.3: {}
+
+  open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025: {}
 
   schemastery@3.18.0:
     dependencies:

@@ -11,6 +11,9 @@ importers:
       '@changfenhuang/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
         version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/5949675671d84d5c1b81f223344456d7e7216620
+      dsh-auth-in-one:
+        specifier: github:Stormycry-cryp/dsh-AuthInOne
+        version: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(react@19.2.8)
       dsh-skin-market:
         specifier: github:kingOfSoySauce/dsh-skin-market
         version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/e094c1debde62e7c9a074a59a967d4208027bb42(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -22,7 +25,7 @@ importers:
         version: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663
       tydora:
         specifier: github:zuorn/Tydora
-        version: https://codeload.github.com/zuorn/Tydora/tar.gz/1a338f33d350b77980d59d84aa186b4c9eb68a6f(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extension-list@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extensions@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(typescript@6.0.3)(use-sync-external-store@1.6.0(react@19.2.8))(yaml@2.9.0)
+        version: https://codeload.github.com/zuorn/Tydora/tar.gz/4bbd2dbeee1f370e4da71a42670a98d957eab6a4(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extension-list@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extensions@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0(react@19.2.8))(yaml@2.9.0)
 
 packages:
 
@@ -1315,6 +1318,18 @@ packages:
     peerDependencies:
       react: '>=16.3'
 
+  '@replit/codemirror-vim-core@0.1.0':
+    resolution: {integrity: sha512-1i6EBKpcNfDKvTmTh6N6g9lL6udD5t+uFNh4JCqozRnVlvUGOps7h/QzS2ne4zcvPUjvApKpmcP7Grc3fNbZiQ==}
+
+  '@replit/codemirror-vim@6.4.0':
+    resolution: {integrity: sha512-t9UMDNhkmeAkl0uRbiJVotv97bGD6mf4GyJJoEbrjUqa/Pov0s9eL+4AaI0Xto3OGri17i9qwIpT0JbVlVXt8A==}
+    peerDependencies:
+      '@codemirror/commands': 6.x.x
+      '@codemirror/language': 6.x.x
+      '@codemirror/search': 6.x.x
+      '@codemirror/state': 6.x.x
+      '@codemirror/view': 6.x.x
+
   '@resvg/resvg-js-android-arm-eabi@2.6.2':
     resolution: {integrity: sha512-FrJibrAk6v29eabIPgcTUMPXiEz8ssrAk7TXxsiZzww9UTQ1Z5KAbFJs+Z0Ez+VZTYgnE5IQJqBcoSiMebtPHA==}
     engines: {node: '>= 10'}
@@ -2174,6 +2189,10 @@ packages:
     resolution: {integrity: sha512-k7ndgKhwoQveBL+/1tqGJYNz097I7WOvwbmmU2AR5+magtbjPWQTS1C5vzGkBC8Ym8UWRzfKUzUUqFLypY4Q+w==}
     engines: {node: '>=20'}
 
+  clsx@2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
+    engines: {node: '>=6'}
+
   commander@7.2.0:
     resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
     engines: {node: '>= 10'}
@@ -2488,6 +2507,80 @@ packages:
 
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
+
+  dsh-auth-in-one@https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706:
+    resolution: {gitHosted: true, integrity: sha512-QNzWiDra23a6g7SEFI4s381FSMS7C7C+Sl2O4WOobSsDILP+FY1Tk479KQZmtC2g49ziClSZ58E8dScw1zX3eQ==, tarball: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706}
+    version: 0.2.0-alpha.4
+    engines: {node: ^22.19.0 || >=24}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.1'
+      '@deepseek-ai/dsh-agent-default-model': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-api-remotes': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-attachment': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-client-connection': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-runtime': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-schema-form': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-ui-settings': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-ui-sidebar': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-web-react': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-credentials': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-llm': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-llm-pi-ai': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-session': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-session-persistence': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-settings': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-typert-protocol': '>=0.1.0-rc.5'
+      '@deepseek-ai/schemastery': '>=3.18.1'
+      react: '>=18.2.0'
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent-default-model':
+        optional: true
+      '@deepseek-ai/dsh-api-remotes':
+        optional: true
+      '@deepseek-ai/dsh-attachment':
+        optional: true
+      '@deepseek-ai/dsh-client-connection':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-schema-form':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-primitives':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-sidebar':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-client-web-react':
+        optional: true
+      '@deepseek-ai/dsh-credentials':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-llm-pi-ai':
+        optional: true
+      '@deepseek-ai/dsh-session':
+        optional: true
+      '@deepseek-ai/dsh-session-persistence':
+        optional: true
+      '@deepseek-ai/dsh-settings':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+      react:
+        optional: true
 
   dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/e094c1debde62e7c9a074a59a967d4208027bb42:
     resolution: {gitHosted: true, integrity: sha512-5SzqpgNLgnAhZ3uEExSVFumopARWgDqULmO8rx1qNcDcIoz5JLXqiCqzebPbRLCFwgVfrEd4W3zHnNBbPR0DyQ==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/e094c1debde62e7c9a074a59a967d4208027bb42}
@@ -3745,8 +3838,8 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/1a338f33d350b77980d59d84aa186b4c9eb68a6f:
-    resolution: {gitHosted: true, integrity: sha512-vcR6Vp4Jgzto5QB0GQLrirVjoJcy/CnHD3/X6cSX4cxIgI+vIQ4HuAMCgDKo60biYfSKT0fF5abUuPWnvofhxw==, tarball: https://codeload.github.com/zuorn/Tydora/tar.gz/1a338f33d350b77980d59d84aa186b4c9eb68a6f}
+  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/4bbd2dbeee1f370e4da71a42670a98d957eab6a4:
+    resolution: {gitHosted: true, integrity: sha512-hoXxU3xX7wiNpSUcuuY3sRleXyHFnZOktRT/l6nre+aFunSxwbR19ebM32+eq8oWNcxrJ+WrTtzZfFPUaDamcA==, tarball: https://codeload.github.com/zuorn/Tydora/tar.gz/4bbd2dbeee1f370e4da71a42670a98d957eab6a4}
     version: 0.2.2
 
   type-is@2.1.0:
@@ -3807,6 +3900,17 @@ packages:
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
+
+  vim-prose@0.3.1:
+    resolution: {integrity: sha512-nT86Mp+Cn8e9mwifvQQaZmz/GZVlBR6+hXHsKTNV730sJy/jVCHE+9R/6yl98BN6ZDR2SSdVwgGBRzDcgyegAQ==}
+    peerDependencies:
+      '@tiptap/core': '>=3'
+      prosemirror-model: '>=1'
+      prosemirror-state: '>=1'
+      prosemirror-view: '>=1'
+    peerDependenciesMeta:
+      '@tiptap/core':
+        optional: true
 
   vite@8.1.5:
     resolution: {integrity: sha512-7ULLwsCdYx/nRyrpiEwvqb5TFHrMVZyBt+rg/OAXT7rgj/z+DtTDyKFeLAdDkubDVDKD8jOsndmy7m55XcfUsw==}
@@ -5235,6 +5339,17 @@ snapshots:
     dependencies:
       react: 19.2.8
 
+  '@replit/codemirror-vim-core@0.1.0': {}
+
+  '@replit/codemirror-vim@6.4.0(@codemirror/commands@6.11.0)(@codemirror/language@6.12.4)(@codemirror/search@6.7.1)(@codemirror/state@6.7.1)(@codemirror/view@6.43.9)':
+    dependencies:
+      '@codemirror/commands': 6.11.0
+      '@codemirror/language': 6.12.4
+      '@codemirror/search': 6.7.1
+      '@codemirror/state': 6.7.1
+      '@codemirror/view': 6.43.9
+      '@replit/codemirror-vim-core': 0.1.0
+
   '@resvg/resvg-js-android-arm-eabi@2.6.2':
     optional: true
 
@@ -5657,11 +5772,11 @@ snapshots:
   '@types/body-parser@1.19.6':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 20.19.43
+      '@types/node': 25.9.5
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 20.19.43
+      '@types/node': 25.9.5
 
   '@types/d3-array@3.2.2': {}
 
@@ -5782,7 +5897,7 @@ snapshots:
 
   '@types/express-serve-static-core@5.1.3':
     dependencies:
-      '@types/node': 20.19.43
+      '@types/node': 25.9.5
       '@types/qs': 6.15.1
       '@types/range-parser': 1.2.7
       '@types/send': 1.2.1
@@ -5842,12 +5957,12 @@ snapshots:
 
   '@types/send@1.2.1':
     dependencies:
-      '@types/node': 20.19.43
+      '@types/node': 25.9.5
 
   '@types/serve-static@2.2.0':
     dependencies:
       '@types/http-errors': 2.0.5
-      '@types/node': 20.19.43
+      '@types/node': 25.9.5
 
   '@types/trusted-types@2.0.7':
     optional: true
@@ -6058,6 +6173,8 @@ snapshots:
       string-width: 7.2.0
       strip-ansi: 7.2.0
       wrap-ansi: 9.0.2
+
+  clsx@2.1.1: {}
 
   commander@7.2.0: {}
 
@@ -6396,6 +6513,13 @@ snapshots:
       dom-serializer: 2.0.0
       domelementtype: 2.3.0
       domhandler: 5.0.3
+
+  dsh-auth-in-one@https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(react@19.2.8):
+    dependencies:
+      clsx: 2.1.1
+      zod: 4.4.3
+    optionalDependencies:
+      react: 19.2.8
 
   dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/e094c1debde62e7c9a074a59a967d4208027bb42(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
@@ -7793,7 +7917,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/1a338f33d350b77980d59d84aa186b4c9eb68a6f(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extension-list@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extensions@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(typescript@6.0.3)(use-sync-external-store@1.6.0(react@19.2.8))(yaml@2.9.0):
+  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/4bbd2dbeee1f370e4da71a42670a98d957eab6a4(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extension-list@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extensions@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0(react@19.2.8))(yaml@2.9.0):
     dependencies:
       '@abstractwebunit/markdown-publish': 1.0.6(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(yaml@2.9.0)
       '@codemirror/autocomplete': 6.20.3
@@ -7814,6 +7938,7 @@ snapshots:
       '@codemirror/state': 6.7.1
       '@codemirror/view': 6.43.9
       '@lezer/highlight': 1.2.3
+      '@replit/codemirror-vim': 6.4.0(@codemirror/commands@6.11.0)(@codemirror/language@6.12.4)(@codemirror/search@6.7.1)(@codemirror/state@6.7.1)(@codemirror/view@6.43.9)
       '@tauri-apps/api': 2.11.1
       '@tauri-apps/plugin-clipboard-manager': 2.3.2
       '@tauri-apps/plugin-dialog': 2.7.2
@@ -7874,6 +7999,7 @@ snapshots:
       react-dom: 19.2.8(react@19.2.8)
       react-i18next: 17.0.12(i18next@26.4.0(typescript@6.0.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@6.0.3)
       tiptap-markdown: 0.9.0(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))
+      vim-prose: 0.3.1(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)
       zustand: 5.0.15(immer@11.1.18)(react@19.2.8)(use-sync-external-store@1.6.0(react@19.2.8))
     transitivePeerDependencies:
       - '@angular/animations'
@@ -7900,6 +8026,9 @@ snapshots:
       - markmap-common
       - ng-packagr
       - postcss
+      - prosemirror-model
+      - prosemirror-state
+      - prosemirror-view
       - react-native
       - rollup
       - sass-embedded
@@ -7955,6 +8084,14 @@ snapshots:
   validate-npm-package-name@8.0.0: {}
 
   vary@1.1.2: {}
+
+  vim-prose@0.3.1(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3):
+    dependencies:
+      prosemirror-model: 1.25.11
+      prosemirror-state: 1.4.4
+      prosemirror-view: 1.42.3
+    optionalDependencies:
+      '@tiptap/core': 3.30.5(@tiptap/pm@3.30.5)
 
   vite@8.1.5(@types/node@20.19.43)(esbuild@0.28.2)(less@4.9.0)(sass@1.101.0)(tsx@4.23.12)(yaml@2.9.0):
     dependencies:

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/workflow':
+        specifier: github:omdsh-dev/dsh_workflow
+        version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f
       dsh-turn-delete:
         specifier: github:hanshenmesen/dsh-turn-delete
         version: https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8
@@ -16,6 +19,40 @@ importers:
         version: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663
 
 packages:
+
+  '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
+    resolution: {gitHosted: true, integrity: sha512-SvSTrCT/R1o8MDOemrO66M1qqUOL6fOiHaUFKx+HzwFZDEdir54jKHKLn7x7dECQ9tDC2UmbM0s04sbCdbn6PA==, tarball: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f}
+    version: 0.1.2
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-agent': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-commands': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-jobs': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-llm': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-session': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-subagent': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-system-prompt': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-tools': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-user-approval': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-user-questions': ^0.0.1-rc.2
+      '@deepseek-ai/dsh-workflow': ^0.0.1-rc.2
+      '@deepseek-ai/schemastery': ^3.18.1-rc.1
+
+  '@jitl/quickjs-ffi-types@0.32.0':
+    resolution: {integrity: sha512-v9T+GQpmk43VDJ7d72sf0Nexhk+ArvtUihW27dy7lqAl0zBObFKtSBBIm5RBjwIhE8VwsPPm9PNuvPvNqLWUEg==}
+
+  '@jitl/quickjs-wasmfile-debug-asyncify@0.32.0':
+    resolution: {integrity: sha512-EX8zbXwGqCgAE764M+qvkHtyXDi/FUoMBea0JnES7vCM3P7a2+EOZOjGv85wtZ2sJhI1oJ+nekmqpOODFDY+hw==}
+
+  '@jitl/quickjs-wasmfile-debug-sync@0.32.0':
+    resolution: {integrity: sha512-LeYWrPGC1uNCTBWvibo3ZLJj0CSVNYUXvJpXMCmuQ5Sap2cCACc3uvGvYV4homHHBAzfw5akoTqMMS4YFRtw+Q==}
+
+  '@jitl/quickjs-wasmfile-release-asyncify@0.32.0':
+    resolution: {integrity: sha512-3oSwPfja12ICz4aIblB58cuY8JlEq5Txt8Cut4VLo+LH47QN+mzCnSgnbB03hWzg1LBcc+VyyI9UOag7a1NF+Q==}
+
+  '@jitl/quickjs-wasmfile-release-sync@0.32.0':
+    resolution: {integrity: sha512-BKNDI/TPBfGlLNGYpLrhcDGXmIk4xHm4MRAisOBnOzpXVn9HZWsfmMAc9WMBrAHjvvds6HOikKeaOBKdPdpVrg==}
 
   dsh-turn-delete@https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8:
     resolution: {gitHosted: true, integrity: sha512-guHodfehsxTljhPUIzHBPPqFBhGnngtIFxcJsQqU0jgZeQRW8DYgDHnUCe9weqdTZylMHPdLkiVydlhLWnihWA==, tarball: https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8}
@@ -33,12 +70,53 @@ packages:
       '@deepseek-ai/dsh-session': '>=0.1.0-rc.6 <0.2.0-0'
       react: ^18.2.0
 
+  quickjs-emscripten-core@0.32.0:
+    resolution: {integrity: sha512-QFnPfjFey8EqknSrSxe1hZrf1/8z7/6s1QzGOmKo6++02r7QRRX7ZoyNaZh7JuVjWsVW87KnQrbZqnHkOAzUyg==}
+
+  quickjs-emscripten@0.32.0:
+    resolution: {integrity: sha512-So0Sqw869y/S2oE3Nuc0uT3Dhqgvsj8FSrwBdsuTosVsG8ME5/OcudU1GxsrIFdFABgy17GHnTVO9TYV/bLQcA==}
+    engines: {node: '>=16.0.0'}
+
   superpowers-dsh@https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663:
     resolution: {gitHosted: true, integrity: sha512-SQ2vGwWDcSm+s+YB5E/cN6AYxRdsT2mg7XLx9e3onY8gHXIbGTejpZlFcX/SJRExYiSbXy95GzR22UQZHprEhw==, tarball: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663}
     version: 0.1.0
 
 snapshots:
 
+  '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
+    dependencies:
+      quickjs-emscripten: 0.32.0
+
+  '@jitl/quickjs-ffi-types@0.32.0': {}
+
+  '@jitl/quickjs-wasmfile-debug-asyncify@0.32.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
+
+  '@jitl/quickjs-wasmfile-debug-sync@0.32.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
+
+  '@jitl/quickjs-wasmfile-release-asyncify@0.32.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
+
+  '@jitl/quickjs-wasmfile-release-sync@0.32.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
+
   dsh-turn-delete@https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8: {}
+
+  quickjs-emscripten-core@0.32.0:
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
+
+  quickjs-emscripten@0.32.0:
+    dependencies:
+      '@jitl/quickjs-wasmfile-debug-asyncify': 0.32.0
+      '@jitl/quickjs-wasmfile-debug-sync': 0.32.0
+      '@jitl/quickjs-wasmfile-release-asyncify': 0.32.0
+      '@jitl/quickjs-wasmfile-release-sync': 0.32.0
+      quickjs-emscripten-core: 0.32.0
 
   superpowers-dsh@https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663: {}

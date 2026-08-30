@@ -16,15 +16,37 @@ importers:
         version: https://codeload.github.com/suzike/freestyle-dsh-theme/tar.gz/cd9e9eb53ccbaded4cf6123919e24392daeda0d4
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/56db053cf27c46f2f1a30fa9b040b181d3ed725a
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/56db053cf27c46f2f1a30fa9b040b181d3ed725a(@deepseek-ai/schemastery@3.18.1)
       dsh-models-config-plugin:
         specifier: github:MarvekG/deepseek-harness-model-config
         version: https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a
+      dsh-video-lens:
+        specifier: github:dundunhan/dsh-video-lens
+        version: https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234
       zat-dsh-engine:
         specifier: github:mishibeikejie/zat-dsh-engine
-        version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0
+        version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0(@deepseek-ai/dsh-tools@0.1.0-rc.7)
 
 packages:
+
+  '@deepseek-ai/cosmokit@1.8.2':
+    resolution: {integrity: sha512-muBOKtSrUKU5m/xpq8ZXWL6hQ/jgd4PhU2PqH97bcxIiLEJfNwZOGQEx4t/aS/GgxRAR+ra9pMHPMtTHU4sqqA==}
+
+  '@deepseek-ai/dsh-tools@0.1.0-rc.7':
+    resolution: {integrity: sha512-7Kq3EEv354aNcxbS0NRfxxyJiZhCsvFV/03a3MdkYO/gG2eM9+E4xQum0N2FL5bw7JiGlgw8jdLMkcNGmavEaA==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-agent': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-code-runtime': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-scope': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-user-approval': ^0.1.0-rc.7
+
+  '@deepseek-ai/schemastery@3.18.1':
+    resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
 
   '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67':
     resolution: {gitHosted: true, integrity: sha512-7HfrypViNCacPXsJiickMH2oSnIY3jIl4z2xLawhJVX0E0ZvCkqDSZQFEJk9+VJ85OR5pwnpDO3PQShOBM/6Mg==, tarball: https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67}
@@ -50,6 +72,9 @@ packages:
       '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
       react: ^18.2.0
       react-dom: ^18.2.0
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
   '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/56db053cf27c46f2f1a30fa9b040b181d3ed725a':
     resolution: {gitHosted: true, integrity: sha512-5vnaH/cvnNinIO78aCr5PFZDSlY4FnEVSA5S+97hQlVwzInOhFRmTbHuphquenv15/8QHpv0coWB6K46+Qn1JA==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/56db053cf27c46f2f1a30fa9b040b181d3ed725a}
@@ -88,6 +113,11 @@ packages:
   dsh-models-config-plugin@https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a}
     version: 0.1.0
+
+  dsh-video-lens@https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234:
+    resolution: {gitHosted: true, integrity: sha512-kmNFxpUNmUbgJ1cM1e61VaGOLDujvUXZc5/BBsfq52fH5nxfB34iXiEp9ff1Gque5hh69BgKz3qNfqysTOMMkA==, tarball: https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234}
+    version: 0.3.1
+    engines: {node: '>=20'}
 
   js-yaml@4.3.1:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
@@ -130,6 +160,17 @@ packages:
 
 snapshots:
 
+  '@deepseek-ai/cosmokit@1.8.2': {}
+
+  '@deepseek-ai/dsh-tools@0.1.0-rc.7':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
+
+  '@deepseek-ai/schemastery@3.18.1':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.2
+      '@standard-schema/spec': 1.1.0
+
   '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67':
     dependencies:
       luxon: 3.7.2
@@ -137,8 +178,11 @@ snapshots:
 
   '@linxin666/freestyle-dsh-theme@https://codeload.github.com/suzike/freestyle-dsh-theme/tar.gz/cd9e9eb53ccbaded4cf6123919e24392daeda0d4': {}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/56db053cf27c46f2f1a30fa9b040b181d3ed725a':
+  '@standard-schema/spec@1.1.0': {}
+
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/56db053cf27c46f2f1a30fa9b040b181d3ed725a(@deepseek-ai/schemastery@3.18.1)':
     dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
       '@tencent-connect/qqbot-connector': 1.2.0
       '@tencent-connect/qqbot-nodejs': 1.0.4
       js-yaml: 4.3.1
@@ -163,6 +207,21 @@ snapshots:
 
   dsh-models-config-plugin@https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a: {}
 
+  dsh-video-lens@https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234:
+    dependencies:
+      '@deepseek-ai/dsh-tools': 0.1.0-rc.7
+      '@deepseek-ai/schemastery': 3.18.1
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis'
+      - '@deepseek-ai/dsh-agent'
+      - '@deepseek-ai/dsh-code-runtime'
+      - '@deepseek-ai/dsh-invariants'
+      - '@deepseek-ai/dsh-llm'
+      - '@deepseek-ai/dsh-scope'
+      - '@deepseek-ai/dsh-session'
+      - '@deepseek-ai/dsh-system-prompt'
+      - '@deepseek-ai/dsh-user-approval'
+
   js-yaml@4.3.1:
     dependencies:
       argparse: 2.0.1
@@ -173,8 +232,9 @@ snapshots:
 
   ws@8.21.3: {}
 
-  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0:
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0(@deepseek-ai/dsh-tools@0.1.0-rc.7):
     dependencies:
+      '@deepseek-ai/dsh-tools': 0.1.0-rc.7
       js-yaml: 4.3.1
       zod: 4.4.3
 

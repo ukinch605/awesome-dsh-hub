@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      dsh-api-relay-audit:
+        specifier: github:toby-bridges/api-relay-audit
+        version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce
       dsh-at-file:
         specifier: git+https://github.com/omdsh-dev/dsh-at-file.git
         version: git+https://github.com/omdsh-dev/dsh-at-file.git#c37b0ed9e8bf3585bf9f272462dcf01886efe2a3
@@ -203,6 +206,18 @@ packages:
 
   dijkstrajs@1.0.3:
     resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
+
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce:
+    resolution: {gitHosted: true, integrity: sha512-/QtdIAVhWwuX8PYwGC4zxe/KBrp1en0fIjE6ShWzjDL3nHTdmVPkJH20RWofvnEG7SnAA3V7jsaz6p5IuPkHAA==, tarball: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce}
+    version: 2.4.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-commands': 0.1.0-rc.6
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': 0.1.0-rc.6
+      '@deepseek-ai/dsh-settings': 0.1.0-rc.6
+      '@deepseek-ai/dsh-subprocess': 0.1.0-rc.6
 
   dsh-at-file@git+https://github.com/omdsh-dev/dsh-at-file.git#c37b0ed9e8bf3585bf9f272462dcf01886efe2a3:
     resolution: {commit: c37b0ed9e8bf3585bf9f272462dcf01886efe2a3, repo: https://github.com/omdsh-dev/dsh-at-file.git, type: git}
@@ -863,6 +878,8 @@ snapshots:
   diff-match-patch@1.0.5: {}
 
   dijkstrajs@1.0.3: {}
+
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce: {}
 
   dsh-at-file@git+https://github.com/omdsh-dev/dsh-at-file.git#c37b0ed9e8bf3585bf9f272462dcf01886efe2a3:
     dependencies:
