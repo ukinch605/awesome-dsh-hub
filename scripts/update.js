@@ -6,16 +6,22 @@ import { classify } from './lib/classify.js';
 import {
   fetchRawPackageJsonResult,
   hasBundlePatch,
+  packageMetadata,
   searchTopicRepos,
+  verifyRepositoryAdmission,
 } from './lib/github.js';
 import { applyOverrides, loadOverrides, pruneOverrides } from './lib/overrides.js';
 import { pruneCompatResults } from './lib/validate.js';
 import { preserveTransientEntry } from './lib/registry-state.js';
+import { annotateLegacyRemovalEvents, appendEvents, generateEvents, preserveLifecycle, REGISTRY_VERSION } from './lib/registry-v2.js';
+import { confirmRemovalCandidates, markConfirmationPreserved, observeDiscovery, removeDiscoveryRecord } from './lib/discovery-state.js';
 import { INSTALL_PREFIX, SEARCH_QUERIES, SEARCH_SORTS } from './lib/constants.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const REGISTRY_FILE = path.join(ROOT, 'registry', 'plugins.json');
 const META_FILE = path.join(ROOT, 'registry', 'meta.json');
+const EVENTS_FILE = path.join(ROOT, 'registry', 'events.json');
+const DISCOVERY_FILE = path.join(ROOT, 'registry', 'discovery-state.json');
 
 function mapLimit(items, limit, fn) {
   const results = new Array(items.length);
@@ -39,6 +45,12 @@ async function main() {
   const previous = fs.existsSync(REGISTRY_FILE)
     ? JSON.parse(fs.readFileSync(REGISTRY_FILE, 'utf8')) : [];
   const previousByRepo = new Map(previous.map((e) => [e.repo.toLowerCase(), e]));
+  const previousById = new Map(previous.filter((e) => e.githubRepoId != null).map((e) => [String(e.githubRepoId), e]));
+  const previousDiscovery = fs.existsSync(DISCOVERY_FILE)
+    ? JSON.parse(fs.readFileSync(DISCOVERY_FILE, 'utf8'))
+    : { schemaVersion: 1, records: [] };
+  const searchDiagnostics = [];
+  const confirmedRemovalIds = new Set();
   const counts = {
     fetched: 0,
     archived: 0,
@@ -59,14 +71,20 @@ async function main() {
     token,
     onPage: ({ query, page, total }) =>
       console.log(`  [${query}] page ${page} (total ${total})`),
+    onSegment: (diagnostic) => {
+      searchDiagnostics.push(diagnostic);
+      console.log(`  coverage ${diagnostic.query}: total=${diagnostic.reportedTotal} pages=${diagnostic.pagesFetched} unique=${diagnostic.uniqueRepositories} capped=${diagnostic.reachedSearchCeiling}`);
+    },
   });
+  let discovery = observeDiscovery(previous, candidates, previousDiscovery, generatedAt);
   counts.fetched = candidates.length;
   console.log(`dsh-hub: ${candidates.length} unique repos found`);
 
   const eligible = candidates.filter((r) => {
-    if (r.archived) { counts.archived++; return false; }
-    if (r.fork) { counts.fork++; return false; }
-    if (!r.default_branch) { counts.noBranch++; return false; }
+    if (r.archived) { counts.archived++; if (previousById.has(String(r.id))) confirmedRemovalIds.add(String(r.id)); return false; }
+    if (r.fork) { counts.fork++; if (previousById.has(String(r.id))) confirmedRemovalIds.add(String(r.id)); return false; }
+    if (!r.default_branch) { counts.noBranch++; if (previousById.has(String(r.id))) confirmedRemovalIds.add(String(r.id)); return false; }
+    if (!r.topics.includes('dsh-plugin')) { if (previousById.has(String(r.id))) confirmedRemovalIds.add(String(r.id)); return false; }
     return true;
   });
   console.log(`dsh-hub: checking package.json manifests (${eligible.length} repos)…`);
@@ -83,14 +101,29 @@ async function main() {
     if (result.fallbackRecovered) counts.fallbackRecovered++;
     if (result.kind === 'transient-failure') {
       counts.fetchFailed++;
-      preserveTransientEntry(result, r.full_name, previousByRepo, entries);
+      const prior = previousById.get(String(r.id)) || previousByRepo.get(r.full_name.toLowerCase());
+      preserveTransientEntry(result, r.full_name, new Map([[r.full_name.toLowerCase(), prior]].filter(([, value]) => value)), entries);
       return;
     }
     const text = result.kind === 'success' ? result.text : null;
-    if (!hasBundlePatch(text)) { counts.manifestMissing++; return; }
-    entries.push({
+    if (!hasBundlePatch(text)) {
+      counts.manifestMissing++;
+      if (previousById.has(String(r.id))) confirmedRemovalIds.add(String(r.id));
+      return;
+    }
+    const prior = previousById.get(String(r.id)) || previousByRepo.get(r.full_name.toLowerCase());
+    const manifest = packageMetadata(text);
+    entries.push(preserveLifecycle({
       name: r.name,
+      githubRepoId: r.id,
       repo: r.full_name,
+      defaultBranch: r.default_branch,
+      packageName: manifest.packageName,
+      packageVersion: manifest.packageVersion,
+      repoPushedAt: r.pushed_at,
+      lastManifestCheckedAt: generatedAt,
+      discoverySource: 'github-topic:dsh-plugin',
+      ...(prior?.installProbe ? { installProbe: prior.installProbe } : {}),
       url: r.html_url,
       description: (r.description || '').trim(),
       stars: r.stars,
@@ -99,14 +132,32 @@ async function main() {
       activity: activityLevel(r.pushed_at),
       installCommand: `${INSTALL_PREFIX}${r.full_name}`,
       updatedAt: generatedAt,
-    });
+    }, prior, generatedAt));
   });
+  entries.push(...discovery.preserved);
+
+  const confirmations = await confirmRemovalCandidates(
+    discovery.confirmationCandidates,
+    (entry) => verifyRepositoryAdmission(entry.repo, { token }),
+  );
+  for (const { entry } of confirmations.preserved) {
+    entries.push(entry);
+    discovery = { ...discovery, state: markConfirmationPreserved(discovery.state, entry) };
+  }
+  for (const { entry } of confirmations.confirmed) {
+    if (entry.githubRepoId != null) confirmedRemovalIds.add(String(entry.githubRepoId));
+    discovery = { ...discovery, state: removeDiscoveryRecord(discovery.state, entry) };
+  }
   counts.admitted = entries.length;
 
   const overrides = loadOverrides(ROOT);
   const finalEntries = applyOverrides(entries, overrides)
     .sort((a, b) => b.stars - a.stars);
   counts.admitted = finalEntries.length;
+
+  const ledger = annotateLegacyRemovalEvents(fs.existsSync(EVENTS_FILE)
+    ? JSON.parse(fs.readFileSync(EVENTS_FILE, 'utf8')) : { schemaVersion: 1, events: [] });
+  const events = appendEvents(ledger, generateEvents(previous, finalEntries, generatedAt, { confirmedRemovalIds }));
 
   // Self-healing: drop cross-file references whose repo is no longer in the
   // registry, so a renamed or vanished plugin degrades gracefully instead of
@@ -146,6 +197,7 @@ async function main() {
     META_FILE,
     `${JSON.stringify(
       {
+        schemaVersion: REGISTRY_VERSION,
         generatedAt,
         pluginCount: finalEntries.length,
         monitoredRepos: counts.fetched,
@@ -164,12 +216,23 @@ async function main() {
           fallbackRecovered: counts.fallbackRecovered,
           transientFailures: counts.fetchFailed,
         },
+        discovery: {
+          observedRepositories: candidates.length,
+          temporarilyMissed: discovery.preserved.length + confirmations.preserved.length,
+          confirmationChecks: discovery.confirmationCandidates.length,
+          confirmedRemovals: confirmedRemovalIds.size,
+          cappedSegments: searchDiagnostics.filter((segment) => segment.reachedSearchCeiling).length,
+          unresolvedCappedSegments: searchDiagnostics.filter((segment) => segment.reachedSearchCeiling && !segment.subdivided).length,
+          segments: searchDiagnostics,
+        },
         queries: SEARCH_QUERIES.map((q, i) => `${q}&sort=${SEARCH_SORTS[i]}`),
       },
       null,
       2,
     )}\n`,
   );
+  fs.writeFileSync(EVENTS_FILE, `${JSON.stringify(events, null, 2)}\n`);
+  fs.writeFileSync(DISCOVERY_FILE, `${JSON.stringify(discovery.state, null, 2)}\n`);
 
   // Changelog + last-run snapshot feed the weekly digest.
   const lastRunFile = path.join(ROOT, 'registry', 'last-run.json');

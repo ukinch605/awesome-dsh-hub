@@ -44,6 +44,7 @@ async function gitRequest(url, { fetchFn = fetch, token, retries = 5 } = {}) {
 
 export function normalizeRepo(item) {
   return {
+    id: item.id ?? null,
     full_name: item.full_name,
     owner: item.owner?.login,
     name: item.name,
@@ -59,6 +60,34 @@ export function normalizeRepo(item) {
   };
 }
 
+export function packageMetadata(packageJsonText) {
+  try {
+    const pkg = JSON.parse(packageJsonText);
+    return {
+      packageName: typeof pkg.name === 'string' ? pkg.name : null,
+      packageVersion: typeof pkg.version === 'string' ? pkg.version : null,
+    };
+  } catch {
+    return { packageName: null, packageVersion: null };
+  }
+}
+
+export function subdivideCreatedRange(query) {
+  const match = query.match(/created:(\d{4}-\d{2}-\d{2})\.\.(\d{4}-\d{2}-\d{2})/);
+  if (!match) return [];
+  const start = Date.parse(`${match[1]}T00:00:00Z`);
+  const end = Date.parse(`${match[2]}T00:00:00Z`);
+  if (!Number.isFinite(start) || !Number.isFinite(end) || start >= end) return [];
+  const day = 86_400_000;
+  const midpoint = start + Math.floor((end - start) / day / 2) * day;
+  const rightStart = midpoint + day;
+  const date = (value) => new Date(value).toISOString().slice(0, 10);
+  return [
+    query.replace(match[0], `created:${match[1]}..${date(midpoint)}`),
+    query.replace(match[0], `created:${date(rightStart)}..${match[2]}`),
+  ];
+}
+
 export async function searchTopicRepos({
   queries = ['topic:dsh-plugin', 'topic:dsh-plugin'],
   sorts = ['stars', 'updated'],
@@ -66,32 +95,89 @@ export async function searchTopicRepos({
   token,
   pageSize = 100,
   onPage,
+  onSegment,
+  sleepFn = sleep,
+  maxSegments = 256,
 } = {}) {
   const seen = new Map();
-  for (let qi = 0; qi < queries.length; qi++) {
+  const queue = queries.map((query, index) => ({ query, sort: sorts[index], subdivisionDepth: 0 }));
+  let processed = 0;
+  while (queue.length > 0) {
+    const segment = queue.shift();
+    processed++;
+    const segmentRepos = new Set();
+    let reportedTotal = 0;
+    let pagesFetched = 0;
+    let subdivisions = [];
     let page = 1;
     let totalPages = Infinity;
     while (page <= totalPages && page <= 10) {
-      const q = `q=${encodeURIComponent(queries[qi])}&sort=${sorts[qi]}&order=desc&per_page=${pageSize}&page=${page}`;
+      const q = `q=${encodeURIComponent(segment.query)}&sort=${segment.sort}&order=desc&per_page=${pageSize}&page=${page}`;
       const data = await gitRequest(
         `https://api.github.com/search/repositories?${q}`,
         { fetchFn, token },
       );
       if (!data) break;
+      reportedTotal = data.total_count || 0;
+      pagesFetched++;
+      if (page === 1 && reportedTotal >= 1000 && processed + queue.length + 2 <= maxSegments) {
+        subdivisions = subdivideCreatedRange(segment.query);
+        if (subdivisions.length > 0) {
+          queue.push(...subdivisions.map((query) => ({
+            query,
+            sort: segment.sort,
+            subdivisionDepth: segment.subdivisionDepth + 1,
+          })));
+          break;
+        }
+      }
       totalPages = Math.ceil((data.total_count || 0) / pageSize) || 1;
       for (const item of data.items || []) {
         const norm = normalizeRepo(item);
         const key = norm.full_name.toLowerCase();
+        segmentRepos.add(key);
         if (!seen.has(key)) seen.set(key, norm);
       }
-      onPage?.({ query: queries[qi], page, total: data.total_count });
+      onPage?.({ query: segment.query, page, total: data.total_count });
       page++;
       // Unauthenticated search quota is 10 req/min; keep a safe pace.
-      if (!token) await sleep(6500);
-      else await sleep(1100);
+      if (!token) await sleepFn(6500);
+      else await sleepFn(1100);
     }
+    onSegment?.({
+      query: segment.query,
+      reportedTotal,
+      pagesFetched,
+      uniqueRepositories: segmentRepos.size,
+      reachedSearchCeiling: reportedTotal >= 1000,
+      subdivided: subdivisions.length > 0,
+      subdivisionDepth: segment.subdivisionDepth,
+    });
   }
   return [...seen.values()];
+}
+
+export async function verifyRepositoryAdmission(repo, {
+  fetchFn = fetch,
+  token = '',
+  fetchManifest = fetchRawPackageJsonResult,
+} = {}) {
+  let item;
+  try {
+    item = await gitRequest(`https://api.github.com/repos/${repo}`, { fetchFn, token, retries: 1 });
+  } catch {
+    return { kind: 'transient-failure', reason: 'repository metadata unavailable' };
+  }
+  if (!item) return { kind: 'confirmed-ineligible', reason: 'repository-not-found' };
+  const repository = normalizeRepo(item);
+  if (repository.archived) return { kind: 'confirmed-ineligible', reason: 'repository-archived' };
+  if (!repository.default_branch) return { kind: 'confirmed-ineligible', reason: 'no-default-branch' };
+  if (!repository.topics.includes('dsh-plugin')) return { kind: 'confirmed-ineligible', reason: 'topic-removed' };
+  const manifest = await fetchManifest(repository.owner, repository.name, repository.default_branch, { fetchFn, token });
+  if (manifest.kind === 'transient-failure') return manifest;
+  if (manifest.kind !== 'success') return { kind: 'confirmed-ineligible', reason: 'manifest-missing' };
+  if (!hasBundlePatch(manifest.text)) return { kind: 'confirmed-ineligible', reason: 'manifest-no-longer-admitted' };
+  return { kind: 'eligible', repository };
 }
 
 export async function fetchRawPackageJson(

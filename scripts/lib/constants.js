@@ -47,7 +47,20 @@ export const STAR_SEGMENTS = [
   'stars:0',
 ];
 
-export const SEARCH_QUERIES = STAR_SEGMENTS.map((s) => `topic:dsh-plugin ${s}`);
+// Zero-star repositories are deterministically split by creation year. This
+// avoids relying on a single query that is already beyond Search's 1000-result
+// window while keeping the request count bounded.
+export function buildSearchQueries(currentYear = new Date().getUTCFullYear()) {
+  const nonzero = STAR_SEGMENTS.filter((segment) => segment !== 'stars:0')
+    .map((segment) => `topic:dsh-plugin ${segment}`);
+  const zeroStar = [];
+  for (let year = 2008; year <= currentYear; year++) {
+    zeroStar.push(`topic:dsh-plugin stars:0 created:${year}-01-01..${year}-12-31`);
+  }
+  return [...nonzero, ...zeroStar];
+}
+
+export const SEARCH_QUERIES = buildSearchQueries();
 export const SEARCH_SORTS = SEARCH_QUERIES.map(() => 'stars');
 
 export const REPO_PATTERN = /^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/;

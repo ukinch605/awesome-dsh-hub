@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { fetchRawPackageJson, fetchRawPackageJsonResult, hasBundlePatch, normalizeRepo, searchTopicRepos } from '../lib/github.js';
-import { SEARCH_QUERIES } from '../lib/constants.js';
+import { fetchRawPackageJson, fetchRawPackageJsonResult, hasBundlePatch, normalizeRepo, searchTopicRepos, subdivideCreatedRange } from '../lib/github.js';
+import { buildSearchQueries, SEARCH_QUERIES } from '../lib/constants.js';
 
 test('hasBundlePatch: accepts declared patch', () => {
   assert.equal(hasBundlePatch('{"dsh":{"bundle":{"patch":{}}}}'), true);
@@ -17,6 +17,7 @@ test('hasBundlePatch: rejects missing or invalid manifests', () => {
 
 test('normalizeRepo: maps search item fields', () => {
   const norm = normalizeRepo({
+    id: 123,
     full_name: 'a/b',
     owner: { login: 'a' },
     name: 'b',
@@ -31,6 +32,7 @@ test('normalizeRepo: maps search item fields', () => {
     topics: ['dsh-plugin'],
   });
   assert.equal(norm.stars, 42);
+  assert.equal(norm.id, 123);
   assert.equal(norm.license, 'MIT');
   assert.equal(norm.fork, true);
   assert.deepEqual(norm.topics, ['dsh-plugin']);
@@ -66,9 +68,56 @@ test('searchTopicRepos: paginates, dedupes across queries, respects page cap', a
       json: async () => ({ total_count: 150, items }),
     };
   };
-  const repos = await searchTopicRepos({ fetchFn: fakeFetch, token: 't', pageSize: 100 });
+  const repos = await searchTopicRepos({ fetchFn: fakeFetch, token: 't', pageSize: 100, sleepFn: async () => {} });
   assert.equal(calls, 4); // 2 queries x 2 pages (150 total -> 2 pages)
   assert.equal(repos.length, 4); // s1/s2 + u1/u2, s1==u1 deduped by full_name
+});
+
+test('searchTopicRepos: reports saturated segment coverage', async () => {
+  const diagnostics = [];
+  await searchTopicRepos({
+    queries: ['topic:dsh-plugin stars:0'], sorts: ['stars'], token: 't',
+    fetchFn: async () => ({
+      status: 200,
+      headers: new Map([['x-ratelimit-remaining', '50']]),
+      json: async () => ({ total_count: 1000, items: [] }),
+    }),
+    onSegment: (segment) => diagnostics.push(segment),
+    sleepFn: async () => {},
+  });
+  assert.equal(diagnostics.length, 1);
+  assert.equal(diagnostics[0].reachedSearchCeiling, true);
+  assert.equal(diagnostics[0].reportedTotal, 1000);
+  assert.equal(diagnostics[0].pagesFetched, 10);
+});
+
+test('searchTopicRepos: recursively subdivides a saturated dated segment', async () => {
+  const diagnostics = [];
+  const root = 'topic:dsh-plugin stars:0 created:2026-01-01..2026-12-31';
+  await searchTopicRepos({
+    queries: [root], sorts: ['stars'], token: 't', sleepFn: async () => {},
+    fetchFn: async (url) => {
+      const query = new URL(url).searchParams.get('q');
+      return {
+        status: 200,
+        headers: new Map([['x-ratelimit-remaining', '50']]),
+        json: async () => ({ total_count: query === root ? 1200 : 20, items: [] }),
+      };
+    },
+    onSegment: (segment) => diagnostics.push(segment),
+  });
+  assert.equal(diagnostics[0].subdivided, true);
+  const leaves = diagnostics.filter((segment) => !segment.subdivided);
+  assert.equal(leaves.length, 2);
+  assert.ok(leaves.every((segment) => segment.reportedTotal < 1000));
+});
+
+test('subdivideCreatedRange is deterministic, disjoint, and refuses an indivisible day', () => {
+  assert.deepEqual(subdivideCreatedRange('q created:2026-01-01..2026-01-04'), [
+    'q created:2026-01-01..2026-01-02',
+    'q created:2026-01-03..2026-01-04',
+  ]);
+  assert.deepEqual(subdivideCreatedRange('q created:2026-01-01..2026-01-01'), []);
 });
 
 test('SEARCH_QUERIES: star-segmented queries cover the full range', () => {
@@ -78,7 +127,18 @@ test('SEARCH_QUERIES: star-segmented queries cover the full range', () => {
   assert.ok(SEARCH_QUERIES.some((q) => q.includes('stars:100..499')));
   assert.ok(SEARCH_QUERIES.includes('topic:dsh-plugin stars:3'));
   assert.ok(SEARCH_QUERIES.includes('topic:dsh-plugin stars:1'));
-  assert.ok(SEARCH_QUERIES.includes('topic:dsh-plugin stars:0'));
+  assert.ok(!SEARCH_QUERIES.includes('topic:dsh-plugin stars:0'));
+});
+
+test('buildSearchQueries subdivides the saturated zero-star segment deterministically', () => {
+  const queries = buildSearchQueries(2010);
+  const zeroStar = queries.filter((query) => query.includes('stars:0'));
+  assert.deepEqual(zeroStar, [
+    'topic:dsh-plugin stars:0 created:2008-01-01..2008-12-31',
+    'topic:dsh-plugin stars:0 created:2009-01-01..2009-12-31',
+    'topic:dsh-plugin stars:0 created:2010-01-01..2010-12-31',
+  ]);
+  assert.ok(zeroStar.every((query) => query.includes('created:')));
 });
 
 test('fetchRawPackageJson: uses raw first even when a token is set', async () => {

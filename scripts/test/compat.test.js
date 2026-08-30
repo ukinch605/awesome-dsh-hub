@@ -5,17 +5,22 @@ import {
   validateCompatResults,
 } from '../compat.js';
 
-test('classifyCompatRun: exit 0 is verified', () => {
+test('classifyCompatRun: exit 0 is installed', () => {
   assert.deepEqual(classifyCompatRun({ exitCode: 0, timedOut: false, output: 'ok' }), {
-    status: 'verified',
+    status: 'installed',
   });
 });
 
-test('classifyCompatRun: timeout is failed with reason', () => {
+test('classifyCompatRun: timeout has a distinct state', () => {
   assert.deepEqual(classifyCompatRun({ exitCode: -1, timedOut: true, output: '' }), {
-    status: 'failed',
-    reason: 'timeout',
+    status: 'timeout',
+    reason: 'install command exceeded time limit',
   });
+});
+
+test('classifyCompatRun: pnpm install policy is blocked, not incompatibility', () => {
+  const r = classifyCompatRun({ exitCode: 1, timedOut: false, output: 'add this package under pnpm allowBuilds' });
+  assert.equal(r.status, 'blocked');
 });
 
 test('classifyCompatRun: non-zero exit records output tail', () => {
@@ -26,8 +31,8 @@ test('classifyCompatRun: non-zero exit records output tail', () => {
 
 test('validateCompatResults: accepts valid results', () => {
   const results = [
-    { repo: 'a/b', status: 'verified', dshVersion: '0.1.0-rc.6', checkedAt: '2026-08-15T00:00:00Z' },
-    { repo: 'c/d', status: 'failed', reason: 'boom', dshVersion: '0.1.0-rc.6', checkedAt: '2026-08-15T00:00:00Z' },
+    { repo: 'a/b', status: 'installed', dshVersion: '0.1.0-rc.6', checkedAt: '2026-08-15T00:00:00Z', scope: { kind: 'top-by-stars', limit: 100, rank: 1 } },
+    { repo: 'c/d', status: 'failed', reason: 'boom', dshVersion: '0.1.0-rc.6', checkedAt: '2026-08-15T00:00:00Z', scope: { kind: 'top-by-stars', limit: 100, rank: 2 } },
   ];
   assert.deepEqual(validateCompatResults(results), []);
 });
@@ -35,7 +40,7 @@ test('validateCompatResults: accepts valid results', () => {
 test('validateCompatResults: rejects invalid status and missing fields', () => {
   const results = [
     { repo: 'a/b', status: 'nope', dshVersion: 'x', checkedAt: 'bad' },
-    { repo: 'no-slash', status: 'verified', dshVersion: 'x', checkedAt: '2026-08-15T00:00:00Z' },
+    { repo: 'no-slash', status: 'installed', dshVersion: 'x', checkedAt: '2026-08-15T00:00:00Z' },
   ];
   const errors = validateCompatResults(results);
   assert.ok(errors.length >= 3);

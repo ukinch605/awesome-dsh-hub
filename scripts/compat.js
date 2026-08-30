@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { spawn } from 'node:child_process';
+import { recordInstallProbeEvents } from './lib/registry-v2.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const TOP_N = Number(process.env.COMPAT_TOP_N || 100);
@@ -10,20 +11,21 @@ const PER_TIMEOUT_MS = Number(process.env.COMPAT_TIMEOUT_MS || 150_000);
 const DSH_VERSION = process.env.DSH_VERSION || '';
 
 export function classifyCompatRun({ exitCode, timedOut, output }) {
-  if (timedOut) return { status: 'failed', reason: 'timeout' };
-  if (exitCode === 0) return { status: 'verified' };
+  if (timedOut) return { status: 'timeout', reason: 'install command exceeded time limit' };
+  if (exitCode === 0) return { status: 'installed' };
   const tail = String(output || '')
     .trim()
     .split('\n')
     .slice(-6)
     .join(' ')
     .slice(0, 1500);
-  return { status: 'failed', reason: tail || `exit ${exitCode}` };
+  const policyBlocked = /allowBuilds|approve-builds|Ignored build scripts/i.test(tail);
+  return { status: policyBlocked ? 'blocked' : 'failed', reason: tail || `exit ${exitCode}` };
 }
 
 export function validateCompatResults(results) {
   const errors = [];
-  const statuses = new Set(['verified', 'failed', 'unknown', 'pending']);
+  const statuses = new Set(['installed', 'blocked', 'failed', 'timeout', 'not-tested']);
   for (const r of results || []) {
     if (!r || typeof r.repo !== 'string' || !r.repo.includes('/')) {
       errors.push('compat: result missing valid repo');
@@ -32,6 +34,7 @@ export function validateCompatResults(results) {
     if (!statuses.has(r.status)) errors.push(`compat: ${r.repo} invalid status ${r.status}`);
     if (typeof r.dshVersion !== 'string' || !r.dshVersion) errors.push(`compat: ${r.repo} missing dshVersion`);
     if (!r.checkedAt || Number.isNaN(Date.parse(r.checkedAt))) errors.push(`compat: ${r.repo} invalid checkedAt`);
+    if (r.scope?.kind !== 'top-by-stars' || !Number.isInteger(r.scope?.limit) || !Number.isInteger(r.scope?.rank)) errors.push(`compat: ${r.repo} invalid scope`);
   }
   return errors;
 }
@@ -103,6 +106,7 @@ async function main() {
         dshVersion,
         durationMs: Date.now() - t0,
         checkedAt: new Date().toISOString(),
+        scope: { kind: 'top-by-stars', limit: TOP_N, rank: idx + 1 },
       });
       process.stdout.write(
         `  ${e.repo}: ${cls.status}${cls.reason ? ` — ${cls.reason.slice(0, 80)}` : ''}\n`,
@@ -119,10 +123,20 @@ async function main() {
     throw new Error('compat: invalid results');
   }
 
+  const checkedAt = new Date().toISOString();
+  const eventsFile = path.join(ROOT, 'registry', 'events.json');
+  const ledger = fs.existsSync(eventsFile)
+    ? JSON.parse(fs.readFileSync(eventsFile, 'utf8'))
+    : { schemaVersion: 1, events: [] };
+  fs.writeFileSync(
+    eventsFile,
+    `${JSON.stringify(recordInstallProbeEvents(registry, results, ledger, checkedAt), null, 2)}\n`,
+  );
+
   fs.writeFileSync(
     path.join(ROOT, 'registry', 'compatibility.json'),
     `${JSON.stringify(
-      { checkedAt: new Date().toISOString(), dshVersion, results },
+      { schemaVersion: 2, semantics: 'install-probe', checkedAt, dshVersion, scope: { kind: 'top-by-stars', limit: TOP_N }, results },
       null,
       2,
     )}\n`,

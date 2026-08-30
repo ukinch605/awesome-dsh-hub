@@ -8,6 +8,8 @@ import {
   validateMeta,
   validateRegistry,
   validateCompatibilityFile,
+  validateEventLedger,
+  validateDiscoveryState,
   weeklyFreshnessWarnings,
 } from './lib/validate.js';
 
@@ -33,6 +35,8 @@ function main() {
       ),
     );
   }
+  if (exists('registry/events.json')) errors.push(...validateEventLedger(JSON.parse(read('registry/events.json'))));
+  if (exists('registry/discovery-state.json')) errors.push(...validateDiscoveryState(JSON.parse(read('registry/discovery-state.json'))));
 
   for (const file of ['README.md', 'README.en.md']) {
     if (exists(file)) errors.push(...checkReadme(read(file), registry, meta, file));
