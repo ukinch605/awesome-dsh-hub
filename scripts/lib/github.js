@@ -42,6 +42,24 @@ async function gitRequest(url, { fetchFn = fetch, token, retries = 5 } = {}) {
   }
 }
 
+const DAY_MS = 86_400_000;
+const isoDay = (value) => new Date(value).toISOString().slice(0, 10);
+
+export function bisectDateRange(start, end) {
+  const first = Date.parse(`${start}T00:00:00Z`);
+  const last = Date.parse(`${end}T00:00:00Z`);
+  if (!Number.isFinite(first) || !Number.isFinite(last) || first >= last) return null;
+  const leftEnd = first + Math.floor((last - first) / (2 * DAY_MS)) * DAY_MS;
+  return [
+    { start, end: isoDay(leftEnd) },
+    { start: isoDay(leftEnd + DAY_MS), end },
+  ];
+}
+
+function withCreatedRange(query, start, end) {
+  return `${query} created:${start}..${end}`;
+}
+
 export function normalizeRepo(item) {
   return {
     id: item.id ?? null,
@@ -79,32 +97,87 @@ export async function searchTopicRepos({
   token,
   pageSize = 100,
   onPage,
+  segmentBudget = 100,
+  creationStart = '2008-01-01',
+  creationEnd = isoDay(Date.now()),
 } = {}) {
   const seen = new Map();
+  const diagnostics = {
+    segmentsAttempted: 0, reportedTotal: 0, pagesFetched: 0,
+    capped: false, subdivided: false, unresolvedCappedSegments: [],
+  };
   for (let qi = 0; qi < queries.length; qi++) {
-    let page = 1;
-    let totalPages = Infinity;
-    while (page <= totalPages && page <= 10) {
-      const q = `q=${encodeURIComponent(queries[qi])}&sort=${sorts[qi]}&order=desc&per_page=${pageSize}&page=${page}`;
-      const data = await gitRequest(
-        `https://api.github.com/search/repositories?${q}`,
-        { fetchFn, token },
-      );
-      if (!data) break;
-      totalPages = Math.ceil((data.total_count || 0) / pageSize) || 1;
-      for (const item of data.items || []) {
-        const norm = normalizeRepo(item);
-        const key = norm.full_name.toLowerCase();
-        if (!seen.has(key)) seen.set(key, norm);
+    const pending = [{ query: queries[qi], start: null, end: null }];
+    while (pending.length) {
+      const segment = pending.shift();
+      if (diagnostics.segmentsAttempted >= segmentBudget) {
+        diagnostics.capped = true;
+        diagnostics.unresolvedCappedSegments.push({ query: segment.query, reason: 'segment-budget-exhausted' });
+        for (const rest of pending.splice(0)) diagnostics.unresolvedCappedSegments.push({ query: rest.query, reason: 'segment-budget-exhausted' });
+        break;
       }
-      onPage?.({ query: queries[qi], page, total: data.total_count });
-      page++;
-      // Unauthenticated search quota is 10 req/min; keep a safe pace.
-      if (!token) await sleep(6500);
-      else await sleep(1100);
+      diagnostics.segmentsAttempted++;
+      const requestPage = async (page) => {
+        const q = `q=${encodeURIComponent(segment.query)}&sort=${sorts[qi]}&order=desc&per_page=${pageSize}&page=${page}`;
+        const data = await gitRequest(`https://api.github.com/search/repositories?${q}`, { fetchFn, token });
+        diagnostics.pagesFetched++;
+        for (const item of data?.items || []) {
+          const norm = normalizeRepo(item);
+          const key = norm.id == null ? norm.full_name.toLowerCase() : String(norm.id);
+          if (!seen.has(key)) seen.set(key, norm);
+        }
+        onPage?.({ query: segment.query, page, total: data?.total_count || 0 });
+        return data;
+      };
+      const first = await requestPage(1);
+      if (!first) continue;
+      diagnostics.reportedTotal += first.total_count || 0;
+      if ((first.total_count || 0) >= 1000) {
+        diagnostics.capped = true;
+        const created = /(?:^|\s)created:(\d{4}-\d{2}-\d{2})\.\.(\d{4}-\d{2}-\d{2})(?:\s|$)/.exec(segment.query);
+        const start = created?.[1] || creationStart;
+        const end = created?.[2] || creationEnd;
+        const halves = bisectDateRange(start, end);
+        if (!halves) {
+          diagnostics.unresolvedCappedSegments.push({ query: withCreatedRange(segment.query.replace(/\s+created:[^\s]+/, ''), start, end), reportedTotal: first.total_count, reason: 'one-day-saturated' });
+        } else {
+          diagnostics.subdivided = true;
+          const base = segment.query.replace(/\s+created:[^\s]+/, '');
+          pending.unshift(...halves.map((range) => ({ ...range, query: withCreatedRange(base, range.start, range.end) })));
+        }
+        continue;
+      }
+      const totalPages = Math.min(10, Math.ceil((first.total_count || 0) / pageSize) || 1);
+      for (let page = 2; page <= totalPages; page++) {
+        await requestPage(page);
+        // Unauthenticated search quota is 10 req/min; keep a safe pace.
+        if (!token) await sleep(6500); else await sleep(1100);
+      }
     }
   }
-  return [...seen.values()];
+  const repositories = [...seen.values()];
+  diagnostics.uniqueRepositories = repositories.length;
+  Object.defineProperty(repositories, 'diagnostics', { value: diagnostics, enumerable: false });
+  return repositories;
+}
+
+export async function verifyRepositoryAdmission(repo, { fetchFn = fetch, token } = {}) {
+  let metadata;
+  try {
+    metadata = await gitRequest(`https://api.github.com/repositories/${repo.repositoryId}`, { fetchFn, token, retries: 2 });
+  } catch {
+    return { kind: 'transient-failure' };
+  }
+  if (!metadata) return { kind: 'confirmed-removed', reason: 'repository-not-found' };
+  if (metadata.archived || metadata.fork) return { kind: 'confirmed-removed', reason: metadata.archived ? 'archived' : 'fork' };
+  if (!metadata.default_branch) return { kind: 'confirmed-removed', reason: 'no-default-branch' };
+  if (!Array.isArray(metadata.topics)) return { kind: 'transient-failure' };
+  if (!metadata.topics.includes('dsh-plugin')) return { kind: 'confirmed-removed', reason: 'topic-removed' };
+  const manifest = await fetchRawPackageJsonResult(metadata.owner.login, metadata.name, metadata.default_branch, { fetchFn, token });
+  if (manifest.kind === 'transient-failure') return manifest;
+  if (manifest.kind === 'confirmed-missing') return { kind: 'confirmed-removed', reason: 'package-json-missing' };
+  if (!hasBundlePatch(manifest.text)) return { kind: 'confirmed-removed', reason: 'admission-signal-missing' };
+  return { kind: 'eligible', repository: normalizeRepo(metadata) };
 }
 
 export async function fetchRawPackageJson(

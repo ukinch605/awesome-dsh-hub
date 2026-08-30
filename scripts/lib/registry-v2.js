@@ -46,7 +46,7 @@ function eventId(event) {
   return createHash('sha256').update(JSON.stringify(event)).digest('hex').slice(0, 24);
 }
 
-export function generateEvents(previous, current, occurredAt, { suppressMigration = true } = {}) {
+export function generateEvents(previous, current, occurredAt, { suppressMigration = true, confirmedRemovalIds = new Set() } = {}) {
   // The checked-in v1 state has no stable IDs and cannot support evidence-based history.
   if (suppressMigration && previous.length > 0 && previous.every((e) => identity(e) === null)) return [];
   const before = new Map(previous.map((e) => [identity(e), e]).filter(([id]) => id !== null));
@@ -66,8 +66,19 @@ export function generateEvents(previous, current, occurredAt, { suppressMigratio
     const newProbe = now.installProbe?.status;
     if (oldProbe !== newProbe && (oldProbe !== undefined || newProbe !== undefined)) emit('install_probe_changed', id, { from: oldProbe ?? 'not-tested', to: newProbe ?? 'not-tested' });
   }
-  for (const [id, old] of before) if (!after.has(id)) emit('plugin_removed', id, { repo: old.repo });
+  for (const [id, old] of before) {
+    if (!after.has(id) && confirmedRemovalIds.has(id)) emit('plugin_removed', id, { repo: old.repo, confirmation: 'direct-verification' });
+  }
   return events;
+}
+
+export function annotateLegacyRemovalEvents(ledger) {
+  return {
+    ...ledger,
+    events: (ledger.events || []).map((event) => event.type === 'plugin_removed' && !event.changes?.confirmation
+      ? { ...event, changes: { ...event.changes, confirmation: 'unconfirmed-discovery-derived' } }
+      : event),
+  };
 }
 
 export function appendEvents(ledger, generated) {

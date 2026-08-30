@@ -39,7 +39,7 @@ test('stable repository ID detects rename and semantic changes but ignores stars
 });
 
 test('events cover additions/removals and ledger append is idempotent', () => {
-  const events = generateEvents([plugin()], [plugin({ githubRepoId: 77, repo: 'new/plugin' })], at, { suppressMigration: false });
+  const events = generateEvents([plugin()], [plugin({ githubRepoId: 77, repo: 'new/plugin' })], at, { suppressMigration: false, confirmedRemovalIds: new Set(['42']) });
   assert.deepEqual(events.map((e) => e.type).sort(), ['plugin_added', 'plugin_removed']);
   const once = appendEvents({ schemaVersion: 1, events: [] }, events);
   const twice = appendEvents(once, events);
