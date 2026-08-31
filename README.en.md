@@ -2,7 +2,7 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/ukinch605/awesome-dsh-hub)
 ![License](https://img.shields.io/github/license/ukinch605/awesome-dsh-hub)
-![Plugins](https://img.shields.io/badge/plugins-4637-4dabf7)
+![Plugins](https://img.shields.io/badge/plugins-4651-4dabf7)
 ![Last updated](https://img.shields.io/badge/last%20updated-2026--08--31-orange)
 
 > An auto-maintained, awesome-style directory of the DeepSeek Harness (`dsh`) plugin ecosystem: machine-readable registry, bilingual catalogs and a searchable site. Everything is a Plugin. 🐋
@@ -13,28 +13,28 @@
 
 | Metric | Value |
 | --- | ---: |
-| Plugins | **4637** |
-| Monitored repos | 6278 |
-| Total stars | 76,609 |
-| Last updated | 2026-08-31 08:56:37.165 UTC |
+| Plugins | **4651** |
+| Monitored repos | 6284 |
+| Total stars | 77,193 |
+| Last updated | 2026-08-31 16:31:06.627 UTC |
 
 ### Categories
 
-Web UI 638 · Agent Capabilities 1891 · Coding & Engineering 388 · Messaging & Notifications 193 · Vision & Multimodal 374 · Browser & Web 256 · Skins & Fun 124 · Files & Data 551 · Dev Tools & Tutorials 117 · Bundles & Distros 63 · Ecosystem Projects 42
+Web UI 647 · Agent Capabilities 1885 · Coding & Engineering 381 · Messaging & Notifications 186 · Vision & Multimodal 379 · Browser & Web 253 · Skins & Fun 122 · Files & Data 574 · Dev Tools & Tutorials 115 · Bundles & Distros 66 · Ecosystem Projects 43
 
 ### Top 10 Plugins
 
 | # | Plugin | Stars | Type | Description |
 | --- | --- | ---: | --- | --- |
-| 1 | [yjh051108/dsh-routing-suite](https://github.com/yjh051108/dsh-routing-suite) | 6,985 | Agent Capabilities | dsh-routing-suite — injector + router-standard kit: install… |
-| 2 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 6,553 | Dev Tools & Tutorials | DeepSeek Harness (DSH) Web Plugin Aggregation Ecosystem · E… |
-| 3 | [liustack/modlens](https://github.com/liustack/modlens) | 3,789 | Vision & Multimodal | The first vision plugin for DeepSeek Harness, and the visio… |
-| 4 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 3,156 | Web UI | 开放的侧边栏底座，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/侧边对话/Git/子代理页面 ｜ Open s… |
-| 5 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 2,894 | Agent Capabilities | The plugin market inside DeepSeek Harness — browse, search,… |
-| 6 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 2,736 | Messaging & Notifications | DSH 官方公众号收录的 TUI 补位插件：Claude Code 风，鲸鱼顶栏/实时状态/流式思考/双击 Esc 回… |
-| 7 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 1,432 | Web UI | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
-| 8 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 1,222 | Agent Capabilities | AgentTeams plugin for DeepSeek Harness |
-| 9 | [bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) | 1,192 | Browser & Web | The best DeepSeek Harness plugin for context insight and ma… |
+| 1 | [yjh051108/dsh-routing-suite](https://github.com/yjh051108/dsh-routing-suite) | 6,997 | Agent Capabilities | dsh-routing-suite — injector + router-standard kit: install… |
+| 2 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 6,585 | Dev Tools & Tutorials | DeepSeek Harness (DSH) Web Plugin Aggregation Ecosystem · E… |
+| 3 | [liustack/modlens](https://github.com/liustack/modlens) | 3,805 | Vision & Multimodal | The first vision plugin for DeepSeek Harness, and the visio… |
+| 4 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 3,178 | Web UI | 开放的侧边栏底座，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/侧边对话/Git/子代理页面 ｜ Open s… |
+| 5 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 2,929 | Agent Capabilities | The plugin market inside DeepSeek Harness — browse, search,… |
+| 6 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 2,742 | Messaging & Notifications | DSH 官方公众号收录的 TUI 补位插件：Claude Code 风，鲸鱼顶栏/实时状态/流式思考/双击 Esc 回… |
+| 7 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 1,483 | Web UI | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
+| 8 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 1,232 | Agent Capabilities | AgentTeams plugin for DeepSeek Harness |
+| 9 | [bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) | 1,206 | Browser & Web | The best DeepSeek Harness plugin for context insight and ma… |
 | 10 | [GanyuanRan/Aegis](https://github.com/GanyuanRan/Aegis) | 1,156 | Coding & Engineering | Make AI coding agents architecture-aware: baseline-first, e… |
 
 ## Quick Start
