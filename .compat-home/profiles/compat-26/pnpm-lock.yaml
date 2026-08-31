@@ -11,6 +11,9 @@ importers:
       '@anionex/dsh-turn-rewind':
         specifier: github:Anionex/dsh-turn-rewind
         version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/d3734cb183a5d2483600e8caec3ece04c28c8f45
+      '@howmp/dsh-pentest':
+        specifier: github:howmp/dsh-pentest
+        version: https://codeload.github.com/howmp/dsh-pentest/tar.gz/9cc3a10c3701965bf355b1eee9af5971a0d92cc6
       '@liustack/modsearch':
         specifier: github:liustack/modsearch
         version: https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80
@@ -35,6 +38,16 @@ packages:
 
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
+  '@howmp/dsh-pentest@https://codeload.github.com/howmp/dsh-pentest/tar.gz/9cc3a10c3701965bf355b1eee9af5971a0d92cc6':
+    resolution: {gitHosted: true, integrity: sha512-X2cvBKxpGY10IQ3eAGMcYNIHSv6BSt8q+tnTs7aaYkToLc5931RmlBgoxFQQgMxr/gIrmSUdMouwGFNEwifkoQ==, tarball: https://codeload.github.com/howmp/dsh-pentest/tar.gz/9cc3a10c3701965bf355b1eee9af5971a0d92cc6}
+    version: 0.1.0-rc.25
+    peerDependencies:
+      '@deepseek-ai/cordis': 0.1.0-rc.6
+      '@deepseek-ai/dsh-invariants': 0.1.0-rc.6
+      '@deepseek-ai/dsh-storage': 0.1.0-rc.6
+      '@deepseek-ai/dsh-storage-domain': 0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': 0.1.0-rc.6
 
   '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80':
     resolution: {gitHosted: true, integrity: sha512-vWyQIygu+3TKVEvDGMGXV+xi0PWn/9KS+N1zNfA9SQ42dGwnqwbakQe1cutaLieydrUQClTL5HUKOKnFZRCbsA==, tarball: https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80}
@@ -80,6 +93,9 @@ packages:
       utf-8-validate:
         optional: true
 
+  zod@4.5.4:
+    resolution: {integrity: sha512-sC95tT5iHHH9gtpj6A81kh+NEaRAUFN+qlUPDUbRfOMvNf5QCBqsb3WgvnpVtK5Y+4UfA6KqufotuTvMGiTlsA==}
+
 snapshots:
 
   '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/d3734cb183a5d2483600e8caec3ece04c28c8f45': {}
@@ -90,6 +106,11 @@ snapshots:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
+
+  '@howmp/dsh-pentest@https://codeload.github.com/howmp/dsh-pentest/tar.gz/9cc3a10c3701965bf355b1eee9af5971a0d92cc6':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
+      zod: 4.5.4
 
   '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80':
     dependencies:
@@ -113,3 +134,5 @@ snapshots:
   undici@7.29.0: {}
 
   ws@8.21.3: {}
+
+  zod@4.5.4: {}

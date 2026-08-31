@@ -17,6 +17,9 @@ importers:
       sealos:
         specifier: github:labring/sealos-skills
         version: https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31
+      superdesign-dsh:
+        specifier: github:superdesigndev/superdesign-skill
+        version: https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b
 
 packages:
 
@@ -60,6 +63,10 @@ packages:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31}
     version: 1.2.5
 
+  superdesign-dsh@https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b:
+    resolution: {gitHosted: true, integrity: sha512-YqjjdfYvduaj69lrs/aCmcAvm+teYea6be3m/MTOn/k+cszwRUaxvmSRKzFNd0bKYfZgNBCq8DRF8ZyHK9Cvrw==, tarball: https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b}
+    version: 0.6.0
+
   yaml@2.9.0:
     resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
     engines: {node: '>= 14.6'}
@@ -86,5 +93,7 @@ snapshots:
   sealos@https://codeload.github.com/labring/sealos-skills/tar.gz/f6876f7df876eac3617ddc15f95f43dcb8c33e31:
     dependencies:
       yaml: 2.9.0
+
+  superdesign-dsh@https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b: {}
 
   yaml@2.9.0: {}

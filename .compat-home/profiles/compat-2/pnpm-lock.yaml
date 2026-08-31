@@ -11,6 +11,9 @@ importers:
       '@deepseek-harness-tui/dsh-tui':
         specifier: github:ccch1mneyyy/dsh-TUI
         version: https://codeload.github.com/ccch1mneyyy/dsh-TUI/tar.gz/9a0559b820fb0a8733089560916dfeb75075c244
+      '@liustack/modlens':
+        specifier: github:liustack/modlens
+        version: https://codeload.github.com/liustack/modlens/tar.gz/4f724704eed025c77ad2c6d40fabe17cb3a8d714
 
 packages:
 
@@ -216,6 +219,12 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-invariants': ^0.1.0-rc.6
 
+  '@liustack/modlens@https://codeload.github.com/liustack/modlens/tar.gz/4f724704eed025c77ad2c6d40fabe17cb3a8d714':
+    resolution: {gitHosted: true, integrity: sha512-6eGi1RMxVrGOdi0vKyiOJGDiIAWEhm6XKAZ9KPVWTuBCYzjlT7wabCBtS6oAHu+iAnn7zcfQ8molAAGpaUKd2Q==, tarball: https://codeload.github.com/liustack/modlens/tar.gz/4f724704eed025c77ad2c6d40fabe17cb3a8d714}
+    version: 3.25.3
+    engines: {node: '>=22.19'}
+    hasBin: true
+
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
@@ -278,6 +287,10 @@ packages:
 
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
 
   convert-to-spaces@2.0.1:
     resolution: {integrity: sha512-rcQ1bsQO9799wq24uE5AM2tAILy4gXGIK/njFWcVQkGNZ96edlpY+A7bjwvzjYvLDyzmG1MmMLZhpcsb+klNMQ==}
@@ -458,6 +471,10 @@ packages:
   type-fest@4.41.0:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
+
+  undici@8.10.0:
+    resolution: {integrity: sha512-HvltHd7avK13QIw/oLe4qoOLyoVSoafqJ2jYOrtMRBkbYT31eiBQ8O0ehRKZiEZCMEyLFQNIADpgCWC5fALvYQ==}
+    engines: {node: '>=22.19.0'}
 
   usehooks-ts@3.1.1:
     resolution: {integrity: sha512-I4diPp9Cq6ieSUH2wu+fDAVQO43xwtulo+fKEidHUwZPnYImbtkTjzIJYcDcJqxgmX31GVqNFURodvcgHcW0pA==}
@@ -673,6 +690,11 @@ snapshots:
       - '@deepseek-ai/dsh-tools'
       - '@deepseek-ai/dsh-typert-protocol'
 
+  '@liustack/modlens@https://codeload.github.com/liustack/modlens/tar.gz/4f724704eed025c77ad2c6d40fabe17cb3a8d714':
+    dependencies:
+      commander: 13.1.0
+      undici: 8.10.0
+
   '@standard-schema/spec@1.1.0': {}
 
   ansi-regex@5.0.1: {}
@@ -728,6 +750,8 @@ snapshots:
       color-name: 1.1.4
 
   color-name@1.1.4: {}
+
+  commander@13.1.0: {}
 
   convert-to-spaces@2.0.1: {}
 
@@ -857,6 +881,8 @@ snapshots:
       any-promise: 1.3.0
 
   type-fest@4.41.0: {}
+
+  undici@8.10.0: {}
 
   usehooks-ts@3.1.1(react@19.2.8):
     dependencies:

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@liustack/modsearch':
+        specifier: github:liustack/modsearch
+        version: https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80
       '@multica-ai/dsh-runtime':
         specifier: github:multica-ai/dsh-multica-runtime
         version: https://codeload.github.com/multica-ai/dsh-multica-runtime/tar.gz/e29aae228449dfe50e88af60ef4281e38ca44e2a
@@ -19,6 +22,12 @@ importers:
         version: https://codeload.github.com/vlln/whale-girl/tar.gz/267e64fa61e6429bdd7cc06bf32cc53e559ff71c
 
 packages:
+
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80':
+    resolution: {gitHosted: true, integrity: sha512-vWyQIygu+3TKVEvDGMGXV+xi0PWn/9KS+N1zNfA9SQ42dGwnqwbakQe1cutaLieydrUQClTL5HUKOKnFZRCbsA==, tarball: https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80}
+    version: 5.10.0
+    engines: {node: '>=22.13'}
+    hasBin: true
 
   '@multica-ai/dsh-runtime@https://codeload.github.com/multica-ai/dsh-multica-runtime/tar.gz/e29aae228449dfe50e88af60ef4281e38ca44e2a':
     resolution: {gitHosted: true, integrity: sha512-Jd6PLOdHF1DkKaWPsjiVFvPPlN/QuxtMe9Qadmkkz1arLTXeUax+RLLZG95z/tjsxO2Ki/SDEW5A0UF8OvvnOQ==, tarball: https://codeload.github.com/multica-ai/dsh-multica-runtime/tar.gz/e29aae228449dfe50e88af60ef4281e38ca44e2a}
@@ -60,6 +69,10 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
+
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
@@ -99,6 +112,10 @@ packages:
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
+  undici@7.29.0:
+    resolution: {integrity: sha512-IDxfleLmmbSskfWSUATiN1nfn2rDuvnMOqb5CWR92iIfojA0Ud+ulOAAEQ57LPr9rWmsreUyf5lwyao+7GNNVw==}
+    engines: {node: '>=20.18.1'}
+
   whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/267e64fa61e6429bdd7cc06bf32cc53e559ff71c:
     resolution: {gitHosted: true, integrity: sha512-ZVVJN1DiknXbw4Rb5m/JXT+y3zWqhDI+Jdr4GnhOQGWsiyOmRKg6ma9pIbwOLsvhCuNbXoAWznn3p07HhFAz4w==, tarball: https://codeload.github.com/vlln/whale-girl/tar.gz/267e64fa61e6429bdd7cc06bf32cc53e559ff71c}
     version: 0.1.0
@@ -108,9 +125,16 @@ packages:
 
 snapshots:
 
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80':
+    dependencies:
+      commander: 13.1.0
+      undici: 7.29.0
+
   '@multica-ai/dsh-runtime@https://codeload.github.com/multica-ai/dsh-multica-runtime/tar.gz/e29aae228449dfe50e88af60ef4281e38ca44e2a': {}
 
   '@standard-schema/spec@1.1.0': {}
+
+  commander@13.1.0: {}
 
   cosmokit@1.8.1: {}
 
@@ -122,6 +146,8 @@ snapshots:
     dependencies:
       '@standard-schema/spec': 1.1.0
       cosmokit: 1.8.1
+
+  undici@7.29.0: {}
 
   whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/267e64fa61e6429bdd7cc06bf32cc53e559ff71c:
     dependencies:

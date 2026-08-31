@@ -17,6 +17,9 @@ importers:
       dsh-interconnect:
         specifier: github:Chinesezjc/dsh-interconnect
         version: https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/65bf651e7b54bdca8c11b8a1684bf4f767f4d5e5
+      dsh-tokenledger:
+        specifier: github:zh667/TokenLedger
+        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c
 
 packages:
 
@@ -120,6 +123,16 @@ packages:
       '@deepseek-ai/schemastery': '*'
       ws: '*'
 
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c:
+    resolution: {gitHosted: true, integrity: sha512-VRjl6C11B2IHhS1EUsBq6o8Xk4+72ZG1Zt7Tcv3Gps9JdzFux0UdyFhAUHL4Y5tRSkXwkbzOv1K0akIJKf08Mw==, tarball: https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c}
+    version: 0.1.0
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/schemastery': ^3.18.1
+    peerDependenciesMeta:
+      '@deepseek-ai/schemastery':
+        optional: true
+
   echarts@6.1.0:
     resolution: {integrity: sha512-q0yaFPggC9FUdsWH4blavRWFmxdrIodbkoKNAjJudAI6CA9gNPxHtV2RcZNEepZVlk4yvBYkOkbk6HIVpIyHZA==}
 
@@ -180,6 +193,8 @@ snapshots:
   dsh-engramory@https://codeload.github.com/tinqiao-oss/engramory/tar.gz/39efc183a55cb3d2c56e11a42b2b5e059a193ce3: {}
 
   dsh-interconnect@https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/65bf651e7b54bdca8c11b8a1684bf4f767f4d5e5: {}
+
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c: {}
 
   echarts@6.1.0:
     dependencies:

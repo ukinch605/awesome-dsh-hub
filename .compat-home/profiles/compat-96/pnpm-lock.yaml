@@ -17,6 +17,9 @@ importers:
       deepseek-pet:
         specifier: github:keleus/deepseek-pet
         version: https://codeload.github.com/keleus/deepseek-pet/tar.gz/35132a4fcfa1a40e4cab7e0163939cc5b25de38b
+      dsh-custom-skin:
+        specifier: github:SLin-code/dsh-custom-skin
+        version: https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/a931af884d5e241f3397c601e857d5cf5be76de6
       dsh-remote:
         specifier: github:flymysql/dsh-remote
         version: https://codeload.github.com/flymysql/dsh-remote/tar.gz/5ae197a94c0fe4f0a8ffe5de14822f79418dc3bd
@@ -564,6 +567,17 @@ packages:
     peerDependenciesMeta:
       cordis:
         optional: true
+
+  dsh-custom-skin@https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/a931af884d5e241f3397c601e857d5cf5be76de6:
+    resolution: {gitHosted: true, integrity: sha512-9+utOOYep4MSWbeX1ZLtyxf6bO/g3+hx3WOUTNNNo/6WzNfBqubCqNITYR9/CxygdqR4X8nt8zLkY1WvbTlf0Q==, tarball: https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/a931af884d5e241f3397c601e857d5cf5be76de6}
+    version: 0.1.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.7 <0.2.0-0 || >=0.1.1-rc.1 <0.2.0-0'
+      '@deepseek-ai/dsh-client-runtime': '>=0.1.0-rc.7 <0.2.0-0 || >=0.1.1-rc.1 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-settings': '>=0.1.0-rc.7 <0.2.0-0 || >=0.1.1-rc.1 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-settings-general': '>=0.1.0-rc.7 <0.2.0-0 || >=0.1.1-rc.1 <0.2.0-0'
+      react: ^18.2.0
 
   dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/5ae197a94c0fe4f0a8ffe5de14822f79418dc3bd:
     resolution: {gitHosted: true, integrity: sha512-CUZ06d05dxKoEvKalQ4BeA9KbAYBQYzEqF1SgMG23e2rmD5ZC2XTJ20Wcq5WkXIaJTRvY8ACb8XMrInrmoNehw==, tarball: https://codeload.github.com/flymysql/dsh-remote/tar.gz/5ae197a94c0fe4f0a8ffe5de14822f79418dc3bd}
@@ -1496,6 +1510,8 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+
+  dsh-custom-skin@https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/a931af884d5e241f3397c601e857d5cf5be76de6: {}
 
   dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/5ae197a94c0fe4f0a8ffe5de14822f79418dc3bd:
     dependencies:

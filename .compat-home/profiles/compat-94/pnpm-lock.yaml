@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@changfenhuang/dsh-annotation':
+        specifier: github:omdsh-dev/dsh-annotation
+        version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/41731ecf943a0e8e759493a7a9791ec9d691d039
       '@dsh-external/dsh-deep-research':
         specifier: github:omdsh-dev/dsh-deep-research
         version: https://codeload.github.com/omdsh-dev/dsh-deep-research/tar.gz/c0b329e02cd0195f810a7c3608cb58701a7fe0f1
@@ -25,6 +28,13 @@ importers:
         version: https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c
 
 packages:
+
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/41731ecf943a0e8e759493a7a9791ec9d691d039':
+    resolution: {gitHosted: true, integrity: sha512-4SJUJHdyqDudg4C75qcFp/GfF14Q9w6y4CbC4oo0VByB/ga/cd3ko6GE3nrG9gVE406JPRC8KEubmFaSrUp1Ng==, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/41731ecf943a0e8e759493a7a9791ec9d691d039}
+    version: 1.4.5
+    engines: {node: '>=20'}
+    peerDependencies:
+      cordis: ^4.0.0-rc.7 || ^4.0.1
 
   '@deepseek-ai/cosmokit@1.8.2':
     resolution: {integrity: sha512-muBOKtSrUKU5m/xpq8ZXWL6hQ/jgd4PhU2PqH97bcxIiLEJfNwZOGQEx4t/aS/GgxRAR+ra9pMHPMtTHU4sqqA==}
@@ -265,6 +275,8 @@ packages:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
+
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/41731ecf943a0e8e759493a7a9791ec9d691d039': {}
 
   '@deepseek-ai/cosmokit@1.8.2': {}
 

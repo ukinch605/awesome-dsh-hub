@@ -17,6 +17,9 @@ importers:
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
         version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/6ba221b84a80e7f0a50ee92696bba58596862ea6
+      dsh-dream-skin:
+        specifier: github:RevolutionLA/dsh-dream-skin
+        version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/3a0be7854eb1c52e5d52f474958706daa9f4bce9
       dsh-emoji:
         specifier: github:hellodigua/dsh-emoji
         version: https://codeload.github.com/hellodigua/dsh-emoji/tar.gz/96b653a473c978a474dd7d42e86e5b2c79e6dc7c
@@ -105,6 +108,37 @@ packages:
   dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/6ba221b84a80e7f0a50ee92696bba58596862ea6:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/6ba221b84a80e7f0a50ee92696bba58596862ea6}
     version: 1.6.2
+
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/3a0be7854eb1c52e5d52f474958706daa9f4bce9:
+    resolution: {gitHosted: true, integrity: sha512-p72WOgY9UZ5RmSZDZF3mfENvi05RD4xR2qqNdgYTrbpJyrY8gM1Iv833k+LD8SumAC5do9/b8fwNVmF+uCHo3g==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/3a0be7854eb1c52e5d52f474958706daa9f4bce9}
+    version: 8.30.1
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-store': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings-general': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-store':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings-general':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-theme':
+        optional: true
+      react:
+        optional: true
 
   dsh-emoji@https://codeload.github.com/hellodigua/dsh-emoji/tar.gz/96b653a473c978a474dd7d42e86e5b2c79e6dc7c:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/hellodigua/dsh-emoji/tar.gz/96b653a473c978a474dd7d42e86e5b2c79e6dc7c}
@@ -265,6 +299,8 @@ snapshots:
       - '@deepseek-ai/cordis'
       - '@deepseek-ai/dsh-brand'
       - '@deepseek-ai/dsh-invariants'
+
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/3a0be7854eb1c52e5d52f474958706daa9f4bce9: {}
 
   dsh-emoji@https://codeload.github.com/hellodigua/dsh-emoji/tar.gz/96b653a473c978a474dd7d42e86e5b2c79e6dc7c:
     dependencies:

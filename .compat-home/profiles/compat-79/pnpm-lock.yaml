@@ -10,18 +10,24 @@ importers:
     dependencies:
       '@dsh-external/workflow':
         specifier: github:omdsh-dev/dsh_workflow
-        version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f
+        version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.18.2)
       '@huanlin/dsh-plugin-session-delete':
         specifier: github:lsz-asd/dsh-plugin-session-delete
         version: https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5
       dsh-composer-polish:
         specifier: github:tianji-qingtian/dsh-composer-polish
         version: https://codeload.github.com/tianji-qingtian/dsh-composer-polish/tar.gz/4787f0ca103005046c6bdbdfb51edd3f06b52544
+      dsh-reasoning-effort:
+        specifier: github:HanaAyane/dsh-reasoning-effort
+        version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994
       dsh-skill-mcp-panel:
         specifier: github:Fishquito7/dsh-skill-mcp-panel
         version: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/5fa5d87c68ad34337e073f82dc50767ed690eb27
 
 packages:
+
+  '@deepseek-ai/cosmokit@1.8.3':
+    resolution: {integrity: sha512-qBo+ronVM6Eu2WNVJXi8JcMiqZ19T9BRIpV+5qJUFPXjGH/Z0QKcQMC/IZJ7L394YTOtJgcovbk9qP0w2GsBXQ==}
 
   '@deepseek-ai/dsh-home-paths@0.1.0-rc.8':
     resolution: {integrity: sha512-9cQhH9CZsw7Zi73VnZk7CcuEVA6yR/Ox+7lp3VHq53fFYSPi0RL+kMWmh5XCrZB4U1OM3+PVsWsA5II9tB+t0Q==}
@@ -40,6 +46,9 @@ packages:
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-invariants': ^0.1.0-rc.6
+
+  '@deepseek-ai/schemastery@3.18.2':
+    resolution: {integrity: sha512-njDtZsznjYxok7KLLlHOPyuv2efdWVbSflAHgztSfbMsg+CVraEoRe2DjOCgClYv3ZCSm7WXoaUkbB/+RY7tWQ==}
 
   '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
     resolution: {gitHosted: true, integrity: sha512-SvSTrCT/R1o8MDOemrO66M1qqUOL6fOiHaUFKx+HzwFZDEdir54jKHKLn7x7dECQ9tDC2UmbM0s04sbCdbn6PA==, tarball: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f}
@@ -96,6 +105,9 @@ packages:
     peerDependenciesMeta:
       '@cfworker/json-schema':
         optional: true
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
   accepts@2.0.0:
     resolution: {integrity: sha512-5cvg6CtKwfgdmVqY1WIiXKc3Q1bkRqGLi+2W/6ao+6Y7gu/RCwRuAhGEzh5B4KlszSuTLgZYuqFqo5bImjNKng==}
@@ -176,6 +188,21 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-commands': ^0.1.1-rc.2
       '@deepseek-ai/dsh-llm': ^0.1.1-rc.2
+      react: ^18.2.0
+
+  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994:
+    resolution: {gitHosted: true, integrity: sha512-gj3ZW3p/RO9Tpg3gazWJetcwQtaJtsPWYeS+mMxBUSONHj1D7SbINaeOErJiUfZaV9IWmS7zbigDWBLFYSS/4g==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994}
+    version: 0.6.2
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-connection': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-model-selection': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
       react: ^18.2.0
 
   dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/5fa5d87c68ad34337e073f82dc50767ed690eb27:
@@ -486,14 +513,22 @@ packages:
 
 snapshots:
 
+  '@deepseek-ai/cosmokit@1.8.3': {}
+
   '@deepseek-ai/dsh-home-paths@0.1.0-rc.8': {}
 
   '@deepseek-ai/dsh-subprocess@0.1.0-rc.8': {}
 
   '@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6': {}
 
-  '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
+  '@deepseek-ai/schemastery@3.18.2':
     dependencies:
+      '@deepseek-ai/cosmokit': 1.8.3
+      '@standard-schema/spec': 1.1.0
+
+  '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.18.2)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
       quickjs-emscripten: 0.32.0
 
   '@hono/node-server@2.1.1(hono@4.13.5)':
@@ -541,6 +576,8 @@ snapshots:
       zod-to-json-schema: 3.25.2(zod@4.4.3)
     transitivePeerDependencies:
       - supports-color
+
+  '@standard-schema/spec@1.1.0': {}
 
   accepts@2.0.0:
     dependencies:
@@ -616,6 +653,10 @@ snapshots:
   depd@2.0.0: {}
 
   dsh-composer-polish@https://codeload.github.com/tianji-qingtian/dsh-composer-polish/tar.gz/4787f0ca103005046c6bdbdfb51edd3f06b52544: {}
+
+  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994:
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
 
   dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/5fa5d87c68ad34337e073f82dc50767ed690eb27:
     dependencies:

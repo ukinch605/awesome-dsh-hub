@@ -14,6 +14,9 @@ importers:
       '@oh-dsh/desktop':
         specifier: github:hust-open-atom-club/oh-dsh
         version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/2fb4da88b69b1b3e3595ef86bfd13e481fcd0ee2
+      dsh-api-relay-audit:
+        specifier: github:toby-bridges/api-relay-audit
+        version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce
       managed-agents:
         specifier: github:sandbaseai/sandbase-harness
         version: https://codeload.github.com/sandbaseai/sandbase-harness/tar.gz/37a95c3d3e2d888809c10905c0b2da54bc49873a
@@ -203,6 +206,18 @@ packages:
 
   diff-match-patch@1.0.5:
     resolution: {integrity: sha512-IayShXAgj/QMXgB0IWmKx+rOPuGMhqm5w6jvFxmVenXKIzRqTAAsbBPT3kWQeGANj3jGgvcvv4yK6SxqYmikgw==}
+
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce:
+    resolution: {gitHosted: true, integrity: sha512-/QtdIAVhWwuX8PYwGC4zxe/KBrp1en0fIjE6ShWzjDL3nHTdmVPkJH20RWofvnEG7SnAA3V7jsaz6p5IuPkHAA==, tarball: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce}
+    version: 2.4.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-commands': 0.1.0-rc.6
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': 0.1.0-rc.6
+      '@deepseek-ai/dsh-settings': 0.1.0-rc.6
+      '@deepseek-ai/dsh-subprocess': 0.1.0-rc.6
 
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
@@ -768,6 +783,8 @@ snapshots:
   dequal@2.0.3: {}
 
   diff-match-patch@1.0.5: {}
+
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce: {}
 
   dunder-proto@1.0.1:
     dependencies:

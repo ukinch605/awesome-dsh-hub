@@ -13,18 +13,18 @@ importers:
         version: https://codeload.github.com/omdsh-dev/dsh-toolkit/tar.gz/aa8d88122adb2b9dc34259696ce3bd80a3e850d9
       '@zseven-w/dsh-noema':
         specifier: github:ZSeven-W/dsh-noema
-        version: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2(@deepseek-ai/schemastery@3.18.2)
       ds-harness-remote:
-        specifier: github:liguobao/deepseek-harness-remote
-        version: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/2dab8f3cd0e66c17470ce30306c772eb1d0a912a
+        specifier: github:liguobao/ds-harness-remote
+        version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/f2f1c7aec7743c75fcdcd900c59a5277a195cbd0
       dsh-dream-skin:
         specifier: github:RevolutionLA/dsh-dream-skin
         version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/919b76dd9b0ed7d3848619b978f4631fb849fb9c
 
 packages:
 
-  '@deepseek-ai/cosmokit@1.8.2':
-    resolution: {integrity: sha512-muBOKtSrUKU5m/xpq8ZXWL6hQ/jgd4PhU2PqH97bcxIiLEJfNwZOGQEx4t/aS/GgxRAR+ra9pMHPMtTHU4sqqA==}
+  '@deepseek-ai/cosmokit@1.8.3':
+    resolution: {integrity: sha512-qBo+ronVM6Eu2WNVJXi8JcMiqZ19T9BRIpV+5qJUFPXjGH/Z0QKcQMC/IZJ7L394YTOtJgcovbk9qP0w2GsBXQ==}
 
   '@deepseek-ai/dsh-toolkit@https://codeload.github.com/omdsh-dev/dsh-toolkit/tar.gz/aa8d88122adb2b9dc34259696ce3bd80a3e850d9':
     resolution: {gitHosted: true, integrity: sha512-29OOM4e/mVwmkruDcupdBfstzgKj33+AjERv8YebQlfFArxac0wUdRF2GfPyju0TWJFOXqCH0paLytHFu0gjAg==, tarball: https://codeload.github.com/omdsh-dev/dsh-toolkit/tar.gz/aa8d88122adb2b9dc34259696ce3bd80a3e850d9}
@@ -35,8 +35,8 @@ packages:
       '@deepseek-ai/dsh-invariants': '>=0.0.1-rc.1 <0.2.0'
       '@deepseek-ai/dsh-tools': '>=0.0.1-rc.1 <0.2.0'
 
-  '@deepseek-ai/schemastery@3.18.1':
-    resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+  '@deepseek-ai/schemastery@3.18.2':
+    resolution: {integrity: sha512-njDtZsznjYxok7KLLlHOPyuv2efdWVbSflAHgztSfbMsg+CVraEoRe2DjOCgClYv3ZCSm7WXoaUkbB/+RY7tWQ==}
 
   '@fidm/asn1@1.0.4':
     resolution: {integrity: sha512-esd1jyNvRb2HVaQGq2Gg8Z0kbQPXzV9Tq5Z14KNIov6KfFD6PTaRIO8UpcsYiTNzOqJpmyzWgVTrUwFV3UF4TQ==}
@@ -229,20 +229,19 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/2dab8f3cd0e66c17470ce30306c772eb1d0a912a:
-    resolution: {gitHosted: true, integrity: sha512-LqVFDuE2cN7/TTBNWz9qD9n+ZlzNTH7F6t/8u/KMB7DCK7qGQX82lZDUeQAKwfzsbvA+rnOjCeuJudIIbpji4w==, tarball: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/2dab8f3cd0e66c17470ce30306c772eb1d0a912a}
-    version: 0.4.1
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/f2f1c7aec7743c75fcdcd900c59a5277a195cbd0:
+    resolution: {gitHosted: true, integrity: sha512-C6f+3qSfF8d0I4i0nJyOPT4XJr+WpIq7b2uRCIpXm3iArDK8urOgJ8K5Yc1vC6boWXkX92PID+t6pJkxdZC01w==, tarball: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/f2f1c7aec7743c75fcdcd900c59a5277a195cbd0}
+    version: 0.4.2
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1 <5'
       '@deepseek-ai/dsh-api-gateway': '>=0.1.1-rc.2 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
-      '@deepseek-ai/dsh-client-connection': '>=0.1.0-rc.6 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
-      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
-      '@deepseek-ai/dsh-client-ui-settings': '>=0.1.0-rc.6 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
-      '@deepseek-ai/dsh-client-ui-settings-plugins': '>=0.1.0-rc.6 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
-      '@deepseek-ai/dsh-client-ui-sidebar': '>=0.1.0-rc.6 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
-      '@deepseek-ai/dsh-client-ui-slots': '>=0.1.0-rc.6 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
-      '@deepseek-ai/dsh-host-apiproxy': '>=0.1.0-rc.6 <0.2.0'
-      '@deepseek-ai/dsh-settings': '>=0.1.0-rc.6 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
+      '@deepseek-ai/dsh-client-connection': '>=0.1.1-rc.2 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
+      '@deepseek-ai/dsh-client-locale': '>=0.1.1-rc.2 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
+      '@deepseek-ai/dsh-client-ui-settings': '>=0.1.1-rc.2 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
+      '@deepseek-ai/dsh-client-ui-settings-plugins': '>=0.1.1-rc.2 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
+      '@deepseek-ai/dsh-client-ui-sidebar': '>=0.1.1-rc.2 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.1.1-rc.2 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
+      '@deepseek-ai/dsh-settings': '>=0.1.1-rc.2 <0.1.2 || >=0.1.2-alpha.1 <0.2.0'
       react: '>=18.2.0 <19'
     peerDependenciesMeta:
       '@deepseek-ai/dsh-client-connection':
@@ -256,8 +255,6 @@ packages:
       '@deepseek-ai/dsh-client-ui-sidebar':
         optional: true
       '@deepseek-ai/dsh-client-ui-slots':
-        optional: true
-      '@deepseek-ai/dsh-host-apiproxy':
         optional: true
 
   dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/919b76dd9b0ed7d3848619b978f4631fb849fb9c:
@@ -339,13 +336,13 @@ packages:
 
 snapshots:
 
-  '@deepseek-ai/cosmokit@1.8.2': {}
+  '@deepseek-ai/cosmokit@1.8.3': {}
 
   '@deepseek-ai/dsh-toolkit@https://codeload.github.com/omdsh-dev/dsh-toolkit/tar.gz/aa8d88122adb2b9dc34259696ce3bd80a3e850d9': {}
 
-  '@deepseek-ai/schemastery@3.18.1':
+  '@deepseek-ai/schemastery@3.18.2':
     dependencies:
-      '@deepseek-ai/cosmokit': 1.8.2
+      '@deepseek-ai/cosmokit': 1.8.3
       '@standard-schema/spec': 1.1.0
 
   '@fidm/asn1@1.0.4': {}
@@ -513,9 +510,9 @@ snapshots:
   '@zseven-w/dsh-noema-win32-x64@0.1.0-rc.3':
     optional: true
 
-  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2(@deepseek-ai/schemastery@3.18.1)':
+  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2(@deepseek-ai/schemastery@3.18.2)':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.1
+      '@deepseek-ai/schemastery': 3.18.2
     optionalDependencies:
       '@zseven-w/dsh-noema-darwin-arm64': 0.1.0-rc.3
       '@zseven-w/dsh-noema-darwin-x64': 0.1.0-rc.3
@@ -550,9 +547,9 @@ snapshots:
       webidl-conversions: 7.0.0
     optional: true
 
-  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/2dab8f3cd0e66c17470ce30306c772eb1d0a912a:
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/f2f1c7aec7743c75fcdcd900c59a5277a195cbd0:
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.1
+      '@deepseek-ai/schemastery': 3.18.2
       werift: 0.24.4
       zod: 3.25.76
     optionalDependencies:

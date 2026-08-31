@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/dsh-visualize':
+        specifier: github:Nagi-ovo/dsh-visualize
+        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/9667c0e9cf0ea463b9b45b2845de62da34fd918a(@deepseek-ai/schemastery@3.18.1)
       '@oil-oil/dsh-vision':
         specifier: github:oil-oil/dsh-vision
         version: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7
@@ -25,6 +28,20 @@ packages:
 
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
+  '@dsh-external/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/9667c0e9cf0ea463b9b45b2845de62da34fd918a':
+    resolution: {gitHosted: true, integrity: sha512-6kvERA4Cg69KV+E8fnMqh2JiN2vqcNpxkUPhamMqR0dEMCGKOrRocwCA9xVI+Wl24w1ZxfHXkzwH0Fz1iGfaMA==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/9667c0e9cf0ea463b9b45b2845de62da34fd918a}
+    version: 0.1.2
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-fs': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-sandbox-policy': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-skill': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
 
   '@oil-oil/dsh-vision@https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7':
     resolution: {gitHosted: true, tarball: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7}
@@ -125,6 +142,10 @@ snapshots:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
+
+  '@dsh-external/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/9667c0e9cf0ea463b9b45b2845de62da34fd918a(@deepseek-ai/schemastery@3.18.1)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
 
   '@oil-oil/dsh-vision@https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7':
     dependencies:

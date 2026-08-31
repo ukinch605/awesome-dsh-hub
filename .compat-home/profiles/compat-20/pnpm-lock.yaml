@@ -11,6 +11,9 @@ importers:
       '@changfenhuang/dsh-genui':
         specifier: github:omdsh-dev/dsh-genui
         version: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae(@deepseek-ai/cordis@4.0.1)
+      '@mnemon-dev/dsh-mnemon':
+        specifier: github:mnemon-dev/mnemon
+        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/e04c3b5089616ac893313b105fcd4e5c200288ed(react@18.3.1)
       '@omdsh-dev/dsh-genui':
         specifier: github:omdsh-dev/dsh-genui
         version: '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae(@deepseek-ai/cordis@4.0.1)'
@@ -75,8 +78,16 @@ packages:
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
 
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/e04c3b5089616ac893313b105fcd4e5c200288ed':
+    resolution: {gitHosted: true, integrity: sha512-tPLDYOMo7KHb1dI70mEiV0c8QnJKfterLPZVuUSo0Om4gehfkRbovFTF4z0/W6N6P6XGcKpmh6Q0aWVhACKbkQ==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/e04c3b5089616ac893313b105fcd4e5c200288ed}
+    version: 0.1.0
+    engines: {node: '>=20'}
+
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb:
     resolution: {gitHosted: true, integrity: sha512-noxd7rkfRYdooA3ZZGTkT2sshbifl95XI0rgJ1MTbKirfJtujgxke4cQJQRjlZdq13QzWD4d4Ggf3yLsIYaMwQ==, tarball: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb}
@@ -129,6 +140,17 @@ packages:
       react:
         optional: true
 
+  dsh-mnemon@0.3.5:
+    resolution: {integrity: sha512-TzPqw95bGL/mZnYgNpxOD34Y+8csZjEjVEwMIO9bvNUnT5dWBreF8IIwC9uqxlk0MKVH3E7cNkJaOWi5+unvkw==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6 || ^0.1.1-rc.1 || ^0.1.2-alpha.1
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
+  fflate@0.8.3:
+    resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
+
   forkprobe-dsh@https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e:
     resolution: {gitHosted: true, integrity: sha512-m9fwK3x3LCUugg4Xi54I0EWw1qEqojVCoNuI3WLqTXY5P2Zxyx2VEU3z1twHqr9gYcVWm3qPAm40gZiGNow9uQ==, tarball: https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e}
     version: 1.1.0
@@ -145,9 +167,21 @@ packages:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
 
+  markdown-to-jsx@7.7.17:
+    resolution: {integrity: sha512-7mG/1feQ0TX5I7YyMZVDgCC/y2I3CiEhIRQIhyov9nGBP5eoVrOXXHuL5ZP8GRfxVZKRiXWJgwXkb9It+nQZfQ==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      react: '>= 0.14.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
     engines: {node: '>=0.10.0'}
+
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
   superdesign-dsh@https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b:
     resolution: {gitHosted: true, integrity: sha512-YqjjdfYvduaj69lrs/aCmcAvm+teYea6be3m/MTOn/k+cszwRUaxvmSRKzFNd0bKYfZgNBCq8DRF8ZyHK9Cvrw==, tarball: https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b}
@@ -180,7 +214,17 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
 
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/e04c3b5089616ac893313b105fcd4e5c200288ed(react@18.3.1)':
+    dependencies:
+      dsh-mnemon: 0.3.5(react@18.3.1)
+    transitivePeerDependencies:
+      - '@deepseek-ai/dsh-client-ui-primitives'
+      - react
+      - react-dom
+
   '@standard-schema/spec@1.1.0': {}
+
+  cosmokit@1.8.1: {}
 
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb(@deepseek-ai/cordis@4.0.1)(react@18.3.1):
     dependencies:
@@ -188,6 +232,16 @@ snapshots:
     optionalDependencies:
       '@deepseek-ai/cordis': 4.0.1
       react: 18.3.1
+
+  dsh-mnemon@0.3.5(react@18.3.1):
+    dependencies:
+      fflate: 0.8.3
+      markdown-to-jsx: 7.7.17(react@18.3.1)
+      react: 18.3.1
+      schemastery: 3.18.0
+      zod: 4.4.3
+
+  fflate@0.8.3: {}
 
   forkprobe-dsh@https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e:
     dependencies:
@@ -210,9 +264,18 @@ snapshots:
     dependencies:
       js-tokens: 4.0.0
 
+  markdown-to-jsx@7.7.17(react@18.3.1):
+    optionalDependencies:
+      react: 18.3.1
+
   react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1
 
   superdesign-dsh@https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b: {}
 

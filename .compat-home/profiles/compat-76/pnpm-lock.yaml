@@ -17,6 +17,9 @@ importers:
       argo-search:
         specifier: github:taxueseek/argo
         version: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146
+      dsh-chat-import:
+        specifier: github:Nwflower/dsh-chat-import
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/f457adb3fc0510761e2c08fb3c99f77ec7c61cc6(@deepseek-ai/schemastery@3.18.1)
       dsh-reasoning-effort:
         specifier: github:HanaAyane/dsh-reasoning-effort
         version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994
@@ -91,6 +94,18 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/f457adb3fc0510761e2c08fb3c99f77ec7c61cc6:
+    resolution: {gitHosted: true, integrity: sha512-MNOvnnAOExEQJnoOzX91fHMQrSdOQc6ikOAEqsMhRI+eNpTqUF0mSbE5EmgEqkLLy2ULkR6ZGK+xNR/WmDuaUA==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/f457adb3fc0510761e2c08fb3c99f77ec7c61cc6}
+    version: 0.8.2
+    engines: {node: '>=22.13'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': '>=3.0.0'
+      react: '>=18.0.0'
+
   dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994:
     resolution: {gitHosted: true, integrity: sha512-gj3ZW3p/RO9Tpg3gazWJetcwQtaJtsPWYeS+mMxBUSONHj1D7SbINaeOErJiUfZaV9IWmS7zbigDWBLFYSS/4g==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994}
     version: 0.6.2
@@ -105,6 +120,9 @@ packages:
       '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
       react: ^18.2.0
+
+  fzstd@0.1.1:
+    resolution: {integrity: sha512-dkuVSOKKwh3eas5VkJy1AW1vFpet8TA/fGmVA5krThl8YcOVE/8ZIoEA1+U1vEn5ckxxhLirSdY837azmbaNHA==}
 
   quickjs-emscripten-core@0.32.0:
     resolution: {integrity: sha512-QFnPfjFey8EqknSrSxe1hZrf1/8z7/6s1QzGOmKo6++02r7QRRX7ZoyNaZh7JuVjWsVW87KnQrbZqnHkOAzUyg==}
@@ -158,9 +176,16 @@ snapshots:
 
   cosmokit@1.8.1: {}
 
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/f457adb3fc0510761e2c08fb3c99f77ec7c61cc6(@deepseek-ai/schemastery@3.18.1):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
+      fzstd: 0.1.1
+
   dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
+
+  fzstd@0.1.1: {}
 
   quickjs-emscripten-core@0.32.0:
     dependencies:

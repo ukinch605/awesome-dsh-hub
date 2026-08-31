@@ -2,13 +2,15 @@
   "name": "dsh-profile-compat-37",
   "private": true,
   "dependencies": {
-    "@multica-ai/dsh-runtime": "github:multica-ai/dsh-multica-runtime"
+    "@multica-ai/dsh-runtime": "github:multica-ai/dsh-multica-runtime",
+    "dsh-memory-evolve": "github:csyangwen/dsh-memory-evolve"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "@multica-ai/dsh-runtime"
+        "@multica-ai/dsh-runtime",
+        "dsh-memory-evolve"
       ]
     }
   }

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@zseven-w/dsh-openpencil':
+        specifier: github:ZSeven-W/dsh-openpencil
+        version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/99e05cdbae5e26c920cc20e0793c66446685b0cd
       dsh-emoji:
         specifier: github:hellodigua/dsh-emoji
         version: https://codeload.github.com/hellodigua/dsh-emoji/tar.gz/2caa1987504a24f1c6f531566e8b959383569410(@deepseek-ai/schemastery@3.18.1)
@@ -40,6 +43,64 @@ packages:
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
+
+  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.9':
+    resolution: {integrity: sha512-twzCO0WgFThZ2XTfx987Ohp8Ybi8hkvcVE4IBpdELIZs2rybd5nHcI+bSiOMQMrxll+qL3BMYst4DdIkIAMwrw==}
+    engines: {node: '>=24.11.0'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.9':
+    resolution: {integrity: sha512-W+If+vr1WPWbvu4kWjUp0tGO3Ijq4Rkyexc4aPzAHYG/v5Lcq4fLCEVjtoEVSTMyI1Q75lq8G2kEyq91Gs3+IQ==}
+    engines: {node: '>=24.11.0'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.9':
+    resolution: {integrity: sha512-KBpKhRUOTQT71EL4TdOL2LrqNlX2564WrhxQDYhMh+Upj859zJIsmHy4C5p/hMv9TA+kpN+NqVbw2fJgRRsycA==}
+    engines: {node: '>=24.11.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.9':
+    resolution: {integrity: sha512-MV5hXqY1GG/tJQ81FksbtkhugzdDu90QMe7HgMcJgmeIwid0wsM1M3U7DlS6YnbW5KInkhypzJwzY0g2N1Y08g==}
+    engines: {node: '>=24.11.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.9':
+    resolution: {integrity: sha512-0IsWMWh8zBiV8JyrIZ8zkpOXyhDXAI0KQrPfyahaisDzKmkPSs9eiUiqa9avaLbh83w0SP+KpkQGQ8hN1Q5dTQ==}
+    engines: {node: '>=24.11.0'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.9':
+    resolution: {integrity: sha512-0D2Y101nI/DngGfo2BI0ig+QGu8O7ozHV52SnJP6th02xaopIWxfvPFqTenuwI3FK6tEjxNHsNSmOHQ62FApvw==}
+    engines: {node: '>=24.11.0'}
+    cpu: [x64]
+    os: [win32]
+
+  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/99e05cdbae5e26c920cc20e0793c66446685b0cd':
+    resolution: {gitHosted: true, integrity: sha512-z5UmMpfxi20X2O9kGGbEUr+j0zrT9+cLZnSaMarzuJB8VXOwjO+eLKlGvAFMzS44SGLAP/G5KmGeHub9luN1QA==, tarball: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/99e05cdbae5e26c920cc20e0793c66446685b0cd}
+    version: 0.1.0-rc.9
+    engines: {node: '>=24.11.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-fs': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-sandbox-policy': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   character-entities@2.0.2:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
@@ -220,6 +281,33 @@ snapshots:
   '@types/ms@2.1.0': {}
 
   '@types/unist@3.0.3': {}
+
+  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.9':
+    optional: true
+
+  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.9':
+    optional: true
+
+  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.9':
+    optional: true
+
+  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.9':
+    optional: true
+
+  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.9':
+    optional: true
+
+  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.9':
+    optional: true
+
+  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/99e05cdbae5e26c920cc20e0793c66446685b0cd':
+    optionalDependencies:
+      '@zseven-w/dsh-openpencil-darwin-arm64': 0.1.0-rc.9
+      '@zseven-w/dsh-openpencil-darwin-x64': 0.1.0-rc.9
+      '@zseven-w/dsh-openpencil-linux-arm64': 0.1.0-rc.9
+      '@zseven-w/dsh-openpencil-linux-x64': 0.1.0-rc.9
+      '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.9
+      '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.9
 
   character-entities@2.0.2: {}
 

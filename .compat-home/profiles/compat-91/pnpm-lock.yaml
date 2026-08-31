@@ -23,6 +23,9 @@ importers:
       dsh-tabbit:
         specifier: github:Tabbit-Browser/dsh-tabbit
         version: https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c
+      dsh-turn-delete:
+        specifier: github:hanshenmesen/dsh-turn-delete
+        version: https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8
       seektty:
         specifier: github:Hilbert-beinghappy/seektty
         version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/a05debe447407068a434e85cce679c6dd41dbd0f
@@ -129,6 +132,22 @@ packages:
       '@deepseek-ai/dsh-jobs': '>=0.1.0-rc.5'
       '@deepseek-ai/dsh-skill': '>=0.1.0-rc.5'
       '@deepseek-ai/dsh-tools': '>=0.1.0-rc.5'
+
+  dsh-turn-delete@https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8:
+    resolution: {gitHosted: true, integrity: sha512-guHodfehsxTljhPUIzHBPPqFBhGnngtIFxcJsQqU0jgZeQRW8DYgDHnUCe9weqdTZylMHPdLkiVydlhLWnihWA==, tarball: https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8}
+    version: 0.1.0
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-runtime': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-conversation': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-session': '>=0.1.0-rc.6 <0.2.0-0'
+      react: ^18.2.0
 
   hast-util-to-html@9.0.5:
     resolution: {integrity: sha512-OguPdidb+fbHQSU4Q4ZiLKnzWo8Wwsf5bZfbvu7//a9oTYoqD/fWpe96NuHkoS9h0ccGOTe0C4NGXdtS0iObOw==}
@@ -462,6 +481,8 @@ snapshots:
   dsh-models-config-plugin@https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a: {}
 
   dsh-tabbit@https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c: {}
+
+  dsh-turn-delete@https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8: {}
 
   hast-util-to-html@9.0.5:
     dependencies:

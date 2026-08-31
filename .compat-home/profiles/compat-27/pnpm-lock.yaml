@@ -20,6 +20,9 @@ importers:
       '@omdsh-dev/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
         version: '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/bc4d7926d0e22e0db6c1f6a94539bcf93fe07ac9'
+      easyeda-agent-dsh:
+        specifier: github:zhoushoujianwork/easyeda-agent
+        version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd
 
 packages:
 
@@ -59,6 +62,11 @@ packages:
     resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
     engines: {node: '>=18'}
 
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd:
+    resolution: {gitHosted: true, integrity: sha512-0FQ1cA19iAnHY1dH6PvL6i69bxspWRBeLodsMo+QW7rjhClIcSvhnXH0Ati/pGS5gZU+p5dEbL1UtkXdHf4t7g==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd}
+    version: 0.25.1
+    engines: {node: '>=20.17.0'}
+
   undici@7.29.0:
     resolution: {integrity: sha512-IDxfleLmmbSskfWSUATiN1nfn2rDuvnMOqb5CWR92iIfojA0Ud+ulOAAEQ57LPr9rWmsreUyf5lwyao+7GNNVw==}
     engines: {node: '>=20.18.1'}
@@ -90,6 +98,8 @@ snapshots:
   '@standard-schema/spec@1.1.0': {}
 
   commander@13.1.0: {}
+
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd: {}
 
   undici@7.29.0: {}
 

@@ -8,12 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@zseven-w/dsh-ios':
+        specifier: github:ZSeven-W/dsh-ios
+        version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c
       dsh-context:
         specifier: github:bowenliang123/dsh-context
         version: https://codeload.github.com/bowenliang123/dsh-context/tar.gz/1b2590e0dbf938d8d9921dfde43c1bd44ab63603(zod@4.4.3)
       dsh-interconnect:
         specifier: github:Chinesezjc/dsh-interconnect
-        version: https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/65bf651e7b54bdca8c11b8a1684bf4f767f4d5e5
+        version: https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/65bf651e7b54bdca8c11b8a1684bf4f767f4d5e5(ws@8.21.3)
       dsh-mnemon:
         specifier: github:omdsh-dev/dsh-mnemon
         version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/e118094b9836fafbcbd057e4c5fa59572a9df9df
@@ -25,6 +28,26 @@ packages:
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c':
+    resolution: {gitHosted: true, integrity: sha512-wD69QZHNKiDPv4VJKvg5Qqgpwq1Jo965D84nofntkiVlnXdDaIUuGzZ5OTNhcfKCdx4VngZ8FQ2y0jHMJ9iQoA==, tarball: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c}
+    version: 0.1.0-rc.5
+    engines: {node: '>=24.11.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-fs': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-sandbox-policy': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
@@ -77,6 +100,12 @@ packages:
   fflate@0.8.3:
     resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
 
+  inspect-webkit@0.0.5:
+    resolution: {integrity: sha512-584wP/2nJO1LX74nqHP2j0tQzlK9ZTi+D0Z9qeLQjtUR/LCMXQHGX8M0vrsqBwTeGakF7q5GMFpg81nxUYlCvw==}
+    hasBin: true
+    peerDependencies:
+      typescript: ^5
+
   markdown-to-jsx@7.7.17:
     resolution: {integrity: sha512-7mG/1feQ0TX5I7YyMZVDgCC/y2I3CiEhIRQIhyov9nGBP5eoVrOXXHuL5ZP8GRfxVZKRiXWJgwXkb9It+nQZfQ==}
     engines: {node: '>= 10'}
@@ -96,6 +125,33 @@ packages:
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
+  serve-sim@0.1.46:
+    resolution: {integrity: sha512-zdKNOv+6qbdCkhtUMEbzX0ymrb2EJK54dZvs+n3YOK15LEcpapGA9/NpSSYEphpI420kTgUWqKNmkxLoWWaVzg==}
+    engines: {node: '>=20'}
+    hasBin: true
+
+  sonner@2.0.8:
+    resolution: {integrity: sha512-UM/ByIoFra8yzV75n1o0Puu0bw5U/9UNnDacrJNspekBewIfsQ3D6ez1nvlWpt7aTsO6rujQtifBpycwIivqlg==}
+    peerDependencies:
+      '@types/react': ^18.0.0 || ^19.0.0
+      react: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+      react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  ws@8.21.3:
+    resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
@@ -103,13 +159,24 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
+  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c':
+    dependencies:
+      serve-sim: 0.1.46
+    transitivePeerDependencies:
+      - '@types/react'
+      - bufferutil
+      - typescript
+      - utf-8-validate
+
   cosmokit@1.8.1: {}
 
   dsh-context@https://codeload.github.com/bowenliang123/dsh-context/tar.gz/1b2590e0dbf938d8d9921dfde43c1bd44ab63603(zod@4.4.3):
     dependencies:
       zod: 4.4.3
 
-  dsh-interconnect@https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/65bf651e7b54bdca8c11b8a1684bf4f767f4d5e5: {}
+  dsh-interconnect@https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/65bf651e7b54bdca8c11b8a1684bf4f767f4d5e5(ws@8.21.3):
+    dependencies:
+      ws: 8.21.3
 
   dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/e118094b9836fafbcbd057e4c5fa59572a9df9df:
     dependencies:
@@ -120,6 +187,8 @@ snapshots:
 
   fflate@0.8.3: {}
 
+  inspect-webkit@0.0.5: {}
+
   markdown-to-jsx@7.7.17: {}
 
   perfect-web-clone@https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5: {}
@@ -128,5 +197,22 @@ snapshots:
     dependencies:
       '@standard-schema/spec': 1.1.0
       cosmokit: 1.8.1
+
+  serve-sim@0.1.46:
+    dependencies:
+      inspect-webkit: 0.0.5
+      sonner: 2.0.8
+      ws: 8.21.3
+    transitivePeerDependencies:
+      - '@types/react'
+      - bufferutil
+      - react
+      - react-dom
+      - typescript
+      - utf-8-validate
+
+  sonner@2.0.8: {}
+
+  ws@8.21.3: {}
 
   zod@4.4.3: {}

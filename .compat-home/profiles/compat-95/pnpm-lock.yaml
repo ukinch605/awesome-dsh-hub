@@ -20,6 +20,9 @@ importers:
       '@huanlin/dsh-plugin-session-delete':
         specifier: github:lsz-asd/dsh-plugin-session-delete
         version: https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5
+      '@sanqi-normal/dsh-webui-market-plugin':
+        specifier: github:Sanqi-normal/dsh-webui-market-plugin
+        version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41
 
 packages:
 
@@ -53,6 +56,16 @@ packages:
     peerDependencies:
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
 
+  '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41':
+    resolution: {gitHosted: true, integrity: sha512-YXbHkVgNb104GXaKZuzl6t3cV/66E/4YGQbXZ70ZTgubqk/lQRLiXNXhtv/BLwmafSZxLDSYevQzABuynPhDig==, tarball: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41}
+    version: 0.5.5
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-client-runtime': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
+      react: ^18.2.0
+
 snapshots:
 
   '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732': {}
@@ -62,3 +75,5 @@ snapshots:
   '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/9a714280a01e158151b4081e294382454dc4b99c': {}
 
   '@huanlin/dsh-plugin-session-delete@https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5': {}
+
+  '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41': {}

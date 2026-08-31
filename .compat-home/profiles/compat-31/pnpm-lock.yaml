@@ -20,6 +20,9 @@ importers:
       dsh-mnemon:
         specifier: github:omdsh-dev/dsh-mnemon
         version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/9099f1516265d7a2f7aa797358de533d4ee58a17
+      whale-girl:
+        specifier: github:vlln/whale-girl
+        version: https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3
 
 packages:
 
@@ -85,6 +88,10 @@ packages:
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
+  whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3:
+    resolution: {gitHosted: true, integrity: sha512-t4V/CP0kG/sYO3uCgCc0IuCOvGF5X/vrDL3kLmBumGo5wlZju9Q3Y0RgKc9riyEPVaer1jfkk0lE1tNtHAWhOw==, tarball: https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3}
+    version: 0.1.0
+
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
@@ -121,5 +128,9 @@ snapshots:
     dependencies:
       '@standard-schema/spec': 1.1.0
       cosmokit: 1.8.1
+
+  whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3:
+    dependencies:
+      schemastery: 3.18.0
 
   zod@4.4.3: {}

@@ -14,6 +14,9 @@ importers:
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
         version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/fdae3e964c6cdb7760970488c2841488a9ffcba8
+      argo-search:
+        specifier: github:taxueseek/argo
+        version: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146
       dsh-client-auto-continue:
         specifier: github:HsiangNianian/dsh-auto-continue
         version: https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/e865b0b179331769cdce4a1e407a488056c1633d(@deepseek-ai/schemastery@3.18.1)(react@18.3.1)
@@ -48,6 +51,12 @@ packages:
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146:
+    resolution: {gitHosted: true, integrity: sha512-FIDMg6H6slarKzFLNzaxIX5eASEVCZ1MmncmjjAb4OUXyrjmVyyDnfVcy3MmviD9QU3Vs7NQVbiwnaalpAIPrw==, tarball: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146}
+    version: 2.8.4
+    engines: {node: '>=18'}
+    hasBin: true
 
   dsh-client-auto-continue@https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/e865b0b179331769cdce4a1e407a488056c1633d:
     resolution: {gitHosted: true, integrity: sha512-GLanwHbpBKjPAbN2tY/axseW00dzIIfl7ayLwxV4lpj86C2lXbSturQCy7jDq7SKK3Y+62p+7KHOPJodh70HSA==, tarball: https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/e865b0b179331769cdce4a1e407a488056c1633d}
@@ -98,6 +107,8 @@ snapshots:
   '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/fdae3e964c6cdb7760970488c2841488a9ffcba8': {}
 
   '@standard-schema/spec@1.1.0': {}
+
+  argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146: {}
 
   dsh-client-auto-continue@https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/e865b0b179331769cdce4a1e407a488056c1633d(@deepseek-ai/schemastery@3.18.1)(react@18.3.1):
     dependencies:
