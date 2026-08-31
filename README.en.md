@@ -2,7 +2,7 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/ukinch605/awesome-dsh-hub)
 ![License](https://img.shields.io/github/license/ukinch605/awesome-dsh-hub)
-![Plugins](https://img.shields.io/badge/plugins-4645-4dabf7)
+![Plugins](https://img.shields.io/badge/plugins-4646-4dabf7)
 ![Last updated](https://img.shields.io/badge/last%20updated-2026--08--30-orange)
 
 > An auto-maintained, awesome-style directory of the DeepSeek Harness (`dsh`) plugin ecosystem: machine-readable registry, bilingual catalogs and a searchable site. Everything is a Plugin. 🐋
@@ -13,14 +13,14 @@
 
 | Metric | Value |
 | --- | ---: |
-| Plugins | **4645** |
-| Monitored repos | 6265 |
-| Total stars | 75,897 |
-| Last updated | 2026-08-30 21:40:42.645 UTC |
+| Plugins | **4646** |
+| Monitored repos | 6266 |
+| Total stars | 75,936 |
+| Last updated | 2026-08-30 23:57:11.739 UTC |
 
 ### Categories
 
-Web UI 646 · Agent Capabilities 1898 · Coding & Engineering 378 · Messaging & Notifications 186 · Vision & Multimodal 375 · Browser & Web 255 · Skins & Fun 127 · Files & Data 559 · Dev Tools & Tutorials 109 · Bundles & Distros 66 · Ecosystem Projects 46
+Web UI 643 · Agent Capabilities 1894 · Coding & Engineering 382 · Messaging & Notifications 185 · Vision & Multimodal 377 · Browser & Web 256 · Skins & Fun 126 · Files & Data 562 · Dev Tools & Tutorials 108 · Bundles & Distros 67 · Ecosystem Projects 46
 
 ### Top 10 Plugins
 
@@ -28,7 +28,7 @@ Web UI 646 · Agent Capabilities 1898 · Coding & Engineering 378 · Messaging &
 | --- | --- | ---: | --- | --- |
 | 1 | [yjh051108/dsh-routing-suite](https://github.com/yjh051108/dsh-routing-suite) | 6,970 | Agent Capabilities | dsh-routing-suite — injector + router-standard kit: install… |
 | 2 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 6,515 | Web UI | DeepSeek Harness（DSH）Web 插件聚合生态包 · 一切皆插件，创意工坊分发 |
-| 3 | [liustack/modlens](https://github.com/liustack/modlens) | 3,774 | Vision & Multimodal | The first vision plugin for DeepSeek Harness, and the visio… |
+| 3 | [liustack/modlens](https://github.com/liustack/modlens) | 3,775 | Vision & Multimodal | The first vision plugin for DeepSeek Harness, and the visio… |
 | 4 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 3,127 | Web UI | 开放的侧边栏底座，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/侧边对话/Git/子代理页面 ｜ Open s… |
 | 5 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 2,836 | Agent Capabilities | The plugin market inside DeepSeek Harness — browse, search,… |
 | 6 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 2,718 | Messaging & Notifications | DSH 官方公众号收录的 TUI 补位插件：Claude Code 风，鲸鱼顶栏/实时状态/流式思考/双击 Esc 回… |
