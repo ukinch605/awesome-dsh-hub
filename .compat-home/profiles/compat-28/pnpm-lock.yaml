@@ -17,6 +17,9 @@ importers:
       dsh-notification:
         specifier: github:omdsh-dev/dsh-notification
         version: https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/ddec603395a223deb46c75b74274c41849c6a131
+      easyeda-agent-dsh:
+        specifier: github:zhoushoujianwork/easyeda-agent
+        version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd
       whale-girl:
         specifier: github:vlln/whale-girl
         version: https://codeload.github.com/vlln/whale-girl/tar.gz/267e64fa61e6429bdd7cc06bf32cc53e559ff71c
@@ -109,6 +112,11 @@ packages:
       react:
         optional: true
 
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd:
+    resolution: {gitHosted: true, integrity: sha512-0FQ1cA19iAnHY1dH6PvL6i69bxspWRBeLodsMo+QW7rjhClIcSvhnXH0Ati/pGS5gZU+p5dEbL1UtkXdHf4t7g==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd}
+    version: 0.25.1
+    engines: {node: '>=20.17.0'}
+
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
@@ -141,6 +149,8 @@ snapshots:
   dsh-notification@https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/ddec603395a223deb46c75b74274c41849c6a131:
     dependencies:
       zod: 4.4.3
+
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd: {}
 
   schemastery@3.18.0:
     dependencies:

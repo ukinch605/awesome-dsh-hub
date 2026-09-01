@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@zseven-w/dsh-android':
+        specifier: github:ZSeven-W/dsh-android
+        version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4
       dsh-git-memory:
         specifier: github:seriousz158/dsh-memory
         version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03
@@ -54,6 +57,26 @@ packages:
 
   '@ungap/structured-clone@1.4.0':
     resolution: {integrity: sha512-1mEZtMKPM09vDmQt5y7YvmN2+DFTP7Tg0EWXdic8/C6VRnpb33e4ghisCIE3WZjsE2N8mf+QV1Zqh7ZFYLWInQ==}
+
+  '@zseven-w/dsh-android@https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4':
+    resolution: {gitHosted: true, integrity: sha512-pTLifdVKWNfg+QvGm3x2AExeqSyWGi+ec8dvbqZZPu+G30xugUDtUR7zPOB3juhP/Cl7Y7f5l8i69VWy5Kk4CQ==, tarball: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4}
+    version: 0.1.0-rc.4
+    engines: {node: '>=24.11.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-fs': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-sandbox-policy': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
@@ -411,6 +434,8 @@ snapshots:
   '@types/unist@3.0.3': {}
 
   '@ungap/structured-clone@1.4.0': {}
+
+  '@zseven-w/dsh-android@https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4': {}
 
   argparse@2.0.1: {}
 

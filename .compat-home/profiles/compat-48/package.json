@@ -3,14 +3,16 @@
   "private": true,
   "dependencies": {
     "@yejiming/dsh-data-agent": "github:omdsh-dev/dsh-data-agent",
-    "dsh-find-plugin": "github:awesome-dsh-plugin/dsh-find-plugin"
+    "dsh-find-plugin": "github:awesome-dsh-plugin/dsh-find-plugin",
+    "dsh-tokenledger": "github:zh667/TokenLedger"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
         "dsh-find-plugin",
-        "@yejiming/dsh-data-agent"
+        "@yejiming/dsh-data-agent",
+        "dsh-tokenledger"
       ]
     }
   }

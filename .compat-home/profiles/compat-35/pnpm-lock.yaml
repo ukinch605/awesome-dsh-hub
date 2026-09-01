@@ -14,6 +14,9 @@ importers:
       dsh-context:
         specifier: github:bowenliang123/dsh-context
         version: https://codeload.github.com/bowenliang123/dsh-context/tar.gz/1b2590e0dbf938d8d9921dfde43c1bd44ab63603(zod@4.4.3)
+      dsh-dafeiyu:
+        specifier: github:QCYTSN/dsh-dafeiyu
+        version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98
       dsh-interconnect:
         specifier: github:Chinesezjc/dsh-interconnect
         version: https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/65bf651e7b54bdca8c11b8a1684bf4f767f4d5e5(ws@8.21.3)
@@ -68,6 +71,15 @@ packages:
         optional: true
       react:
         optional: true
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98:
+    resolution: {gitHosted: true, integrity: sha512-Eo/JhKwo9OAZm5N24g4qatTY6Uq64D8dMg/J/gDZVbcT1BG+F3PMsB4dkIMqErBbjyvCTNXheS+H47UBz8dCVw==, tarball: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98}
+    version: 0.1.6
+    engines: {node: '>=22.19'}
+    bundledDependencies:
+      - '@deepseek-ai/cosmokit'
+      - '@deepseek-ai/schemastery'
+      - '@standard-schema/spec'
 
   dsh-interconnect@https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/65bf651e7b54bdca8c11b8a1684bf4f767f4d5e5:
     resolution: {gitHosted: true, integrity: sha512-k+t2FuRhhUjlz6VPGjykh3NglGkMGGPbn2Lr3el1gHF9h7vTCQOTLqjU4CIuPm0B9KQLaNZAP0mFFrPPre+3iQ==, tarball: https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/65bf651e7b54bdca8c11b8a1684bf4f767f4d5e5}
@@ -173,6 +185,8 @@ snapshots:
   dsh-context@https://codeload.github.com/bowenliang123/dsh-context/tar.gz/1b2590e0dbf938d8d9921dfde43c1bd44ab63603(zod@4.4.3):
     dependencies:
       zod: 4.4.3
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98: {}
 
   dsh-interconnect@https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/65bf651e7b54bdca8c11b8a1684bf4f767f4d5e5(ws@8.21.3):
     dependencies:

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@anionex/dsh-turn-rewind':
+        specifier: github:Anionex/dsh-turn-rewind
+        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/8dcdbbb6faa5f4e0c821adc88e0e43298730da5a
       '@bill9109/dsh-web-ui-notify':
         specifier: github:bill9109/dsh-web-ui-notify
         version: https://codeload.github.com/bill9109/dsh-web-ui-notify/tar.gz/865d2f6fc93f2e0d051d53df772646cb831a43ed
@@ -31,6 +34,15 @@ importers:
         version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/a05debe447407068a434e85cce679c6dd41dbd0f
 
 packages:
+
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/8dcdbbb6faa5f4e0c821adc88e0e43298730da5a':
+    resolution: {gitHosted: true, integrity: sha512-W/Fq2EpWeWUC7UQiGjQ7Ysg4wGutukZAwKD1mBTe/mF6h+gbdHiJ9xE4kKvOQnYDpd8Z3OESNyD2TC2flHl2nA==, tarball: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/8dcdbbb6faa5f4e0c821adc88e0e43298730da5a}
+    version: 0.2.1
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-settings': '>=0.1.0-rc.8 <0.2.0'
+      '@deepseek-ai/schemastery': ^3.18.1
 
   '@bill9109/dsh-web-ui-notify@https://codeload.github.com/bill9109/dsh-web-ui-notify/tar.gz/865d2f6fc93f2e0d051d53df772646cb831a43ed':
     resolution: {gitHosted: true, tarball: https://codeload.github.com/bill9109/dsh-web-ui-notify/tar.gz/865d2f6fc93f2e0d051d53df772646cb831a43ed}
@@ -404,6 +416,8 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
 snapshots:
+
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/8dcdbbb6faa5f4e0c821adc88e0e43298730da5a': {}
 
   '@bill9109/dsh-web-ui-notify@https://codeload.github.com/bill9109/dsh-web-ui-notify/tar.gz/865d2f6fc93f2e0d051d53df772646cb831a43ed': {}
 

@@ -17,6 +17,9 @@ importers:
       deepseek-pet:
         specifier: github:keleus/deepseek-pet
         version: https://codeload.github.com/keleus/deepseek-pet/tar.gz/35132a4fcfa1a40e4cab7e0163939cc5b25de38b
+      dsh-auth-in-one:
+        specifier: github:Stormycry-cryp/dsh-AuthInOne
+        version: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(@deepseek-ai/schemastery@3.18.1)
       dsh-custom-skin:
         specifier: github:SLin-code/dsh-custom-skin
         version: https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/a931af884d5e241f3397c601e857d5cf5be76de6
@@ -543,6 +546,80 @@ packages:
   dompurify@3.4.14:
     resolution: {integrity: sha512-dVoH9z+MY+C9IilgGCk3YfFqjLi3fChm2OiKJMzh6axrJ5qwxqWaZamgmHrpv22CN/KdbZJuGEGgfQoL00LTdg==}
 
+  dsh-auth-in-one@https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706:
+    resolution: {gitHosted: true, integrity: sha512-QNzWiDra23a6g7SEFI4s381FSMS7C7C+Sl2O4WOobSsDILP+FY1Tk479KQZmtC2g49ziClSZ58E8dScw1zX3eQ==, tarball: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706}
+    version: 0.2.0-alpha.4
+    engines: {node: ^22.19.0 || >=24}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.1'
+      '@deepseek-ai/dsh-agent-default-model': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-api-remotes': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-attachment': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-client-connection': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-runtime': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-schema-form': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-ui-settings': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-ui-sidebar': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-client-web-react': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-credentials': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-llm': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-llm-pi-ai': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-session': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-session-persistence': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-settings': '>=0.1.0-rc.5'
+      '@deepseek-ai/dsh-typert-protocol': '>=0.1.0-rc.5'
+      '@deepseek-ai/schemastery': '>=3.18.1'
+      react: '>=18.2.0'
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent-default-model':
+        optional: true
+      '@deepseek-ai/dsh-api-remotes':
+        optional: true
+      '@deepseek-ai/dsh-attachment':
+        optional: true
+      '@deepseek-ai/dsh-client-connection':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-schema-form':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-primitives':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-sidebar':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-client-web-react':
+        optional: true
+      '@deepseek-ai/dsh-credentials':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-llm-pi-ai':
+        optional: true
+      '@deepseek-ai/dsh-session':
+        optional: true
+      '@deepseek-ai/dsh-session-persistence':
+        optional: true
+      '@deepseek-ai/dsh-settings':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+      react:
+        optional: true
+
   dsh-better-sidebar@0.14.0:
     resolution: {integrity: sha512-bEjHvHnlNnKXkud+/A/kZ4VJvPt79ggHy/mKqEKfODPqLFpvdz7ZcoMCI3K4naPOw/0Wlqp6J3UDR9h2Wm6w4w==}
     engines: {node: '>=20'}
@@ -802,6 +879,9 @@ packages:
   yargs@15.4.1:
     resolution: {integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==}
     engines: {node: '>=8'}
+
+  zod@4.5.4:
+    resolution: {integrity: sha512-sC95tT5iHHH9gtpj6A81kh+NEaRAUFN+qlUPDUbRfOMvNf5QCBqsb3WgvnpVtK5Y+4UfA6KqufotuTvMGiTlsA==}
 
 snapshots:
 
@@ -1478,6 +1558,13 @@ snapshots:
     optionalDependencies:
       '@types/trusted-types': 2.0.7
 
+  dsh-auth-in-one@https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(@deepseek-ai/schemastery@3.18.1):
+    dependencies:
+      clsx: 2.1.1
+      zod: 4.5.4
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.1
+
   dsh-better-sidebar@0.14.0:
     dependencies:
       '@codemirror/commands': 6.11.0
@@ -1742,3 +1829,5 @@ snapshots:
       which-module: 2.0.1
       y18n: 4.0.3
       yargs-parser: 18.1.3
+
+  zod@4.5.4: {}

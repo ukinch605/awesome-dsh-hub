@@ -11,15 +11,18 @@ importers:
       '@icelily/dsh-gitbash-preset':
         specifier: github:liceses/dsh-gitbash-preset
         version: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8
+      '@nanmicoder/dsh-auto-mode':
+        specifier: github:NanmiCoder/dsh-auto-mode
+        version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a53af050536655f29f8b449ee57f1dd79bf06603
       '@ychris12138/dsh-usage-stats':
         specifier: github:Ychris12138/dsh-usage-stats
         version: https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/c6212d9a35e3542a100fa61b51e42a8fa8e688e3
       '@zseven-w/dsh-noema':
         specifier: github:ZSeven-W/dsh-noema
-        version: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2
+        version: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2(@deepseek-ai/schemastery@3.18.2)
       dsh-git-memory:
         specifier: github:seriousz158/dsh-memory
-        version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03
+        version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03(@deepseek-ai/schemastery@3.18.2)
       dsh-popout-sidebar:
         specifier: github:e2mcc/dsh-popout-sidebar
         version: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162
@@ -32,10 +35,44 @@ importers:
 
 packages:
 
+  '@deepseek-ai/cosmokit@1.8.3':
+    resolution: {integrity: sha512-qBo+ronVM6Eu2WNVJXi8JcMiqZ19T9BRIpV+5qJUFPXjGH/Z0QKcQMC/IZJ7L394YTOtJgcovbk9qP0w2GsBXQ==}
+
+  '@deepseek-ai/schemastery@3.18.2':
+    resolution: {integrity: sha512-njDtZsznjYxok7KLLlHOPyuv2efdWVbSflAHgztSfbMsg+CVraEoRe2DjOCgClYv3ZCSm7WXoaUkbB/+RY7tWQ==}
+
   '@icelily/dsh-gitbash-preset@https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8':
     resolution: {gitHosted: true, integrity: sha512-JeoS0JZoqCz3uuGVb+W38w08uegiYWtgI5esN+3yJbnK+uXmS0TG1oXYpS3m96l27WzDX5wATaGmvULFnmWqSQ==, tarball: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8}
     version: 0.1.2
     engines: {node: '>=20'}
+
+  '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a53af050536655f29f8b449ee57f1dd79bf06603':
+    resolution: {gitHosted: true, integrity: sha512-ObKi82Eh/LCGy7tT3yBlEPRqKgBPwZCifjxppyAdkUpkOqbKnsjYo8rt2SxtLwZUkoixLBPNz08HFGrKOigU5Q==, tarball: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a53af050536655f29f8b449ee57f1dd79bf06603}
+    version: 0.1.6
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/dsh-client-locale': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-llm': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-permission-presets': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-tools': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-user-approval': ^0.1.2-alpha.2
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-permission-presets':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/dsh-user-approval':
+        optional: true
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
   '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/c6212d9a35e3542a100fa61b51e42a8fa8e688e3':
     resolution: {gitHosted: true, integrity: sha512-nddz5ZrLHFwtwM80wE0mAJGAgil8LJclLFdDFsLx6FNg6g6+ecx0grDVtVY5sV7NIFS3yQ/FxC/Zw7J9VQK3cQ==, tarball: https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/c6212d9a35e3542a100fa61b51e42a8fa8e688e3}
@@ -150,7 +187,20 @@ packages:
 
 snapshots:
 
+  '@deepseek-ai/cosmokit@1.8.3': {}
+
+  '@deepseek-ai/schemastery@3.18.2':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.3
+      '@standard-schema/spec': 1.1.0
+
   '@icelily/dsh-gitbash-preset@https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8': {}
+
+  '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a53af050536655f29f8b449ee57f1dd79bf06603':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
+
+  '@standard-schema/spec@1.1.0': {}
 
   '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/c6212d9a35e3542a100fa61b51e42a8fa8e688e3': {}
 
@@ -172,7 +222,9 @@ snapshots:
   '@zseven-w/dsh-noema-win32-x64@0.1.0-rc.3':
     optional: true
 
-  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2':
+  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2(@deepseek-ai/schemastery@3.18.2)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
     optionalDependencies:
       '@zseven-w/dsh-noema-darwin-arm64': 0.1.0-rc.3
       '@zseven-w/dsh-noema-darwin-x64': 0.1.0-rc.3
@@ -183,7 +235,9 @@ snapshots:
 
   argparse@2.0.1: {}
 
-  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03: {}
+  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03(@deepseek-ai/schemastery@3.18.2):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
 
   dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162: {}
 

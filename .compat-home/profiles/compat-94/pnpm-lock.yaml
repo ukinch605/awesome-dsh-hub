@@ -26,6 +26,9 @@ importers:
       dsh-tabbit:
         specifier: github:Tabbit-Browser/dsh-tabbit
         version: https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c
+      dsh-turn-delete:
+        specifier: github:hanshenmesen/dsh-turn-delete
+        version: https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8(react@18.3.1)
 
 packages:
 
@@ -178,6 +181,22 @@ packages:
       '@deepseek-ai/dsh-skill': '>=0.1.0-rc.5'
       '@deepseek-ai/dsh-tools': '>=0.1.0-rc.5'
 
+  dsh-turn-delete@https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8:
+    resolution: {gitHosted: true, integrity: sha512-guHodfehsxTljhPUIzHBPPqFBhGnngtIFxcJsQqU0jgZeQRW8DYgDHnUCe9weqdTZylMHPdLkiVydlhLWnihWA==, tarball: https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8}
+    version: 0.1.0
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-runtime': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-conversation': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-session': '>=0.1.0-rc.6 <0.2.0-0'
+      react: ^18.2.0
+
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -312,6 +331,10 @@ snapshots:
       react: 18.3.1
 
   dsh-tabbit@https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c: {}
+
+  dsh-turn-delete@https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   js-tokens@4.0.0: {}
 

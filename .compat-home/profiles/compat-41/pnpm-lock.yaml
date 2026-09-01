@@ -20,6 +20,9 @@ importers:
       dsh-custom-tool:
         specifier: github:omdsh-dev/dsh-custom-tool
         version: https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/7cb95649dca9b380c9a30af96bdbef87a76a2259
+      dsh-purge:
+        specifier: github:YuJunZhiXue/dsh-purge
+        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/0422d458c21724f1639216080d9e2c81e9f0626f
 
 packages:
 
@@ -131,6 +134,13 @@ packages:
       react:
         optional: true
 
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/0422d458c21724f1639216080d9e2c81e9f0626f:
+    resolution: {gitHosted: true, integrity: sha512-B6va8hnMH9ECEAm1xrXsoz8TG+xKKmHsIC2gFt1H8aDq9Ao8vl8Qh6XJrlLBiYq+7tz+ScTyc7dmPtEYSGS4dg==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/0422d458c21724f1639216080d9e2c81e9f0626f}
+    version: 1.3.0
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+
   zod@4.5.2:
     resolution: {integrity: sha512-XkYXCol10+ba/6F/cueWV+TezUeOqXW0hdeJt5CdXjTYeAgAQg5N03RQdJ80mhfFE72+pblvYMW4wy2Qp4Qbrg==}
 
@@ -159,5 +169,7 @@ snapshots:
   '@standard-schema/spec@1.1.0': {}
 
   dsh-custom-tool@https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/7cb95649dca9b380c9a30af96bdbef87a76a2259: {}
+
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/0422d458c21724f1639216080d9e2c81e9f0626f: {}
 
   zod@4.5.2: {}

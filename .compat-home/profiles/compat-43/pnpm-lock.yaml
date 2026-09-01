@@ -14,6 +14,9 @@ importers:
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
         version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/0f8c0e05073510faaa2aeeb357dc9baeaa9cfd2f
+      dsh-cost-meter:
+        specifier: github:Han-1413141/dsh-cost-meter
+        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/bbc3e9054d04e3cbeb36310f7c1cc762c1ae49e8
       dsh-engramory:
         specifier: github:tinqiao-oss/engramory
         version: https://codeload.github.com/tinqiao-oss/engramory/tar.gz/39efc183a55cb3d2c56e11a42b2b5e059a193ce3
@@ -22,6 +25,19 @@ importers:
         version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025
 
 packages:
+
+  '@deepseek-ai/dsh-credentials@0.1.0-rc.8':
+    resolution: {integrity: sha512-VopOhtUEa/fSmJr3fyKbsEG043kX1oGuBrmELAbkhmuDigl1cN88g0VPb9rMG2/dJ1h08wg+h0RJP+Ex4LjRWw==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-brand': ^0.1.0-rc.8
+      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.8
+
+  '@deepseek-ai/dsh-home-paths@0.1.0-rc.8':
+    resolution: {integrity: sha512-9cQhH9CZsw7Zi73VnZk7CcuEVA6yR/Ox+7lp3VHq53fFYSPi0RL+kMWmh5XCrZB4U1OM3+PVsWsA5II9tB+t0Q==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.8
 
   '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/6fdc0146194bd84182544d2b6187f8a1094111c6':
     resolution: {gitHosted: true, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/6fdc0146194bd84182544d2b6187f8a1094111c6}
@@ -65,6 +81,11 @@ packages:
       '@deepseek-ai/schemastery': '>=3.0.0'
       react: '>=18.0.0'
 
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/bbc3e9054d04e3cbeb36310f7c1cc762c1ae49e8:
+    resolution: {gitHosted: true, integrity: sha512-Zik2+BWnCOOeJohzCtJ7Gix6Nxi/4SsAyINNFSNKwXI6yzT1p3OombYyKrWpG0jzXWk0sMPo7FxRQ7kgDb5d6g==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/bbc3e9054d04e3cbeb36310f7c1cc762c1ae49e8}
+    version: 1.7.5
+    engines: {node: '>=20'}
+
   dsh-engramory@https://codeload.github.com/tinqiao-oss/engramory/tar.gz/39efc183a55cb3d2c56e11a42b2b5e059a193ce3:
     resolution: {gitHosted: true, integrity: sha512-BiNwcQNZQnGWC0CNtP02whmulsg5mv3ozZuIHmA0df6nyXBdHpb5ychiZSV6hBu6oFNrAvILnjjf0ZabVpGWXg==, tarball: https://codeload.github.com/tinqiao-oss/engramory/tar.gz/39efc183a55cb3d2c56e11a42b2b5e059a193ce3}
     version: 0.2.3
@@ -97,7 +118,14 @@ packages:
       utf-8-validate:
         optional: true
 
+  zod@4.5.1:
+    resolution: {integrity: sha512-P3GqeAEOEDqKvafVGLezbg+39YW/ze4xrD4qdS0adOY8eoI3zfjv1PQM4UwQzgT8mZKXEbqtVt8K+ZKGqkMFKg==}
+
 snapshots:
+
+  '@deepseek-ai/dsh-credentials@0.1.0-rc.8': {}
+
+  '@deepseek-ai/dsh-home-paths@0.1.0-rc.8': {}
 
   '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/6fdc0146194bd84182544d2b6187f8a1094111c6':
     dependencies:
@@ -127,6 +155,16 @@ snapshots:
     dependencies:
       fzstd: 0.1.1
 
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/bbc3e9054d04e3cbeb36310f7c1cc762c1ae49e8:
+    dependencies:
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.8
+      '@deepseek-ai/dsh-home-paths': 0.1.0-rc.8
+      zod: 4.5.1
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis'
+      - '@deepseek-ai/dsh-brand'
+      - '@deepseek-ai/dsh-invariants'
+
   dsh-engramory@https://codeload.github.com/tinqiao-oss/engramory/tar.gz/39efc183a55cb3d2c56e11a42b2b5e059a193ce3: {}
 
   fzstd@0.1.1: {}
@@ -140,3 +178,5 @@ snapshots:
   qrcode-terminal@0.12.0: {}
 
   ws@8.21.3: {}
+
+  zod@4.5.1: {}

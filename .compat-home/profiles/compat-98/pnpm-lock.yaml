@@ -14,6 +14,9 @@ importers:
       '@linxin666/freestyle-dsh-theme':
         specifier: github:suzike/freestyle-dsh-theme
         version: https://codeload.github.com/suzike/freestyle-dsh-theme/tar.gz/cd9e9eb53ccbaded4cf6123919e24392daeda0d4
+      '@sanqi-normal/dsh-webui-market-plugin':
+        specifier: github:Sanqi-normal/dsh-webui-market-plugin
+        version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
         version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/56db053cf27c46f2f1a30fa9b040b181d3ed725a(@deepseek-ai/schemastery@3.18.1)
@@ -72,6 +75,16 @@ packages:
       '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
       react: ^18.2.0
       react-dom: ^18.2.0
+
+  '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41':
+    resolution: {gitHosted: true, integrity: sha512-YXbHkVgNb104GXaKZuzl6t3cV/66E/4YGQbXZ70ZTgubqk/lQRLiXNXhtv/BLwmafSZxLDSYevQzABuynPhDig==, tarball: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41}
+    version: 0.5.5
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-client-runtime': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
+      react: ^18.2.0
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -177,6 +190,8 @@ snapshots:
       zod: 4.4.3
 
   '@linxin666/freestyle-dsh-theme@https://codeload.github.com/suzike/freestyle-dsh-theme/tar.gz/cd9e9eb53ccbaded4cf6123919e24392daeda0d4': {}
+
+  '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41': {}
 
   '@standard-schema/spec@1.1.0': {}
 

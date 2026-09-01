@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@changfenhuang/dsh-annotation':
+        specifier: github:omdsh-dev/dsh-annotation
+        version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1
       '@dhicoc/dsh-reverse-skill':
         specifier: github:dhicoc/dsh-reverse-skill
         version: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732
@@ -25,6 +28,13 @@ importers:
         version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41
 
 packages:
+
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1':
+    resolution: {gitHosted: true, integrity: sha512-a8erKBsVNh4InBuTBNMFuHTeO8F4BUFGu/7oZuDyD/eYgdxBHQJecPQyPCpbfNDLG+IVVAHuMQiiGFFuIoORbw==, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1}
+    version: 1.4.5
+    engines: {node: '>=20'}
+    peerDependencies:
+      cordis: ^4.0.0-rc.7 || ^4.0.1
 
   '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732':
     resolution: {gitHosted: true, integrity: sha512-zipAcJI7kY6FuOA8hd12MRNW8Ul76p7cuHYvevxX/ThboMurlsSjcsrS/yq+o+qzvNIJM6/nu3bgiiBqYTdL6A==, tarball: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732}
@@ -67,6 +77,8 @@ packages:
       react: ^18.2.0
 
 snapshots:
+
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1': {}
 
   '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732': {}
 
