@@ -14,6 +14,9 @@ importers:
       '@dsh-external/workflow':
         specifier: github:omdsh-dev/dsh_workflow
         version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f
+      argo-search:
+        specifier: github:taxueseek/argo
+        version: https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f
       dsh-auth-in-one:
         specifier: github:Stormycry-cryp/dsh-AuthInOne
         version: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(react@19.2.8)
@@ -131,6 +134,12 @@ packages:
 
   ajv@8.20.0:
     resolution: {integrity: sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==}
+
+  argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f:
+    resolution: {gitHosted: true, integrity: sha512-+0Ddu0EHKMIyIuXCejXYYaFcWgXCxvgXIW9LjwIGCNbSU1C7L7XsVDBNI4umZEly29BtJ3gIY9ligfnJGZFlQg==, tarball: https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f}
+    version: 2.8.5
+    engines: {node: '>=18'}
+    hasBin: true
 
   body-parser@2.3.0:
     resolution: {integrity: sha512-2cGmJupaNgg+QUwVLAucDuWuoMZ6EX9iHDRswZ5lsNYEmwPaRknMPCLZz07yTzVq/83p4o/wzbDZbBrTvGGTIw==}
@@ -714,6 +723,8 @@ snapshots:
       fast-uri: 3.1.6
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
+
+  argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f: {}
 
   body-parser@2.3.0:
     dependencies:

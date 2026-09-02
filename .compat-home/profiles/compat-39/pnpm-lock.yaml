@@ -20,6 +20,9 @@ importers:
       gal-view:
         specifier: github:Ayase34/gal-view
         version: https://codeload.github.com/Ayase34/gal-view/tar.gz/3b5a6411d01fcf0c92623a20adbf5e94e17a76ae
+      perfect-web-clone:
+        specifier: github:ericshang98/Perfect-Web-Clone
+        version: https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5
 
 packages:
 
@@ -466,6 +469,13 @@ packages:
     resolution: {integrity: sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==}
     hasBin: true
 
+  perfect-web-clone@https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5:
+    resolution: {gitHosted: true, integrity: sha512-PogS83E4MJqMynMODNxxxFgFNKplIXlauB3qsQA2MpDo1/EvziGFgUN0wK4D7B/J2QlxMcYixm+u5dbuuLlEcw==, tarball: https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5}
+    version: 3.0.0
+    peerDependencies:
+      '@deepseek-ai/cordis': '*'
+      '@deepseek-ai/dsh-tools': '*'
+
   semver@7.8.5:
     resolution: {integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==}
     engines: {node: '>=10'}
@@ -823,6 +833,8 @@ snapshots:
   js-yaml@4.3.2:
     dependencies:
       argparse: 2.0.1
+
+  perfect-web-clone@https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5: {}
 
   semver@7.8.5: {}
 

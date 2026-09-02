@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@anionex/dsh-turn-rewind':
+        specifier: github:Anionex/dsh-turn-rewind
+        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/8dcdbbb6faa5f4e0c821adc88e0e43298730da5a(@deepseek-ai/schemastery@3.18.1)
       '@dsh-external/dsh-mobile':
         specifier: github:lehhair/dsh-mobile
         version: https://codeload.github.com/lehhair/dsh-mobile/tar.gz/3c779e801e3da4abc1f920b0acdf9c785ec5de8f(react@18.3.1)
@@ -25,6 +28,15 @@ importers:
         version: https://codeload.github.com/pengyue-polaron/deepseek-harness-genui/tar.gz/8466493e5debb7d7b438c169c7c8b61076643f17
 
 packages:
+
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/8dcdbbb6faa5f4e0c821adc88e0e43298730da5a':
+    resolution: {gitHosted: true, integrity: sha512-W/Fq2EpWeWUC7UQiGjQ7Ysg4wGutukZAwKD1mBTe/mF6h+gbdHiJ9xE4kKvOQnYDpd8Z3OESNyD2TC2flHl2nA==, tarball: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/8dcdbbb6faa5f4e0c821adc88e0e43298730da5a}
+    version: 0.2.1
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-settings': '>=0.1.0-rc.8 <0.2.0'
+      '@deepseek-ai/schemastery': ^3.18.1
 
   '@babel/runtime@7.29.7':
     resolution: {integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==}
@@ -696,6 +708,10 @@ packages:
         optional: true
 
 snapshots:
+
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/8dcdbbb6faa5f4e0c821adc88e0e43298730da5a(@deepseek-ai/schemastery@3.18.1)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
 
   '@babel/runtime@7.29.7': {}
 

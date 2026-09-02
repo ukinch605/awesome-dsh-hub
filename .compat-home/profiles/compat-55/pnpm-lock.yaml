@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/dsh-redteam-model':
+        specifier: github:SeaOf0/dsh-redteam-model
+        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/28d9f29f0db5592e75dd2e9cc4dbdb4b77b4b8ac
       '@vlln/dsh-navbar':
         specifier: github:vlln/dsh-navbar
         version: https://codeload.github.com/vlln/dsh-navbar/tar.gz/d89ba74f4e0403462a5e4c4feeec84a3e7a1cca2
@@ -34,6 +37,13 @@ packages:
 
   '@deepseek-ai/schemastery@3.18.2':
     resolution: {integrity: sha512-njDtZsznjYxok7KLLlHOPyuv2efdWVbSflAHgztSfbMsg+CVraEoRe2DjOCgClYv3ZCSm7WXoaUkbB/+RY7tWQ==}
+
+  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/28d9f29f0db5592e75dd2e9cc4dbdb4b77b4b8ac':
+    resolution: {gitHosted: true, integrity: sha512-zQoe5OyN2nOZDbBVz88Me7VcWeUH/GbVVRxD5mziVPtlPzSntlstwjhP7YWLpt2JPiaXbh/xCJBN+JEowKpC9g==, tarball: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/28d9f29f0db5592e75dd2e9cc4dbdb4b77b4b8ac}
+    version: 1.1.1
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6 || ^0.1.1-rc.0
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -157,6 +167,8 @@ snapshots:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.3
       '@standard-schema/spec': 1.1.0
+
+  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/28d9f29f0db5592e75dd2e9cc4dbdb4b77b4b8ac': {}
 
   '@standard-schema/spec@1.1.0': {}
 

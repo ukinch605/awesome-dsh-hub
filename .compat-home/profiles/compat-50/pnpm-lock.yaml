@@ -17,6 +17,9 @@ importers:
       '@shengsheng/dsh-taskboard':
         specifier: github:shengsheng90/DSH-taskboard
         version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/dd5455bdeec3a86eaf84482ef2dd42d86c7b88aa(@deepseek-ai/schemastery@3.18.1)
+      '@yejiming/dsh-data-agent':
+        specifier: github:omdsh-dev/dsh-data-agent
+        version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/d1bd4381ed771d505db69f2a9065379f7d3165a0
       dsh-engramory:
         specifier: github:tinqiao-oss/engramory
         version: https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5
@@ -26,11 +29,35 @@ importers:
 
 packages:
 
+  '@clickhouse/client@1.23.1':
+    resolution: {integrity: sha512-vs3/Zc1dHvT171btW5nMoPsPCJ6QVJ5pp7obxzO5sjqwFx/jjz9wwCAqcFOdc2DhprugDBaVn+4dVY8hG3A9nw==}
+    engines: {node: '>=20'}
+
   '@deepseek-ai/cosmokit@1.8.2':
     resolution: {integrity: sha512-muBOKtSrUKU5m/xpq8ZXWL6hQ/jgd4PhU2PqH97bcxIiLEJfNwZOGQEx4t/aS/GgxRAR+ra9pMHPMtTHU4sqqA==}
 
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
+  '@dsh-std/composition@0.1.0-rc1':
+    resolution: {integrity: sha512-sXZOjgicYfJNNhVu2erE8aExY/LFQuWJbdjDuNdCHe6DEvHOol2MdOxTyi4KeOEKPZmIMp8roA4OemTWo1Ak+w==}
+    engines: {node: ^22.19 || >=24}
+
+  '@dsh-std/core@0.1.0-rc1':
+    resolution: {integrity: sha512-jzr2BpH0wQ+peq0ywA+QazjeO6hRpuXLKd4x3EupozUYzynVkXJzf07xk89c9DzO9yfB1WNh9T+LCGcpxRq8PA==}
+    engines: {node: ^22.19 || >=24}
+
+  '@dsh-std/lifecycle@0.1.0-rc1':
+    resolution: {integrity: sha512-e13Atp+cnp/VaY44F2Cni9G3ki2OrvGLoHgGY91/gnq0B2tp587XmSqJvfK9VpeaIqW6WDJVqsHBigtml3Y40w==}
+    engines: {node: ^22.19 || >=24}
+
+  '@dsh-std/manifest@0.1.0-rc1':
+    resolution: {integrity: sha512-u4iaXOg8N03tPZYgwPwtrzvy7zODdjriQYolS6SyfYFCo5ojZCsACCPK0NZxQgHTVnQVZr8XMBHt/+GvQ++xmg==}
+    engines: {node: ^22.19 || >=24}
+
+  '@dsh-std/sdk@0.1.0-rc1':
+    resolution: {integrity: sha512-qWGGoJ5TZC8uckbpnFcg6mhXV3/YohPOoxCWVkoZPG/vRmmRUfAdG0l5Ci/XPljekHR9dko2747fhk81l6CBaw==}
+    engines: {node: ^22.19 || >=24}
 
   '@graysilver/dsh-evolve-modes@https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/2be63b3cf84bfe3903eb30a35fb7150ebc613b88':
     resolution: {gitHosted: true, integrity: sha512-HELtTVaCrtNkclSbC+7n8gv0uN3qxgU/rGWWn0F+HSIp3DXnWfwBT7VHVx1dlh7SUueAJ4T4xkWn91oBS53K+Q==, tarball: https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/2be63b3cf84bfe3903eb30a35fb7150ebc613b88}
@@ -87,6 +114,66 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/d1bd4381ed771d505db69f2a9065379f7d3165a0':
+    resolution: {gitHosted: true, integrity: sha512-j2EOaG0thi091atgiZN1N5GNbUGSBUHdAWQqSoToceajQu35/Kqnibwgbw8U6f2lsVdKf66uIBYWnZn6lHsr5Q==, tarball: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/d1bd4381ed771d505db69f2a9065379f7d3165a0}
+    version: 0.1.4
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/dsh-agent': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-agent-presets': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-api-session-controller': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-locale': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-agent-preset': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-renderer': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-session': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-tool': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-workspace': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-commands': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-credentials': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-host-webserver': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-invariants': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-llm': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-scope': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-session': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-storage': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-storage-domain': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-storage-json': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-subprocess': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-tools': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-user-questions': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-util-values': ^0.1.2-alpha.2
+      react: ^18.2.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-api-session-controller':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-agent-preset':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-primitives':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-renderer':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-session':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-tool':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-workspace':
+        optional: true
+      '@deepseek-ai/dsh-host-webserver':
+        optional: true
+      '@deepseek-ai/dsh-user-questions':
+        optional: true
+      react:
+        optional: true
+
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
@@ -103,6 +190,9 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
+  echarts@6.1.0:
+    resolution: {integrity: sha512-q0yaFPggC9FUdsWH4blavRWFmxdrIodbkoKNAjJudAI6CA9gNPxHtV2RcZNEepZVlk4yvBYkOkbk6HIVpIyHZA==}
+
   fflate@0.8.3:
     resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
 
@@ -118,10 +208,18 @@ packages:
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
+  tslib@2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
+  zrender@6.1.0:
+    resolution: {integrity: sha512-oEGMDB6pOP2S6OwRR4PdVv610zrjnA3Bh+JnSG12fYJlBKjtNAoEb5fSUoCOOINlH96I2fU38/A2UpRKs67xYQ==}
+
 snapshots:
+
+  '@clickhouse/client@1.23.1': {}
 
   '@deepseek-ai/cosmokit@1.8.2': {}
 
@@ -129,6 +227,28 @@ snapshots:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
+
+  '@dsh-std/composition@0.1.0-rc1':
+    dependencies:
+      '@dsh-std/core': 0.1.0-rc1
+      '@dsh-std/manifest': 0.1.0-rc1
+
+  '@dsh-std/core@0.1.0-rc1': {}
+
+  '@dsh-std/lifecycle@0.1.0-rc1':
+    dependencies:
+      '@dsh-std/composition': 0.1.0-rc1
+      '@dsh-std/core': 0.1.0-rc1
+      '@dsh-std/manifest': 0.1.0-rc1
+
+  '@dsh-std/manifest@0.1.0-rc1':
+    dependencies:
+      '@dsh-std/core': 0.1.0-rc1
+
+  '@dsh-std/sdk@0.1.0-rc1':
+    dependencies:
+      '@dsh-std/core': 0.1.0-rc1
+      '@dsh-std/lifecycle': 0.1.0-rc1
 
   '@graysilver/dsh-evolve-modes@https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/2be63b3cf84bfe3903eb30a35fb7150ebc613b88':
     dependencies:
@@ -144,6 +264,15 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
+  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/d1bd4381ed771d505db69f2a9065379f7d3165a0':
+    dependencies:
+      '@clickhouse/client': 1.23.1
+      '@dsh-std/sdk': 0.1.0-rc1
+      echarts: 6.1.0
+      fflate: 0.8.3
+      schemastery: 3.18.0
+      zod: 4.4.3
+
   cosmokit@1.8.1: {}
 
   dsh-engramory@https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5: {}
@@ -154,6 +283,11 @@ snapshots:
       markdown-to-jsx: 7.7.17
       schemastery: 3.18.0
 
+  echarts@6.1.0:
+    dependencies:
+      tslib: 2.3.0
+      zrender: 6.1.0
+
   fflate@0.8.3: {}
 
   markdown-to-jsx@7.7.17: {}
@@ -163,4 +297,10 @@ snapshots:
       '@standard-schema/spec': 1.1.0
       cosmokit: 1.8.1
 
+  tslib@2.3.0: {}
+
   zod@4.4.3: {}
+
+  zrender@6.1.0:
+    dependencies:
+      tslib: 2.3.0

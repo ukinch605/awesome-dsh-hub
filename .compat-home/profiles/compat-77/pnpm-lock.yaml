@@ -17,6 +17,9 @@ importers:
       argo-search:
         specifier: github:taxueseek/argo
         version: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146
+      dsh-chat-import:
+        specifier: github:Nwflower/dsh-chat-import
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/686325113117873c00ca74c476f18874b2876796(@deepseek-ai/schemastery@3.18.1)(react@18.3.1)
       dsh-file-explorer:
         specifier: github:joejojoking-cloud/dsh-file-explorer
         version: https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/8f186671bd7e949b6a76f632fae4fb4522ee6248(react@18.3.1)
@@ -79,6 +82,18 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/686325113117873c00ca74c476f18874b2876796:
+    resolution: {gitHosted: true, integrity: sha512-mfzup7N3GHZIDQvGODW5Z8acf+zO3qIb6vqJqmS7zNQWEUCGXEilBQI/Uqp7PvEbU+X8xFhzfA00CSOhP6hD5Q==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/686325113117873c00ca74c476f18874b2876796}
+    version: 0.8.3
+    engines: {node: '>=22.13'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': '>=3.0.0'
+      react: '>=18.0.0'
+
   dsh-file-explorer@https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/8f186671bd7e949b6a76f632fae4fb4522ee6248:
     resolution: {gitHosted: true, integrity: sha512-VF2gIC/Kk6DaD11ff7tokGvaXK+6aS+voG6dmGudhVKQ0gtstbotJnc+7ohSErrwEew/Gch1/kM58rbw6s9+/A==, tarball: https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/8f186671bd7e949b6a76f632fae4fb4522ee6248}
     version: 0.1.1
@@ -89,6 +104,9 @@ packages:
       '@deepseek-ai/dsh-client-ui-conversation': ^0.0.1-rc.1
       '@deepseek-ai/dsh-client-ui-slots': ^0.0.1-rc.1
       react: ^18.2.0
+
+  fzstd@0.1.1:
+    resolution: {integrity: sha512-dkuVSOKKwh3eas5VkJy1AW1vFpet8TA/fGmVA5krThl8YcOVE/8ZIoEA1+U1vEn5ckxxhLirSdY837azmbaNHA==}
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -146,9 +164,17 @@ snapshots:
 
   argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146: {}
 
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/686325113117873c00ca74c476f18874b2876796(@deepseek-ai/schemastery@3.18.1)(react@18.3.1):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
+      fzstd: 0.1.1
+      react: 18.3.1
+
   dsh-file-explorer@https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/8f186671bd7e949b6a76f632fae4fb4522ee6248(react@18.3.1):
     dependencies:
       react: 18.3.1
+
+  fzstd@0.1.1: {}
 
   js-tokens@4.0.0: {}
 

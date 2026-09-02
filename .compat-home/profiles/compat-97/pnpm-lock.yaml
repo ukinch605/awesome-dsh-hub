@@ -29,6 +29,9 @@ importers:
       dsh-science:
         specifier: github:biociao/dsh-science
         version: https://codeload.github.com/biociao/dsh-science/tar.gz/23767ab2f8d7bcf84a0820daa4c6ae79549da000
+      dsh-turn-delete:
+        specifier: github:hanshenmesen/dsh-turn-delete
+        version: https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8(react@18.3.1)
 
 packages:
 
@@ -176,6 +179,22 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-k5vIN+STbhM21dERDNfUu10E+HL7rV+2QwgLH4JHaGQriT/FiztTFmVwMuVHjWF/rPR8YY99tVnNnD8dE9TUYA==, tarball: https://codeload.github.com/biociao/dsh-science/tar.gz/23767ab2f8d7bcf84a0820daa4c6ae79549da000}
     version: 0.2.0
     engines: {node: '>=18'}
+
+  dsh-turn-delete@https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8:
+    resolution: {gitHosted: true, integrity: sha512-guHodfehsxTljhPUIzHBPPqFBhGnngtIFxcJsQqU0jgZeQRW8DYgDHnUCe9weqdTZylMHPdLkiVydlhLWnihWA==, tarball: https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8}
+    version: 0.1.0
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-runtime': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-conversation': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6 <0.2.0-0'
+      '@deepseek-ai/dsh-session': '>=0.1.0-rc.6 <0.2.0-0'
+      react: ^18.2.0
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -388,6 +407,10 @@ snapshots:
   dsh-science@https://codeload.github.com/biociao/dsh-science/tar.gz/23767ab2f8d7bcf84a0820daa4c6ae79549da000:
     dependencies:
       dsh-model-tier: 0.1.0
+      react: 18.3.1
+
+  dsh-turn-delete@https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8(react@18.3.1):
+    dependencies:
       react: 18.3.1
 
   emoji-regex@8.0.0: {}

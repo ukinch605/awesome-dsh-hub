@@ -11,6 +11,9 @@ importers:
       '@sanqi-normal/dsh-webui-market-plugin':
         specifier: github:Sanqi-normal/dsh-webui-market-plugin
         version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41
+      '@shengsheng/dsh-taskboard':
+        specifier: github:shengsheng90/DSH-taskboard
+        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/3528286122bbb3081b3e5ed64669957f6249f2cf
       '@zseven-w/dsh-ios':
         specifier: github:ZSeven-W/dsh-ios
         version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c
@@ -31,6 +34,35 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1-rc.1
       '@deepseek-ai/dsh-client-runtime': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
       '@deepseek-ai/dsh-client-ui-slots': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
+      react: ^18.2.0
+
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/3528286122bbb3081b3e5ed64669957f6249f2cf':
+    resolution: {gitHosted: true, integrity: sha512-xDFw1yJBBqURNvHqjjZqCzY9a99M/oKg1o88hC4SRG3KC8sJk1Pl6nf0zykUl9cj77sVNau0rpEK4iS32oNzvA==, tarball: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/3528286122bbb3081b3e5ed64669957f6249f2cf}
+    version: 0.1.4
+    engines: {node: ^22.19.0 || >=24.0.0}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/dsh-agent': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-agent-presets': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-api-remotes': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-api-session-controller': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-api-workspace-controller': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-connection': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-locale': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-conversation': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-layout': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-sidebar': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-slots': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-workspace': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-goal': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-host-webserver': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-llm': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-session': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-tools': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-typert-protocol': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-workspace': 0.1.2-alpha.2
+      '@deepseek-ai/schemastery': ^3.18.2
       react: ^18.2.0
 
   '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c':
@@ -94,9 +126,16 @@ packages:
       utf-8-validate:
         optional: true
 
+  zod@4.5.4:
+    resolution: {integrity: sha512-sC95tT5iHHH9gtpj6A81kh+NEaRAUFN+qlUPDUbRfOMvNf5QCBqsb3WgvnpVtK5Y+4UfA6KqufotuTvMGiTlsA==}
+
 snapshots:
 
   '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41': {}
+
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/3528286122bbb3081b3e5ed64669957f6249f2cf':
+    dependencies:
+      zod: 4.5.4
 
   '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c':
     dependencies:
@@ -129,3 +168,5 @@ snapshots:
   superpowers-dsh@https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663: {}
 
   ws@8.21.3: {}
+
+  zod@4.5.4: {}

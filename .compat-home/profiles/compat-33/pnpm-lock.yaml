@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@oh-dsh/desktop':
+        specifier: github:hust-open-atom-club/oh-dsh
+        version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/3c1a9b15b6e62a23a88d6c9582dddc0d202f4bc2
       '@oil-oil/dsh-vision':
         specifier: github:oil-oil/dsh-vision
         version: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7
@@ -29,8 +32,20 @@ packages:
   '@deepseek-ai/cosmokit@1.8.2':
     resolution: {integrity: sha512-muBOKtSrUKU5m/xpq8ZXWL6hQ/jgd4PhU2PqH97bcxIiLEJfNwZOGQEx4t/aS/GgxRAR+ra9pMHPMtTHU4sqqA==}
 
+  '@deepseek-ai/node-addon-landlock-run-linux-x64@0.1.1':
+    resolution: {integrity: sha512-OHAzPW2Coe/iYobAJAAA8CeVrBoKV4BnNHsgwvXwOfishxkUVSWSvdyxrZPiwYRXutpIGVrSo9zV3WOQy2euBA==}
+    engines: {node: '>=20'}
+    cpu: [x64]
+    os: [linux]
+
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
+  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/3c1a9b15b6e62a23a88d6c9582dddc0d202f4bc2':
+    resolution: {gitHosted: true, integrity: sha512-tDswpzlG6Hcw9xEt3rYEWX1+FnNwHmhVA7yth6Lb5/djEG5KRVaQPio8Fsva5Mu9Kn9EUg+yRB1JNxtgPxhNdw==, tarball: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/3c1a9b15b6e62a23a88d6c9582dddc0d202f4bc2}
+    version: 0.1.11
+    engines: {node: '>=24'}
+    hasBin: true
 
   '@oil-oil/dsh-vision@https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7':
     resolution: {gitHosted: true, integrity: sha512-S0tz+HJOiRM57Ebqu+ZjbYKKO9w+ITYZbWYxADrCD9CKrU0EM0f6fp0chYA6HOkMHEOOtM5As8eBVHLHpxBWnw==, tarball: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7}
@@ -78,6 +93,22 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
+  argparse@2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+
+  builder-util-runtime@9.7.0:
+    resolution: {integrity: sha512-g/kR520giAFYkSXTzcmF3kqQq7wi8F6N6SzeDgZrqTBN+VHdmgWOyTdD1yD7AATDId/yXLvuP34CxW46/BwCdw==}
+    engines: {node: '>=12.0.0'}
+
+  debug@4.4.3:
+    resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
   dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98:
     resolution: {gitHosted: true, integrity: sha512-Eo/JhKwo9OAZm5N24g4qatTY6Uq64D8dMg/J/gDZVbcT1BG+F3PMsB4dkIMqErBbjyvCTNXheS+H47UBz8dCVw==, tarball: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98}
     version: 0.1.6
@@ -97,11 +128,41 @@ packages:
       '@deepseek-ai/dsh-tools':
         optional: true
 
+  electron-updater@6.8.9:
+    resolution: {integrity: sha512-ZhVxM9iGONUpZGI1FxdMRgJjUFXi7AYGVa5PwKlO1tV1/4zDxQmfKpXOHVztKrd6L9rLcFjERvi1Mf2vxyTkig==}
+
+  fs-extra@10.1.0:
+    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
+    engines: {node: '>=12'}
+
+  graceful-fs@4.2.11:
+    resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
+
   inspect-webkit@0.0.5:
     resolution: {integrity: sha512-584wP/2nJO1LX74nqHP2j0tQzlK9ZTi+D0Z9qeLQjtUR/LCMXQHGX8M0vrsqBwTeGakF7q5GMFpg81nxUYlCvw==}
     hasBin: true
     peerDependencies:
       typescript: ^5
+
+  js-yaml@4.3.2:
+    resolution: {integrity: sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==}
+    hasBin: true
+
+  jsonfile@6.2.1:
+    resolution: {integrity: sha512-zwOTdL3rFQ/lRdBnntKVOX6k5cKJwEc1HdilT71BWEu7J41gXIB2MRp+vxduPSwZJPWBxEzv4yH1wYLJGUHX4Q==}
+
+  lazy-val@1.0.5:
+    resolution: {integrity: sha512-0/BnGCCfyUMkBpeDgWihanIAF9JmZhHBgUhEqzvf+adhNGLoP6TaiI5oF8oyb3I45P+PcnrqihSf01M0l0G5+Q==}
+
+  lodash.escaperegexp@4.1.2:
+    resolution: {integrity: sha512-TM9YBvyC84ZxE3rgfefxUWiQKLilstD6k7PTGt6wfbtXF8ixIJLOL3VYyV/z+ZiPLsVxAsKAFVwWlWeb2Y8Yyw==}
+
+  lodash.isequal@4.5.0:
+    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    deprecated: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
+
+  ms@2.1.3:
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
   perfect-web-clone@https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5:
     resolution: {gitHosted: true, integrity: sha512-PogS83E4MJqMynMODNxxxFgFNKplIXlauB3qsQA2MpDo1/EvziGFgUN0wK4D7B/J2QlxMcYixm+u5dbuuLlEcw==, tarball: https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5}
@@ -109,6 +170,15 @@ packages:
     peerDependencies:
       '@deepseek-ai/cordis': '*'
       '@deepseek-ai/dsh-tools': '*'
+
+  sax@1.6.1:
+    resolution: {integrity: sha512-42tBVwLWnaQvW5zc4HbZrTuWccECCZfBi92FDuwtqxasH+JbPB3/FOKb1m222K42R4WxuxzzMsTswfzgtSu64Q==}
+    engines: {node: '>=11.0.0'}
+
+  semver@7.7.4:
+    resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
+    engines: {node: '>=10'}
+    hasBin: true
 
   serve-sim@0.1.46:
     resolution: {integrity: sha512-zdKNOv+6qbdCkhtUMEbzX0ymrb2EJK54dZvs+n3YOK15LEcpapGA9/NpSSYEphpI420kTgUWqKNmkxLoWWaVzg==}
@@ -124,6 +194,13 @@ packages:
     peerDependenciesMeta:
       '@types/react':
         optional: true
+
+  tiny-typed-emitter@2.1.0:
+    resolution: {integrity: sha512-qVtvMxeXbVej0cQWKqVSSAHmKZEHAvxdF8HEUBFWts8h+xEo5m/lEiPakuyZ3BnCBjOD8i24kzNOiOLLgsSxhA==}
+
+  universalify@2.0.1:
+    resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
+    engines: {node: '>= 10.0.0'}
 
   ws@8.21.3:
     resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
@@ -141,10 +218,22 @@ snapshots:
 
   '@deepseek-ai/cosmokit@1.8.2': {}
 
+  '@deepseek-ai/node-addon-landlock-run-linux-x64@0.1.1':
+    optional: true
+
   '@deepseek-ai/schemastery@3.18.1':
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
+
+  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/3c1a9b15b6e62a23a88d6c9582dddc0d202f4bc2':
+    dependencies:
+      electron-updater: 6.8.9
+      semver: 7.7.4
+    optionalDependencies:
+      '@deepseek-ai/node-addon-landlock-run-linux-x64': 0.1.1
+    transitivePeerDependencies:
+      - supports-color
 
   '@oil-oil/dsh-vision@https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7':
     dependencies:
@@ -161,6 +250,19 @@ snapshots:
       - typescript
       - utf-8-validate
 
+  argparse@2.0.1: {}
+
+  builder-util-runtime@9.7.0:
+    dependencies:
+      debug: 4.4.3
+      sax: 1.6.1
+    transitivePeerDependencies:
+      - supports-color
+
+  debug@4.4.3:
+    dependencies:
+      ms: 2.1.3
+
   dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98: {}
 
   dsh-toy@https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c:
@@ -171,9 +273,52 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
+  electron-updater@6.8.9:
+    dependencies:
+      builder-util-runtime: 9.7.0
+      fs-extra: 10.1.0
+      js-yaml: 4.3.2
+      lazy-val: 1.0.5
+      lodash.escaperegexp: 4.1.2
+      lodash.isequal: 4.5.0
+      semver: 7.7.4
+      tiny-typed-emitter: 2.1.0
+    transitivePeerDependencies:
+      - supports-color
+
+  fs-extra@10.1.0:
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.2.1
+      universalify: 2.0.1
+
+  graceful-fs@4.2.11: {}
+
   inspect-webkit@0.0.5: {}
 
+  js-yaml@4.3.2:
+    dependencies:
+      argparse: 2.0.1
+
+  jsonfile@6.2.1:
+    dependencies:
+      universalify: 2.0.1
+    optionalDependencies:
+      graceful-fs: 4.2.11
+
+  lazy-val@1.0.5: {}
+
+  lodash.escaperegexp@4.1.2: {}
+
+  lodash.isequal@4.5.0: {}
+
+  ms@2.1.3: {}
+
   perfect-web-clone@https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5: {}
+
+  sax@1.6.1: {}
+
+  semver@7.7.4: {}
 
   serve-sim@0.1.46:
     dependencies:
@@ -189,5 +334,9 @@ snapshots:
       - utf-8-validate
 
   sonner@2.0.8: {}
+
+  tiny-typed-emitter@2.1.0: {}
+
+  universalify@2.0.1: {}
 
   ws@8.21.3: {}

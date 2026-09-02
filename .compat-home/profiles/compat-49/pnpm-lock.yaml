@@ -17,6 +17,9 @@ importers:
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
         version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/d1bd4381ed771d505db69f2a9065379f7d3165a0
+      dsh-tokenledger:
+        specifier: github:zh667/TokenLedger
+        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1(@deepseek-ai/schemastery@3.18.1)
       dsh-usage-stats:
         specifier: github:Ychris12138/dsh-usage-stats
         version: '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/f7191519d96480df8b92a462131040f9f5390861'
@@ -144,6 +147,17 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1:
+    resolution: {gitHosted: true, integrity: sha512-gyl5aoGrwbbCbUHrlL0dXB44hnejM/OCdGqRg7s6FeQ/akvJ+EB9k2MFZuUecqPht7DNq8mb3aemXEcWnJ9ZRQ==, tarball: https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1}
+    version: 0.1.1-blue.0
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/schemastery': ^3.18.1
+    peerDependenciesMeta:
+      '@deepseek-ai/schemastery':
+        optional: true
+
   echarts@6.1.0:
     resolution: {integrity: sha512-q0yaFPggC9FUdsWH4blavRWFmxdrIodbkoKNAjJudAI6CA9gNPxHtV2RcZNEepZVlk4yvBYkOkbk6HIVpIyHZA==}
 
@@ -214,6 +228,10 @@ snapshots:
       zod: 4.5.2
 
   cosmokit@1.8.1: {}
+
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1(@deepseek-ai/schemastery@3.18.1):
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.1
 
   echarts@6.1.0:
     dependencies:

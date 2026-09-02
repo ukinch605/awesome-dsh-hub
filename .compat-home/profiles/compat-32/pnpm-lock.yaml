@@ -23,6 +23,9 @@ importers:
       dsh-skill-viewer:
         specifier: github:Fishquito7/dsh-skill-viewer
         version: dsh-skill-mcp-panel@git+https://github.com/Fishquito7/dsh-skill-viewer.git#5fa5d87c68ad34337e073f82dc50767ed690eb27
+      whale-girl:
+        specifier: github:vlln/whale-girl
+        version: https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3
 
 packages:
 
@@ -551,6 +554,10 @@ packages:
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
+
+  whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3:
+    resolution: {gitHosted: true, integrity: sha512-t4V/CP0kG/sYO3uCgCc0IuCOvGF5X/vrDL3kLmBumGo5wlZju9Q3Y0RgKc9riyEPVaer1jfkk0lE1tNtHAWhOw==, tarball: https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3}
+    version: 0.1.0
 
   which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
@@ -1118,6 +1125,10 @@ snapshots:
   unpipe@1.0.0: {}
 
   vary@1.1.2: {}
+
+  whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3:
+    dependencies:
+      schemastery: 3.18.0
 
   which@2.0.2:
     dependencies:
