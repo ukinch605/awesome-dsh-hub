@@ -4,7 +4,18 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function gitRequest(url, { fetchFn = fetch, token, retries = 5 } = {}) {
+function retryAfterMs(headers, now = Date.now()) {
+  const value = headers?.get?.('retry-after');
+  if (!value) return 0;
+  const seconds = Number(value);
+  if (Number.isFinite(seconds)) return Math.max(0, seconds * 1000);
+  const date = Date.parse(value);
+  return Number.isFinite(date) ? Math.max(0, date - now) : 0;
+}
+
+async function gitRequest(url, {
+  fetchFn = fetch, token, retries = 5, sleepFn = sleep, onResponse,
+} = {}) {
   for (let attempt = 0; ; attempt++) {
     let res;
     try {
@@ -14,28 +25,33 @@ async function gitRequest(url, { fetchFn = fetch, token, retries = 5 } = {}) {
       });
     } catch {
       if (attempt < retries) {
-        await sleep(2000 * (attempt + 1));
+        await sleepFn(2000 * (attempt + 1));
         continue;
       }
       throw new Error(`GitHub API network failure for ${url}`);
     }
     if (res.status === 200) {
-      const remaining = Number(res.headers.get('x-ratelimit-remaining') ?? -1);
-      if (remaining >= 0 && remaining <= 2) {
-        const reset = Number(res.headers.get('x-ratelimit-reset') ?? 0) * 1000;
-        const wait = Math.max(0, reset - Date.now()) + 1000;
-        if (wait > 0 && wait < 120_000) await sleep(wait);
+      if (onResponse) {
+        await onResponse(res);
+      } else {
+        // Preserve the low-quota protection for non-search API requests.
+        const remaining = Number(res.headers.get('x-ratelimit-remaining') ?? -1);
+        if (remaining >= 0 && remaining <= 2) {
+          const reset = Number(res.headers.get('x-ratelimit-reset') ?? 0) * 1000;
+          const wait = Math.max(0, reset - Date.now()) + 1000;
+          if (wait > 0 && wait < 120_000) await sleepFn(wait);
+        }
       }
       return res.json();
     }
     if (res.status === 404) return null;
     if ((res.status === 403 || res.status === 429) && attempt < retries) {
       const resetSec = Number(res.headers.get('x-ratelimit-reset') ?? 0);
-      const retryAfter = Number(res.headers.get('retry-after') ?? 0);
+      const retryAfter = retryAfterMs(res.headers);
       const wait =
-        Math.max(retryAfter * 1000, resetSec ? resetSec * 1000 - Date.now() : 0) +
+        Math.max(retryAfter, resetSec ? resetSec * 1000 - Date.now() : 0) +
         1000;
-      await sleep(Math.min(Math.max(wait, 2000), 120_000));
+      await sleepFn(Math.min(Math.max(wait, 2000), 120_000));
       continue;
     }
     throw new Error(`GitHub API ${res.status} for ${url}`);
@@ -90,6 +106,11 @@ export function packageMetadata(packageJsonText) {
   }
 }
 
+// The old limit was already observed to leave work queued at 100. 512 keeps
+// traversal finite while allowing over five times that measured workload; a
+// genuinely larger or pathological topic still produces explicit leaves.
+export const DEFAULT_SEGMENT_BUDGET = 512;
+
 export async function searchTopicRepos({
   queries = ['topic:dsh-plugin', 'topic:dsh-plugin'],
   sorts = ['stars', 'updated'],
@@ -97,16 +118,33 @@ export async function searchTopicRepos({
   token,
   pageSize = 100,
   onPage,
-  segmentBudget = 100,
+  segmentBudget = DEFAULT_SEGMENT_BUDGET,
   creationStart = '2008-01-01',
   creationEnd = isoDay(Date.now()),
+  sleepFn = sleep,
+  nowFn = Date.now,
 } = {}) {
   const seen = new Map();
   const diagnostics = {
-    segmentsAttempted: 0, reportedTotal: 0, pagesFetched: 0,
+    configuredSegments: queries.length, resolvedSegments: 0,
+    segmentsAttempted: 0, resolvedLeaves: 0, resolvedLeafTotalCount: 0,
+    totalCountObservations: 0, pagesFetched: 0,
     capped: false, subdivided: false, unresolvedCappedSegments: [],
   };
+  const paceSearchResponse = async (res) => {
+    const fallback = token ? 1100 : 6500;
+    const remaining = Number(res.headers?.get?.('x-ratelimit-remaining') ?? -1);
+    const resetAt = Number(res.headers?.get?.('x-ratelimit-reset') ?? 0) * 1000;
+    let wait = Math.max(fallback, retryAfterMs(res.headers, nowFn()));
+    if (remaining >= 0 && resetAt > nowFn()) {
+      // Spread the remaining quota across its reset window instead of waiting
+      // until a request has already failed or the quota is nearly empty.
+      wait = Math.max(wait, Math.ceil((resetAt - nowFn()) / Math.max(remaining, 1)));
+    }
+    await sleepFn(Math.min(wait, 120_000));
+  };
   for (let qi = 0; qi < queries.length; qi++) {
+    const unresolvedBefore = diagnostics.unresolvedCappedSegments.length;
     const pending = [{ query: queries[qi], start: null, end: null }];
     while (pending.length) {
       const segment = pending.shift();
@@ -119,7 +157,9 @@ export async function searchTopicRepos({
       diagnostics.segmentsAttempted++;
       const requestPage = async (page) => {
         const q = `q=${encodeURIComponent(segment.query)}&sort=${sorts[qi]}&order=desc&per_page=${pageSize}&page=${page}`;
-        const data = await gitRequest(`https://api.github.com/search/repositories?${q}`, { fetchFn, token });
+        const data = await gitRequest(`https://api.github.com/search/repositories?${q}`, {
+          fetchFn, token, sleepFn, onResponse: paceSearchResponse,
+        });
         diagnostics.pagesFetched++;
         for (const item of data?.items || []) {
           const norm = normalizeRepo(item);
@@ -130,33 +170,55 @@ export async function searchTopicRepos({
         return data;
       };
       const first = await requestPage(1);
-      if (!first) continue;
-      diagnostics.reportedTotal += first.total_count || 0;
-      if ((first.total_count || 0) >= 1000) {
-        diagnostics.capped = true;
+      diagnostics.totalCountObservations++;
+      if (!first) {
+        diagnostics.unresolvedCappedSegments.push({ query: segment.query, reason: 'search-response-missing' });
+        continue;
+      }
+      const subdivideOrRecord = (data, reason) => {
         const created = /(?:^|\s)created:(\d{4}-\d{2}-\d{2})\.\.(\d{4}-\d{2}-\d{2})(?:\s|$)/.exec(segment.query);
         const start = created?.[1] || creationStart;
         const end = created?.[2] || creationEnd;
         const halves = bisectDateRange(start, end);
         if (!halves) {
-          diagnostics.unresolvedCappedSegments.push({ query: withCreatedRange(segment.query.replace(/\s+created:[^\s]+/, ''), start, end), reportedTotal: first.total_count, reason: 'one-day-saturated' });
+          diagnostics.unresolvedCappedSegments.push({
+            query: withCreatedRange(segment.query.replace(/\s+created:[^\s]+/, ''), start, end),
+            reportedTotal: data.total_count,
+            reason,
+          });
         } else {
           diagnostics.subdivided = true;
           const base = segment.query.replace(/\s+created:[^\s]+/, '');
           pending.unshift(...halves.map((range) => ({ ...range, query: withCreatedRange(base, range.start, range.end) })));
         }
+      };
+      if ((first.total_count || 0) >= 1000 || first.incomplete_results === true) {
+        const saturated = (first.total_count || 0) >= 1000;
+        if (saturated) diagnostics.capped = true;
+        subdivideOrRecord(first, first.incomplete_results === true ? 'search-incomplete' : 'one-day-saturated');
         continue;
       }
       const totalPages = Math.min(10, Math.ceil((first.total_count || 0) / pageSize) || 1);
+      let incomplete = false;
       for (let page = 2; page <= totalPages; page++) {
-        await requestPage(page);
-        // Unauthenticated search quota is 10 req/min; keep a safe pace.
-        if (!token) await sleep(6500); else await sleep(1100);
+        const data = await requestPage(page);
+        diagnostics.totalCountObservations++;
+        if (data?.incomplete_results === true) incomplete = true;
       }
+      if (incomplete) {
+        subdivideOrRecord(first, 'search-incomplete');
+        continue;
+      }
+      diagnostics.resolvedLeaves++;
+      diagnostics.resolvedLeafTotalCount += first.total_count || 0;
     }
+    if (diagnostics.unresolvedCappedSegments.length === unresolvedBefore) diagnostics.resolvedSegments++;
   }
   const repositories = [...seen.values()];
   diagnostics.uniqueRepositories = repositories.length;
+  diagnostics.completeCoverageClaimed =
+    diagnostics.resolvedSegments === diagnostics.configuredSegments &&
+    diagnostics.unresolvedCappedSegments.length === 0;
   Object.defineProperty(repositories, 'diagnostics', { value: diagnostics, enumerable: false });
   return repositories;
 }

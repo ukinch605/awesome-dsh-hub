@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import { bisectDateRange, fetchRawPackageJson, fetchRawPackageJsonResult, hasBundlePatch, normalizeRepo, searchTopicRepos } from '../lib/github.js';
 import { SEARCH_QUERIES } from '../lib/constants.js';
 
+const noSleep = async () => {};
+
 test('hasBundlePatch: accepts declared patch', () => {
   assert.equal(hasBundlePatch('{"dsh":{"bundle":{"patch":{}}}}'), true);
   assert.equal(hasBundlePatch('{"dsh":{"bundle":{"patch":true}}}'), true);
@@ -68,7 +70,7 @@ test('searchTopicRepos: paginates, dedupes across queries, respects page cap', a
       json: async () => ({ total_count: 150, items }),
     };
   };
-  const repos = await searchTopicRepos({ fetchFn: fakeFetch, token: 't', pageSize: 100 });
+  const repos = await searchTopicRepos({ fetchFn: fakeFetch, token: 't', pageSize: 100, sleepFn: noSleep });
   assert.equal(calls, 4); // 2 queries x 2 pages (150 total -> 2 pages)
   assert.equal(repos.length, 4); // s1/s2 + u1/u2, s1==u1 deduped by full_name
 });
@@ -89,6 +91,7 @@ for (const stars of ['stars:0', 'stars:1']) {
     const repos = await searchTopicRepos({
       queries: [`topic:dsh-plugin ${stars}`], sorts: ['stars'], token: 't',
       creationStart: '2026-01-01', creationEnd: '2026-01-02', segmentBudget: 10,
+      sleepFn: noSleep,
       fetchFn: async (url) => {
         const query = new URL(url).searchParams.get('q');
         requested.push(query);
@@ -107,13 +110,109 @@ for (const stars of ['stars:0', 'stars:1']) {
 }
 
 test('searchTopicRepos: unresolved one-day saturation is explicit', async () => {
-  const repos = await searchTopicRepos({ queries: ['topic:dsh-plugin stars:1 created:2026-01-01..2026-01-01'], sorts: ['stars'], token: 't', fetchFn: async () => ({ status: 200, headers: new Map(), json: async () => ({ total_count: 1000, items: [] }) }) });
+  const repos = await searchTopicRepos({ queries: ['topic:dsh-plugin stars:1 created:2026-01-01..2026-01-01'], sorts: ['stars'], token: 't', sleepFn: noSleep, fetchFn: async () => ({ status: 200, headers: new Map(), json: async () => ({ total_count: 1000, items: [] }) }) });
   assert.equal(repos.diagnostics.unresolvedCappedSegments[0].reason, 'one-day-saturated');
+  assert.equal(repos.diagnostics.completeCoverageClaimed, false);
 });
 
 test('searchTopicRepos: segment budget exhaustion is explicit', async () => {
-  const repos = await searchTopicRepos({ queries: ['topic:dsh-plugin stars:1'], sorts: ['stars'], token: 't', creationStart: '2026-01-01', creationEnd: '2026-01-02', segmentBudget: 1, fetchFn: async () => ({ status: 200, headers: new Map(), json: async () => ({ total_count: 1000, items: [] }) }) });
+  const repos = await searchTopicRepos({ queries: ['topic:dsh-plugin stars:1'], sorts: ['stars'], token: 't', creationStart: '2026-01-01', creationEnd: '2026-01-02', segmentBudget: 1, sleepFn: noSleep, fetchFn: async () => ({ status: 200, headers: new Map(), json: async () => ({ total_count: 1000, items: [] }) }) });
   assert.ok(repos.diagnostics.unresolvedCappedSegments.every((item) => item.reason === 'segment-budget-exhausted'));
+  assert.equal(repos.diagnostics.completeCoverageClaimed, false);
+});
+
+test('searchTopicRepos: default traversal continues beyond the former 100-segment boundary', async () => {
+  const repos = await searchTopicRepos({
+    queries: ['topic:dsh-plugin stars:0'], sorts: ['stars'], token: 't', sleepFn: noSleep,
+    creationStart: '2026-01-01', creationEnd: '2026-07-19',
+    fetchFn: async (url) => {
+      const query = new URL(url).searchParams.get('q');
+      const match = /created:(\d{4}-\d{2}-\d{2})\.\.(\d{4}-\d{2}-\d{2})/.exec(query);
+      if (!match) return { status: 200, headers: new Map(), json: async () => ({ total_count: 1000, items: [] }) };
+      const days = (Date.parse(match[2]) - Date.parse(match[1])) / 86_400_000 + 1;
+      return { status: 200, headers: new Map(), json: async () => ({ total_count: days > 4 ? 1000 : days, items: [] }) };
+    },
+  });
+  assert.ok(repos.diagnostics.segmentsAttempted > 100);
+  assert.equal(repos.diagnostics.completeCoverageClaimed, true);
+  assert.deepEqual(repos.diagnostics.unresolvedCappedSegments, []);
+});
+
+test('searchTopicRepos: saturated page-one subdivision requests are rate-aware', async () => {
+  const waits = [];
+  const requested = [];
+  await searchTopicRepos({
+    queries: ['topic:dsh-plugin stars:0'], sorts: ['stars'], token: 't',
+    creationStart: '2026-01-01', creationEnd: '2026-01-02',
+    nowFn: () => 1_000_000,
+    sleepFn: async (ms) => waits.push(ms),
+    fetchFn: async (url) => {
+      const query = new URL(url).searchParams.get('q');
+      requested.push(query);
+      return {
+        status: 200,
+        headers: new Map([['x-ratelimit-remaining', '2'], ['x-ratelimit-reset', '1003']]),
+        json: async () => ({ total_count: query.includes('created:') ? 0 : 1000, items: [] }),
+      };
+    },
+  });
+  assert.equal(requested.length, 3);
+  assert.deepEqual(waits, [1_000_000, 1_000_000, 1_000_000].map(() => 1500));
+});
+
+test('searchTopicRepos: diagnostics count only uncapped disjoint leaves, not parents and children', async () => {
+  const repos = await searchTopicRepos({
+    queries: ['topic:dsh-plugin stars:0'], sorts: ['stars'], token: 't', sleepFn: noSleep,
+    creationStart: '2026-01-01', creationEnd: '2026-01-02',
+    fetchFn: async (url) => {
+      const query = new URL(url).searchParams.get('q');
+      const total = !query.includes('created:') ? 1000 : query.includes('01..2026-01-01') ? 4 : 6;
+      return { status: 200, headers: new Map(), json: async () => ({ total_count: total, items: [] }) };
+    },
+  });
+  assert.equal(repos.diagnostics.totalCountObservations, 3);
+  assert.equal(repos.diagnostics.resolvedLeafTotalCount, 10);
+  assert.equal(repos.diagnostics.uniqueRepositories, 0);
+  assert.equal('reportedTotal' in repos.diagnostics, false);
+  assert.equal(repos.diagnostics.completeCoverageClaimed, true);
+});
+
+test('searchTopicRepos: incomplete page one subdivides and cannot resolve its parent', async () => {
+  const requested = [];
+  const repos = await searchTopicRepos({
+    queries: ['topic:dsh-plugin stars:0'], sorts: ['stars'], token: 't', sleepFn: noSleep,
+    creationStart: '2026-01-01', creationEnd: '2026-01-02',
+    fetchFn: async (url) => {
+      const query = new URL(url).searchParams.get('q');
+      requested.push(query);
+      return {
+        status: 200, headers: new Map(),
+        json: async () => ({ total_count: query.includes('created:') ? 2 : 10, incomplete_results: !query.includes('created:'), items: [] }),
+      };
+    },
+  });
+  assert.equal(requested.length, 3);
+  assert.equal(repos.diagnostics.resolvedLeaves, 2);
+  assert.equal(repos.diagnostics.resolvedLeafTotalCount, 4);
+  assert.equal(repos.diagnostics.completeCoverageClaimed, true);
+});
+
+test('searchTopicRepos: an incomplete later page leaves a one-day query unresolved', async () => {
+  const repos = await searchTopicRepos({
+    queries: ['topic:dsh-plugin stars:0 created:2026-01-01..2026-01-01'],
+    sorts: ['stars'], token: 't', sleepFn: noSleep, pageSize: 100,
+    fetchFn: async (url) => {
+      const page = Number(new URL(url).searchParams.get('page'));
+      return {
+        status: 200, headers: new Map(),
+        json: async () => ({ total_count: 150, incomplete_results: page === 2, items: [] }),
+      };
+    },
+  });
+  assert.equal(repos.diagnostics.resolvedLeaves, 0);
+  assert.equal(repos.diagnostics.resolvedLeafTotalCount, 0);
+  assert.equal(repos.diagnostics.unresolvedCappedSegments[0].reason, 'search-incomplete');
+  assert.equal(repos.diagnostics.completeCoverageClaimed, false);
 });
 
 test('fetchRawPackageJson: uses raw first even when a token is set', async () => {
