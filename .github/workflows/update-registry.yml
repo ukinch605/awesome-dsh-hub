@@ -32,6 +32,12 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: npm run update
 
+      - name: Generate shadow Registry v3
+        run: |
+          if ! node scripts/generate-v3-shadow.js; then
+            echo "::warning::Shadow Registry v3 generation failed; preserving authoritative Registry v2 refresh."
+          fi
+
       - name: Generate artifacts
         run: npm run generate
 
