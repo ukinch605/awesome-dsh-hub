@@ -87,10 +87,7 @@ function failedTopologyScan(repo, reason) {
   };
 }
 
-async function updatePackageTopology({ eligible, token, generatedAt }) {
-  const previousState = fs.existsSync(PACKAGE_TOPOLOGY_STATE_FILE)
-    ? JSON.parse(fs.readFileSync(PACKAGE_TOPOLOGY_STATE_FILE, 'utf8'))
-    : { schemaVersion: PACKAGE_TOPOLOGY_STATE_SCHEMA_VERSION, repositories: [] };
+async function updatePackageTopology({ eligible, token, generatedAt, previousState }) {
   const selection = selectTopologyScanTargets(eligible, previousState, {
     limit: TOPOLOGY_SCAN_LIMIT,
     staleDays: TOPOLOGY_STALE_DAYS,
@@ -188,12 +185,25 @@ async function main() {
   // scanner failure is isolated so it cannot freeze the public Registry v2
   // refresh. The persistent state lets the initial backfill converge over
   // multiple hourly runs instead of full-rescanning the ecosystem every hour.
-  let topologyState = fs.existsSync(PACKAGE_TOPOLOGY_STATE_FILE)
-    ? JSON.parse(fs.readFileSync(PACKAGE_TOPOLOGY_STATE_FILE, 'utf8'))
-    : { schemaVersion: PACKAGE_TOPOLOGY_STATE_SCHEMA_VERSION, repositories: [] };
+  let topologyState = null;
   let topologyDiagnostics;
   try {
-    const topology = await updatePackageTopology({ eligible, token, generatedAt });
+    let previousTopologyState = {
+      schemaVersion: PACKAGE_TOPOLOGY_STATE_SCHEMA_VERSION,
+      repositories: [],
+    };
+    if (fs.existsSync(PACKAGE_TOPOLOGY_STATE_FILE)) {
+      previousTopologyState = JSON.parse(
+        fs.readFileSync(PACKAGE_TOPOLOGY_STATE_FILE, 'utf8'),
+      );
+      if (previousTopologyState?.schemaVersion !== PACKAGE_TOPOLOGY_STATE_SCHEMA_VERSION
+        || !Array.isArray(previousTopologyState?.repositories)) {
+        throw new Error('package topology state has an unsupported schema');
+      }
+    }
+    const topology = await updatePackageTopology({
+      eligible, token, generatedAt, previousState: previousTopologyState,
+    });
     topologyState = topology.state;
     topologyDiagnostics = topology.diagnostics;
   } catch (error) {
@@ -355,7 +365,9 @@ async function main() {
   );
   fs.writeFileSync(EVENTS_FILE, `${JSON.stringify(events, null, 2)}\n`);
   fs.writeFileSync(DISCOVERY_STATE_FILE, `${JSON.stringify(discovery.state, null, 2)}\n`);
-  fs.writeFileSync(PACKAGE_TOPOLOGY_STATE_FILE, `${JSON.stringify(topologyState, null, 2)}\n`);
+  if (topologyState) {
+    fs.writeFileSync(PACKAGE_TOPOLOGY_STATE_FILE, `${JSON.stringify(topologyState, null, 2)}\n`);
+  }
 
   // Changelog + last-run snapshot feed the weekly digest.
   const lastRunFile = path.join(ROOT, 'registry', 'last-run.json');
