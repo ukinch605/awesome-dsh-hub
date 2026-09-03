@@ -11,6 +11,15 @@ import {
   verifyRepositoryAdmission,
 } from './lib/github.js';
 import { reconcileDiscovery } from './lib/discovery-state.js';
+import { scanObservedRepository } from './lib/package-topology.js';
+import {
+  applyTopologyScanResults,
+  DEFAULT_TOPOLOGY_SCAN_LIMIT,
+  DEFAULT_TOPOLOGY_STALE_DAYS,
+  PACKAGE_TOPOLOGY_STATE_SCHEMA_VERSION,
+  selectTopologyScanTargets,
+  summarizeTopologyState,
+} from './lib/package-topology-state.js';
 import { applyOverrides, loadOverrides, pruneOverrides } from './lib/overrides.js';
 import { pruneCompatResults } from './lib/validate.js';
 import { preserveTransientEntry } from './lib/registry-state.js';
@@ -22,6 +31,29 @@ const REGISTRY_FILE = path.join(ROOT, 'registry', 'plugins.json');
 const META_FILE = path.join(ROOT, 'registry', 'meta.json');
 const EVENTS_FILE = path.join(ROOT, 'registry', 'events.json');
 const DISCOVERY_STATE_FILE = path.join(ROOT, 'registry', 'discovery-state.json');
+const PACKAGE_TOPOLOGY_STATE_FILE = path.join(ROOT, 'registry', 'package-topology-state.json');
+
+function boundedInt(value, fallback, { min = 0, max = Number.MAX_SAFE_INTEGER } = {}) {
+  const parsed = Number(value);
+  if (!Number.isInteger(parsed)) return fallback;
+  return Math.min(max, Math.max(min, parsed));
+}
+
+const TOPOLOGY_SCAN_LIMIT = boundedInt(
+  process.env.PACKAGE_TOPOLOGY_SCAN_LIMIT,
+  DEFAULT_TOPOLOGY_SCAN_LIMIT,
+  { min: 0, max: 300 },
+);
+const TOPOLOGY_MANIFEST_LIMIT = boundedInt(
+  process.env.PACKAGE_TOPOLOGY_MANIFEST_LIMIT,
+  100,
+  { min: 1, max: 500 },
+);
+const TOPOLOGY_STALE_DAYS = boundedInt(
+  process.env.PACKAGE_TOPOLOGY_STALE_DAYS,
+  DEFAULT_TOPOLOGY_STALE_DAYS,
+  { min: 1, max: 365 },
+);
 
 function mapLimit(items, limit, fn) {
   const results = new Array(items.length);
@@ -37,6 +69,68 @@ function mapLimit(items, limit, fn) {
     worker,
   );
   return Promise.all(workers).then(() => results);
+}
+
+function failedTopologyScan(repo, reason) {
+  return {
+    repositoryId: String(repo.id),
+    repo: repo.full_name,
+    defaultBranch: repo.default_branch,
+    topicPresent: Array.isArray(repo.topics) ? repo.topics.includes('dsh-plugin') : null,
+    complete: false,
+    incompleteReasons: [reason],
+    treeTruncated: false,
+    candidateManifestCount: 0,
+    manifestsExamined: 0,
+    manifests: [],
+    stats: { apiRequests: 0, rawFetches: 0 },
+  };
+}
+
+async function updatePackageTopology({ eligible, token, generatedAt }) {
+  const previousState = fs.existsSync(PACKAGE_TOPOLOGY_STATE_FILE)
+    ? JSON.parse(fs.readFileSync(PACKAGE_TOPOLOGY_STATE_FILE, 'utf8'))
+    : { schemaVersion: PACKAGE_TOPOLOGY_STATE_SCHEMA_VERSION, repositories: [] };
+  const selection = selectTopologyScanTargets(eligible, previousState, {
+    limit: TOPOLOGY_SCAN_LIMIT,
+    staleDays: TOPOLOGY_STALE_DAYS,
+    now: Date.parse(generatedAt),
+  });
+  const scans = [];
+  console.log(
+    `dsh-hub: package topology ${selection.selected.length}/${eligible.length} selected `
+    + `(limit=${TOPOLOGY_SCAN_LIMIT}, pending=${selection.diagnostics.currentInventoryPending})`,
+  );
+  for (let i = 0; i < selection.selected.length; i++) {
+    const repo = selection.selected[i];
+    try {
+      const scan = await scanObservedRepository(repo, {
+        token,
+        manifestLimit: TOPOLOGY_MANIFEST_LIMIT,
+      });
+      scans.push(scan);
+      const nested = scan.manifests.filter((manifest) => manifest.kind === 'bundle' && !manifest.root).length;
+      process.stdout.write(
+        `  topology [${i + 1}/${selection.selected.length}] ${repo.full_name}: `
+        + `${scan.complete ? 'complete' : 'incomplete'} nestedBundles=${nested}\n`,
+      );
+    } catch (error) {
+      console.warn(`  topology ${repo.full_name}: isolated failure (${error?.message || error})`);
+      scans.push(failedTopologyScan(repo, 'scan-unhandled-transient'));
+    }
+  }
+  const state = applyTopologyScanResults(previousState, selection.selected, scans, generatedAt);
+  const diagnostics = summarizeTopologyState(
+    state,
+    eligible,
+    scans,
+    {
+      ...selection.diagnostics,
+      manifestLimitPerRepository: TOPOLOGY_MANIFEST_LIMIT,
+      staleRevalidationDays: TOPOLOGY_STALE_DAYS,
+    },
+  );
+  return { state, diagnostics };
 }
 
 async function main() {
@@ -89,8 +183,34 @@ async function main() {
     if (!r.default_branch) { counts.noBranch++; if (wasListed) observedConfirmedRemovalIds.add(String(r.id)); return false; }
     return true;
   });
-  console.log(`dsh-hub: checking package.json manifests (${eligible.length} repos)…`);
 
+  // Package topology is shadow evidence only. It is bounded and any unexpected
+  // scanner failure is isolated so it cannot freeze the public Registry v2
+  // refresh. The persistent state lets the initial backfill converge over
+  // multiple hourly runs instead of full-rescanning the ecosystem every hour.
+  let topologyState = fs.existsSync(PACKAGE_TOPOLOGY_STATE_FILE)
+    ? JSON.parse(fs.readFileSync(PACKAGE_TOPOLOGY_STATE_FILE, 'utf8'))
+    : { schemaVersion: PACKAGE_TOPOLOGY_STATE_SCHEMA_VERSION, repositories: [] };
+  let topologyDiagnostics;
+  try {
+    const topology = await updatePackageTopology({ eligible, token, generatedAt });
+    topologyState = topology.state;
+    topologyDiagnostics = topology.diagnostics;
+  } catch (error) {
+    console.warn(`dsh-hub: package topology isolated failure: ${error?.message || error}`);
+    topologyDiagnostics = {
+      schemaVersion: PACKAGE_TOPOLOGY_STATE_SCHEMA_VERSION,
+      semantics: 'incremental-shadow-package-topology',
+      status: 'isolated-failure',
+      error: String(error?.message || error).slice(0, 500),
+      scanLimit: TOPOLOGY_SCAN_LIMIT,
+      manifestLimitPerRepository: TOPOLOGY_MANIFEST_LIMIT,
+      staleRevalidationDays: TOPOLOGY_STALE_DAYS,
+      completeCoverageClaimed: false,
+    };
+  }
+
+  console.log(`dsh-hub: checking package.json manifests (${eligible.length} repos)…`);
   const rawTexts = await mapLimit(eligible, 12, (r) =>
     fetchRawPackageJsonResult(r.owner, r.name, r.default_branch, { token }),
   );
@@ -226,6 +346,7 @@ async function main() {
           unresolvedCappedSegments: candidates.diagnostics?.unresolvedCappedSegments || [],
           completeCoverageClaimed: Boolean(candidates.diagnostics?.completeCoverageClaimed),
         },
+        packageTopology: topologyDiagnostics,
         queries: SEARCH_QUERIES.map((q, i) => `${q}&sort=${SEARCH_SORTS[i]}`),
       },
       null,
@@ -234,6 +355,7 @@ async function main() {
   );
   fs.writeFileSync(EVENTS_FILE, `${JSON.stringify(events, null, 2)}\n`);
   fs.writeFileSync(DISCOVERY_STATE_FILE, `${JSON.stringify(discovery.state, null, 2)}\n`);
+  fs.writeFileSync(PACKAGE_TOPOLOGY_STATE_FILE, `${JSON.stringify(topologyState, null, 2)}\n`);
 
   // Changelog + last-run snapshot feed the weekly digest.
   const lastRunFile = path.join(ROOT, 'registry', 'last-run.json');
@@ -276,7 +398,13 @@ async function main() {
   );
   fs.writeFileSync(changelogFile, `${JSON.stringify(changelog, null, 2)}\n`);
 
-  console.log(`dsh-hub: done. admitted=${counts.admitted} skipped={archived:${counts.archived}, fork:${counts.fork}, noBranch:${counts.noBranch}, manifestMissing:${counts.manifestMissing}, fetchFailed:${counts.fetchFailed}} manifestFetch={raw:${counts.rawFetches}, apiFallbacks:${counts.apiFallbacks}, recovered:${counts.fallbackRecovered}, transient:${counts.fetchFailed}} pruned={compat:${prunedCompat}, overrides:${prunedOverrides}}`);
+  console.log(
+    `dsh-hub: done. admitted=${counts.admitted} `
+    + `skipped={archived:${counts.archived}, fork:${counts.fork}, noBranch:${counts.noBranch}, manifestMissing:${counts.manifestMissing}, fetchFailed:${counts.fetchFailed}} `
+    + `manifestFetch={raw:${counts.rawFetches}, apiFallbacks:${counts.apiFallbacks}, recovered:${counts.fallbackRecovered}, transient:${counts.fetchFailed}} `
+    + `topology={scanned:${topologyDiagnostics?.scannedThisRun || 0}, currentComplete:${topologyDiagnostics?.currentInventoryComplete || 0}, pending:${topologyDiagnostics?.currentInventoryPending ?? 'unknown'}, api:${topologyDiagnostics?.apiRequestsThisRun || 0}} `
+    + `pruned={compat:${prunedCompat}, overrides:${prunedOverrides}}`,
+  );
 }
 
 main().catch((err) => {
