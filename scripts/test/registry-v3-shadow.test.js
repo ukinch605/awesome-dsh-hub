@@ -143,3 +143,27 @@ test('a unique same-repo package path move preserves pluginId', () => {
   assert.equal(second.registry.entries[0].previousPackagePath, nestedSurface.path);
   assert.equal(second.migrationReport.pathMovesReconciled, 1);
 });
+
+test('ambiguous same-name path replacements do not reuse one prior pluginId', () => {
+  const first = generateShadowRegistryV3({
+    v2Entries: [],
+    topologyState: topology([nestedSurface]),
+    generatedAt,
+  });
+  const replacements = [
+    { ...nestedSurface, path: 'plugins/tool-a/package.json' },
+    { ...nestedSurface, path: 'plugins/tool-b/package.json' },
+  ];
+  const second = generateShadowRegistryV3({
+    v2Entries: [],
+    topologyState: topology(replacements),
+    identityState: first.identityState,
+    generatedAt: '2026-09-03T23:00:00.000Z',
+  });
+  const active = second.registry.entries;
+  assert.equal(active.length, 2);
+  assert.equal(new Set(active.map((entry) => entry.pluginId)).size, 2);
+  assert.ok(active.every((entry) => entry.identityStatus === 'ambiguous-surface'));
+  assert.ok(active.every((entry) => !('previousPackagePath' in entry)));
+  assert.equal(second.migrationReport.pathMovesReconciled, 0);
+});
