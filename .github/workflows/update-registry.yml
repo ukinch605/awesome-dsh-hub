@@ -32,6 +32,9 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: npm run update
 
+      - name: Generate shadow Registry v3
+        run: node scripts/generate-v3-shadow.js
+
       - name: Generate artifacts
         run: npm run generate
 
