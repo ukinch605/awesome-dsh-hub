@@ -16,6 +16,8 @@ function rootEntry(overrides = {}) {
     packageName: '@example/root',
     packageVersion: '1.0.0',
     repoPushedAt: '2026-09-03T20:00:00Z',
+    firstSeenAt: '2026-08-01T00:00:00Z',
+    lastSeenAt: '2026-09-03T21:00:00Z',
     lastManifestCheckedAt: '2026-09-03T21:00:00Z',
     discoverySource: 'github-topic:dsh-plugin',
     url: 'https://github.com/Example/mono',
@@ -36,6 +38,8 @@ function topology(surfaces) {
     repositories: [{
       repositoryId: '42',
       repo: 'Example/mono',
+      defaultBranch: 'main',
+      repoPushedAt: '2026-09-03T20:00:00Z',
       lastCompleteScanAt: '2026-09-03T21:30:00Z',
       bundleSurfaces: surfaces,
     }],
@@ -63,12 +67,15 @@ test('v2 root carries lifecycle/install evidence while nested candidate remains 
   assert.equal(result.registry.entries.length, 2);
   const root = result.registry.entries.find((entry) => entry.packagePath === 'package.json');
   const nested = result.registry.entries.find((entry) => entry.packagePath === 'packages/tool/package.json');
+  assert.equal(root.firstSeenAt, '2026-08-01T00:00:00Z');
+  assert.equal(root.lastSeenAt, '2026-09-03T21:00:00Z');
   assert.equal(root.distribution.status, 'verified-repo-install');
   assert.equal(root.installProbe.status, 'installed');
   assert.equal(root.categories[0], 'agent');
   assert.equal(nested.distribution.status, 'unknown');
   assert.equal(nested.distribution.installCommand, null);
   assert.equal('installProbe' in nested, false);
+  assert.equal('firstSeenAt' in nested, false);
   assert.equal(nested.observationSemantics, 'plugin_first_observed');
   assert.equal(result.migrationReport.v2RootEntriesCarried, 1);
   assert.equal(result.migrationReport.nestedCandidates, 1);
@@ -111,18 +118,18 @@ test('duplicate and placeholder package names remain representable without ident
   assert.equal(isPlaceholderPackageName('{{PKG_NAME}}'), true);
 });
 
-test('nested-only topology candidates are listed without fabricated repo install evidence', () => {
+test('nested-only topology candidates keep repository locators without fabricated install evidence', () => {
   const result = generateShadowRegistryV3({
     v2Entries: [],
     topologyState: topology([nestedSurface]),
-    observed: [{
-      id: 42, full_name: 'Example/mono', default_branch: 'main', pushed_at: '2026-09-03T20:00:00Z',
-      html_url: 'https://github.com/Example/mono', description: 'nested only', stars: 3, license: 'MIT',
-    }],
     generatedAt,
   });
   assert.equal(result.registry.entries.length, 1);
+  assert.equal(result.registry.entries[0].repo, 'Example/mono');
+  assert.equal(result.registry.entries[0].defaultBranch, 'main');
+  assert.equal(result.registry.entries[0].repoPushedAt, '2026-09-03T20:00:00Z');
   assert.equal(result.registry.entries[0].distribution.status, 'unknown');
+  assert.equal(result.registry.entries[0].distribution.installCommand, null);
   assert.equal(result.migrationReport.nestedOnlyCandidates, 1);
 });
 
