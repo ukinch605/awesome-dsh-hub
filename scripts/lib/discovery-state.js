@@ -47,6 +47,11 @@ export async function reconcileDiscovery({
     if (result?.kind === 'confirmed-removed') {
       confirmedRemovalIds.add(candidate.repositoryId);
       next.delete(candidate.repositoryId);
+    } else {
+      // A checked repository that remains eligible (or could not be checked
+      // conclusively) yields its slot to later candidates on the next run.
+      // It must accumulate two new search misses before being checked again.
+      next.get(candidate.repositoryId).consecutiveDiscoveryMisses = 0;
     }
   }
   const retainedPrevious = previous.filter((plugin) => {

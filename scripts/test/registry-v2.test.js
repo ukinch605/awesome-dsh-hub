@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   appendEvents,
+  annotateLegacyRemovalEvents,
   generateEvents,
   migrateInstallProbeStatus,
   migrateV1Entry,
@@ -45,6 +46,16 @@ test('events cover additions/removals and ledger append is idempotent', () => {
   const twice = appendEvents(once, events);
   assert.deepEqual(twice, once);
   assert.deepEqual(validateEventLedger(twice), []);
+});
+
+test('legacy removal annotation preserves its hashed id and changes body', () => {
+  const changes = { repo: 'owner/plugin', reason: 'discovery-miss' };
+  const event = { id: 'historical-hash', type: 'plugin_removed', repositoryId: '42', occurredAt: at, changes };
+  const annotated = annotateLegacyRemovalEvents({ schemaVersion: 1, events: [event] }).events[0];
+  assert.equal(annotated.id, event.id);
+  assert.deepEqual(annotated.changes, changes);
+  assert.equal(annotated.changes, changes);
+  assert.equal(annotated.confirmation, 'unconfirmed-discovery-derived');
 });
 
 test('preserved transient state emits no false removal or version event', () => {

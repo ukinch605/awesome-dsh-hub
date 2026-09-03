@@ -75,8 +75,10 @@ export function generateEvents(previous, current, occurredAt, { suppressMigratio
 export function annotateLegacyRemovalEvents(ledger) {
   return {
     ...ledger,
-    events: (ledger.events || []).map((event) => event.type === 'plugin_removed' && !event.changes?.confirmation
-      ? { ...event, changes: { ...event.changes, confirmation: 'unconfirmed-discovery-derived' } }
+    // `changes` participates in the historical event hash. Keep that hashed
+    // body byte-for-byte equivalent and attach migration context separately.
+    events: (ledger.events || []).map((event) => event.type === 'plugin_removed' && !event.confirmation
+      ? { ...event, confirmation: 'unconfirmed-discovery-derived' }
       : event),
   };
 }
