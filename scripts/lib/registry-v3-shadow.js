@@ -113,11 +113,13 @@ function identityForSurface({
   };
 }
 
-function repoMetadata(repo, rootEntry) {
+function repoMetadata(repo, rootEntry, topology) {
   return {
-    repo: rootEntry?.repo ?? repo?.full_name ?? repo?.repo ?? null,
-    defaultBranch: rootEntry?.defaultBranch ?? repo?.default_branch ?? repo?.defaultBranch ?? null,
-    repoPushedAt: rootEntry?.repoPushedAt ?? repo?.pushed_at ?? repo?.repoPushedAt ?? null,
+    repo: rootEntry?.repo ?? repo?.full_name ?? repo?.repo ?? topology?.repo ?? null,
+    defaultBranch: rootEntry?.defaultBranch
+      ?? repo?.default_branch ?? repo?.defaultBranch ?? topology?.defaultBranch ?? null,
+    repoPushedAt: rootEntry?.repoPushedAt
+      ?? repo?.pushed_at ?? repo?.repoPushedAt ?? topology?.repoPushedAt ?? null,
     url: rootEntry?.url ?? repo?.html_url ?? null,
     description: rootEntry?.description ?? (repo?.description || '').trim(),
     stars: rootEntry?.stars ?? repo?.stars ?? null,
@@ -219,7 +221,7 @@ export function generateShadowRegistryV3({
         if (!rootEntry) migration.nestedOnlyCandidates++;
       }
 
-      const metadata = repoMetadata(repo, rootEntry);
+      const metadata = repoMetadata(repo, rootEntry, topology);
       entries.push({
         schemaVersion: REGISTRY_V3_SHADOW_SCHEMA_VERSION,
         pluginId: identity.pluginId,
@@ -233,6 +235,10 @@ export function generateShadowRegistryV3({
         repositoryDirectory: surface.repositoryDirectory ?? null,
         firstObservedAt: identity.firstObservedAt,
         lastObservedAt: generatedAt,
+        ...(isRoot && rootEntry ? {
+          firstSeenAt: rootEntry.firstSeenAt ?? null,
+          lastSeenAt: rootEntry.lastSeenAt ?? null,
+        } : {}),
         lastManifestCheckedAt: isRoot && rootEntry
           ? rootEntry.lastManifestCheckedAt ?? topology?.lastCompleteScanAt ?? generatedAt
           : topology?.lastCompleteScanAt ?? generatedAt,
