@@ -1,19 +1,36 @@
 # Codex Cloud operations
 
-This document records the verified operating procedure for cloud-based development of `ukinch605/awesome-dsh-hub`. It contains no credentials, tokens, email addresses, or other private information.
+This document records the verified operating procedure for the Codex Cloud execution leg of `ukinch605/awesome-dsh-hub`. It contains no credentials, tokens, email addresses, or other private information.
+
+Codex Cloud is not the project control plane and is not the default route for every repository task. ChatGPT is the project-level authoritative Brain and Control Plane. Capability routing decides whether a task can be completed with current ChatGPT-native or connected capabilities, or whether sustained coding should be delegated to Codex Cloud.
+
+## When to use Codex Cloud
+
+Use Codex Cloud when the task requires sustained repository execution such as:
+
+- multi-file implementation;
+- unknown-root-cause debugging;
+- refactoring;
+- shell-heavy work;
+- iterative test/build loops.
+
+Do not use Codex merely because a task touches GitHub or changes a file. When the current ChatGPT runtime has an authorized capability that is sufficient for investigation, PR/CI review, bounded GitHub actions, data analysis, or a small deterministic edit, prefer that direct capability.
+
+Codex task summaries and self-reported test results are evidence candidates. Final project acceptance belongs to ChatGPT after independent reacquisition of authoritative evidence such as the real GitHub commit, diff, CI result, generated data, or production state.
 
 ## What Codex Cloud is
 
-Codex Cloud is the repository-aware development environment used to run a task, inspect and edit a checked-out repository, review the resulting diff, and hand the change off as a pull request.
+Codex Cloud is a repository-aware development environment that can run a task, inspect and edit a checked-out repository, execute tests, and hand the resulting change off as a pull request.
 
-It is distinct from the following tools:
+It is distinct from the following capability providers:
 
-- **ChatGPT Work** can help analyze or draft a change, but its patch-export workflow is not the normal repository development path.
-- **Ordinary GitHub connector access in ChatGPT** can expose authorized repository context, but it is not a general repository-write or pull-request workflow.
-- **Cloud Browser** is browser automation, not the primary coding environment.
+- **ChatGPT GitHub access** may expose read and write operations depending on the current tool surface, provider connection, repository authorization, and operation permissions. Availability must be established at runtime rather than assumed globally.
+- **Web/Search** is suitable for public evidence acquisition and documentation research, not repository shell execution.
+- **ChatGPT Work** is a separate product workspace and must not be assumed to share the Codex Cloud checkout or execution backend.
+- **Cloud Browser** is browser automation, not the primary repository coding environment.
 - **GitHub Codespaces** is a separate hosted development environment and is not required in the normal Codex Cloud path.
 
-Access to a repository through one of these tools does not imply that another tool is installed, authorized, or able to write to the repository.
+Access through one provider does not imply that another provider is installed, authorized, or able to perform the same operation.
 
 ## Identities and GitHub App installation
 
@@ -22,7 +39,7 @@ The roles are intentionally separate:
 - `ukinch605` is the repository owner/admin identity.
 - `SIMON-WORLD` is the Codex Cloud working/collaborator identity.
 
-On the owner side, install the ChatGPT Codex Connector GitHub App on `ukinch605` and authorize the `awesome-dsh-hub` repository. Repository selection must include `ukinch605/awesome-dsh-hub`; broad ordinary ChatGPT connector access is not a substitute for this installation.
+On the owner side, install the ChatGPT Codex Connector GitHub App on `ukinch605` and authorize the `awesome-dsh-hub` repository.
 
 Keep the owner/admin and collaborator browser identities isolated, such as in separate browser profiles or sessions. The setup must not depend on logging both GitHub accounts into one browser.
 
@@ -30,7 +47,7 @@ Keep the owner/admin and collaborator browser identities isolated, such as in se
 
 Grant `SIMON-WORLD` the repository collaboration needed for the approved workflow. Use that identity for Codex Cloud work while retaining repository ownership and administrative actions under `ukinch605`.
 
-Before repository-state work, establish the current remote `main` as the implementation Source of Truth. Create task work from that state, never commit directly to `main`, and leave merging to the reviewed GitHub flow.
+Before repository-state work, establish the current remote `main` as the implementation Source of Truth. Create task work from that state, never commit directly to `main`, and leave project-level acceptance and merging to the reviewed GitHub flow.
 
 ## Create or select the Codex Cloud environment
 
@@ -48,28 +65,35 @@ Use these defaults:
 
 Enable network access or add a secret only when the task expressly requires it. Do not add either merely to repair a pull-request handoff that the platform UI can complete.
 
-## End-to-end change flow
+## End-to-end routed change flow
 
-1. Start a Codex Cloud task against `ukinch605/awesome-dsh-hub` from current `main`.
-2. Make one focused milestone solve one primary problem.
-3. Review the changed-file list and complete diff. Verify that no unrelated file changed.
-4. Run relevant local tests and checks.
-5. Use the platform **Create Pull Request** handoff.
-6. Let GitHub Actions act as the final CI gate.
-7. Review the pull request and CI results.
-8. Merge only after review; never merge as part of the task itself.
+When capability routing selects Codex Cloud:
 
-The normal path is therefore:
+1. ChatGPT establishes current authoritative evidence and defines the problem and acceptance criteria.
+2. Start a Codex Cloud task against `ukinch605/awesome-dsh-hub` from current remote `main`.
+3. Make one focused milestone solve one primary problem.
+4. Run relevant local tests and checks and review the changed-file list.
+5. Use the platform **Create Pull Request** or **Update Pull Request** handoff when needed.
+6. ChatGPT independently fetches the real GitHub PR head, diff, and GitHub Actions result rather than accepting the Codex RESULT as truth.
+7. ChatGPT decides `ACCEPT` or `REVISE`.
+8. Merge only after review, using an authorized GitHub capability when available.
+9. Reacquire production evidence after merge when the change affects generated data or runtime behavior.
 
-> Codex Cloud task -> review diff -> Create Pull Request -> GitHub Actions -> review -> merge
+The routed path is therefore:
+
+> ChatGPT evidence + decision -> Codex implementation when required -> GitHub PR/CI -> ChatGPT independent verification -> ACCEPT/REVISE -> merge -> production verification
 
 A Codex Cloud task created on the web can appear in ChatGPT Desktop. Opening that synced task in Desktop may place the conversation in Desktop Work mode, which must not be treated as equivalent to execution in the original Codex Cloud repository environment. For repository-changing work, start and continue the task in Web Codex Cloud unless the UI explicitly confirms the same Codex Cloud environment and repository execution context. Desktop can monitor or display the synced task and its results when that confirmation is absent.
 
-## Observed smoke-test behavior
+## Observed handoff behavior
 
-**VERIFIED:** During the smoke test, the in-task `make_pr`/MCP handoff failed, while the Codex Cloud platform **Create Pull Request** action successfully created PR #2.
+**VERIFIED:** During the smoke test, an in-task pull-request handoff failed while the Codex Cloud platform **Create Pull Request** action successfully created the GitHub PR.
 
-If this occurs again and **Create Pull Request** is available in the Codex Cloud UI, use that platform handoff. Do not add repository secrets, credentials, or network access simply to work around the in-task handoff failure unless the task explicitly requests it.
+If an in-task handoff fails and **Create Pull Request** or **Update Pull Request** is available in the Codex Cloud UI, use the platform handoff. Do not add repository secrets, credentials, or network access simply to work around the in-task handoff failure unless the task explicitly requires them.
+
+## Single-writer rule
+
+For a mutable resource, keep one authoritative writer at a time. If Codex Cloud is modifying a PR branch, ChatGPT must not concurrently mutate that same branch. Read-only investigation and independent evidence acquisition may proceed in parallel.
 
 ## Troubleshooting
 
@@ -87,7 +111,7 @@ Stop and compare with the current remote `main`. Treat GitHub current `main`, no
 
 ### Pull-request handoff fails inside the task
 
-Review the diff and checks first. If the Codex Cloud UI offers **Create Pull Request**, use it. A failed in-task MCP call does not justify introducing secrets or enabling network access when the platform handoff remains available.
+Review the diff and checks first. If the Codex Cloud UI offers **Create Pull Request** or **Update Pull Request**, use it. A failed in-task handoff does not justify introducing secrets or enabling network access when the platform handoff remains available.
 
 ### A web task opens in Desktop Work mode
 
@@ -97,9 +121,11 @@ Do not assume that continuing a synced conversation in Desktop Work mode runs in
 
 Do not adopt these as the normal development workflow:
 
-- **Work -> patch -> download/upload -> Codespaces:** this adds manual transfer steps and makes repository-state provenance harder to verify.
-- **Ordinary Chat GitHub connector for repository writes:** connector visibility is not the verified Codex Cloud write and pull-request path.
-- **Cloud Browser as the primary coding environment:** browser automation is not a substitute for a repository-aware Codex Cloud task.
-- **Cloud Browser -> Codespaces:** this unnecessarily combines separate environments and identities for routine changes.
+- routing every GitHub or file change through Codex without checking current native capabilities first;
+- treating Codex RESULT or self-reported tests as final VERIFIED project facts;
+- Work -> patch -> download/upload -> Codespaces for routine changes;
+- Cloud Browser as the primary coding environment;
+- Cloud Browser -> Codespaces for ordinary repository work;
+- concurrent mutation of the same PR branch by ChatGPT and Codex.
 
-These constraints keep source state, identity boundaries, review, and CI responsibilities explicit.
+These constraints keep capability routing, source state, identity boundaries, writer ownership, review, and CI responsibilities explicit.
