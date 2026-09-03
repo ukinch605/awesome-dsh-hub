@@ -1,0 +1,51 @@
+name: Package Topology Census
+
+on:
+  workflow_dispatch:
+    inputs:
+      repo_limit:
+        description: Maximum current-observation repositories to scan
+        required: false
+        default: '150'
+      manifest_limit:
+        description: Maximum package.json manifests per repository
+        required: false
+        default: '100'
+      include_repos:
+        description: Comma-separated observed repositories to include first
+        required: false
+        default: 'Neplich/dsh_plugin'
+
+permissions:
+  contents: read
+
+jobs:
+  census:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install
+        run: npm install
+
+      - name: Run package topology census
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PACKAGE_TOPOLOGY_REPO_LIMIT: ${{ inputs.repo_limit }}
+          PACKAGE_TOPOLOGY_MANIFEST_LIMIT: ${{ inputs.manifest_limit }}
+          PACKAGE_TOPOLOGY_INCLUDE: ${{ inputs.include_repos }}
+        run: node scripts/package-topology.js
+
+      - name: Upload package topology snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: package-topology
+          path: registry/package-topology.json
+          retention-days: 14
+          if-no-files-found: error
