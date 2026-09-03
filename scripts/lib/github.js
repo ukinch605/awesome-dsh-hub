@@ -175,27 +175,42 @@ export async function searchTopicRepos({
         diagnostics.unresolvedCappedSegments.push({ query: segment.query, reason: 'search-response-missing' });
         continue;
       }
-      if ((first.total_count || 0) >= 1000) {
-        diagnostics.capped = true;
+      const subdivideOrRecord = (data, reason) => {
         const created = /(?:^|\s)created:(\d{4}-\d{2}-\d{2})\.\.(\d{4}-\d{2}-\d{2})(?:\s|$)/.exec(segment.query);
         const start = created?.[1] || creationStart;
         const end = created?.[2] || creationEnd;
         const halves = bisectDateRange(start, end);
         if (!halves) {
-          diagnostics.unresolvedCappedSegments.push({ query: withCreatedRange(segment.query.replace(/\s+created:[^\s]+/, ''), start, end), reportedTotal: first.total_count, reason: 'one-day-saturated' });
+          diagnostics.unresolvedCappedSegments.push({
+            query: withCreatedRange(segment.query.replace(/\s+created:[^\s]+/, ''), start, end),
+            reportedTotal: data.total_count,
+            reason,
+          });
         } else {
           diagnostics.subdivided = true;
           const base = segment.query.replace(/\s+created:[^\s]+/, '');
           pending.unshift(...halves.map((range) => ({ ...range, query: withCreatedRange(base, range.start, range.end) })));
         }
+      };
+      if ((first.total_count || 0) >= 1000 || first.incomplete_results === true) {
+        const saturated = (first.total_count || 0) >= 1000;
+        if (saturated) diagnostics.capped = true;
+        subdivideOrRecord(first, first.incomplete_results === true ? 'search-incomplete' : 'one-day-saturated');
+        continue;
+      }
+      const totalPages = Math.min(10, Math.ceil((first.total_count || 0) / pageSize) || 1);
+      let incomplete = false;
+      for (let page = 2; page <= totalPages; page++) {
+        const data = await requestPage(page);
+        diagnostics.totalCountObservations++;
+        if (data?.incomplete_results === true) incomplete = true;
+      }
+      if (incomplete) {
+        subdivideOrRecord(first, 'search-incomplete');
         continue;
       }
       diagnostics.resolvedLeaves++;
       diagnostics.resolvedLeafTotalCount += first.total_count || 0;
-      const totalPages = Math.min(10, Math.ceil((first.total_count || 0) / pageSize) || 1);
-      for (let page = 2; page <= totalPages; page++) {
-        await requestPage(page);
-      }
     }
     if (diagnostics.unresolvedCappedSegments.length === unresolvedBefore) diagnostics.resolvedSegments++;
   }

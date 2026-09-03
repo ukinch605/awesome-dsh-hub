@@ -177,6 +177,44 @@ test('searchTopicRepos: diagnostics count only uncapped disjoint leaves, not par
   assert.equal(repos.diagnostics.completeCoverageClaimed, true);
 });
 
+test('searchTopicRepos: incomplete page one subdivides and cannot resolve its parent', async () => {
+  const requested = [];
+  const repos = await searchTopicRepos({
+    queries: ['topic:dsh-plugin stars:0'], sorts: ['stars'], token: 't', sleepFn: noSleep,
+    creationStart: '2026-01-01', creationEnd: '2026-01-02',
+    fetchFn: async (url) => {
+      const query = new URL(url).searchParams.get('q');
+      requested.push(query);
+      return {
+        status: 200, headers: new Map(),
+        json: async () => ({ total_count: query.includes('created:') ? 2 : 10, incomplete_results: !query.includes('created:'), items: [] }),
+      };
+    },
+  });
+  assert.equal(requested.length, 3);
+  assert.equal(repos.diagnostics.resolvedLeaves, 2);
+  assert.equal(repos.diagnostics.resolvedLeafTotalCount, 4);
+  assert.equal(repos.diagnostics.completeCoverageClaimed, true);
+});
+
+test('searchTopicRepos: an incomplete later page leaves a one-day query unresolved', async () => {
+  const repos = await searchTopicRepos({
+    queries: ['topic:dsh-plugin stars:0 created:2026-01-01..2026-01-01'],
+    sorts: ['stars'], token: 't', sleepFn: noSleep, pageSize: 100,
+    fetchFn: async (url) => {
+      const page = Number(new URL(url).searchParams.get('page'));
+      return {
+        status: 200, headers: new Map(),
+        json: async () => ({ total_count: 150, incomplete_results: page === 2, items: [] }),
+      };
+    },
+  });
+  assert.equal(repos.diagnostics.resolvedLeaves, 0);
+  assert.equal(repos.diagnostics.resolvedLeafTotalCount, 0);
+  assert.equal(repos.diagnostics.unresolvedCappedSegments[0].reason, 'search-incomplete');
+  assert.equal(repos.diagnostics.completeCoverageClaimed, false);
+});
+
 test('fetchRawPackageJson: uses raw first even when a token is set', async () => {
   const calls = [];
   const fakeFetch = async (url, opts) => {
