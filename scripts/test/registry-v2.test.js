@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   appendEvents,
+  annotateLegacyRemovalEvents,
   generateEvents,
   migrateInstallProbeStatus,
   migrateV1Entry,
@@ -39,12 +40,22 @@ test('stable repository ID detects rename and semantic changes but ignores stars
 });
 
 test('events cover additions/removals and ledger append is idempotent', () => {
-  const events = generateEvents([plugin()], [plugin({ githubRepoId: 77, repo: 'new/plugin' })], at, { suppressMigration: false });
+  const events = generateEvents([plugin()], [plugin({ githubRepoId: 77, repo: 'new/plugin' })], at, { suppressMigration: false, confirmedRemovalIds: new Set(['42']) });
   assert.deepEqual(events.map((e) => e.type).sort(), ['plugin_added', 'plugin_removed']);
   const once = appendEvents({ schemaVersion: 1, events: [] }, events);
   const twice = appendEvents(once, events);
   assert.deepEqual(twice, once);
   assert.deepEqual(validateEventLedger(twice), []);
+});
+
+test('legacy removal annotation preserves its hashed id and changes body', () => {
+  const changes = { repo: 'owner/plugin', reason: 'discovery-miss' };
+  const event = { id: 'historical-hash', type: 'plugin_removed', repositoryId: '42', occurredAt: at, changes };
+  const annotated = annotateLegacyRemovalEvents({ schemaVersion: 1, events: [event] }).events[0];
+  assert.equal(annotated.id, event.id);
+  assert.deepEqual(annotated.changes, changes);
+  assert.equal(annotated.changes, changes);
+  assert.equal(annotated.confirmation, 'unconfirmed-discovery-derived');
 });
 
 test('preserved transient state emits no false removal or version event', () => {

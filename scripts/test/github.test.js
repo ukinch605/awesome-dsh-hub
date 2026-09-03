@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { fetchRawPackageJson, fetchRawPackageJsonResult, hasBundlePatch, normalizeRepo, searchTopicRepos } from '../lib/github.js';
+import { bisectDateRange, fetchRawPackageJson, fetchRawPackageJsonResult, hasBundlePatch, normalizeRepo, searchTopicRepos } from '../lib/github.js';
 import { SEARCH_QUERIES } from '../lib/constants.js';
 
 test('hasBundlePatch: accepts declared patch', () => {
@@ -81,6 +81,39 @@ test('SEARCH_QUERIES: star-segmented queries cover the full range', () => {
   assert.ok(SEARCH_QUERIES.includes('topic:dsh-plugin stars:3'));
   assert.ok(SEARCH_QUERIES.includes('topic:dsh-plugin stars:1'));
   assert.ok(SEARCH_QUERIES.includes('topic:dsh-plugin stars:0'));
+});
+
+for (const stars of ['stars:0', 'stars:1']) {
+  test(`searchTopicRepos: saturated ${stars} subdivides into deterministic disjoint dates`, async () => {
+    const requested = [];
+    const repos = await searchTopicRepos({
+      queries: [`topic:dsh-plugin ${stars}`], sorts: ['stars'], token: 't',
+      creationStart: '2026-01-01', creationEnd: '2026-01-02', segmentBudget: 10,
+      fetchFn: async (url) => {
+        const query = new URL(url).searchParams.get('q');
+        requested.push(query);
+        return { status: 200, headers: new Map(), json: async () => ({ total_count: query.includes('created:') ? 0 : 1000, items: [] }) };
+      },
+    });
+    assert.deepEqual(requested.slice(1), [
+      `topic:dsh-plugin ${stars} created:2026-01-01..2026-01-01`,
+      `topic:dsh-plugin ${stars} created:2026-01-02..2026-01-02`,
+    ]);
+    assert.equal(repos.diagnostics.subdivided, true);
+    assert.deepEqual(bisectDateRange('2026-01-01', '2026-01-02'), [
+      { start: '2026-01-01', end: '2026-01-01' }, { start: '2026-01-02', end: '2026-01-02' },
+    ]);
+  });
+}
+
+test('searchTopicRepos: unresolved one-day saturation is explicit', async () => {
+  const repos = await searchTopicRepos({ queries: ['topic:dsh-plugin stars:1 created:2026-01-01..2026-01-01'], sorts: ['stars'], token: 't', fetchFn: async () => ({ status: 200, headers: new Map(), json: async () => ({ total_count: 1000, items: [] }) }) });
+  assert.equal(repos.diagnostics.unresolvedCappedSegments[0].reason, 'one-day-saturated');
+});
+
+test('searchTopicRepos: segment budget exhaustion is explicit', async () => {
+  const repos = await searchTopicRepos({ queries: ['topic:dsh-plugin stars:1'], sorts: ['stars'], token: 't', creationStart: '2026-01-01', creationEnd: '2026-01-02', segmentBudget: 1, fetchFn: async () => ({ status: 200, headers: new Map(), json: async () => ({ total_count: 1000, items: [] }) }) });
+  assert.ok(repos.diagnostics.unresolvedCappedSegments.every((item) => item.reason === 'segment-budget-exhausted'));
 });
 
 test('fetchRawPackageJson: uses raw first even when a token is set', async () => {
