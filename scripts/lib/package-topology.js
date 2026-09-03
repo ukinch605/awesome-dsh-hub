@@ -125,6 +125,29 @@ export function classifyPackageManifest(text) {
   };
 }
 
+export function packageSurfaceMetadata(text) {
+  let pkg;
+  try {
+    pkg = JSON.parse(text);
+  } catch {
+    return {
+      ...classifyPackageManifest(text),
+      bundlePatch: null,
+      packagePrivate: null,
+      repositoryDirectory: null,
+    };
+  }
+  const base = classifyPackageManifest(text);
+  return {
+    ...base,
+    bundlePatch: typeof pkg?.dsh?.bundle?.patch === 'string' ? pkg.dsh.bundle.patch : null,
+    packagePrivate: typeof pkg?.private === 'boolean' ? pkg.private : null,
+    repositoryDirectory: typeof pkg?.repository?.directory === 'string'
+      ? pkg.repository.directory
+      : null,
+  };
+}
+
 async function fetchManifest(owner, repo, branch, manifestPath, {
   fetchFn = fetch, sleepFn = sleep, retries = 2, stats,
 } = {}) {
@@ -147,13 +170,10 @@ async function fetchManifest(owner, repo, branch, manifestPath, {
   }
 }
 
-export async function scanRepository(stateEntry, {
-  token = '', fetchFn = fetch, sleepFn = sleep, manifestLimit = 100,
-} = {}) {
-  const stats = { apiRequests: 0, rawFetches: 0 };
-  const base = {
-    repositoryId: String(stateEntry.repositoryId),
-    repo: stateEntry.repo,
+function scanBase(repositoryId, repo, stats) {
+  return {
+    repositoryId: String(repositoryId),
+    repo,
     defaultBranch: null,
     topicPresent: null,
     complete: false,
@@ -164,17 +184,12 @@ export async function scanRepository(stateEntry, {
     manifests: [],
     stats,
   };
+}
 
-  let metadata;
-  try {
-    metadata = await apiRequest(`https://api.github.com/repositories/${stateEntry.repositoryId}`, {
-      token, fetchFn, sleepFn, stats,
-    });
-  } catch {
-    return { ...base, incompleteReasons: ['repository-metadata-transient'] };
-  }
-  if (!metadata) return { ...base, incompleteReasons: ['repository-missing'] };
-  if (!metadata.default_branch || !metadata.owner?.login || !metadata.name) {
+async function scanWithMetadata(metadata, base, {
+  token = '', fetchFn = fetch, sleepFn = sleep, manifestLimit = 100,
+} = {}) {
+  if (!metadata?.default_branch || !metadata?.owner?.login || !metadata?.name) {
     return { ...base, incompleteReasons: ['repository-metadata-incomplete'] };
   }
 
@@ -186,7 +201,7 @@ export async function scanRepository(stateEntry, {
   try {
     tree = await apiRequest(
       `https://api.github.com/repos/${metadata.owner.login}/${metadata.name}/git/trees/${encodeURIComponent(metadata.default_branch)}?recursive=1`,
-      { token, fetchFn, sleepFn, stats },
+      { token, fetchFn, sleepFn, stats: base.stats },
     );
   } catch {
     return { ...base, incompleteReasons: ['tree-transient'] };
@@ -205,7 +220,7 @@ export async function scanRepository(stateEntry, {
       metadata.name,
       metadata.default_branch,
       manifestPath,
-      { fetchFn, sleepFn, stats },
+      { fetchFn, sleepFn, stats: base.stats },
     );
     if (result.kind === 'transient-failure') {
       base.incompleteReasons.push(`manifest-transient:${manifestPath}`);
@@ -216,6 +231,9 @@ export async function scanRepository(stateEntry, {
         packageName: null,
         packageVersion: null,
         bundleSignal: false,
+        bundlePatch: null,
+        packagePrivate: null,
+        repositoryDirectory: null,
       });
       continue;
     }
@@ -228,10 +246,13 @@ export async function scanRepository(stateEntry, {
         packageName: null,
         packageVersion: null,
         bundleSignal: false,
+        bundlePatch: null,
+        packagePrivate: null,
+        repositoryDirectory: null,
       });
       continue;
     }
-    const classification = classifyPackageManifest(result.text);
+    const classification = packageSurfaceMetadata(result.text);
     base.manifests.push({
       path: manifestPath,
       root: manifestPath === 'package.json',
@@ -243,6 +264,43 @@ export async function scanRepository(stateEntry, {
   base.incompleteReasons = [...new Set(base.incompleteReasons)];
   base.complete = base.incompleteReasons.length === 0;
   return base;
+}
+
+export async function scanRepository(stateEntry, {
+  token = '', fetchFn = fetch, sleepFn = sleep, manifestLimit = 100,
+} = {}) {
+  const stats = { apiRequests: 0, rawFetches: 0 };
+  const base = scanBase(stateEntry.repositoryId, stateEntry.repo, stats);
+
+  let metadata;
+  try {
+    metadata = await apiRequest(`https://api.github.com/repositories/${stateEntry.repositoryId}`, {
+      token, fetchFn, sleepFn, stats,
+    });
+  } catch {
+    return { ...base, incompleteReasons: ['repository-metadata-transient'] };
+  }
+  if (!metadata) return { ...base, incompleteReasons: ['repository-missing'] };
+  return scanWithMetadata(metadata, base, { token, fetchFn, sleepFn, manifestLimit });
+}
+
+export async function scanObservedRepository(observed, {
+  token = '', fetchFn = fetch, sleepFn = sleep, manifestLimit = 100,
+} = {}) {
+  const repositoryId = observed?.id ?? observed?.repositoryId;
+  const fullName = observed?.full_name ?? observed?.repo;
+  const [fallbackOwner, fallbackName] = String(fullName || '').split('/', 2);
+  const metadata = {
+    id: repositoryId,
+    full_name: fullName,
+    owner: { login: observed?.owner ?? fallbackOwner },
+    name: observed?.name ?? fallbackName,
+    default_branch: observed?.default_branch ?? observed?.defaultBranch,
+    topics: Array.isArray(observed?.topics) ? observed.topics : null,
+  };
+  const stats = { apiRequests: 0, rawFetches: 0 };
+  const base = scanBase(repositoryId, fullName, stats);
+  return scanWithMetadata(metadata, base, { token, fetchFn, sleepFn, manifestLimit });
 }
 
 export function summarizeTopology(records) {
