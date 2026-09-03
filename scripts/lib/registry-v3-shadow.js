@@ -65,7 +65,15 @@ function currentSurfacePaths(topologyState) {
   return map;
 }
 
-function identityForSurface({ repositoryId, surface, identityBySurface, priorByRepo, currentPaths, generatedAt }) {
+function identityForSurface({
+  repositoryId,
+  surface,
+  identityBySurface,
+  priorByRepo,
+  currentPaths,
+  generatedAt,
+  allowPathMove = true,
+}) {
   const key = surfaceKey(repositoryId, surface.path);
   const exact = identityBySurface.get(key);
   if (exact) {
@@ -73,7 +81,7 @@ function identityForSurface({ repositoryId, surface, identityBySurface, priorByR
   }
 
   const packageName = surface.packageName;
-  if (packageName && !isPlaceholderPackageName(packageName)) {
+  if (allowPathMove && packageName && !isPlaceholderPackageName(packageName)) {
     const candidates = (priorByRepo.get(String(repositoryId)) || []).filter((identity) =>
       identity.lastPackageName === packageName
       && !currentPaths.get(String(repositoryId))?.has(identity.packagePath));
@@ -189,6 +197,7 @@ export function generateShadowRegistryV3({
       surface.packageName && ambiguousNames.has(surface.packageName)).length;
 
     for (const surface of surfaces) {
+      const ambiguous = Boolean(surface.packageName && ambiguousNames.has(surface.packageName));
       const { identity, reconciledFrom } = identityForSurface({
         repositoryId,
         surface,
@@ -196,11 +205,10 @@ export function generateShadowRegistryV3({
         priorByRepo,
         currentPaths,
         generatedAt,
+        allowPathMove: !ambiguous,
       });
       identities.set(identity.pluginId, identity);
       const isRoot = surface.path === 'package.json';
-      const inheritedRoot = isRoot ? rootEntry : null;
-      const ambiguous = Boolean(surface.packageName && ambiguousNames.has(surface.packageName));
       const placeholder = isPlaceholderPackageName(surface.packageName);
       if (placeholder) migration.placeholderPackageNames++;
       if (ambiguous) migration.ambiguousIdentities++;
