@@ -38,6 +38,12 @@ jobs:
             echo "::warning::Shadow Registry v3 generation failed; preserving authoritative Registry v2 refresh."
           fi
 
+      - name: Generate Stage C shadow events and dependent data
+        run: |
+          if ! node scripts/generate-v3-stage-c.js; then
+            echo "::warning::Stage C shadow generation failed; preserving authoritative Registry v2 refresh."
+          fi
+
       - name: Generate artifacts
         run: npm run generate
 
