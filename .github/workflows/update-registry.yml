@@ -38,6 +38,12 @@ jobs:
             echo "::warning::Shadow Registry v3 generation failed; preserving authoritative Registry v2 refresh."
           fi
 
+      - name: Generate Stage C shadow events and dependent data
+        run: |
+          if ! node scripts/generate-v3-stage-c.js; then
+            echo "::warning::Stage C shadow generation failed; preserving authoritative Registry v2 refresh."
+          fi
+
       - name: Generate artifacts
         run: npm run generate
 
@@ -74,6 +80,6 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_RUN_ID: ${{ github.run_id }}
           GITHUB_RUN_NUMBER: ${{ github.run_number }}
-          GITHUB_WORKFLOW: ${{ github.workflow }}
+          GITHUB_WORKFLOW: Update Registry
           GITHUB_SERVER_URL: ${{ github.server_url }}
         run: node scripts/notify-failure.js close
