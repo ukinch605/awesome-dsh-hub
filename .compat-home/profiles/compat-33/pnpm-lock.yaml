@@ -20,6 +20,9 @@ importers:
       dsh-dafeiyu:
         specifier: github:QCYTSN/dsh-dafeiyu
         version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98
+      dsh-purge:
+        specifier: github:YuJunZhiXue/dsh-purge
+        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/33b4efd70df6c386e2e9d2d24a742f7a30c45a33
       dsh-toy:
         specifier: github:c3ll256/dsh-toy
         version: https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c
@@ -117,6 +120,14 @@ packages:
       - '@deepseek-ai/cosmokit'
       - '@deepseek-ai/schemastery'
       - '@standard-schema/spec'
+
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/33b4efd70df6c386e2e9d2d24a742f7a30c45a33:
+    resolution: {gitHosted: true, integrity: sha512-i7AWWKJ2c3qdCvriUGQAEr/bu0yQraAP1V680ucENOQsPBm4PpUAU4g8aEDW5eM+NhOhe2UUVdfVFF+fpPq/Hg==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/33b4efd70df6c386e2e9d2d24a742f7a30c45a33}
+    version: 1.3.3
+    engines: {node: '>=18'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
 
   dsh-toy@https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c}
@@ -264,6 +275,8 @@ snapshots:
       ms: 2.1.3
 
   dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98: {}
+
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/33b4efd70df6c386e2e9d2d24a742f7a30c45a33: {}
 
   dsh-toy@https://codeload.github.com/c3ll256/dsh-toy/tar.gz/adece3467506c9e40e1393baca89f20caff20c2c:
     dependencies:

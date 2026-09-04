@@ -14,6 +14,9 @@ importers:
       '@oh-dsh/desktop':
         specifier: github:hust-open-atom-club/oh-dsh
         version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/d19353a3ecb4faabaf63bedd27a2dd0e6abd3b80
+      '@shengsheng/dsh-taskboard':
+        specifier: github:shengsheng90/DSH-taskboard
+        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/3528286122bbb3081b3e5ed64669957f6249f2cf
       '@zseven-w/dsh-ios':
         specifier: github:ZSeven-W/dsh-ios
         version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c
@@ -83,6 +86,35 @@ packages:
     version: 0.1.11
     engines: {node: '>=24'}
     hasBin: true
+
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/3528286122bbb3081b3e5ed64669957f6249f2cf':
+    resolution: {gitHosted: true, integrity: sha512-xDFw1yJBBqURNvHqjjZqCzY9a99M/oKg1o88hC4SRG3KC8sJk1Pl6nf0zykUl9cj77sVNau0rpEK4iS32oNzvA==, tarball: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/3528286122bbb3081b3e5ed64669957f6249f2cf}
+    version: 0.1.4
+    engines: {node: ^22.19.0 || >=24.0.0}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/dsh-agent': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-agent-presets': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-api-remotes': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-api-session-controller': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-api-workspace-controller': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-connection': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-locale': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-conversation': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-layout': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-sidebar': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-slots': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-workspace': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-goal': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-host-webserver': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-llm': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-session': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-tools': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-typert-protocol': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-workspace': 0.1.2-alpha.2
+      '@deepseek-ai/schemastery': ^3.18.2
+      react: ^18.2.0
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -642,6 +674,10 @@ snapshots:
       '@deepseek-ai/node-addon-landlock-run-linux-x64': 0.1.1
     transitivePeerDependencies:
       - supports-color
+
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/3528286122bbb3081b3e5ed64669957f6249f2cf':
+    dependencies:
+      zod: 4.4.3
 
   '@standard-schema/spec@1.1.0': {}
 

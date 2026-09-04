@@ -23,6 +23,9 @@ importers:
       forkprobe-dsh:
         specifier: github:Jayden-X-L/forkprobe
         version: https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e
+      graph-memory:
+        specifier: github:adoresever/graph-memory
+        version: https://codeload.github.com/adoresever/graph-memory/tar.gz/1dadb34c0db7a204847f209e9290ae115f8e046b(@deepseek-ai/cordis@4.0.1)
       superdesign-dsh:
         specifier: github:superdesigndev/superdesign-skill
         version: https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b
@@ -82,6 +85,9 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-tPLDYOMo7KHb1dI70mEiV0c8QnJKfterLPZVuUSo0Om4gehfkRbovFTF4z0/W6N6P6XGcKpmh6Q0aWVhACKbkQ==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/e04c3b5089616ac893313b105fcd4e5c200288ed}
     version: 0.1.0
     engines: {node: '>=20'}
+
+  '@sinclair/typebox@0.34.52':
+    resolution: {integrity: sha512-XiMQh7qqVlxZzcVD+kkGMNGMzcTrDMLWI7S4x7z1MkCkbDPrekpZXEUK0eZqZFMuHQg2a2DZOcDIh9o5v3Gonw==}
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -160,6 +166,22 @@ packages:
       '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6'
       '@deepseek-ai/dsh-subagent': '>=0.1.0-rc.6'
 
+  graph-memory@https://codeload.github.com/adoresever/graph-memory/tar.gz/1dadb34c0db7a204847f209e9290ae115f8e046b:
+    resolution: {gitHosted: true, integrity: sha512-f2dgr0Sa246i4hDyxwq05r5cwv8EWpq1+BRWeDRqw0tkYfCXiEDxaYHCL9jok7DrrNlAlF6zatuwNlV3buBYQw==, tarball: https://codeload.github.com/adoresever/graph-memory/tar.gz/1dadb34c0db7a204847f209e9290ae115f8e046b}
+    version: 1.6.0-beta.11
+    engines: {node: '>=22.13.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4'
+      '@deepseek-ai/dsh-typert-protocol': '>=0.1.0-rc.5'
+      openclaw: '*'
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      openclaw:
+        optional: true
+
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -222,6 +244,8 @@ snapshots:
       - react
       - react-dom
 
+  '@sinclair/typebox@0.34.52': {}
+
   '@standard-schema/spec@1.1.0': {}
 
   cosmokit@1.8.1: {}
@@ -257,6 +281,12 @@ snapshots:
       - '@deepseek-ai/dsh-session'
       - '@deepseek-ai/dsh-system-prompt'
       - '@deepseek-ai/dsh-user-approval'
+
+  graph-memory@https://codeload.github.com/adoresever/graph-memory/tar.gz/1dadb34c0db7a204847f209e9290ae115f8e046b(@deepseek-ai/cordis@4.0.1):
+    dependencies:
+      '@sinclair/typebox': 0.34.52
+    optionalDependencies:
+      '@deepseek-ai/cordis': 4.0.1
 
   js-tokens@4.0.0: {}
 

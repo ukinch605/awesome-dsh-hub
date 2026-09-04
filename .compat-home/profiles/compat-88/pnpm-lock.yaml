@@ -11,6 +11,9 @@ importers:
       '@changfenhuang/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
         version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/5949675671d84d5c1b81f223344456d7e7216620
+      '@dhicoc/dsh-reverse-skill':
+        specifier: github:dhicoc/dsh-reverse-skill
+        version: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732
       '@dsh-external/workflow':
         specifier: github:omdsh-dev/dsh_workflow
         version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f
@@ -28,7 +31,7 @@ importers:
         version: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663
       tydora:
         specifier: github:zuorn/Tydora
-        version: https://codeload.github.com/zuorn/Tydora/tar.gz/f0578bae8d71c754427b27787f82b6c28b722fe1(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extension-list@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extensions@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0(react@19.2.8))(yaml@2.9.0)
+        version: https://codeload.github.com/zuorn/Tydora/tar.gz/cf8c47735c11535fe88d67f6402d1935a7dcd813(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extension-list@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extensions@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0(react@19.2.8))(yaml@2.9.0)
 
 packages:
 
@@ -407,6 +410,13 @@ packages:
   '@csstools/css-tokenizer@4.0.0':
     resolution: {integrity: sha512-QxULHAm7cNu72w97JUNCBFODFaXpbDg+dP8b/oWFAZ2MTRppA3U00Y2L1HqaS4J6yBqxwa/Y3nMBaxVKbB/NsA==}
     engines: {node: '>=20.19.0'}
+
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732':
+    resolution: {gitHosted: true, integrity: sha512-zipAcJI7kY6FuOA8hd12MRNW8Ul76p7cuHYvevxX/ThboMurlsSjcsrS/yq+o+qzvNIJM6/nu3bgiiBqYTdL6A==, tarball: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732}
+    version: 1.0.5
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-skill': ^0.0.1-rc.1
 
   '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
     resolution: {gitHosted: true, integrity: sha512-SvSTrCT/R1o8MDOemrO66M1qqUOL6fOiHaUFKx+HzwFZDEdir54jKHKLn7x7dECQ9tDC2UmbM0s04sbCdbn6PA==, tarball: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f}
@@ -3882,9 +3892,9 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/f0578bae8d71c754427b27787f82b6c28b722fe1:
-    resolution: {gitHosted: true, integrity: sha512-ZjI9Q28TbfTaBcN4MKEYK+QJXiZzOxmTpf2+9HWYKJ96JV/Xo3S/v0Wxob6FznsUuM87UDaNpzajDWZ25AZ5jg==, tarball: https://codeload.github.com/zuorn/Tydora/tar.gz/f0578bae8d71c754427b27787f82b6c28b722fe1}
-    version: 0.2.3
+  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/cf8c47735c11535fe88d67f6402d1935a7dcd813:
+    resolution: {gitHosted: true, integrity: sha512-zBXe+T6Lg1PgF9/zEkLrY3g7jzIAYb9zKub3YEFSCMJcaz7r2AKZ/aytZyyXgHObvzImbvhNrkq+Ie9s+4CIwA==, tarball: https://codeload.github.com/zuorn/Tydora/tar.gz/cf8c47735c11535fe88d67f6402d1935a7dcd813}
+    version: 0.2.4
 
   type-is@2.1.0:
     resolution: {integrity: sha512-faYHw0anBbc/kWF3zFTEnxSFOAGUX9GFbOBthvDdLsIlEoWOFOtS0zgCiQYwIskL9iGXZL3kAXD8OoZ4GmMATA==}
@@ -4675,6 +4685,8 @@ snapshots:
       css-tree: 3.2.1
 
   '@csstools/css-tokenizer@4.0.0': {}
+
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732': {}
 
   '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
     dependencies:
@@ -7995,7 +8007,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/f0578bae8d71c754427b27787f82b6c28b722fe1(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extension-list@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extensions@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0(react@19.2.8))(yaml@2.9.0):
+  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/cf8c47735c11535fe88d67f6402d1935a7dcd813(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extension-list@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@tiptap/extensions@3.30.5(@tiptap/core@3.30.5(@tiptap/pm@3.30.5))(@tiptap/pm@3.30.5))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0(react@19.2.8))(yaml@2.9.0):
     dependencies:
       '@abstractwebunit/markdown-publish': 1.0.6(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(yaml@2.9.0)
       '@codemirror/autocomplete': 6.20.3

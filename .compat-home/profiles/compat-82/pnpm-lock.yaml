@@ -20,6 +20,9 @@ importers:
       dsh-plugin-genui:
         specifier: github:pengyue-polaron/deepseek-harness-genui
         version: https://codeload.github.com/pengyue-polaron/deepseek-harness-genui/tar.gz/666076819ab2eae0f6f06980e99c013f89fb6b9f
+      dsh-reasoning-effort:
+        specifier: github:HanaAyane/dsh-reasoning-effort
+        version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/54c76c7e652b8f792f7c3f94d0a723d382e32db5(react@18.3.1)
       dsh-recall-unread:
         specifier: github:hg1048596-pixel/dsh-recall-unread
         version: https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72
@@ -453,6 +456,22 @@ packages:
         optional: true
       '@deepseek-ai/dsh-tools':
         optional: true
+
+  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/54c76c7e652b8f792f7c3f94d0a723d382e32db5:
+    resolution: {gitHosted: true, integrity: sha512-bk5fLQGbJVGu84znxlKfdh6sKvM1Jim2wTgNFpD0wJsyB9kFGPda6dxFoL60+Z7k/kzEQ7kfU+IPzCwG7H4aeQ==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/54c76c7e652b8f792f7c3f94d0a723d382e32db5}
+    version: 0.7.0
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-connection': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-model-selection': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
+      react: ^18.2.0
 
   dsh-recall-unread@https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72:
     resolution: {gitHosted: true, integrity: sha512-3S73Yr11Da3uuL95XIXxWtdova6NVRTYBYm+JOS/3LORWj0+xu27pjW4Ugni4QHUXlFSVuus0N1C4O0NitqPIA==, tarball: https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72}
@@ -1178,6 +1197,11 @@ snapshots:
       - '@types/react'
       - immer
       - use-sync-external-store
+
+  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/54c76c7e652b8f792f7c3f94d0a723d382e32db5(react@18.3.1):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
+      react: 18.3.1
 
   dsh-recall-unread@https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72: {}
 

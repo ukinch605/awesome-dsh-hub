@@ -23,9 +23,12 @@ importers:
       project-blueprint:
         specifier: github:shuguang1994/project-blueprint
         version: https://codeload.github.com/shuguang1994/project-blueprint/tar.gz/7495fc47b69b1ddf3331e305aff7ddb9f2a5d2f9
+      superpowers-dsh:
+        specifier: github:LayneChai/superpowers-dsh
+        version: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663
       tydora:
         specifier: github:zuorn/Tydora
-        version: https://codeload.github.com/zuorn/Tydora/tar.gz/2da384479705b9bd70a1659f78c93608c94b3001(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extension-list@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extensions@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0)(yaml@2.9.0)
+        version: https://codeload.github.com/zuorn/Tydora/tar.gz/cf8c47735c11535fe88d67f6402d1935a7dcd813(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extension-list@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extensions@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0)(yaml@2.9.0)
 
 packages:
 
@@ -3723,6 +3726,10 @@ packages:
   stylis@4.4.0:
     resolution: {integrity: sha512-5Z9ZpRzfuH6l/UAvCPAPUo3665Nk2wLaZU3x+TLHKVzIz33+sbJqbtrYoC3KD4/uVOr2Zp+L0LySezP9OHV9yA==}
 
+  superpowers-dsh@https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663:
+    resolution: {gitHosted: true, integrity: sha512-SQ2vGwWDcSm+s+YB5E/cN6AYxRdsT2mg7XLx9e3onY8gHXIbGTejpZlFcX/SJRExYiSbXy95GzR22UQZHprEhw==, tarball: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663}
+    version: 0.1.0
+
   svg-pathdata@6.0.3:
     resolution: {integrity: sha512-qsjeeq5YjBZ5eMdFuUa4ZosMLxgr5RZ+F+Y1OrDhuOCEInRMA3x74XdBtggJcj9kOeInz0WE+LgCPDkZFlBYJw==}
     engines: {node: '>=12.0.0'}
@@ -3781,9 +3788,9 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/2da384479705b9bd70a1659f78c93608c94b3001:
-    resolution: {gitHosted: true, integrity: sha512-LthaEVMP4QtxRXkxJP3UzbcPAcdi4rif+49j5QxcWy55BNwu5ow8FI/GhBqLk0rVm4/KqGr24DPuw5ggoQDRNQ==, tarball: https://codeload.github.com/zuorn/Tydora/tar.gz/2da384479705b9bd70a1659f78c93608c94b3001}
-    version: 0.2.3
+  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/cf8c47735c11535fe88d67f6402d1935a7dcd813:
+    resolution: {gitHosted: true, integrity: sha512-zBXe+T6Lg1PgF9/zEkLrY3g7jzIAYb9zKub3YEFSCMJcaz7r2AKZ/aytZyyXgHObvzImbvhNrkq+Ie9s+4CIwA==, tarball: https://codeload.github.com/zuorn/Tydora/tar.gz/cf8c47735c11535fe88d67f6402d1935a7dcd813}
+    version: 0.2.4
 
   type-is@2.1.0:
     resolution: {integrity: sha512-faYHw0anBbc/kWF3zFTEnxSFOAGUX9GFbOBthvDdLsIlEoWOFOtS0zgCiQYwIskL9iGXZL3kAXD8OoZ4GmMATA==}
@@ -4993,8 +5000,8 @@ snapshots:
       json-schema-typed: 8.0.2
       pkce-challenge: 5.0.1
       raw-body: 3.0.2
-      zod: 4.4.3
-      zod-to-json-schema: 3.25.2(zod@4.4.3)
+      zod: 4.5.4
+      zod-to-json-schema: 3.25.2(zod@4.5.4)
     transitivePeerDependencies:
       - supports-color
 
@@ -5715,11 +5722,11 @@ snapshots:
   '@types/body-parser@1.19.6':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 20.19.43
+      '@types/node': 25.9.5
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 20.19.43
+      '@types/node': 25.9.5
 
   '@types/d3-array@3.2.2': {}
 
@@ -5840,7 +5847,7 @@ snapshots:
 
   '@types/express-serve-static-core@5.1.3':
     dependencies:
-      '@types/node': 20.19.43
+      '@types/node': 25.9.5
       '@types/qs': 6.15.1
       '@types/range-parser': 1.2.7
       '@types/send': 1.2.1
@@ -5900,12 +5907,12 @@ snapshots:
 
   '@types/send@1.2.1':
     dependencies:
-      '@types/node': 20.19.43
+      '@types/node': 25.9.5
 
   '@types/serve-static@2.2.0':
     dependencies:
       '@types/http-errors': 2.0.5
-      '@types/node': 20.19.43
+      '@types/node': 25.9.5
 
   '@types/trusted-types@2.0.7':
     optional: true
@@ -7799,6 +7806,8 @@ snapshots:
 
   stylis@4.4.0: {}
 
+  superpowers-dsh@https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663: {}
+
   svg-pathdata@6.0.3:
     optional: true
 
@@ -7853,7 +7862,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/2da384479705b9bd70a1659f78c93608c94b3001(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extension-list@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extensions@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0)(yaml@2.9.0):
+  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/cf8c47735c11535fe88d67f6402d1935a7dcd813(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extension-list@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extensions@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0)(yaml@2.9.0):
     dependencies:
       '@abstractwebunit/markdown-publish': 1.0.6(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(yaml@2.9.0)
       '@codemirror/autocomplete': 6.20.3
@@ -8122,9 +8131,9 @@ snapshots:
 
   yoctocolors@2.2.0: {}
 
-  zod-to-json-schema@3.25.2(zod@4.4.3):
+  zod-to-json-schema@3.25.2(zod@4.5.4):
     dependencies:
-      zod: 4.4.3
+      zod: 4.5.4
 
   zod@4.4.3: {}
 

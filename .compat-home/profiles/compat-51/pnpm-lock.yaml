@@ -14,6 +14,9 @@ importers:
       dsh-popout-sidebar:
         specifier: github:e2mcc/dsh-popout-sidebar
         version: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162
+      open-sea-skin:
+        specifier: github:d-dev0101/open-sea-skin
+        version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea
       zat-dsh-engine:
         specifier: github:mishibeikejie/zat-dsh-engine
         version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0
@@ -35,6 +38,11 @@ packages:
   js-yaml@4.3.1:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
     hasBin: true
+
+  open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea:
+    resolution: {gitHosted: true, integrity: sha512-Ua+svtj9+rn8HopUn3PRQQ9a58AbiLs7IlznyUZeTcns6tLWnt+KQNHdaMAVQe2HsO08GoprosjH0rLPxPWUgA==, tarball: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea}
+    version: 1.2.2
+    engines: {node: '>=20'}
 
   zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0:
     resolution: {gitHosted: true, integrity: sha512-sgFFP+UzenEYwOQ7VCENNqiLYfaCp+M15oZINcFQK2Q4lg9/LSb4lEXrlHgTqQpYrmUQsChfoX9Q4q8M70ctKw==, tarball: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0}
@@ -62,6 +70,8 @@ snapshots:
   js-yaml@4.3.1:
     dependencies:
       argparse: 2.0.1
+
+  open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea: {}
 
   zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0:
     dependencies:

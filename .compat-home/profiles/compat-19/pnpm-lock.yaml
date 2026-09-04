@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/dsh-ads':
+        specifier: github:Nagi-ovo/dsh-ads
+        version: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/8eef607d2ab15737ec93233094d77aff7e5e8da3
       '@dsh-external/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
         version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/b0bed38f40ffbb0d72bb88393d865307944c1bce
@@ -25,6 +28,15 @@ importers:
         version: https://codeload.github.com/adoresever/graph-memory/tar.gz/1dadb34c0db7a204847f209e9290ae115f8e046b
 
 packages:
+
+  '@dsh-external/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/8eef607d2ab15737ec93233094d77aff7e5e8da3':
+    resolution: {gitHosted: true, integrity: sha512-U86vJhXeb7aFJ1I06tk+ZUxL/D2edHH9uRQ7W+Zw4PZF6ILHVdUI62Wm+wFU8gRft2X/JsI9TPSdYTN1cU/tuw==, tarball: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/8eef607d2ab15737ec93233094d77aff7e5e8da3}
+    version: 0.1.0
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
 
   '@dsh-external/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/b0bed38f40ffbb0d72bb88393d865307944c1bce':
     resolution: {gitHosted: true, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/b0bed38f40ffbb0d72bb88393d865307944c1bce}
@@ -206,6 +218,8 @@ packages:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
+
+  '@dsh-external/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/8eef607d2ab15737ec93233094d77aff7e5e8da3': {}
 
   '@dsh-external/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/b0bed38f40ffbb0d72bb88393d865307944c1bce': {}
 

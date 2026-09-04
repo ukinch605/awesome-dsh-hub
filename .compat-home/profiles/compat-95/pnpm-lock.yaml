@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@anionex/dsh-turn-rewind':
+        specifier: github:Anionex/dsh-turn-rewind
+        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/9a2acfc44a6f5c94fd81e8cd217a1f54c75750f4(@deepseek-ai/schemastery@3.18.2)
       '@changfenhuang/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
         version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1
@@ -31,6 +34,15 @@ importers:
         version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/eafa38207fa482e65f4a7e9ae0fc69242981be48
 
 packages:
+
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/9a2acfc44a6f5c94fd81e8cd217a1f54c75750f4':
+    resolution: {gitHosted: true, integrity: sha512-gsb/l4xSvh3atE9b0URDqmNLTuMxxd3uw4jWOTnJX7Jsi24Dpy49JVMY93uWQmMcWF5ySeRE9r5GNRbA07+MUQ==, tarball: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/9a2acfc44a6f5c94fd81e8cd217a1f54c75750f4}
+    version: 0.2.2
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-settings': '>=0.1.0-rc.8 <0.2.0'
+      '@deepseek-ai/schemastery': ^3.18.1
 
   '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1':
     resolution: {gitHosted: true, integrity: sha512-a8erKBsVNh4InBuTBNMFuHTeO8F4BUFGu/7oZuDyD/eYgdxBHQJecPQyPCpbfNDLG+IVVAHuMQiiGFFuIoORbw==, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1}
@@ -97,6 +109,10 @@ packages:
       '@deepseek-ai/dsh-tools': '>=0.1.0-rc.6'
 
 snapshots:
+
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/9a2acfc44a6f5c94fd81e8cd217a1f54c75750f4(@deepseek-ai/schemastery@3.18.2)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
 
   '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1': {}
 

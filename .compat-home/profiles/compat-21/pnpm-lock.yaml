@@ -11,6 +11,9 @@ importers:
       '@dsh-external/workflow':
         specifier: github:icetomoyo/dsh_workflow
         version: git+https://github.com/icetomoyo/dsh_workflow.git#44b83c182aa02d1be8a0803e8446cb495f93cd8f
+      '@mnemon-dev/dsh-mnemon':
+        specifier: github:mnemon-dev/mnemon
+        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/44444ea6b5818bacef31de7a17128ffaafd97ea1
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/1aca7fcd82248b3f6b327d29edf0f86e39e1177c
@@ -59,6 +62,14 @@ packages:
 
   '@jitl/quickjs-wasmfile-release-sync@0.32.0':
     resolution: {integrity: sha512-BKNDI/TPBfGlLNGYpLrhcDGXmIk4xHm4MRAisOBnOzpXVn9HZWsfmMAc9WMBrAHjvvds6HOikKeaOBKdPdpVrg==}
+
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/44444ea6b5818bacef31de7a17128ffaafd97ea1':
+    resolution: {gitHosted: true, integrity: sha512-wqh0fSIWUR1D3Tn8gf7HEKBTNXzFFJLNpGZIECxp9gZSbLHuRCltAED2JMN6ydLUDguJWrOZpDK7qOotSHJ3Og==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/44444ea6b5818bacef31de7a17128ffaafd97ea1}
+    version: 0.1.0
+    engines: {node: '>=20'}
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
   '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.5':
     resolution: {integrity: sha512-m1hXxnbU+tE/zljOci4lnCCRVbNdCz5/JxaHLhuvUXx27yk3hdRA8KiErj2Juq9rjX99QiYNyZq2zQVXIM43QQ==}
@@ -118,6 +129,9 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb:
     resolution: {gitHosted: true, integrity: sha512-noxd7rkfRYdooA3ZZGTkT2sshbifl95XI0rgJ1MTbKirfJtujgxke4cQJQRjlZdq13QzWD4d4Ggf3yLsIYaMwQ==, tarball: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb}
     version: 0.6.9
@@ -169,6 +183,26 @@ packages:
       react:
         optional: true
 
+  dsh-mnemon@0.4.6:
+    resolution: {integrity: sha512-hSV4+Msy4z3X5GAacqFgaD3OMIP0el2sn0NsEMPp2dcNgaaJ71qCmq40GClLUYApTsTxeS9LAj1wc1ZlBVmKIw==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6 || ^0.1.1-rc.1 || ^0.1.2-alpha.1
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
+  fflate@0.8.3:
+    resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
+
+  markdown-to-jsx@7.7.17:
+    resolution: {integrity: sha512-7mG/1feQ0TX5I7YyMZVDgCC/y2I3CiEhIRQIhyov9nGBP5eoVrOXXHuL5ZP8GRfxVZKRiXWJgwXkb9It+nQZfQ==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      react: '>= 0.14.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+
   misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/847ca363da07d9123d18436c27a4fe4e1109e947:
     resolution: {gitHosted: true, integrity: sha512-YXHGAPZulauUX5fv60ZbYxXoHElbmEvjFY9hUFcLkuBmmTcWt2dB5tyHBB0SZsQMajy+QMRN1Qx3pzqwoNl/cw==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/847ca363da07d9123d18436c27a4fe4e1109e947}
 
@@ -178,6 +212,9 @@ packages:
   quickjs-emscripten@0.32.0:
     resolution: {integrity: sha512-So0Sqw869y/S2oE3Nuc0uT3Dhqgvsj8FSrwBdsuTosVsG8ME5/OcudU1GxsrIFdFABgy17GHnTVO9TYV/bLQcA==}
     engines: {node: '>=16.0.0'}
+
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
   superdesign-dsh@https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b:
     resolution: {gitHosted: true, integrity: sha512-YqjjdfYvduaj69lrs/aCmcAvm+teYea6be3m/MTOn/k+cszwRUaxvmSRKzFNd0bKYfZgNBCq8DRF8ZyHK9Cvrw==, tarball: https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b}
@@ -210,6 +247,16 @@ snapshots:
     dependencies:
       '@jitl/quickjs-ffi-types': 0.32.0
 
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/44444ea6b5818bacef31de7a17128ffaafd97ea1':
+    dependencies:
+      dsh-mnemon: 0.4.6
+    transitivePeerDependencies:
+      - '@deepseek-ai/dsh-client-ui-primitives'
+      - react
+      - react-dom
+
+  '@standard-schema/spec@1.1.0': {}
+
   '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.5':
     optional: true
 
@@ -237,9 +284,22 @@ snapshots:
       '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.5
       '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.5
 
+  cosmokit@1.8.1: {}
+
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb:
     dependencies:
       zod: 4.5.4
+
+  dsh-mnemon@0.4.6:
+    dependencies:
+      fflate: 0.8.3
+      markdown-to-jsx: 7.7.17
+      schemastery: 3.18.0
+      zod: 4.5.4
+
+  fflate@0.8.3: {}
+
+  markdown-to-jsx@7.7.17: {}
 
   misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/847ca363da07d9123d18436c27a4fe4e1109e947: {}
 
@@ -254,6 +314,11 @@ snapshots:
       '@jitl/quickjs-wasmfile-release-asyncify': 0.32.0
       '@jitl/quickjs-wasmfile-release-sync': 0.32.0
       quickjs-emscripten-core: 0.32.0
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1
 
   superdesign-dsh@https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b: {}
 

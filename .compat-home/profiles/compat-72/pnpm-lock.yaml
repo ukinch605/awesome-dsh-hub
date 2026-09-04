@@ -17,6 +17,9 @@ importers:
       dsh-plugin-marketplace:
         specifier: github:YELEBAI/dsh-plugin-marketplace
         version: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/5c64f87239012088002b667a9e3821a232d2760f
+      dsh-undo-savepoint:
+        specifier: github:lire1131/dsh-undo-savepoint
+        version: https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/9d9a3fa3eab12469bf613e4278dc267ff81e37c0
 
 packages:
 
@@ -45,6 +48,11 @@ packages:
       '@deepseek-ai/dsh-app-boot': ^0.1.0-rc.5
       '@deepseek-ai/dsh-typert-protocol': ^0.1.0-rc.5
 
+  dsh-undo-savepoint@https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/9d9a3fa3eab12469bf613e4278dc267ff81e37c0:
+    resolution: {gitHosted: true, integrity: sha512-11J2iVSaVfAFNm/D7Z72nEJZ+bjqpuK86eUQr7nI/VHk4zZ68MgKb9irUiD/PtKoUUn5NUn781VEk+lUh+T1Bw==, tarball: https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/9d9a3fa3eab12469bf613e4278dc267ff81e37c0}
+    version: 0.4.4
+    engines: {dsh: '>=0.0.1-0 || >=0.1.0-rc.2 || >=0.1.1-rc.1 || >=0.1.2-alpha.2', node: '>=20.0.0'}
+
   fzstd@0.1.1:
     resolution: {integrity: sha512-dkuVSOKKwh3eas5VkJy1AW1vFpet8TA/fGmVA5krThl8YcOVE/8ZIoEA1+U1vEn5ckxxhLirSdY837azmbaNHA==}
 
@@ -62,6 +70,8 @@ snapshots:
   dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/5c64f87239012088002b667a9e3821a232d2760f:
     dependencies:
       zod: 4.4.3
+
+  dsh-undo-savepoint@https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/9d9a3fa3eab12469bf613e4278dc267ff81e37c0: {}
 
   fzstd@0.1.1: {}
 

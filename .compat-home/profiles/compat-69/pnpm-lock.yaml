@@ -11,6 +11,9 @@ importers:
       '@deepseek-ai/dsh-plugin-check':
         specifier: github:omdsh-dev/dsh-plugin-check
         version: '@omdsh-dev/dsh-plugin-check@https://codeload.github.com/omdsh-dev/dsh-plugin-check/tar.gz/5e51cb7e56f68e54cf50c36e1e0e9e959af696a7'
+      '@nanmicoder/dsh-auto-mode':
+        specifier: github:NanmiCoder/dsh-auto-mode
+        version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a53af050536655f29f8b449ee57f1dd79bf06603
       '@omdsh-dev/dsh-plugin-check':
         specifier: github:omdsh-dev/dsh-plugin-check
         version: https://codeload.github.com/omdsh-dev/dsh-plugin-check/tar.gz/5e51cb7e56f68e54cf50c36e1e0e9e959af696a7
@@ -28,12 +31,18 @@ importers:
         version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/d519514ebbd4cc1c4199d524d1b4704f9d95e028
       seektty:
         specifier: github:Hilbert-beinghappy/seektty
-        version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/c0d620909d3500421df6f147f30a5c563daffbb6
+        version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/c0d620909d3500421df6f147f30a5c563daffbb6(@deepseek-ai/schemastery@3.18.2)
       tabbit-browser:
         specifier: github:Tabbit-Browser/dsh-plugin
         version: dsh-tabbit@git+https://github.com/Tabbit-Browser/dsh-plugin.git#64dfa964aac38754ca7a38da0ce2810a7603934c
 
 packages:
+
+  '@deepseek-ai/cosmokit@1.8.3':
+    resolution: {integrity: sha512-qBo+ronVM6Eu2WNVJXi8JcMiqZ19T9BRIpV+5qJUFPXjGH/Z0QKcQMC/IZJ7L394YTOtJgcovbk9qP0w2GsBXQ==}
+
+  '@deepseek-ai/schemastery@3.18.2':
+    resolution: {integrity: sha512-njDtZsznjYxok7KLLlHOPyuv2efdWVbSflAHgztSfbMsg+CVraEoRe2DjOCgClYv3ZCSm7WXoaUkbB/+RY7tWQ==}
 
   '@hono/node-server@2.1.1':
     resolution: {integrity: sha512-ELuehkj5VCBdgEw9zs+ivkKwyzzUCSQuE96YmiPvn1ECBoZCczbFXJLeEGMTYjphP6gydh4pHMqEYPVMYUVgQg==}
@@ -48,6 +57,31 @@ packages:
       '@cfworker/json-schema': ^4.1.1
     peerDependenciesMeta:
       '@cfworker/json-schema':
+        optional: true
+
+  '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a53af050536655f29f8b449ee57f1dd79bf06603':
+    resolution: {gitHosted: true, integrity: sha512-ObKi82Eh/LCGy7tT3yBlEPRqKgBPwZCifjxppyAdkUpkOqbKnsjYo8rt2SxtLwZUkoixLBPNz08HFGrKOigU5Q==, tarball: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a53af050536655f29f8b449ee57f1dd79bf06603}
+    version: 0.1.6
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/dsh-client-locale': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-llm': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-permission-presets': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-tools': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-user-approval': ^0.1.2-alpha.2
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-permission-presets':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/dsh-user-approval':
         optional: true
 
   '@omdsh-dev/dsh-plugin-check@https://codeload.github.com/omdsh-dev/dsh-plugin-check/tar.gz/5e51cb7e56f68e54cf50c36e1e0e9e959af696a7':
@@ -81,6 +115,9 @@ packages:
 
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
   '@types/hast@3.0.5':
     resolution: {integrity: sha512-rp/ezSWaD1m44dPKICGhiskI13nVr7qTloFwDa/IYkhhf5nzwP+zIQcIJh3WIFSBOy/H1PzB40jPjMDksN4F+g==}
@@ -761,6 +798,13 @@ packages:
 
 snapshots:
 
+  '@deepseek-ai/cosmokit@1.8.3': {}
+
+  '@deepseek-ai/schemastery@3.18.2':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.3
+      '@standard-schema/spec': 1.1.0
+
   '@hono/node-server@2.1.1(hono@4.13.5)':
     dependencies:
       hono: 4.13.5
@@ -786,6 +830,10 @@ snapshots:
       zod-to-json-schema: 3.25.2(zod@3.25.76)
     transitivePeerDependencies:
       - supports-color
+
+  '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a53af050536655f29f8b449ee57f1dd79bf06603':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
 
   '@omdsh-dev/dsh-plugin-check@https://codeload.github.com/omdsh-dev/dsh-plugin-check/tar.gz/5e51cb7e56f68e54cf50c36e1e0e9e959af696a7': {}
 
@@ -819,6 +867,8 @@ snapshots:
       '@types/hast': 3.0.5
 
   '@shikijs/vscode-textmate@10.0.2': {}
+
+  '@standard-schema/spec@1.1.0': {}
 
   '@types/hast@3.0.5':
     dependencies:
@@ -1229,7 +1279,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/c0d620909d3500421df6f147f30a5c563daffbb6:
+  seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/c0d620909d3500421df6f147f30a5c563daffbb6(@deepseek-ai/schemastery@3.18.2):
     dependencies:
       '@shikijs/core': 4.4.3
       '@shikijs/engine-javascript': 4.4.3
@@ -1241,6 +1291,8 @@ snapshots:
       jsonc-parser: 3.3.1
       zod: 4.4.3
       zustand: 4.4.7(immer@10.1.1)
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.2
     transitivePeerDependencies:
       - '@types/react'
       - react
