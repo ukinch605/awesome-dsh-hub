@@ -17,6 +17,9 @@ importers:
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/99e05cdbae5e26c920cc20e0793c66446685b0cd
+      dsh-git-memory:
+        specifier: github:seriousz158/dsh-memory
+        version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/335f6dc9c96727412a0d5e88d8529907dcccb931(@deepseek-ai/schemastery@3.18.2)
       dsh-plugin-bridge:
         specifier: github:Totoro-qaq/dsh-plugin-bridge
         version: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/ec8acaa506a44c968354fd12527fe00d69933506
@@ -113,6 +116,21 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
+  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/335f6dc9c96727412a0d5e88d8529907dcccb931:
+    resolution: {gitHosted: true, integrity: sha512-aXnwjCefGzwJ5vPvKdNe1ipT5tDDJ6yRb1MgP7TpwMp73TLj1BID2eQIFwzoFA0z3p6qJ5x53s4LaenJgqgcnQ==, tarball: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/335f6dc9c96727412a0d5e88d8529907dcccb931}
+    version: 0.9.2
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-connection': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-typert-protocol': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
+
   dsh-plugin-bridge@https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/ec8acaa506a44c968354fd12527fe00d69933506:
     resolution: {gitHosted: true, integrity: sha512-E3FxuDjDidsd936upq0cT35721LAkRxiA6JW5SoHnwcwIrze6809xRdIXtKOfDHQ9RRQuCFUzTjOsryiX+7trA==, tarball: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/ec8acaa506a44c968354fd12527fe00d69933506}
     version: 0.3.1
@@ -200,6 +218,10 @@ snapshots:
       '@zseven-w/dsh-openpencil-linux-x64': 0.1.0-rc.9
       '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.9
       '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.9
+
+  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/335f6dc9c96727412a0d5e88d8529907dcccb931(@deepseek-ai/schemastery@3.18.2):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
 
   dsh-plugin-bridge@https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/ec8acaa506a44c968354fd12527fe00d69933506:
     dependencies:

@@ -23,6 +23,9 @@ importers:
       dsh-damage-pulse:
         specifier: github:wssfk12138/dsh-damage-pulse
         version: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/3b311a66fa4c8192d77911dca46ace6857740213(@deepseek-ai/schemastery@3.18.1)
+      dsh-plugin-bridge:
+        specifier: github:Totoro-qaq/dsh-plugin-bridge
+        version: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/d2b9be2ecd92c5e462f0b7a6fd68836c22673dcd
       dsh-undo-savepoint:
         specifier: github:lire1131/dsh-undo-savepoint
         version: https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/c5046313eec6d65ecbd8bccb1e3852c7e9200946
@@ -136,6 +139,35 @@ packages:
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
       zod: ^4.4.3
+
+  dsh-plugin-bridge@https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/d2b9be2ecd92c5e462f0b7a6fd68836c22673dcd:
+    resolution: {gitHosted: true, integrity: sha512-1j6igOtKb6R763viAoFBt7M4dZFj1oGJM6zVAKXk6AFQTmKMxoOdOWs1KP041U72nYLd53sdltqUXj9vLTbLMA==, tarball: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/d2b9be2ecd92c5e462f0b7a6fd68836c22673dcd}
+    version: 0.3.2
+    engines: {node: '>=22'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.7 || ^0.1.1-rc.1 || ^0.1.2-alpha.1
+      '@deepseek-ai/dsh-client-ui-chat': ^0.1.0-rc.7 || ^0.1.1-rc.1 || ^0.1.2-alpha.1
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.7 || ^0.1.1-rc.1 || ^0.1.2-alpha.1
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.7 || ^0.1.1-rc.1 || ^0.1.2-alpha.1
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.7 || ^0.1.1-rc.1 || ^0.1.2-alpha.1
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-api-remotes':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-chat':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-primitives':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      react:
+        optional: true
 
   dsh-undo-savepoint@https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/c5046313eec6d65ecbd8bccb1e3852c7e9200946:
     resolution: {gitHosted: true, integrity: sha512-cKC+ZWAp6xkdNUjUxk8Hw1nh2BQ606FyyXh3kNrgLUTNt7dLyKPA0b7S4DC3mpsYEQ2Z+csoDD11eDwwrzguxw==, tarball: https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/c5046313eec6d65ecbd8bccb1e3852c7e9200946}
@@ -275,6 +307,10 @@ snapshots:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
       qrcode: 1.5.4
+
+  dsh-plugin-bridge@https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/d2b9be2ecd92c5e462f0b7a6fd68836c22673dcd:
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
 
   dsh-undo-savepoint@https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/c5046313eec6d65ecbd8bccb1e3852c7e9200946: {}
 

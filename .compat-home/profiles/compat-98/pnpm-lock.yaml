@@ -26,6 +26,9 @@ importers:
       dsh-models-config-plugin:
         specifier: github:MarvekG/deepseek-harness-model-config
         version: https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a
+      dsh-strata:
+        specifier: github:jsdvjx/dsh-strata
+        version: https://codeload.github.com/jsdvjx/dsh-strata/tar.gz/283bea4c66458165e4a32752e8f04c28074a6267
       dsh-video-lens:
         specifier: github:dundunhan/dsh-video-lens
         version: https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234
@@ -137,6 +140,12 @@ packages:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a}
     version: 0.1.0
 
+  dsh-strata@https://codeload.github.com/jsdvjx/dsh-strata/tar.gz/283bea4c66458165e4a32752e8f04c28074a6267:
+    resolution: {gitHosted: true, integrity: sha512-22g0E7E2cIDpuBP/fODMIi3iFQKhijgwe5VkOc7x5wZX7j6bTwCmKrPDUkxwZJLtUa9PeaHjUGE6n60RJVhKGA==, tarball: https://codeload.github.com/jsdvjx/dsh-strata/tar.gz/283bea4c66458165e4a32752e8f04c28074a6267}
+    version: 0.9.0
+    peerDependencies:
+      '@deepseek-ai/cordis': '*'
+
   dsh-video-lens@https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234:
     resolution: {gitHosted: true, integrity: sha512-kmNFxpUNmUbgJ1cM1e61VaGOLDujvUXZc5/BBsfq52fH5nxfB34iXiEp9ff1Gque5hh69BgKz3qNfqysTOMMkA==, tarball: https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234}
     version: 0.3.1
@@ -233,6 +242,8 @@ snapshots:
   argparse@2.0.1: {}
 
   dsh-models-config-plugin@https://codeload.github.com/MarvekG/deepseek-harness-model-config/tar.gz/bb736aaf17fc1803b5751cf3832ec036ca5a8d1a: {}
+
+  dsh-strata@https://codeload.github.com/jsdvjx/dsh-strata/tar.gz/283bea4c66458165e4a32752e8f04c28074a6267: {}
 
   dsh-video-lens@https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234:
     dependencies:

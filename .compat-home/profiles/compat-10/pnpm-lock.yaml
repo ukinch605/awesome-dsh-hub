@@ -17,6 +17,9 @@ importers:
       '@xmanrui/dsh-im':
         specifier: github:xmanrui/dsh-im
         version: https://codeload.github.com/xmanrui/dsh-im/tar.gz/8794a46e81869983082b7e0b986e568fb821a566(debug@4.4.3)
+      aegis:
+        specifier: github:GanyuanRan/Aegis
+        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1510bb0277a23074989df9c3f8f6114bc29e536b
       dsh-at-file:
         specifier: github:omdsh-dev/dsh-at-file
         version: git+https://github.com/omdsh-dev/dsh-at-file.git#c37b0ed9e8bf3585bf9f272462dcf01886efe2a3
@@ -292,6 +295,21 @@ packages:
     version: 4.0.0
     engines: {node: '>=22.19'}
     hasBin: true
+
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1510bb0277a23074989df9c3f8f6114bc29e536b:
+    resolution: {gitHosted: true, integrity: sha512-fZAVKVsPSp8mI9pdaZ75Vm2rM/liP8Bwg5UAcftLzBCJO6MQQ7QY9PN6QZ2e5bCFHjc6JK7l45k0dliyJg4yFQ==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1510bb0277a23074989df9c3f8f6114bc29e536b}
+    version: 2.9.8
+    peerDependencies:
+      '@deepseek-ai/dsh-agent': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-skill-filesystem': ^0.1.0-rc.6
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-skill-filesystem':
+        optional: true
 
   agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -1193,6 +1211,8 @@ snapshots:
       - silk-wasm
       - supports-color
       - utf-8-validate
+
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1510bb0277a23074989df9c3f8f6114bc29e536b: {}
 
   agent-base@6.0.2:
     dependencies:

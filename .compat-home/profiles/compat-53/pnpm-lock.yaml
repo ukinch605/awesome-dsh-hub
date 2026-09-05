@@ -11,6 +11,9 @@ importers:
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
         version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/d1bd4381ed771d505db69f2a9065379f7d3165a0
+      dsh-engramory:
+        specifier: github:tinqiao-oss/engramory
+        version: https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5
       dsh-plugin-bridge:
         specifier: github:Totoro-qaq/dsh-plugin-bridge
         version: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/09d701e1c66fdf32058beecf28f59dbbc3746625
@@ -118,6 +121,10 @@ packages:
 
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
+  dsh-engramory@https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5:
+    resolution: {gitHosted: true, integrity: sha512-CMI6QImzoOGYavF2MBH4WV+bKJrbw8X7fhtIg6X/aZi8SdxsY+24Dhz13qj2SEbaxzEUksDFNo0A+GEdKhkg4A==, tarball: https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5}
+    version: 0.2.4
 
   dsh-plugin-bridge@https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/09d701e1c66fdf32058beecf28f59dbbc3746625:
     resolution: {gitHosted: true, integrity: sha512-zf+J39yIp1T5qRgxfFPo6yYgSfE4vQ6jvXw3Ny6lJH1hfxv7Ge2HrdzKZj/MfkccdphyrTW+qMIbp9b33ks58Q==, tarball: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/09d701e1c66fdf32058beecf28f59dbbc3746625}
@@ -235,6 +242,8 @@ snapshots:
       zod: 4.5.4
 
   cosmokit@1.8.1: {}
+
+  dsh-engramory@https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5: {}
 
   dsh-plugin-bridge@https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/09d701e1c66fdf32058beecf28f59dbbc3746625:
     dependencies:

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@nanmicoder/dsh-auto-mode':
+        specifier: github:NanmiCoder/dsh-auto-mode
+        version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a53af050536655f29f8b449ee57f1dd79bf06603
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
         version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/3d449b1accb9f992cff86de4d5225d5b9a8ec1c1
@@ -16,7 +19,7 @@ importers:
         version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/fc99352bdbcd36a65c04e045f8ebe5f42f754674
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/fc99352bdbcd36a65c04e045f8ebe5f42f754674(@deepseek-ai/schemastery@3.18.2)
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
         version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/6ba221b84a80e7f0a50ee92696bba58596862ea6
@@ -25,12 +28,15 @@ importers:
         version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/3a0be7854eb1c52e5d52f474958706daa9f4bce9
       dsh-emoji:
         specifier: github:hellodigua/dsh-emoji
-        version: https://codeload.github.com/hellodigua/dsh-emoji/tar.gz/96b653a473c978a474dd7d42e86e5b2c79e6dc7c
+        version: https://codeload.github.com/hellodigua/dsh-emoji/tar.gz/96b653a473c978a474dd7d42e86e5b2c79e6dc7c(@deepseek-ai/schemastery@3.18.2)
       gal-view:
         specifier: github:Ayase34/gal-view
         version: https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a
 
 packages:
+
+  '@deepseek-ai/cosmokit@1.8.3':
+    resolution: {integrity: sha512-qBo+ronVM6Eu2WNVJXi8JcMiqZ19T9BRIpV+5qJUFPXjGH/Z0QKcQMC/IZJ7L394YTOtJgcovbk9qP0w2GsBXQ==}
 
   '@deepseek-ai/dsh-credentials@0.1.0-rc.6':
     resolution: {integrity: sha512-zyYRs3A9gxfZjZfONzJdMhM0Gzbslpha+FGYkLDRAozgPj0N7mZdE+Qflx2V4WNrCnsSjuvOW0HFBxWtSRUTUw==}
@@ -44,6 +50,37 @@ packages:
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-invariants': ^0.1.0-rc.6
+
+  '@deepseek-ai/schemastery@3.18.2':
+    resolution: {integrity: sha512-njDtZsznjYxok7KLLlHOPyuv2efdWVbSflAHgztSfbMsg+CVraEoRe2DjOCgClYv3ZCSm7WXoaUkbB/+RY7tWQ==}
+
+  '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a53af050536655f29f8b449ee57f1dd79bf06603':
+    resolution: {gitHosted: true, integrity: sha512-ObKi82Eh/LCGy7tT3yBlEPRqKgBPwZCifjxppyAdkUpkOqbKnsjYo8rt2SxtLwZUkoixLBPNz08HFGrKOigU5Q==, tarball: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a53af050536655f29f8b449ee57f1dd79bf06603}
+    version: 0.1.6
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/dsh-client-locale': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-llm': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-permission-presets': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-tools': ^0.1.2-alpha.2
+      '@deepseek-ai/dsh-user-approval': ^0.1.2-alpha.2
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-permission-presets':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/dsh-user-approval':
+        optional: true
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
   '@types/debug@4.1.13':
     resolution: {integrity: sha512-KSVgmQmzMwPlmtljOomayoR89W4FynCAi3E8PPs7vmDVPe84hT+vGPKkJfThkmXs0x0jAaa9U8uW8bbfyS2fWw==}
@@ -394,9 +431,22 @@ packages:
 
 snapshots:
 
+  '@deepseek-ai/cosmokit@1.8.3': {}
+
   '@deepseek-ai/dsh-credentials@0.1.0-rc.6': {}
 
   '@deepseek-ai/dsh-home-paths@0.1.0-rc.6': {}
+
+  '@deepseek-ai/schemastery@3.18.2':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.3
+      '@standard-schema/spec': 1.1.0
+
+  '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/a53af050536655f29f8b449ee57f1dd79bf06603':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
+
+  '@standard-schema/spec@1.1.0': {}
 
   '@types/debug@4.1.13':
     dependencies:
@@ -460,8 +510,9 @@ snapshots:
 
   dijkstrajs@1.0.3: {}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/fc99352bdbcd36a65c04e045f8ebe5f42f754674:
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/fc99352bdbcd36a65c04e045f8ebe5f42f754674(@deepseek-ai/schemastery@3.18.2):
     dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
       fzstd: 0.1.1
 
   dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/6ba221b84a80e7f0a50ee92696bba58596862ea6:
@@ -476,8 +527,9 @@ snapshots:
 
   dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/3a0be7854eb1c52e5d52f474958706daa9f4bce9: {}
 
-  dsh-emoji@https://codeload.github.com/hellodigua/dsh-emoji/tar.gz/96b653a473c978a474dd7d42e86e5b2c79e6dc7c:
+  dsh-emoji@https://codeload.github.com/hellodigua/dsh-emoji/tar.gz/96b653a473c978a474dd7d42e86e5b2c79e6dc7c(@deepseek-ai/schemastery@3.18.2):
     dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
       fflate: 0.8.3
       mdast-util-from-markdown: 2.0.3
       pngjs: 7.0.0

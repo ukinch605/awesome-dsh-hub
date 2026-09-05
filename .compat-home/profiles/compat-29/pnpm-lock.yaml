@@ -17,6 +17,9 @@ importers:
       dsh-open-in-vscode:
         specifier: github:omdsh-dev/dsh-open-in-vscode
         version: https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751
+      dsh-purge:
+        specifier: github:YuJunZhiXue/dsh-purge
+        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/33b4efd70df6c386e2e9d2d24a742f7a30c45a33
 
 packages:
 
@@ -68,6 +71,14 @@ packages:
       react:
         optional: true
 
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/33b4efd70df6c386e2e9d2d24a742f7a30c45a33:
+    resolution: {gitHosted: true, integrity: sha512-i7AWWKJ2c3qdCvriUGQAEr/bu0yQraAP1V680ucENOQsPBm4PpUAU4g8aEDW5eM+NhOhe2UUVdfVFF+fpPq/Hg==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/33b4efd70df6c386e2e9d2d24a742f7a30c45a33}
+    version: 1.3.3
+    engines: {node: '>=18'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+
   luxon@3.7.2:
     resolution: {integrity: sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew==}
     engines: {node: '>=12'}
@@ -87,6 +98,8 @@ snapshots:
   dsh-open-in-vscode@https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751:
     dependencies:
       zod: 4.4.3
+
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/33b4efd70df6c386e2e9d2d24a742f7a30c45a33: {}
 
   luxon@3.7.2: {}
 

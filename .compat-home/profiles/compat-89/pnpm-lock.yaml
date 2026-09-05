@@ -11,6 +11,9 @@ importers:
       '@anionex/dsh-turn-rewind':
         specifier: github:Anionex/dsh-turn-rewind
         version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/df0a18e565043ba48150b82f5243533099b1922d(@deepseek-ai/schemastery@3.18.2)
+      '@dhicoc/dsh-reverse-skill':
+        specifier: github:dhicoc/dsh-reverse-skill
+        version: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732
       '@feiyang666/deepseekharnessdesktop':
         specifier: github:feiyang-dev/dsh-usage-plugin
         version: '@feiyang666/dsh-usage-plugin@https://codeload.github.com/feiyang-dev/dsh-usage-plugin/tar.gz/6583cc39c30efed3a4af0396f034f15cc7fe45df'
@@ -37,7 +40,7 @@ importers:
         version: https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234
       seektty:
         specifier: github:Hilbert-beinghappy/seektty
-        version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/8b41904278a207edc546477cdebba24cb2008971(@deepseek-ai/dsh-tools@0.1.0-rc.7)(@deepseek-ai/schemastery@3.18.2)(react@18.3.1)
+        version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/8b41904278a207edc546477cdebba24cb2008971(@deepseek-ai/dsh-tools@0.1.0-rc.7)(@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6)(@deepseek-ai/schemastery@3.18.2)(react@18.3.1)
 
 packages:
 
@@ -90,6 +93,13 @@ packages:
 
   '@deepseek-ai/schemastery@3.18.2':
     resolution: {integrity: sha512-njDtZsznjYxok7KLLlHOPyuv2efdWVbSflAHgztSfbMsg+CVraEoRe2DjOCgClYv3ZCSm7WXoaUkbB/+RY7tWQ==}
+
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732':
+    resolution: {gitHosted: true, integrity: sha512-zipAcJI7kY6FuOA8hd12MRNW8Ul76p7cuHYvevxX/ThboMurlsSjcsrS/yq+o+qzvNIJM6/nu3bgiiBqYTdL6A==, tarball: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732}
+    version: 1.0.5
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-skill': ^0.0.1-rc.1
 
   '@esbuild/aix-ppc64@0.25.12':
     resolution: {integrity: sha512-Hhmwd6CInZ3dwpuGTF8fJG6yoWmsToE+vYgD4nytZVxcu1ulHpUQRAB1UJ8+N1Am3Mz4+xOByoQoSZf4D+CpkA==}
@@ -1247,6 +1257,8 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.3
       '@standard-schema/spec': 1.1.0
 
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732': {}
+
   '@esbuild/aix-ppc64@0.25.12':
     optional: true
 
@@ -2044,7 +2056,7 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
-  seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/8b41904278a207edc546477cdebba24cb2008971(@deepseek-ai/dsh-tools@0.1.0-rc.7)(@deepseek-ai/schemastery@3.18.2)(react@18.3.1):
+  seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/8b41904278a207edc546477cdebba24cb2008971(@deepseek-ai/dsh-tools@0.1.0-rc.7)(@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6)(@deepseek-ai/schemastery@3.18.2)(react@18.3.1):
     dependencies:
       '@shikijs/core': 4.4.3
       '@shikijs/engine-javascript': 4.4.3
@@ -2058,6 +2070,7 @@ snapshots:
       zustand: 4.4.7(immer@10.1.1)(react@18.3.1)
     optionalDependencies:
       '@deepseek-ai/dsh-tools': 0.1.0-rc.7
+      '@deepseek-ai/dsh-typert-protocol': 0.1.0-rc.6
       '@deepseek-ai/schemastery': 3.18.2
     transitivePeerDependencies:
       - '@types/react'

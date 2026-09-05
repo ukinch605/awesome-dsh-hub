@@ -23,6 +23,9 @@ importers:
       superpowers-dsh:
         specifier: github:LayneChai/superpowers-dsh
         version: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663
+      whale-girl:
+        specifier: github:vlln/whale-girl
+        version: https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3
 
 packages:
 
@@ -65,6 +68,9 @@ packages:
       '@deepseek-ai/schemastery': ^3.18.2
       react: ^18.2.0
 
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
   '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c':
     resolution: {gitHosted: true, integrity: sha512-wD69QZHNKiDPv4VJKvg5Qqgpwq1Jo965D84nofntkiVlnXdDaIUuGzZ5OTNhcfKCdx4VngZ8FQ2y0jHMJ9iQoA==, tarball: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c}
     version: 0.1.0-rc.5
@@ -85,6 +91,9 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
   dsh-memory-evolve@https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/1e6e7eb15ce515b0f2bd2142bdee9a36c46c8b91:
     resolution: {gitHosted: true, integrity: sha512-34GJ0xHQmTLGoRAYBJUsFoqKA15B3l4jQ5K+8T8GIWHpafj4hUFPFSqwGfhGypG7B81BcQg7CA4YqTvhwHiB+Q==, tarball: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/1e6e7eb15ce515b0f2bd2142bdee9a36c46c8b91}
     version: 0.1.0
@@ -94,6 +103,9 @@ packages:
     hasBin: true
     peerDependencies:
       typescript: ^5
+
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
   serve-sim@0.1.46:
     resolution: {integrity: sha512-zdKNOv+6qbdCkhtUMEbzX0ymrb2EJK54dZvs+n3YOK15LEcpapGA9/NpSSYEphpI420kTgUWqKNmkxLoWWaVzg==}
@@ -112,6 +124,10 @@ packages:
 
   superpowers-dsh@https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663:
     resolution: {gitHosted: true, integrity: sha512-SQ2vGwWDcSm+s+YB5E/cN6AYxRdsT2mg7XLx9e3onY8gHXIbGTejpZlFcX/SJRExYiSbXy95GzR22UQZHprEhw==, tarball: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663}
+    version: 0.1.0
+
+  whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3:
+    resolution: {gitHosted: true, integrity: sha512-t4V/CP0kG/sYO3uCgCc0IuCOvGF5X/vrDL3kLmBumGo5wlZju9Q3Y0RgKc9riyEPVaer1jfkk0lE1tNtHAWhOw==, tarball: https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3}
     version: 0.1.0
 
   ws@8.21.3:
@@ -137,6 +153,8 @@ snapshots:
     dependencies:
       zod: 4.5.4
 
+  '@standard-schema/spec@1.1.0': {}
+
   '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c':
     dependencies:
       serve-sim: 0.1.46
@@ -146,9 +164,16 @@ snapshots:
       - typescript
       - utf-8-validate
 
+  cosmokit@1.8.1: {}
+
   dsh-memory-evolve@https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/1e6e7eb15ce515b0f2bd2142bdee9a36c46c8b91: {}
 
   inspect-webkit@0.0.5: {}
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1
 
   serve-sim@0.1.46:
     dependencies:
@@ -166,6 +191,10 @@ snapshots:
   sonner@2.0.8: {}
 
   superpowers-dsh@https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663: {}
+
+  whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3:
+    dependencies:
+      schemastery: 3.18.0
 
   ws@8.21.3: {}
 

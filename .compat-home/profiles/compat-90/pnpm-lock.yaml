@@ -19,13 +19,16 @@ importers:
         version: https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f
       dsh-find-plugin:
         specifier: github:awesome-dsh-plugin/dsh-find-plugin
-        version: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc
+        version: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc(@deepseek-ai/dsh-tools@0.1.0-rc.7)
       dsh-provider-model-configurator:
         specifier: github:LiangYin233/dsh-provider-model-configurator
         version: https://codeload.github.com/LiangYin233/dsh-provider-model-configurator/tar.gz/70f88112c7d92fadeb93e46f5dcb8b1f3ae6eba3
       dsh-usage-stats:
         specifier: github:Make0209/dsh-usage-stats
         version: https://codeload.github.com/Make0209/dsh-usage-stats/tar.gz/8992d306cdca8857b4362868d591fde3689765b0
+      dsh-video-lens:
+        specifier: github:dundunhan/dsh-video-lens
+        version: https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234
 
 packages:
 
@@ -36,6 +39,25 @@ packages:
     peerDependencies:
       cordis: ^4.0.0-rc.7 || ^4.0.1
 
+  '@deepseek-ai/cosmokit@1.8.3':
+    resolution: {integrity: sha512-qBo+ronVM6Eu2WNVJXi8JcMiqZ19T9BRIpV+5qJUFPXjGH/Z0QKcQMC/IZJ7L394YTOtJgcovbk9qP0w2GsBXQ==}
+
+  '@deepseek-ai/dsh-tools@0.1.0-rc.7':
+    resolution: {integrity: sha512-7Kq3EEv354aNcxbS0NRfxxyJiZhCsvFV/03a3MdkYO/gG2eM9+E4xQum0N2FL5bw7JiGlgw8jdLMkcNGmavEaA==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-agent': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-code-runtime': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-scope': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.7
+      '@deepseek-ai/dsh-user-approval': ^0.1.0-rc.7
+
+  '@deepseek-ai/schemastery@3.18.2':
+    resolution: {integrity: sha512-njDtZsznjYxok7KLLlHOPyuv2efdWVbSflAHgztSfbMsg+CVraEoRe2DjOCgClYv3ZCSm7WXoaUkbB/+RY7tWQ==}
+
   '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41':
     resolution: {gitHosted: true, integrity: sha512-YXbHkVgNb104GXaKZuzl6t3cV/66E/4YGQbXZ70ZTgubqk/lQRLiXNXhtv/BLwmafSZxLDSYevQzABuynPhDig==, tarball: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41}
     version: 0.5.5
@@ -45,6 +67,9 @@ packages:
       '@deepseek-ai/dsh-client-runtime': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
       '@deepseek-ai/dsh-client-ui-slots': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
       react: ^18.2.0
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
   argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f:
     resolution: {gitHosted: true, integrity: sha512-+0Ddu0EHKMIyIuXCejXYYaFcWgXCxvgXIW9LjwIGCNbSU1C7L7XsVDBNI4umZEly29BtJ3gIY9ligfnJGZFlQg==, tarball: https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f}
@@ -91,16 +116,51 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-aZN8OSlPPf2UQdC/jZQzby17lW7bzMkKVR1vQQZYi9gSvm5yGBQc8TcxO2D5Qp2MmTBd6/qCLu6PFwejYBDPwA==, tarball: https://codeload.github.com/Make0209/dsh-usage-stats/tar.gz/8992d306cdca8857b4362868d591fde3689765b0}
     version: 1.0.0
 
+  dsh-video-lens@https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234:
+    resolution: {gitHosted: true, integrity: sha512-kmNFxpUNmUbgJ1cM1e61VaGOLDujvUXZc5/BBsfq52fH5nxfB34iXiEp9ff1Gque5hh69BgKz3qNfqysTOMMkA==, tarball: https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234}
+    version: 0.3.1
+    engines: {node: '>=20'}
+
 snapshots:
 
   '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/41731ecf943a0e8e759493a7a9791ec9d691d039': {}
 
+  '@deepseek-ai/cosmokit@1.8.3': {}
+
+  '@deepseek-ai/dsh-tools@0.1.0-rc.7':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
+
+  '@deepseek-ai/schemastery@3.18.2':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.3
+      '@standard-schema/spec': 1.1.0
+
   '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41': {}
+
+  '@standard-schema/spec@1.1.0': {}
 
   argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f: {}
 
-  dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc: {}
+  dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc(@deepseek-ai/dsh-tools@0.1.0-rc.7):
+    dependencies:
+      '@deepseek-ai/dsh-tools': 0.1.0-rc.7
 
   dsh-provider-model-configurator@https://codeload.github.com/LiangYin233/dsh-provider-model-configurator/tar.gz/70f88112c7d92fadeb93e46f5dcb8b1f3ae6eba3: {}
 
   dsh-usage-stats@https://codeload.github.com/Make0209/dsh-usage-stats/tar.gz/8992d306cdca8857b4362868d591fde3689765b0: {}
+
+  dsh-video-lens@https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234:
+    dependencies:
+      '@deepseek-ai/dsh-tools': 0.1.0-rc.7
+      '@deepseek-ai/schemastery': 3.18.2
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis'
+      - '@deepseek-ai/dsh-agent'
+      - '@deepseek-ai/dsh-code-runtime'
+      - '@deepseek-ai/dsh-invariants'
+      - '@deepseek-ai/dsh-llm'
+      - '@deepseek-ai/dsh-scope'
+      - '@deepseek-ai/dsh-session'
+      - '@deepseek-ai/dsh-system-prompt'
+      - '@deepseek-ai/dsh-user-approval'

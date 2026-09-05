@@ -17,6 +17,9 @@ importers:
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
         version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/d1bd4381ed771d505db69f2a9065379f7d3165a0
+      dsh-popout-sidebar:
+        specifier: github:e2mcc/dsh-popout-sidebar
+        version: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162
       dsh-tokenledger:
         specifier: github:zh667/TokenLedger
         version: https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1(@deepseek-ai/schemastery@3.18.1)
@@ -147,6 +150,11 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
+  dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162:
+    resolution: {gitHosted: true, integrity: sha512-PCPmu+5404fhKEjozKvKGHhDj3PPkL1eYfjQXWCKlMpVO1xQ53v+Q2rZKsujdPozlgMbEDGlV/ATdM5qnPClFQ==, tarball: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162}
+    version: 1.0.1
+    engines: {node: '>=20'}
+
   dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1:
     resolution: {gitHosted: true, integrity: sha512-gyl5aoGrwbbCbUHrlL0dXB44hnejM/OCdGqRg7s6FeQ/akvJ+EB9k2MFZuUecqPht7DNq8mb3aemXEcWnJ9ZRQ==, tarball: https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1}
     version: 0.1.1-blue.0
@@ -228,6 +236,8 @@ snapshots:
       zod: 4.5.2
 
   cosmokit@1.8.1: {}
+
+  dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162: {}
 
   dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1(@deepseek-ai/schemastery@3.18.1):
     optionalDependencies:
