@@ -11,6 +11,9 @@ importers:
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
         version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/f96a93c84ae31115bef13a07960ee5a6204cec31
+      '@ychris12138/dsh-usage-stats':
+        specifier: github:Ychris12138/dsh-usage-stats
+        version: https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/7e9c80467f20868b98f3b81beef1e4760158e0fa
       '@zseven-w/dsh-android':
         specifier: github:ZSeven-W/dsh-android
         version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4
@@ -74,6 +77,11 @@ packages:
     peerDependenciesMeta:
       '@deepseek-ai/dsh-llm':
         optional: true
+
+  '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/7e9c80467f20868b98f3b81beef1e4760158e0fa':
+    resolution: {gitHosted: true, integrity: sha512-mURsiIvYJ4u5hzmzlDWiSzi1rHY7DHF193p//fR+pPzYuspiLmY4w2v+lWM6+RlwqxFLKQfq82h5W6Cv1Z3cOQ==, tarball: https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/7e9c80467f20868b98f3b81beef1e4760158e0fa}
+    version: 0.3.2
+    hasBin: true
 
   '@zseven-w/dsh-android@https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4':
     resolution: {gitHosted: true, integrity: sha512-pTLifdVKWNfg+QvGm3x2AExeqSyWGi+ec8dvbqZZPu+G30xugUDtUR7zPOB3juhP/Cl7Y7f5l8i69VWy5Kk4CQ==, tarball: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4}
@@ -584,6 +592,8 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+
+  '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/7e9c80467f20868b98f3b81beef1e4760158e0fa': {}
 
   '@zseven-w/dsh-android@https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4': {}
 

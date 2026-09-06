@@ -20,6 +20,9 @@ importers:
       '@feiyang666/dsh-usage-plugin':
         specifier: github:feiyang-dev/dsh-usage-plugin
         version: https://codeload.github.com/feiyang-dev/dsh-usage-plugin/tar.gz/6583cc39c30efed3a4af0396f034f15cc7fe45df
+      argo-search:
+        specifier: github:taxueseek/argo
+        version: https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f
       dsh-find-plugin:
         specifier: github:awesome-dsh-plugin/dsh-find-plugin
         version: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc(@deepseek-ai/dsh-tools@0.1.0-rc.7)
@@ -353,6 +356,12 @@ packages:
 
   ajv@8.20.0:
     resolution: {integrity: sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==}
+
+  argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f:
+    resolution: {gitHosted: true, integrity: sha512-+0Ddu0EHKMIyIuXCejXYYaFcWgXCxvgXIW9LjwIGCNbSU1C7L7XsVDBNI4umZEly29BtJ3gIY9ligfnJGZFlQg==, tarball: https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f}
+    version: 2.8.5
+    engines: {node: '>=18'}
+    hasBin: true
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
@@ -1449,6 +1458,8 @@ snapshots:
       fast-uri: 3.1.6
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
+
+  argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f: {}
 
   argparse@2.0.1: {}
 

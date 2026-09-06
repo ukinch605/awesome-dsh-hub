@@ -17,6 +17,9 @@ importers:
       '@zseven-w/dsh-crew':
         specifier: github:ZSeven-W/dsh-crew
         version: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/d1ab907866e52f844e80ff47f8082864f5b5b816
+      dsh-free-search:
+        specifier: github:DDDMUC/dsh-free-search
+        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/d1beabcf643256d95823a9cb8f06fc8f84a40483
       dsh-reasoning-effort:
         specifier: github:HanaAyane/dsh-reasoning-effort
         version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/54c76c7e652b8f792f7c3f94d0a723d382e32db5
@@ -200,6 +203,14 @@ packages:
 
   dijkstrajs@1.0.3:
     resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
+
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/d1beabcf643256d95823a9cb8f06fc8f84a40483:
+    resolution: {gitHosted: true, integrity: sha512-OtkJkp9lcUv+MKGgAlQxEG7bnSRBZh8OigtlD4aAWniDk3ZyDdVNKh8B6aVctxwj/apbx7qjkMsScVM5xvQEkA==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/d1beabcf643256d95823a9cb8f06fc8f84a40483}
+    version: 0.4.24
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/dsh-settings': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-tools': '>=0.1.0-rc.6'
 
   dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/54c76c7e652b8f792f7c3f94d0a723d382e32db5:
     resolution: {gitHosted: true, integrity: sha512-bk5fLQGbJVGu84znxlKfdh6sKvM1Jim2wTgNFpD0wJsyB9kFGPda6dxFoL60+Z7k/kzEQ7kfU+IPzCwG7H4aeQ==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/54c76c7e652b8f792f7c3f94d0a723d382e32db5}
@@ -786,6 +797,10 @@ snapshots:
   depd@2.0.0: {}
 
   dijkstrajs@1.0.3: {}
+
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/d1beabcf643256d95823a9cb8f06fc8f84a40483:
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
 
   dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/54c76c7e652b8f792f7c3f94d0a723d382e32db5:
     dependencies:
