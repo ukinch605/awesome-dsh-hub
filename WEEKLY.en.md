@@ -1,6 +1,6 @@
-# 🐋 awesome-dsh-hub Weekly #4 (2026-08-23 ~ 2026-08-30)
+# 🐋 awesome-dsh-hub Weekly #5 (2026-08-30 ~ 2026-09-06)
 
-<!-- WEEK_END: 2026-08-30 -->
+<!-- WEEK_END: 2026-09-06 -->
 
 
 
@@ -9,72 +9,68 @@
 ## Overview
 
 - New plugins: **1000**
-- Total plugins: **4625** (monitoring 4625 repos)
+- Total plugins: **10203** (monitoring 10203 repos)
 
 ## New Plugins This Week
 
 | Plugin | Stars | Description |
 | --- | ---: | --- |
-| [rayafriandion/dsh-oc-tui](https://github.com/rayafriandion/dsh-oc-tui) | 5 | The plugin can use terminal UI like opencode/claude code and other CLI/TUI agents. |
-| [Thedeergod666/dsh-musage](https://github.com/Thedeergod666/dsh-musage) | 4 | DSH 端的 AI 套餐余额监控插件, 跟当前模型自动切换.目前支持 5 provider (minimax / deepseek / kimi / openrouter / zhipu).｜DSH (DeepSeek Harness) plugin to monitor AI coding-plan usage. Follows active model; 5 providers (minima |
-| [tttwh/dsh-plugin-diraud](https://github.com/tttwh/dsh-plugin-diraud) | 4 | 将DeepSeek Harness插件列表按来源分组展示——官方插件与自行安装插件，一目了然。 |
-| [skymecode/dsh-deep-diving](https://github.com/skymecode/dsh-deep-diving) | 4 | plugin for dsh deep diving |
-| [AKS1st/dock-files](https://github.com/AKS1st/dock-files) | 4 | DSH 生态中最好的文件浏览插件：VSCode 资源管理器级目录树、新建/重命名/复制粘贴/删除、拖放导入、粘贴本地文件与剪贴板图片、上传进度条与右键菜单；依赖 dock 基座 \| The best file explorer for DSH: VSCode-level directory tree with new/rename/copy-paste/delete, drag-and-drop  |
-| [duhu2000/qcc-mcp-oauth](https://github.com/duhu2000/qcc-mcp-oauth) | 4 | DeepSeek Harness 插件：一键 OAuth 授权连接企查查（Qichacha）MCP 服务 / One-click OAuth connect to Qichacha MCP services for DeepSeek Harness |
-| [yxsj245/dsh-Basics-Panel](https://github.com/yxsj245/dsh-Basics-Panel) | 4 | DSH Web 插件「基础能力面板」：在 DSH 设置中可视化并管理 MCP 服务器、技能 与 规则。采用模块化 feature 注册表，后续的 DSH 可视化功能只需新增一个 feature 目录并在注册表加一行即可，无需改动面板骨架。 |
-| [KannaKuron/dsh-gitbash-shell](https://github.com/KannaKuron/dsh-gitbash-shell) | 4 | DSH plugin: Git Bash shell for all agent modes on Windows (replaces pwsh executor) |
-| [Pasumao/dsh-plugin-notify](https://github.com/Pasumao/dsh-plugin-notify) | 4 | dsh插件，agent操作结束后调用系统通知，在windows托盘增加图标来启动页面和关闭后台程序 |
-| [Drhushi/dsh-plugin-tav2](https://github.com/Drhushi/dsh-plugin-tav2) | 3 | DeepSeek Harness 插件 —— 对话式游戏本地化：跟 AI 助手说说话，完成游戏翻译全流程。引擎适配器架构，首发支持 Ren'Py。 |
-| [yanzwzz/dsh-whale-girl-pet](https://github.com/yanzwzz/dsh-whale-girl-pet) | 3 | 🐋 DeepSeek 娘桌宠：住进 DeepSeek Harness Web 界面的蓝发鲸鱼女仆。工作链路、任务完成统计（用时/消耗/花费）、睡眠系统、时间感知、余额/天气/喂食按钮、完整设置面板。 |
-| [STARDUSTLC666/dsh-ppt](https://github.com/STARDUSTLC666/dsh-ppt) | 3 | DSH 技能插件：一句话生成完整演示文稿（HTML 放映 + PPTX 导出 + manifest），5 套视觉主题，中英双语，零运行时依赖。· One prompt to a full presentation for DeepSeek Harness. |
-| [meme-dog/dsh-plugin-finder](https://github.com/meme-dog/dsh-plugin-finder) | 3 | Find and audit DeepSeek Harness (DSH) plugins inside the agent — live `dsh-plugin` topic search + source audit with trial-to-production install plans. |
-| [Wha1eChai/dsh-cross-session](https://github.com/Wha1eChai/dsh-cross-session) | 3 | Same-runtime cross-Session discovery and communication for DeepSeek Harness |
-| [Mr-Neutr0n/dsh-medseek](https://github.com/Mr-Neutr0n/dsh-medseek) | 3 | Clinical tools for DeepSeek Harness: handover and discharge drafts, de-identification, completeness checks, and cited lookups. Draft-only, not a medical device. |
-| [enterhalf/dsh-web-network-optimizer](https://github.com/enterhalf/dsh-web-network-optimizer) | 3 | dsh网页端网络优化：通过缓存与压缩技术降低传输，从而大幅提升网页加载速度；同时提供网络断连指示与自动断网重连功能。非常适合追求极致性能或网络不稳定用户使用。Network optimization for the DSH web UI: reduces transfer size with caching and compression to greatly speed up page load |
-| [SKzrui/DSH-CLI](https://github.com/SKzrui/DSH-CLI) | 3 | DSH‑CLI：轻量命令行，流式输出、工具调用、按目录恢复会话，密钥与模型灵活配置，一条命令对话 DeepSeek Harness。 \|  Lightweight CLI for DeepSeek Harness – streaming, tool calling, per‑dir session recovery, flexible config. Start with one command. |
-| [fengyungithub/dsh-short-video-studio](https://github.com/fengyungithub/dsh-short-video-studio) | 3 | 基于deepseek harness和ComfyUI的AI视频创作工作台 |
-| [enterhalf/dsh-web-network-optimizer](https://github.com/enterhalf/dsh-web-network-optimizer) | 3 | dsh网页端网络优化：通过缓存与压缩技术降低传输，从而大幅提升网页加载速度；同时提供网络断连指示与自动断网重连功能。非常适合追求极致性能或网络不稳定用户使用。Network optimization for the DSH web UI: reduces transfer size with caching and compression to greatly speed up page load |
-| [songoao25/dsh-auto-compact](https://github.com/songoao25/dsh-auto-compact) | 3 | Enhanced auto-compaction defaults for DeepSeek Harness agent presets |
+| [extracurricular-ai/dsh-filesnap](https://github.com/extracurricular-ai/dsh-filesnap) | 41 | dsh-filesnap — 把对话和它改过的文件一起回退到某一轮之前,不需要 git 仓库. A blazing-fast rewind and redo plugin for DeepSeek Harness, powered by a 🦀 Rust core, tracking the conversion and the files it changed, no git required |
+| [Amakurai/dsh-liketavern](https://github.com/Amakurai/dsh-liketavern) | 25 | A DeepSeek Harness (dsh) plugin — turns dsh web into a SillyTavern-style roleplay frontend: character cards, prompt presets, lorebooks, personas, BM25 long-term memory, world-state deltas, and rollbac |
+| [WeiyangPro/dsh-deepseek-usage-panel](https://github.com/WeiyangPro/dsh-deepseek-usage-panel) | 16 | 一个用于DeepSeek Harness（DSH）的用量监测面板（目前仅支持DeepSeek官方模型） |
+| [Minglink/dsh-stream-market](https://github.com/Minglink/dsh-stream-market) | 10 | DeepSeek Harness 内置可视化插件市场 — 极速秒开、官方 dsh:// 联动、深度本地管理与原子化彻底卸载 |
+| [abiddotdev/dsh-visualizer](https://github.com/abiddotdev/dsh-visualizer) | 8 |  |
+| [Liora2050348900/dsh-token-optimizer](https://github.com/Liora2050348900/dsh-token-optimizer) | 8 | Layered token-optimization pipeline for DeepSeek Harness: output ladder, MCP lazy loading,compaction driver, cache-hit reporting. Built on real DSH plugin APIs; ~40-60% input saved in long sessions. |
+| [WongYuYe/dsh-appshots](https://github.com/WongYuYe/dsh-appshots) | 6 | Codex-style Appshots for DSH Desktop: capture the frontmost macOS window and attach it to the current chat. |
+| [Liora2050348900/dsh-behavior-enhancer](https://github.com/Liora2050348900/dsh-behavior-enhancer) | 5 | Behavior-management plugin for DeepSeek Harness: tool-call discipline prompt section, failure-triggered parallelism convergence (pool drops to 1, auto-restores), consecutive-failure user intervention. |
+| [qinyre/dsh-plugin-archive-manager](https://github.com/qinyre/dsh-plugin-archive-manager) | 3 | Archive manager (browse / unarchive / auto-rules) plus a Codex-style fisheye conversation rail for dsh.·归档管理与对话刻度尺插件 |
+| [peterwangze/dsh-agent-router](https://github.com/peterwangze/dsh-agent-router) | 3 | DeepSeek Harness 多模型路由插件：让专业的事情交给专业的 agent——自定义视觉/翻译/语音/子代理等专业 agent 并绑定独立模型，多模态账号一键登录、账号池健康路由与实时用量统计 |
+| [aaronlei/dsh-width-tiers](https://github.com/aaronlei/dsh-width-tiers) | 3 | A client plugin for the DeepSeek Harness Web GUI that adds chat content width tiers with a floating picker button (bottom-right, above the composer): 标准 / 中等 / 宽 / 超宽 / 全宽 (standard / medium / wide /  |
+| [FeatherHunter/dsh-im-companion](https://github.com/FeatherHunter/dsh-im-companion) | 3 | dsh-im 伴生插件（IM Companion）：以 Agent 为单位，把飞书/微信/QQ 机器人收进 DSH 工作区，左栏绿灯、一键过滤、舰队总览、拖拽搬家，卸载即净。 |
+| [Small-tailqwq/dsh-internet-angel-desktop](https://github.com/Small-tailqwq/dsh-internet-angel-desktop) | 3 | 一款基于主播女孩重度依赖创建的 适用于 DSH 的 实验性主题皮肤 / Unofficial pixel desktop skin for DSH Web inspired by NEEDY GIRL OVERDOSE. Experimental, non-commercial fan project. |
+| [weiwang988/dsh-session-spend](https://github.com/weiwang988/dsh-session-spend) | 2 | DSH 客户端插件：实时会话花费（¥）· 官方峰谷计价 + 节省分解 DSH client plugin: live session cost readout (¥) with official DeepSeek peak/valley pricing and savings breakdown |
+| [umineko987/dsh-search-enhance](https://github.com/umineko987/dsh-search-enhance) | 2 | 提供 Grok-compatible 网页搜索、保留来源分页、Context7 与 Exa 文档检索、有界网页提取、站点映射、离线研究计划和只读诊断。 |
+| [CJYLZS/dsh-commandcode-provider](https://github.com/CJYLZS/dsh-commandcode-provider) | 2 | a lightweight plugin supports commandcode coding plan in dsh |
+| [FylarOpen/fylar-deepseek-harness-office-editor](https://github.com/FylarOpen/fylar-deepseek-harness-office-editor) | 2 | Office document preview, editing, and DOCX generation for DeepSeek Harness, powered by Fylar Office SDK. |
+| [huenjie/dsh-paste-collapse](https://github.com/huenjie/dsh-paste-collapse) | 2 | dsh-plugin |
+| [zingzheng/dsh-gb](https://github.com/zingzheng/dsh-gb) | 2 | 把手机变成 DSH 的语音遥控外设 |
+| [Anionex/dsh-smarter-edit](https://github.com/Anionex/dsh-smarter-edit) | 2 | A better approach to editing files in DSH. |
 
 ## Top Gainers
 
 | Plugin | Before | After | Gain |
 | --- | ---: | ---: | ---: |
-| [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 192 | 2,786 | +2,594 |
-| [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 974 | 3,105 | +2,131 |
-| [liustack/modlens](https://github.com/liustack/modlens) | 1,636 | 3,758 | +2,122 |
-| [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 1,107 | 2,696 | +1,589 |
-| [bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) | 37 | 1,171 | +1,134 |
-| [ysr666/dsh-vision-router](https://github.com/ysr666/dsh-vision-router) | 106 | 1,026 | +920 |
-| [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 298 | 1,190 | +892 |
-| [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 400 | 841 | +441 |
-| [anysearch-team/anysearch-dsh](https://github.com/anysearch-team/anysearch-dsh) | 27 | 351 | +324 |
-| [V1ki/dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) | 3 | 297 | +294 |
+| [superdesigndev/treg](https://github.com/superdesigndev/treg) | 696 | 1,205 | +509 |
+| [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 2,786 | 3,267 | +481 |
+| [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 1,342 | 1,780 | +438 |
+| [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 3,105 | 3,360 | +255 |
+| [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 1,190 | 1,392 | +202 |
+| [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 2,696 | 2,850 | +154 |
+| [shaobeichen/dsh-pocket](https://github.com/shaobeichen/dsh-pocket) | 813 | 965 | +152 |
+| [SeaOf0/dsh-redteam-model](https://github.com/SeaOf0/dsh-redteam-model) | 116 | 264 | +148 |
+| [yjh051108/dsh-routing-suite](https://github.com/yjh051108/dsh-routing-suite) | 6,953 | 7,099 | +146 |
+| [xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) | 988 | 1,124 | +136 |
 
 ## Category Changes
 
 | Category | Before | After | Change |
 | --- | ---: | ---: | ---: |
-| Web UI | 281 | 628 | +347 |
-| Agent Capabilities | 801 | 1882 | +1081 |
-| Coding & Engineering | 175 | 395 | +220 |
-| Messaging & Notifications | 75 | 183 | +108 |
-| Vision & Multimodal | 188 | 376 | +188 |
-| Browser & Web | 101 | 252 | +151 |
-| Skins & Fun | 62 | 123 | +61 |
-| Files & Data | 247 | 568 | +321 |
-| Dev Tools & Tutorials | 47 | 111 | +64 |
-| Bundles & Distros | 23 | 64 | +41 |
-| Ecosystem Projects | 17 | 43 | +26 |
+| Web UI | 628 | 1263 | +635 |
+| Agent Capabilities | 1882 | 4657 | +2775 |
+| Coding & Engineering | 395 | 775 | +380 |
+| Messaging & Notifications | 183 | 369 | +186 |
+| Vision & Multimodal | 376 | 740 | +364 |
+| Browser & Web | 252 | 506 | +254 |
+| Skins & Fun | 123 | 254 | +131 |
+| Files & Data | 568 | 1151 | +583 |
+| Dev Tools & Tutorials | 111 | 234 | +123 |
+| Bundles & Distros | 64 | 154 | +90 |
+| Ecosystem Projects | 43 | 100 | +57 |
 
 ## Top 10 Changes
 
-- yjh051108/dsh-routing-suite（#1，6,953⭐）
-- dsh-market/dsh-market（#4，2,786⭐）
-- MeteorNOX/DeepSeek-Balance-Whale-Widget（#6，1,342⭐）
-- NanmiCoder/dsh-agent-teams（#7，1,190⭐）
-- bowenliang123/dsh-context（#8，1,171⭐）
-- ysr666/dsh-vision-router（#10，1,026⭐）
+- zhu1090093659/dsh-web（#2，6,960⭐）
+- superdesigndev/treg（#10，1,205⭐）
 
 ---
 
