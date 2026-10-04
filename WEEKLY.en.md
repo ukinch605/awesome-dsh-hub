@@ -1,6 +1,6 @@
-# 🐋 awesome-dsh-hub Weekly #8 (2026-09-20 ~ 2026-09-27)
+# 🐋 awesome-dsh-hub Weekly #9 (2026-09-27 ~ 2026-10-04)
 
-<!-- WEEK_END: 2026-09-27 -->
+<!-- WEEK_END: 2026-10-04 -->
 
 
 
