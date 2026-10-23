@@ -22,7 +22,7 @@ import {
 } from './lib/package-topology-state.js';
 import { applyOverrides, loadOverrides, pruneOverrides } from './lib/overrides.js';
 import { pruneCompatResults } from './lib/validate.js';
-import { preserveTransientEntry } from './lib/registry-state.js';
+import { preserveTransientEntry, previousEntryForCandidate, resolveRepoNameCollisions } from './lib/registry-state.js';
 import { annotateLegacyRemovalEvents, appendEvents, generateEvents, preserveLifecycle, REGISTRY_VERSION } from './lib/registry-v2.js';
 import { INSTALL_PREFIX, SEARCH_QUERIES, SEARCH_SORTS } from './lib/constants.js';
 
@@ -151,15 +151,22 @@ async function main() {
   };
 
   console.log('dsh-hub: fetching topic repos…');
-  const candidates = await searchTopicRepos({
+  const rawCandidates = await searchTopicRepos({
     queries: SEARCH_QUERIES,
     sorts: SEARCH_SORTS,
     token,
     onPage: ({ query, page, total }) =>
       console.log(`  [${query}] page ${page} (total ${total})`),
   });
+  const nameResolution = await resolveRepoNameCollisions({
+    previous,
+    observed: rawCandidates,
+    verify: (repo) => verifyRepositoryAdmission(repo, { token }),
+  });
+  const candidates = nameResolution.candidates;
+  Object.defineProperty(candidates, 'diagnostics', { value: rawCandidates.diagnostics, enumerable: false });
   counts.fetched = candidates.length;
-  console.log(`dsh-hub: ${candidates.length} unique repos found`);
+  console.log(`dsh-hub: ${candidates.length} repo identities after name reconciliation; ${nameResolution.diagnostics.unresolvedRepoNames.length} unresolved names`);
 
   const discoveryState = fs.existsSync(DISCOVERY_STATE_FILE)
     ? JSON.parse(fs.readFileSync(DISCOVERY_STATE_FILE, 'utf8'))
@@ -171,10 +178,19 @@ async function main() {
     observedAt: generatedAt,
     confirm: (candidate) => verifyRepositoryAdmission(candidate, { token }),
   });
+  // Direct identity evidence can confirm a deleted/replaced repository before
+  // the ordinary two-miss window. Do not retain it under a reused name.
+  for (const id of nameResolution.confirmedRemovalIds) discovery.confirmedRemovalIds.add(id);
+  discovery.retainedPrevious = discovery.retainedPrevious.filter(
+    (entry) => !nameResolution.confirmedRemovalIds.has(String(entry.githubRepoId)),
+  );
+  discovery.state.repositories = discovery.state.repositories.filter(
+    (entry) => !nameResolution.confirmedRemovalIds.has(String(entry.repositoryId)),
+  );
 
   const observedConfirmedRemovalIds = new Set();
   const eligible = candidates.filter((r) => {
-    const wasListed = previousById.has(String(r.id)) || previousByRepo.has(r.full_name.toLowerCase());
+    const wasListed = Boolean(previousEntryForCandidate(r, previousById, previousByRepo));
     if (r.archived) { counts.archived++; if (wasListed) observedConfirmedRemovalIds.add(String(r.id)); return false; }
     if (r.fork) { counts.fork++; if (wasListed) observedConfirmedRemovalIds.add(String(r.id)); return false; }
     if (!r.default_branch) { counts.noBranch++; if (wasListed) observedConfirmedRemovalIds.add(String(r.id)); return false; }
@@ -233,7 +249,7 @@ async function main() {
     if (result.fallbackRecovered) counts.fallbackRecovered++;
     if (result.kind === 'transient-failure') {
       counts.fetchFailed++;
-      const prior = previousById.get(String(r.id)) || previousByRepo.get(r.full_name.toLowerCase());
+      const prior = previousEntryForCandidate(r, previousById, previousByRepo);
       preserveTransientEntry(result, r.full_name, new Map([[r.full_name.toLowerCase(), prior]].filter(([, value]) => value)), entries);
       return;
     }
@@ -241,12 +257,12 @@ async function main() {
     if (!hasBundlePatch(text)) {
       counts.manifestMissing++;
       if (result.kind === 'confirmed-missing' || result.kind === 'success') {
-        const prior = previousById.get(String(r.id)) || previousByRepo.get(r.full_name.toLowerCase());
+        const prior = previousEntryForCandidate(r, previousById, previousByRepo);
         if (prior) observedConfirmedRemovalIds.add(String(r.id));
       }
       return;
     }
-    const prior = previousById.get(String(r.id)) || previousByRepo.get(r.full_name.toLowerCase());
+    const prior = previousEntryForCandidate(r, previousById, previousByRepo);
     const manifest = packageMetadata(text);
     entries.push(preserveLifecycle({
       name: r.name,
@@ -350,11 +366,14 @@ async function main() {
           resolvedLeafTotalCount: candidates.diagnostics?.resolvedLeafTotalCount || 0,
           totalCountObservations: candidates.diagnostics?.totalCountObservations || 0,
           pagesFetched: candidates.diagnostics?.pagesFetched || 0,
-          uniqueRepositories: candidates.diagnostics?.uniqueRepositories || candidates.length,
+          uniqueRepositories: candidates.length,
+          rawSearchUniqueRepositories: candidates.diagnostics?.uniqueRepositories || rawCandidates.length,
+          nameIdentity: nameResolution.diagnostics,
           capped: Boolean(candidates.diagnostics?.capped),
           subdivided: Boolean(candidates.diagnostics?.subdivided),
           unresolvedCappedSegments: candidates.diagnostics?.unresolvedCappedSegments || [],
-          completeCoverageClaimed: Boolean(candidates.diagnostics?.completeCoverageClaimed),
+          completeCoverageClaimed: Boolean(candidates.diagnostics?.completeCoverageClaimed)
+            && nameResolution.diagnostics.unresolvedRepoNames.length === 0,
         },
         packageTopology: topologyDiagnostics,
         queries: SEARCH_QUERIES.map((q, i) => `${q}&sort=${SEARCH_SORTS[i]}`),
