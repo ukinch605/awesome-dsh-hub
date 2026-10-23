@@ -20,6 +20,9 @@ importers:
       dsh-tokenledger:
         specifier: github:zh667/TokenLedger
         version: https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1
+      misakanet:
+        specifier: github:Ikalus1988/MisakaNet
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/c4757a06776f576962c49ba1d129861713da2583
       open-sea-skin:
         specifier: github:d-dev0101/open-sea-skin
         version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea
@@ -132,6 +135,19 @@ packages:
   fflate@0.8.3:
     resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
 
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/c4757a06776f576962c49ba1d129861713da2583:
+    resolution: {gitHosted: true, integrity: sha512-iCgf0anXDqSt5E9FKNmps9gs6M3wnN5FhrcoZrYRovLNBuTwMZPq+aXfzBFwIgMGgKS6+TvZ54azcNRpmRniaQ==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/c4757a06776f576962c49ba1d129861713da2583}
+    version: 2.49.0
+    engines: {node: '>=20.0.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
+      '@deepseek-ai/schemastery': '>=3.0.0'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-mcp-client':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+
   open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea:
     resolution: {gitHosted: true, integrity: sha512-Ua+svtj9+rn8HopUn3PRQQ9a58AbiLs7IlznyUZeTcns6tLWnt+KQNHdaMAVQe2HsO08GoprosjH0rLPxPWUgA==, tarball: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea}
     version: 1.2.2
@@ -200,6 +216,8 @@ snapshots:
       zrender: 6.1.0
 
   fflate@0.8.3: {}
+
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/c4757a06776f576962c49ba1d129861713da2583: {}
 
   open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea: {}
 

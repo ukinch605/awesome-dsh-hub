@@ -13,13 +13,16 @@ importers:
         version: https://codeload.github.com/omdsh-dev/dsh-toolkit/tar.gz/aa8d88122adb2b9dc34259696ce3bd80a3e850d9
       '@zseven-w/dsh-noema':
         specifier: github:ZSeven-W/dsh-noema
-        version: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/07d2fece531d11dbd5c420c5d44eaea12e6a9d7a
       ds-harness-remote:
         specifier: github:liguobao/ds-harness-remote
         version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/f2f1c7aec7743c75fcdcd900c59a5277a195cbd0
       dsh-dream-skin:
         specifier: github:RevolutionLA/dsh-dream-skin
         version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/919b76dd9b0ed7d3848619b978f4631fb849fb9c
+      dsh-plugin:
+        specifier: github:dshplugin/dsh-plugin-hub
+        version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/b14d0cd6458e5ff68094cf983df7c2102ff6810c
       dsh-undo-savepoint:
         specifier: github:lire1131/dsh-undo-savepoint
         version: https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/9d9a3fa3eab12469bf613e4278dc267ff81e37c0
@@ -28,7 +31,7 @@ importers:
         version: https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/5b8056e2aa56ced08a12fbc116712540af74f942
       seektty:
         specifier: github:Hilbert-beinghappy/seektty
-        version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/2ec3be8af4b5fe51e78bf14a0ce4231e924ce897(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/42a2a7fa2a01b5a10a2e2ce368c151c8e0fdafc5
 
 packages:
 
@@ -189,59 +192,49 @@ packages:
   '@ungap/structured-clone@1.4.0':
     resolution: {integrity: sha512-1mEZtMKPM09vDmQt5y7YvmN2+DFTP7Tg0EWXdic8/C6VRnpb33e4ghisCIE3WZjsE2N8mf+QV1Zqh7ZFYLWInQ==}
 
-  '@zseven-w/dsh-noema-darwin-arm64@0.1.0-rc.3':
-    resolution: {integrity: sha512-ZRL7Xzaaoq1roNLbflLGZizUiFahT9imrWG7WTVRgwqu4TPaAH8tw7FZDRfO6NCgcRjkrYOJZMDwtrtxUdUveA==}
+  '@zseven-w/dsh-noema-darwin-arm64@0.1.0-rc.6':
+    resolution: {integrity: sha512-kIKNEUVx+cf3GELh+QTrkoWZgT1l65PMISmbA6ZhYoYaGvL2tXmmEooGG00W4tJWnypBXxlPIzWRc0E7SvBJ+w==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [darwin]
 
-  '@zseven-w/dsh-noema-darwin-x64@0.1.0-rc.3':
-    resolution: {integrity: sha512-L+laBZ4bmY5TvKqFp7KN54Rp4azw6xuSEttsRYl7TMnM2tp7Bdf1YRYMv015jdcFhpl8xp6B/VzHt4QIZQvH4g==}
+  '@zseven-w/dsh-noema-darwin-x64@0.1.0-rc.6':
+    resolution: {integrity: sha512-O3iwmBgzK3CPGsjEWkK++4zFhNfwvmPicICMKVWWbPNA+fg0aQDhBmvcompu9CpGKkNAVhbQFrDzYrgknYYaFw==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [darwin]
 
-  '@zseven-w/dsh-noema-linux-arm64@0.1.0-rc.3':
-    resolution: {integrity: sha512-xvVsXPN+9j5OQM+WUAdnTdudbxxo529GG7hZQ9vjz0AujyAa3mhgMRNHDu7AGzkUPEz0IVngbshdX3Y/VPx0vg==}
+  '@zseven-w/dsh-noema-linux-arm64@0.1.0-rc.6':
+    resolution: {integrity: sha512-Afq33g6Ccm8uvfjUma8ROVVeaWvkVEKvKcYkegaoIoglu0wcRE6ItJeHbBMGldgUyDnNohV4VM0NSuOsfyG4Kg==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@zseven-w/dsh-noema-linux-x64@0.1.0-rc.3':
-    resolution: {integrity: sha512-lbJ5xS0vJhmNiZ377r0f7JayFaIqKau4hEkO8Gl+gW7PXE3hAlexKwIyC/8oxqwR38j+FUdGO94ye+8W0ca6CQ==}
+  '@zseven-w/dsh-noema-linux-x64@0.1.0-rc.6':
+    resolution: {integrity: sha512-q0BEYTT95Jm5/ZkefeLDCDVaejRcMVYRvAuVGGI14J0rhSXW20s6pcHbIYXkX1UgnJVpztffG/BaCeV3r121zA==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@zseven-w/dsh-noema-win32-arm64@0.1.0-rc.3':
-    resolution: {integrity: sha512-aoAPKBUHsPFvXfMZi/H/2fv5BAVoYf7p6Sfh6CvW1ZmpWr6N7glKRSrn/x0pNsp6fxyelj9ubovc4aAFTn/hog==}
+  '@zseven-w/dsh-noema-win32-arm64@0.1.0-rc.6':
+    resolution: {integrity: sha512-iCeZPMtqIwO1lJiRBVwzkOH2adABvmwJ0IIcYUKSOvJa3af0cRMV+pqUAhIXWYnAivsrQa81QaTLHxAmtm1IUg==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [win32]
 
-  '@zseven-w/dsh-noema-win32-x64@0.1.0-rc.3':
-    resolution: {integrity: sha512-PbvItTpbQMhkj3i62QHk9/tWWhmodlJ/804wLfL7w97/wBN56GGOyzcSdDKWZ3bDC8Toa14ZdnKH3d7oLlQSow==}
+  '@zseven-w/dsh-noema-win32-x64@0.1.0-rc.6':
+    resolution: {integrity: sha512-/ObKCHdEqO6p4BHqAK+ZiThr8l57SbwlxNEHlvrc04LSlLI2N1bBkx04zgUv6zD8yrQET7Wud5+KlGJ4PH1rog==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [win32]
 
-  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2':
-    resolution: {gitHosted: true, integrity: sha512-2bSjjWQjLIi8VGKHGXpShBm89PFYyiDYbKyVSMlYNnFDeCLUOetv8cnREb5D7cL0yuJyVsm9M4WsT5C/i4RroQ==, tarball: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2}
-    version: 0.1.0-rc.3
+  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/07d2fece531d11dbd5c420c5d44eaea12e6a9d7a':
+    resolution: {gitHosted: true, integrity: sha512-7IQPUFHLHl9irPDqD9/4SQsGi6/AbXP+72iE3A6LCZPxzKJrf20vtMb4usdL/aCQHANeJrAATCDlthpYF7QeAw==, tarball: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/07d2fece531d11dbd5c420c5d44eaea12e6a9d7a}
+    version: 0.1.0-rc.6
     engines: {node: '>=24.11.0'}
     peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
-      '@deepseek-ai/schemastery': ^3.0.0
       react: ^18.2.0
       react-dom: ^18.2.0
 
@@ -347,6 +340,16 @@ packages:
       '@deepseek-ai/dsh-client-ui-settings-general': ^0.1.0-rc.6
       '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
       react: ^18.2.0
+
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/b14d0cd6458e5ff68094cf983df7c2102ff6810c:
+    resolution: {gitHosted: true, integrity: sha512-zSngeUEuDHTkwNVY37Z1C1OKX272IqvUteQqbxTncs7jw15jytYj92qqbPKzWDY5v/bM8DHg5mD51sOpMKr13w==, tarball: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/b14d0cd6458e5ff68094cf983df7c2102ff6810c}
+    version: 2.1.0
+    engines: {node: '>=22.6'}
+    peerDependencies:
+      '@deepseek-ai/cordis': 4.0.1
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
 
   dsh-undo-savepoint@https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/9d9a3fa3eab12469bf613e4278dc267ff81e37c0:
     resolution: {gitHosted: true, integrity: sha512-11J2iVSaVfAFNm/D7Z72nEJZ+bjqpuK86eUQr7nI/VHk4zZ68MgKb9irUiD/PtKoUUn5NUn781VEk+lUh+T1Bw==, tarball: https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/9d9a3fa3eab12469bf613e4278dc267ff81e37c0}
@@ -490,51 +493,80 @@ packages:
   scheduler@0.27.0:
     resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
-  seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/2ec3be8af4b5fe51e78bf14a0ce4231e924ce897:
-    resolution: {gitHosted: true, integrity: sha512-v1oX4vIOKW2UQMdISpjZAtxM4VWb6Pqa++7dsSGVg5Unb1YaY16PvKDbJPyUin3tUr1sv/raKC9gLRknkk3gvw==, tarball: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/2ec3be8af4b5fe51e78bf14a0ce4231e924ce897}
-    version: 1.2.5
+  seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/42a2a7fa2a01b5a10a2e2ce368c151c8e0fdafc5:
+    resolution: {gitHosted: true, integrity: sha512-1r0pzmId2xPAnGT89zGDNVjlK7FwMVOq4qXabeHSxnAwMyDHUUcstKbzEoF5IfRt9JFbKIg1iQLvyRzKOoul7w==, tarball: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/42a2a7fa2a01b5a10a2e2ce368c151c8e0fdafc5}
+    version: 1.3.0
     engines: {node: ^22.19.0 || >=24}
     os: [darwin, linux, win32]
     hasBin: true
     peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/cordis-plugin-include': 1.0.6
-      '@deepseek-ai/cordis-plugin-loader': 1.0.2
-      '@deepseek-ai/dsh-agent-presets': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-api-gateway': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-api-remotes': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-app-boot': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-client-connection': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-client-ui-conversation': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-client-ui-deliverables': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-client-ui-goal': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-client-ui-slots': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-client-ui-trajectory': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-client-ui-workflow-run': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-cmdline': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-code-runtime-worker-thread': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-commands': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-cordis-host-runner': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-credentials': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-goal': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-host-apiproxy': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-host-directory-picker-browse': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-host-plugin-inventory': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-message-feedback': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-session': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-session-projection-cache': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-session-stats': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-settings': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-storage': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-storage-domain': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-storage-json': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-tools': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-typert-protocol': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-typert-registry': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-workspace': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/schemastery': ^3.18.1
+      '@deepseek-ai/cordis': ~4.0.4
+      '@deepseek-ai/cordis-plugin-include': ~1.0.9
+      '@deepseek-ai/cordis-plugin-loader': ~1.0.5
+      '@deepseek-ai/dsh-agent': 0.2.0-rc.2
+      '@deepseek-ai/dsh-agent-preset-registry': 0.2.0-rc.2
+      '@deepseek-ai/dsh-api-gateway': 0.2.0-rc.2
+      '@deepseek-ai/dsh-api-job-controller': 0.2.0-rc.2
+      '@deepseek-ai/dsh-api-remotes': 0.2.0-rc.2
+      '@deepseek-ai/dsh-api-session-controller': 0.2.0-rc.2
+      '@deepseek-ai/dsh-api-settings-controller': 0.2.0-rc.2
+      '@deepseek-ai/dsh-api-workspace-controller': 0.2.0-rc.2
+      '@deepseek-ai/dsh-api-workspace-files': 0.2.0-rc.2
+      '@deepseek-ai/dsh-app-boot': 0.2.0-rc.2
+      '@deepseek-ai/dsh-attachment': 0.2.0-rc.2
+      '@deepseek-ai/dsh-brand': 0.2.0-rc.2
+      '@deepseek-ai/dsh-client-connection': 0.2.0-rc.2
+      '@deepseek-ai/dsh-client-file-upload': 0.2.0-rc.2
+      '@deepseek-ai/dsh-client-locale': 0.2.0-rc.2
+      '@deepseek-ai/dsh-client-ui-attachment': 0.2.0-rc.2
+      '@deepseek-ai/dsh-client-ui-conversation': 0.2.0-rc.2
+      '@deepseek-ai/dsh-client-ui-deliverables': 0.2.0-rc.2
+      '@deepseek-ai/dsh-client-ui-goal': 0.2.0-rc.2
+      '@deepseek-ai/dsh-client-ui-input-trigger': 0.2.0-rc.2
+      '@deepseek-ai/dsh-client-ui-primitives': 0.2.0-rc.2
+      '@deepseek-ai/dsh-client-ui-slots': 0.2.0-rc.2
+      '@deepseek-ai/dsh-client-ui-trajectory': 0.2.0-rc.2
+      '@deepseek-ai/dsh-client-ui-workflow-run': 0.2.0-rc.2
+      '@deepseek-ai/dsh-cmdline': 0.2.0-rc.2
+      '@deepseek-ai/dsh-commands': 0.2.0-rc.2
+      '@deepseek-ai/dsh-config-editor': 0.2.0-rc.2
+      '@deepseek-ai/dsh-cordis-host-runner': 0.2.0-rc.2
+      '@deepseek-ai/dsh-credentials': 0.2.0-rc.2
+      '@deepseek-ai/dsh-file-reference-local': 0.2.0-rc.2
+      '@deepseek-ai/dsh-goal': 0.2.0-rc.2
+      '@deepseek-ai/dsh-headless': 0.2.0-rc.2
+      '@deepseek-ai/dsh-host-directory-picker-browse': 0.2.0-rc.2
+      '@deepseek-ai/dsh-host-plugin-inventory': 0.2.0-rc.2
+      '@deepseek-ai/dsh-jobs': 0.2.0-rc.2
+      '@deepseek-ai/dsh-llm': 0.2.0-rc.2
+      '@deepseek-ai/dsh-llm-retry': 0.2.0-rc.2
+      '@deepseek-ai/dsh-message-feedback': 0.2.0-rc.2
+      '@deepseek-ai/dsh-permission-presets': 0.2.0-rc.2
+      '@deepseek-ai/dsh-ptc-runtime-node': 0.2.0-rc.2
+      '@deepseek-ai/dsh-session': 0.2.0-rc.2
+      '@deepseek-ai/dsh-session-log-export': 0.2.0-rc.2
+      '@deepseek-ai/dsh-session-projection': 0.2.0-rc.2
+      '@deepseek-ai/dsh-session-projection-cache': 0.2.0-rc.2
+      '@deepseek-ai/dsh-session-query': 0.2.0-rc.2
+      '@deepseek-ai/dsh-session-reference': 0.2.0-rc.2
+      '@deepseek-ai/dsh-session-stats': 0.2.0-rc.2
+      '@deepseek-ai/dsh-settings': 0.2.0-rc.2
+      '@deepseek-ai/dsh-storage': 0.2.0-rc.2
+      '@deepseek-ai/dsh-storage-domain': 0.2.0-rc.2
+      '@deepseek-ai/dsh-storage-json': 0.2.0-rc.2
+      '@deepseek-ai/dsh-token-meter': 0.2.0-rc.2
+      '@deepseek-ai/dsh-tool-bash': 0.2.0-rc.2
+      '@deepseek-ai/dsh-tool-todo': 0.2.0-rc.2
+      '@deepseek-ai/dsh-tool-workflow': 0.2.0-rc.2
+      '@deepseek-ai/dsh-tools': 0.2.0-rc.2
+      '@deepseek-ai/dsh-typert-protocol': 0.2.0-rc.2
+      '@deepseek-ai/dsh-typert-registry': 0.2.0-rc.2
+      '@deepseek-ai/dsh-user-approval': 0.2.0-rc.2
+      '@deepseek-ai/dsh-user-questions': 0.2.0-rc.2
+      '@deepseek-ai/dsh-web-app': 0.2.0-rc.2
+      '@deepseek-ai/dsh-workflow': 0.2.0-rc.2
+      '@deepseek-ai/dsh-workspace': 0.2.0-rc.2
+      '@deepseek-ai/schemastery': ~3.18.4
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
         optional: true
@@ -542,23 +574,47 @@ packages:
         optional: true
       '@deepseek-ai/cordis-plugin-loader':
         optional: true
-      '@deepseek-ai/dsh-agent-presets':
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-agent-preset-registry':
         optional: true
       '@deepseek-ai/dsh-api-gateway':
         optional: true
+      '@deepseek-ai/dsh-api-job-controller':
+        optional: true
       '@deepseek-ai/dsh-api-remotes':
+        optional: true
+      '@deepseek-ai/dsh-api-session-controller':
+        optional: true
+      '@deepseek-ai/dsh-api-settings-controller':
+        optional: true
+      '@deepseek-ai/dsh-api-workspace-controller':
+        optional: true
+      '@deepseek-ai/dsh-api-workspace-files':
         optional: true
       '@deepseek-ai/dsh-app-boot':
         optional: true
+      '@deepseek-ai/dsh-attachment':
+        optional: true
+      '@deepseek-ai/dsh-brand':
+        optional: true
       '@deepseek-ai/dsh-client-connection':
         optional: true
+      '@deepseek-ai/dsh-client-file-upload':
+        optional: true
       '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-attachment':
         optional: true
       '@deepseek-ai/dsh-client-ui-conversation':
         optional: true
       '@deepseek-ai/dsh-client-ui-deliverables':
         optional: true
       '@deepseek-ai/dsh-client-ui-goal':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-input-trigger':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-primitives':
         optional: true
       '@deepseek-ai/dsh-client-ui-slots':
         optional: true
@@ -568,29 +624,47 @@ packages:
         optional: true
       '@deepseek-ai/dsh-cmdline':
         optional: true
-      '@deepseek-ai/dsh-code-runtime-worker-thread':
-        optional: true
       '@deepseek-ai/dsh-commands':
+        optional: true
+      '@deepseek-ai/dsh-config-editor':
         optional: true
       '@deepseek-ai/dsh-cordis-host-runner':
         optional: true
       '@deepseek-ai/dsh-credentials':
         optional: true
+      '@deepseek-ai/dsh-file-reference-local':
+        optional: true
       '@deepseek-ai/dsh-goal':
         optional: true
-      '@deepseek-ai/dsh-host-apiproxy':
+      '@deepseek-ai/dsh-headless':
         optional: true
       '@deepseek-ai/dsh-host-directory-picker-browse':
         optional: true
       '@deepseek-ai/dsh-host-plugin-inventory':
         optional: true
+      '@deepseek-ai/dsh-jobs':
+        optional: true
       '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-llm-retry':
         optional: true
       '@deepseek-ai/dsh-message-feedback':
         optional: true
+      '@deepseek-ai/dsh-permission-presets':
+        optional: true
+      '@deepseek-ai/dsh-ptc-runtime-node':
+        optional: true
       '@deepseek-ai/dsh-session':
         optional: true
+      '@deepseek-ai/dsh-session-log-export':
+        optional: true
+      '@deepseek-ai/dsh-session-projection':
+        optional: true
       '@deepseek-ai/dsh-session-projection-cache':
+        optional: true
+      '@deepseek-ai/dsh-session-query':
+        optional: true
+      '@deepseek-ai/dsh-session-reference':
         optional: true
       '@deepseek-ai/dsh-session-stats':
         optional: true
@@ -602,11 +676,27 @@ packages:
         optional: true
       '@deepseek-ai/dsh-storage-json':
         optional: true
+      '@deepseek-ai/dsh-token-meter':
+        optional: true
+      '@deepseek-ai/dsh-tool-bash':
+        optional: true
+      '@deepseek-ai/dsh-tool-todo':
+        optional: true
+      '@deepseek-ai/dsh-tool-workflow':
+        optional: true
       '@deepseek-ai/dsh-tools':
         optional: true
       '@deepseek-ai/dsh-typert-protocol':
         optional: true
       '@deepseek-ai/dsh-typert-registry':
+        optional: true
+      '@deepseek-ai/dsh-user-approval':
+        optional: true
+      '@deepseek-ai/dsh-user-questions':
+        optional: true
+      '@deepseek-ai/dsh-web-app':
+        optional: true
+      '@deepseek-ai/dsh-workflow':
         optional: true
       '@deepseek-ai/dsh-workspace':
         optional: true
@@ -913,34 +1003,32 @@ snapshots:
 
   '@ungap/structured-clone@1.4.0': {}
 
-  '@zseven-w/dsh-noema-darwin-arm64@0.1.0-rc.3':
+  '@zseven-w/dsh-noema-darwin-arm64@0.1.0-rc.6':
     optional: true
 
-  '@zseven-w/dsh-noema-darwin-x64@0.1.0-rc.3':
+  '@zseven-w/dsh-noema-darwin-x64@0.1.0-rc.6':
     optional: true
 
-  '@zseven-w/dsh-noema-linux-arm64@0.1.0-rc.3':
+  '@zseven-w/dsh-noema-linux-arm64@0.1.0-rc.6':
     optional: true
 
-  '@zseven-w/dsh-noema-linux-x64@0.1.0-rc.3':
+  '@zseven-w/dsh-noema-linux-x64@0.1.0-rc.6':
     optional: true
 
-  '@zseven-w/dsh-noema-win32-arm64@0.1.0-rc.3':
+  '@zseven-w/dsh-noema-win32-arm64@0.1.0-rc.6':
     optional: true
 
-  '@zseven-w/dsh-noema-win32-x64@0.1.0-rc.3':
+  '@zseven-w/dsh-noema-win32-x64@0.1.0-rc.6':
     optional: true
 
-  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2(@deepseek-ai/schemastery@3.18.2)':
-    dependencies:
-      '@deepseek-ai/schemastery': 3.18.2
+  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/07d2fece531d11dbd5c420c5d44eaea12e6a9d7a':
     optionalDependencies:
-      '@zseven-w/dsh-noema-darwin-arm64': 0.1.0-rc.3
-      '@zseven-w/dsh-noema-darwin-x64': 0.1.0-rc.3
-      '@zseven-w/dsh-noema-linux-arm64': 0.1.0-rc.3
-      '@zseven-w/dsh-noema-linux-x64': 0.1.0-rc.3
-      '@zseven-w/dsh-noema-win32-arm64': 0.1.0-rc.3
-      '@zseven-w/dsh-noema-win32-x64': 0.1.0-rc.3
+      '@zseven-w/dsh-noema-darwin-arm64': 0.1.0-rc.6
+      '@zseven-w/dsh-noema-darwin-x64': 0.1.0-rc.6
+      '@zseven-w/dsh-noema-linux-arm64': 0.1.0-rc.6
+      '@zseven-w/dsh-noema-linux-x64': 0.1.0-rc.6
+      '@zseven-w/dsh-noema-win32-arm64': 0.1.0-rc.6
+      '@zseven-w/dsh-noema-win32-x64': 0.1.0-rc.6
 
   argparse@2.0.1: {}
 
@@ -1005,6 +1093,8 @@ snapshots:
       - supports-color
 
   dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/919b76dd9b0ed7d3848619b978f4631fb849fb9c: {}
+
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/b14d0cd6458e5ff68094cf983df7c2102ff6810c: {}
 
   dsh-undo-savepoint@https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/9d9a3fa3eab12469bf613e4278dc267ff81e37c0: {}
 
@@ -1158,7 +1248,7 @@ snapshots:
 
   scheduler@0.27.0: {}
 
-  seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/2ec3be8af4b5fe51e78bf14a0ce4231e924ce897(@deepseek-ai/schemastery@3.18.2):
+  seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/42a2a7fa2a01b5a10a2e2ce368c151c8e0fdafc5:
     dependencies:
       '@shikijs/core': 4.4.3
       '@shikijs/engine-javascript': 4.4.3
@@ -1170,8 +1260,6 @@ snapshots:
       jsonc-parser: 3.3.1
       zod: 4.4.3
       zustand: 4.4.7(immer@10.1.1)
-    optionalDependencies:
-      '@deepseek-ai/schemastery': 3.18.2
     transitivePeerDependencies:
       - '@types/react'
       - react

@@ -13,16 +13,19 @@ importers:
         version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41(react@18.3.1)
       '@zseven-w/dsh-crew':
         specifier: github:ZSeven-W/dsh-crew
-        version: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/d1ab907866e52f844e80ff47f8082864f5b5b816(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/b0ddd92eeccbd7623c5a5924f0eb61005a2038ec(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dsh-file-explorer:
         specifier: github:joejojoking-cloud/dsh-file-explorer
-        version: https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/9e1f3ea7baa43d737c51ffc68adb5eb95b024c32(react@18.3.1)
+        version: https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/4b3a609649af9d81b75e91dc194a74bf6b026811(react@18.3.1)
+      dsh-jev-decision-model:
+        specifier: github:Devin-AXIS/jev-dsh-decision
+        version: https://codeload.github.com/Devin-AXIS/jev-dsh-decision/tar.gz/adc88caa9bf174d367e79a5f254c7936bcef088e
       dsh-plugin-genui:
         specifier: github:pengyue-polaron/deepseek-harness-genui
         version: https://codeload.github.com/pengyue-polaron/deepseek-harness-genui/tar.gz/666076819ab2eae0f6f06980e99c013f89fb6b9f(immer@11.1.18)(use-sync-external-store@1.7.0(react@18.3.1))
       dsh-reasoning-effort:
         specifier: github:HanaAyane/dsh-reasoning-effort
-        version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/54c76c7e652b8f792f7c3f94d0a723d382e32db5(react@18.3.1)
+        version: '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560(react@18.3.1)'
       dsh-recall-unread:
         specifier: github:hg1048596-pixel/dsh-recall-unread
         version: https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72
@@ -31,12 +34,31 @@ importers:
         version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/f03c834039997d3377a45501060fb02a7ddebd67(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       tydora:
         specifier: github:zuorn/Tydora
-        version: https://codeload.github.com/zuorn/Tydora/tar.gz/67d2d353ab857789f39c7b6b6b6c09322e4f8187(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/extension-list@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(prosemirror-model@1.25.12)(prosemirror-state@1.4.4)(prosemirror-view@1.42.6)(use-sync-external-store@1.7.0(react@18.3.1))
+        version: https://codeload.github.com/zuorn/Tydora/tar.gz/4af1de4d458c7d03adc2615893e4793766c1bb87(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/extension-list@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(prosemirror-model@1.25.12)(prosemirror-state@1.4.4)(prosemirror-view@1.42.6)(use-sync-external-store@1.7.0(react@18.3.1))
 
 packages:
 
   '@antfu/install-pkg@2.1.0':
     resolution: {integrity: sha512-sdg9NxU3zR4Mnawfbc/x6GB5Wf17WYud5qOuEuxXjaKpYpMkISSJEjItGebXJ2bQ4DIcly4NYH23mtkGJjvKUw==}
+
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560':
+    resolution: {gitHosted: true, integrity: sha512-ExvX+Mxltx9/UHcX0BkgLsOpZrWtE3g3ZTiD62fEY2JfTrn1FqcYlZgPVtxrG+eKP2hig6a6EYphcEIt+6DDlg==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560}
+    version: 0.9.0
+    engines: {dsh: '>=0.2.1-rc.2 <0.3.0', node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.5
+      '@deepseek-ai/dsh-api-remotes': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-api-session-controller': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-connection': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-locale': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-store': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-model-selection': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-renderer': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-session': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-settings': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-slots': ^0.2.1-rc.2
+      react: ^18.2.0
 
   '@babel/runtime@7.29.7':
     resolution: {integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==}
@@ -105,8 +127,14 @@ packages:
   '@deepseek-ai/cosmokit@1.8.2':
     resolution: {integrity: sha512-muBOKtSrUKU5m/xpq8ZXWL6hQ/jgd4PhU2PqH97bcxIiLEJfNwZOGQEx4t/aS/GgxRAR+ra9pMHPMtTHU4sqqA==}
 
+  '@deepseek-ai/cosmokit@1.8.6':
+    resolution: {integrity: sha512-ZSD/fN52L498LBIOYwjIOlaLv5veY6ZEwI2yzvZUKQtctn0QAPqu8tKdJ+OF5+Tv6NBq1U+wJWH+QI6OGy5EvQ==}
+
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
+  '@deepseek-ai/schemastery@3.18.5':
+    resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
   '@esbuild/aix-ppc64@0.25.12':
     resolution: {integrity: sha512-Hhmwd6CInZ3dwpuGTF8fJG6yoWmsToE+vYgD4nytZVxcu1ulHpUQRAB1UJ8+N1Am3Mz4+xOByoQoSZf4D+CpkA==}
@@ -338,6 +366,7 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       '@cfworker/json-schema': ^4.1.1
+      zod: ^3.25 || ^4.0
     peerDependenciesMeta:
       '@cfworker/json-schema':
         optional: true
@@ -783,9 +812,9 @@ packages:
   '@xyflow/system@0.0.83':
     resolution: {integrity: sha512-a//eDjez3WZF47aaPTfVUDD0OINOq+WVwBZCRTqG+m0a5euX8EwlJ4jMY1Wxz0Ocj4xOeekJ70V22Pq0ll8RJw==}
 
-  '@zseven-w/dsh-crew@https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/d1ab907866e52f844e80ff47f8082864f5b5b816':
-    resolution: {gitHosted: true, integrity: sha512-OHyZf3pbmJf7JIhjU4Q+qAElzLX7/B0e4Kycl041C9Hr6zJGrtU0KK1kJgjuIBbCPO8jkUv/WJJZAyywe9bzUA==, tarball: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/d1ab907866e52f844e80ff47f8082864f5b5b816}
-    version: 0.1.0-rc.6
+  '@zseven-w/dsh-crew@https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/b0ddd92eeccbd7623c5a5924f0eb61005a2038ec':
+    resolution: {gitHosted: true, integrity: sha512-WTlpbntBmr12pwGLCgA9CyM6fWgw2a3BOixPHB0GXY/ypkyMsYtjCBXrppoFOJL+1nfGYNO9fnKfimjuUhTn6w==, tarball: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/b0ddd92eeccbd7623c5a5924f0eb61005a2038ec}
+    version: 0.1.0-rc.14
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -796,6 +825,11 @@ packages:
 
   ajv-formats@3.0.1:
     resolution: {integrity: sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==}
+    peerDependencies:
+      ajv: ^8.0.0
+    peerDependenciesMeta:
+      ajv:
+        optional: true
 
   ajv@8.20.0:
     resolution: {integrity: sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==}
@@ -1119,9 +1153,9 @@ packages:
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
 
-  dsh-file-explorer@https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/9e1f3ea7baa43d737c51ffc68adb5eb95b024c32:
-    resolution: {gitHosted: true, integrity: sha512-Dk6wjlersPh4KgHTA4ZAl1JIvYWgEyvUdy0vHnCm2BNsdm4x326m5LTC83cWubKlXAOt7SzJRNrsgtQX2uXAKQ==, tarball: https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/9e1f3ea7baa43d737c51ffc68adb5eb95b024c32}
-    version: 0.1.3
+  dsh-file-explorer@https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/4b3a609649af9d81b75e91dc194a74bf6b026811:
+    resolution: {gitHosted: true, integrity: sha512-dOxjGvIzANbVgkotnc2pUiQkD7DZouWqnEZhrd4reFdFSRV7wt6hQNjEAoS+NFBj3JXeophF3T2snXLt/DH6qw==, tarball: https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/4b3a609649af9d81b75e91dc194a74bf6b026811}
+    version: 0.1.7
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1-rc.1
       '@deepseek-ai/dsh-client-locale': ^0.0.1-rc.1
@@ -1129,6 +1163,11 @@ packages:
       '@deepseek-ai/dsh-client-ui-conversation': ^0.0.1-rc.1
       '@deepseek-ai/dsh-client-ui-slots': ^0.0.1-rc.1
       react: ^18.2.0
+
+  dsh-jev-decision-model@https://codeload.github.com/Devin-AXIS/jev-dsh-decision/tar.gz/adc88caa9bf174d367e79a5f254c7936bcef088e:
+    resolution: {gitHosted: true, integrity: sha512-WKDwp9jkg7EM0243OakDNhDisrc8+0WP8incZ3iymckmZAg4CrlTfopEeHwrMdyiMuNAz6e+uOM+U80LBA/60w==, tarball: https://codeload.github.com/Devin-AXIS/jev-dsh-decision/tar.gz/adc88caa9bf174d367e79a5f254c7936bcef088e}
+    version: 0.1.2
+    engines: {node: '>=20.11'}
 
   dsh-plugin-genui@https://codeload.github.com/pengyue-polaron/deepseek-harness-genui/tar.gz/666076819ab2eae0f6f06980e99c013f89fb6b9f:
     resolution: {gitHosted: true, integrity: sha512-y8xKh5FckaaEg96GueuXPRSPj3ckMe7vbu+W3DO1gsdinzaapJkR5w+i9PlhFL5v0NrfFtE8f+U9RR3iy+hj7Q==, tarball: https://codeload.github.com/pengyue-polaron/deepseek-harness-genui/tar.gz/666076819ab2eae0f6f06980e99c013f89fb6b9f}
@@ -1175,22 +1214,6 @@ packages:
         optional: true
       '@deepseek-ai/dsh-tools':
         optional: true
-
-  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/54c76c7e652b8f792f7c3f94d0a723d382e32db5:
-    resolution: {gitHosted: true, integrity: sha512-bk5fLQGbJVGu84znxlKfdh6sKvM1Jim2wTgNFpD0wJsyB9kFGPda6dxFoL60+Z7k/kzEQ7kfU+IPzCwG7H4aeQ==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/54c76c7e652b8f792f7c3f94d0a723d382e32db5}
-    version: 0.7.0
-    engines: {node: '>=22.19'}
-    peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-connection': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-model-selection': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
-      react: ^18.2.0
 
   dsh-recall-unread@https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72:
     resolution: {gitHosted: true, integrity: sha512-3S73Yr11Da3uuL95XIXxWtdova6NVRTYBYm+JOS/3LORWj0+xu27pjW4Ugni4QHUXlFSVuus0N1C4O0NitqPIA==, tarball: https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72}
@@ -1913,9 +1936,9 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/67d2d353ab857789f39c7b6b6b6c09322e4f8187:
-    resolution: {gitHosted: true, integrity: sha512-tUNUHRM+yi1RaaXgTxfKcmhMnbKP48/VJBuysvnoAhaHD/tZGH4Kf1oDebSLM15ycyGXxSPtRlngegB+cX+uMg==, tarball: https://codeload.github.com/zuorn/Tydora/tar.gz/67d2d353ab857789f39c7b6b6b6c09322e4f8187}
-    version: 0.3.1
+  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/4af1de4d458c7d03adc2615893e4793766c1bb87:
+    resolution: {gitHosted: true, integrity: sha512-PN8CFLguCRPK/QogUFiges0ZakEkw4tTsSbPUUGV6NuFFimh0zL//jPpiFHML97Zr8eAEQMeq8+pR/i1c/wdVg==, tarball: https://codeload.github.com/zuorn/Tydora/tar.gz/4af1de4d458c7d03adc2615893e4793766c1bb87}
+    version: 0.3.2
 
   type-is@2.1.0:
     resolution: {integrity: sha512-faYHw0anBbc/kWF3zFTEnxSFOAGUX9GFbOBthvDdLsIlEoWOFOtS0zgCiQYwIskL9iGXZL3kAXD8OoZ4GmMATA==}
@@ -2047,6 +2070,11 @@ snapshots:
     dependencies:
       package-manager-detector: 1.8.0
       tinyexec: 1.3.1
+
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560(react@18.3.1)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      react: 18.3.1
 
   '@babel/runtime@7.29.7': {}
 
@@ -2189,9 +2217,16 @@ snapshots:
 
   '@deepseek-ai/cosmokit@1.8.2': {}
 
+  '@deepseek-ai/cosmokit@1.8.6': {}
+
   '@deepseek-ai/schemastery@3.18.1':
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.2
+      '@standard-schema/spec': 1.1.0
+
+  '@deepseek-ai/schemastery@3.18.5':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
   '@esbuild/aix-ppc64@0.25.12':
@@ -2873,7 +2908,7 @@ snapshots:
       d3-selection: 3.0.0
       d3-zoom: 3.0.0
 
-  '@zseven-w/dsh-crew@https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/d1ab907866e52f844e80ff47f8082864f5b5b816(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@zseven-w/dsh-crew@https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/b0ddd92eeccbd7623c5a5924f0eb61005a2038ec(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@modelcontextprotocol/sdk': 1.30.0
       react: 18.3.1
@@ -3268,9 +3303,11 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  dsh-file-explorer@https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/9e1f3ea7baa43d737c51ffc68adb5eb95b024c32(react@18.3.1):
+  dsh-file-explorer@https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/4b3a609649af9d81b75e91dc194a74bf6b026811(react@18.3.1):
     dependencies:
       react: 18.3.1
+
+  dsh-jev-decision-model@https://codeload.github.com/Devin-AXIS/jev-dsh-decision/tar.gz/adc88caa9bf174d367e79a5f254c7936bcef088e: {}
 
   dsh-plugin-genui@https://codeload.github.com/pengyue-polaron/deepseek-harness-genui/tar.gz/666076819ab2eae0f6f06980e99c013f89fb6b9f(immer@11.1.18)(use-sync-external-store@1.7.0(react@18.3.1)):
     dependencies:
@@ -3288,11 +3325,6 @@ snapshots:
       - '@types/react'
       - immer
       - use-sync-external-store
-
-  dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/54c76c7e652b8f792f7c3f94d0a723d382e32db5(react@18.3.1):
-    dependencies:
-      '@deepseek-ai/schemastery': 3.18.1
-      react: 18.3.1
 
   dsh-recall-unread@https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72: {}
 
@@ -4118,7 +4150,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/67d2d353ab857789f39c7b6b6b6c09322e4f8187(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/extension-list@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(prosemirror-model@1.25.12)(prosemirror-state@1.4.4)(prosemirror-view@1.42.6)(use-sync-external-store@1.7.0(react@18.3.1)):
+  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/4af1de4d458c7d03adc2615893e4793766c1bb87(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/extension-list@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(prosemirror-model@1.25.12)(prosemirror-state@1.4.4)(prosemirror-view@1.42.6)(use-sync-external-store@1.7.0(react@18.3.1)):
     dependencies:
       '@abstractwebunit/markdown-publish': link:<root>/vendor/markdown-publish
       '@codemirror/autocomplete': 6.20.3

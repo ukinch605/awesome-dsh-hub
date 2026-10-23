@@ -20,6 +20,9 @@ importers:
       graph-memory:
         specifier: github:adoresever/graph-memory
         version: https://codeload.github.com/adoresever/graph-memory/tar.gz/e674b34ad9f035eeaf00f98a0b9ffdac6c0e3a57
+      treg-dsh:
+        specifier: github:superdesigndev/treg
+        version: https://codeload.github.com/superdesigndev/treg/tar.gz/d00ae62f5cd1bea02ae9931839ae31df350e1f90
 
 packages:
 
@@ -95,6 +98,10 @@ packages:
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
+  treg-dsh@https://codeload.github.com/superdesigndev/treg/tar.gz/d00ae62f5cd1bea02ae9931839ae31df350e1f90:
+    resolution: {gitHosted: true, integrity: sha512-0v7dxnQljrqvt9AL9C1/PRUBNdzQ8hlOkVu/+Sy/4t+H4T9CLq8YpVyW6YWuI9LnrHDyPUrN2463h7W80Xyl2g==, tarball: https://codeload.github.com/superdesigndev/treg/tar.gz/d00ae62f5cd1bea02ae9931839ae31df350e1f90}
+    version: 0.27.0
+
 snapshots:
 
   '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/2ccd7b41c5562a194c666173db598509a528f033':
@@ -133,3 +140,5 @@ snapshots:
     dependencies:
       '@standard-schema/spec': 1.1.0
       cosmokit: 1.8.1
+
+  treg-dsh@https://codeload.github.com/superdesigndev/treg/tar.gz/d00ae62f5cd1bea02ae9931839ae31df350e1f90: {}

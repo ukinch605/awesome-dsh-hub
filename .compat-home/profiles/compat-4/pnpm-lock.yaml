@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      dsh-purge:
+        specifier: github:YuJunZhiXue/dsh-purge
+        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/5a9b8e14856138814a2139a0105481e1dcdaece4
       dsh-whale-widget:
         specifier: github:MeteorNOX/DeepSeek-Balance-Whale-Widget
         version: https://codeload.github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget/tar.gz/4448c61db7d180c4c307aa3fa734db7c8507658d
@@ -168,6 +171,14 @@ packages:
 
   diff-match-patch@1.0.5:
     resolution: {integrity: sha512-IayShXAgj/QMXgB0IWmKx+rOPuGMhqm5w6jvFxmVenXKIzRqTAAsbBPT3kWQeGANj3jGgvcvv4yK6SxqYmikgw==}
+
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/5a9b8e14856138814a2139a0105481e1dcdaece4:
+    resolution: {gitHosted: true, integrity: sha512-BwFSyLArFgYlcWoK7vrP2Y5Ql0wsIgLWb+Kzz7//6ZJkdT6xnEDkskfzH8dPw9dk6hZsOHesTHouJ1vOAnSeEQ==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/5a9b8e14856138814a2139a0105481e1dcdaece4}
+    version: 1.1.74
+    engines: {node: '>=18'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
 
   dsh-whale-widget@https://codeload.github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget/tar.gz/4448c61db7d180c4c307aa3fa734db7c8507658d:
     resolution: {gitHosted: true, integrity: sha512-PDXHIDTEBImDJb+g4/V1xL790nG7nEvtnTja7pzbGdMXfITh1f/jIkt+Rl/XoGwIuywAkyMjrO15K6gdMHw50Q==, tarball: https://codeload.github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget/tar.gz/4448c61db7d180c4c307aa3fa734db7c8507658d}
@@ -658,6 +669,8 @@ snapshots:
   dequal@2.0.3: {}
 
   diff-match-patch@1.0.5: {}
+
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/5a9b8e14856138814a2139a0105481e1dcdaece4: {}
 
   dsh-whale-widget@https://codeload.github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget/tar.gz/4448c61db7d180c4c307aa3fa734db7c8507658d: {}
 

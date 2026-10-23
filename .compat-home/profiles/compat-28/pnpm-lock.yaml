@@ -14,6 +14,9 @@ importers:
       '@multica-ai/dsh-runtime':
         specifier: github:multica-ai/dsh-multica-runtime
         version: https://codeload.github.com/multica-ai/dsh-multica-runtime/tar.gz/e29aae228449dfe50e88af60ef4281e38ca44e2a
+      dsh-api-relay-audit:
+        specifier: github:toby-bridges/api-relay-audit
+        version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/bd405e8eaa2234118f942fec353324c718ab46d6
       dsh-notification:
         specifier: github:omdsh-dev/dsh-notification
         version: https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/ddec603395a223deb46c75b74274c41849c6a131
@@ -81,6 +84,18 @@ packages:
 
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/bd405e8eaa2234118f942fec353324c718ab46d6:
+    resolution: {gitHosted: true, integrity: sha512-ks19IaCJ3x6PJmRZWZIra//Y0gRQ5UwE1kZ6CzHQLbYdlRA1QykbGcMTPCuWmtIx9i5GvEs96ObuFuJ/NUrfUw==, tarball: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/bd405e8eaa2234118f942fec353324c718ab46d6}
+    version: 2.5.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-commands': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-llm': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-settings': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-subprocess': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
 
   dsh-notification@https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/ddec603395a223deb46c75b74274c41849c6a131:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/ddec603395a223deb46c75b74274c41849c6a131}
@@ -156,6 +171,8 @@ snapshots:
   commander@13.1.0: {}
 
   cosmokit@1.8.1: {}
+
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/bd405e8eaa2234118f942fec353324c718ab46d6: {}
 
   dsh-notification@https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/ddec603395a223deb46c75b74274c41849c6a131:
     dependencies:

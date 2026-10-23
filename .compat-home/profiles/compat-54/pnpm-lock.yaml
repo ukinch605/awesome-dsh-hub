@@ -20,6 +20,9 @@ importers:
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
         version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/d1bd4381ed771d505db69f2a9065379f7d3165a0
+      dsh-bili-scroll:
+        specifier: github:c1overzz/dsh-bili-scroll
+        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1bfcf294efac5c842c485d0146f1235e91ee2efc
       dsh-engramory:
         specifier: github:tinqiao-oss/engramory
         version: https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5
@@ -146,6 +149,19 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1bfcf294efac5c842c485d0146f1235e91ee2efc:
+    resolution: {gitHosted: true, integrity: sha512-PRcjFDF6uC8ZJxBgGKxYnOKS8H+ZW35ckFAcpCmqYVbbBqkEfQPLnKHRW9flx463w1oaIfvDBJbFV56AafLLUA==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1bfcf294efac5c842c485d0146f1235e91ee2efc}
+    version: 2.0.4
+    engines: {dsh: '>=0.1.7-rc.1', node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/schemastery': '*'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+
   dsh-engramory@https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5:
     resolution: {gitHosted: true, integrity: sha512-CMI6QImzoOGYavF2MBH4WV+bKJrbw8X7fhtIg6X/aZi8SdxsY+24Dhz13qj2SEbaxzEUksDFNo0A+GEdKhkg4A==, tarball: https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5}
     version: 0.2.4
@@ -220,6 +236,10 @@ snapshots:
       zod: 4.4.3
 
   cosmokit@1.8.1: {}
+
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1bfcf294efac5c842c485d0146f1235e91ee2efc:
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
 
   dsh-engramory@https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5: {}
 

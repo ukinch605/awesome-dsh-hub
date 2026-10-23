@@ -26,6 +26,9 @@ importers:
       dsh-skill-viewer:
         specifier: github:Fishquito7/dsh-skill-viewer
         version: dsh-skill-mcp-panel@git+https://github.com/Fishquito7/dsh-skill-viewer.git#5fa5d87c68ad34337e073f82dc50767ed690eb27
+      easyeda-agent-dsh:
+        specifier: github:zhoushoujianwork/easyeda-agent
+        version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7cde1ae1769d3e8c50fd9ada43f9bcc166d69d70
       whale-girl:
         specifier: github:vlln/whale-girl
         version: https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3
@@ -237,6 +240,11 @@ packages:
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
+
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7cde1ae1769d3e8c50fd9ada43f9bcc166d69d70:
+    resolution: {gitHosted: true, integrity: sha512-WPa+wCMctaYFIQAWv2Ud6ajB4C+sM4DcZYnQYfYVPHsn4WJAVPpSRWJkj9PuIvzGKGSBZ0jbAQM9aUaiGKfJ3Q==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7cde1ae1769d3e8c50fd9ada43f9bcc166d69d70}
+    version: 1.13.1
+    engines: {node: '>=20.17.0'}
 
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
@@ -802,6 +810,13 @@ snapshots:
       call-bind-apply-helpers: 1.0.2
       es-errors: 1.3.0
       gopd: 1.2.0
+
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7cde1ae1769d3e8c50fd9ada43f9bcc166d69d70:
+    dependencies:
+      '@modelcontextprotocol/sdk': 1.30.0
+    transitivePeerDependencies:
+      - '@cfworker/json-schema'
+      - supports-color
 
   ee-first@1.1.1: {}
 

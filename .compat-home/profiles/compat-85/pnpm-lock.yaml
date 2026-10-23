@@ -14,9 +14,12 @@ importers:
       argo-search:
         specifier: github:taxueseek/argo
         version: https://codeload.github.com/taxueseek/argo/tar.gz/0cd4f5188eab91e00031239ef76fcba3438cbd35
+      dsh-chat-import:
+        specifier: github:Nwflower/dsh-chat-import
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/8150de2dd2cbbb75c148b7601c1cbf04a85decd5
       dsh-skin-market:
         specifier: github:kingOfSoySauce/dsh-skin-market
-        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/b0fdb9ee5065fb4d9e23062a96e916084846b9b9(react-dom@19.2.8)
+        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/b0fdb9ee5065fb4d9e23062a96e916084846b9b9(react-dom@19.2.8(react@19.2.8))
       dsh-turn-delete:
         specifier: github:hanshenmesen/dsh-turn-delete
         version: https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8
@@ -28,7 +31,7 @@ importers:
         version: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663
       tydora:
         specifier: github:zuorn/Tydora
-        version: https://codeload.github.com/zuorn/Tydora/tar.gz/cf8c47735c11535fe88d67f6402d1935a7dcd813(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extension-list@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extensions@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0)(yaml@2.9.0)
+        version: https://codeload.github.com/zuorn/Tydora/tar.gz/cf8c47735c11535fe88d67f6402d1935a7dcd813(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extension-list@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extensions@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0(react@19.2.8))(yaml@2.9.0)
 
 packages:
 
@@ -81,6 +84,7 @@ packages:
       postcss: ^8.4.0
       rollup: ^4.0.0
       tailwindcss: ^2.0.0 || ^3.0.0 || ^4.0.0
+      tslib: ^2.3.0
       typescript: '>=6.0 <6.1'
       vitest: ^4.0.8
     peerDependenciesMeta:
@@ -2516,6 +2520,19 @@ packages:
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
 
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/8150de2dd2cbbb75c148b7601c1cbf04a85decd5:
+    resolution: {gitHosted: true, integrity: sha512-4qXa6Aqf8FKYM9JdCEl8LiSAJSMlgE2Eqr3bqghLoKprc4LrV4zfcICRtv4zE+k4Rx5zR8TiUcW1ZQfCuW82ZA==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/8150de2dd2cbbb75c148b7601c1cbf04a85decd5}
+    version: 0.26.2
+    engines: {node: '>=22.13'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh': '>=0.1.5-rc.1'
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-tools': '>=0.1.0-rc.6 <0.3.0'
+      '@deepseek-ai/schemastery': '>=3.0.0'
+      react: '>=18.0.0'
+
   dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/b0fdb9ee5065fb4d9e23062a96e916084846b9b9:
     resolution: {gitHosted: true, integrity: sha512-ugiFhP81mo30OHgAuU9H8DWmhE3q7oryVDD8xobwTPiWO9lDLf9cVgGiMqbzKuEbL4jRr3KeaNTgbbbqAUKxeA==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/b0fdb9ee5065fb4d9e23062a96e916084846b9b9}
     version: 0.1.47
@@ -2712,6 +2729,9 @@ packages:
 
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
+
+  fzstd@0.1.1:
+    resolution: {integrity: sha512-dkuVSOKKwh3eas5VkJy1AW1vFpet8TA/fGmVA5krThl8YcOVE/8ZIoEA1+U1vEn5ckxxhLirSdY837azmbaNHA==}
 
   gensync@1.0.0-beta.2:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
@@ -5281,7 +5301,7 @@ snapshots:
       '@parcel/watcher-win32-x64': 2.6.0
     optional: true
 
-  '@phosphor-icons/react@2.1.10(react-dom@19.2.8)':
+  '@phosphor-icons/react@2.1.10(react-dom@19.2.8(react@19.2.8))':
     dependencies:
       react-dom: 19.2.8(react@19.2.8)
 
@@ -5672,7 +5692,7 @@ snapshots:
       prosemirror-transform: 1.12.0
       prosemirror-view: 1.42.3
 
-  '@tiptap/react@3.31.0(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0)(react-dom@19.2.8)(react@19.2.8)':
+  '@tiptap/react@3.31.0(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@tiptap/core': 3.31.0(@tiptap/pm@3.31.0)
       '@tiptap/pm': 3.31.0
@@ -5940,7 +5960,7 @@ snapshots:
 
   '@xterm/xterm@5.5.0': {}
 
-  '@xyflow/react@12.11.5(immer@11.1.18)(react-dom@19.2.8)(react@19.2.8)':
+  '@xyflow/react@12.11.5(immer@11.1.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@xyflow/system': 0.0.81
       classcat: 5.0.5
@@ -6464,9 +6484,13 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/b0fdb9ee5065fb4d9e23062a96e916084846b9b9(react-dom@19.2.8):
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/8150de2dd2cbbb75c148b7601c1cbf04a85decd5:
     dependencies:
-      '@phosphor-icons/react': 2.1.10(react-dom@19.2.8)
+      fzstd: 0.1.1
+
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/b0fdb9ee5065fb4d9e23062a96e916084846b9b9(react-dom@19.2.8(react@19.2.8)):
+    dependencies:
+      '@phosphor-icons/react': 2.1.10(react-dom@19.2.8(react@19.2.8))
       '@primer/octicons-react': 19.33.0
       ajv: 8.20.0
       yaml: 2.9.0
@@ -6677,6 +6701,8 @@ snapshots:
     optional: true
 
   function-bind@1.1.2: {}
+
+  fzstd@0.1.1: {}
 
   gensync@1.0.0-beta.2: {}
 
@@ -7540,7 +7566,7 @@ snapshots:
       react: 19.2.8
       scheduler: 0.27.0
 
-  react-i18next@17.0.13(i18next@26.4.1(typescript@6.0.3))(react-dom@19.2.8)(react@19.2.8)(typescript@6.0.3):
+  react-i18next@17.0.13(i18next@26.4.1(typescript@6.0.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@6.0.3):
     dependencies:
       '@babel/runtime': 7.29.7
       html-parse-stringify: 4.0.1
@@ -7862,7 +7888,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/cf8c47735c11535fe88d67f6402d1935a7dcd813(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extension-list@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extensions@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0)(yaml@2.9.0):
+  tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/cf8c47735c11535fe88d67f6402d1935a7dcd813(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extension-list@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extensions@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0(react@19.2.8))(yaml@2.9.0):
     dependencies:
       '@abstractwebunit/markdown-publish': 1.0.6(@types/markdown-it@14.2.0)(chokidar@5.0.0)(postcss@8.5.26)(yaml@2.9.0)
       '@codemirror/autocomplete': 6.20.3
@@ -7917,12 +7943,12 @@ snapshots:
       '@tiptap/extension-task-list': 3.31.0(@tiptap/extension-list@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))
       '@tiptap/extension-typography': 3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))
       '@tiptap/pm': 3.31.0
-      '@tiptap/react': 3.31.0(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0)(react-dom@19.2.8)(react@19.2.8)
+      '@tiptap/react': 3.31.0(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@tiptap/starter-kit': 3.31.0
       '@types/d3': 7.4.3
       '@xterm/addon-fit': 0.10.0(@xterm/xterm@5.5.0)
       '@xterm/xterm': 5.5.0
-      '@xyflow/react': 12.11.5(immer@11.1.18)(react-dom@19.2.8)(react@19.2.8)
+      '@xyflow/react': 12.11.5(immer@11.1.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       d3: 7.9.0
       d3-force: 3.0.0
       docx: 9.7.1
@@ -7942,10 +7968,10 @@ snapshots:
       prosemirror-markdown: 1.13.7
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
-      react-i18next: 17.0.13(i18next@26.4.1(typescript@6.0.3))(react-dom@19.2.8)(react@19.2.8)(typescript@6.0.3)
+      react-i18next: 17.0.13(i18next@26.4.1(typescript@6.0.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@6.0.3)
       tiptap-markdown: 0.9.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))
       vim-prose: 0.3.1(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)
-      zustand: 5.0.15(immer@11.1.18)(react@19.2.8)(use-sync-external-store@1.6.0)
+      zustand: 5.0.15(immer@11.1.18)(react@19.2.8)(use-sync-external-store@1.6.0(react@19.2.8))
     transitivePeerDependencies:
       - '@angular/animations'
       - '@angular/localize'
@@ -8146,7 +8172,7 @@ snapshots:
       immer: 11.1.18
       react: 19.2.8
 
-  zustand@5.0.15(immer@11.1.18)(react@19.2.8)(use-sync-external-store@1.6.0):
+  zustand@5.0.15(immer@11.1.18)(react@19.2.8)(use-sync-external-store@1.6.0(react@19.2.8)):
     optionalDependencies:
       immer: 11.1.18
       react: 19.2.8

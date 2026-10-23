@@ -17,12 +17,15 @@ importers:
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
         version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/d1bd4381ed771d505db69f2a9065379f7d3165a0
+      dsh-at-file:
+        specifier: github:FSMargoo/dsh-at-file
+        version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
       dsh-popout-sidebar:
         specifier: github:e2mcc/dsh-popout-sidebar
         version: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162
       dsh-tokenledger:
         specifier: github:zh667/TokenLedger
-        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b(@deepseek-ai/schemastery@3.18.1)
       dsh-usage-stats:
         specifier: github:Ychris12138/dsh-usage-stats
         version: '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/f7191519d96480df8b92a462131040f9f5390861'
@@ -150,13 +153,67 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
+  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
+    resolution: {gitHosted: true, integrity: sha512-aXpz1DsFOgd4cUEIeWyTubH9wORj8b/ruLaefeynSwO+M5sp4JOg/RrFj2qya9nKex3jFMdTWVGueZyhpfKDXA==, tarball: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524}
+    version: 0.7.0
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-agent': '*'
+      '@deepseek-ai/dsh-api-remotes': '*'
+      '@deepseek-ai/dsh-client-connection': '*'
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-runtime': '*'
+      '@deepseek-ai/dsh-client-store': '*'
+      '@deepseek-ai/dsh-client-ui-conversation': '*'
+      '@deepseek-ai/dsh-client-ui-input-trigger': '*'
+      '@deepseek-ai/dsh-client-ui-settings': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-settings': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      '@deepseek-ai/dsh-typert-registry': '*'
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-api-remotes':
+        optional: true
+      '@deepseek-ai/dsh-client-connection':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-store':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-input-trigger':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-settings':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      '@deepseek-ai/dsh-typert-registry':
+        optional: true
+      react:
+        optional: true
+
   dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162:
     resolution: {gitHosted: true, integrity: sha512-PCPmu+5404fhKEjozKvKGHhDj3PPkL1eYfjQXWCKlMpVO1xQ53v+Q2rZKsujdPozlgMbEDGlV/ATdM5qnPClFQ==, tarball: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162}
     version: 1.0.1
     engines: {node: '>=20'}
 
-  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1:
-    resolution: {gitHosted: true, integrity: sha512-gyl5aoGrwbbCbUHrlL0dXB44hnejM/OCdGqRg7s6FeQ/akvJ+EB9k2MFZuUecqPht7DNq8mb3aemXEcWnJ9ZRQ==, tarball: https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1}
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b:
+    resolution: {gitHosted: true, integrity: sha512-dl09Z90KbsjLXiJGU+nnpG1xSx9ez13tgRPzq2cwRU6rEIj3kpjwR+LC/dryJxsjFdAZlQMp1ST+u6oi6x2TXQ==, tarball: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b}
     version: 0.1.1-blue.0
     engines: {node: '>=22'}
     peerDependencies:
@@ -237,9 +294,13 @@ snapshots:
 
   cosmokit@1.8.1: {}
 
+  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
+    dependencies:
+      zod: 4.5.2
+
   dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162: {}
 
-  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1(@deepseek-ai/schemastery@3.18.1):
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b(@deepseek-ai/schemastery@3.18.1):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.1
 

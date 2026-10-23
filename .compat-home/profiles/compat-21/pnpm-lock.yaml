@@ -17,6 +17,9 @@ importers:
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/1aca7fcd82248b3f6b327d29edf0f86e39e1177c
+      aegis:
+        specifier: github:GanyuanRan/Aegis
+        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/a95fa4bf00281e617a7a042c8a419af963dd3800
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb
@@ -128,6 +131,21 @@ packages:
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
       react: ^18.2.0
       react-dom: ^18.2.0
+
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/a95fa4bf00281e617a7a042c8a419af963dd3800:
+    resolution: {gitHosted: true, integrity: sha512-sbWG/ovuEUNmG4nlROUgCYDuHOt26HWSxYaY4LOhnlJyKOvuQy5vNgIxOD5silKdKsQED47DGrlXy6XsNiNPNQ==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/a95fa4bf00281e617a7a042c8a419af963dd3800}
+    version: 2.14.1
+    peerDependencies:
+      '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-skill-filesystem': '>=0.1.0-rc.6'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-skill-filesystem':
+        optional: true
 
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
@@ -283,6 +301,8 @@ snapshots:
       '@zseven-w/dsh-openpencil-linux-x64': 0.1.0-rc.5
       '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.5
       '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.5
+
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/a95fa4bf00281e617a7a042c8a419af963dd3800: {}
 
   cosmokit@1.8.1: {}
 

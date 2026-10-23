@@ -17,12 +17,15 @@ importers:
       '@nanmicoder/dsh-auto-mode':
         specifier: github:NanmiCoder/dsh-auto-mode
         version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f
+      '@zseven-w/dsh-ios':
+        specifier: github:ZSeven-W/dsh-ios
+        version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c
       dsh-client-liang-intensity-skin:
         specifier: github:kingOfSoySauce/dsh-liang-skin
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3
       dsh-damage-pulse:
         specifier: github:wssfk12138/dsh-damage-pulse
-        version: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/3b311a66fa4c8192d77911dca46ace6857740213(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/7f739ef8aae7e5d80b7e4a5ad4957d1a704420a3(@deepseek-ai/schemastery@3.18.1)
       dsh-plugin-bridge:
         specifier: github:Totoro-qaq/dsh-plugin-bridge
         version: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/d2b9be2ecd92c5e462f0b7a6fd68836c22673dcd
@@ -37,6 +40,16 @@ packages:
 
   '@deepseek-ai/cosmokit@1.8.2':
     resolution: {integrity: sha512-muBOKtSrUKU5m/xpq8ZXWL6hQ/jgd4PhU2PqH97bcxIiLEJfNwZOGQEx4t/aS/GgxRAR+ra9pMHPMtTHU4sqqA==}
+
+  '@deepseek-ai/dsh-atomic-write@0.1.7-alpha.2':
+    resolution: {integrity: sha512-pev9aU81PaHl/5Ek2KOKced/PWjU9+DSo3E4wWTYEgYSfOWbagz7SLPNVH4fmyhROnYrHnUDqQ9SIRGd1TJkuw==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.4
+
+  '@deepseek-ai/dsh-home-paths@0.1.7-alpha.2':
+    resolution: {integrity: sha512-oXLgTZIiw+7hD+WNkqLCridq+/X+/z4ZZMhkAT1zuR8MFbebOOgXDaMrh8b2wwnGcfGnl3UN69KUQ5v7g4+orQ==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.4
 
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
@@ -55,6 +68,21 @@ packages:
     engines: {node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-settings': ^0.1.0-rc.6 || ^0.1.1-rc.0
+
+  '@jitl/quickjs-ffi-types@0.31.0':
+    resolution: {integrity: sha512-1yrgvXlmXH2oNj3eFTrkwacGJbmM0crwipA3ohCrjv52gBeDaD7PsTvFYinlAnqU8iPME3LGP437yk05a2oejw==}
+
+  '@jitl/quickjs-wasmfile-debug-asyncify@0.31.0':
+    resolution: {integrity: sha512-YkdzQdr1uaftFhgEnTRjTTZHk2SFZdpWO7XhOmRVbi6CEVsH9g5oNF8Ta1q3OuSJHRwwT8YsuR1YzEiEIJEk6w==}
+
+  '@jitl/quickjs-wasmfile-debug-sync@0.31.0':
+    resolution: {integrity: sha512-8XvloaaWBONqcHXYs5tWOjdhQVxzULilIfB2hvZfS6S+fI4m2+lFiwQy7xeP8ExHmiZ7D8gZGChNkdLgjGfknw==}
+
+  '@jitl/quickjs-wasmfile-release-asyncify@0.31.0':
+    resolution: {integrity: sha512-uz0BbQYTxNsFkvkurd7vk2dOg57ElTBLCuvNtRl4rgrtbC++NIndD5qv2+AXb6yXDD3Uy1O2PCwmoaH0eXgEOg==}
+
+  '@jitl/quickjs-wasmfile-release-sync@0.31.0':
+    resolution: {integrity: sha512-hYduecOByj9AsAfsJhZh5nA6exokmuFC8cls39+lYmTCGY51bgjJJJwReEu7Ff7vBWaQCL6TeDdVlnp2WYz0jw==}
 
   '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f':
     resolution: {gitHosted: true, integrity: sha512-lMIct43lNedA+ruu00X8rKCHbhJXtwn58ruT3YvgQyQpsdox7SEBwYS9cJKfKPxgMF6Oq2LG/wAJIrpWowXOkQ==, tarball: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f}
@@ -83,6 +111,11 @@ packages:
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c':
+    resolution: {gitHosted: true, integrity: sha512-3RlNwYzVnO71ptOCu86KjDK18pZhPavrX/WF5jU1uvSKI/Ep8bMDpcxAdeCy6+PJ8YUhiAwSrgefU79nNrSn8w==, tarball: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c}
+    version: 0.1.0-rc.10
+    engines: {node: '>=24.11.0'}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -117,25 +150,25 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-okn8dw8JWDvkky4SNeh7igGtnLH6x1ntFZ1swKN7TEI0GGOx0E3RRAj0mpf6fWtlBkv408LUHajObFi2NNYi7w==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3}
     version: 0.1.7
 
-  dsh-damage-pulse@https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/3b311a66fa4c8192d77911dca46ace6857740213:
-    resolution: {gitHosted: true, integrity: sha512-O/jD+JQ86olUnw8Nr+0U0zg2FNU3tquv3pUay+4zcRkqA21/OokJhI+pWpNIBbFfIUbd1jcyiR579c4huo44oA==, tarball: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/3b311a66fa4c8192d77911dca46ace6857740213}
-    version: 4.0.3
+  dsh-damage-pulse@https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/7f739ef8aae7e5d80b7e4a5ad4957d1a704420a3:
+    resolution: {gitHosted: true, integrity: sha512-VxyouZT1tSb5wzc6RAurEb4a9MktY5obpCLmDamf0cp0sT8jkNZzXIBDUBdOeAvbN2dB7jLfPQ9DBVi+8qD+Aw==, tarball: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/7f739ef8aae7e5d80b7e4a5ad4957d1a704420a3}
+    version: 4.2.9
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-client-connection': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1
-      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1
-      '@deepseek-ai/dsh-client-ui-layout': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1
-      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1
-      '@deepseek-ai/dsh-credentials': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1
-      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1
-      '@deepseek-ai/dsh-llm': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1
-      '@deepseek-ai/dsh-session': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1
-      '@deepseek-ai/dsh-session-persistence': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1
-      '@deepseek-ai/dsh-session-projection': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1
-      '@deepseek-ai/dsh-session-projection-cache': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1
-      '@deepseek-ai/dsh-settings': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1
-      '@deepseek-ai/dsh-tools': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1
+      '@deepseek-ai/dsh-client-connection': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.1.3-alpha.1 || ^0.1.5-alpha.1 || ^0.1.6-alpha.1 || ^0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.1 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.1.3-alpha.1 || ^0.1.5-alpha.1 || ^0.1.6-alpha.1 || ^0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.1 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-layout': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.1.3-alpha.1 || ^0.1.5-alpha.1 || ^0.1.6-alpha.1 || ^0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.1 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.1.3-alpha.1 || ^0.1.5-alpha.1 || ^0.1.6-alpha.1 || ^0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.1 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-credentials': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.1.3-alpha.1 || ^0.1.5-alpha.1 || ^0.1.6-alpha.1 || ^0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.1 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.1.3-alpha.1 || ^0.1.5-alpha.1 || ^0.1.6-alpha.1 || ^0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.1 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.1.3-alpha.1 || ^0.1.5-alpha.1 || ^0.1.6-alpha.1 || ^0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.1 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.1.3-alpha.1 || ^0.1.5-alpha.1 || ^0.1.6-alpha.1 || ^0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.1 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-session-persistence': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.1.3-alpha.1 || ^0.1.5-alpha.1 || ^0.1.6-alpha.1 || ^0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.1 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-session-projection': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.1.3-alpha.1 || ^0.1.5-alpha.1 || ^0.1.6-alpha.1 || ^0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.1 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-session-projection-cache': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.1.3-alpha.1 || ^0.1.5-alpha.1 || ^0.1.6-alpha.1 || ^0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.1 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.1.3-alpha.1 || ^0.1.5-alpha.1 || ^0.1.6-alpha.1 || ^0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.1 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.5 || ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.1.3-alpha.1 || ^0.1.5-alpha.1 || ^0.1.6-alpha.1 || ^0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.1 || 0.2.1-rc.2
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
       zod: ^4.4.3
@@ -189,6 +222,16 @@ packages:
     resolution: {integrity: sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==}
     engines: {node: 6.* || 8.* || >= 10.*}
 
+  inspect-webkit@0.0.5:
+    resolution: {integrity: sha512-584wP/2nJO1LX74nqHP2j0tQzlK9ZTi+D0Z9qeLQjtUR/LCMXQHGX8M0vrsqBwTeGakF7q5GMFpg81nxUYlCvw==}
+    hasBin: true
+    peerDependencies:
+      typescript: ^5
+
+  ipaddr.js@2.2.0:
+    resolution: {integrity: sha512-Ag3wB2o37wslZS19hZqorUnrnzSkpOVy+IiiDEiTqNubEYpYuHWIf6K4psgN2ZWKExS4xhVCrRVfb/wfW8fWJA==}
+    engines: {node: '>= 10'}
+
   is-fullwidth-code-point@3.0.0:
     resolution: {integrity: sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==}
     engines: {node: '>=8'}
@@ -222,6 +265,13 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
+  quickjs-emscripten-core@0.31.0:
+    resolution: {integrity: sha512-oQz8p0SiKDBc1TC7ZBK2fr0GoSHZKA0jZIeXxsnCyCs4y32FStzCW4d1h6E1sE0uHDMbGITbk2zhNaytaoJwXQ==}
+
+  quickjs-emscripten@0.31.0:
+    resolution: {integrity: sha512-K7Yt78aRPLjPcqv3fIuLW1jW3pvwO21B9pmFOolsjM/57ZhdVXBr51GqJpalgBlkPu9foAvhEAuuQPnvIGvLvQ==}
+    engines: {node: '>=16.0.0'}
+
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
@@ -229,8 +279,23 @@ packages:
   require-main-filename@2.0.0:
     resolution: {integrity: sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==}
 
+  serve-sim@0.1.48:
+    resolution: {integrity: sha512-Kfg++zbtrRHYEOGAVk/9ftZamp40Qpz8WgP3idWaHoGaCJ01TrEZeq0UnWIsrGSaGhGgi0ytxMOsrEo3H/bFiA==}
+    engines: {node: '>=20'}
+    hasBin: true
+
   set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
+
+  sonner@2.0.8:
+    resolution: {integrity: sha512-UM/ByIoFra8yzV75n1o0Puu0bw5U/9UNnDacrJNspekBewIfsQ3D6ez1nvlWpt7aTsO6rujQtifBpycwIivqlg==}
+    peerDependencies:
+      '@types/react': ^18.0.0 || ^19.0.0
+      react: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+      react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
 
   string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
@@ -247,6 +312,18 @@ packages:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
     engines: {node: '>=8'}
 
+  ws@8.22.0:
+    resolution: {integrity: sha512-Ydggc987+RO0AnWtZ/7Wq9FtNvcrL1b/RO0ud9mWjUPgDrsAAwQSF51sm2hm1XofbU/4jkpGEsLFsZZxU+1DOg==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
   y18n@4.0.3:
     resolution: {integrity: sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ==}
 
@@ -262,6 +339,10 @@ snapshots:
 
   '@deepseek-ai/cosmokit@1.8.2': {}
 
+  '@deepseek-ai/dsh-atomic-write@0.1.7-alpha.2': {}
+
+  '@deepseek-ai/dsh-home-paths@0.1.7-alpha.2': {}
+
   '@deepseek-ai/schemastery@3.18.1':
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.2
@@ -271,11 +352,40 @@ snapshots:
 
   '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/28d9f29f0db5592e75dd2e9cc4dbdb4b77b4b8ac': {}
 
+  '@jitl/quickjs-ffi-types@0.31.0': {}
+
+  '@jitl/quickjs-wasmfile-debug-asyncify@0.31.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.31.0
+
+  '@jitl/quickjs-wasmfile-debug-sync@0.31.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.31.0
+
+  '@jitl/quickjs-wasmfile-release-asyncify@0.31.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.31.0
+
+  '@jitl/quickjs-wasmfile-release-sync@0.31.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.31.0
+
   '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
 
   '@standard-schema/spec@1.1.0': {}
+
+  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c':
+    dependencies:
+      serve-sim: 0.1.48
+    transitivePeerDependencies:
+      - '@types/react'
+      - bufferutil
+      - react
+      - react-dom
+      - typescript
+      - utf-8-validate
 
   ansi-regex@5.0.1: {}
 
@@ -303,10 +413,14 @@ snapshots:
 
   dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3: {}
 
-  dsh-damage-pulse@https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/3b311a66fa4c8192d77911dca46ace6857740213(@deepseek-ai/schemastery@3.18.1):
+  dsh-damage-pulse@https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/7f739ef8aae7e5d80b7e4a5ad4957d1a704420a3(@deepseek-ai/schemastery@3.18.1):
     dependencies:
+      '@deepseek-ai/dsh-atomic-write': 0.1.7-alpha.2
+      '@deepseek-ai/dsh-home-paths': 0.1.7-alpha.2
       '@deepseek-ai/schemastery': 3.18.1
+      ipaddr.js: 2.2.0
       qrcode: 1.5.4
+      quickjs-emscripten: 0.31.0
 
   dsh-plugin-bridge@https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/d2b9be2ecd92c5e462f0b7a6fd68836c22673dcd:
     dependencies:
@@ -324,6 +438,10 @@ snapshots:
   gal-view@https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a: {}
 
   get-caller-file@2.0.5: {}
+
+  inspect-webkit@0.0.5: {}
+
+  ipaddr.js@2.2.0: {}
 
   is-fullwidth-code-point@3.0.0: {}
 
@@ -351,11 +469,38 @@ snapshots:
       pngjs: 5.0.0
       yargs: 15.4.1
 
+  quickjs-emscripten-core@0.31.0:
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.31.0
+
+  quickjs-emscripten@0.31.0:
+    dependencies:
+      '@jitl/quickjs-wasmfile-debug-asyncify': 0.31.0
+      '@jitl/quickjs-wasmfile-debug-sync': 0.31.0
+      '@jitl/quickjs-wasmfile-release-asyncify': 0.31.0
+      '@jitl/quickjs-wasmfile-release-sync': 0.31.0
+      quickjs-emscripten-core: 0.31.0
+
   require-directory@2.1.1: {}
 
   require-main-filename@2.0.0: {}
 
+  serve-sim@0.1.48:
+    dependencies:
+      inspect-webkit: 0.0.5
+      sonner: 2.0.8
+      ws: 8.22.0
+    transitivePeerDependencies:
+      - '@types/react'
+      - bufferutil
+      - react
+      - react-dom
+      - typescript
+      - utf-8-validate
+
   set-blocking@2.0.0: {}
+
+  sonner@2.0.8: {}
 
   string-width@4.2.3:
     dependencies:
@@ -374,6 +519,8 @@ snapshots:
       ansi-styles: 4.3.0
       string-width: 4.2.3
       strip-ansi: 6.0.1
+
+  ws@8.22.0: {}
 
   y18n@4.0.3: {}
 

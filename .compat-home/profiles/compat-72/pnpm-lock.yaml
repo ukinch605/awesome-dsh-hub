@@ -13,7 +13,10 @@ importers:
         version: https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/c6212d9a35e3542a100fa61b51e42a8fa8e688e3
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689(@deepseek-ai/schemastery@3.18.5)
+      dsh-ego-browser:
+        specifier: github:Fisfzy/dsh-ego-browser
+        version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/718a1838f5395a7e2e3634180187b0903be5c350
       dsh-plugin-marketplace:
         specifier: github:YELEBAI/dsh-plugin-marketplace
         version: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/5c64f87239012088002b667a9e3821a232d2760f
@@ -26,10 +29,22 @@ importers:
 
 packages:
 
+  '@deepseek-ai/cosmokit@1.8.6':
+    resolution: {integrity: sha512-ZSD/fN52L498LBIOYwjIOlaLv5veY6ZEwI2yzvZUKQtctn0QAPqu8tKdJ+OF5+Tv6NBq1U+wJWH+QI6OGy5EvQ==}
+
+  '@deepseek-ai/schemastery@3.18.5':
+    resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
   '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/c6212d9a35e3542a100fa61b51e42a8fa8e688e3':
     resolution: {gitHosted: true, integrity: sha512-nddz5ZrLHFwtwM80wE0mAJGAgil8LJclLFdDFsLx6FNg6g6+ecx0grDVtVY5sV7NIFS3yQ/FxC/Zw7J9VQK3cQ==, tarball: https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/c6212d9a35e3542a100fa61b51e42a8fa8e688e3}
     version: 0.3.1
     hasBin: true
+
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
   dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689:
     resolution: {gitHosted: true, integrity: sha512-Wi4Khs7EJD4W3CVWCkI+vWaCtIymT2VPGXOjsZa6RblXDfOrqCvOIJIXhOAG+6M70BoLwoariqAJJifGX7QYQw==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689}
@@ -42,6 +57,37 @@ packages:
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
       '@deepseek-ai/schemastery': '>=3.0.0'
       react: '>=18.0.0'
+
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/718a1838f5395a7e2e3634180187b0903be5c350:
+    resolution: {gitHosted: true, integrity: sha512-NF9sFZ1E24Wbovydlrvx2kdc3n3WKiClqMlh/1NqJu7ZIb8MVYd+d1QBaPqk3k77AhstTGsTkzvfKmT9awwkLQ==, tarball: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/718a1838f5395a7e2e3634180187b0903be5c350}
+    version: 0.9.2
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/dsh-client-locale': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-client-store': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-client-ui-settings-plugins': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-settings': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-tools': '>=0.1.2-rc.1'
+      react: ^18.2.0
+      schemastery: ^3.18.0
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-store':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings-plugins':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-settings':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      react:
+        optional: true
+      schemastery:
+        optional: true
 
   dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/5c64f87239012088002b667a9e3821a232d2760f:
     resolution: {gitHosted: true, integrity: sha512-mQW3uXqoAdqXuXl4KwNyovGpircNlu2YppuekxGG6PxLWBQb1+BxMbcGT0aWLPF30tX51Q4yLZLty0PMa+MQIQ==, tarball: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/5c64f87239012088002b667a9e3821a232d2760f}
@@ -63,16 +109,36 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-zVpjAExArNW6aZIUdTjieY6olq4Oec4QD5dTMJ5a8UyIksT/b7WlBHjdqSWSP83ExId+9rL/8WCNKDBjyk2zQg==, tarball: https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a}
     version: 0.3.3
 
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
+
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
 
+  '@deepseek-ai/cosmokit@1.8.6': {}
+
+  '@deepseek-ai/schemastery@3.18.5':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.6
+      '@standard-schema/spec': 1.1.0
+
+  '@standard-schema/spec@1.1.0': {}
+
   '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/c6212d9a35e3542a100fa61b51e42a8fa8e688e3': {}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689:
+  cosmokit@1.8.1: {}
+
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689(@deepseek-ai/schemastery@3.18.5):
     dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
       fzstd: 0.1.1
+
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/718a1838f5395a7e2e3634180187b0903be5c350:
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      schemastery: 3.18.0
 
   dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/5c64f87239012088002b667a9e3821a232d2760f:
     dependencies:
@@ -83,5 +149,10 @@ snapshots:
   fzstd@0.1.1: {}
 
   gal-view@https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a: {}
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1
 
   zod@4.4.3: {}

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dsh-external/dsh-blender-plugin':
+        specifier: github:sixtysevenlf/dsh-blender-plugin
+        version: https://codeload.github.com/sixtysevenlf/dsh-blender-plugin/tar.gz/8026912164a1218b5cd408ce2659a1b0fc07ebe5
       '@icelily/dsh-gitbash-preset':
         specifier: github:liceses/dsh-gitbash-preset
         version: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8
@@ -22,6 +25,27 @@ importers:
         version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd
 
 packages:
+
+  '@dsh-external/dsh-blender-plugin@https://codeload.github.com/sixtysevenlf/dsh-blender-plugin/tar.gz/8026912164a1218b5cd408ce2659a1b0fc07ebe5':
+    resolution: {gitHosted: true, integrity: sha512-764Q7P1GS0gGJWzRZxc9A8tdLLe8cAPvy34bjrGAJtJa8/ti3YSpr1MVXapSJOr/m3cWR1EHhkJNEkmGvZQxNA==, tarball: https://codeload.github.com/sixtysevenlf/dsh-blender-plugin/tar.gz/8026912164a1218b5cd408ce2659a1b0fc07ebe5}
+    version: 2.6.0
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.0-rc <5'
+      '@deepseek-ai/dsh-llm': '>=0.0.1-rc <2'
+      '@deepseek-ai/dsh-tools': '>=0.0.1-rc <2'
+      '@deepseek-ai/schemastery': ^3.18.0
+      cordis: '>=4.0.0-rc <5'
+      schemastery: ^3.18.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+      cordis:
+        optional: true
+      schemastery:
+        optional: true
 
   '@icelily/dsh-gitbash-preset@https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8':
     resolution: {gitHosted: true, integrity: sha512-JeoS0JZoqCz3uuGVb+W38w08uegiYWtgI5esN+3yJbnK+uXmS0TG1oXYpS3m96l27WzDX5wATaGmvULFnmWqSQ==, tarball: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8}
@@ -74,6 +98,8 @@ packages:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
+
+  '@dsh-external/dsh-blender-plugin@https://codeload.github.com/sixtysevenlf/dsh-blender-plugin/tar.gz/8026912164a1218b5cd408ce2659a1b0fc07ebe5': {}
 
   '@icelily/dsh-gitbash-preset@https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8': {}
 

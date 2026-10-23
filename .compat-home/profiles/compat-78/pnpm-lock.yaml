@@ -8,12 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@ljwei-stak/dsh-model-router':
+        specifier: github:Alice-Marx/dsh-model-router
+        version: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/e1f7aaa82c1fd7bc921c16ce77937889d3ca9a78(@deepseek-ai/schemastery@3.18.5)
       argo-search:
         specifier: github:taxueseek/argo
         version: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146
       ds-harness-remote:
         specifier: github:liguobao/deepseek-harness-remote
-        version: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/9e282a264a5d9bdc99311c50983f10c43fae534a(react@18.3.1)
+        version: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/fac5e6005b6b747889ef01193a64601bb14f53ad(react@18.3.1)
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
         version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/8150de2dd2cbbb75c148b7601c1cbf04a85decd5(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
@@ -111,6 +114,53 @@ packages:
 
   '@leichtgewicht/ip-codec@2.0.5':
     resolution: {integrity: sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==}
+
+  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/e1f7aaa82c1fd7bc921c16ce77937889d3ca9a78':
+    resolution: {gitHosted: true, integrity: sha512-JYkVDgHM2bqwU3H//RAxTNGZsBRvTbPKayl6cWTk1ud4bofVj868vK03kD6hF/G/eWVW8D4uEV0XB+6Z0cf2yw==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/e1f7aaa82c1fd7bc921c16ce77937889d3ca9a78}
+    version: 0.22.2
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.4
+      '@deepseek-ai/dsh-commands': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-llm': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-sandbox': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-settings': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-tools': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-typert-protocol': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2
+      '@deepseek-ai/schemastery': ~3.18.4
+
+  '@lydell/node-pty-darwin-arm64@1.2.0-beta.15':
+    resolution: {integrity: sha512-6TSBbzdcLiNTHl1mTuzflqXrkmcC36USVGvERoDgvHk2ItEDaMaFZuAJ1CqPmwYj0DyhCS16TVS8OGK9xZnjyQ==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@lydell/node-pty-darwin-x64@1.2.0-beta.15':
+    resolution: {integrity: sha512-yDT2oqPqYMBScyuk1U9Rg5VKcrbMOD9o9jWYYamDADA3NSbUISroPChrqYRQ74Y7BQtNH4gqYAiWOZRi5uQZ0Q==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@lydell/node-pty-linux-arm64@1.2.0-beta.15':
+    resolution: {integrity: sha512-wkbNF7dYAmtJv+o2+iztVlNwnUB4B0uX0wh/UD+mwMcmE2gNMnW9GChXO7fEE5XJokD0vB5idiHpGegaN+G/sg==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@lydell/node-pty-linux-x64@1.2.0-beta.15':
+    resolution: {integrity: sha512-+U/5AVvHT6W+8OCYcnJgN0Qgc0ycO3TfD6aaFJHK+WHij797f8gsi5dV1HEO9l6YQmWCD+VL5gaLDhx3mxHwCA==}
+    cpu: [x64]
+    os: [linux]
+
+  '@lydell/node-pty-win32-arm64@1.2.0-beta.15':
+    resolution: {integrity: sha512-pyAk91w7wnnKrD4mrHXtIXRfmzSWV5bEzvRhurXcMCtCc2TJ424ciUskIgWMhAPP6y3KyUnqElj+U6kY3iOt0A==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@lydell/node-pty-win32-x64@1.2.0-beta.15':
+    resolution: {integrity: sha512-2f8twEmDVxZ7drchAXjtevpmSPhFok0avAnzXro4t5gmz0xsPNKkoZvymwtuIS3xo7PzQqZOPQ/YzwEMb7oIzQ==}
+    cpu: [x64]
+    os: [win32]
+
+  '@lydell/node-pty@1.2.0-beta.15':
+    resolution: {integrity: sha512-Br8wBxzbxFwdWgk9uQ+rdzE0xfoxOK4QuGH54swhRwc5IxP6H9Y1/bcyazRGvNUs6XkB5qNVkezuKSRxUwZe7A==}
 
   '@modelcontextprotocol/sdk@1.30.0':
     resolution: {integrity: sha512-xKd8OIzlqNzcqcNumGAa6g+PW2kjD5vrpcKOnfldAUPP3j7lnqMPwlTXQm8gF+UwH72z0lqaRbjr9hqGz0eITA==}
@@ -351,9 +401,9 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/9e282a264a5d9bdc99311c50983f10c43fae534a:
-    resolution: {gitHosted: true, integrity: sha512-KDx8vXv3SaUz1+y0OxPO1i1FfED5LWA+A/3bx+kKvZcM0liDwpyKxlgoIi5fDaNBNHa7stDQcBJYWzaMj5vxjw==, tarball: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/9e282a264a5d9bdc99311c50983f10c43fae534a}
-    version: 0.5.15
+  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/fac5e6005b6b747889ef01193a64601bb14f53ad:
+    resolution: {gitHosted: true, integrity: sha512-XbdKISFbaIUzT6hxDXaMnLBbz/p892udJMcpRtoLe5ivNjaYPJzQhJ4XyABLIRuMq8ctI8zuhE3gSiFWcTlwfQ==, tarball: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/fac5e6005b6b747889ef01193a64601bb14f53ad}
+    version: 0.5.18
     hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1 <5 || >=4.0.5-alpha.1 <4.0.6-0'
@@ -952,6 +1002,40 @@ snapshots:
 
   '@leichtgewicht/ip-codec@2.0.5': {}
 
+  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/e1f7aaa82c1fd7bc921c16ce77937889d3ca9a78(@deepseek-ai/schemastery@3.18.5)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+    optionalDependencies:
+      '@lydell/node-pty': 1.2.0-beta.15
+
+  '@lydell/node-pty-darwin-arm64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-darwin-x64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-linux-arm64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-linux-x64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-win32-arm64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-win32-x64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty@1.2.0-beta.15':
+    optionalDependencies:
+      '@lydell/node-pty-darwin-arm64': 1.2.0-beta.15
+      '@lydell/node-pty-darwin-x64': 1.2.0-beta.15
+      '@lydell/node-pty-linux-arm64': 1.2.0-beta.15
+      '@lydell/node-pty-linux-x64': 1.2.0-beta.15
+      '@lydell/node-pty-win32-arm64': 1.2.0-beta.15
+      '@lydell/node-pty-win32-x64': 1.2.0-beta.15
+    optional: true
+
   '@modelcontextprotocol/sdk@1.30.0':
     dependencies:
       '@hono/node-server': 2.1.1(hono@4.13.5)
@@ -1237,7 +1321,7 @@ snapshots:
       webidl-conversions: 7.0.0
     optional: true
 
-  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/9e282a264a5d9bdc99311c50983f10c43fae534a(react@18.3.1):
+  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/fac5e6005b6b747889ef01193a64601bb14f53ad(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       qrcode: 1.5.4

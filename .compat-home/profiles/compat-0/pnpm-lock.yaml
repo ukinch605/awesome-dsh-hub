@@ -14,6 +14,9 @@ importers:
       '@liustack/modlens':
         specifier: github:liustack/modlens
         version: https://codeload.github.com/liustack/modlens/tar.gz/00f3658c30655314b013edbb5687c4ec5f5dab27
+      dsh-our-free-model:
+        specifier: github:Ebony-Vinyl/dsh-our-free-model
+        version: https://codeload.github.com/Ebony-Vinyl/dsh-our-free-model/tar.gz/38e0a9437e3a37c8c1a030c165de8cf8c7c0b7e8
 
 packages:
 
@@ -36,6 +39,17 @@ packages:
     resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
     engines: {node: '>=18'}
 
+  dsh-our-free-model@https://codeload.github.com/Ebony-Vinyl/dsh-our-free-model/tar.gz/38e0a9437e3a37c8c1a030c165de8cf8c7c0b7e8:
+    resolution: {gitHosted: true, integrity: sha512-eKesWcUsTdjHwrblYSzc+13Y05bSUMoMXywNFqf2mQ5QAWEOJSEDQVL/0AA975rVM0F5ZcopjJ1p40GvsQAzqA==, tarball: https://codeload.github.com/Ebony-Vinyl/dsh-our-free-model/tar.gz/38e0a9437e3a37c8c1a030c165de8cf8c7c0b7e8}
+    version: 2.5.9
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/dsh-commands': ^0.1.2-rc.1 || ^0.1.7-rc.2 || ^0.2.0-rc.1
+      '@deepseek-ai/dsh-credentials': ^0.1.2-rc.1 || ^0.1.7-rc.2 || ^0.2.0-rc.1
+      '@deepseek-ai/dsh-llm': ^0.1.2-rc.1 || ^0.1.7-rc.2 || ^0.2.0-rc.1
+      '@deepseek-ai/schemastery': ^3.18.4
+
   undici@8.10.0:
     resolution: {integrity: sha512-HvltHd7avK13QIw/oLe4qoOLyoVSoafqJ2jYOrtMRBkbYT31eiBQ8O0ehRKZiEZCMEyLFQNIADpgCWC5fALvYQ==}
     engines: {node: '>=22.19.0'}
@@ -50,5 +64,7 @@ snapshots:
       undici: 8.10.0
 
   commander@13.1.0: {}
+
+  dsh-our-free-model@https://codeload.github.com/Ebony-Vinyl/dsh-our-free-model/tar.gz/38e0a9437e3a37c8c1a030c165de8cf8c7c0b7e8: {}
 
   undici@8.10.0: {}

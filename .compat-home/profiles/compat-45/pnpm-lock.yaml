@@ -10,16 +10,19 @@ importers:
     dependencies:
       '@dsh-external/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
-        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/9667c0e9cf0ea463b9b45b2845de62da34fd918a
+        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/9667c0e9cf0ea463b9b45b2845de62da34fd918a(@deepseek-ai/schemastery@3.18.5)
       '@nagi-ovo/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
-        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/51ac8abcf4e9c60aa1d7c6b066b3aa0040c8b17d
+        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/51ac8abcf4e9c60aa1d7c6b066b3aa0040c8b17d(@deepseek-ai/schemastery@3.18.5)
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
         version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/ccdf958db8259b9bcd40dce9de9d9530bb747f0b
+      dsh-free-search:
+        specifier: github:DDDMUC/dsh-free-search
+        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/70e534a2eb9b9f73b379d46e975ed469be9b3a6d
       dsh-tokenledger:
         specifier: github:zh667/TokenLedger
-        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c
+        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c(@deepseek-ai/schemastery@3.18.5)
       dsh-usage-stats:
         specifier: github:Ychris12138/dsh-usage-stats
         version: https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/1f220b9d8e025087c9fdbd9efcf8d3d85659fead
@@ -28,6 +31,9 @@ importers:
         version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025
 
 packages:
+
+  '@deepseek-ai/cosmokit@1.8.6':
+    resolution: {integrity: sha512-ZSD/fN52L498LBIOYwjIOlaLv5veY6ZEwI2yzvZUKQtctn0QAPqu8tKdJ+OF5+Tv6NBq1U+wJWH+QI6OGy5EvQ==}
 
   '@deepseek-ai/dsh-credentials@0.1.0-rc.8':
     resolution: {integrity: sha512-VopOhtUEa/fSmJr3fyKbsEG043kX1oGuBrmELAbkhmuDigl1cN88g0VPb9rMG2/dJ1h08wg+h0RJP+Ex4LjRWw==}
@@ -41,6 +47,9 @@ packages:
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-invariants': ^0.1.0-rc.8
+
+  '@deepseek-ai/schemastery@3.18.5':
+    resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
   '@dsh-external/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/9667c0e9cf0ea463b9b45b2845de62da34fd918a':
     resolution: {gitHosted: true, integrity: sha512-6kvERA4Cg69KV+E8fnMqh2JiN2vqcNpxkUPhamMqR0dEMCGKOrRocwCA9xVI+Wl24w1ZxfHXkzwH0Fz1iGfaMA==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/9667c0e9cf0ea463b9b45b2845de62da34fd918a}
@@ -70,11 +79,45 @@ packages:
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
 
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
   dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/ccdf958db8259b9bcd40dce9de9d9530bb747f0b:
     resolution: {gitHosted: true, integrity: sha512-1mQRIbRYHDG9E/vJWawMNRLnFGWl8H+XGNdCq3aNNTMS33Kmg5dhLsjHrp6O7x329L/KBajKYfAvLQztBzz24g==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/ccdf958db8259b9bcd40dce9de9d9530bb747f0b}
     version: 1.7.12
     engines: {node: '>=20'}
     os: [darwin, linux, win32]
+
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/70e534a2eb9b9f73b379d46e975ed469be9b3a6d:
+    resolution: {gitHosted: true, integrity: sha512-0oKbCG12UEDepBtnj6JxACEt+i6NMPEvVxhpRKONxd5sEBCaDQKfDKwzeAZ+Bx2zou6heR/wVXYUrVXIg5DSfw==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/70e534a2eb9b9f73b379d46e975ed469be9b3a6d}
+    version: 0.9.13
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-ui-commands': ^0.1.7-rc.1 || ^0.2.0-rc.1
+      '@deepseek-ai/dsh-client-ui-plugin-manager': ^0.1.7-rc.1 || ^0.2.0-rc.1
+      '@deepseek-ai/dsh-client-ui-renderer': ^0.1.7-rc.1 || ^0.2.0-rc.1
+      '@deepseek-ai/dsh-settings': ^0.1.7-rc.1 || ^0.2.0-rc.1
+      '@deepseek-ai/dsh-tools': ^0.1.7-rc.1 || ^0.2.0-rc.1
+      '@deepseek-ai/schemastery': ^3.18.4
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-commands':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-plugin-manager':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-renderer':
+        optional: true
+      '@deepseek-ai/dsh-settings':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+      react:
+        optional: true
 
   dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c:
     resolution: {gitHosted: true, integrity: sha512-VRjl6C11B2IHhS1EUsBq6o8Xk4+72ZG1Zt7Tcv3Gps9JdzFux0UdyFhAUHL4Y5tRSkXwkbzOv1K0akIJKf08Mw==, tarball: https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c}
@@ -101,13 +144,26 @@ packages:
 
 snapshots:
 
+  '@deepseek-ai/cosmokit@1.8.6': {}
+
   '@deepseek-ai/dsh-credentials@0.1.0-rc.8': {}
 
   '@deepseek-ai/dsh-home-paths@0.1.0-rc.8': {}
 
-  '@dsh-external/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/9667c0e9cf0ea463b9b45b2845de62da34fd918a': {}
+  '@deepseek-ai/schemastery@3.18.5':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.6
+      '@standard-schema/spec': 1.1.0
 
-  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/51ac8abcf4e9c60aa1d7c6b066b3aa0040c8b17d': {}
+  '@dsh-external/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/9667c0e9cf0ea463b9b45b2845de62da34fd918a(@deepseek-ai/schemastery@3.18.5)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+
+  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/51ac8abcf4e9c60aa1d7c6b066b3aa0040c8b17d(@deepseek-ai/schemastery@3.18.5)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+
+  '@standard-schema/spec@1.1.0': {}
 
   dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/ccdf958db8259b9bcd40dce9de9d9530bb747f0b:
     dependencies:
@@ -119,7 +175,13 @@ snapshots:
       - '@deepseek-ai/dsh-brand'
       - '@deepseek-ai/dsh-invariants'
 
-  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c: {}
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/70e534a2eb9b9f73b379d46e975ed469be9b3a6d:
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/af05acd8dcbaeb73625d9096387b4bddda77720c(@deepseek-ai/schemastery@3.18.5):
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.5
 
   dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/1f220b9d8e025087c9fdbd9efcf8d3d85659fead: {}
 

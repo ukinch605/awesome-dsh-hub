@@ -17,6 +17,9 @@ importers:
       '@zseven-w/dsh-noema':
         specifier: github:ZSeven-W/dsh-noema
         version: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2
+      dsh-claude-style:
+        specifier: github:Nwflower/dsh-claude-style
+        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/8be54e7d940f0b6e98d39bd46c0b6a14637b82ad
       dsh-dream-skin:
         specifier: github:RevolutionLA/dsh-dream-skin
         version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/fa5ecebd77d063b8568f916f8ca12f2612ad4c71
@@ -217,6 +220,15 @@ packages:
 
   dijkstrajs@1.0.3:
     resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
+
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/8be54e7d940f0b6e98d39bd46c0b6a14637b82ad:
+    resolution: {gitHosted: true, integrity: sha512-ELHJLq5/zW4qwiyHfEda4fkDr7UTnxegKM40pljKeGFycFHW5yb1X1wUFSgcMPEyLBPluSg+4eLPk2M6HOBRBw==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/8be54e7d940f0b6e98d39bd46c0b6a14637b82ad}
+    version: 0.18.5
+    peerDependencies:
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.1.5-rc.1'
+      '@deepseek-ai/schemastery': '>=3.18.0'
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/fa5ecebd77d063b8568f916f8ca12f2612ad4c71:
     resolution: {gitHosted: true, integrity: sha512-kJvPIfhPrG7kwAthj/QW70mhxA2bqTk0rAg9VKXFCFGpOBLL/A6wwuQAhrMp7wqZHEJ871atkhnQrRH8atuVrQ==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/fa5ecebd77d063b8568f916f8ca12f2612ad4c71}
@@ -837,6 +849,8 @@ snapshots:
   depd@2.0.0: {}
 
   dijkstrajs@1.0.3: {}
+
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/8be54e7d940f0b6e98d39bd46c0b6a14637b82ad: {}
 
   dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/fa5ecebd77d063b8568f916f8ca12f2612ad4c71: {}
 
