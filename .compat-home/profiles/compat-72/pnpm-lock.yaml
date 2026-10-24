@@ -8,12 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@leon___/dsh-client-liang-intensity-skin':
+        specifier: github:kingOfSoySauce/dsh-liang-skin
+        version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/f6c90d173c67112217a5adecea71d14d8bc9063d
       '@ychris12138/dsh-usage-stats':
         specifier: github:Ychris12138/dsh-usage-stats
         version: https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/c6212d9a35e3542a100fa61b51e42a8fa8e688e3
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/7870b6d75483d04a8ff0091ac1ed9b8b9bdf4740(@deepseek-ai/schemastery@3.18.5)
       dsh-ego-browser:
         specifier: github:Fisfzy/dsh-ego-browser
         version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/718a1838f5395a7e2e3634180187b0903be5c350
@@ -35,6 +38,10 @@ packages:
   '@deepseek-ai/schemastery@3.18.5':
     resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
+  '@leon___/dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/f6c90d173c67112217a5adecea71d14d8bc9063d':
+    resolution: {gitHosted: true, integrity: sha512-VY9afQVPW8mmoVP7qPLrB77AbZONovkNJ1ysWLyHUVDhdOe5TNF8HgibBmq6a6bza/ab3+HtWIxqa+rrDGjmSA==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/f6c90d173c67112217a5adecea71d14d8bc9063d}
+    version: 0.1.12
+
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
@@ -46,15 +53,16 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689:
-    resolution: {gitHosted: true, integrity: sha512-Wi4Khs7EJD4W3CVWCkI+vWaCtIymT2VPGXOjsZa6RblXDfOrqCvOIJIXhOAG+6M70BoLwoariqAJJifGX7QYQw==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689}
-    version: 0.8.1
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/7870b6d75483d04a8ff0091ac1ed9b8b9bdf4740:
+    resolution: {gitHosted: true, integrity: sha512-gQv5JQZSrCSQm3YTk0u+TqlmzZLQ3H7QWdVXhPgX0Mry+niK03lRBB4j6yDsLKV51ecMOFd2Mp86scQElKCKLw==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/7870b6d75483d04a8ff0091ac1ed9b8b9bdf4740}
+    version: 0.26.2
     engines: {node: '>=22.13'}
     hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh': '>=0.1.5-rc.1'
       '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6'
-      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-tools': '>=0.1.0-rc.6 <0.3.0'
       '@deepseek-ai/schemastery': '>=3.0.0'
       react: '>=18.0.0'
 
@@ -124,13 +132,15 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
+  '@leon___/dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/f6c90d173c67112217a5adecea71d14d8bc9063d': {}
+
   '@standard-schema/spec@1.1.0': {}
 
   '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/c6212d9a35e3542a100fa61b51e42a8fa8e688e3': {}
 
   cosmokit@1.8.1: {}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/e95a396821fbde9452e68b2dae35efee76cd7689(@deepseek-ai/schemastery@3.18.5):
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/7870b6d75483d04a8ff0091ac1ed9b8b9bdf4740(@deepseek-ai/schemastery@3.18.5):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       fzstd: 0.1.1

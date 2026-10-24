@@ -32,6 +32,9 @@ importers:
       dsh-damage-pulse:
         specifier: github:wssfk12138/dsh-damage-pulse
         version: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/7f739ef8aae7e5d80b7e4a5ad4957d1a704420a3(@deepseek-ai/schemastery@3.18.2)(zod@4.6.7)
+      dsh-plugin:
+        specifier: github:dshplugin/dsh-plugin-hub
+        version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/f17814f949604a727c708accf10f2b68cdfa63bd
       dsh-plugin-marketplace:
         specifier: github:bradeGithub/DSH-Plugins-Marketplace
         version: https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/348ef716bbdd696ad34b0dc943c2dc781cf547b6
@@ -532,6 +535,16 @@ packages:
   dsh-plugin-marketplace@https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/348ef716bbdd696ad34b0dc943c2dc781cf547b6:
     resolution: {gitHosted: true, integrity: sha512-1YT/OKYADxbBw5o0c/gHXXveUZpGu0mRnMA7q179izN3ge+q7tSm6bfCQv91R3B6cmR2zXP1xMcAdTiv2eeW+Q==, tarball: https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/348ef716bbdd696ad34b0dc943c2dc781cf547b6}
     version: 1.5.5
+
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/f17814f949604a727c708accf10f2b68cdfa63bd:
+    resolution: {gitHosted: true, integrity: sha512-x9+iz4HKA/vNnKTVgDGkHpVvT9URU96EYiNFjfFnjmNdkR6XgBLlKxR/Vw9ULhfRQfFYHg0yrBzOMJCJV0KMiA==, tarball: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/f17814f949604a727c708accf10f2b68cdfa63bd}
+    version: 2.2.0
+    engines: {node: '>=22.6'}
+    peerDependencies:
+      '@deepseek-ai/cordis': 4.0.1
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
 
   dsh-user-experience@https://codeload.github.com/DietCokewithSugar/dsh-user-experience/tar.gz/bba21e6a634844b448b34aae4e7c8af1d8bbd9d4:
     resolution: {gitHosted: true, integrity: sha512-F8WhgvxdAGhHU9LsUFsqChmucepGeL4+Sh6kT8mNWQ5shVjlZ6dMuWVdSIunXH6UAoOrK2o0sSuX0smJ1Smudg==, tarball: https://codeload.github.com/DietCokewithSugar/dsh-user-experience/tar.gz/bba21e6a634844b448b34aae4e7c8af1d8bbd9d4}
@@ -1129,6 +1142,8 @@ snapshots:
       zod: 4.6.7
 
   dsh-plugin-marketplace@https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/348ef716bbdd696ad34b0dc943c2dc781cf547b6: {}
+
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/f17814f949604a727c708accf10f2b68cdfa63bd: {}
 
   dsh-user-experience@https://codeload.github.com/DietCokewithSugar/dsh-user-experience/tar.gz/bba21e6a634844b448b34aae4e7c8af1d8bbd9d4:
     dependencies:

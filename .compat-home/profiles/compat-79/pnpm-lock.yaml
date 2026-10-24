@@ -22,13 +22,16 @@ importers:
         version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8c1d19a0019f2fbf65265ac8a09225d0b2fdf8c4
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/8150de2dd2cbbb75c148b7601c1cbf04a85decd5(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/7870b6d75483d04a8ff0091ac1ed9b8b9bdf4740(@deepseek-ai/schemastery@3.18.2)
       dsh-composer-polish:
         specifier: github:tianji-qingtian/dsh-composer-polish
         version: https://codeload.github.com/tianji-qingtian/dsh-composer-polish/tar.gz/4787f0ca103005046c6bdbdfb51edd3f06b52544
       dsh-damage-pulse:
         specifier: github:wssfk12138/dsh-damage-pulse
         version: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/7f739ef8aae7e5d80b7e4a5ad4957d1a704420a3(@deepseek-ai/schemastery@3.18.2)(zod@4.4.3)
+      dsh-dream-skin:
+        specifier: github:RevolutionLA/dsh-dream-skin
+        version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cde02d21eb5a74a2f43bbcda85020dfd30662c21
       dsh-reasoning-effort:
         specifier: github:HanaAyane/dsh-reasoning-effort
         version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994
@@ -277,8 +280,8 @@ packages:
   dijkstrajs@1.0.3:
     resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/8150de2dd2cbbb75c148b7601c1cbf04a85decd5:
-    resolution: {gitHosted: true, integrity: sha512-4qXa6Aqf8FKYM9JdCEl8LiSAJSMlgE2Eqr3bqghLoKprc4LrV4zfcICRtv4zE+k4Rx5zR8TiUcW1ZQfCuW82ZA==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/8150de2dd2cbbb75c148b7601c1cbf04a85decd5}
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/7870b6d75483d04a8ff0091ac1ed9b8b9bdf4740:
+    resolution: {gitHosted: true, integrity: sha512-gQv5JQZSrCSQm3YTk0u+TqlmzZLQ3H7QWdVXhPgX0Mry+niK03lRBB4j6yDsLKV51ecMOFd2Mp86scQElKCKLw==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/7870b6d75483d04a8ff0091ac1ed9b8b9bdf4740}
     version: 0.26.2
     engines: {node: '>=22.13'}
     hasBin: true
@@ -322,6 +325,37 @@ packages:
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
       zod: ^4.4.3
+
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cde02d21eb5a74a2f43bbcda85020dfd30662c21:
+    resolution: {gitHosted: true, integrity: sha512-pEebWt4AHPq5gblZeTrQ7bKxNd+TCGcCIDmYmUN4l8mDOD6ormEktuWOPWLiJ2VGAVRs5ne7gTzE2bsRas5sXw==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cde02d21eb5a74a2f43bbcda85020dfd30662c21}
+    version: 10.23.0
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1 || >=4.0.5-0 <5
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-runtime': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-store': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-settings': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-settings-general': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-theme': '>=0.1.0-rc.6 <0.3.0-0'
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-store':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings-general':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-theme':
+        optional: true
+      react:
+        optional: true
 
   dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994:
     resolution: {gitHosted: true, integrity: sha512-gj3ZW3p/RO9Tpg3gazWJetcwQtaJtsPWYeS+mMxBUSONHj1D7SbINaeOErJiUfZaV9IWmS7zbigDWBLFYSS/4g==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994}
@@ -947,7 +981,7 @@ snapshots:
 
   dijkstrajs@1.0.3: {}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/8150de2dd2cbbb75c148b7601c1cbf04a85decd5(@deepseek-ai/schemastery@3.18.2):
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/7870b6d75483d04a8ff0091ac1ed9b8b9bdf4740(@deepseek-ai/schemastery@3.18.2):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
       fzstd: 0.1.1
@@ -963,6 +997,8 @@ snapshots:
       qrcode: 1.5.4
       quickjs-emscripten: 0.31.0
       zod: 4.4.3
+
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cde02d21eb5a74a2f43bbcda85020dfd30662c21: {}
 
   dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/83bc8c548749d7156a03d11d875d8117e9b5d994:
     dependencies:

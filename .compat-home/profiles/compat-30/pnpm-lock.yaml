@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@liustack/modsearch':
+        specifier: github:liustack/modsearch
+        version: https://codeload.github.com/liustack/modsearch/tar.gz/df0cf76aea06d31ca07c06322b0c7ad47b6d3a6a
       '@nanmicoder/dsh-auto-mode':
         specifier: github:NanmiCoder/dsh-auto-mode
         version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f
@@ -34,6 +37,12 @@ packages:
 
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/df0cf76aea06d31ca07c06322b0c7ad47b6d3a6a':
+    resolution: {gitHosted: true, integrity: sha512-zBaPrZJ1dq0fgph+54BXMHKpV7/0wzW7Jm6F/4i10BWuWRITmLFflJSHUP0oQSf+3n3082hSw+PNpbOLDNuvgw==, tarball: https://codeload.github.com/liustack/modsearch/tar.gz/df0cf76aea06d31ca07c06322b0c7ad47b6d3a6a}
+    version: 5.10.10
+    engines: {node: '>=22.13'}
+    hasBin: true
 
   '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f':
     resolution: {gitHosted: true, integrity: sha512-lMIct43lNedA+ruu00X8rKCHbhJXtwn58ruT3YvgQyQpsdox7SEBwYS9cJKfKPxgMF6Oq2LG/wAJIrpWowXOkQ==, tarball: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f}
@@ -75,6 +84,10 @@ packages:
   builder-util-runtime@9.7.0:
     resolution: {integrity: sha512-g/kR520giAFYkSXTzcmF3kqQq7wi8F6N6SzeDgZrqTBN+VHdmgWOyTdD1yD7AATDId/yXLvuP34CxW46/BwCdw==}
     engines: {node: '>=12.0.0'}
+
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
 
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
@@ -158,6 +171,10 @@ packages:
   tiny-typed-emitter@2.1.0:
     resolution: {integrity: sha512-qVtvMxeXbVej0cQWKqVSSAHmKZEHAvxdF8HEUBFWts8h+xEo5m/lEiPakuyZ3BnCBjOD8i24kzNOiOLLgsSxhA==}
 
+  undici@7.30.1:
+    resolution: {integrity: sha512-03KrMbjIFDWQR5RNPrSw3bd1r12JpyFQl9/yxjUbJtqkjmllqC5lFjZh6ujeuJCKr8EOQvRW872Oy/az+nLYxg==}
+    engines: {node: '>=20.18.1'}
+
   universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
@@ -176,6 +193,11 @@ snapshots:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
+
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/df0cf76aea06d31ca07c06322b0c7ad47b6d3a6a':
+    dependencies:
+      commander: 13.1.0
+      undici: 7.30.1
 
   '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f':
     dependencies:
@@ -200,6 +222,8 @@ snapshots:
       sax: 1.6.1
     transitivePeerDependencies:
       - supports-color
+
+  commander@13.1.0: {}
 
   cosmokit@1.8.1: {}
 
@@ -269,6 +293,8 @@ snapshots:
   semver@7.7.4: {}
 
   tiny-typed-emitter@2.1.0: {}
+
+  undici@7.30.1: {}
 
   universalify@2.0.1: {}
 

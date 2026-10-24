@@ -8,18 +8,21 @@ importers:
 
   .:
     dependencies:
+      '@ayanehana/dsh-reasoning-effort':
+        specifier: github:HanaAyane/dsh-reasoning-effort
+        version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560
       '@dhicoc/dsh-reverse-skill':
         specifier: github:dhicoc/dsh-reverse-skill
         version: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/1bc4d63ee9a5268419170f4c5fb4a4e59e0e815c
       '@dsh-external/workflow':
         specifier: github:omdsh-dev/dsh_workflow
-        version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f
+        version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.18.5)
       argo-search:
         specifier: github:taxueseek/argo
         version: https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f
       dsh-auth-in-one:
         specifier: github:Stormycry-cryp/dsh-AuthInOne
-        version: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6)(react@19.2.8)
+        version: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6)(@deepseek-ai/schemastery@3.18.5)
       dsh-find-plugin:
         specifier: github:awesome-dsh-plugin/dsh-find-plugin
         version: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc
@@ -34,18 +37,40 @@ importers:
         version: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/5fa5d87c68ad34337e073f82dc50767ed690eb27
       dsh-skin-market:
         specifier: github:kingOfSoySauce/dsh-skin-market
-        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/87342ef8f34d1c5f2306fc8cfe005f969b61899e(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/87342ef8f34d1c5f2306fc8cfe005f969b61899e(react-dom@19.2.8)
       dsh-xdpool:
         specifier: github:XDTrees/dsh-xdpool
-        version: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/6e4854f5372fd39d5c12553b79b1064b8821c182(@types/node@16.9.1)
+        version: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/6e4854f5372fd39d5c12553b79b1064b8821c182(@deepseek-ai/schemastery@3.18.5)(@types/node@16.9.1)
       superpowers-dsh:
         specifier: github:LayneChai/superpowers-dsh
         version: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663
 
 packages:
 
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560':
+    resolution: {gitHosted: true, integrity: sha512-ExvX+Mxltx9/UHcX0BkgLsOpZrWtE3g3ZTiD62fEY2JfTrn1FqcYlZgPVtxrG+eKP2hig6a6EYphcEIt+6DDlg==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560}
+    version: 0.9.0
+    engines: {dsh: '>=0.2.1-rc.2 <0.3.0', node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.5
+      '@deepseek-ai/dsh-api-remotes': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-api-session-controller': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-connection': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-locale': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-store': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-model-selection': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-renderer': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-session': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-settings': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-slots': ^0.2.1-rc.2
+      react: ^18.2.0
+
   '@borewit/text-codec@0.2.2':
     resolution: {integrity: sha512-DDaRehssg1aNrH4+2hnj1B7vnUGEjU6OIlyRdkMd0aUdIUvKXrJfXsy8LVtXAy7DRvYVluWbMspsRhz2lcW0mQ==}
+
+  '@deepseek-ai/cosmokit@1.8.6':
+    resolution: {integrity: sha512-ZSD/fN52L498LBIOYwjIOlaLv5veY6ZEwI2yzvZUKQtctn0QAPqu8tKdJ+OF5+Tv6NBq1U+wJWH+QI6OGy5EvQ==}
 
   '@deepseek-ai/dsh-home-paths@0.1.0-rc.8':
     resolution: {integrity: sha512-9cQhH9CZsw7Zi73VnZk7CcuEVA6yR/Ox+7lp3VHq53fFYSPi0RL+kMWmh5XCrZB4U1OM3+PVsWsA5II9tB+t0Q==}
@@ -64,6 +89,9 @@ packages:
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-invariants': ^0.1.0-rc.6
+
+  '@deepseek-ai/schemastery@3.18.5':
+    resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
   '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/1bc4d63ee9a5268419170f4c5fb4a4e59e0e815c':
     resolution: {gitHosted: true, integrity: sha512-Hq3rNZpEQIpftcLUfaIYXNlwp5Yj927b5A0V25zWtnYrNGOHZPc5GTdNrToSPHwfhfanfjhCRzoHDpPgOdWMoQ==, tarball: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/1bc4d63ee9a5268419170f4c5fb4a4e59e0e815c}
@@ -245,6 +273,9 @@ packages:
     engines: {node: '>=8'}
     peerDependencies:
       react: '>=16.3'
+
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
   '@tokenizer/inflate@0.4.1':
     resolution: {integrity: sha512-2mAv+8pkG6GIZiF1kNg1jAjh27IDxEPKwdGul3snfztFerfPGI1LjDezZp3i7BElXompqEtPmoPx6c2wgtWsOA==}
@@ -803,10 +834,6 @@ packages:
     peerDependencies:
       react: ^19.2.8
 
-  react@19.2.8:
-    resolution: {integrity: sha512-PWaYA1L/q9u2u7xYQi+Y3L3Yfnie7XyLeaJICV1MGD6LprsBxcAqGjYyr0eY3p+QdsA+x/Irkt4Qif8D63+Sbw==}
-    engines: {node: '>=0.10.0'}
-
   readdirp@5.1.1:
     resolution: {integrity: sha512-Kko+Y5XQ6fM+Ce3dq3m9YGxnacYZYl9cA1wZjaF3Vbry2L3i1qVg8+CAgNPsXRArPMUMCaOR7oa9Nqntc43JKA==}
     engines: {node: '>= 20.19.0'}
@@ -954,8 +981,14 @@ packages:
 
 snapshots:
 
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+
   '@borewit/text-codec@0.2.2':
     optional: true
+
+  '@deepseek-ai/cosmokit@1.8.6': {}
 
   '@deepseek-ai/dsh-home-paths@0.1.0-rc.8': {}
 
@@ -963,10 +996,16 @@ snapshots:
 
   '@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6': {}
 
+  '@deepseek-ai/schemastery@3.18.5':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.6
+      '@standard-schema/spec': 1.1.0
+
   '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/1bc4d63ee9a5268419170f4c5fb4a4e59e0e815c': {}
 
-  '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
+  '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
       quickjs-emscripten: 0.32.0
 
   '@hono/node-server@2.1.1(hono@4.13.5)':
@@ -1264,14 +1303,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@phosphor-icons/react@2.1.10(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
+  '@phosphor-icons/react@2.1.10(react-dom@19.2.8)':
     dependencies:
-      react: 19.2.8
-      react-dom: 19.2.8(react@19.2.8)
+      react-dom: 19.2.8
 
-  '@primer/octicons-react@19.33.0(react@19.2.8)':
-    dependencies:
-      react: 19.2.8
+  '@primer/octicons-react@19.33.0': {}
+
+  '@standard-schema/spec@1.1.0': {}
 
   '@tokenizer/inflate@0.4.1':
     dependencies:
@@ -1387,13 +1425,13 @@ snapshots:
 
   depd@2.0.0: {}
 
-  dsh-auth-in-one@https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6)(react@19.2.8):
+  dsh-auth-in-one@https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6)(@deepseek-ai/schemastery@3.18.5):
     dependencies:
       clsx: 2.1.1
       zod: 4.4.3
     optionalDependencies:
       '@deepseek-ai/dsh-typert-protocol': 0.1.0-rc.6
-      react: 19.2.8
+      '@deepseek-ai/schemastery': 3.18.5
 
   dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc: {}
 
@@ -1417,18 +1455,19 @@ snapshots:
       - '@deepseek-ai/dsh-invariants'
       - supports-color
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/87342ef8f34d1c5f2306fc8cfe005f969b61899e(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/87342ef8f34d1c5f2306fc8cfe005f969b61899e(react-dom@19.2.8):
     dependencies:
-      '@phosphor-icons/react': 2.1.10(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@primer/octicons-react': 19.33.0(react@19.2.8)
+      '@phosphor-icons/react': 2.1.10(react-dom@19.2.8)
+      '@primer/octicons-react': 19.33.0
       ajv: 8.20.0
       yaml: 2.9.0
     transitivePeerDependencies:
       - react
       - react-dom
 
-  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/6e4854f5372fd39d5c12553b79b1064b8821c182(@types/node@16.9.1):
+  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/6e4854f5372fd39d5c12553b79b1064b8821c182(@deepseek-ai/schemastery@3.18.5)(@types/node@16.9.1):
     optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.5
       billion-context: 0.1.204(@types/node@16.9.1)
     transitivePeerDependencies:
       - '@types/node'
@@ -1777,12 +1816,9 @@ snapshots:
       iconv-lite: 0.7.3
       unpipe: 1.0.0
 
-  react-dom@19.2.8(react@19.2.8):
+  react-dom@19.2.8:
     dependencies:
-      react: 19.2.8
       scheduler: 0.27.0
-
-  react@19.2.8: {}
 
   readdirp@5.1.1: {}
 

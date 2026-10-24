@@ -17,12 +17,15 @@ importers:
       '@dsh-external/workflow':
         specifier: github:omdsh-dev/dsh_workflow
         version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f
+      '@fylar/dsh-fylar-office-editor':
+        specifier: github:FylarOpen/dsh-fylar-office-editor
+        version: https://codeload.github.com/FylarOpen/dsh-fylar-office-editor/tar.gz/263bedfb3103831ab561f437c36b50bd9062f6f2
       dsh-auth-in-one:
         specifier: github:Stormycry-cryp/dsh-AuthInOne
         version: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(react@19.2.8)
       dsh-codex-subscription:
         specifier: github:WSL043/dsh-codex-subscription
-        version: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/f5e3030a2eeacef419b73add911230e0f36bd07d(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/e1eb7c3f0f1a1d3fbe22f940da3abb7150086a99(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       dsh-skin-market:
         specifier: github:kingOfSoySauce/dsh-skin-market
         version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/e094c1debde62e7c9a074a59a967d4208027bb42(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -637,6 +640,28 @@ packages:
 
   '@floating-ui/utils@0.2.12':
     resolution: {integrity: sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==}
+
+  '@fylar/dsh-fylar-office-editor@https://codeload.github.com/FylarOpen/dsh-fylar-office-editor/tar.gz/263bedfb3103831ab561f437c36b50bd9062f6f2':
+    resolution: {gitHosted: true, integrity: sha512-M3SSmgthaaC1fxF3xvMUco96eyDZ6d9CpuYTJhw+GhfP92kP5L3pYh6zh+u7Fwa5i3D3sznmns76jti++gKQNQ==, tarball: https://codeload.github.com/FylarOpen/dsh-fylar-office-editor/tar.gz/263bedfb3103831ab561f437c36b50bd9062f6f2}
+    version: 0.1.6
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.4
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-ui-chat': '*'
+      '@deepseek-ai/dsh-client-ui-conversation': '*'
+      '@deepseek-ai/dsh-client-ui-layout': '*'
+      '@deepseek-ai/dsh-client-ui-renderer': '*'
+      '@deepseek-ai/dsh-client-ui-sidebar-right': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-client-ui-tool': '*'
+      '@deepseek-ai/dsh-fs': '*'
+      '@deepseek-ai/dsh-host-webserver': '*'
+      '@deepseek-ai/dsh-sandbox-policy': '*'
+      '@deepseek-ai/dsh-session': '*'
+      '@deepseek-ai/dsh-system-prompt': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-workspace': '*'
 
   '@harperfast/extended-iterable@1.0.3':
     resolution: {integrity: sha512-sSAYhQca3rDWtQUHSAPeO7axFIUJOI6hn1gjRC5APVE1a90tuyT8f5WIgRsFhhWA7htNkju2veB9eWL6YHi/Lw==}
@@ -2638,9 +2663,9 @@ packages:
       react:
         optional: true
 
-  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/f5e3030a2eeacef419b73add911230e0f36bd07d:
-    resolution: {gitHosted: true, integrity: sha512-3n2de1pFHhOhaqUrKUkvtHKejiAlPruZ4SVpPxNapIB5dFs/UzT51kx4yA3KfEZCSWewRpId4twCDyi+Hpobsg==, tarball: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/f5e3030a2eeacef419b73add911230e0f36bd07d}
-    version: 3.1.5
+  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/e1eb7c3f0f1a1d3fbe22f940da3abb7150086a99:
+    resolution: {gitHosted: true, integrity: sha512-7SaQk98NTpY0j9ViCiuio7sZInSBtFncE0wDrBrr8ZJmKZK81GfZEH/J1wg2bdQcWz6iaj98fpW7FQTh3D8yNQ==, tarball: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/e1eb7c3f0f1a1d3fbe22f940da3abb7150086a99}
+    version: 3.1.7-dev.0
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': 4.0.4 || 4.0.5-alpha.1 || 4.0.5-alpha.2 || 4.0.5
@@ -4872,6 +4897,10 @@ snapshots:
   '@floating-ui/utils@0.2.12':
     optional: true
 
+  '@fylar/dsh-fylar-office-editor@https://codeload.github.com/FylarOpen/dsh-fylar-office-editor/tar.gz/263bedfb3103831ab561f437c36b50bd9062f6f2':
+    dependencies:
+      docx: 9.7.1
+
   '@harperfast/extended-iterable@1.0.3':
     optional: true
 
@@ -6656,7 +6685,7 @@ snapshots:
     optionalDependencies:
       react: 19.2.8
 
-  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/f5e3030a2eeacef419b73add911230e0f36bd07d(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
+  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/e1eb7c3f0f1a1d3fbe22f940da3abb7150086a99(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
       '@deepseek-ai/dsh-home-paths': 0.2.1-rc.3
       https-proxy-agent: 7.0.6
