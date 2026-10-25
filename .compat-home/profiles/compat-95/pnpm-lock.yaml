@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@anionex/dsh-turn-rewind':
         specifier: github:Anionex/dsh-turn-rewind
-        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/9a2acfc44a6f5c94fd81e8cd217a1f54c75750f4(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/5b33fd51925dbd615836d72323e89262796efae5
       '@changfenhuang/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
         version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1
@@ -32,17 +32,23 @@ importers:
       dsh-free-search:
         specifier: github:DDDMUC/dsh-free-search
         version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/eafa38207fa482e65f4a7e9ae0fc69242981be48
+      dsh-liketavern:
+        specifier: github:Amakurai/dsh-liketavern
+        version: https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/2f5329f78c89fe882675505bd8bc16778f3b8f58
 
 packages:
 
-  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/9a2acfc44a6f5c94fd81e8cd217a1f54c75750f4':
-    resolution: {gitHosted: true, integrity: sha512-gsb/l4xSvh3atE9b0URDqmNLTuMxxd3uw4jWOTnJX7Jsi24Dpy49JVMY93uWQmMcWF5ySeRE9r5GNRbA07+MUQ==, tarball: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/9a2acfc44a6f5c94fd81e8cd217a1f54c75750f4}
-    version: 0.2.2
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/5b33fd51925dbd615836d72323e89262796efae5':
+    resolution: {gitHosted: true, integrity: sha512-R+lCr9EBYhlUzJ08BJiidhk3+0sugoSgtt7doBauALbYZ4nemEL66VJgFH+oRjrw1xk6gCO/8SSoDl41p1NkYQ==, tarball: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/5b33fd51925dbd615836d72323e89262796efae5}
+    version: 0.3.10
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-settings': '>=0.1.0-rc.8 <0.2.0'
+      '@deepseek-ai/dsh-settings': '>=0.1.0-rc.8 <0.2.0 || ^0.1.1-rc.1 || ^0.1.2-alpha.1 || ^0.1.5-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2'
       '@deepseek-ai/schemastery': ^3.18.1
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-settings':
+        optional: true
 
   '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1':
     resolution: {gitHosted: true, integrity: sha512-a8erKBsVNh4InBuTBNMFuHTeO8F4BUFGu/7oZuDyD/eYgdxBHQJecPQyPCpbfNDLG+IVVAHuMQiiGFFuIoORbw==, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1}
@@ -80,12 +86,31 @@ packages:
     peerDependencies:
       '@deepseek-ai/dsh-settings': ^0.1.0-rc.6 || ^0.1.1-rc.0
 
+  '@faker-js/faker@10.6.0':
+    resolution: {integrity: sha512-3RQHgEtvL1Frl/d1cSreo7qhJ3Gk1OdNUai/CtZ8G+wYeRQnJih3s9xJ9/kgYekPQRdwgh0HXRPqMlzWGwivIQ==}
+    engines: {node: ^20.19.0 || ^22.13.0 || ^23.5.0 || >=24.0.0, npm: '>=10'}
+
   '@huanlin/dsh-plugin-session-delete@https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5':
     resolution: {gitHosted: true, tarball: https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5}
     version: 0.3.1
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+
+  '@jitl/quickjs-ffi-types@0.32.0':
+    resolution: {integrity: sha512-v9T+GQpmk43VDJ7d72sf0Nexhk+ArvtUihW27dy7lqAl0zBObFKtSBBIm5RBjwIhE8VwsPPm9PNuvPvNqLWUEg==}
+
+  '@jitl/quickjs-wasmfile-debug-asyncify@0.32.0':
+    resolution: {integrity: sha512-EX8zbXwGqCgAE764M+qvkHtyXDi/FUoMBea0JnES7vCM3P7a2+EOZOjGv85wtZ2sJhI1oJ+nekmqpOODFDY+hw==}
+
+  '@jitl/quickjs-wasmfile-debug-sync@0.32.0':
+    resolution: {integrity: sha512-LeYWrPGC1uNCTBWvibo3ZLJj0CSVNYUXvJpXMCmuQ5Sap2cCACc3uvGvYV4homHHBAzfw5akoTqMMS4YFRtw+Q==}
+
+  '@jitl/quickjs-wasmfile-release-asyncify@0.32.0':
+    resolution: {integrity: sha512-3oSwPfja12ICz4aIblB58cuY8JlEq5Txt8Cut4VLo+LH47QN+mzCnSgnbB03hWzg1LBcc+VyyI9UOag7a1NF+Q==}
+
+  '@jitl/quickjs-wasmfile-release-sync@0.32.0':
+    resolution: {integrity: sha512-BKNDI/TPBfGlLNGYpLrhcDGXmIk4xHm4MRAisOBnOzpXVn9HZWsfmMAc9WMBrAHjvvds6HOikKeaOBKdPdpVrg==}
 
   '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41':
     resolution: {gitHosted: true, integrity: sha512-YXbHkVgNb104GXaKZuzl6t3cV/66E/4YGQbXZ70ZTgubqk/lQRLiXNXhtv/BLwmafSZxLDSYevQzABuynPhDig==, tarball: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41}
@@ -100,6 +125,9 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  argparse@3.0.4:
+    resolution: {integrity: sha512-fwWK3Zq22l4XJJjx5mcBHGikIk+hJqO+32dPm0Jur7+rtG5x1scOjSfdT9ZKeWHPpsya/l0HHK4tDImBkTrtvA==}
+
   dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/eafa38207fa482e65f4a7e9ae0fc69242981be48:
     resolution: {gitHosted: true, integrity: sha512-whLclLAHZOIE8CBQctlPMZ/6pMLYiZwsqtPOrE6D/oi3a9Uv9ExLgv5EgKTnLWCQ69JKEGMjchBBpxcNvaoGpg==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/eafa38207fa482e65f4a7e9ae0fc69242981be48}
     version: 0.4.22
@@ -108,11 +136,100 @@ packages:
       '@deepseek-ai/dsh-settings': '>=0.1.0-rc.6'
       '@deepseek-ai/dsh-tools': '>=0.1.0-rc.6'
 
+  dsh-liketavern@https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/2f5329f78c89fe882675505bd8bc16778f3b8f58:
+    resolution: {gitHosted: true, integrity: sha512-N2oDmyes9SCVnaHGUKapH3HnJ37r6y98VMzyy+32nQ1mhRUtYyM2IsxwyCQpC6m4rkqGsF1khw983yhWyywA1Q==, tarball: https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/2f5329f78c89fe882675505bd8bc16778f3b8f58}
+    version: 0.5.7
+    engines: {node: '>=24'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': 4.0.5
+      '@deepseek-ai/dsh': 0.2.1-rc.3
+      '@deepseek-ai/dsh-agent': 0.2.1-rc.3
+      '@deepseek-ai/dsh-agent-preset-registry': 0.2.1-rc.3
+      '@deepseek-ai/dsh-agent-tool-presentation': 0.2.1-rc.3
+      '@deepseek-ai/dsh-anonymous-user-id': 0.2.1-rc.3
+      '@deepseek-ai/dsh-attachment': 0.2.1-rc.3
+      '@deepseek-ai/dsh-credentials': 0.2.1-rc.3
+      '@deepseek-ai/dsh-deepseek-llm-api-extensions': 0.2.1-rc.3
+      '@deepseek-ai/dsh-fs': 0.2.1-rc.3
+      '@deepseek-ai/dsh-home-paths': 0.2.1-rc.3
+      '@deepseek-ai/dsh-launch-environment': 0.2.1-rc.3
+      '@deepseek-ai/dsh-llm': 0.2.1-rc.3
+      '@deepseek-ai/dsh-llm-deepseek': 0.2.1-rc.3
+      '@deepseek-ai/dsh-llm-deepseek-api-key': 0.2.1-rc.3
+      '@deepseek-ai/dsh-session': 0.2.1-rc.3
+      '@deepseek-ai/dsh-session-persistence': 0.2.1-rc.3
+      '@deepseek-ai/dsh-settings': 0.2.1-rc.3
+      '@deepseek-ai/dsh-system-prompt': 0.2.1-rc.3
+      '@deepseek-ai/dsh-tools': 0.2.1-rc.3
+      '@deepseek-ai/dsh-typert-protocol': 0.2.1-rc.3
+      '@deepseek-ai/dsh-typert-registry': 0.2.1-rc.3
+      '@deepseek-ai/dsh-util-values': 0.2.1-rc.3
+      '@deepseek-ai/schemastery': 3.18.5
+
+  ejs@6.0.1:
+    resolution: {integrity: sha512-UaaM14yby8U3k02ihS1Bmj5Kz2d7CCQM1scxpgs4Mhkq8F1wR2gl3+Ts4h5Ne4Mnt7M9m4Dw7jsuMr3+xO4vZA==}
+    engines: {node: '>=0.12.18'}
+    hasBin: true
+
+  entities@8.1.0:
+    resolution: {integrity: sha512-kxL7msIffSuh9aaFAMD7rxAIuTRMAHMeBtgHW2yUdWw732ZNh4MehkF2gdjvtdmikkaIP9bFDDJOPlsvm7avrA==}
+    engines: {node: '>=20.19.0'}
+
+  ignore@7.0.14:
+    resolution: {integrity: sha512-wCBiZ77u1tuWde6G/nfOtLaCTYcFDU5yCzARzK10y+rLhzYoL7a7yEemcopcc2Mzow7gZOIjnV2ym1NYmdiJOQ==}
+    engines: {node: '>= 4'}
+
+  jquery@3.7.1:
+    resolution: {integrity: sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==}
+
+  jsonrepair@3.15.0:
+    resolution: {integrity: sha512-wy8OTjwsJwQRnQJkKnMJJ9vcytRdBPAgIF/Hy6+s1dAj42BHMKiyL8JzEieIl3JY7idt8eyHwBWTO8mh/+mtwA==}
+    hasBin: true
+
+  linkify-it@6.1.0:
+    resolution: {integrity: sha512-wJ/TwpSDTLepCrQoYWYIExIKg5Zchex2Nn5yk2mFnB+6PtdkHtyLx742md9csRjjOnGkKIS/RrbY7l8D6gT9Vw==}
+
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
+
+  markdown-it-emoji@3.1.0:
+    resolution: {integrity: sha512-NhmMEH2ywduD4Nty1E8uB5NqfLhAT1VR0dyvoJyStKOqCzbZmVdn/+8wj7zpDsb/fLBikpCPsWwxqKlvMmbz4g==}
+
+  markdown-it@15.0.3:
+    resolution: {integrity: sha512-+Az7Ojz3iRGu8KYMvJ6xVhvrxP3eE+vEtJX75Ow88XBpcQNV/0lGX5ZynIIBftREo4DC2jsveAMDaeltmm8QvQ==}
+    hasBin: true
+
+  mdurl@2.1.0:
+    resolution: {integrity: sha512-1+HBaOx0zi/dQWht8rNv9MYf9qqpqL/kxI0hXImU6Y547zM6Sni8BQibt7ifgMcYtQg41ao3Ivd6cnSM86inpg==}
+
+  punycode.js@2.3.1:
+    resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
+    engines: {node: '>=6'}
+
+  quickjs-emscripten-core@0.32.0:
+    resolution: {integrity: sha512-QFnPfjFey8EqknSrSxe1hZrf1/8z7/6s1QzGOmKo6++02r7QRRX7ZoyNaZh7JuVjWsVW87KnQrbZqnHkOAzUyg==}
+
+  quickjs-emscripten@0.32.0:
+    resolution: {integrity: sha512-So0Sqw869y/S2oE3Nuc0uT3Dhqgvsj8FSrwBdsuTosVsG8ME5/OcudU1GxsrIFdFABgy17GHnTVO9TYV/bLQcA==}
+    engines: {node: '>=16.0.0'}
+
+  uc.micro@3.0.0:
+    resolution: {integrity: sha512-U3PppEkleoTnIfi8BozMx3yju3qc/L6SwqWo2Sw+54PX+PX0q9I+r1Um5HCmqD7n9VDX5/v3vQH/AjA6deDdtw==}
+
+  yaml@2.9.0:
+    resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
+
 snapshots:
 
-  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/9a2acfc44a6f5c94fd81e8cd217a1f54c75750f4(@deepseek-ai/schemastery@3.18.2)':
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/5b33fd51925dbd615836d72323e89262796efae5':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.2
+      ignore: 7.0.14
 
   '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1': {}
 
@@ -129,12 +246,96 @@ snapshots:
 
   '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/9a714280a01e158151b4081e294382454dc4b99c': {}
 
+  '@faker-js/faker@10.6.0': {}
+
   '@huanlin/dsh-plugin-session-delete@https://codeload.github.com/lsz-asd/dsh-plugin-session-delete/tar.gz/352510e552983dcfcb993cf9124181c55e2070f5': {}
+
+  '@jitl/quickjs-ffi-types@0.32.0': {}
+
+  '@jitl/quickjs-wasmfile-debug-asyncify@0.32.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
+
+  '@jitl/quickjs-wasmfile-debug-sync@0.32.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
+
+  '@jitl/quickjs-wasmfile-release-asyncify@0.32.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
+
+  '@jitl/quickjs-wasmfile-release-sync@0.32.0':
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
 
   '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41': {}
 
   '@standard-schema/spec@1.1.0': {}
 
+  argparse@3.0.4: {}
+
   dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/eafa38207fa482e65f4a7e9ae0fc69242981be48:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
+
+  dsh-liketavern@https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/2f5329f78c89fe882675505bd8bc16778f3b8f58:
+    dependencies:
+      '@faker-js/faker': 10.6.0
+      ejs: 6.0.1
+      jquery: 3.7.1
+      jsonrepair: 3.15.0
+      lodash: 4.18.1
+      markdown-it: 15.0.3
+      markdown-it-emoji: 3.1.0
+      quickjs-emscripten: 0.32.0
+      yaml: 2.9.0
+      zod: 4.6.7
+
+  ejs@6.0.1: {}
+
+  entities@8.1.0: {}
+
+  ignore@7.0.14: {}
+
+  jquery@3.7.1: {}
+
+  jsonrepair@3.15.0: {}
+
+  linkify-it@6.1.0:
+    dependencies:
+      uc.micro: 3.0.0
+
+  lodash@4.18.1: {}
+
+  markdown-it-emoji@3.1.0: {}
+
+  markdown-it@15.0.3:
+    dependencies:
+      argparse: 3.0.4
+      entities: 8.1.0
+      linkify-it: 6.1.0
+      mdurl: 2.1.0
+      punycode.js: 2.3.1
+      uc.micro: 3.0.0
+
+  mdurl@2.1.0: {}
+
+  punycode.js@2.3.1: {}
+
+  quickjs-emscripten-core@0.32.0:
+    dependencies:
+      '@jitl/quickjs-ffi-types': 0.32.0
+
+  quickjs-emscripten@0.32.0:
+    dependencies:
+      '@jitl/quickjs-wasmfile-debug-asyncify': 0.32.0
+      '@jitl/quickjs-wasmfile-debug-sync': 0.32.0
+      '@jitl/quickjs-wasmfile-release-asyncify': 0.32.0
+      '@jitl/quickjs-wasmfile-release-sync': 0.32.0
+      quickjs-emscripten-core: 0.32.0
+
+  uc.micro@3.0.0: {}
+
+  yaml@2.9.0: {}
+
+  zod@4.6.7: {}

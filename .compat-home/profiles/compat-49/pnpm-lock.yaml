@@ -29,6 +29,9 @@ importers:
       dsh-usage-stats:
         specifier: github:Ychris12138/dsh-usage-stats
         version: '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/f7191519d96480df8b92a462131040f9f5390861'
+      misakanet:
+        specifier: github:Ikalus1988/MisakaNet
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/dc55a6a0be345087af5cbd25043564032244255f(@deepseek-ai/schemastery@3.18.1)
 
 packages:
 
@@ -229,6 +232,19 @@ packages:
   fflate@0.8.3:
     resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
 
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/dc55a6a0be345087af5cbd25043564032244255f:
+    resolution: {gitHosted: true, integrity: sha512-Zep7yhD4cdKWTiqfJzJ6edRfO3wBMNaFNUqYMFguX0YF3Qnnt3WkC4XESz1DqyVs5wmQUJ/912V1bQghwWwDng==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/dc55a6a0be345087af5cbd25043564032244255f}
+    version: 2.50.1
+    engines: {node: '>=20.0.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
+      '@deepseek-ai/schemastery': '>=3.0.0'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-mcp-client':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
@@ -310,6 +326,10 @@ snapshots:
       zrender: 6.1.0
 
   fflate@0.8.3: {}
+
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/dc55a6a0be345087af5cbd25043564032244255f(@deepseek-ai/schemastery@3.18.1):
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.1
 
   schemastery@3.18.0:
     dependencies:

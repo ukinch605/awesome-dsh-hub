@@ -20,6 +20,9 @@ importers:
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
         version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/8bb79fd8a740817308e2c9afc8bc9f5df24ad596
+      '@michengai/dsh-archive-manager':
+        specifier: github:MichengAI/dsh-archive-manager
+        version: https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/1ea3597d42c2014c1115048f7844ee246f4c26e8(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.2)
       '@sanqi-normal/dsh-webui-market-plugin':
         specifier: github:Sanqi-normal/dsh-webui-market-plugin
         version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41
@@ -233,6 +236,32 @@ packages:
 
   '@mermaid-js/parser@1.2.1':
     resolution: {integrity: sha512-n12NohV3mrUyUL2o93IgG/ifeW9FTyeJn3zDxkhwa8MJ9Fxg3HQMlA3RiGmD/3UnJvheztkjjQAjA2T4LmUcpw==}
+
+  '@michengai/dsh-archive-manager@https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/1ea3597d42c2014c1115048f7844ee246f4c26e8':
+    resolution: {gitHosted: true, integrity: sha512-4INBeIDOA56VFVDoaYoOFlHPImI+AO8JXr1m+fOJkOmrmqN/O7N3Kn0ogOL8khezWHBM3sMYFGGvXXJE+yyHhA==, tarball: https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/1ea3597d42c2014c1115048f7844ee246f4c26e8}
+    version: 1.1.12
+    engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.1 <5.0.0'
+      '@deepseek-ai/dsh-client-connection': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-locale': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-store': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-conversation': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-sidebar': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-workspace': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-host-webserver': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-session': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-session-format-catalog': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-session-projection-cache': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-spill-local': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-storage-domain': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-typert-protocol': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-typert-registry': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-workspace': '>=0.2.0-rc.1 <0.3.0-0'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-session-format-catalog':
+        optional: true
 
   '@modelcontextprotocol/sdk@1.32.1':
     resolution: {integrity: sha512-2DdE+SJDtzLEEWzY1ZjY7Q+VcPhcV1KisD3zI4u0XZyktsjHum1mwbMI+JaulUBi2OZk+KJAi2uPXzxichPkdw==}
@@ -2229,6 +2258,10 @@ snapshots:
   '@mermaid-js/parser@1.2.1':
     dependencies:
       '@chevrotain/types': 11.1.2
+
+  '@michengai/dsh-archive-manager@https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/1ea3597d42c2014c1115048f7844ee246f4c26e8(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.2)':
+    dependencies:
+      '@deepseek-ai/dsh-typert-protocol': 0.2.1-rc.2
 
   '@modelcontextprotocol/sdk@1.32.1':
     dependencies:

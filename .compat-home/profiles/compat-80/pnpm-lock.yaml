@@ -17,6 +17,9 @@ importers:
       '@zseven-w/dsh-crew':
         specifier: github:ZSeven-W/dsh-crew
         version: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/d1ab907866e52f844e80ff47f8082864f5b5b816
+      dsh-dream-skin:
+        specifier: github:RevolutionLA/dsh-dream-skin
+        version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/06f5a3073013394c31b9992e8fe8c1b89889b240
       dsh-free-search:
         specifier: github:DDDMUC/dsh-free-search
         version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/d1beabcf643256d95823a9cb8f06fc8f84a40483
@@ -206,6 +209,37 @@ packages:
 
   dijkstrajs@1.0.3:
     resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
+
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/06f5a3073013394c31b9992e8fe8c1b89889b240:
+    resolution: {gitHosted: true, integrity: sha512-OoTac/X3AtNCl99rYhYFpt7DPIBwF0kVNKGBeS5sGNqF+8opw4yBSVFHTdTEScDYNQCUVgZ0IqE8KW1Be2jGNw==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/06f5a3073013394c31b9992e8fe8c1b89889b240}
+    version: 10.23.0
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1 || >=4.0.5-0 <5
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-runtime': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-store': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-settings': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-settings-general': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-theme': '>=0.1.0-rc.6 <0.3.0-0'
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-store':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings-general':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-theme':
+        optional: true
+      react:
+        optional: true
 
   dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/d1beabcf643256d95823a9cb8f06fc8f84a40483:
     resolution: {gitHosted: true, integrity: sha512-OtkJkp9lcUv+MKGgAlQxEG7bnSRBZh8OigtlD4aAWniDk3ZyDdVNKh8B6aVctxwj/apbx7qjkMsScVM5xvQEkA==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/d1beabcf643256d95823a9cb8f06fc8f84a40483}
@@ -807,6 +841,8 @@ snapshots:
   depd@2.0.0: {}
 
   dijkstrajs@1.0.3: {}
+
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/06f5a3073013394c31b9992e8fe8c1b89889b240: {}
 
   dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/d1beabcf643256d95823a9cb8f06fc8f84a40483:
     dependencies:
