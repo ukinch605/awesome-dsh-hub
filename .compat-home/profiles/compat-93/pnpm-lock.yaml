@@ -10,13 +10,16 @@ importers:
     dependencies:
       '@anionex/dsh-turn-rewind':
         specifier: github:Anionex/dsh-turn-rewind
-        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/5b33fd51925dbd615836d72323e89262796efae5(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/737d716c5f693f96eb2adc3e9a79f4e55cda8735(@deepseek-ai/schemastery@3.18.1)
       '@dsh-external/dsh-mobile':
         specifier: github:lehhair/dsh-mobile
         version: https://codeload.github.com/lehhair/dsh-mobile/tar.gz/1144e6b98419010588cb01a207dfb1b33035ca9f(react@18.3.1)
       '@dsh-external/workflow':
         specifier: github:omdsh-dev/dsh_workflow
         version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.18.1)
+      '@michengai/dsh-archive-manager':
+        specifier: github:MichengAI/dsh-archive-manager
+        version: https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/b2287d7247788018a1865e53a98a8a197ee9641b(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.3)
       '@oil-oil/dsh-vision':
         specifier: github:oil-oil/dsh-vision
         version: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7(react@18.3.1)
@@ -25,7 +28,7 @@ importers:
         version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8a5fb47403d694213ae5b797e8e23fe13017eb87
       dsh-auth-in-one:
         specifier: github:Stormycry-cryp/dsh-AuthInOne
-        version: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(@deepseek-ai/schemastery@3.18.1)(react@18.3.1)
+        version: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.3)(@deepseek-ai/schemastery@3.18.1)(react@18.3.1)
       dsh-plugin-genui:
         specifier: github:pengyue-polaron/deepseek-harness-genui
         version: https://codeload.github.com/pengyue-polaron/deepseek-harness-genui/tar.gz/8466493e5debb7d7b438c169c7c8b61076643f17
@@ -35,13 +38,13 @@ importers:
 
 packages:
 
-  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/5b33fd51925dbd615836d72323e89262796efae5':
-    resolution: {gitHosted: true, integrity: sha512-R+lCr9EBYhlUzJ08BJiidhk3+0sugoSgtt7doBauALbYZ4nemEL66VJgFH+oRjrw1xk6gCO/8SSoDl41p1NkYQ==, tarball: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/5b33fd51925dbd615836d72323e89262796efae5}
-    version: 0.3.10
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/737d716c5f693f96eb2adc3e9a79f4e55cda8735':
+    resolution: {gitHosted: true, integrity: sha512-bS/Yzm3YexNpjFV8WK0rOC/yWWXcHiVkbcPaEQoY9Vrc/Q1zyOKdKUQLR/92TJLkdpqbd3Nwkqn+Cjbd8+ubOg==, tarball: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/737d716c5f693f96eb2adc3e9a79f4e55cda8735}
+    version: 0.3.11
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-settings': '>=0.1.0-rc.8 <0.2.0 || ^0.1.1-rc.1 || ^0.1.2-alpha.1 || ^0.1.5-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2'
+      '@deepseek-ai/dsh-settings': 0.2.1-rc.3 || >=0.1.0-rc.8 <0.2.0 || ^0.1.1-rc.1 || ^0.1.2-alpha.1 || ^0.1.5-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2
       '@deepseek-ai/schemastery': ^3.18.1
     peerDependenciesMeta:
       '@deepseek-ai/dsh-settings':
@@ -271,6 +274,32 @@ packages:
 
   '@jitl/quickjs-wasmfile-release-sync@0.32.0':
     resolution: {integrity: sha512-BKNDI/TPBfGlLNGYpLrhcDGXmIk4xHm4MRAisOBnOzpXVn9HZWsfmMAc9WMBrAHjvvds6HOikKeaOBKdPdpVrg==}
+
+  '@michengai/dsh-archive-manager@https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/b2287d7247788018a1865e53a98a8a197ee9641b':
+    resolution: {gitHosted: true, integrity: sha512-/r0RUk1E3+pmCpNGKeVpC/sptbY6QqmWlP/o+QBb3vjRGgdpvp1mJSjYf+F20Tktp/kXryU9PZRcheuhLC26CQ==, tarball: https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/b2287d7247788018a1865e53a98a8a197ee9641b}
+    version: 1.1.16
+    engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.1 <5.0.0'
+      '@deepseek-ai/dsh-client-connection': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-locale': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-store': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-conversation': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-sidebar': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-workspace': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-host-webserver': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-session': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-session-format-catalog': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-session-projection-cache': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-spill-local': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-storage-domain': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-typert-protocol': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-typert-registry': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-workspace': '>=0.2.0-rc.1 <0.3.0-0'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-session-format-catalog':
+        optional: true
 
   '@modelcontextprotocol/sdk@1.32.2':
     resolution: {integrity: sha512-SWsVtH/0vULSQStoZ6xxH2K09Li8fXYTMC64ZeogCdpZ3XSi1eCPOByV1OpuJxuI3OcmHhosDWYyii07tpPsLw==}
@@ -1163,7 +1192,7 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/5b33fd51925dbd615836d72323e89262796efae5(@deepseek-ai/schemastery@3.18.1)':
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/737d716c5f693f96eb2adc3e9a79f4e55cda8735(@deepseek-ai/schemastery@3.18.1)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
       ignore: 7.0.14
@@ -1292,6 +1321,10 @@ snapshots:
   '@jitl/quickjs-wasmfile-release-sync@0.32.0':
     dependencies:
       '@jitl/quickjs-ffi-types': 0.32.0
+
+  '@michengai/dsh-archive-manager@https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/b2287d7247788018a1865e53a98a8a197ee9641b(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.3)':
+    dependencies:
+      '@deepseek-ai/dsh-typert-protocol': 0.2.1-rc.3
 
   '@modelcontextprotocol/sdk@1.32.2':
     dependencies:
@@ -1502,11 +1535,12 @@ snapshots:
       '@babel/runtime': 7.29.7
       csstype: 3.2.3
 
-  dsh-auth-in-one@https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(@deepseek-ai/schemastery@3.18.1)(react@18.3.1):
+  dsh-auth-in-one@https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.3)(@deepseek-ai/schemastery@3.18.1)(react@18.3.1):
     dependencies:
       clsx: 2.1.1
       zod: 4.4.3
     optionalDependencies:
+      '@deepseek-ai/dsh-typert-protocol': 0.2.1-rc.3
       '@deepseek-ai/schemastery': 3.18.1
       react: 18.3.1
 

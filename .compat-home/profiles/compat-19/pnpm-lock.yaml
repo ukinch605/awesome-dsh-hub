@@ -26,6 +26,9 @@ importers:
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/c37b0ed9e8bf3585bf9f272462dcf01886efe2a3
+      dsh-purge:
+        specifier: github:mmparko/dsh-purge
+        version: https://codeload.github.com/mmparko/dsh-purge/tar.gz/033e6bd1e0f101352b39075ecd0d758ffef26b76
       graph-memory:
         specifier: github:adoresever/graph-memory
         version: https://codeload.github.com/adoresever/graph-memory/tar.gz/1dadb34c0db7a204847f209e9290ae115f8e046b
@@ -195,6 +198,14 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
+  dsh-purge@https://codeload.github.com/mmparko/dsh-purge/tar.gz/033e6bd1e0f101352b39075ecd0d758ffef26b76:
+    resolution: {gitHosted: true, integrity: sha512-KeT95rIruOL+SSR/ruvCzf5YUuQmON1ftYG/y1R22FlcrsT4pypbERFrzB7sDYDZHEhtlNWklxUtb5I0Bkj2VQ==, tarball: https://codeload.github.com/mmparko/dsh-purge/tar.gz/033e6bd1e0f101352b39075ecd0d758ffef26b76}
+    version: 1.1.71
+    engines: {node: '>=18'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+
   fflate@0.8.3:
     resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
 
@@ -288,6 +299,8 @@ snapshots:
       markdown-to-jsx: 7.7.17
       schemastery: 3.18.0
       zod: 4.4.3
+
+  dsh-purge@https://codeload.github.com/mmparko/dsh-purge/tar.gz/033e6bd1e0f101352b39075ecd0d758ffef26b76: {}
 
   fflate@0.8.3: {}
 

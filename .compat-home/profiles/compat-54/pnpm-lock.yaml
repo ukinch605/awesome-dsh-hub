@@ -23,6 +23,9 @@ importers:
       dsh-bili-scroll:
         specifier: github:c1overzz/dsh-bili-scroll
         version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1bfcf294efac5c842c485d0146f1235e91ee2efc
+      dsh-dafeiyu:
+        specifier: github:QCYTSN/dsh-dafeiyu
+        version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/dc0dbde9d05899aea663e4b60f0d1727ecee4253
       dsh-engramory:
         specifier: github:tinqiao-oss/engramory
         version: https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5
@@ -162,6 +165,15 @@ packages:
       '@deepseek-ai/schemastery':
         optional: true
 
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/dc0dbde9d05899aea663e4b60f0d1727ecee4253:
+    resolution: {gitHosted: true, integrity: sha512-aSK2e0Eq0OwF5hhFzlAx75J6aPu+fRj8jdjVwAjjcCLXvcYRG2VKUBQCf2C4Q4y20Nl9OPj0zkRjHeezcrUd6A==, tarball: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/dc0dbde9d05899aea663e4b60f0d1727ecee4253}
+    version: 0.1.19
+    engines: {node: '>=22.19'}
+    bundledDependencies:
+      - '@deepseek-ai/cosmokit'
+      - '@deepseek-ai/schemastery'
+      - '@standard-schema/spec'
+
   dsh-engramory@https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5:
     resolution: {gitHosted: true, integrity: sha512-CMI6QImzoOGYavF2MBH4WV+bKJrbw8X7fhtIg6X/aZi8SdxsY+24Dhz13qj2SEbaxzEUksDFNo0A+GEdKhkg4A==, tarball: https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5}
     version: 0.2.4
@@ -240,6 +252,8 @@ snapshots:
   dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1bfcf294efac5c842c485d0146f1235e91ee2efc:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/dc0dbde9d05899aea663e4b60f0d1727ecee4253: {}
 
   dsh-engramory@https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5: {}
 
