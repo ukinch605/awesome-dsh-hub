@@ -2,7 +2,7 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/ukinch605/awesome-dsh-hub)
 ![License](https://img.shields.io/github/license/ukinch605/awesome-dsh-hub)
-![Plugins](https://img.shields.io/badge/plugins-18748-4dabf7)
+![Plugins](https://img.shields.io/badge/plugins-18760-4dabf7)
 ![Last updated](https://img.shields.io/badge/last%20updated-2026--10--26-orange)
 
 > An auto-maintained, awesome-style directory of the DeepSeek Harness (`dsh`) plugin ecosystem: machine-readable registry, bilingual catalogs and a searchable site. Everything is a Plugin. 🐋
@@ -13,29 +13,29 @@
 
 | Metric | Value |
 | --- | ---: |
-| Plugins | **18748** |
-| Monitored repos | 22308 |
-| Total stars | 242,248 |
-| Last updated | 2026-10-26 17:41:46.595 UTC |
+| Plugins | **18760** |
+| Monitored repos | 22348 |
+| Total stars | 242,555 |
+| Last updated | 2026-10-26 21:57:09.178 UTC |
 
 ### Categories
 
-Web UI 2779 · Agent Capabilities 7656 · Coding & Engineering 1417 · Messaging & Notifications 733 · Vision & Multimodal 1321 · Browser & Web 974 · Skins & Fun 485 · Files & Data 2338 · Dev Tools & Tutorials 434 · Bundles & Distros 432 · Ecosystem Projects 179
+Web UI 2781 · Agent Capabilities 7660 · Coding & Engineering 1422 · Messaging & Notifications 732 · Vision & Multimodal 1321 · Browser & Web 974 · Skins & Fun 485 · Files & Data 2339 · Dev Tools & Tutorials 434 · Bundles & Distros 433 · Ecosystem Projects 179
 
 ### Top 10 Plugins
 
 | # | Plugin | Stars | Type | Description |
 | --- | --- | ---: | --- | --- |
-| 1 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 44,661 | Agent Capabilities | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flas… |
-| 2 | [YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) | 9,775 | Agent Capabilities | DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Ja… |
-| 3 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,582 | Dev Tools & Tutorials | DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSee… |
-| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 9,070 | Agent Capabilities | The plugin market inside DeepSeek Harness — browse, search,… |
+| 1 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 44,768 | Agent Capabilities | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flas… |
+| 2 | [YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) | 9,844 | Agent Capabilities | DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Ja… |
+| 3 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,583 | Dev Tools & Tutorials | DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSee… |
+| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 9,076 | Agent Capabilities | The plugin market inside DeepSeek Harness — browse, search,… |
 | 5 | [yjh051108/dsh-routing-suite](https://github.com/yjh051108/dsh-routing-suite) | 7,003 | Agent Capabilities | dsh-routing-suite — injector + router-standard kit: install… |
-| 6 | [superdesigndev/treg](https://github.com/superdesigndev/treg) | 6,185 | Messaging & Notifications | OpenRouter for agent tools. Join community here: https://di… |
-| 7 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 6,167 | Web UI | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
-| 8 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 5,895 | Coding & Engineering | DSH's officially top-recommended TUI plugin — high performa… |
+| 6 | [superdesigndev/treg](https://github.com/superdesigndev/treg) | 6,226 | Messaging & Notifications | OpenRouter for agent tools. Join community here: https://di… |
+| 7 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 6,169 | Web UI | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
+| 8 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 5,900 | Coding & Engineering | DSH's officially top-recommended TUI plugin — high performa… |
 | 9 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,579 | Web UI | 开放的侧边栏底座，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/侧边对话/Git/子代理页面 ｜ Open s… |
-| 10 | [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 4,493 | Coding & Engineering | Answer me with HTML — an agent skill that answers hard ques… |
+| 10 | [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 4,495 | Coding & Engineering | Answer me with HTML — an agent skill that answers hard ques… |
 
 ## Quick Start
 
