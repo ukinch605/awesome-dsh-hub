@@ -22,10 +22,13 @@ importers:
         version: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7(react@18.3.1)
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c8b9158b37817b0dbc1e514e62e16204ad47a6ce(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/d998f72fb4ab5492eaab3c5e1cc9de1d7901e8a9(@deepseek-ai/schemastery@3.18.1)
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
         version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/0c53efec724b51232b839413e124bf84f0a40b12
+      dsh-computer-use-win:
+        specifier: github:Yu-tao-Li/dsh-computer-use-win
+        version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/e4482b86773cd2321af37121c45eb2a960bf9ef0(@deepseek-ai/schemastery@3.18.1)
       dsh-custom-skin:
         specifier: github:SLin-code/dsh-custom-skin
         version: https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/03d3117fa426d14df4e7a58248adfce094e94633(react@18.3.1)
@@ -121,9 +124,9 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c8b9158b37817b0dbc1e514e62e16204ad47a6ce':
-    resolution: {gitHosted: true, integrity: sha512-fa3WwCk4sPBuA0i50rgjKbdGGvpAUm0nR8eES6sfQdyXdVrJWIKH4UuMNGUuBdxSnJhmxNT+KGi5SfolqZMYzw==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c8b9158b37817b0dbc1e514e62e16204ad47a6ce}
-    version: 0.5.2
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/d998f72fb4ab5492eaab3c5e1cc9de1d7901e8a9':
+    resolution: {gitHosted: true, integrity: sha512-hBSQMXegytqqRMeXWxFs/v73KVawPo74PbI90AEkcy4s7R6yA1wu0SYcLOSQ0EW5Dgu9tH0pZE+FFpdzj+PmqA==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/d998f72fb4ab5492eaab3c5e1cc9de1d7901e8a9}
+    version: 0.5.3
     engines: {node: '>=20.3.0'}
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1'
@@ -410,6 +413,21 @@ packages:
 
   dijkstrajs@1.0.3:
     resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
+
+  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/e4482b86773cd2321af37121c45eb2a960bf9ef0:
+    resolution: {gitHosted: true, integrity: sha512-K10O9JnxkCy8PRbMmdOF5wBwkRIYkSMGsnVNq+BCs2dx/He0H17vs03BpVTEiHKlTZGsr7NhH+kZP2IkZD8jcQ==, tarball: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/e4482b86773cd2321af37121c45eb2a960bf9ef0}
+    version: 0.5.2
+    engines: {node: '>=22'}
+    os: [win32]
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.2 || >=0.2.0-rc.2'
+      '@deepseek-ai/schemastery': '>=3.18.1'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-mcp-client':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
 
   dsh-custom-skin@https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/03d3117fa426d14df4e7a58248adfce094e94633:
     resolution: {gitHosted: true, integrity: sha512-BDXQi4gfDoz+SHczkBvElffJmGHLPIzCu7YdiZQbXDe50ooKff7kEPxuYeq5cps+mNmTbdQcT+OF7eqcPfwu1w==, tarball: https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/03d3117fa426d14df4e7a58248adfce094e94633}
@@ -1035,7 +1053,7 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c8b9158b37817b0dbc1e514e62e16204ad47a6ce(@deepseek-ai/schemastery@3.18.1)':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/d998f72fb4ab5492eaab3c5e1cc9de1d7901e8a9(@deepseek-ai/schemastery@3.18.1)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
       '@tencent-connect/qqbot-connector': 1.2.0
@@ -1327,6 +1345,10 @@ snapshots:
   depd@2.0.0: {}
 
   dijkstrajs@1.0.3: {}
+
+  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/e4482b86773cd2321af37121c45eb2a960bf9ef0(@deepseek-ai/schemastery@3.18.1):
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.1
 
   dsh-custom-skin@https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/03d3117fa426d14df4e7a58248adfce094e94633(react@18.3.1):
     dependencies:

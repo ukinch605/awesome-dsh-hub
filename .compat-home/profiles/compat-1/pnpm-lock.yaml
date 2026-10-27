@@ -14,6 +14,9 @@ importers:
       aegis:
         specifier: github:GanyuanRan/Aegis
         version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/21b27d23598ef492834427e2a1381b744f66b787
+      dsh-purge:
+        specifier: github:YuJunZhiXue/dsh-purge
+        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/24f4a7f5df43a766f52e7fa159188c20eaa2b0f1
       dsh-web:
         specifier: github:zhu1090093659/dsh-web
         version: https://codeload.github.com/zhu1090093659/dsh-web/tar.gz/955e42a013ff77a5f9394766f75b2646633e26f7(zod@4.5.4)
@@ -815,6 +818,14 @@ packages:
     peerDependenciesMeta:
       cordis:
         optional: true
+
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/24f4a7f5df43a766f52e7fa159188c20eaa2b0f1:
+    resolution: {gitHosted: true, integrity: sha512-J3t4wCLCOFg9jncSjL/+TzhxBGQwFETTnP/j1VvylwRyKUOWApl9sUAicxn9YTq/R2hphUicVvy4skI9RIpz7g==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/24f4a7f5df43a766f52e7fa159188c20eaa2b0f1}
+    version: 1.1.79
+    engines: {node: '>=18'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
 
   dsh-web@https://codeload.github.com/zhu1090093659/dsh-web/tar.gz/955e42a013ff77a5f9394766f75b2646633e26f7:
     resolution: {gitHosted: true, integrity: sha512-S4WhALyVA/o0kpNDN4Bix0xOtMR6W84nV4qBAR0hdp7aiDRPBenzs9yghKG7671zzOEIBxGB+AY7OEHiCbb9rg==, tarball: https://codeload.github.com/zhu1090093659/dsh-web/tar.gz/955e42a013ff77a5f9394766f75b2646633e26f7}
@@ -2099,6 +2110,8 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/24f4a7f5df43a766f52e7fa159188c20eaa2b0f1: {}
 
   dsh-web@https://codeload.github.com/zhu1090093659/dsh-web/tar.gz/955e42a013ff77a5f9394766f75b2646633e26f7(zod@4.5.4):
     dependencies:

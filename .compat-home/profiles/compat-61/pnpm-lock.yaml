@@ -16,7 +16,7 @@ importers:
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/f44d7e02a92bff3ca9f06a5de915a6d85febc367
       '@ljwei-stak/dsh-model-router':
         specifier: github:Alice-Marx/dsh-model-router
-        version: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/bcbb022532a5b0e7478835658a0fab14d3397daf(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/de82df4e737954ba0458d597ea82f9a6666c1a9b(@deepseek-ai/schemastery@3.18.5)
       '@nanmicoder/dsh-auto-mode':
         specifier: github:NanmiCoder/dsh-auto-mode
         version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f
@@ -32,6 +32,9 @@ importers:
       dsh-harmony-next:
         specifier: github:linhay/harmony-next.skills
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101
+      dsh-meme:
+        specifier: github:yyh-001/dsh-meme
+        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/8aa934dc63fc270ea40687bdb1310028e46e1c4e
       dsh-share:
         specifier: github:hellodigua/dsh-share
         version: https://codeload.github.com/hellodigua/dsh-share/tar.gz/c109330b755c793cbc701a4e6a972d620a6667da
@@ -62,9 +65,9 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-ABefPC9mo/zZLHXnsXGR+rEi/6Ac1Wb1hPRN/vrgEVyOiMkgGTHlxFPxi+hHJGhBp5AxYHlLqmdm0e3wHZDefg==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/f44d7e02a92bff3ca9f06a5de915a6d85febc367}
     version: 0.1.9
 
-  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/bcbb022532a5b0e7478835658a0fab14d3397daf':
-    resolution: {gitHosted: true, integrity: sha512-cxU0NT5E2WQLx9zmJeNmqbr0rseblR6B5+Eo1qrQDwWOPlJrlJYTaZPnxpyz2Bn52eQHzxBJLuxZJ8/TmRocEw==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/bcbb022532a5b0e7478835658a0fab14d3397daf}
-    version: 0.25.1
+  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/de82df4e737954ba0458d597ea82f9a6666c1a9b':
+    resolution: {gitHosted: true, integrity: sha512-9J3E8r+x8RC/+q+ZBGWEa9V2p0cVCq2uv3E3flP4Xokjy/7vhfM5KmVlMJKb3cr11trqtzkbZicE7LkOAbujMg==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/de82df4e737954ba0458d597ea82f9a6666c1a9b}
+    version: 0.25.5
     engines: {node: '>=22.19'}
     peerDependencies:
       '@deepseek-ai/cordis': ~4.0.4
@@ -218,6 +221,13 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-P4ytCwQp0RX6fJ+TiQTL+KtdbgVLZUk3jlF6s1P0Db2KnrDly4fD7v+f7vOgibNEmfZ7N3d+RDR12ln3Y2+RPw==, tarball: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101}
     version: 1.3.37
 
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/8aa934dc63fc270ea40687bdb1310028e46e1c4e:
+    resolution: {gitHosted: true, integrity: sha512-a9Y9gRGLWoM2oG0s/o1kVn02aSZ83zMP4TRRHVNcz0kJXVrNUNQg93jPN2FUTmZ9kLl3LRx3YvMG4Do2gMvUvg==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/8aa934dc63fc270ea40687bdb1310028e46e1c4e}
+    version: 0.1.64
+    engines: {node: '>=22.13.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh-tools': '*'
+
   dsh-share@https://codeload.github.com/hellodigua/dsh-share/tar.gz/c109330b755c793cbc701a4e6a972d620a6667da:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/hellodigua/dsh-share/tar.gz/c109330b755c793cbc701a4e6a972d620a6667da}
     version: 0.3.1
@@ -253,7 +263,7 @@ snapshots:
 
   '@leon___/dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/f44d7e02a92bff3ca9f06a5de915a6d85febc367': {}
 
-  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/bcbb022532a5b0e7478835658a0fab14d3397daf(@deepseek-ai/schemastery@3.18.5)':
+  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/de82df4e737954ba0458d597ea82f9a6666c1a9b(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
     optionalDependencies:
@@ -327,6 +337,8 @@ snapshots:
       '@deepseek-ai/schemastery': 3.18.5
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101: {}
+
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/8aa934dc63fc270ea40687bdb1310028e46e1c4e: {}
 
   dsh-share@https://codeload.github.com/hellodigua/dsh-share/tar.gz/c109330b755c793cbc701a4e6a972d620a6667da: {}
 

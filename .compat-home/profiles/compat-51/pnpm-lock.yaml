@@ -17,6 +17,9 @@ importers:
       dsh-popout-sidebar:
         specifier: github:e2mcc/dsh-popout-sidebar
         version: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162
+      misakanet:
+        specifier: github:Ikalus1988/MisakaNet
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/e1429d25f2e46202c59d3d44e30a15676504bc1b
       open-sea-skin:
         specifier: github:d-dev0101/open-sea-skin
         version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea
@@ -56,6 +59,19 @@ packages:
   js-yaml@4.3.1:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
     hasBin: true
+
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/e1429d25f2e46202c59d3d44e30a15676504bc1b:
+    resolution: {gitHosted: true, integrity: sha512-P+BlNsSkqjh/303vEvNV5Ye3qY5+YmuscxaZFcpG0LrCz64YN3BHP7Fe3CGQEpdoQ5scE2QQHf1Ev1wi3Gym9g==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/e1429d25f2e46202c59d3d44e30a15676504bc1b}
+    version: 2.50.1
+    engines: {node: '>=20.0.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
+      '@deepseek-ai/schemastery': '>=3.0.0'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-mcp-client':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
 
   open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea:
     resolution: {gitHosted: true, integrity: sha512-Ua+svtj9+rn8HopUn3PRQQ9a58AbiLs7IlznyUZeTcns6tLWnt+KQNHdaMAVQe2HsO08GoprosjH0rLPxPWUgA==, tarball: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea}
@@ -98,6 +114,8 @@ snapshots:
   js-yaml@4.3.1:
     dependencies:
       argparse: 2.0.1
+
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/e1429d25f2e46202c59d3d44e30a15676504bc1b: {}
 
   open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea: {}
 

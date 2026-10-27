@@ -20,6 +20,9 @@ importers:
       ds-harness-remote:
         specifier: github:liguobao/ds-harness-remote
         version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/6169cebe46a9de16a2d7d853f8a0fd87305e3dc1
+      dsh-bili-scroll:
+        specifier: github:c1overzz/dsh-bili-scroll
+        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/4af98392ee078e02f50a7fd0bf0491033f4675ed
       dsh-harmony-next:
         specifier: github:linhay/harmony-next.skills
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249
@@ -307,6 +310,19 @@ packages:
       '@deepseek-ai/dsh-client-ui-sidebar':
         optional: true
       '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/4af98392ee078e02f50a7fd0bf0491033f4675ed:
+    resolution: {gitHosted: true, integrity: sha512-8qcexBxmNL+WMAHJ55qacHA3obZ06JhxZHZ/U4IMfRdIUWAItfmB13bt/HzjkYes+0PQBQQNjKuroifg6MpGwg==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/4af98392ee078e02f50a7fd0bf0491033f4675ed}
+    version: 2.2.2
+    engines: {dsh: '>=0.1.7-rc.1', node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/schemastery': '*'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/schemastery':
         optional: true
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249:
@@ -807,6 +823,10 @@ snapshots:
       - bufferutil
       - supports-color
       - utf-8-validate
+
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/4af98392ee078e02f50a7fd0bf0491033f4675ed:
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249: {}
 
