@@ -2,7 +2,7 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/ukinch605/awesome-dsh-hub)
 ![License](https://img.shields.io/github/license/ukinch605/awesome-dsh-hub)
-![Plugins](https://img.shields.io/badge/plugins-18766-4dabf7)
+![Plugins](https://img.shields.io/badge/plugins-18859-4dabf7)
 ![Last updated](https://img.shields.io/badge/last%20updated-2026--10--27-orange)
 
 > 自动维护的 DeepSeek Harness（`dsh`）插件精品目录：机器可读 Registry、中英双语目录与可检索站点。Everything is a Plugin. 🐋
@@ -14,29 +14,29 @@
 
 | 指标 / Metric | 数值 / Value |
 | --- | ---: |
-| 收录插件 / Plugins | **18766** |
-| 监测仓库 / Monitored repos | 22336 |
-| 累计 Star / Total stars | 242,866 |
-| 最近更新 / Last updated | 2026-10-27 01:00:51.318 UTC |
+| 收录插件 / Plugins | **18859** |
+| 监测仓库 / Monitored repos | 22375 |
+| 累计 Star / Total stars | 244,997 |
+| 最近更新 / Last updated | 2026-10-27 06:53:42.772 UTC |
 
 ### 分类构成 / Categories
 
-Web UI 增强 2780 · Agent 能力 7661 · 编码开发 1423 · 消息通讯 734 · 视觉与多模态 1321 · 浏览器与网络 975 · 皮肤与娱乐 485 · 文件与数据 2340 · 开发工具与教程 436 · 合集与发行版 433 · 生态项目 178
+Web UI 增强 2800 · Agent 能力 7684 · 编码开发 1427 · 消息通讯 737 · 视觉与多模态 1328 · 浏览器与网络 979 · 皮肤与娱乐 492 · 文件与数据 2362 · 开发工具与教程 437 · 合集与发行版 435 · 生态项目 178
 
 ### Top 10 插件 / Top Plugins
 
 | # | 插件 / Plugin | Stars | 类型 / Type | 说明 / Description |
 | --- | --- | ---: | --- | --- |
-| 1 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 44,851 | Agent 能力 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flas… |
-| 2 | [YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) | 9,897 | Agent 能力 | DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Ja… |
-| 3 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,585 | 开发工具与教程 | DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSee… |
-| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 9,082 | Agent 能力 | The plugin market inside DeepSeek Harness — browse, search,… |
+| 1 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 45,414 | Agent 能力 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flas… |
+| 2 | [YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) | 10,243 | Agent 能力 | DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Ja… |
+| 3 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,614 | 开发工具与教程 | DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSee… |
+| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 9,147 | Agent 能力 | The plugin market inside DeepSeek Harness — browse, search,… |
 | 5 | [yjh051108/dsh-routing-suite](https://github.com/yjh051108/dsh-routing-suite) | 7,003 | Agent 能力 | dsh-routing-suite — injector + router-standard kit: install… |
-| 6 | [superdesigndev/treg](https://github.com/superdesigndev/treg) | 6,243 | 消息通讯 | OpenRouter for agent tools. Join community here: https://di… |
-| 7 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 6,172 | Web UI 增强 | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
-| 8 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 5,910 | 编码开发 | DSH's officially top-recommended TUI plugin — high performa… |
-| 9 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,581 | Web UI 增强 | 开放的侧边栏底座，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/侧边对话/Git/子代理页面 ｜ Open s… |
-| 10 | [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 4,497 | 编码开发 | Answer me with HTML — an agent skill that answers hard ques… |
+| 6 | [superdesigndev/treg](https://github.com/superdesigndev/treg) | 6,291 | 消息通讯 | OpenRouter for agent tools. Join community here: https://di… |
+| 7 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 6,216 | Web UI 增强 | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
+| 8 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 5,950 | 编码开发 | DSH's officially top-recommended TUI plugin — high performa… |
+| 9 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,598 | Web UI 增强 | 开放的侧边栏底座，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/侧边对话/Git/子代理页面 ｜ Open s… |
+| 10 | [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 4,516 | 编码开发 | Answer me with HTML — an agent skill that answers hard ques… |
 
 ## 快速使用 / Quick Start
 
