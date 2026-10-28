@@ -10,7 +10,10 @@ importers:
     dependencies:
       '@anionex/dsh-turn-rewind':
         specifier: github:Anionex/dsh-turn-rewind
-        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/5b33fd51925dbd615836d72323e89262796efae5
+        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/5b33fd51925dbd615836d72323e89262796efae5(@deepseek-ai/schemastery@3.18.5)
+      '@ayanehana/dsh-reasoning-effort':
+        specifier: github:HanaAyane/dsh-reasoning-effort
+        version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560
       '@changfenhuang/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
         version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1
@@ -34,7 +37,7 @@ importers:
         version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/eafa38207fa482e65f4a7e9ae0fc69242981be48
       dsh-liketavern:
         specifier: github:Amakurai/dsh-liketavern
-        version: https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/2f5329f78c89fe882675505bd8bc16778f3b8f58
+        version: https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/2f5329f78c89fe882675505bd8bc16778f3b8f58(@deepseek-ai/schemastery@3.18.5)
 
 packages:
 
@@ -50,6 +53,25 @@ packages:
       '@deepseek-ai/dsh-settings':
         optional: true
 
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560':
+    resolution: {gitHosted: true, integrity: sha512-ExvX+Mxltx9/UHcX0BkgLsOpZrWtE3g3ZTiD62fEY2JfTrn1FqcYlZgPVtxrG+eKP2hig6a6EYphcEIt+6DDlg==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560}
+    version: 0.9.0
+    engines: {dsh: '>=0.2.1-rc.2 <0.3.0', node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.5
+      '@deepseek-ai/dsh-api-remotes': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-api-session-controller': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-connection': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-locale': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-store': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-model-selection': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-renderer': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-session': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-settings': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-slots': ^0.2.1-rc.2
+      react: ^18.2.0
+
   '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1':
     resolution: {gitHosted: true, integrity: sha512-a8erKBsVNh4InBuTBNMFuHTeO8F4BUFGu/7oZuDyD/eYgdxBHQJecPQyPCpbfNDLG+IVVAHuMQiiGFFuIoORbw==, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1}
     version: 1.4.5
@@ -60,8 +82,14 @@ packages:
   '@deepseek-ai/cosmokit@1.8.3':
     resolution: {integrity: sha512-qBo+ronVM6Eu2WNVJXi8JcMiqZ19T9BRIpV+5qJUFPXjGH/Z0QKcQMC/IZJ7L394YTOtJgcovbk9qP0w2GsBXQ==}
 
+  '@deepseek-ai/cosmokit@1.8.6':
+    resolution: {integrity: sha512-ZSD/fN52L498LBIOYwjIOlaLv5veY6ZEwI2yzvZUKQtctn0QAPqu8tKdJ+OF5+Tv6NBq1U+wJWH+QI6OGy5EvQ==}
+
   '@deepseek-ai/schemastery@3.18.2':
     resolution: {integrity: sha512-njDtZsznjYxok7KLLlHOPyuv2efdWVbSflAHgztSfbMsg+CVraEoRe2DjOCgClYv3ZCSm7WXoaUkbB/+RY7tWQ==}
+
+  '@deepseek-ai/schemastery@3.18.5':
+    resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
   '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732':
     resolution: {gitHosted: true, integrity: sha512-zipAcJI7kY6FuOA8hd12MRNW8Ul76p7cuHYvevxX/ThboMurlsSjcsrS/yq+o+qzvNIJM6/nu3bgiiBqYTdL6A==, tarball: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732}
@@ -227,17 +255,29 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/5b33fd51925dbd615836d72323e89262796efae5':
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/5b33fd51925dbd615836d72323e89262796efae5(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
       ignore: 7.0.14
+
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
 
   '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/3bb73fea587d40a93864112992dd3797d20c44f1': {}
 
   '@deepseek-ai/cosmokit@1.8.3': {}
 
+  '@deepseek-ai/cosmokit@1.8.6': {}
+
   '@deepseek-ai/schemastery@3.18.2':
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.3
+      '@standard-schema/spec': 1.1.0
+
+  '@deepseek-ai/schemastery@3.18.5':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
   '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732': {}
@@ -278,8 +318,9 @@ snapshots:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
 
-  dsh-liketavern@https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/2f5329f78c89fe882675505bd8bc16778f3b8f58:
+  dsh-liketavern@https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/2f5329f78c89fe882675505bd8bc16778f3b8f58(@deepseek-ai/schemastery@3.18.5):
     dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
       '@faker-js/faker': 10.6.0
       ejs: 6.0.1
       jquery: 3.7.1

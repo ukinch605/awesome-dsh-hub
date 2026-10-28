@@ -32,6 +32,9 @@ importers:
       dsh-git-memory:
         specifier: github:seriousz158/dsh-memory
         version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.5)
+      dsh-meme:
+        specifier: github:yyh-001/dsh-meme
+        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/49e2a7e5a56f271b91e8f5ee71ccce9d0c9d1a2c
       dsh-message-edit:
         specifier: github:Moeblack/dsh-message-edit
         version: https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/b78a167064ca612f1c400060d2bfc1dc9bc46436
@@ -529,6 +532,13 @@ packages:
       '@deepseek-ai/dsh-typert-protocol': ^0.1.0-rc.6 || 0.1.5-rc.1 || 0.1.7-rc.1 || >=0.2.0-rc.2 <0.3.0
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
+
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/49e2a7e5a56f271b91e8f5ee71ccce9d0c9d1a2c:
+    resolution: {gitHosted: true, integrity: sha512-f3IBSEOUONNFuKMGrQKKzMUFalpYaLGHvPNrgRCxapP+WnUcyPHPcsgG0Kl/Me/AdptPXrFF5ytoxflAV5vn0A==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/49e2a7e5a56f271b91e8f5ee71ccce9d0c9d1a2c}
+    version: 0.1.65
+    engines: {node: '>=22.13.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh-tools': '*'
 
   dsh-message-edit@https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/b78a167064ca612f1c400060d2bfc1dc9bc46436:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/b78a167064ca612f1c400060d2bfc1dc9bc46436}
@@ -1451,6 +1461,8 @@ snapshots:
   dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.5):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
+
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/49e2a7e5a56f271b91e8f5ee71ccce9d0c9d1a2c: {}
 
   dsh-message-edit@https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/b78a167064ca612f1c400060d2bfc1dc9bc46436: {}
 

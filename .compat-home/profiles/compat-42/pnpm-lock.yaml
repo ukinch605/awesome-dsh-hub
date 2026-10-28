@@ -25,10 +25,13 @@ importers:
         version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8(@deepseek-ai/schemastery@3.18.5)
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c8b9158b37817b0dbc1e514e62e16204ad47a6ce(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/ee980be2b45dc868bb7ea58babc45775e4c2a871(@deepseek-ai/schemastery@3.18.5)
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
         version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/1e7f3c7e48b137a8fb870e7db9c6d63d6c5969ce
+      clearai-dsh:
+        specifier: github:Clearailhc/clearai-dsh
+        version: https://codeload.github.com/Clearailhc/clearai-dsh/tar.gz/47f8cda175ed3bf73162fa3dc47a4c0d3874a542
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
         version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/e10e7c37601c07d570070cda7ea72da48cad8bd6
@@ -199,9 +202,9 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c8b9158b37817b0dbc1e514e62e16204ad47a6ce':
-    resolution: {gitHosted: true, integrity: sha512-fa3WwCk4sPBuA0i50rgjKbdGGvpAUm0nR8eES6sfQdyXdVrJWIKH4UuMNGUuBdxSnJhmxNT+KGi5SfolqZMYzw==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c8b9158b37817b0dbc1e514e62e16204ad47a6ce}
-    version: 0.5.2
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/ee980be2b45dc868bb7ea58babc45775e4c2a871':
+    resolution: {gitHosted: true, integrity: sha512-FNxa1RND5teB2N7H03PN2BeXBtjG5lRBiXv2yws92p+twJGA0Pvutb/W+hJr13eUHMH90ZzNXkSviZBrZjhGxg==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/ee980be2b45dc868bb7ea58babc45775e4c2a871}
+    version: 0.5.4
     engines: {node: '>=20.3.0'}
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1'
@@ -292,6 +295,12 @@ packages:
   camelcase@5.3.1:
     resolution: {integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==}
     engines: {node: '>=6'}
+
+  clearai-dsh@https://codeload.github.com/Clearailhc/clearai-dsh/tar.gz/47f8cda175ed3bf73162fa3dc47a4c0d3874a542:
+    resolution: {gitHosted: true, integrity: sha512-AZtDIyUOoairENxWAH71s85AtYZlVrK4u+94iN3i3CyABCb/v4mLmexLGSUJEayVRqAkkgy7JQ2AgmzWP4+ebA==, tarball: https://codeload.github.com/Clearailhc/clearai-dsh/tar.gz/47f8cda175ed3bf73162fa3dc47a4c0d3874a542}
+    version: 0.5.7
+    engines: {dsh: '>=0.2.0-rc.2', node: '>=22'}
+    hasBin: true
 
   cliui@6.0.0:
     resolution: {integrity: sha512-t6wbgtoCXvAzst7QgXxJYqPt0usEfbgQdftEPbLL/cvv6HPE5VgvqCuAIDR0NgU52ds6rFwqrgakNLrHEjCbrQ==}
@@ -599,6 +608,11 @@ packages:
   y18n@4.0.3:
     resolution: {integrity: sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ==}
 
+  yaml@2.8.1:
+    resolution: {integrity: sha512-lcYcMxX2PO9XMGvAJkJ3OsNMw+/7FKes7/hgerGUYWIoWu5j/+YQqcZr5JnPZWzOsEBgMbSbiSTn/dv/69Mkpw==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
   yaml@2.9.1:
     resolution: {integrity: sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==}
     engines: {node: '>= 14.6'}
@@ -614,6 +628,9 @@ packages:
 
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
   zrender@6.1.0:
     resolution: {integrity: sha512-oEGMDB6pOP2S6OwRR4PdVv610zrjnA3Bh+JnSG12fYJlBKjtNAoEb5fSUoCOOINlH96I2fU38/A2UpRKs67xYQ==}
@@ -683,13 +700,14 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c8b9158b37817b0dbc1e514e62e16204ad47a6ce(@deepseek-ai/schemastery@3.18.5)':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/ee980be2b45dc868bb7ea58babc45775e4c2a871(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       '@tencent-connect/qqbot-connector': 1.2.0
       '@tencent-connect/qqbot-nodejs': 1.0.5
       js-yaml: 4.3.1
       qrcode: 1.5.4
+      yaml: 2.8.1
     transitivePeerDependencies:
       - bufferutil
       - mpg123-decoder
@@ -725,6 +743,10 @@ snapshots:
   argparse@2.0.1: {}
 
   camelcase@5.3.1: {}
+
+  clearai-dsh@https://codeload.github.com/Clearailhc/clearai-dsh/tar.gz/47f8cda175ed3bf73162fa3dc47a4c0d3874a542:
+    dependencies:
+      zod: 4.6.7
 
   cliui@6.0.0:
     dependencies:
@@ -947,6 +969,8 @@ snapshots:
 
   y18n@4.0.3: {}
 
+  yaml@2.8.1: {}
+
   yaml@2.9.1: {}
 
   yargs-parser@18.1.3:
@@ -969,6 +993,8 @@ snapshots:
       yargs-parser: 18.1.3
 
   zod@4.4.3: {}
+
+  zod@4.6.7: {}
 
   zrender@6.1.0:
     dependencies:

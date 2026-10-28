@@ -43,10 +43,13 @@ importers:
         version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/87342ef8f34d1c5f2306fc8cfe005f969b61899e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dsh-xdpool:
         specifier: github:XDTrees/dsh-xdpool
-        version: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/6e4854f5372fd39d5c12553b79b1064b8821c182(@deepseek-ai/schemastery@3.18.5)(@types/node@22.20.5)
+        version: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/9c90a370c3233a54338abc670075c7fedc036fc9(@deepseek-ai/schemastery@3.18.5)(@types/node@22.20.5)
       eac-design-world:
         specifier: github:Ebony-Vinyl/EAC-design-world
         version: https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/8b3a2167bbd9ffe29974b0b183ce014f48e8332d
+      perfect-web-clone:
+        specifier: github:ericshang98/Perfect-Web-Clone
+        version: https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5
       superpowers-dsh:
         specifier: github:LayneChai/superpowers-dsh
         version: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663
@@ -666,8 +669,8 @@ packages:
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
 
-  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/6e4854f5372fd39d5c12553b79b1064b8821c182:
-    resolution: {gitHosted: true, integrity: sha512-VyCTcPdaj4bjnEaKThFiCZsGEJX9MgSqIX6i7PS1NB6k0LK0dyAJCpjeG1Iay2y0sd8lgUBfVO6msmF+xwg38w==, tarball: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/6e4854f5372fd39d5c12553b79b1064b8821c182}
+  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/9c90a370c3233a54338abc670075c7fedc036fc9:
+    resolution: {gitHosted: true, integrity: sha512-Zvh2t98V2D5zRFbo3DdSuZLDkXiuownDQnXzZxrStnl+21741dcMXTRBlOPkaA3iDzM8bSglQguCcWl+/bfzrg==, tarball: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/9c90a370c3233a54338abc670075c7fedc036fc9}
     version: 2.4.6
     engines: {dsh: '>=0.1.5-rc.1 <0.3.0', node: ^22.19.0 || >=24.0.0}
     hasBin: true
@@ -996,6 +999,13 @@ packages:
 
   path-to-regexp@8.4.2:
     resolution: {integrity: sha512-qRcuIdP69NPm4qbACK+aDogI5CBDMi1jKe0ry5rSQJz8JVLsC7jV8XpiJjGRLLol3N+R5ihGYcrPLTno6pAdBA==}
+
+  perfect-web-clone@https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5:
+    resolution: {gitHosted: true, integrity: sha512-PogS83E4MJqMynMODNxxxFgFNKplIXlauB3qsQA2MpDo1/EvziGFgUN0wK4D7B/J2QlxMcYixm+u5dbuuLlEcw==, tarball: https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5}
+    version: 3.0.0
+    peerDependencies:
+      '@deepseek-ai/cordis': '*'
+      '@deepseek-ai/dsh-tools': '*'
 
   pixelmatch@5.3.0:
     resolution: {integrity: sha512-o8mkY4E/+LNUf6LzX96ht6k6CEDi65k9G2rjMtBe9Oo+VPKSvl+0GKHuH/AlG+GA5LPG/i5hrekkxUc3s2HU+Q==}
@@ -1915,7 +1925,7 @@ snapshots:
       - react
       - react-dom
 
-  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/6e4854f5372fd39d5c12553b79b1064b8821c182(@deepseek-ai/schemastery@3.18.5)(@types/node@22.20.5):
+  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/9c90a370c3233a54338abc670075c7fedc036fc9(@deepseek-ai/schemastery@3.18.5)(@types/node@22.20.5):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
       billion-context: 0.1.204(@types/node@22.20.5)
@@ -2280,6 +2290,8 @@ snapshots:
   path-key@3.1.1: {}
 
   path-to-regexp@8.4.2: {}
+
+  perfect-web-clone@https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5: {}
 
   pixelmatch@5.3.0:
     dependencies:

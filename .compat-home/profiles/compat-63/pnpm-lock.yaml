@@ -17,6 +17,9 @@ importers:
       '@loserfox/distill':
         specifier: github:LoserFox/distill
         version: https://codeload.github.com/LoserFox/distill/tar.gz/78a508c8839a0cd4205c95416905d7d5e2e2775e(@deepseek-ai/schemastery@3.18.5)
+      '@michengai/dsh-skills-manager':
+        specifier: github:MichengAI/dsh-skills-manager
+        version: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/b69e64296eada8945c5f0fce72ff7642b823b92a
       '@nanmicoder/dsh-auto-mode':
         specifier: github:NanmiCoder/dsh-auto-mode
         version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/c0662594ef121f4cc86dfbd02334df35e999b98f
@@ -235,6 +238,23 @@ packages:
       '@deepseek-ai/dsh-timeout': ^0.0.1-rc.1
       '@deepseek-ai/dsh-tools': ^0.0.1-rc.1
       '@deepseek-ai/schemastery': ^3.18.1
+
+  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/b69e64296eada8945c5f0fce72ff7642b823b92a':
+    resolution: {gitHosted: true, integrity: sha512-CRJ3KV13A+AeKsVO0KRIxUFDS+8/pj3cH4rTHxKQSCJhFqxeaImQYttPdqkaf19ke83MboRXAxeCWFZK8zJHLw==, tarball: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/b69e64296eada8945c5f0fce72ff7642b823b92a}
+    version: 1.2.20
+    engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.1 <5.0.0'
+      '@deepseek-ai/dsh-client-locale': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-host-webserver': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-session': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-skill': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-tools': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-web-app': '>=0.2.0-rc.1 <0.3.0-0'
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   '@mistralai/mistralai@2.2.6':
     resolution: {integrity: sha512-W8pX7zHxjJvMIpw8JMxeJEleapXX0Q9NPszdNzqkM3MIEoIGPObdodujj+WHteXEvGfaP/AMwlNyRfEzSY6dQQ==}
@@ -534,6 +554,9 @@ packages:
   fetch-blob@3.2.0:
     resolution: {integrity: sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==}
     engines: {node: ^12.20 || >= 14.13}
+
+  fflate@0.8.3:
+    resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
 
   formdata-polyfill@4.0.10:
     resolution: {integrity: sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g==}
@@ -1295,6 +1318,10 @@ snapshots:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
+  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/b69e64296eada8945c5f0fce72ff7642b823b92a':
+    dependencies:
+      fflate: 0.8.3
+
   '@mistralai/mistralai@2.2.6(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/semantic-conventions': 1.43.0
@@ -1538,6 +1565,8 @@ snapshots:
     dependencies:
       node-domexception: 1.0.0
       web-streams-polyfill: 3.3.3
+
+  fflate@0.8.3: {}
 
   formdata-polyfill@4.0.10:
     dependencies:

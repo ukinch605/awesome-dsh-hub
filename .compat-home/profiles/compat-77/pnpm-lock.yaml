@@ -17,6 +17,9 @@ importers:
       '@icelily/dsh-gitbash-preset':
         specifier: github:liceses/dsh-gitbash-preset
         version: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8
+      '@shengsheng/dsh-taskboard':
+        specifier: github:shengsheng90/DSH-taskboard
+        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8(@deepseek-ai/schemastery@3.18.1)(react@18.3.1)
       '@zseven-w/dsh-android':
         specifier: github:ZSeven-W/dsh-android
         version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/3363a85b1bbeefe994d42d52bd8e792c1527e9ec
@@ -25,13 +28,13 @@ importers:
         version: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/30059bf678bb1ae2db75ee1f758c37b76f79447f(@deepseek-ai/schemastery@3.18.1)(react@18.3.1)
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/dae686faadb44bbd1e5a71f9fd618c2d2e926cee(@deepseek-ai/schemastery@3.18.1)(react@18.3.1)
       dsh-file-explorer:
         specifier: github:joejojoking-cloud/dsh-file-explorer
         version: https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/4b3a609649af9d81b75e91dc194a74bf6b026811(react@18.3.1)
       dsh-xdpool:
         specifier: github:XDTrees/dsh-xdpool
-        version: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/6e4854f5372fd39d5c12553b79b1064b8821c182(@deepseek-ai/schemastery@3.18.1)(@types/node@16.9.1)
+        version: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/9c90a370c3233a54338abc670075c7fedc036fc9(@deepseek-ai/schemastery@3.18.1)(@types/node@16.9.1)
 
 packages:
 
@@ -202,6 +205,80 @@ packages:
   '@jitl/quickjs-wasmfile-release-sync@0.32.0':
     resolution: {integrity: sha512-BKNDI/TPBfGlLNGYpLrhcDGXmIk4xHm4MRAisOBnOzpXVn9HZWsfmMAc9WMBrAHjvvds6HOikKeaOBKdPdpVrg==}
 
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8':
+    resolution: {gitHosted: true, integrity: sha512-pm8bK1yCa1ouPYuChjOeh2Jk6cznt8atjjqComeEKsxEIFNDqIO4zu2Irz8m0D2NQvYPr3QdoqQkitfTPd8FwA==, tarball: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8}
+    version: 0.1.10
+    engines: {node: ^22.19.0 || >=24.0.0}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/dsh-agent': '*'
+      '@deepseek-ai/dsh-agent-presets': '*'
+      '@deepseek-ai/dsh-api-remotes': '*'
+      '@deepseek-ai/dsh-api-session-controller': '*'
+      '@deepseek-ai/dsh-api-workspace-controller': '*'
+      '@deepseek-ai/dsh-client-connection': '*'
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-ui-conversation': '*'
+      '@deepseek-ai/dsh-client-ui-layout': '*'
+      '@deepseek-ai/dsh-client-ui-sidebar': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-client-ui-workspace': '*'
+      '@deepseek-ai/dsh-goal': '*'
+      '@deepseek-ai/dsh-host-webserver': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-session': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      '@deepseek-ai/dsh-workspace': '*'
+      '@deepseek-ai/schemastery': ^3.18.2
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-agent-presets':
+        optional: true
+      '@deepseek-ai/dsh-api-remotes':
+        optional: true
+      '@deepseek-ai/dsh-api-session-controller':
+        optional: true
+      '@deepseek-ai/dsh-api-workspace-controller':
+        optional: true
+      '@deepseek-ai/dsh-client-connection':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-layout':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-sidebar':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-workspace':
+        optional: true
+      '@deepseek-ai/dsh-goal':
+        optional: true
+      '@deepseek-ai/dsh-host-webserver':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-session':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      '@deepseek-ai/dsh-workspace':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+      react:
+        optional: true
+
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
@@ -254,9 +331,9 @@ packages:
       supports-color:
         optional: true
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/30059bf678bb1ae2db75ee1f758c37b76f79447f:
-    resolution: {gitHosted: true, integrity: sha512-zTpL6ilxZWQcbnHk9vnZ81hy8Wez9J004JWO2rQqxNAcP5fCkVZjCGR+EVnhonD6ZXmG+ukhx/RmQwVMGwCiZQ==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/30059bf678bb1ae2db75ee1f758c37b76f79447f}
-    version: 0.26.2
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/dae686faadb44bbd1e5a71f9fd618c2d2e926cee:
+    resolution: {gitHosted: true, integrity: sha512-bxZ6vBNWel7+rifFxdH+J9eSCnCiM/l3xRdkP9+kpx7pXPrmXMQAkjSNS3aWkY2Sn6I+RgRUv5ARrAJ8LOlaAA==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/dae686faadb44bbd1e5a71f9fd618c2d2e926cee}
+    version: 0.26.3
     engines: {node: '>=22.13'}
     hasBin: true
     peerDependencies:
@@ -278,8 +355,8 @@ packages:
       '@deepseek-ai/dsh-client-ui-slots': ^0.0.1-rc.1
       react: ^18.2.0
 
-  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/6e4854f5372fd39d5c12553b79b1064b8821c182:
-    resolution: {gitHosted: true, integrity: sha512-VyCTcPdaj4bjnEaKThFiCZsGEJX9MgSqIX6i7PS1NB6k0LK0dyAJCpjeG1Iay2y0sd8lgUBfVO6msmF+xwg38w==, tarball: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/6e4854f5372fd39d5c12553b79b1064b8821c182}
+  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/9c90a370c3233a54338abc670075c7fedc036fc9:
+    resolution: {gitHosted: true, integrity: sha512-Zvh2t98V2D5zRFbo3DdSuZLDkXiuownDQnXzZxrStnl+21741dcMXTRBlOPkaA3iDzM8bSglQguCcWl+/bfzrg==, tarball: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/9c90a370c3233a54338abc670075c7fedc036fc9}
     version: 2.4.6
     engines: {dsh: '>=0.1.5-rc.1 <0.3.0', node: ^22.19.0 || >=24.0.0}
     hasBin: true
@@ -462,6 +539,9 @@ packages:
 
   zod@4.1.8:
     resolution: {integrity: sha512-5R1P+WwQqmmMIEACyzSvo4JXHY5WiAFHRMg+zBZKgKS+Q1viRa0C1hmUKtHltoIFKtIdki3pRxkmpP74jnNYHQ==}
+
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
 snapshots:
 
@@ -753,6 +833,13 @@ snapshots:
     dependencies:
       '@jitl/quickjs-ffi-types': 0.32.0
 
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8(@deepseek-ai/schemastery@3.18.1)(react@18.3.1)':
+    dependencies:
+      zod: 4.6.7
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.1
+      react: 18.3.1
+
   '@standard-schema/spec@1.1.0': {}
 
   '@tokenizer/inflate@0.4.1':
@@ -801,7 +888,7 @@ snapshots:
       ms: 2.1.3
     optional: true
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/30059bf678bb1ae2db75ee1f758c37b76f79447f(@deepseek-ai/schemastery@3.18.1)(react@18.3.1):
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/dae686faadb44bbd1e5a71f9fd618c2d2e926cee(@deepseek-ai/schemastery@3.18.1)(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
       fzstd: 0.1.1
@@ -811,7 +898,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/6e4854f5372fd39d5c12553b79b1064b8821c182(@deepseek-ai/schemastery@3.18.1)(@types/node@16.9.1):
+  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/9c90a370c3233a54338abc670075c7fedc036fc9(@deepseek-ai/schemastery@3.18.1)(@types/node@16.9.1):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.1
       billion-context: 0.1.208(@types/node@16.9.1)
@@ -1029,3 +1116,5 @@ snapshots:
 
   zod@4.1.8:
     optional: true
+
+  zod@4.6.7: {}

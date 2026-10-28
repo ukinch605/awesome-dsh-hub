@@ -35,6 +35,9 @@ importers:
       dsh-model-router:
         specifier: github:tianji-qingtian/dsh-model-router
         version: https://codeload.github.com/tianji-qingtian/dsh-model-router/tar.gz/c9c4885666b4015622a7b7ff5a671057144d0fe8
+      dsh-plugin:
+        specifier: github:dshplugin/dsh-plugin-hub
+        version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/d8c591e8456f569239fb918195b5f6a34133f8af
       dsh-plugin-bridge:
         specifier: github:Totoro-qaq/dsh-plugin-bridge
         version: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/d2b9be2ecd92c5e462f0b7a6fd68836c22673dcd
@@ -633,6 +636,16 @@ packages:
       '@deepseek-ai/dsh-client-ui-slots':
         optional: true
       react:
+        optional: true
+
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/d8c591e8456f569239fb918195b5f6a34133f8af:
+    resolution: {gitHosted: true, integrity: sha512-gdbjKr65fXR/POO9HTvuEaSj7bukNNwCMsK9nbIwd1slkqnVlQP4gUgoAml71cuUJrnf/bdVIPJR2UMQcsmUIw==, tarball: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/d8c591e8456f569239fb918195b5f6a34133f8af}
+    version: 2.2.4
+    engines: {node: '>=22.6'}
+    peerDependencies:
+      '@deepseek-ai/cordis': 4.0.1
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
         optional: true
 
   dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162:
@@ -1683,6 +1696,8 @@ snapshots:
   dsh-plugin-bridge@https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/d2b9be2ecd92c5e462f0b7a6fd68836c22673dcd:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
+
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/d8c591e8456f569239fb918195b5f6a34133f8af: {}
 
   dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162: {}
 

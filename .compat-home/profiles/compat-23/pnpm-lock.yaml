@@ -10,10 +10,13 @@ importers:
     dependencies:
       '@dsh-external/dsh-blender-plugin':
         specifier: github:sixtysevenlf/dsh-blender-plugin
-        version: https://codeload.github.com/sixtysevenlf/dsh-blender-plugin/tar.gz/9656214be04dc284e6646f1fc6c272548453da4e(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-tools@0.1.0-rc.6(@deepseek-ai/cordis@4.0.1))(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/sixtysevenlf/dsh-blender-plugin/tar.gz/f9f115f86b3c40fbe8d3dba811283acf71df03f9(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-tools@0.1.0-rc.6(@deepseek-ai/cordis@4.0.1))(@deepseek-ai/schemastery@3.18.1)
       '@omdsh-dev/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
         version: '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/bc4d7926d0e22e0db6c1f6a94539bcf93fe07ac9'
+      aegis:
+        specifier: github:GanyuanRan/Aegis
+        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/0461c211e4d812f0b215fab240a68a25c1e22424
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524(@deepseek-ai/cordis@4.0.1)
@@ -64,8 +67,8 @@ packages:
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
 
-  '@dsh-external/dsh-blender-plugin@https://codeload.github.com/sixtysevenlf/dsh-blender-plugin/tar.gz/9656214be04dc284e6646f1fc6c272548453da4e':
-    resolution: {gitHosted: true, integrity: sha512-lXjFT5u3GM0x+9jdFVu6sDSHpIk9f5wxTbxt348UAdQZDC9my1CnP+IEs/5MdqCM5cDSRUhlE9Xc5vn4SZFv+A==, tarball: https://codeload.github.com/sixtysevenlf/dsh-blender-plugin/tar.gz/9656214be04dc284e6646f1fc6c272548453da4e}
+  '@dsh-external/dsh-blender-plugin@https://codeload.github.com/sixtysevenlf/dsh-blender-plugin/tar.gz/f9f115f86b3c40fbe8d3dba811283acf71df03f9':
+    resolution: {gitHosted: true, integrity: sha512-FX+fK3v/Hs/pGfB6hk/18GxWLYMbB1S71EXEvK/6IgIhDDBAyjdvwTRKWTyg1nXyVX/qlkOeh0VjkUuL5kMUqg==, tarball: https://codeload.github.com/sixtysevenlf/dsh-blender-plugin/tar.gz/f9f115f86b3c40fbe8d3dba811283acf71df03f9}
     version: 2.6.1
     engines: {node: '>=20'}
     peerDependencies:
@@ -87,6 +90,21 @@ packages:
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/0461c211e4d812f0b215fab240a68a25c1e22424:
+    resolution: {gitHosted: true, integrity: sha512-WxNUnQxhbEzPjor95LVg9baMzP8ua9XfKqL/ApAQtERsXGCINOtQw6rVcLfh0IP5XLhAhcW34E2YkppY8li5Ng==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/0461c211e4d812f0b215fab240a68a25c1e22424}
+    version: 2.14.2
+    peerDependencies:
+      '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-skill-filesystem': '>=0.1.0-rc.6'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-skill-filesystem':
+        optional: true
 
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
     resolution: {gitHosted: true, integrity: sha512-aXpz1DsFOgd4cUEIeWyTubH9wORj8b/ruLaefeynSwO+M5sp4JOg/RrFj2qya9nKex3jFMdTWVGueZyhpfKDXA==, tarball: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524}
@@ -179,7 +197,7 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
 
-  '@dsh-external/dsh-blender-plugin@https://codeload.github.com/sixtysevenlf/dsh-blender-plugin/tar.gz/9656214be04dc284e6646f1fc6c272548453da4e(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-tools@0.1.0-rc.6(@deepseek-ai/cordis@4.0.1))(@deepseek-ai/schemastery@3.18.1)':
+  '@dsh-external/dsh-blender-plugin@https://codeload.github.com/sixtysevenlf/dsh-blender-plugin/tar.gz/f9f115f86b3c40fbe8d3dba811283acf71df03f9(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-tools@0.1.0-rc.6(@deepseek-ai/cordis@4.0.1))(@deepseek-ai/schemastery@3.18.1)':
     dependencies:
       '@deepseek-ai/dsh-tools': 0.1.0-rc.6(@deepseek-ai/cordis@4.0.1)
     optionalDependencies:
@@ -187,6 +205,8 @@ snapshots:
       '@deepseek-ai/schemastery': 3.18.1
 
   '@standard-schema/spec@1.1.0': {}
+
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/0461c211e4d812f0b215fab240a68a25c1e22424: {}
 
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524(@deepseek-ai/cordis@4.0.1):
     dependencies:
