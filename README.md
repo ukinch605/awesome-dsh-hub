@@ -2,7 +2,7 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/ukinch605/awesome-dsh-hub)
 ![License](https://img.shields.io/github/license/ukinch605/awesome-dsh-hub)
-![Plugins](https://img.shields.io/badge/plugins-19590-4dabf7)
+![Plugins](https://img.shields.io/badge/plugins-19730-4dabf7)
 ![Last updated](https://img.shields.io/badge/last%20updated-2026--10--29-orange)
 
 > 自动维护的 DeepSeek Harness（`dsh`）插件精品目录：机器可读 Registry、中英双语目录与可检索站点。Everything is a Plugin. 🐋
@@ -14,29 +14,29 @@
 
 | 指标 / Metric | 数值 / Value |
 | --- | ---: |
-| 收录插件 / Plugins | **19590** |
-| 监测仓库 / Monitored repos | 23310 |
-| 累计 Star / Total stars | 260,535 |
-| 最近更新 / Last updated | 2026-10-29 09:18:34.284 UTC |
+| 收录插件 / Plugins | **19730** |
+| 监测仓库 / Monitored repos | 23462 |
+| 累计 Star / Total stars | 263,738 |
+| 最近更新 / Last updated | 2026-10-29 16:28:23.033 UTC |
 
 ### 分类构成 / Categories
 
-Web UI 增强 2945 · Agent 能力 7913 · 编码开发 1480 · 消息通讯 786 · 视觉与多模态 1373 · 浏览器与网络 1009 · 皮肤与娱乐 518 · 文件与数据 2469 · 开发工具与教程 449 · 合集与发行版 463 · 生态项目 185
+Web UI 增强 2967 · Agent 能力 7956 · 编码开发 1483 · 消息通讯 797 · 视觉与多模态 1387 · 浏览器与网络 1016 · 皮肤与娱乐 530 · 文件与数据 2487 · 开发工具与教程 450 · 合集与发行版 470 · 生态项目 187
 
 ### Top 10 插件 / Top Plugins
 
 | # | 插件 / Plugin | Stars | 类型 / Type | 说明 / Description |
 | --- | --- | ---: | --- | --- |
-| 1 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 49,907 | Agent 能力 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flas… |
-| 2 | [YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) | 12,601 | Agent 能力 | DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Ja… |
-| 3 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,759 | 开发工具与教程 | DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSee… |
-| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 9,620 | Agent 能力 | The plugin market inside DeepSeek Harness — browse, search,… |
+| 1 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 50,652 | Agent 能力 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flas… |
+| 2 | [YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) | 12,946 | Agent 能力 | DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Ja… |
+| 3 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,779 | 开发工具与教程 | DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSee… |
+| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 9,688 | Agent 能力 | The plugin market inside DeepSeek Harness — browse, search,… |
 | 5 | [yjh051108/dsh-routing-suite](https://github.com/yjh051108/dsh-routing-suite) | 7,001 | Agent 能力 | dsh-routing-suite — injector + router-standard kit: install… |
-| 6 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 6,473 | Web UI 增强 | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
-| 7 | [superdesigndev/treg](https://github.com/superdesigndev/treg) | 6,461 | 消息通讯 | OpenRouter for agent tools. Join community here: https://di… |
-| 8 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 6,149 | 编码开发 | DSH's officially top-recommended TUI plugin — high performa… |
-| 9 | [T-Auto/dsh-ops](https://github.com/T-Auto/dsh-ops) | 4,729 | Agent 能力 | A toolkit for low-level operations in DSH, designed to redu… |
-| 10 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,714 | Web UI 增强 | 开放的侧边栏底座，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/侧边对话/Git/子代理页面 ｜ Open s… |
+| 6 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 6,516 | Web UI 增强 | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
+| 7 | [superdesigndev/treg](https://github.com/superdesigndev/treg) | 6,471 | 消息通讯 | OpenRouter for agent tools. Join community here: https://di… |
+| 8 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 6,180 | 编码开发 | DSH's officially top-recommended TUI plugin — high performa… |
+| 9 | [T-Auto/dsh-ops](https://github.com/T-Auto/dsh-ops) | 4,772 | Agent 能力 | A toolkit for low-level operations in DSH, designed to redu… |
+| 10 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,729 | Web UI 增强 | 开放的侧边栏底座，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/侧边对话/Git/子代理页面 ｜ Open s… |
 
 ## 快速使用 / Quick Start
 
