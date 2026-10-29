@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@anionex/dsh-computer-use':
         specifier: github:Anionex/dsh-computer-use
-        version: https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/387eae931b1852e3c3433e0e004fa460d3da2883
+        version: https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/c6448e83ab0fb5892b3f327c67e72a769c745549
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
-        version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/906ff9c2fcdad0d83fa621727a1f20be02031ad8
+        version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/6be9b76c7ddeedcb4e40dd0444846b71775819b0
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
@@ -31,95 +31,86 @@ importers:
         version: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162
       dsh-tokenledger:
         specifier: github:zh667/TokenLedger
-        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1
+        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b
+      misakanet:
+        specifier: github:Ikalus1988/MisakaNet
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4dc4c05e5dcf1a719d153be01706121035d0027f
 
 packages:
 
-  '@anionex/dsh-computer-use@https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/387eae931b1852e3c3433e0e004fa460d3da2883':
-    resolution: {gitHosted: true, integrity: sha512-9O8VIxe0cL2eFuLA95ZJSE/pMwi3Di5CrEGAFNPKeP7CIlEnGAyhSH9dEDT/qeUdgdtzPhlq0yxmfCm6zDifWw==, tarball: https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/387eae931b1852e3c3433e0e004fa460d3da2883}
-    version: 0.1.0
+  '@anionex/dsh-computer-use@https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/c6448e83ab0fb5892b3f327c67e72a769c745549':
+    resolution: {gitHosted: true, integrity: sha512-8fM4ukBfwxsq+ktL8NSmQqxdHF4TrLmXe3pUFjescw2/4BWHpmoKXCVYyzwsXBLsfhSmfveelq6w3bkIVCOsGQ==, tarball: https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/c6448e83ab0fb5892b3f327c67e72a769c745549}
+    version: 0.3.7
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-agent': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-brand': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-skill': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-storage-domain': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-subprocess': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-user-approval': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-agent': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-brand': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-skill': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-storage-domain': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-subprocess': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-user-approval': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-util-values': ^0.1.0-rc.6 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
     peerDependenciesMeta:
       '@deepseek-ai/dsh-host-webserver':
         optional: true
 
-  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.7':
-    resolution: {integrity: sha512-hg3neVuRWPCCexZOcogsO9BCEr5eP/1c7IIL5rRDhYbJAxAaB4E2lbFHMfr9pmDp1wKN+4T+q2B08KPIE2ypYA==}
+  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.14':
+    resolution: {integrity: sha512-3YoPDmtqv8R0oL7KtgRTRiD5pY9fG5ftgXIAvuXapQN0NGByR13DpYUTJFe8jvwcszIg1lxIhVm8WVHjBRtmsw==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [darwin]
 
-  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.7':
-    resolution: {integrity: sha512-q+gtVgoTUVmVWpxePmIC/Ehhm10q5NpFw/9z77MmvGZcnQdTO9dEhao+8oMI6yaA3/Uahy8SM2FQG2Zyfk1iaA==}
+  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.14':
+    resolution: {integrity: sha512-YQmYWB8U8hC/YOHd4tFWmK1q7rJbe+Z1bdaWE7eZgJNq52jayluF07rrcTCv7qCut2ofeG6ADuwYAK9Cyr8UOw==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [darwin]
 
-  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.7':
-    resolution: {integrity: sha512-mAfHPrTM8LcGTYL7F1BiMforbSc5C+W1U/6SMrAqakZJh12VvrbBPa/2WBiHtoHV5yjI0ZPQLDJ9dd/G87LNNQ==}
+  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.14':
+    resolution: {integrity: sha512-SgtkbVGzl/zjqis8sqVSrw2BBKfWRArqR76Eyh/YKG7dUNvYh7GSMxgwjZgKe0FaPqEFEGWB2q4btwMcY3mYZA==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.7':
-    resolution: {integrity: sha512-ovoDqn+++QqYvlmI1oXldaYG2oUEN4s2eiiVWOD48zvEtJzx3PjUwk8CRvFoVCxxE4rV+3g7Uxpnc9U3BgESGw==}
+  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.14':
+    resolution: {integrity: sha512-d759HCwkCzPJtLhIrbhdHBpWsIkhbHnBGDymIOKiNURH87lUm4KfgvPFn8cWmkZLaKVnyuJMhIMNdLT0ruA1Cw==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.7':
-    resolution: {integrity: sha512-dDWJuTZCWaBt+U5ySoIZsBAXM3QJ5AuCNOVXDAieY2d1U2XDOfFJ5HbfH+xPNY1zR0KKxV8mZEeI8QPxF1n9Sw==}
+  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.14':
+    resolution: {integrity: sha512-zMPyRKieZuHbJ8h28I56G0Qyabwf5b5MUtWw8nPaYkm+vDnMa1tZLphBxuO1uWaq4iRgXqM3Aie154NqgCO08g==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [win32]
 
-  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.7':
-    resolution: {integrity: sha512-iN/kxidCbLpe97m1hj/BQtAqZULET/QjTIoInYUa3H1DHvOKzPPNrkJgvrKjrF3tM5EDV/FlgB/bcrrabMMBuQ==}
+  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.14':
+    resolution: {integrity: sha512-bRPtGy9QEUHF7F/F1Dp0J1wG+H5yXUYapgXwy5YY1wPWG9ZA5gdmCLBfRAQyOve1NKCnMaYer156PZjO+DlL9Q==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [win32]
 
-  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/906ff9c2fcdad0d83fa621727a1f20be02031ad8':
-    resolution: {gitHosted: true, integrity: sha512-ZfVe1sF+ximdiLbVjpW8ZUmquj16NtbS5Hd8g5q2x1OIL/oWJMhXC5Hcs4KeKc2BxFAvDSC4scf1MmmaESTRGQ==, tarball: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/906ff9c2fcdad0d83fa621727a1f20be02031ad8}
-    version: 0.1.0-rc.7
+  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/6be9b76c7ddeedcb4e40dd0444846b71775819b0':
+    resolution: {gitHosted: true, integrity: sha512-cuXWVRfXOt41Yfp+7nz+EEaUKeL0K1uNkzJ38p8msjZXFjBcZ1OmV85d1Rwjaq6W3Np5s6COBEyzibO8OyY4Ng==, tarball: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/6be9b76c7ddeedcb4e40dd0444846b71775819b0}
+    version: 0.1.0-rc.14
     engines: {node: '>=24.11.0'}
     peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-fs': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-sandbox-policy': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
       react: ^18.2.0
       react-dom: ^18.2.0
 
@@ -178,7 +169,7 @@ packages:
         optional: true
 
   dsh-custom-tool@https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/7cb95649dca9b380c9a30af96bdbef87a76a2259:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/7cb95649dca9b380c9a30af96bdbef87a76a2259}
+    resolution: {gitHosted: true, integrity: sha512-v1TTywyraYFCrWt0jc2KsmN1IUiQPXNWv5sAy/lDsCuNxyh/sGI/ZfJS8gtxw4ZVvsjU4A0FzeWdESafqFo+ig==, tarball: https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/7cb95649dca9b380c9a30af96bdbef87a76a2259}
     version: 0.1.2
     engines: {node: ^22.19 || >=24}
     peerDependencies:
@@ -229,8 +220,8 @@ packages:
     version: 1.0.1
     engines: {node: '>=20'}
 
-  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1:
-    resolution: {gitHosted: true, integrity: sha512-gyl5aoGrwbbCbUHrlL0dXB44hnejM/OCdGqRg7s6FeQ/akvJ+EB9k2MFZuUecqPht7DNq8mb3aemXEcWnJ9ZRQ==, tarball: https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1}
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b:
+    resolution: {gitHosted: true, integrity: sha512-dl09Z90KbsjLXiJGU+nnpG1xSx9ez13tgRPzq2cwRU6rEIj3kpjwR+LC/dryJxsjFdAZlQMp1ST+u6oi6x2TXQ==, tarball: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b}
     version: 0.1.1-blue.0
     engines: {node: '>=22'}
     peerDependencies:
@@ -240,41 +231,54 @@ packages:
       '@deepseek-ai/schemastery':
         optional: true
 
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4dc4c05e5dcf1a719d153be01706121035d0027f:
+    resolution: {gitHosted: true, integrity: sha512-kpfVsPjTaE/BNhqWqJ2/qrNhGaAatmP5Jd2gYIPbGUd5iGglBWhwHCXOVJlHu1dmZgAjF0KDyjCZFlBcpnINEg==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4dc4c05e5dcf1a719d153be01706121035d0027f}
+    version: 2.50.1
+    engines: {node: '>=20.0.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
+      '@deepseek-ai/schemastery': '>=3.0.0'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-mcp-client':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
 
-  '@anionex/dsh-computer-use@https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/387eae931b1852e3c3433e0e004fa460d3da2883':
+  '@anionex/dsh-computer-use@https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/c6448e83ab0fb5892b3f327c67e72a769c745549':
     dependencies:
       zod: 4.4.3
 
-  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.7':
+  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.14':
     optional: true
 
-  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.7':
+  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.14':
     optional: true
 
-  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.7':
+  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.14':
     optional: true
 
-  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.7':
+  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.14':
     optional: true
 
-  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.7':
+  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.14':
     optional: true
 
-  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.7':
+  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.14':
     optional: true
 
-  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/906ff9c2fcdad0d83fa621727a1f20be02031ad8':
+  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/6be9b76c7ddeedcb4e40dd0444846b71775819b0':
     optionalDependencies:
-      '@zseven-w/dsh-openpencil-darwin-arm64': 0.1.0-rc.7
-      '@zseven-w/dsh-openpencil-darwin-x64': 0.1.0-rc.7
-      '@zseven-w/dsh-openpencil-linux-arm64': 0.1.0-rc.7
-      '@zseven-w/dsh-openpencil-linux-x64': 0.1.0-rc.7
-      '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.7
-      '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.7
+      '@zseven-w/dsh-openpencil-darwin-arm64': 0.1.0-rc.14
+      '@zseven-w/dsh-openpencil-darwin-x64': 0.1.0-rc.14
+      '@zseven-w/dsh-openpencil-linux-arm64': 0.1.0-rc.14
+      '@zseven-w/dsh-openpencil-linux-x64': 0.1.0-rc.14
+      '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.14
+      '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.14
 
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
     dependencies:
@@ -288,6 +292,8 @@ snapshots:
 
   dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162: {}
 
-  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/a23573d12ffc358e9ed0191bbfbaaf28fb27c3c1: {}
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b: {}
+
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4dc4c05e5dcf1a719d153be01706121035d0027f: {}
 
   zod@4.4.3: {}

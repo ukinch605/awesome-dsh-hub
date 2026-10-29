@@ -10,7 +10,10 @@ importers:
     dependencies:
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
-        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/d1b8812a890f3c76bb66dd73b67e1dbaafe439eb
+        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/eafed896c270a2952e4b5247f2a4ac25bcdaa599
+      dsh-dafeiyu:
+        specifier: github:QCYTSN/dsh-dafeiyu
+        version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a
       dsh-message-edit:
         specifier: github:Moeblack/dsh-message-edit
         version: https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/b78a167064ca612f1c400060d2bfc1dc9bc46436
@@ -19,13 +22,13 @@ importers:
         version: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/e1429d25f2e46202c59d3d44e30a15676504bc1b
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4dc4c05e5dcf1a719d153be01706121035d0027f
       open-sea-skin:
         specifier: github:d-dev0101/open-sea-skin
         version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea
       zat-dsh-engine:
         specifier: github:mishibeikejie/zat-dsh-engine
-        version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0
+        version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/11d5b5fb424b6d9dee7821c7c2f771bd42e7f46a
 
 packages:
 
@@ -37,15 +40,24 @@ packages:
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/d1b8812a890f3c76bb66dd73b67e1dbaafe439eb:
-    resolution: {gitHosted: true, integrity: sha512-6TLq5FGhllKAMIBfH/kJNe7aUWJYI9p0fGnd7BP6HFAxxTMisZCbk4nSZm//0ZwUpUHKxThKHxPSCUQKJH8yNQ==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/d1b8812a890f3c76bb66dd73b67e1dbaafe439eb}
-    version: 1.9.35
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/eafed896c270a2952e4b5247f2a4ac25bcdaa599:
+    resolution: {gitHosted: true, integrity: sha512-1Dbu343e4KuDoLe1p/8fNekZSHEtdO2gSoi8mpkhX6W3OVER+VGVF2s9MSuH7wfL2/umb61iBawWHWbIwH/kQw==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/eafed896c270a2952e4b5247f2a4ac25bcdaa599}
+    version: 1.9.46
     engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: '>=20'}
     os: [darwin, linux, win32]
     hasBin: true
     peerDependencies:
       '@deepseek-ai/dsh-credentials': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0'
       '@deepseek-ai/dsh-home-paths': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0'
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a:
+    resolution: {gitHosted: true, integrity: sha512-hIZyZNS1nYtLlYEEtz0P120y10RS0j4TfdZuG882xIRN7z++jvdrhXlOFkNDzKkgh302b3I2ycF6/DTota05Sg==, tarball: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a}
+    version: 0.1.23
+    engines: {node: '>=22.19'}
+    bundledDependencies:
+      - '@deepseek-ai/cosmokit'
+      - '@deepseek-ai/schemastery'
+      - '@standard-schema/spec'
 
   dsh-message-edit@https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/b78a167064ca612f1c400060d2bfc1dc9bc46436:
     resolution: {gitHosted: true, integrity: sha512-YtottVkN3dtZMf3JJeq9rQJ2V8m/liaNKlK3D53/mdehUET95avPm0hwdFtS7raN7wpD9jrkHIeMs34fh/ytSg==, tarball: https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/b78a167064ca612f1c400060d2bfc1dc9bc46436}
@@ -60,8 +72,8 @@ packages:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
     hasBin: true
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/e1429d25f2e46202c59d3d44e30a15676504bc1b:
-    resolution: {gitHosted: true, integrity: sha512-P+BlNsSkqjh/303vEvNV5Ye3qY5+YmuscxaZFcpG0LrCz64YN3BHP7Fe3CGQEpdoQ5scE2QQHf1Ev1wi3Gym9g==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/e1429d25f2e46202c59d3d44e30a15676504bc1b}
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4dc4c05e5dcf1a719d153be01706121035d0027f:
+    resolution: {gitHosted: true, integrity: sha512-kpfVsPjTaE/BNhqWqJ2/qrNhGaAatmP5Jd2gYIPbGUd5iGglBWhwHCXOVJlHu1dmZgAjF0KDyjCZFlBcpnINEg==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4dc4c05e5dcf1a719d153be01706121035d0027f}
     version: 2.50.1
     engines: {node: '>=20.0.0'}
     peerDependencies:
@@ -78,9 +90,9 @@ packages:
     version: 1.2.2
     engines: {node: '>=20'}
 
-  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0:
-    resolution: {gitHosted: true, integrity: sha512-sgFFP+UzenEYwOQ7VCENNqiLYfaCp+M15oZINcFQK2Q4lg9/LSb4lEXrlHgTqQpYrmUQsChfoX9Q4q8M70ctKw==, tarball: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0}
-    version: 0.7.0
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/11d5b5fb424b6d9dee7821c7c2f771bd42e7f46a:
+    resolution: {gitHosted: true, integrity: sha512-g0dBgK7i+yJyOfamEdhJ3wt1Na2llUxsEU64bm13mMjsLYGgwwALvhKuivCdm+pH1LzF+MY2vkFq+ZMpJz2ZxA==, tarball: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/11d5b5fb424b6d9dee7821c7c2f771bd42e7f46a}
+    version: 0.8.2
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-fs': '*'
@@ -90,11 +102,11 @@ packages:
       '@deepseek-ai/dsh-typert-protocol': '*'
       react: ^18.2.0
 
-  zod@4.4.3:
-    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
-
   zod@4.6.5:
     resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
+
+  zod@4.6.6:
+    resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
 
 snapshots:
 
@@ -102,10 +114,12 @@ snapshots:
 
   argparse@2.0.1: {}
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/d1b8812a890f3c76bb66dd73b67e1dbaafe439eb:
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/eafed896c270a2952e4b5247f2a4ac25bcdaa599:
     dependencies:
       acorn: 8.15.0
-      zod: 4.6.5
+      zod: 4.6.6
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a: {}
 
   dsh-message-edit@https://codeload.github.com/Moeblack/dsh-message-edit/tar.gz/b78a167064ca612f1c400060d2bfc1dc9bc46436: {}
 
@@ -115,15 +129,15 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/e1429d25f2e46202c59d3d44e30a15676504bc1b: {}
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4dc4c05e5dcf1a719d153be01706121035d0027f: {}
 
   open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/07507a4e7b43e1c9b9006ad8af97406330adb2ea: {}
 
-  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/b3b7ce6969fc806df1edb4170073ddd50c6927c0:
+  zat-dsh-engine@https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/11d5b5fb424b6d9dee7821c7c2f771bd42e7f46a:
     dependencies:
       js-yaml: 4.3.1
-      zod: 4.4.3
-
-  zod@4.4.3: {}
+      zod: 4.6.5
 
   zod@4.6.5: {}
+
+  zod@4.6.6: {}

@@ -13,33 +13,42 @@ importers:
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef
       '@shengsheng/dsh-taskboard':
         specifier: github:shengsheng90/DSH-taskboard
-        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8
+        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8(@deepseek-ai/schemastery@3.18.5)
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
-        version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7f694b5dab323069d6c4479a2efb99573e0fe941
+        version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9
       '@zseven-w/dsh-crew':
         specifier: github:ZSeven-W/dsh-crew
-        version: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/de3babcefd4e261ae003385262694d6ae02904b2
+        version: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/b0ddd92eeccbd7623c5a5924f0eb61005a2038ec
       '@zseven-w/dsh-noema':
         specifier: github:ZSeven-W/dsh-noema
-        version: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2
+        version: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/07d2fece531d11dbd5c420c5d44eaea12e6a9d7a
       dsh-claude-style:
         specifier: github:Nwflower/dsh-claude-style
-        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/8be54e7d940f0b6e98d39bd46c0b6a14637b82ad
+        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/a0059bde45f968b246bf05c9bb6b87a4a592189b(@deepseek-ai/schemastery@3.18.5)
       dsh-dream-skin:
         specifier: github:RevolutionLA/dsh-dream-skin
-        version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/fa5ecebd77d063b8568f916f8ca12f2612ad4c71
+        version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cc506287ac096e366b155c26fdd5767d6a53bd98
+      dsh-ego-browser:
+        specifier: github:Fisfzy/dsh-ego-browser
+        version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/3df0641046b28936d223e062fc26d18483823f87
       dsh-git-memory:
         specifier: github:seriousz158/dsh-memory
-        version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03
+        version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.5)
       fujiang-armor:
         specifier: github:c3cvld7aag/fujiang-dsh
         version: https://codeload.github.com/c3cvld7aag/fujiang-dsh/tar.gz/ab86ddcd169f0f13bc74923b6ed95eda55224931
       my-app:
         specifier: github:theBigGavin/marketingdashboard
-        version: https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/5b8056e2aa56ced08a12fbc116712540af74f942
+        version: https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/f793de6f9f9874c120585cd6f6b293333067fa46
 
 packages:
+
+  '@deepseek-ai/cosmokit@1.8.6':
+    resolution: {integrity: sha512-ZSD/fN52L498LBIOYwjIOlaLv5veY6ZEwI2yzvZUKQtctn0QAPqu8tKdJ+OF5+Tv6NBq1U+wJWH+QI6OGy5EvQ==}
+
+  '@deepseek-ai/schemastery@3.18.5':
+    resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
   '@hono/node-server@2.1.1':
     resolution: {integrity: sha512-ELuehkj5VCBdgEw9zs+ivkKwyzzUCSQuE96YmiPvn1ECBoZCczbFXJLeEGMTYjphP6gydh4pHMqEYPVMYUVgQg==}
@@ -56,6 +65,7 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       '@cfworker/json-schema': ^4.1.1
+      zod: ^3.25 || ^4.0
     peerDependenciesMeta:
       '@cfworker/json-schema':
         optional: true
@@ -134,9 +144,16 @@ packages:
       react:
         optional: true
 
-  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7f694b5dab323069d6c4479a2efb99573e0fe941':
-    resolution: {gitHosted: true, integrity: sha512-QAz/E/VTPNbAS0bFAb78XU+GJtwNsR6rGsoE/O3ySIK49AqKQthvVFEg9GO51JTjTT6k6sTaDC+X1xx+lqTbKA==, tarball: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7f694b5dab323069d6c4479a2efb99573e0fe941}
-    version: 2.10.5
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  '@tencent-connect/qqbot-connector@1.2.0':
+    resolution: {integrity: sha512-FAOUCvgxP4M9UiYbHrtVgJ7BavSlh1CHJPjeEQuTAkP9MZ91lX4yATqv6I/lB9yp15nVq+G2DaGSSJwQTSoSsA==}
+    engines: {node: '>=18.0.0'}
+
+  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9':
+    resolution: {gitHosted: true, integrity: sha512-Zm8FBXGNopwjqrwooreXR3cerefT4y+6ODDwOWVE7qHEkA2i2x4AKfHvWMvUZHQo8dpyNXtO/CG5fTzo4zpJQA==, tarball: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9}
+    version: 2.17.5
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -145,66 +162,56 @@ packages:
       '@deepseek-ai/dsh-llm':
         optional: true
 
-  '@zseven-w/dsh-crew@https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/de3babcefd4e261ae003385262694d6ae02904b2':
-    resolution: {gitHosted: true, integrity: sha512-FLWxmmkEeXP9nkubKI7hQgQv+sqHm51kYoPzMutqPHDG2KtCOff1pF515ZULALviiV4npKGGR5e2dQzsbIJFWQ==, tarball: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/de3babcefd4e261ae003385262694d6ae02904b2}
-    version: 0.1.0-rc.6
+  '@zseven-w/dsh-crew@https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/b0ddd92eeccbd7623c5a5924f0eb61005a2038ec':
+    resolution: {gitHosted: true, integrity: sha512-WTlpbntBmr12pwGLCgA9CyM6fWgw2a3BOixPHB0GXY/ypkyMsYtjCBXrppoFOJL+1nfGYNO9fnKfimjuUhTn6w==, tarball: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/b0ddd92eeccbd7623c5a5924f0eb61005a2038ec}
+    version: 0.1.0-rc.14
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
 
-  '@zseven-w/dsh-noema-darwin-arm64@0.1.0-rc.3':
-    resolution: {integrity: sha512-ZRL7Xzaaoq1roNLbflLGZizUiFahT9imrWG7WTVRgwqu4TPaAH8tw7FZDRfO6NCgcRjkrYOJZMDwtrtxUdUveA==}
+  '@zseven-w/dsh-noema-darwin-arm64@0.1.0-rc.6':
+    resolution: {integrity: sha512-kIKNEUVx+cf3GELh+QTrkoWZgT1l65PMISmbA6ZhYoYaGvL2tXmmEooGG00W4tJWnypBXxlPIzWRc0E7SvBJ+w==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [darwin]
 
-  '@zseven-w/dsh-noema-darwin-x64@0.1.0-rc.3':
-    resolution: {integrity: sha512-L+laBZ4bmY5TvKqFp7KN54Rp4azw6xuSEttsRYl7TMnM2tp7Bdf1YRYMv015jdcFhpl8xp6B/VzHt4QIZQvH4g==}
+  '@zseven-w/dsh-noema-darwin-x64@0.1.0-rc.6':
+    resolution: {integrity: sha512-O3iwmBgzK3CPGsjEWkK++4zFhNfwvmPicICMKVWWbPNA+fg0aQDhBmvcompu9CpGKkNAVhbQFrDzYrgknYYaFw==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [darwin]
 
-  '@zseven-w/dsh-noema-linux-arm64@0.1.0-rc.3':
-    resolution: {integrity: sha512-xvVsXPN+9j5OQM+WUAdnTdudbxxo529GG7hZQ9vjz0AujyAa3mhgMRNHDu7AGzkUPEz0IVngbshdX3Y/VPx0vg==}
+  '@zseven-w/dsh-noema-linux-arm64@0.1.0-rc.6':
+    resolution: {integrity: sha512-Afq33g6Ccm8uvfjUma8ROVVeaWvkVEKvKcYkegaoIoglu0wcRE6ItJeHbBMGldgUyDnNohV4VM0NSuOsfyG4Kg==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@zseven-w/dsh-noema-linux-x64@0.1.0-rc.3':
-    resolution: {integrity: sha512-lbJ5xS0vJhmNiZ377r0f7JayFaIqKau4hEkO8Gl+gW7PXE3hAlexKwIyC/8oxqwR38j+FUdGO94ye+8W0ca6CQ==}
+  '@zseven-w/dsh-noema-linux-x64@0.1.0-rc.6':
+    resolution: {integrity: sha512-q0BEYTT95Jm5/ZkefeLDCDVaejRcMVYRvAuVGGI14J0rhSXW20s6pcHbIYXkX1UgnJVpztffG/BaCeV3r121zA==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@zseven-w/dsh-noema-win32-arm64@0.1.0-rc.3':
-    resolution: {integrity: sha512-aoAPKBUHsPFvXfMZi/H/2fv5BAVoYf7p6Sfh6CvW1ZmpWr6N7glKRSrn/x0pNsp6fxyelj9ubovc4aAFTn/hog==}
+  '@zseven-w/dsh-noema-win32-arm64@0.1.0-rc.6':
+    resolution: {integrity: sha512-iCeZPMtqIwO1lJiRBVwzkOH2adABvmwJ0IIcYUKSOvJa3af0cRMV+pqUAhIXWYnAivsrQa81QaTLHxAmtm1IUg==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [win32]
 
-  '@zseven-w/dsh-noema-win32-x64@0.1.0-rc.3':
-    resolution: {integrity: sha512-PbvItTpbQMhkj3i62QHk9/tWWhmodlJ/804wLfL7w97/wBN56GGOyzcSdDKWZ3bDC8Toa14ZdnKH3d7oLlQSow==}
+  '@zseven-w/dsh-noema-win32-x64@0.1.0-rc.6':
+    resolution: {integrity: sha512-/ObKCHdEqO6p4BHqAK+ZiThr8l57SbwlxNEHlvrc04LSlLI2N1bBkx04zgUv6zD8yrQET7Wud5+KlGJ4PH1rog==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [win32]
 
-  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2':
-    resolution: {gitHosted: true, integrity: sha512-2bSjjWQjLIi8VGKHGXpShBm89PFYyiDYbKyVSMlYNnFDeCLUOetv8cnREb5D7cL0yuJyVsm9M4WsT5C/i4RroQ==, tarball: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2}
-    version: 0.1.0-rc.3
+  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/07d2fece531d11dbd5c420c5d44eaea12e6a9d7a':
+    resolution: {gitHosted: true, integrity: sha512-7IQPUFHLHl9irPDqD9/4SQsGi6/AbXP+72iE3A6LCZPxzKJrf20vtMb4usdL/aCQHANeJrAATCDlthpYF7QeAw==, tarball: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/07d2fece531d11dbd5c420c5d44eaea12e6a9d7a}
+    version: 0.1.0-rc.6
     engines: {node: '>=24.11.0'}
     peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
-      '@deepseek-ai/schemastery': ^3.0.0
       react: ^18.2.0
       react-dom: ^18.2.0
 
@@ -214,6 +221,11 @@ packages:
 
   ajv-formats@3.0.1:
     resolution: {integrity: sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==}
+    peerDependencies:
+      ajv: ^8.0.0
+    peerDependenciesMeta:
+      ajv:
+        optional: true
 
   ajv@8.20.0:
     resolution: {integrity: sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==}
@@ -284,6 +296,9 @@ packages:
     resolution: {integrity: sha512-tJtZBBHA6vjIAaF6EnIaq6laBBP9aq/Y3ouVJjEfoHbRBcHBAHYcMh/w8LDrk2PvIMMq8gmopa5D4V8RmbrxGw==}
     engines: {node: '>= 0.10'}
 
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
@@ -308,27 +323,27 @@ packages:
   dijkstrajs@1.0.3:
     resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/8be54e7d940f0b6e98d39bd46c0b6a14637b82ad:
-    resolution: {gitHosted: true, integrity: sha512-ELHJLq5/zW4qwiyHfEda4fkDr7UTnxegKM40pljKeGFycFHW5yb1X1wUFSgcMPEyLBPluSg+4eLPk2M6HOBRBw==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/8be54e7d940f0b6e98d39bd46c0b6a14637b82ad}
-    version: 0.18.5
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/a0059bde45f968b246bf05c9bb6b87a4a592189b:
+    resolution: {gitHosted: true, integrity: sha512-5xfSx++6eEYO+tt2OjV404HyEK+7p96bX6lkOv8cpsVdZt6/z0ySVGPCL1QaASeXtYelKS4HLDpqsjeK4wnPUQ==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/a0059bde45f968b246bf05c9bb6b87a4a592189b}
+    version: 0.19.5
     peerDependencies:
       '@deepseek-ai/dsh-client-ui-primitives': '>=0.1.5-rc.1'
       '@deepseek-ai/schemastery': '>=3.18.0'
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/fa5ecebd77d063b8568f916f8ca12f2612ad4c71:
-    resolution: {gitHosted: true, integrity: sha512-kJvPIfhPrG7kwAthj/QW70mhxA2bqTk0rAg9VKXFCFGpOBLL/A6wwuQAhrMp7wqZHEJ871atkhnQrRH8atuVrQ==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/fa5ecebd77d063b8568f916f8ca12f2612ad4c71}
-    version: 8.30.1
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cc506287ac096e366b155c26fdd5767d6a53bd98:
+    resolution: {gitHosted: true, integrity: sha512-8c0EeAjd1XepSkTnHFqhYcpoDWP93McVBWy3Yt8Lgt7y0U8DwQ1pAk9wQYqhb6rB2lyyEETy0NggfVcSsLPExQ==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cc506287ac096e366b155c26fdd5767d6a53bd98}
+    version: 10.29.0
     engines: {node: '>=18'}
     peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-store': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-settings-general': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
+      '@deepseek-ai/cordis': ^4.0.1 || >=4.0.5-0 <5
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-runtime': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-store': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-settings': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-settings-general': '>=0.1.0-rc.6 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-theme': '>=0.1.0-rc.6 <0.3.0-0'
       react: ^18.2.0
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
@@ -348,18 +363,49 @@ packages:
       react:
         optional: true
 
-  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03:
-    resolution: {gitHosted: true, integrity: sha512-6muo6yn+AsSDqSAKi9yqKId9h60B+/0h7RqOrEdBMdt97zcdxMy27Jw4Lbk8sD7v3wUPKzDSPD60Kaf13kIu6A==, tarball: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03}
-    version: 0.8.2
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/3df0641046b28936d223e062fc26d18483823f87:
+    resolution: {gitHosted: true, integrity: sha512-IOzP/c7dtYd0WC4udVnvRUWASGrrowDpLsORIZtNKdIn9GygSSOHtyHt87RwP0BoaUGhhtfhfNWNOBu8n9F6Zw==, tarball: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/3df0641046b28936d223e062fc26d18483823f87}
+    version: 0.9.6
     engines: {node: '>=22'}
     peerDependencies:
-      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-connection': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-typert-protocol': ^0.1.0-rc.6
+      '@deepseek-ai/dsh-client-locale': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-client-store': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-client-ui-settings-plugins': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-settings': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-tools': '>=0.1.2-rc.1'
+      react: ^18.2.0
+      schemastery: ^3.18.0
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-store':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings-plugins':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-settings':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      react:
+        optional: true
+      schemastery:
+        optional: true
+
+  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d:
+    resolution: {gitHosted: true, integrity: sha512-ap81grYr3/a3sb2KkW6quA7zxjXaZjPVTMGE/ZrCPfcmhegQ9LqKe7V2KAkwSY5xUzegzT2ErazP7dl/Fq0Vug==, tarball: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d}
+    version: 0.10.0
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6 || 0.1.5-rc.1 || 0.1.7-rc.1 || >=0.2.0-rc.2 <0.3.0
+      '@deepseek-ai/dsh-client-connection': ^0.1.0-rc.6 || 0.1.5-rc.1 || 0.1.7-rc.1 || >=0.2.0-rc.2 <0.3.0
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6 || 0.1.5-rc.1 || 0.1.7-rc.1 || >=0.2.0-rc.2 <0.3.0
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6 || 0.1.5-rc.1 || 0.1.7-rc.1 || >=0.2.0-rc.2 <0.3.0
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6 || 0.1.5-rc.1 || 0.1.7-rc.1 || >=0.2.0-rc.2 <0.3.0
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6 || 0.1.5-rc.1 || 0.1.7-rc.1 || >=0.2.0-rc.2 <0.3.0
+      '@deepseek-ai/dsh-typert-protocol': ^0.1.0-rc.6 || 0.1.5-rc.1 || 0.1.7-rc.1 || >=0.2.0-rc.2 <0.3.0
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
 
@@ -541,8 +587,8 @@ packages:
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
-  my-app@https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/5b8056e2aa56ced08a12fbc116712540af74f942:
-    resolution: {gitHosted: true, integrity: sha512-ukSUsQ8gl0+v7XWOIQP9IUp9v7qM95rLcB27cGIpypWqtx6WZYgwcakcYUISrndFTqtmPBjD2jpg3HOStQ9mdQ==, tarball: https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/5b8056e2aa56ced08a12fbc116712540af74f942}
+  my-app@https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/f793de6f9f9874c120585cd6f6b293333067fa46:
+    resolution: {gitHosted: true, integrity: sha512-m87AkPDCzJGc4fVVQUDbng56My2cPeQzcjzmjqXc8XhzwMLlDg8Q46CXnFe+zyXQnYuG0HGXY22ruQBdgOHx6w==, tarball: https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/f793de6f9f9874c120585cd6f6b293333067fa46}
     version: 1.4.0
 
   negotiator@1.1.0:
@@ -603,6 +649,10 @@ packages:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}
     engines: {node: '>= 0.10'}
 
+  qrcode-terminal@0.12.0:
+    resolution: {integrity: sha512-EXtzRZmC+YGmGlDFbXKxQiMZNwCLEO6BANKXG4iCtSIM0yqc/pappSx3RIKr4r0uh5JsBckOXeKrB3Iz7mdQpQ==}
+    hasBin: true
+
   qrcode@1.5.4:
     resolution: {integrity: sha512-1ca71Zgiu6ORjHqFBDpnSMTR2ReToX4l1Au1VFLyVeBTFavzQnv5JxMFr3ukHVKpSrSA2MCk0lNJSykjUfz7Zg==}
     engines: {node: '>=10.13.0'}
@@ -659,6 +709,9 @@ packages:
 
   scheduler@0.27.0:
     resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
+
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
   send@1.2.1:
     resolution: {integrity: sha512-1gnZf7DFcoIcajTjTwjwuDjzuz4PPcY2StKPlsGAQ1+YH20IRVrBaXSWmdjowTJ6u8Rc01PoYOGHXfP1mYcZNQ==}
@@ -780,6 +833,13 @@ packages:
 
 snapshots:
 
+  '@deepseek-ai/cosmokit@1.8.6': {}
+
+  '@deepseek-ai/schemastery@3.18.5':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.6
+      '@standard-schema/spec': 1.1.0
+
   '@hono/node-server@2.1.1(hono@4.13.5)':
     dependencies:
       hono: 4.13.5
@@ -808,19 +868,30 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8':
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       zod: 4.6.7
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.5
 
-  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7f694b5dab323069d6c4479a2efb99573e0fe941':
+  '@standard-schema/spec@1.1.0': {}
+
+  '@tencent-connect/qqbot-connector@1.2.0':
+    dependencies:
+      qrcode-terminal: 0.12.0
+    optional: true
+
+  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9':
     dependencies:
       qrcode: 1.5.4
       ws: 8.21.3
+    optionalDependencies:
+      '@tencent-connect/qqbot-connector': 1.2.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@zseven-w/dsh-crew@https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/de3babcefd4e261ae003385262694d6ae02904b2':
+  '@zseven-w/dsh-crew@https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/b0ddd92eeccbd7623c5a5924f0eb61005a2038ec':
     dependencies:
       '@modelcontextprotocol/sdk': 1.30.0
       zod: 3.25.76
@@ -828,32 +899,32 @@ snapshots:
       - '@cfworker/json-schema'
       - supports-color
 
-  '@zseven-w/dsh-noema-darwin-arm64@0.1.0-rc.3':
+  '@zseven-w/dsh-noema-darwin-arm64@0.1.0-rc.6':
     optional: true
 
-  '@zseven-w/dsh-noema-darwin-x64@0.1.0-rc.3':
+  '@zseven-w/dsh-noema-darwin-x64@0.1.0-rc.6':
     optional: true
 
-  '@zseven-w/dsh-noema-linux-arm64@0.1.0-rc.3':
+  '@zseven-w/dsh-noema-linux-arm64@0.1.0-rc.6':
     optional: true
 
-  '@zseven-w/dsh-noema-linux-x64@0.1.0-rc.3':
+  '@zseven-w/dsh-noema-linux-x64@0.1.0-rc.6':
     optional: true
 
-  '@zseven-w/dsh-noema-win32-arm64@0.1.0-rc.3':
+  '@zseven-w/dsh-noema-win32-arm64@0.1.0-rc.6':
     optional: true
 
-  '@zseven-w/dsh-noema-win32-x64@0.1.0-rc.3':
+  '@zseven-w/dsh-noema-win32-x64@0.1.0-rc.6':
     optional: true
 
-  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/9cc3ab1ee00de04bf318be9cf2b102ae668ceeb2':
+  '@zseven-w/dsh-noema@https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/07d2fece531d11dbd5c420c5d44eaea12e6a9d7a':
     optionalDependencies:
-      '@zseven-w/dsh-noema-darwin-arm64': 0.1.0-rc.3
-      '@zseven-w/dsh-noema-darwin-x64': 0.1.0-rc.3
-      '@zseven-w/dsh-noema-linux-arm64': 0.1.0-rc.3
-      '@zseven-w/dsh-noema-linux-x64': 0.1.0-rc.3
-      '@zseven-w/dsh-noema-win32-arm64': 0.1.0-rc.3
-      '@zseven-w/dsh-noema-win32-x64': 0.1.0-rc.3
+      '@zseven-w/dsh-noema-darwin-arm64': 0.1.0-rc.6
+      '@zseven-w/dsh-noema-darwin-x64': 0.1.0-rc.6
+      '@zseven-w/dsh-noema-linux-arm64': 0.1.0-rc.6
+      '@zseven-w/dsh-noema-linux-x64': 0.1.0-rc.6
+      '@zseven-w/dsh-noema-win32-arm64': 0.1.0-rc.6
+      '@zseven-w/dsh-noema-win32-x64': 0.1.0-rc.6
 
   accepts@2.0.0:
     dependencies:
@@ -934,6 +1005,8 @@ snapshots:
       object-assign: 4.1.1
       vary: 1.1.2
 
+  cosmokit@1.8.1: {}
+
   cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
@@ -950,11 +1023,20 @@ snapshots:
 
   dijkstrajs@1.0.3: {}
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/8be54e7d940f0b6e98d39bd46c0b6a14637b82ad: {}
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/a0059bde45f968b246bf05c9bb6b87a4a592189b(@deepseek-ai/schemastery@3.18.5):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
 
-  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/fa5ecebd77d063b8568f916f8ca12f2612ad4c71: {}
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cc506287ac096e366b155c26fdd5767d6a53bd98: {}
 
-  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/2a994f7279b0ca396163a36fe31e9293dc5abd03: {}
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/3df0641046b28936d223e062fc26d18483823f87:
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      schemastery: 3.18.0
+
+  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.5):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
 
   dunder-proto@1.0.1:
     dependencies:
@@ -1137,7 +1219,7 @@ snapshots:
 
   ms@2.1.3: {}
 
-  my-app@https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/5b8056e2aa56ced08a12fbc116712540af74f942:
+  my-app@https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/f793de6f9f9874c120585cd6f6b293333067fa46:
     dependencies:
       iconv-lite: 0.7.3
       lucide-react: 0.562.0(react@19.2.8)
@@ -1187,6 +1269,9 @@ snapshots:
     dependencies:
       forwarded: 0.2.0
       ipaddr.js: 1.9.1
+
+  qrcode-terminal@0.12.0:
+    optional: true
 
   qrcode@1.5.4:
     dependencies:
@@ -1242,6 +1327,11 @@ snapshots:
   safer-buffer@2.1.2: {}
 
   scheduler@0.27.0: {}
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1
 
   send@1.2.1:
     dependencies:

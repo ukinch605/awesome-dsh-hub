@@ -10,13 +10,16 @@ importers:
     dependencies:
       '@dhicoc/dsh-reverse-skill':
         specifier: github:dhicoc/dsh-reverse-skill
-        version: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732
+        version: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/f1b61cf3deec370198ae81a23b8512338002d073
       '@dsh-external/dsh-automation':
         specifier: github:titanwings/dsh-automation
         version: https://codeload.github.com/titanwings/dsh-automation/tar.gz/0d73a4e03639d4f63d0771ae4490e2718b7e7aa0(react@18.3.1)
+      '@michengai/dsh-codex-ui':
+        specifier: github:MichengAI/dsh-codex-ui
+        version: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/868ad1a0ca84bb230faaeb0fdc04970393d195f8(react@18.3.1)
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/d998f72fb4ab5492eaab3c5e1cc9de1d7901e8a9
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/25bcaa72bab9ef0bd8f7ce8a2a9f9e4366f55639
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
         version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/6a649fe930aeab4247d3e8b936b6bf393aa71e8c(react@18.3.1)
@@ -25,10 +28,10 @@ importers:
         version: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(react@18.3.1)
       dsh-liketavern:
         specifier: github:Amakurai/dsh-liketavern
-        version: https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/5ec76834513578d67d88106f9ae704872d01df56
+        version: https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/3aee89ae75ef9cab61cc3463f31a0a044f52dc69
       dsh-remote:
         specifier: github:flymysql/dsh-remote
-        version: https://codeload.github.com/flymysql/dsh-remote/tar.gz/03ba582d0001c9eecdc6114d119fbbc4027c7b64
+        version: https://codeload.github.com/flymysql/dsh-remote/tar.gz/704519679909efbaca157f3a2cb79b157178ac6d
       tydora:
         specifier: github:zuorn/Tydora
         version: https://codeload.github.com/zuorn/Tydora/tar.gz/4af1de4d458c7d03adc2615893e4793766c1bb87(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.32.0(@tiptap/core@3.32.0(@tiptap/pm@3.32.0))(@tiptap/pm@3.32.0))(@tiptap/extension-list@3.32.0(@tiptap/core@3.32.0(@tiptap/pm@3.32.0))(@tiptap/pm@3.32.0))(@tiptap/extensions@3.32.0(@tiptap/core@3.32.0(@tiptap/pm@3.32.0))(@tiptap/pm@3.32.0))(prosemirror-model@1.25.12)(prosemirror-state@1.4.4)(prosemirror-view@1.42.8)(use-sync-external-store@1.7.0(react@18.3.1))
@@ -115,12 +118,13 @@ packages:
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
 
-  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732':
-    resolution: {gitHosted: true, integrity: sha512-zipAcJI7kY6FuOA8hd12MRNW8Ul76p7cuHYvevxX/ThboMurlsSjcsrS/yq+o+qzvNIJM6/nu3bgiiBqYTdL6A==, tarball: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732}
-    version: 1.0.5
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/f1b61cf3deec370198ae81a23b8512338002d073':
+    resolution: {gitHosted: true, integrity: sha512-pBqyqhK6kqE13ojFvGBZ/LdD2mCQ9FuCWd5LvkwUI/TlpzJMyagB6/tEvEJ0dGsW1krqFcn97FnBxELnZDgDnQ==, tarball: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/f1b61cf3deec370198ae81a23b8512338002d073}
+    version: 1.2.0
+    engines: {node: '>=20.0.0'}
     peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-skill': ^0.0.1-rc.1
+      '@deepseek-ai/cordis': ~4.0.4
+      '@deepseek-ai/dsh-skill': ^0.2.0-rc.2
 
   '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/0d73a4e03639d4f63d0771ae4490e2718b7e7aa0':
     resolution: {gitHosted: true, integrity: sha512-WTTmASPPZVgdUyLgxA1JVSbg5kx8+A2VcpEltaYPqrQl2vv6CJpVRFTpG+eWvg6VHkFJNndcsiEFG78RejDMJw==, tarball: https://codeload.github.com/titanwings/dsh-automation/tar.gz/0d73a4e03639d4f63d0771ae4490e2718b7e7aa0}
@@ -237,6 +241,27 @@ packages:
   '@mermaid-js/parser@1.2.1':
     resolution: {integrity: sha512-n12NohV3mrUyUL2o93IgG/ifeW9FTyeJn3zDxkhwa8MJ9Fxg3HQMlA3RiGmD/3UnJvheztkjjQAjA2T4LmUcpw==}
 
+  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/868ad1a0ca84bb230faaeb0fdc04970393d195f8':
+    resolution: {gitHosted: true, integrity: sha512-gRdUJfKHccwL+AiIC1QL2GkzzA0h8MjgObnXwliOSLPJHXsXDLWqkVL0kvSwvQSbPdYB+Vfe7zd61eeYKpO36Q==, tarball: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/868ad1a0ca84bb230faaeb0fdc04970393d195f8}
+    version: 2.0.5
+    engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.2 <5.0.0'
+      '@deepseek-ai/dsh-client-connection': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-locale': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-conversation': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-input-trigger': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-layout': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-settings': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-settings-general': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-sidebar': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-theme': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-workspace': '>=0.2.0-rc.1 <0.3.0-0'
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
   '@replit/codemirror-vim-core@0.1.0':
     resolution: {integrity: sha512-1i6EBKpcNfDKvTmTh6N6g9lL6udD5t+uFNh4JCqozRnVlvUGOps7h/QzS2ne4zcvPUjvApKpmcP7Grc3fNbZiQ==}
 
@@ -273,9 +298,9 @@ packages:
   '@tauri-apps/plugin-window-state@2.5.0':
     resolution: {integrity: sha512-ySI/32fpC1ZTslIZ00/wf9HujyDnkG3OPL16uuLjG53y1hTgjIJ9G2VPuOL1IV8GVr3xeF6lnr6h2T73HuGXow==}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/d998f72fb4ab5492eaab3c5e1cc9de1d7901e8a9':
-    resolution: {gitHosted: true, integrity: sha512-hBSQMXegytqqRMeXWxFs/v73KVawPo74PbI90AEkcy4s7R6yA1wu0SYcLOSQ0EW5Dgu9tH0pZE+FFpdzj+PmqA==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/d998f72fb4ab5492eaab3c5e1cc9de1d7901e8a9}
-    version: 0.5.3
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/25bcaa72bab9ef0bd8f7ce8a2a9f9e4366f55639':
+    resolution: {gitHosted: true, integrity: sha512-paoJ+PcclaBzudtwIHEn/xY+UbUjtPO8z7LthyyLEKVDqjl1icpkgVWuNmyCG6cFxU3EXhfW/XSUrMfvrTZdiQ==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/25bcaa72bab9ef0bd8f7ce8a2a9f9e4366f55639}
+    version: 0.5.4
     engines: {node: '>=20.3.0'}
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1'
@@ -1106,8 +1131,8 @@ packages:
       react:
         optional: true
 
-  dsh-liketavern@https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/5ec76834513578d67d88106f9ae704872d01df56:
-    resolution: {gitHosted: true, integrity: sha512-go0Oz01u7SlZe+qTx0Xs8Z/vMdlOBctdmWmuct1cHa4j5Db+s1bq7F4y60PoKsEwQIArOJQLD5f7h2UevdfKqg==, tarball: https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/5ec76834513578d67d88106f9ae704872d01df56}
+  dsh-liketavern@https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/3aee89ae75ef9cab61cc3463f31a0a044f52dc69:
+    resolution: {gitHosted: true, integrity: sha512-gQ6Q0E+Rheysh1XFr4xttgJtGcsOD4Sy5rFLDrGSJt6ryid2Eu8I0UvKSa3V8PcvfzK7If10Q64jropr+7hnYA==, tarball: https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/3aee89ae75ef9cab61cc3463f31a0a044f52dc69}
     version: 0.5.9
     engines: {node: '>=24'}
     hasBin: true
@@ -1137,9 +1162,9 @@ packages:
       '@deepseek-ai/dsh-util-values': 0.2.1-rc.3
       '@deepseek-ai/schemastery': 3.18.5
 
-  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/03ba582d0001c9eecdc6114d119fbbc4027c7b64:
-    resolution: {gitHosted: true, integrity: sha512-N2BEZOYoR1P7AFB4d2kOJ09wZLZOZE5KxafPTvdcymjkR11JDYUTRpkKKyImsm6c7UFaRn5XtaOb1qM5DbPczA==, tarball: https://codeload.github.com/flymysql/dsh-remote/tar.gz/03ba582d0001c9eecdc6114d119fbbc4027c7b64}
-    version: 0.8.51
+  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/704519679909efbaca157f3a2cb79b157178ac6d:
+    resolution: {gitHosted: true, integrity: sha512-LRtS9B9LH+jw9wC/LqIN7y4ZGd6hEKq+4bvFVgkY+jxMhiJSoe+iJ3eV3ABAMH3n9wavBxjGjNmuRxO49Sy/hA==, tarball: https://codeload.github.com/flymysql/dsh-remote/tar.gz/704519679909efbaca157f3a2cb79b157178ac6d}
+    version: 0.8.54
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-client-connection': '>=0.1.2-rc.1 <0.3.0'
@@ -1343,6 +1368,15 @@ packages:
 
   lowlight@3.3.0:
     resolution: {integrity: sha512-0JNhgFoPvP6U6lE/UdVsSq99tn6DhjjpAj5MxG49ewd2mOBVtwWYIT8ClyABhq198aXXODMU6Ox8DrGy/CpTZQ==}
+
+  lucide-react@1.63.0:
+    resolution: {integrity: sha512-GkBfQG+FUJ41x6y3/lNXiOziVU0Rcqqq0TCzhHS8avsFXHZmOdmfBqsVTvHSaVmbI+wbdGkxHRmhYWhD3N4/yA==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
 
   luxon@3.7.2:
     resolution: {integrity: sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew==}
@@ -1736,6 +1770,11 @@ packages:
   y18n@4.0.3:
     resolution: {integrity: sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ==}
 
+  yaml@2.8.1:
+    resolution: {integrity: sha512-lcYcMxX2PO9XMGvAJkJ3OsNMw+/7FKes7/hgerGUYWIoWu5j/+YQqcZr5JnPZWzOsEBgMbSbiSTn/dv/69Mkpw==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
   yaml@2.9.0:
     resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
     engines: {node: '>= 14.6'}
@@ -1954,7 +1993,7 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
 
-  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732': {}
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/f1b61cf3deec370198ae81a23b8512338002d073': {}
 
   '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/0d73a4e03639d4f63d0771ae4490e2718b7e7aa0(react@18.3.1)':
     dependencies:
@@ -2108,6 +2147,13 @@ snapshots:
     dependencies:
       '@chevrotain/types': 11.1.2
 
+  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/868ad1a0ca84bb230faaeb0fdc04970393d195f8(react@18.3.1)':
+    dependencies:
+      lucide-react: 1.63.0(react@18.3.1)
+      react: 18.3.1
+    transitivePeerDependencies:
+      - '@types/react'
+
   '@replit/codemirror-vim-core@0.1.0': {}
 
   '@replit/codemirror-vim@6.4.0(@codemirror/commands@6.11.1)(@codemirror/language@6.13.1)(@codemirror/search@6.7.2)(@codemirror/state@6.7.6)(@codemirror/view@6.43.15)':
@@ -2147,12 +2193,13 @@ snapshots:
     dependencies:
       '@tauri-apps/api': 2.12.4
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/d998f72fb4ab5492eaab3c5e1cc9de1d7901e8a9':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/25bcaa72bab9ef0bd8f7ce8a2a9f9e4366f55639':
     dependencies:
       '@tencent-connect/qqbot-connector': 1.2.0
       '@tencent-connect/qqbot-nodejs': 1.0.5
       js-yaml: 4.3.2
       qrcode: 1.5.4
+      yaml: 2.8.1
     transitivePeerDependencies:
       - bufferutil
       - mpg123-decoder
@@ -2940,7 +2987,7 @@ snapshots:
     optionalDependencies:
       react: 18.3.1
 
-  dsh-liketavern@https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/5ec76834513578d67d88106f9ae704872d01df56:
+  dsh-liketavern@https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/3aee89ae75ef9cab61cc3463f31a0a044f52dc69:
     dependencies:
       '@faker-js/faker': 10.6.0
       ejs: 6.0.1
@@ -2953,7 +3000,7 @@ snapshots:
       yaml: 2.9.0
       zod: 4.6.7
 
-  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/03ba582d0001c9eecdc6114d119fbbc4027c7b64:
+  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/704519679909efbaca157f3a2cb79b157178ac6d:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
       iconv-lite: 0.6.3
@@ -3054,8 +3101,7 @@ snapshots:
 
   jquery@3.7.1: {}
 
-  js-tokens@4.0.0:
-    optional: true
+  js-tokens@4.0.0: {}
 
   js-yaml@4.3.1:
     dependencies:
@@ -3120,13 +3166,16 @@ snapshots:
   loose-envify@1.4.0:
     dependencies:
       js-tokens: 4.0.0
-    optional: true
 
   lowlight@3.3.0:
     dependencies:
       '@types/hast': 3.0.5
       devlop: 1.1.0
       highlight.js: 11.11.2
+
+  lucide-react@1.63.0(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   luxon@3.7.2: {}
 
@@ -3399,7 +3448,6 @@ snapshots:
   react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
-    optional: true
 
   react@19.3.1: {}
 
@@ -3646,6 +3694,8 @@ snapshots:
   ws@8.21.3: {}
 
   y18n@4.0.3: {}
+
+  yaml@2.8.1: {}
 
   yaml@2.9.0: {}
 

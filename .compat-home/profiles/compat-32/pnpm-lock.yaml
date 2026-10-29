@@ -10,28 +10,31 @@ importers:
     dependencies:
       '@dsh-external/dsh-automation':
         specifier: github:titanwings/dsh-automation
-        version: https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67
+        version: https://codeload.github.com/titanwings/dsh-automation/tar.gz/0d73a4e03639d4f63d0771ae4490e2718b7e7aa0
       '@oh-dsh/desktop':
         specifier: github:hust-open-atom-club/oh-dsh
-        version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/d19353a3ecb4faabaf63bedd27a2dd0e6abd3b80
+        version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa
       '@shengsheng/dsh-taskboard':
         specifier: github:shengsheng90/DSH-taskboard
-        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/3528286122bbb3081b3e5ed64669957f6249f2cf(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)(@deepseek-ai/schemastery@3.18.5)
       '@zseven-w/dsh-ios':
         specifier: github:ZSeven-W/dsh-ios
-        version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c
+        version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c
+      dsh-api-relay-audit:
+        specifier: github:toby-bridges/api-relay-audit
+        version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59
       dsh-bili-scroll:
         specifier: github:c1overzz/dsh-bili-scroll
-        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/4af98392ee078e02f50a7fd0bf0491033f4675ed
+        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a
       dsh-mnemon:
         specifier: github:omdsh-dev/dsh-mnemon
-        version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/82e586d9cc9592a9c972c7f555d40505d1517bff
+        version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)
       dsh-skill-viewer:
         specifier: github:Fishquito7/dsh-skill-viewer
-        version: dsh-skill-mcp-panel@git+https://github.com/Fishquito7/dsh-skill-viewer.git#5fa5d87c68ad34337e073f82dc50767ed690eb27
+        version: dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-viewer/tar.gz/83adb6cd68827b84ceb44b6ed698013c73041af1
       easyeda-agent-dsh:
         specifier: github:zhoushoujianwork/easyeda-agent
-        version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7cde1ae1769d3e8c50fd9ada43f9bcc166d69d70
+        version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7a73a6834d8d76fd9765dd06f9d4e4bdd6b0556a
       whale-girl:
         specifier: github:vlln/whale-girl
         version: https://codeload.github.com/vlln/whale-girl/tar.gz/4fe5792c6f873c6b3a29dd12198ba47a397e17f3
@@ -41,26 +44,18 @@ packages:
   '@deepseek-ai/cosmokit@1.8.6':
     resolution: {integrity: sha512-ZSD/fN52L498LBIOYwjIOlaLv5veY6ZEwI2yzvZUKQtctn0QAPqu8tKdJ+OF5+Tv6NBq1U+wJWH+QI6OGy5EvQ==}
 
-  '@deepseek-ai/dsh-home-paths@0.1.0-rc.7':
-    resolution: {integrity: sha512-9Bu0eAbPw/FfCNpiX9hvyP5wedMUUQBc2sVTtU+xtH27/iUPxXoamFtBt3ydBJUeuVhja/leuhJ/d3MRhXO9fQ==}
+  '@deepseek-ai/dsh-brand@0.2.1-rc.4':
+    resolution: {integrity: sha512-j/NLVa6lfUMym+5mEVrCisRqSQG6IsRlaYV9VuDKJawJ9+697F/BaZztPkuHd9iY/6SVa3PvIq7zhyoOBTaPEA==}
     peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.7
+      '@deepseek-ai/cordis': ~4.0.5
 
-  '@deepseek-ai/dsh-subprocess@0.1.0-rc.7':
-    resolution: {integrity: sha512-xiHD61S2trIZ0CzhSMgXxZJVyJ2c76DkX4eqP3Of4mBEnm6C7g7FChII6uL0z5v1bnOnTmpHzwPX8YCwqb7dbg==}
+  '@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4':
+    resolution: {integrity: sha512-JYsPbakzRF/SpqEQsZpzgJ8peM4EI3nipfO/W1wMdLVZ9HCTtLogqW8Y6LH9Jp7sHnYNMECOpGW/tCQSW8UoSQ==}
     peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.7
+      '@deepseek-ai/cordis': ~4.0.5
 
-  '@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6':
-    resolution: {integrity: sha512-weWzN8r01YCkoDCAM7BsKw2YhRrD4zL8N2SAZu9hovYtXSq8xHXsP4Zh8RLYIlYcuotjyff/6hic+0TJPd14YA==}
-    peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.6
-
-  '@deepseek-ai/node-addon-landlock-run-linux-x64@0.1.1':
-    resolution: {integrity: sha512-OHAzPW2Coe/iYobAJAAA8CeVrBoKV4BnNHsgwvXwOfishxkUVSWSvdyxrZPiwYRXutpIGVrSo9zV3WOQy2euBA==}
+  '@deepseek-ai/node-addon-system-linux-x64@0.1.2':
+    resolution: {integrity: sha512-S2aPVHvYCpNCppCFyNlooMYuTB7ucK5lvD9oXQQ42v5Z2s5AoaiCdjz9r2l+ED2rI5oS1x0cUZmKjJH2dxV0pg==}
     engines: {node: '>=20'}
     cpu: [x64]
     os: [linux]
@@ -68,14 +63,17 @@ packages:
   '@deepseek-ai/schemastery@3.18.5':
     resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
-  '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67}
+  '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/0d73a4e03639d4f63d0771ae4490e2718b7e7aa0':
+    resolution: {gitHosted: true, integrity: sha512-WTTmASPPZVgdUyLgxA1JVSbg5kx8+A2VcpEltaYPqrQl2vv6CJpVRFTpG+eWvg6VHkFJNndcsiEFG78RejDMJw==, tarball: https://codeload.github.com/titanwings/dsh-automation/tar.gz/0d73a4e03639d4f63d0771ae4490e2718b7e7aa0}
     version: 0.1.7
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       react: ^18.2.0
+      react-dom: ^18.2.0
     peerDependenciesMeta:
       react:
+        optional: true
+      react-dom:
         optional: true
 
   '@hono/node-server@2.1.1':
@@ -89,67 +87,98 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       '@cfworker/json-schema': ^4.1.1
+      zod: ^3.25 || ^4.0
     peerDependenciesMeta:
       '@cfworker/json-schema':
         optional: true
 
-  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/d19353a3ecb4faabaf63bedd27a2dd0e6abd3b80':
-    resolution: {gitHosted: true, integrity: sha512-ay1XaC+AsdJcBjpbG04B31FBw3BIZ7fZ/rkn6dRpdFmn9W0eiapL5GjhcFfaCxf9s+1zwt1x37DXvObDi2BZ3w==, tarball: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/d19353a3ecb4faabaf63bedd27a2dd0e6abd3b80}
-    version: 0.1.11
+  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa':
+    resolution: {gitHosted: true, integrity: sha512-R3fSfJei4LAkxs/7qF8Si2wN3icKxwF7Zp05Q7o+HR24NXg4JJvPrQeeCzaotsAOIBcH9LRoGNI/PJRPhFXOfg==, tarball: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa}
+    version: 0.2.0
     engines: {node: '>=24'}
     hasBin: true
 
-  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/3528286122bbb3081b3e5ed64669957f6249f2cf':
-    resolution: {gitHosted: true, integrity: sha512-xDFw1yJBBqURNvHqjjZqCzY9a99M/oKg1o88hC4SRG3KC8sJk1Pl6nf0zykUl9cj77sVNau0rpEK4iS32oNzvA==, tarball: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/3528286122bbb3081b3e5ed64669957f6249f2cf}
-    version: 0.1.4
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8':
+    resolution: {gitHosted: true, integrity: sha512-pm8bK1yCa1ouPYuChjOeh2Jk6cznt8atjjqComeEKsxEIFNDqIO4zu2Irz8m0D2NQvYPr3QdoqQkitfTPd8FwA==, tarball: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8}
+    version: 0.1.10
     engines: {node: ^22.19.0 || >=24.0.0}
     hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.2
-      '@deepseek-ai/dsh-agent': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-agent-presets': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-api-remotes': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-api-session-controller': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-api-workspace-controller': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-connection': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-locale': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-conversation': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-layout': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-sidebar': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-slots': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-workspace': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-goal': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-host-webserver': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-llm': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-session': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-tools': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-typert-protocol': 0.1.2-alpha.2
-      '@deepseek-ai/dsh-workspace': 0.1.2-alpha.2
+      '@deepseek-ai/dsh-agent': '*'
+      '@deepseek-ai/dsh-agent-presets': '*'
+      '@deepseek-ai/dsh-api-remotes': '*'
+      '@deepseek-ai/dsh-api-session-controller': '*'
+      '@deepseek-ai/dsh-api-workspace-controller': '*'
+      '@deepseek-ai/dsh-client-connection': '*'
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-ui-conversation': '*'
+      '@deepseek-ai/dsh-client-ui-layout': '*'
+      '@deepseek-ai/dsh-client-ui-sidebar': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-client-ui-workspace': '*'
+      '@deepseek-ai/dsh-goal': '*'
+      '@deepseek-ai/dsh-host-webserver': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-session': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      '@deepseek-ai/dsh-workspace': '*'
       '@deepseek-ai/schemastery': ^3.18.2
       react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-agent-presets':
+        optional: true
+      '@deepseek-ai/dsh-api-remotes':
+        optional: true
+      '@deepseek-ai/dsh-api-session-controller':
+        optional: true
+      '@deepseek-ai/dsh-api-workspace-controller':
+        optional: true
+      '@deepseek-ai/dsh-client-connection':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-layout':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-sidebar':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-workspace':
+        optional: true
+      '@deepseek-ai/dsh-goal':
+        optional: true
+      '@deepseek-ai/dsh-host-webserver':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-session':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      '@deepseek-ai/dsh-workspace':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+      react:
+        optional: true
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c':
-    resolution: {gitHosted: true, integrity: sha512-wD69QZHNKiDPv4VJKvg5Qqgpwq1Jo965D84nofntkiVlnXdDaIUuGzZ5OTNhcfKCdx4VngZ8FQ2y0jHMJ9iQoA==, tarball: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c}
-    version: 0.1.0-rc.5
+  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c':
+    resolution: {gitHosted: true, integrity: sha512-3RlNwYzVnO71ptOCu86KjDK18pZhPavrX/WF5jU1uvSKI/Ep8bMDpcxAdeCy6+PJ8YUhiAwSrgefU79nNrSn8w==, tarball: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c}
+    version: 0.1.0-rc.10
     engines: {node: '>=24.11.0'}
-    peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-fs': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-sandbox-policy': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
-      react: ^18.2.0
-      react-dom: ^18.2.0
 
   accepts@2.0.0:
     resolution: {integrity: sha512-5cvg6CtKwfgdmVqY1WIiXKc3Q1bkRqGLi+2W/6ao+6Y7gu/RCwRuAhGEzh5B4KlszSuTLgZYuqFqo5bImjNKng==}
@@ -157,6 +186,11 @@ packages:
 
   ajv-formats@3.0.1:
     resolution: {integrity: sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==}
+    peerDependencies:
+      ajv: ^8.0.0
+    peerDependenciesMeta:
+      ajv:
+        optional: true
 
   ajv@8.20.0:
     resolution: {integrity: sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==}
@@ -232,9 +266,21 @@ packages:
     resolution: {integrity: sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==}
     engines: {node: '>= 0.8'}
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/4af98392ee078e02f50a7fd0bf0491033f4675ed:
-    resolution: {gitHosted: true, integrity: sha512-8qcexBxmNL+WMAHJ55qacHA3obZ06JhxZHZ/U4IMfRdIUWAItfmB13bt/HzjkYes+0PQBQQNjKuroifg6MpGwg==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/4af98392ee078e02f50a7fd0bf0491033f4675ed}
-    version: 2.2.2
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59:
+    resolution: {gitHosted: true, integrity: sha512-U94NbchvcrU90Cb+v5iR8/sKAB6XFL/8rxvtoNnj+ys13s5ZZhZYK0iLVGIPf9i/W5bvsv8Sz2maViApFt23pg==, tarball: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59}
+    version: 2.5.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-commands': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-llm': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-settings': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-subprocess': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a:
+    resolution: {gitHosted: true, integrity: sha512-Y/8+v9JnAe7cG/TZoJminf/4EhGO8qMuvCSmfwAYPV/FlpjPqsrC59RNmm9DJGK9tfcIH5YBjUPCuGGWdPLNcg==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a}
+    version: 2.3.1
     engines: {dsh: '>=0.1.7-rc.1', node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
@@ -245,26 +291,198 @@ packages:
       '@deepseek-ai/schemastery':
         optional: true
 
-  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/82e586d9cc9592a9c972c7f555d40505d1517bff:
-    resolution: {gitHosted: true, integrity: sha512-BOUAMAD38qulVf9MXA75QbNJ9zlSuGmk/qb77l61ZIvw1+RG4+nSTgUX3PSiLjhS3Vg2a54COi4d70ZN0tGzOQ==, tarball: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/82e586d9cc9592a9c972c7f555d40505d1517bff}
-    version: 0.3.5
+  dsh-mnemon-provider-byterover@0.5.5:
+    resolution: {integrity: sha512-7JOmLOuL+fys+soebYmb6GYtvD9Xj4RL0xf1l8svUL2LKlNpTz68YikdJJBU+EUD292mGcxjX1VLbHGC/FDwiw==}
+    version: 0.5.5
     engines: {node: '>=20'}
     peerDependencies:
-      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6 || ^0.1.1-rc.1 || ^0.1.2-alpha.1
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-hindsight@0.5.7:
+    resolution: {integrity: sha512-sOEThpl56k6DuqSvOrma9ZFMAFmfll/XuUOLZkJ/4nB4M5z/fYvKMTMAmJ2PXUhWPO3KEnOj5m+V5axmrZefbg==}
+    version: 0.5.7
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-holographic@0.5.7:
+    resolution: {integrity: sha512-WFzAILBve6zhG1+ZFOxHBNRacMdKyeh3VebfARhQglKRqXYiw4JQAFEFaPwqYx7dZfL6XYySQN/EiLF0idMn9Q==}
+    version: 0.5.7
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-honcho@0.5.5:
+    resolution: {integrity: sha512-TKtpODsQ6MeLZ1zCgca37s656u9q89M1SimTqSvT6/GCRiqi9A0mAbqAj1uzAMcbTuHOYAr3hFSAQYo55TbcXQ==}
+    version: 0.5.5
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-mem0@0.5.5:
+    resolution: {integrity: sha512-rxCSNx/TTMeaj7BjneMYtQOUjzNFiYB/7rFPZitBzQGdJmzVrm1KVDPZplXvHZaZ2XdQ86yfT1R+Le7NLjvrsQ==}
+    version: 0.5.5
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-mnemon-native@0.5.10:
+    resolution: {integrity: sha512-5UXVMlgcOPGuhl4SOFY6GoG2a1Wq6m644wlvvM9dOXMv78AGchLD3bTotmCn4eu99r1nUWgEcJqzTtdeEpUJZg==}
+    version: 0.5.10
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-openviking@0.5.10:
+    resolution: {integrity: sha512-S/e/zdEOHvHcuY7yrQuvAX2OKRXVRLqg+2CJU0ZM0EHT1G6/uscO8PsCbwXAjTcTvCO8fzkzbnC0TmkPXxIObg==}
+    version: 0.5.10
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-retaindb@0.5.6:
+    resolution: {integrity: sha512-NyvMiF3G+WEmEYFyWrI7FhWdQAGYQnPWzLY2/K42ip5eV9ycVvMkeA6igowwvPbvVWuN7zdCFOGPHg+iNYT3Bw==}
+    version: 0.5.6
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-supermemory@0.5.5:
+    resolution: {integrity: sha512-IvBpeRV1Gl/gACasyQZ9UmdsJhEoO3frzi2+SrOBqDuMqfus4kgdcadBMFcZJzrtq65h30arIRcSIIB3ZZda+w==}
+    version: 0.5.5
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-source-documents@0.5.11:
+    resolution: {integrity: sha512-UmlgqSLzRgVF4AmvjIqTqlmM/j1t5goW8I9Sk8tAnHY6NnojuxwWHwK2k2QpCWFak/LKs9owCwiNhRJd9oVLYQ==}
+    version: 0.5.11
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.19
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-source-memory-spaces@0.5.24:
+    resolution: {integrity: sha512-PNjCF3NF/l5SxCkXglM0R01Cxm18B08+Xr5AYh+8kVlzgFb6I6HnfbBD6X578qxUIgA0ZF1M8jbyS/orktKBfw==}
+    version: 0.5.24
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.19
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-source-runtime@0.5.16:
+    resolution: {integrity: sha512-X5yukZ0fwhZU4yUOyZaJoT4roAFy+azGg6VwDW4tgN/EvAPASbydo0O1876A+m8Hdt6EGIhGOyIgRUsCYEq4/A==}
+    version: 0.5.16
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.19
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-source-skills@0.5.4:
+    resolution: {integrity: sha512-K+m2+J3uuQJBHIXyeIUC+usYt+U8CniaCdQYalBi2VjEsK1GriJO/vHeu68Y63v0Sxl4YMkbWdriQKLbf5/0Ow==}
+    version: 0.5.4
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.37
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-strategy-auto-capture@0.5.5:
+    resolution: {integrity: sha512-jSCjednHJmDatWavhhDly8dnoNuclImx2H0U0EB8OgMw00xXXL/nWOHQLxKabOJnEykaDdl2EX7rTBX5xTuOJw==}
+    version: 0.5.5
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.17
+
+  dsh-mnemon-strategy-default-three-tier@0.5.11:
+    resolution: {integrity: sha512-0Bcbq4skgkjTiOjuLaqOUb7KoPF1aF0qKUSM9ky2f0VHUbJfFlSRGXZW2/VpXnmOkLJ+xWENUTPxQHWrYgv8WQ==}
+    version: 0.5.11
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.17
+
+  dsh-mnemon-strategy-general@0.5.1:
+    resolution: {integrity: sha512-UzJWKRPyMwVCcVKYuWI5DjDjGvq3cBA24xl2zGhSvAXY32E8KiiYVleAvle4XIhmAfRbjCcZNCFpQGKZTXuz7g==}
+    version: 0.5.1
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.17
+
+  dsh-mnemon-strategy-light-context@0.5.6:
+    resolution: {integrity: sha512-rpuIqIiFQpWQEveQehLaO3b1wX1NeAEMUKChZ8NFa4+RwcPAX47t081VgRAWNnw4NgclenAenp9mTAQXOzmmxA==}
+    version: 0.5.6
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.17
+
+  dsh-mnemon-strategy-scoped@0.5.5:
+    resolution: {integrity: sha512-HyJRpv4s8DzE9GZm7FnKUhxtwjv0eD9xcsYt5zQUbX1pH0e7jtkqaeozPfPgp0DHvjmv2nOaKOxDLzaw3B01qg==}
+    version: 0.5.5
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.17
+
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6:
+    resolution: {gitHosted: true, integrity: sha512-jESVEbDtO7CMRGqJUB+pxeJVz3PqNWba9DrBbq7Brxnazofetp0EuCNU8nm4OgYJMCW8eY7KWPTEdRbDsz8YIQ==, tarball: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6}
+    version: 0.5.37
+    engines: {dsh: '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0', node: '>=20'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.4
+      '@deepseek-ai/dsh-app-boot': '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-typert-protocol': '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0'
       react: ^18.2.0
       react-dom: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-app-boot':
+        optional: true
 
-  dsh-skill-mcp-panel@git+https://github.com/Fishquito7/dsh-skill-viewer.git#5fa5d87c68ad34337e073f82dc50767ed690eb27:
-    resolution: {commit: 5fa5d87c68ad34337e073f82dc50767ed690eb27, repo: https://github.com/Fishquito7/dsh-skill-viewer.git, type: git}
-    version: 2.0.1
+  dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-viewer/tar.gz/83adb6cd68827b84ceb44b6ed698013c73041af1:
+    resolution: {gitHosted: true, integrity: sha512-/E8C1uyVe8blFvucCgByBojLvt2amgNm/0BhVQ0cIvnDteISs3Mq19nhTQHojCA/HMLAuyHebSM2vOAgTzX3Vw==, tarball: https://codeload.github.com/Fishquito7/dsh-skill-viewer/tar.gz/83adb6cd68827b84ceb44b6ed698013c73041af1}
+    version: 2.3.5
     hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh': '>=0.2.0-rc.1 <0.3.0-0'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh':
+        optional: true
 
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7cde1ae1769d3e8c50fd9ada43f9bcc166d69d70:
-    resolution: {gitHosted: true, integrity: sha512-WPa+wCMctaYFIQAWv2Ud6ajB4C+sM4DcZYnQYfYVPHsn4WJAVPpSRWJkj9PuIvzGKGSBZ0jbAQM9aUaiGKfJ3Q==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7cde1ae1769d3e8c50fd9ada43f9bcc166d69d70}
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7a73a6834d8d76fd9765dd06f9d4e4bdd6b0556a:
+    resolution: {gitHosted: true, integrity: sha512-yd3/64tQhTQDZjTZFwcwfDaW5WkU1OA+qw+KB675JpH169vrpWpAjD6ErLq4NpCvZs0fzlJlPqSiifpvXf6sRg==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7a73a6834d8d76fd9765dd06f9d4e4bdd6b0556a}
     version: 1.13.1
     engines: {node: '>=20.17.0'}
 
@@ -658,13 +876,14 @@ snapshots:
 
   '@deepseek-ai/cosmokit@1.8.6': {}
 
-  '@deepseek-ai/dsh-home-paths@0.1.0-rc.7': {}
+  '@deepseek-ai/dsh-brand@0.2.1-rc.4': {}
 
-  '@deepseek-ai/dsh-subprocess@0.1.0-rc.7': {}
+  '@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4':
+    dependencies:
+      '@deepseek-ai/dsh-brand': 0.2.1-rc.4
+      zod: 4.4.3
 
-  '@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6': {}
-
-  '@deepseek-ai/node-addon-landlock-run-linux-x64@0.1.1':
+  '@deepseek-ai/node-addon-system-linux-x64@0.1.2':
     optional: true
 
   '@deepseek-ai/schemastery@3.18.5':
@@ -672,7 +891,7 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
-  '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/5ae28f209c0253461131613fc1b2ea27920bec67':
+  '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/0d73a4e03639d4f63d0771ae4490e2718b7e7aa0':
     dependencies:
       luxon: 3.7.2
       zod: 4.4.3
@@ -703,28 +922,32 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/d19353a3ecb4faabaf63bedd27a2dd0e6abd3b80':
+  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa':
     dependencies:
       electron-updater: 6.8.9
       semver: 7.7.4
     optionalDependencies:
-      '@deepseek-ai/node-addon-landlock-run-linux-x64': 0.1.1
+      '@deepseek-ai/node-addon-system-linux-x64': 0.1.2
     transitivePeerDependencies:
       - supports-color
 
-  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/3528286122bbb3081b3e5ed64669957f6249f2cf(@deepseek-ai/schemastery@3.18.5)':
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.5
       zod: 4.4.3
+    optionalDependencies:
+      '@deepseek-ai/dsh-typert-protocol': 0.2.1-rc.4
+      '@deepseek-ai/schemastery': 3.18.5
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c':
+  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c':
     dependencies:
       serve-sim: 0.1.46
     transitivePeerDependencies:
       - '@types/react'
       - bufferutil
+      - react
+      - react-dom
       - typescript
       - utf-8-validate
 
@@ -812,22 +1035,120 @@ snapshots:
 
   depd@2.0.0: {}
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/4af98392ee078e02f50a7fd0bf0491033f4675ed:
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59: {}
+
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
-  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/82e586d9cc9592a9c972c7f555d40505d1517bff:
+  dsh-mnemon-provider-byterover@0.5.5(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))):
     dependencies:
-      fflate: 0.8.3
+      dsh-mnemon-source-memory-spaces: 0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+
+  dsh-mnemon-provider-hindsight@0.5.7(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+
+  dsh-mnemon-provider-holographic@0.5.7(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+
+  dsh-mnemon-provider-honcho@0.5.5(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+
+  dsh-mnemon-provider-mem0@0.5.5(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+
+  dsh-mnemon-provider-mnemon-native@0.5.10(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+
+  dsh-mnemon-provider-openviking@0.5.10(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+
+  dsh-mnemon-provider-retaindb@0.5.6(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+
+  dsh-mnemon-provider-supermemory@0.5.5(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+
+  dsh-mnemon-source-documents@0.5.11(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)
       markdown-to-jsx: 7.7.17
-      schemastery: 3.18.0
+
+  dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)
+
+  dsh-mnemon-source-runtime@0.5.16(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)
+
+  dsh-mnemon-source-skills@0.5.4(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)):
+    dependencies:
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)
+      markdown-to-jsx: 7.7.17
+      yaml: 2.9.0
+
+  dsh-mnemon-strategy-auto-capture@0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)):
+    dependencies:
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)
+
+  dsh-mnemon-strategy-default-three-tier@0.5.11(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)):
+    dependencies:
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)
+
+  dsh-mnemon-strategy-general@0.5.1(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)):
+    dependencies:
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)
+
+  dsh-mnemon-strategy-light-context@0.5.6(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)):
+    dependencies:
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)
+
+  dsh-mnemon-strategy-scoped@0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)):
+    dependencies:
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)
+
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4):
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.6
+      '@deepseek-ai/dsh-typert-protocol': 0.2.1-rc.4
+      '@deepseek-ai/schemastery': 3.18.5
+      dsh-mnemon-provider-byterover: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)))
+      dsh-mnemon-provider-hindsight: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)))
+      dsh-mnemon-provider-holographic: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)))
+      dsh-mnemon-provider-honcho: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)))
+      dsh-mnemon-provider-mem0: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)))
+      dsh-mnemon-provider-mnemon-native: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)))
+      dsh-mnemon-provider-openviking: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)))
+      dsh-mnemon-provider-retaindb: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)))
+      dsh-mnemon-provider-supermemory: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4)))
+      dsh-mnemon-source-documents: 0.5.11(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+      dsh-mnemon-source-memory-spaces: 0.5.24(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+      dsh-mnemon-source-runtime: 0.5.16(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+      dsh-mnemon-source-skills: 0.5.4(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+      dsh-mnemon-strategy-auto-capture: 0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+      dsh-mnemon-strategy-default-three-tier: 0.5.11(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+      dsh-mnemon-strategy-general: 0.5.1(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+      dsh-mnemon-strategy-light-context: 0.5.6(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+      dsh-mnemon-strategy-scoped: 0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.4))
+      fflate: 0.8.3
+      yaml: 2.9.0
       zod: 4.4.3
 
-  dsh-skill-mcp-panel@git+https://github.com/Fishquito7/dsh-skill-viewer.git#5fa5d87c68ad34337e073f82dc50767ed690eb27:
+  dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-viewer/tar.gz/83adb6cd68827b84ceb44b6ed698013c73041af1:
     dependencies:
-      '@deepseek-ai/dsh-home-paths': 0.1.0-rc.7
-      '@deepseek-ai/dsh-subprocess': 0.1.0-rc.7
-      '@deepseek-ai/dsh-typert-protocol': 0.1.0-rc.6
+      '@deepseek-ai/dsh-typert-protocol': 0.2.1-rc.4
       '@modelcontextprotocol/sdk': 1.30.0
       chokidar: 5.0.0
       fflate: 0.8.3
@@ -835,8 +1156,6 @@ snapshots:
       zod: 4.4.3
     transitivePeerDependencies:
       - '@cfworker/json-schema'
-      - '@deepseek-ai/cordis'
-      - '@deepseek-ai/dsh-invariants'
       - supports-color
 
   dunder-proto@1.0.1:
@@ -845,7 +1164,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7cde1ae1769d3e8c50fd9ada43f9bcc166d69d70:
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7a73a6834d8d76fd9765dd06f9d4e4bdd6b0556a:
     dependencies:
       '@modelcontextprotocol/sdk': 1.30.0
     transitivePeerDependencies:

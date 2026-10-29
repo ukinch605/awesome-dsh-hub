@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@anysearch/anysearch-dsh':
+        specifier: github:anysearch-team/anysearch-dsh
+        version: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03
       '@dsh-external/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
         version: '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344(@deepseek-ai/schemastery@3.18.5)'
@@ -16,10 +19,10 @@ importers:
         version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344(@deepseek-ai/schemastery@3.18.5)
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
-        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/ccdf958db8259b9bcd40dce9de9d9530bb747f0b
+        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/eafed896c270a2952e4b5247f2a4ac25bcdaa599
       dsh-free-search:
         specifier: github:DDDMUC/dsh-free-search
-        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/70e534a2eb9b9f73b379d46e975ed469be9b3a6d
+        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/7bd37aaf472bcd9768a02e6b8cf50e402f4ac0fb
       dsh-tokenledger:
         specifier: github:zh667/TokenLedger
         version: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b(@deepseek-ai/schemastery@3.18.5)
@@ -35,21 +38,20 @@ importers:
 
 packages:
 
+  '@anysearch/anysearch-dsh@https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03':
+    resolution: {gitHosted: true, integrity: sha512-lfcd+JP9iuNJ80RYIMi33yEYiRFwc+/H4FKe5LQKd/SoYAvE0MOPgh0vQUVYwVxLdEtn3lmc0k8cjEGUMfAZ6g==, tarball: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03}
+    version: 0.1.8
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.1-rc.1 <5 || 4.0.5-alpha.1'
+      '@deepseek-ai/dsh-credentials': '*'
+      '@deepseek-ai/dsh-system-prompt': '*'
+      '@deepseek-ai/dsh-tool-web': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-web': '*'
+
   '@deepseek-ai/cosmokit@1.8.6':
     resolution: {integrity: sha512-ZSD/fN52L498LBIOYwjIOlaLv5veY6ZEwI2yzvZUKQtctn0QAPqu8tKdJ+OF5+Tv6NBq1U+wJWH+QI6OGy5EvQ==}
-
-  '@deepseek-ai/dsh-credentials@0.1.0-rc.8':
-    resolution: {integrity: sha512-VopOhtUEa/fSmJr3fyKbsEG043kX1oGuBrmELAbkhmuDigl1cN88g0VPb9rMG2/dJ1h08wg+h0RJP+Ex4LjRWw==}
-    peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-brand': ^0.1.0-rc.8
-      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.8
-
-  '@deepseek-ai/dsh-home-paths@0.1.0-rc.8':
-    resolution: {integrity: sha512-9cQhH9CZsw7Zi73VnZk7CcuEVA6yR/Ox+7lp3VHq53fFYSPi0RL+kMWmh5XCrZB4U1OM3+PVsWsA5II9tB+t0Q==}
-    peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.8
 
   '@deepseek-ai/schemastery@3.18.5':
     resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
@@ -74,15 +76,24 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/ccdf958db8259b9bcd40dce9de9d9530bb747f0b:
-    resolution: {gitHosted: true, integrity: sha512-1mQRIbRYHDG9E/vJWawMNRLnFGWl8H+XGNdCq3aNNTMS33Kmg5dhLsjHrp6O7x329L/KBajKYfAvLQztBzz24g==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/ccdf958db8259b9bcd40dce9de9d9530bb747f0b}
-    version: 1.7.12
-    engines: {node: '>=20'}
-    os: [darwin, linux, win32]
+  acorn@8.15.0:
+    resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
 
-  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/70e534a2eb9b9f73b379d46e975ed469be9b3a6d:
-    resolution: {gitHosted: true, integrity: sha512-0oKbCG12UEDepBtnj6JxACEt+i6NMPEvVxhpRKONxd5sEBCaDQKfDKwzeAZ+Bx2zou6heR/wVXYUrVXIg5DSfw==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/70e534a2eb9b9f73b379d46e975ed469be9b3a6d}
-    version: 0.9.13
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/eafed896c270a2952e4b5247f2a4ac25bcdaa599:
+    resolution: {gitHosted: true, integrity: sha512-1Dbu343e4KuDoLe1p/8fNekZSHEtdO2gSoi8mpkhX6W3OVER+VGVF2s9MSuH7wfL2/umb61iBawWHWbIwH/kQw==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/eafed896c270a2952e4b5247f2a4ac25bcdaa599}
+    version: 1.9.46
+    engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: '>=20'}
+    os: [darwin, linux, win32]
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/dsh-credentials': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0'
+      '@deepseek-ai/dsh-home-paths': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0'
+
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/7bd37aaf472bcd9768a02e6b8cf50e402f4ac0fb:
+    resolution: {gitHosted: true, integrity: sha512-72yBMTPBvyBvtnsmAG91LgO8XqmzQKii/y9v6PELIkWNnicHaehvr7NR/6J0m5/UIlgRzPhs2+RhK8TPSnBqgw==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/7bd37aaf472bcd9768a02e6b8cf50e402f4ac0fb}
+    version: 0.9.19
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -148,16 +159,16 @@ packages:
     version: 1.2.1
     engines: {node: '>=20'}
 
-  zod@4.5.1:
-    resolution: {integrity: sha512-P3GqeAEOEDqKvafVGLezbg+39YW/ze4xrD4qdS0adOY8eoI3zfjv1PQM4UwQzgT8mZKXEbqtVt8K+ZKGqkMFKg==}
+  zod@4.6.6:
+    resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
 
 snapshots:
 
+  '@anysearch/anysearch-dsh@https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+
   '@deepseek-ai/cosmokit@1.8.6': {}
-
-  '@deepseek-ai/dsh-credentials@0.1.0-rc.8': {}
-
-  '@deepseek-ai/dsh-home-paths@0.1.0-rc.8': {}
 
   '@deepseek-ai/schemastery@3.18.5':
     dependencies:
@@ -172,17 +183,14 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/ccdf958db8259b9bcd40dce9de9d9530bb747f0b:
-    dependencies:
-      '@deepseek-ai/dsh-credentials': 0.1.0-rc.8
-      '@deepseek-ai/dsh-home-paths': 0.1.0-rc.8
-      zod: 4.5.1
-    transitivePeerDependencies:
-      - '@deepseek-ai/cordis'
-      - '@deepseek-ai/dsh-brand'
-      - '@deepseek-ai/dsh-invariants'
+  acorn@8.15.0: {}
 
-  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/70e534a2eb9b9f73b379d46e975ed469be9b3a6d:
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/eafed896c270a2952e4b5247f2a4ac25bcdaa599:
+    dependencies:
+      acorn: 8.15.0
+      zod: 4.6.6
+
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/7bd37aaf472bcd9768a02e6b8cf50e402f4ac0fb:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -198,4 +206,4 @@ snapshots:
 
   open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025: {}
 
-  zod@4.5.1: {}
+  zod@4.6.6: {}

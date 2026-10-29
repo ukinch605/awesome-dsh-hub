@@ -10,10 +10,13 @@ importers:
     dependencies:
       '@anionex/dsh-turn-rewind':
         specifier: github:Anionex/dsh-turn-rewind
-        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/d3734cb183a5d2483600e8caec3ece04c28c8f45
+        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/737d716c5f693f96eb2adc3e9a79f4e55cda8735(@deepseek-ai/schemastery@3.18.5)
+      '@dhicoc/dsh-reverse-skill':
+        specifier: github:dhicoc/dsh-reverse-skill
+        version: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/f1b61cf3deec370198ae81a23b8512338002d073
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
-        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/fdae3e964c6cdb7760970488c2841488a9ffcba8
+        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.8.6)(@deepseek-ai/schemastery@3.18.5)
       '@zseven-w/dsh-crew':
         specifier: github:ZSeven-W/dsh-crew
         version: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/b0ddd92eeccbd7623c5a5924f0eb61005a2038ec(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -28,13 +31,13 @@ importers:
         version: https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/f1072cafc3b65d0d63e7668118485348d79843f4(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
       dsh-dream-skin:
         specifier: github:RevolutionLA/dsh-dream-skin
-        version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/19605d265444022fa4107f45943a745cfe1986d1(react@18.3.1)
+        version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cc506287ac096e366b155c26fdd5767d6a53bd98(react@18.3.1)
       dsh-milestone:
         specifier: github:SnowCrescenter-tech/dsh-milestone
         version: https://codeload.github.com/SnowCrescenter-tech/dsh-milestone/tar.gz/3bdd8d1327f30b64a1119aeb62c752ef1e12c713(react@18.3.1)
       dsh-reasoning-effort:
         specifier: github:HanaAyane/dsh-reasoning-effort
-        version: '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560(react@18.3.1)'
+        version: '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16(react@18.3.1)'
       dsh-recall-unread:
         specifier: github:hg1048596-pixel/dsh-recall-unread
         version: https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72
@@ -50,16 +53,21 @@ importers:
 
 packages:
 
-  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/d3734cb183a5d2483600e8caec3ece04c28c8f45':
-    resolution: {gitHosted: true, integrity: sha512-4zcCLyQpduSko8+oEzHCuw4jqxXBDMaz2zyZUZEzsoWydnqcIJcO+5pkzK5SGH/TIOUn1uXuSPEFoXv3Yuhovg==, tarball: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/d3734cb183a5d2483600e8caec3ece04c28c8f45}
-    version: 0.1.2
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/737d716c5f693f96eb2adc3e9a79f4e55cda8735':
+    resolution: {gitHosted: true, integrity: sha512-bS/Yzm3YexNpjFV8WK0rOC/yWWXcHiVkbcPaEQoY9Vrc/Q1zyOKdKUQLR/92TJLkdpqbd3Nwkqn+Cjbd8+ubOg==, tarball: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/737d716c5f693f96eb2adc3e9a79f4e55cda8735}
+    version: 0.3.11
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-settings': 0.2.1-rc.3 || >=0.1.0-rc.8 <0.2.0 || ^0.1.1-rc.1 || ^0.1.2-alpha.1 || ^0.1.5-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2
+      '@deepseek-ai/schemastery': ^3.18.1
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-settings':
+        optional: true
 
-  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560':
-    resolution: {gitHosted: true, integrity: sha512-ExvX+Mxltx9/UHcX0BkgLsOpZrWtE3g3ZTiD62fEY2JfTrn1FqcYlZgPVtxrG+eKP2hig6a6EYphcEIt+6DDlg==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560}
-    version: 0.9.0
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16':
+    resolution: {gitHosted: true, integrity: sha512-qwbNxjEg3zu3q8W5esZWJZOQs4GlGhkZDSvuNvvyhCd7x+uZ7VGL4z7IqJpzm5Cj5f9ZW+57Is4RATHeiDqSeQ==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16}
+    version: 0.9.1
     engines: {dsh: '>=0.2.1-rc.2 <0.3.0', node: '>=22.19'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.5
@@ -127,12 +135,24 @@ packages:
   '@deepseek-ai/schemastery@3.18.5':
     resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
-  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/fdae3e964c6cdb7760970488c2841488a9ffcba8':
-    resolution: {gitHosted: true, integrity: sha512-HNNBm0syEaNHXFEklqYY9cKsjXFAU9RMQCMjRPV5KP+/QHjzz55l9uy98VSCaQCHL3JR2KiqoeNNzBvDkiHsjA==, tarball: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/fdae3e964c6cdb7760970488c2841488a9ffcba8}
-    version: 1.1.1
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/f1b61cf3deec370198ae81a23b8512338002d073':
+    resolution: {gitHosted: true, integrity: sha512-pBqyqhK6kqE13ojFvGBZ/LdD2mCQ9FuCWd5LvkwUI/TlpzJMyagB6/tEvEJ0dGsW1krqFcn97FnBxELnZDgDnQ==, tarball: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/f1b61cf3deec370198ae81a23b8512338002d073}
+    version: 1.2.0
+    engines: {node: '>=20.0.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.4
+      '@deepseek-ai/dsh-skill': ^0.2.0-rc.2
+
+  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562':
+    resolution: {gitHosted: true, integrity: sha512-VXJVrs5ogeLv1Inl5/GhreTZZnPrW4dl/Cnzs1MzGe2zN72PPByeC/Wgnwz8IR2vaO8xiuSkhk/CCtCn9ZAy8A==, tarball: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562}
+    version: 1.1.2
     engines: {node: '>=22'}
     peerDependencies:
-      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6 || ^0.1.1-rc.0
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/cosmokit': ^1.8.4
+      '@deepseek-ai/dsh-mcp-client': ^0.1.0-rc.6 || ^0.2.0-rc.0 || ^0.2.1-rc.0
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6 || ^0.1.1-rc.0 || ^0.2.0-rc.0 || ^0.2.1-rc.0
+      '@deepseek-ai/schemastery': ^3.18.0
 
   '@hono/node-server@2.1.1':
     resolution: {integrity: sha512-ELuehkj5VCBdgEw9zs+ivkKwyzzUCSQuE96YmiPvn1ECBoZCczbFXJLeEGMTYjphP6gydh4pHMqEYPVMYUVgQg==}
@@ -439,9 +459,9 @@ packages:
       '@deepseek-ai/dsh-settings':
         optional: true
 
-  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/19605d265444022fa4107f45943a745cfe1986d1:
-    resolution: {gitHosted: true, integrity: sha512-GEMgpoJZS46ehzxaNde9nUWhxzhYwqHepcQCgokB+SuP9dLDrFnAiMxHWHL63884wcfqIzH75aqWZG0qoQj5EA==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/19605d265444022fa4107f45943a745cfe1986d1}
-    version: 10.28.1
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cc506287ac096e366b155c26fdd5767d6a53bd98:
+    resolution: {gitHosted: true, integrity: sha512-8c0EeAjd1XepSkTnHFqhYcpoDWP93McVBWy3Yt8Lgt7y0U8DwQ1pAk9wQYqhb6rB2lyyEETy0NggfVcSsLPExQ==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cc506287ac096e366b155c26fdd5767d6a53bd98}
+    version: 10.29.0
     engines: {node: '>=18'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1 || >=4.0.5-0 <5
@@ -607,6 +627,10 @@ packages:
   iconv-lite@0.7.3:
     resolution: {integrity: sha512-IKXpvIzjnC9XTAUbVBcMfGS0EPaIXtW6v+zr+RRp+hqULEpo0owZax6wyRwPOJbWbzjYspQwusTsfVr0ifh4uQ==}
     engines: {node: '>=0.10.0'}
+
+  ignore@7.0.14:
+    resolution: {integrity: sha512-wCBiZ77u1tuWde6G/nfOtLaCTYcFDU5yCzARzK10y+rLhzYoL7a7yEemcopcc2Mzow7gZOIjnV2ym1NYmdiJOQ==}
+    engines: {node: '>= 4'}
 
   image-size@1.2.1:
     resolution: {integrity: sha512-rH+46sQJ2dlwfjfhCyNx5thzrv+dtmBIhPHk0zgRUukHzZ/kRueTJXoYYsclBaKcSMBWuGbOFXtioLpzTb5euw==}
@@ -920,9 +944,12 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/d3734cb183a5d2483600e8caec3ece04c28c8f45': {}
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/737d716c5f693f96eb2adc3e9a79f4e55cda8735(@deepseek-ai/schemastery@3.18.5)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      ignore: 7.0.14
 
-  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/49bea3bc8480540064d17d70db8f9d3d1f7b3560(react@18.3.1)':
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16(react@18.3.1)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       react: 18.3.1
@@ -970,7 +997,12 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
-  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/fdae3e964c6cdb7760970488c2841488a9ffcba8': {}
+  '@dhicoc/dsh-reverse-skill@https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/f1b61cf3deec370198ae81a23b8512338002d073': {}
+
+  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.8.6)(@deepseek-ai/schemastery@3.18.5)':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.6
+      '@deepseek-ai/schemastery': 3.18.5
 
   '@hono/node-server@2.1.1(hono@4.13.7)':
     dependencies:
@@ -1282,7 +1314,7 @@ snapshots:
       '@deepseek-ai/schemastery': 3.18.5
       react: 18.3.1
 
-  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/19605d265444022fa4107f45943a745cfe1986d1(react@18.3.1):
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cc506287ac096e366b155c26fdd5767d6a53bd98(react@18.3.1):
     optionalDependencies:
       react: 18.3.1
 
@@ -1453,6 +1485,8 @@ snapshots:
   iconv-lite@0.7.3:
     dependencies:
       safer-buffer: 2.1.2
+
+  ignore@7.0.14: {}
 
   image-size@1.2.1:
     dependencies:
