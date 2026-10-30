@@ -25,15 +25,18 @@ importers:
         version: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/1de31db355904a45ea7dd815099f4d1af185bd2a
       dsh-reasoning-effort:
         specifier: github:HanaAyane/dsh-reasoning-effort
-        version: '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16'
+        version: '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30'
       dsh-share:
         specifier: github:hellodigua/dsh-share
         version: https://codeload.github.com/hellodigua/dsh-share/tar.gz/b5212ef748ac56aeb4d56c6f8a86be836921114f
+      misakanet:
+        specifier: github:Ikalus1988/MisakaNet
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/2f12a32c123302fa49ce58a4bcf10a0438a8b58f(@deepseek-ai/schemastery@3.18.5)
 
 packages:
 
-  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16':
-    resolution: {gitHosted: true, integrity: sha512-qwbNxjEg3zu3q8W5esZWJZOQs4GlGhkZDSvuNvvyhCd7x+uZ7VGL4z7IqJpzm5Cj5f9ZW+57Is4RATHeiDqSeQ==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16}
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30':
+    resolution: {gitHosted: true, integrity: sha512-LixlHYQTvZuYmkiFAbE3x00Z+P/wgH3QjPkBkZGtDN+c91U8rc664djyAZN4ln7ZRGIQPdRa583rDAOlZVNtKw==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30}
     version: 0.9.1
     engines: {dsh: '>=0.2.1-rc.2 <0.3.0', node: '>=22.19'}
     peerDependencies:
@@ -292,6 +295,19 @@ packages:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
     hasBin: true
 
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/2f12a32c123302fa49ce58a4bcf10a0438a8b58f:
+    resolution: {gitHosted: true, integrity: sha512-dqGgkslVHwrE8t19vxPXCxfv0mHoFPRe5IsmWA00Ll/L/Y1obezdXGis8xKeSZEwaY8jTwIJQgnawLLN2mneOw==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/2f12a32c123302fa49ce58a4bcf10a0438a8b58f}
+    version: 2.50.1
+    engines: {node: '>=20.0.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
+      '@deepseek-ai/schemastery': '>=3.0.0'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-mcp-client':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
@@ -306,7 +322,7 @@ packages:
 
 snapshots:
 
-  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16':
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -388,6 +404,10 @@ snapshots:
   js-yaml@4.3.1:
     dependencies:
       argparse: 2.0.1
+
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/2f12a32c123302fa49ce58a4bcf10a0438a8b58f(@deepseek-ai/schemastery@3.18.5):
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.5
 
   schemastery@3.18.0:
     dependencies:

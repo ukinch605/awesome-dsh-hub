@@ -16,10 +16,13 @@ importers:
         version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.18.5)
       '@huiliyi37/dsh-tianshu-tui':
         specifier: github:huiliyi37/dsh-tianshu-tui
-        version: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/a58ff6bde26cef324826acae9b6c8128d15802c8(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)(@deepseek-ai/dsh-atomic-write@0.2.1-rc.4)(@deepseek-ai/dsh-timeout@0.2.1-rc.4)
+        version: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/446bfe373c962aa83e04b36a16da4f8588458242(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)(@deepseek-ai/dsh-atomic-write@0.2.1-rc.4)(@deepseek-ai/dsh-timeout@0.2.1-rc.4)
       '@icelily/dsh-gitbash-preset':
         specifier: github:liceses/dsh-gitbash-preset
         version: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8
+      '@leon___/dsh-client-liang-intensity-skin':
+        specifier: github:kingOfSoySauce/dsh-liang-skin
+        version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef
       '@nagi-ovo/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
         version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344(@deepseek-ai/schemastery@3.18.5)
@@ -43,12 +46,12 @@ importers:
         version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/dae686faadb44bbd1e5a71f9fd618c2d2e926cee(@deepseek-ai/schemastery@3.18.5)
       dsh-reasoning-effort:
         specifier: github:HanaAyane/dsh-reasoning-effort
-        version: '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16'
+        version: '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30'
 
 packages:
 
-  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16':
-    resolution: {gitHosted: true, integrity: sha512-qwbNxjEg3zu3q8W5esZWJZOQs4GlGhkZDSvuNvvyhCd7x+uZ7VGL4z7IqJpzm5Cj5f9ZW+57Is4RATHeiDqSeQ==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16}
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30':
+    resolution: {gitHosted: true, integrity: sha512-LixlHYQTvZuYmkiFAbE3x00Z+P/wgH3QjPkBkZGtDN+c91U8rc664djyAZN4ln7ZRGIQPdRa583rDAOlZVNtKw==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30}
     version: 0.9.1
     engines: {dsh: '>=0.2.1-rc.2 <0.3.0', node: '>=22.19'}
     peerDependencies:
@@ -362,9 +365,9 @@ packages:
       '@huiliyi37/dsh-llm': 0.8.0
       '@huiliyi37/dsh-scope': 0.8.0
 
-  '@huiliyi37/dsh-tianshu-tui@https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/a58ff6bde26cef324826acae9b6c8128d15802c8':
-    resolution: {gitHosted: true, integrity: sha512-AN1SXqKkoM7afsz2d12ESmeB4f3QMOM0UvNTlCaRLm7R2BXs0260cNbEDIkswODGAADeIP5C/7WYFP5SduHG9g==, tarball: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/a58ff6bde26cef324826acae9b6c8128d15802c8}
-    version: 1.0.0-rc.3
+  '@huiliyi37/dsh-tianshu-tui@https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/446bfe373c962aa83e04b36a16da4f8588458242':
+    resolution: {gitHosted: true, integrity: sha512-V7afcWRp1f7cYN2lWND0QzbedOmo2glS9FdBvPGWSBR/IYDevOBayEnz4a2FUnes++TUPw90oQpxRDeVzSsL4A==, tarball: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/446bfe373c962aa83e04b36a16da4f8588458242}
+    version: 1.0.0-rc.4
     engines: {node: ^22.19 || >=24}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.5
@@ -623,6 +626,10 @@ packages:
 
   '@jitl/quickjs-wasmfile-release-sync@0.32.0':
     resolution: {integrity: sha512-BKNDI/TPBfGlLNGYpLrhcDGXmIk4xHm4MRAisOBnOzpXVn9HZWsfmMAc9WMBrAHjvvds6HOikKeaOBKdPdpVrg==}
+
+  '@leon___/dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef':
+    resolution: {gitHosted: true, integrity: sha512-IE/0HsGk18fsn1ddXp690ZdvgqP3KoUhmvc4QiPWF1x+BwUQ9oU4TaMk/6LiDVpcb3cbMVBtV0clphnKfOYzfA==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef}
+    version: 0.1.15-settings.4
 
   '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344':
     resolution: {gitHosted: true, integrity: sha512-QIBLfR5VR1lJ1TiQkPXmXTABHkRaiseT4+1aws9IikciAy/uCTQAp4KYErsv2bZ+q/RP55WyhYNSbFpxFUYXWw==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344}
@@ -950,7 +957,7 @@ packages:
 
 snapshots:
 
-  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16':
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -1170,7 +1177,7 @@ snapshots:
       '@huiliyi37/dsh-scope': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
       '@huiliyi37/schemastery': 0.8.0
 
-  '@huiliyi37/dsh-tianshu-tui@https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/a58ff6bde26cef324826acae9b6c8128d15802c8(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)(@deepseek-ai/dsh-atomic-write@0.2.1-rc.4)(@deepseek-ai/dsh-timeout@0.2.1-rc.4)':
+  '@huiliyi37/dsh-tianshu-tui@https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/446bfe373c962aa83e04b36a16da4f8588458242(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)(@deepseek-ai/dsh-atomic-write@0.2.1-rc.4)(@deepseek-ai/dsh-timeout@0.2.1-rc.4)':
     dependencies:
       '@deepseek-ai/dsh-agent-preset': 0.2.1-rc.4(@deepseek-ai/dsh-agent-preset-registry@0.2.1-rc.4)
       '@deepseek-ai/dsh-agent-preset-registry': 0.2.1-rc.4
@@ -1399,6 +1406,8 @@ snapshots:
   '@jitl/quickjs-wasmfile-release-sync@0.32.0':
     dependencies:
       '@jitl/quickjs-ffi-types': 0.32.0
+
+  '@leon___/dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef': {}
 
   '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344(@deepseek-ai/schemastery@3.18.5)':
     dependencies:

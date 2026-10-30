@@ -31,7 +31,7 @@ importers:
         version: https://codeload.github.com/ZSeven-W/dsh-noema/tar.gz/07d2fece531d11dbd5c420c5d44eaea12e6a9d7a
       dsh-claude-style:
         specifier: github:Nwflower/dsh-claude-style
-        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/a0059bde45f968b246bf05c9bb6b87a4a592189b(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/1ba99f93217b9c98957f17df98bd56b43b324acb(@deepseek-ai/schemastery@3.18.5)
       dsh-git-memory:
         specifier: github:seriousz158/dsh-memory
         version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.5)
@@ -44,12 +44,15 @@ importers:
       dsh-unitarylab-quantum-practices:
         specifier: github:unitarylab/quantum-practices
         version: https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e
+      fujiang-armor:
+        specifier: github:c3cvld7aag/fujiang-dsh
+        version: https://codeload.github.com/c3cvld7aag/fujiang-dsh/tar.gz/ab86ddcd169f0f13bc74923b6ed95eda55224931
       open-sea-skin:
         specifier: github:d-dev0101/open-sea-skin
         version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/387740c974f3fd47ef22eebd7c20da4645f2f213
       opencode2dsh:
         specifier: github:FishBottle7/opencode2dsh
-        version: https://codeload.github.com/FishBottle7/opencode2dsh/tar.gz/89f7c420c9132efdfc6657c2bcea5dc4c6b69ad5(ws@8.22.0)(zod@4.4.3)
+        version: https://codeload.github.com/FishBottle7/opencode2dsh/tar.gz/3805a380d096efde91bcb3b35ce962fb985e6563(ws@8.22.0)(zod@4.4.3)
       zat-dsh-engine:
         specifier: github:mishibeikejie/zat-dsh-engine
         version: https://codeload.github.com/mishibeikejie/zat-dsh-engine/tar.gz/11d5b5fb424b6d9dee7821c7c2f771bd42e7f46a
@@ -454,9 +457,9 @@ packages:
       supports-color:
         optional: true
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/a0059bde45f968b246bf05c9bb6b87a4a592189b:
-    resolution: {gitHosted: true, integrity: sha512-5xfSx++6eEYO+tt2OjV404HyEK+7p96bX6lkOv8cpsVdZt6/z0ySVGPCL1QaASeXtYelKS4HLDpqsjeK4wnPUQ==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/a0059bde45f968b246bf05c9bb6b87a4a592189b}
-    version: 0.19.5
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/1ba99f93217b9c98957f17df98bd56b43b324acb:
+    resolution: {gitHosted: true, integrity: sha512-5ti5pBDvWrxZvQmuZQRWCbdxzCpbIvJQuSwXmS797//GtL7nz2p8KPYVXustYhJv2yuSzFeaHP2+qFG3pQ7kTQ==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/1ba99f93217b9c98957f17df98bd56b43b324acb}
+    version: 0.19.6
     peerDependencies:
       '@deepseek-ai/dsh-client-ui-primitives': '>=0.1.5-rc.1'
       '@deepseek-ai/schemastery': '>=3.18.0'
@@ -518,6 +521,10 @@ packages:
   fs-extra@10.1.0:
     resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
     engines: {node: '>=12'}
+
+  fujiang-armor@https://codeload.github.com/c3cvld7aag/fujiang-dsh/tar.gz/ab86ddcd169f0f13bc74923b6ed95eda55224931:
+    resolution: {gitHosted: true, integrity: sha512-QkYmydttQHj4p5EG9Dgu9B2lqYeyiYLqtpTKfF13WLB60uZAtcVbnme59G4WSW9C0MowdWRJKRq6qurTWdmzEg==, tarball: https://codeload.github.com/c3cvld7aag/fujiang-dsh/tar.gz/ab86ddcd169f0f13bc74923b6ed95eda55224931}
+    version: 0.4.3
 
   gaxios@7.3.1:
     resolution: {integrity: sha512-kB3rzJV7d9juLZh8/56QTXCwQfxyhdOMdyYk1HdQKFtF8TJTDTZQJtixWIwXdE9Jji91mC41DUNpjleo4L4eAQ==}
@@ -608,8 +615,8 @@ packages:
       zod:
         optional: true
 
-  opencode2dsh@https://codeload.github.com/FishBottle7/opencode2dsh/tar.gz/89f7c420c9132efdfc6657c2bcea5dc4c6b69ad5:
-    resolution: {gitHosted: true, integrity: sha512-MhZwJRyuSs9Rzhs+FZYWhyoyfev1iwbDYs2GlJQZEYNNccC1OEk1ki87mvAkHMZof/FPJL6JnC+sMFD3hEK03g==, tarball: https://codeload.github.com/FishBottle7/opencode2dsh/tar.gz/89f7c420c9132efdfc6657c2bcea5dc4c6b69ad5}
+  opencode2dsh@https://codeload.github.com/FishBottle7/opencode2dsh/tar.gz/3805a380d096efde91bcb3b35ce962fb985e6563:
+    resolution: {gitHosted: true, integrity: sha512-emjjfziXY+/x+C+X9X0FLY2up7Y5Q9VUUQLg6E0PR2VdqVsgA/v3+foajuwxEzUBmHOGKOhwVjV5YKXcfe+5Zw==, tarball: https://codeload.github.com/FishBottle7/opencode2dsh/tar.gz/3805a380d096efde91bcb3b35ce962fb985e6563}
     version: 0.0.0
 
   p-retry@4.6.2:
@@ -1162,7 +1169,7 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/a0059bde45f968b246bf05c9bb6b87a4a592189b(@deepseek-ai/schemastery@3.18.5):
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/1ba99f93217b9c98957f17df98bd56b43b324acb(@deepseek-ai/schemastery@3.18.5):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -1211,6 +1218,8 @@ snapshots:
       graceful-fs: 4.2.11
       jsonfile: 6.2.1
       universalify: 2.0.1
+
+  fujiang-armor@https://codeload.github.com/c3cvld7aag/fujiang-dsh/tar.gz/ab86ddcd169f0f13bc74923b6ed95eda55224931: {}
 
   gaxios@7.3.1:
     dependencies:
@@ -1312,7 +1321,7 @@ snapshots:
       ws: 8.22.0
       zod: 4.4.3
 
-  opencode2dsh@https://codeload.github.com/FishBottle7/opencode2dsh/tar.gz/89f7c420c9132efdfc6657c2bcea5dc4c6b69ad5(ws@8.22.0)(zod@4.4.3):
+  opencode2dsh@https://codeload.github.com/FishBottle7/opencode2dsh/tar.gz/3805a380d096efde91bcb3b35ce962fb985e6563(ws@8.22.0)(zod@4.4.3):
     dependencies:
       '@opencode2dsh/dsh-plugin': 0.3.14(ws@8.22.0)(zod@4.4.3)
     transitivePeerDependencies:

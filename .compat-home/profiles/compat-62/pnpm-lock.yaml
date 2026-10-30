@@ -10,10 +10,13 @@ importers:
     dependencies:
       '@dsh-external/dsh-minigames':
         specifier: github:lhh010/dsh-minigames
-        version: https://codeload.github.com/lhh010/dsh-minigames/tar.gz/5e306441a7dcc5b758695e94d5fc8f8c0dc9a11b
+        version: https://codeload.github.com/lhh010/dsh-minigames/tar.gz/15cb3d9124a20aab82a859d87f261d0527f39463
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
         version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.8.6)(@deepseek-ai/schemastery@3.18.5)
+      '@michengai/dsh-skills-manager':
+        specifier: github:MichengAI/dsh-skills-manager
+        version: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/93f0c49acf33c17cc9a185baec68abe42a83ef1a
       '@nanmicoder/dsh-auto-mode':
         specifier: github:NanmiCoder/dsh-auto-mode
         version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/907d663b7d65e3fcd9f328c598dee03772cac18b
@@ -28,7 +31,7 @@ importers:
         version: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/a84f8ae9a9af7e47f6e683eb5060259b7c31c4ca(@deepseek-ai/schemastery@3.18.5)
       dsh-meme:
         specifier: github:yyh-001/dsh-meme
-        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/fb00f4f6b5237dea23b1d54efe6d8e6d66910f8e
+        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/8992a2e8daa169ae85cf762e06d02d0ea96332bb
       dsh-plugin-bridge:
         specifier: github:Totoro-qaq/dsh-plugin-bridge
         version: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/1de31db355904a45ea7dd815099f4d1af185bd2a
@@ -72,9 +75,9 @@ packages:
   '@deepseek-ai/schemastery@3.18.5':
     resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
-  '@dsh-external/dsh-minigames@https://codeload.github.com/lhh010/dsh-minigames/tar.gz/5e306441a7dcc5b758695e94d5fc8f8c0dc9a11b':
-    resolution: {gitHosted: true, integrity: sha512-kwpWEHJ14LNS8BFOYRg7hylKJlcmOEi/JceoKNBYGhGHa5NTGq3nZMRbz07H4JcWIPRII8mfoxV6NKbtEgaJDg==, tarball: https://codeload.github.com/lhh010/dsh-minigames/tar.gz/5e306441a7dcc5b758695e94d5fc8f8c0dc9a11b}
-    version: 0.9.0
+  '@dsh-external/dsh-minigames@https://codeload.github.com/lhh010/dsh-minigames/tar.gz/15cb3d9124a20aab82a859d87f261d0527f39463':
+    resolution: {gitHosted: true, integrity: sha512-zIf1KS9L7KRmd/AI6azR5JFlXhwhv5ygdNGv0xOFV18+h0IkShltV11Aa9eJt8++9EVffrkSsng9jDtnWPNStg==, tarball: https://codeload.github.com/lhh010/dsh-minigames/tar.gz/15cb3d9124a20aab82a859d87f261d0527f39463}
+    version: 0.10.0
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1-rc.1
       react: ^18.2.0
@@ -271,6 +274,23 @@ packages:
   '@jitl/quickjs-wasmfile-release-sync@0.31.0':
     resolution: {integrity: sha512-hYduecOByj9AsAfsJhZh5nA6exokmuFC8cls39+lYmTCGY51bgjJJJwReEu7Ff7vBWaQCL6TeDdVlnp2WYz0jw==}
 
+  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/93f0c49acf33c17cc9a185baec68abe42a83ef1a':
+    resolution: {gitHosted: true, integrity: sha512-6uHissenZuO3HeOoAMyTceFAAj++YgsonVF+1MOS501OJz9/8RWMFLji7JbbfEx/hD9Ym9pGq8KaXI5ifRlV7w==, tarball: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/93f0c49acf33c17cc9a185baec68abe42a83ef1a}
+    version: 1.2.23
+    engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.1 <5.0.0'
+      '@deepseek-ai/dsh-client-locale': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-host-webserver': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-session': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-skill': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-tools': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-web-app': '>=0.2.0-rc.1 <0.3.0-0'
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
   '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/907d663b7d65e3fcd9f328c598dee03772cac18b':
     resolution: {gitHosted: true, integrity: sha512-k+d2KREH3m9F9rOiZcske5UWpPGgM28aJUQg2zLgXy/WvwlpJ80PA4TlwZJmXOJngHf8EqMBHJjh2Rj+bLO5fw==, tarball: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/907d663b7d65e3fcd9f328c598dee03772cac18b}
     version: 0.2.0
@@ -373,8 +393,8 @@ packages:
       react: ^18.2.0
       zod: ^4.4.3
 
-  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/fb00f4f6b5237dea23b1d54efe6d8e6d66910f8e:
-    resolution: {gitHosted: true, integrity: sha512-GIo0wevkQik/+HvFkvBgxZwtK9j6OsQCFzldWpWMldW25t1pyrv1rzIbW9z6iIfgQ5Qzc2f8SdM9yzVf0ybosQ==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/fb00f4f6b5237dea23b1d54efe6d8e6d66910f8e}
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/8992a2e8daa169ae85cf762e06d02d0ea96332bb:
+    resolution: {gitHosted: true, integrity: sha512-1XQ9kk/QC830QTAh0Eh1VgHNuEkfKtcoOfnxAH1OhkWg2WuCFCtfsgAlvUBP01bzbyBOKbOx2pvCa74BySmfLA==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/8992a2e8daa169ae85cf762e06d02d0ea96332bb}
     version: 0.1.71
     engines: {node: '>=22.13.0'}
     peerDependencies:
@@ -431,6 +451,9 @@ packages:
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
+
+  fflate@0.8.3:
+    resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
 
   find-up@4.1.0:
     resolution: {integrity: sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==}
@@ -608,7 +631,7 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
-  '@dsh-external/dsh-minigames@https://codeload.github.com/lhh010/dsh-minigames/tar.gz/5e306441a7dcc5b758695e94d5fc8f8c0dc9a11b': {}
+  '@dsh-external/dsh-minigames@https://codeload.github.com/lhh010/dsh-minigames/tar.gz/15cb3d9124a20aab82a859d87f261d0527f39463': {}
 
   '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.8.6)(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
@@ -745,6 +768,10 @@ snapshots:
     dependencies:
       '@jitl/quickjs-ffi-types': 0.31.0
 
+  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/93f0c49acf33c17cc9a185baec68abe42a83ef1a':
+    dependencies:
+      fflate: 0.8.3
+
   '@nanmicoder/dsh-auto-mode@https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/907d663b7d65e3fcd9f328c598dee03772cac18b':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.4
@@ -800,7 +827,7 @@ snapshots:
       qrcode: 1.5.4
       quickjs-emscripten: 0.31.0
 
-  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/fb00f4f6b5237dea23b1d54efe6d8e6d66910f8e:
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/8992a2e8daa169ae85cf762e06d02d0ea96332bb:
     optionalDependencies:
       sharp: 0.35.5
     transitivePeerDependencies:
@@ -813,6 +840,8 @@ snapshots:
   dsh-undo-savepoint@https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/c5046313eec6d65ecbd8bccb1e3852c7e9200946: {}
 
   emoji-regex@8.0.0: {}
+
+  fflate@0.8.3: {}
 
   find-up@4.1.0:
     dependencies:

@@ -8,27 +8,30 @@ importers:
 
   .:
     dependencies:
+      '@huiliyi37/dsh-tianshu-tui':
+        specifier: github:huiliyi37/dsh-tianshu-tui
+        version: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/446bfe373c962aa83e04b36a16da4f8588458242(@deepseek-ai/dsh-app-boot@0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4))(@deepseek-ai/dsh-atomic-write@0.2.1-rc.4)(@deepseek-ai/dsh-home-paths@0.2.1-rc.4)(@deepseek-ai/dsh-timeout@0.2.1-rc.4)(@types/node@25.9.5)
       '@sanqi-normal/dsh-webui-market-plugin':
         specifier: github:Sanqi-normal/dsh-webui-market-plugin
         version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/25bcaa72bab9ef0bd8f7ce8a2a9f9e4366f55639
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/e49dadfd90afe6c0d449bf0692c93c2a7603db10(@deepseek-ai/schemastery@3.18.5)
       argo-search:
         specifier: github:taxueseek/argo
         version: https://codeload.github.com/taxueseek/argo/tar.gz/0cd4f5188eab91e00031239ef76fcba3438cbd35
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/dae686faadb44bbd1e5a71f9fd618c2d2e926cee
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/dae686faadb44bbd1e5a71f9fd618c2d2e926cee(@deepseek-ai/schemastery@3.18.5)
       dsh-codex-subscription:
         specifier: github:WSL043/dsh-codex-subscription
-        version: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/92ec287380e9b9f2ab99ea849662aee7998563d5(react-dom@19.2.8(react@19.2.8))
+        version: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/c6f5b55e4fc6936ddf3f8570d52af465c5329434(@deepseek-ai/schemastery@3.18.5)(react-dom@19.2.8(react@19.2.8))
       dsh-dream-skin:
         specifier: github:RevolutionLA/dsh-dream-skin
-        version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cc506287ac096e366b155c26fdd5767d6a53bd98
+        version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/992ad1f3436056e2aa016bfa9a32171e8aec76a7
       dsh-skin-market:
         specifier: github:kingOfSoySauce/dsh-skin-market
-        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/7d34fcba55f6a3d679cf732af29c19b5f990375f(react-dom@19.2.8(react@19.2.8))
+        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/c54f143cdec4791c4ba4d20d214a00282df2601d(react-dom@19.2.8(react@19.2.8))
       dsh-turn-delete:
         specifier: github:hanshenmesen/dsh-turn-delete
         version: https://codeload.github.com/hanshenmesen/dsh-turn-delete/tar.gz/4716bcbdee27b110ceea9df21f027c6dfe5888b8
@@ -114,10 +117,129 @@ packages:
   '@codemirror/view@6.43.10':
     resolution: {integrity: sha512-vVWLvd4fKWYN/pMcwUrg6dWeublxmSz+V+52ZjW3h64IVN9cRUYLk5Km4JDT9vifxAFfDtNOIFxKYENthcolJQ==}
 
+  '@deepseek-ai/cosmokit@1.8.6':
+    resolution: {integrity: sha512-ZSD/fN52L498LBIOYwjIOlaLv5veY6ZEwI2yzvZUKQtctn0QAPqu8tKdJ+OF5+Tv6NBq1U+wJWH+QI6OGy5EvQ==}
+
+  '@deepseek-ai/dsh-agent-preset-registry@0.2.1-rc.4':
+    resolution: {integrity: sha512-MvmS9zS6pHT4ao67NbQCFptTphYcplzwTFwkRa5o/nEygvtNBkFcrjN94KgrQj+QJyDw3Uk5WQrfj+0d1uNxLQ==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
+      '@deepseek-ai/cordis-plugin-include': ~1.0.10
+      '@deepseek-ai/cordis-plugin-loader': ~1.0.6
+      '@deepseek-ai/dsh-agent': 0.2.1-rc.4
+      '@deepseek-ai/dsh-scope': 0.2.1-rc.4
+      '@deepseek-ai/dsh-session': 0.2.1-rc.4
+      '@deepseek-ai/dsh-session-projection': 0.2.1-rc.4
+      '@deepseek-ai/dsh-settings': 0.2.1-rc.4
+      '@deepseek-ai/dsh-system-prompt': 0.2.1-rc.4
+      '@deepseek-ai/dsh-tools': 0.2.1-rc.4
+      '@deepseek-ai/dsh-typert-protocol': 0.2.1-rc.4
+
+  '@deepseek-ai/dsh-agent-preset@0.2.1-rc.4':
+    resolution: {integrity: sha512-hxU17llWtZ71Z+oh5CRhXupEOgwOsdyTHuAxP9lQbB3Oz/Hca/P7aUM0P+iLbVxB5iuOB9yVGrpairKCyN67Bg==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
+      '@deepseek-ai/cordis-plugin-loader': ~1.0.6
+      '@deepseek-ai/dsh-agent-preset-registry': 0.2.1-rc.4
+
+  '@deepseek-ai/dsh-app-boot@0.2.1-rc.4':
+    resolution: {integrity: sha512-d7+CTPP20266iXhKBLrlFY3PQ/pc8lSKPWU2hGcY6j4tRuSHj4kwO3gmra24dl27ZcQSrLJD08JMjdYsjQb+9Q==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
+      '@deepseek-ai/cordis-plugin-group': ~1.0.5
+      '@deepseek-ai/cordis-plugin-include': ~1.0.10
+      '@deepseek-ai/cordis-plugin-loader': ~1.0.6
+      '@deepseek-ai/dsh-home-paths': 0.2.1-rc.4
+      '@deepseek-ai/dsh-launch-environment': 0.2.1-rc.4
+
+  '@deepseek-ai/dsh-atomic-write@0.2.1-rc.4':
+    resolution: {integrity: sha512-oON1ORgRgEsUqMnSfeDc0cxgXZ7tyWPGj2GItivDy/9fe0c3lca7iENYIJCRRIQCrNPO3aWbUk4E/aglftDFKw==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
+
+  '@deepseek-ai/dsh-cordis-host-runner@0.2.1-rc.4':
+    resolution: {integrity: sha512-aGRtEP/qoYHFJyFMVtNva53bPYFnwmH8nwuASqOg3DxozEUpK02WOMvpQ3z7e0rd7rcK0YmgNp0aU4Ek8XVypA==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
+      '@deepseek-ai/dsh-agent': 0.2.1-rc.4
+      '@deepseek-ai/dsh-brand': 0.2.1-rc.4
+      '@deepseek-ai/dsh-llm': 0.2.1-rc.4
+      '@deepseek-ai/dsh-scope': 0.2.1-rc.4
+      '@deepseek-ai/dsh-session': 0.2.1-rc.4
+      '@deepseek-ai/dsh-tools': 0.2.1-rc.4
+      '@deepseek-ai/dsh-typert-protocol': 0.2.1-rc.4
+
   '@deepseek-ai/dsh-home-paths@0.2.1-rc.4':
     resolution: {integrity: sha512-aCxOktsUFt4g7tBbOEj4s4L86tOJy3JZZxzngdKCBwAVD3SzQkV3XAlwbxf1ZDVonopiVlnv1BZfM3bNJZMfxw==}
     peerDependencies:
       '@deepseek-ai/cordis': ~4.0.5
+
+  '@deepseek-ai/dsh-home-paths@0.2.1-rc.5':
+    resolution: {integrity: sha512-yEGBsUON7xynPYAQKHxvRJ5kywht2ByHfEh20j9FkPluopNRtEnlF0f0/mRL1eC9UMVzDUqUArnAY6dWdb2NDw==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
+
+  '@deepseek-ai/dsh-package-manifest@0.2.1-rc.4':
+    resolution: {integrity: sha512-TIbF4hS8ycwyxE0wAhiocdeLjf7fWqw60T0kbD4caAbzR1eTOMYWfQXi+R5RNmZQZLjZu6Q873HreBfIKg2cfA==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
+
+  '@deepseek-ai/dsh-plugin-market-index@0.2.1-rc.4':
+    resolution: {integrity: sha512-MXgZO4xljFVylEiE7ydWRTtQEhSchQs8l1Cp3h0NgSzZ0oBuCX/8UBJGd5/uJaasVxOmoPzpEgq3wzSEo7kAjA==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
+
+  '@deepseek-ai/dsh-plugin-market@0.2.1-rc.4':
+    resolution: {integrity: sha512-dSFIEV0taYDeZDkOhmyyWCLcTE5epjaZNnBVlAXUWHnf1IK5mD7fL1EnNDTCRavheH3fs2LrnstAw21MzXcO5g==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
+      '@deepseek-ai/cordis-plugin-loader': ~1.0.6
+      '@deepseek-ai/dsh-plugin-manager': 0.2.1-rc.4
+      '@deepseek-ai/dsh-settings': 0.2.1-rc.4
+      '@deepseek-ai/dsh-tools': 0.2.1-rc.4
+      '@deepseek-ai/dsh-typert-protocol': 0.2.1-rc.4
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-settings':
+        optional: true
+
+  '@deepseek-ai/dsh-time-context@0.2.1-rc.4':
+    resolution: {integrity: sha512-yLMWMwf6D2wtZ4E8E6MfSXfCAMBrgIil13fc4ABgIJw8smpxlBPGLFHifWemzRuk7xsk9pajVnGkKJSCBYGl4Q==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
+      '@deepseek-ai/dsh-agent': 0.2.1-rc.4
+      '@deepseek-ai/dsh-llm': 0.2.1-rc.4
+      '@deepseek-ai/dsh-session': 0.2.1-rc.4
+      '@deepseek-ai/dsh-session-projection': 0.2.1-rc.4
+
+  '@deepseek-ai/dsh-timeout@0.2.1-rc.4':
+    resolution: {integrity: sha512-8NQcrgG/3dscm4BVPYRhWl8zQdzR1Okl/awn2rFQwrbaht8FbUU83oYYvt2FhSY51wzJxbAADw2CKgy7w+iK0Q==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
+
+  '@deepseek-ai/dsh-tool-cordis@0.2.1-rc.4':
+    resolution: {integrity: sha512-eAu8HqzP/6NmlpU3VYqOPVlBMvxaxtFhTLR/IemoxZUCAtpSswzIohguaT9IqU1AMReLU1zyhYMDZNHXMjKJPw==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
+      '@deepseek-ai/cordis-plugin-loader': ~1.0.6
+      '@deepseek-ai/dsh-agent': 0.2.1-rc.4
+      '@deepseek-ai/dsh-app-boot': 0.2.1-rc.4
+      '@deepseek-ai/dsh-cordis-host-runner': 0.2.1-rc.4
+      '@deepseek-ai/dsh-tools': 0.2.1-rc.4
+
+  '@deepseek-ai/dsh-util-values@0.2.1-rc.4':
+    resolution: {integrity: sha512-6rQUar867FPR3MjTxiW0XdqLga5kfsHZniuDG+43M5w68dq5u37zIlppS91TTON+C8bkCcPqwPVUnjVda3z4Tg==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
+
+  '@deepseek-ai/schemastery@3.18.5':
+    resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
+
+  '@emnapi/runtime@1.11.3':
+    resolution: {integrity: sha512-Xz4Tpyki7XyrpbUK1jR1AhdAdaXyhhY4lZ3neLodmhpuWfy2PAQN5B46sAiU4liOXGLkHypn/qU+jvfWSCYYLA==}
+
+  '@eslint-community/regexpp@4.12.2':
+    resolution: {integrity: sha512-EriSTlt5OC9/7SXkRSCAhfSxxoSUgBm33OH+IkwbdpgoqsSsUg7y3uh+IICI/Qg4BBWr3U2i39RpmycbxMq4ew==}
+    engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
 
   '@floating-ui/core@1.8.0':
     resolution: {integrity: sha512-0CIZ5itps/8x7BG8dEIhs53BvCUH2PCoogtakwRTut+Arm58sJooJ0AuZhLw2HJYIR5cMLNPBSS728sPho2khQ==}
@@ -128,11 +250,402 @@ packages:
   '@floating-ui/utils@0.2.12':
     resolution: {integrity: sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==}
 
+  '@huiliyi37/cordis-plugin-include@0.8.0':
+    resolution: {integrity: sha512-53V8JmrtUsz1kI3fLe6QqQhHG+HFoJS+4GNSdnToV1CDMetB7GK/qUhm1crl3Hng0PR6V4lCHVgqfzAXytHyPw==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/cordis-plugin-loader': 0.8.0
+
+  '@huiliyi37/cordis-plugin-loader@0.8.0':
+    resolution: {integrity: sha512-EaN3WP+qdakA9/38sDC5DDH8viVW4GlFq1aDTSb7uxCwpT+ZX/xsB/A3Pw/dwJCRqEN1VWK28mlR8GYZbBYzGQ==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      node-addon-require-builtin: ^0.1.4
+    peerDependenciesMeta:
+      node-addon-require-builtin:
+        optional: true
+
+  '@huiliyi37/cordis@0.8.0':
+    resolution: {integrity: sha512-ncWwlzfqmU/DQS+Ez/ZkD/or0jaUhhl4Epi2Pr8B6k7RpslX+mIyG4I+tuT5GbPKDuvvE5rze4TFI4yBomuh/g==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    hasBin: true
+    peerDependencies:
+      '@huiliyi37/cordis-plugin-include': 0.8.0
+      '@huiliyi37/cordis-plugin-loader': 0.8.0
+    peerDependenciesMeta:
+      '@huiliyi37/cordis-plugin-include':
+        optional: true
+      '@huiliyi37/cordis-plugin-loader':
+        optional: true
+
+  '@huiliyi37/cosmokit@0.8.0':
+    resolution: {integrity: sha512-E8IVyU1HQ0ky5gDLCw0dJ3LD+tqOV1ZZ12ejmTTZYrxr3jxPTe5UvogUkj126gxefpTWawZxu2nJsaP6Hz81JA==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+
+  '@huiliyi37/dsh-agent@0.8.0':
+    resolution: {integrity: sha512-SfdjyPAeC5PWtjR89d1t+elPfiraXruXtL8iDBB/UQx2gVpc/6jfwnD/oC7Dkma2agDbMXm4/hJQTdIgYBMyeA==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+      '@huiliyi37/dsh-llm': 0.8.0
+      '@huiliyi37/dsh-scope': 0.8.0
+      '@huiliyi37/dsh-session': 0.8.0
+      '@huiliyi37/dsh-system-prompt': 0.8.0
+      '@huiliyi37/dsh-type-meta': 0.8.0
+
+  '@huiliyi37/dsh-brand@0.8.0':
+    resolution: {integrity: sha512-ilfcyOoM/iA9bRpB5boN8ZpKBjOrCrRHdxykUHGT2h6ZCaVOp6yfL6ErQlPU4T85xhR+Zx74zNTj+7IWSq6EYw==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+
+  '@huiliyi37/dsh-code-runtime@0.8.0':
+    resolution: {integrity: sha512-DmXP+q/Yue1w5uh/fGsIsmiUUpeOIZt6rq3AJO5/b4mFerFROHRCV5vzfgS+qm15oHTOet0XJzhxWRSHVzE6tw==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+
+  '@huiliyi37/dsh-fs@0.8.0':
+    resolution: {integrity: sha512-lyCO/1Y98D+/k64lwKhI3YsJ42GTnQ2iIlC6bAqYL0qZdNIjFWKrXYBll+PW2TxtT63yUuh5KIcvpbW6j38ojQ==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-brand': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+      '@huiliyi37/dsh-llm': 0.8.0
+      '@huiliyi37/dsh-sandbox': 0.8.0
+
+  '@huiliyi37/dsh-invariants@0.8.0':
+    resolution: {integrity: sha512-WpcvjUTostSIkJGCNdPj2MLq8Dck86aHtwXHhbhuDd/f6qKoE7eLDiLc3nZ0YrWDJ4+qmpdEqCNv2XsoO0Kg0A==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+
+  '@huiliyi37/dsh-llm@0.8.0':
+    resolution: {integrity: sha512-mcTaouWIeyuTw5mS1ezkPwNGk/sLGkjl9e5UfDth9Nk02xu0J3jk2vHhxAeZTGg6FGTFjMu9M0Pki7ykkhKm1A==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-brand': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+      '@huiliyi37/dsh-timeout': 0.8.0
+
+  '@huiliyi37/dsh-lsp-local@0.8.0':
+    resolution: {integrity: sha512-WSiDG8SQTGuY63fLbo92nrs1NnAkCIA1bZhzn7dkWV7Skm52tkfZWSoa92MrSeuZRwr1KRw2ZJTN8AVy90GKCQ==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-brand': 0.8.0
+      '@huiliyi37/dsh-fs': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+      '@huiliyi37/dsh-llm': 0.8.0
+      '@huiliyi37/dsh-lsp': 0.8.0
+      '@huiliyi37/dsh-subprocess': 0.8.0
+      '@huiliyi37/dsh-timeout': 0.8.0
+
+  '@huiliyi37/dsh-lsp@0.8.0':
+    resolution: {integrity: sha512-F5TDZa9gosieXLSKlg5ZTtJ1Anf/VTt3b5rCZIF5ub7gXEAj6vXrNDOvkFTfDgps90p6ZD0iKHSuHgUIVe0vUQ==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-brand': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+      '@huiliyi37/dsh-llm': 0.8.0
+
+  '@huiliyi37/dsh-sandbox@0.8.0':
+    resolution: {integrity: sha512-UieufVj2W1LN4yEFnTyIs0yzJh5N7/FUyBWaMBHUB1m/Zi6m0ZyJBxg9sv/6JjsoQMLGPRf/tnF5OBA03MzrAQ==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+      '@huiliyi37/dsh-llm': 0.8.0
+
+  '@huiliyi37/dsh-scope@0.8.0':
+    resolution: {integrity: sha512-pp1LPTS/91bHoZlEUrEErNgb86qlUowYjdz19YdLKsDClm1zsPtfAASwMwHsdjB4QJtNYUg2OKHHIw5cFsEkig==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+
+  '@huiliyi37/dsh-session@0.8.0':
+    resolution: {integrity: sha512-yrI5HORu0iqiaiQjvi48OlGKIdjbGTY5eSAlsz6+igXV+X/8VbXsbV7lWUkzlVh4d8HXR5oQkPIVy//nllbTeQ==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-brand': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+      '@huiliyi37/dsh-llm': 0.8.0
+      '@huiliyi37/dsh-scope': 0.8.0
+      '@huiliyi37/dsh-type-meta': 0.8.0
+
+  '@huiliyi37/dsh-subprocess@0.8.0':
+    resolution: {integrity: sha512-0CqRB1UDLdXki+i3U48VpeHpkJrXSmN6tW6cEfCVONLCfbWdC1eighNCyXVhzGwViIWU7c5UmSqJ3LoEen2xtA==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+
+  '@huiliyi37/dsh-system-prompt@0.8.0':
+    resolution: {integrity: sha512-7mhIURNGQT7zDjM6vBtkmyhh8R5RlDBBoHpBuusezO9kw1NEYjfmz8kz+mr+ef6OolweNzuITZhAqekkDuYDfA==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+      '@huiliyi37/dsh-llm': 0.8.0
+      '@huiliyi37/dsh-scope': 0.8.0
+
+  '@huiliyi37/dsh-tianshu-tui@https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/446bfe373c962aa83e04b36a16da4f8588458242':
+    resolution: {gitHosted: true, integrity: sha512-V7afcWRp1f7cYN2lWND0QzbedOmo2glS9FdBvPGWSBR/IYDevOBayEnz4a2FUnes++TUPw90oQpxRDeVzSsL4A==, tarball: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/446bfe373c962aa83e04b36a16da4f8588458242}
+    version: 1.0.0-rc.4
+    engines: {node: ^22.19 || >=24}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.5
+      '@deepseek-ai/dsh-agent': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-agent-default-model': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-atomic-write': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-attachment': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-invariants': ^0.2.0-rc.2
+      '@deepseek-ai/dsh-llm': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-permission-presets': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-session': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-session-title': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-skill': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-subagent': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-timeout': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-tools': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-user-approval': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-user-questions': ^0.2.1-rc.4
+      '@deepseek-ai/dsh-workflow': ^0.2.1-rc.4
+
+  '@huiliyi37/dsh-timeout@0.8.0':
+    resolution: {integrity: sha512-kdEH4XJZQPx4sMMwNB5eB9RwMIgACsUx9Ncd4P57Kbr3TTrkL2NAFM1rBwCopcVovxKTzEvU1sTOfdUJhiI1GQ==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+
+  '@huiliyi37/dsh-tool-lsp@0.8.0':
+    resolution: {integrity: sha512-I+NlVmMndKCe2CeAgvL5JiC8CpAVU85UgFqPD9YBFzT2szFG7et3YQ7CMTrANDBQ7F9hXZ9ouHpn6kxvmWXoaA==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+      '@huiliyi37/dsh-llm': 0.8.0
+      '@huiliyi37/dsh-lsp': 0.8.0
+      '@huiliyi37/dsh-system-prompt': 0.8.0
+      '@huiliyi37/dsh-timeout': 0.8.0
+      '@huiliyi37/dsh-tools': 0.8.0
+
+  '@huiliyi37/dsh-tools@0.8.0':
+    resolution: {integrity: sha512-0iT37Jjm+vm7VZ8ryHeICxKg++kKFHwbZOshUiwtRndw+/b2I2CX+FMRU7Z8gSP/TRiKOg2fBWpAyiwOZlTBZQ==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-agent': 0.8.0
+      '@huiliyi37/dsh-code-runtime': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+      '@huiliyi37/dsh-llm': 0.8.0
+      '@huiliyi37/dsh-scope': 0.8.0
+      '@huiliyi37/dsh-session': 0.8.0
+      '@huiliyi37/dsh-system-prompt': 0.8.0
+      '@huiliyi37/dsh-user-approval': 0.8.0
+
+  '@huiliyi37/dsh-type-meta@0.8.0':
+    resolution: {integrity: sha512-DLfibQmUtgj2b3p/R5ngc2o2va/4QbXt2Nw8oQnxMK9kT7TGyLF6oUT8cL+/F4vb2vYuMHGF8euFKLRAwXSgqw==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+
+  '@huiliyi37/dsh-user-approval@0.8.0':
+    resolution: {integrity: sha512-KeXjGayT4ZHukpIFhwjaM/Yrj2CjVzlSrJi4A3NKSD9ZVZ0RhmuLkO5CJ93PX+zy9U3X6IQjllrKZkth02Vcgw==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+    peerDependencies:
+      '@huiliyi37/cordis': 0.8.0
+      '@huiliyi37/dsh-agent': 0.8.0
+      '@huiliyi37/dsh-brand': 0.8.0
+      '@huiliyi37/dsh-invariants': 0.8.0
+      '@huiliyi37/dsh-llm': 0.8.0
+      '@huiliyi37/dsh-scope': 0.8.0
+      '@huiliyi37/dsh-session': 0.8.0
+      '@huiliyi37/dsh-system-prompt': 0.8.0
+
+  '@huiliyi37/schemastery@0.8.0':
+    resolution: {integrity: sha512-8GHRwyS2+ZG1DGkxuruw5oo3ooG91vmdEgnDjXrNolB2QrCMerREAjN0aMLZCQE5P3jcvrmmuqOwkB0kuZeDTA==}
+    deprecated: 'oh-my-tianshu has gone closed-source: this version is deprecated, unmaintained, and receives no fixes. Do not start new dependencies on it.'
+
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
   '@iconify/utils@3.1.4':
     resolution: {integrity: sha512-b1S7B1k9ohZ+iNTi2ATxbRYG9fTrJmUT0rc46bvVnNxqNRGW7dyo/vRREwyniI5IRN2RSJHDcm+s3BjWrSAjHw==}
+
+  '@img/colour@1.1.0':
+    resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
+    engines: {node: '>=18'}
+
+  '@img/sharp-darwin-arm64@0.35.5':
+    resolution: {integrity: sha512-QRUlFQ0WxvdWyqqG/WtI3iupfD5rBzmCHXSdPsY91sAtVtTo7Q4cb6zOccZ3gqEqkr0f1As1ehLqmEpDsRf+lg==}
+    engines: {node: '>=20.9.0'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@img/sharp-darwin-x64@0.35.5':
+    resolution: {integrity: sha512-+BR255RhDlpygUpOc/Jdt1nT6DQ3XG/ERo5wbcdOf5Q320dKtPCKPLR1LJs9VGXRaMa8l1uUa0tkCNOXiAxZUw==}
+    engines: {node: '>=20.9.0'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@img/sharp-freebsd-wasm32@0.35.5':
+    resolution: {integrity: sha512-Y/z91nEZ4uIBX5X3nfTovjU9lHNKFYbL2lpHCLVNmXQK03VIZvXBBt0KxbPGp2SdGSF+2mQU4e+hQaWOt86iAw==}
+    engines: {node: '>=20.9.0'}
+    os: [freebsd]
+
+  '@img/sharp-libvips-darwin-arm64@1.3.4':
+    resolution: {integrity: sha512-5R89nBYiRdUlSWJxPhO+GVtaXzXSxKnRu/xqMn3KTA3L9EB9Oy/P+Nn2f2vlhPuUdy/Zusb2DarbyTpGCfEDuw==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@img/sharp-libvips-darwin-x64@1.3.4':
+    resolution: {integrity: sha512-iR2OKH80yi0U+dUplyh3/xdpFvps6YkCwsXenIJxqxR1v9o+xtKTGbS9H7cps+2Vxjc8B1j96p75NmTGjIhtpQ==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@img/sharp-libvips-linux-arm64@1.3.4':
+    resolution: {integrity: sha512-Y3dgX/6lE2QhQb+Gxy0WZxfg9MEm/JBjamZpS2IklP7xIQoKN4hzAm7KcMVGtaVDt3neE9OKBC7vAfonA/Lr1A==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-libvips-linux-arm@1.3.4':
+    resolution: {integrity: sha512-LmRtTsOHuvM2+wlO2Db37dx5MiZhB0FvSunciw48YjdOkZz9KAiRbm8ujeMOA1INqmei5NapFxYEK1D1ZSidmw==}
+    cpu: [arm]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-libvips-linux-ppc64@1.3.4':
+    resolution: {integrity: sha512-Le6boB8Tai0Nis+gIxIpKx68UDVVIqdR8Tin5Yf1z2LJJQLDJvCDRqRu+jC2qCoD+eIomonmOwB4smBRxfVpYQ==}
+    cpu: [ppc64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-libvips-linux-riscv64@1.3.4':
+    resolution: {integrity: sha512-aHkkIEHPRdQEegJN20MLmGtxYD9R2wQr3Cwpddnu5+YKMt6Uzax7S9h5gpZTo8wyrGuZSlfQ63OevL5mTyOC7Q==}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-libvips-linux-s390x@1.3.4':
+    resolution: {integrity: sha512-ra/mB6MikESDUO7Yg+Mi95bFBb9GsObURuhnOv3OqknjGe9sZrG8tCe9q0xSIGrtLgvgw0gKnFWcK4blSgQOuQ==}
+    cpu: [s390x]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-libvips-linux-x64@1.3.4':
+    resolution: {integrity: sha512-GJ//SSXbnwSDes02umB3nDJLFcQzw8a18V8fyhqr6tV515tOEMdImjjxj1AoafMRz56F3PHgftnj1QEKSU1zkw==}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-libvips-linuxmusl-arm64@1.3.4':
+    resolution: {integrity: sha512-hvulFwtjUcagsis6BBxHwGFwWoNZjgYmULGVrZcyfNbjA8hKILbRxGg15/7w5HDyXHXUos/j6baAWqnCyQ2DWA==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@img/sharp-libvips-linuxmusl-x64@1.3.4':
+    resolution: {integrity: sha512-6zXKeE/p39I1AmA3cJG35eyBGNqNddLnUXjhwBnsGjFPWqf5VKkDBEqaEkPDoTEtkxwi2vv8Tcr2mDyP4So7Fg==}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@img/sharp-linux-arm64@0.35.5':
+    resolution: {integrity: sha512-LYVx5JTsOM2CBzmxreh+nl64/3H6Xb09iSLknqH47z2T2DFFxDeFLP5y4dJwe6H7uGQlHPyEEtIqyo3DYsRwdQ==}
+    engines: {node: '>=20.9.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-linux-arm@0.35.5':
+    resolution: {integrity: sha512-LEaXK2WdXVK5ykcw0buWyPMsmLLL2vpHLD6yrNSW+JGEL3BZPA4tpKN6iaMc4AxTTAoaX/sU1rOL51lcIz48ZQ==}
+    engines: {node: '>=20.9.0'}
+    cpu: [arm]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-linux-ppc64@0.35.5':
+    resolution: {integrity: sha512-QVxAAq8evVRI9ia2vqgwrmWucn5Dfv+JdWzj75pD8omHLPSP7f8p20O8jxzjCcuCEQEOtYOZUmX1hkiZ0kdevA==}
+    engines: {node: '>=20.9.0'}
+    cpu: [ppc64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-linux-riscv64@0.35.5':
+    resolution: {integrity: sha512-LtdreXguaavKODPIfzJ4kffx7UNt1omwtK0rch4EBbbSTXPnxWmYSayXdLJw0fJzQ97kHt1gL/yh4tvU+nCyRQ==}
+    engines: {node: '>=20.9.0'}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-linux-s390x@0.35.5':
+    resolution: {integrity: sha512-UZasTOFiYzotTsGOCu42BfUzP6Tu6Do/947iRm1RsLKvlllxwGcn4RN27LibGWceix4Y+Pmw3jsnTcCQIgWjqA==}
+    engines: {node: '>=20.9.0'}
+    cpu: [s390x]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-linux-x64@0.35.5':
+    resolution: {integrity: sha512-SxFtLTeJInhAA9Q836kux2vZNeOBQEx658qvbboZScr0wIARym3IcGmW7KpVD5sbVg0Ojy+udFQdayYIZyoNog==}
+    engines: {node: '>=20.9.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-linuxmusl-arm64@0.35.5':
+    resolution: {integrity: sha512-9HbMclmI1zlNkFRs3z9/eBtDjfD0sGlrX1z6b1qwmiFY5ElDLh4BC0LPBdVp7z1DXFiKlIcznf+ZlsuZzLxQqg==}
+    engines: {node: '>=20.9.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@img/sharp-linuxmusl-x64@0.35.5':
+    resolution: {integrity: sha512-4KOphqB035HrVdqLZfCgMzzERrQkkzOwRhl4OAkRO1YCldbaFjySXMaK534Mo0V+LndnlJk+sbUyLeU0ULyD1A==}
+    engines: {node: '>=20.9.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@img/sharp-wasm32@0.35.5':
+    resolution: {integrity: sha512-Ptsga1su4tQx+LLF1ECS9U6nz5kmrXKo6XVbtR48Ke3ZRxxgaWBu7IDtEe1quo8hiupwm6WFqxVlXaSf7IINGQ==}
+    engines: {node: '>=20.9.0'}
+
+  '@img/sharp-webcontainers-wasm32@0.35.5':
+    resolution: {integrity: sha512-hfhF/FmoQyTUkA0bIKFOtw536BQSeBMe6BF6QyWlrPxT754+TFLaZ7sKKTfvvM0yJgKgaYTwnFCIZ/GuDw5SUA==}
+    engines: {node: '>=20.9.0'}
+    cpu: [wasm32]
+
+  '@img/sharp-win32-arm64@0.35.5':
+    resolution: {integrity: sha512-X4t7g+7ZA5DKblCBEXGjUqqemj4vczING/5viFwAL8h4N3qYeyjwdCvRLHi4EdOUI+2Z7UFlp1VM+p/AuEtm6Q==}
+    engines: {node: '>=20.9.0'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@img/sharp-win32-ia32@0.35.5':
+    resolution: {integrity: sha512-5Zm82LoBc43nhwNybZlG7Y1KO//Zhsn306fQl29ZOuStHLGTo3BWL83q3cznX0poxSAMuYL1On/BHBxkBeKr6A==}
+    engines: {node: ^20.9.0}
+    cpu: [ia32]
+    os: [win32]
+
+  '@img/sharp-win32-x64@0.35.5':
+    resolution: {integrity: sha512-x76eH0vEiHlcMQu8Y8IenntaACtddpT6W0wmXtWrnKcnKI7ME5DdgqhAD6SEWOEl1v2zDvkZDhFA9KnURwpfqg==}
+    engines: {node: '>=20.9.0'}
+    cpu: [x64]
+    os: [win32]
 
   '@lezer/common@1.5.2':
     resolution: {integrity: sha512-sxQE460fPZyU3sdc8lafxiPwJHBzZRy/udNFynGQky1SePYBdhkBl1kOagA9uT3pxR8K09bOrmTUqA9wb/PjSQ==}
@@ -217,6 +730,9 @@ packages:
       '@deepseek-ai/dsh-client-ui-slots': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
       react: ^18.2.0
 
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
   '@tauri-apps/api@2.11.1':
     resolution: {integrity: sha512-M2FPuYND2m+wh5hfW9ZpSdxMPdEJovPBWwoHJmwUpysTYNHaOkVFN419m/K0LIgjb/7KU2vBgsUepJWugQCvAA==}
 
@@ -238,8 +754,8 @@ packages:
   '@tauri-apps/plugin-window-state@2.4.1':
     resolution: {integrity: sha512-OuvdrzyY8Q5Dbzpj+GcrnV1iCeoZbcFdzMjanZMMcAEUNy/6PH5pxZPXpaZLOR7whlzXiuzx0L9EKZbH7zpdRw==}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/25bcaa72bab9ef0bd8f7ce8a2a9f9e4366f55639':
-    resolution: {gitHosted: true, integrity: sha512-paoJ+PcclaBzudtwIHEn/xY+UbUjtPO8z7LthyyLEKVDqjl1icpkgVWuNmyCG6cFxU3EXhfW/XSUrMfvrTZdiQ==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/25bcaa72bab9ef0bd8f7ce8a2a9f9e4366f55639}
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/e49dadfd90afe6c0d449bf0692c93c2a7603db10':
+    resolution: {gitHosted: true, integrity: sha512-nF3tAgK5A/QijArX6Sj0MMloqp/wYQeMLFL+SJRX90KaYFiQGiYTouAwbWv5Tyvjsx6pDmiDtekmgQhBJSL+Qw==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/e49dadfd90afe6c0d449bf0692c93c2a7603db10}
     version: 0.5.4
     engines: {node: '>=20.3.0'}
     peerDependencies:
@@ -663,6 +1179,10 @@ packages:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
 
+  ansi-regex@6.4.0:
+    resolution: {integrity: sha512-KzTVk2tCWAHtYrvvvaP8bJKJq2pVinhLcGEQdtLIYPbmNGNyYe8QwNaTUYQp2J7/vIsUKt5QCqAfUkYyG9DkOw==}
+    engines: {node: '>=12'}
+
   ansi-styles@4.3.0:
     resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
     engines: {node: '>=8'}
@@ -690,6 +1210,10 @@ packages:
   canvg@3.0.11:
     resolution: {integrity: sha512-5ON+q7jCTgMp9cjpu4Jo6XbvfYwSB2Ow3kzHKfIyJfaCAOHLbdKPQqGKgfED/R5B+3TFFfe8pegYA+b423SRyA==}
     engines: {node: '>=10.0.0'}
+
+  chalk@6.0.1:
+    resolution: {integrity: sha512-/Ce6KNm3vIbWdMlNna6RVIZ/ICQxnJxCicet5LBKK9ZffBkqzDw0xh9EiKSljdRtiIQ1S1z4YgcscUUGzNCWrA==}
+    engines: {node: '>=22'}
 
   cheerio-select@2.1.0:
     resolution: {integrity: sha512-9v9kG0LvzrlcungtnJtpGNxY+fzECQKhK4EGJX2vByejiMX84MFNQw4UxPJl3bFbTMw+Dfs37XaIkCwTZfLh4g==}
@@ -923,8 +1447,16 @@ packages:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
     engines: {node: '>=6'}
 
+  detect-libc@2.1.2:
+    resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
+    engines: {node: '>=8'}
+
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
+
+  diff@9.0.0:
+    resolution: {integrity: sha512-svtcdpS8CgJyqAjEQIXdb3OjhFVVYjzGAPO8WGCmRbrml64SPw/jJD4GoE98aR7r25A0XcgrK3F02yw9R/vhQw==}
+    engines: {node: '>=0.3.1'}
 
   dijkstrajs@1.0.3:
     resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
@@ -962,28 +1494,28 @@ packages:
       '@deepseek-ai/schemastery': '>=3.0.0'
       react: '>=18.0.0'
 
-  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/92ec287380e9b9f2ab99ea849662aee7998563d5:
-    resolution: {gitHosted: true, integrity: sha512-9Nai40FAQoumMPNU0Z/RdTKc3hHemX6bDw+lvNl0kZd+OK4lEQKiZIL75wGZoJD7U0XGwWySHlq1IRpVOi6niw==, tarball: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/92ec287380e9b9f2ab99ea849662aee7998563d5}
-    version: 3.2.1
+  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/c6f5b55e4fc6936ddf3f8570d52af465c5329434:
+    resolution: {gitHosted: true, integrity: sha512-sGZCGXqUg94UMJGDBg5tssQX4PtARxrzkcERPY3BFshRB4gLbP4YHELEul/XkcHerhuYTtVOTgVxnYT2J7Rp/A==, tarball: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/c6f5b55e4fc6936ddf3f8570d52af465c5329434}
+    version: 3.2.2
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': 4.0.4 || 4.0.5-alpha.1 || 4.0.5-alpha.2 || 4.0.5 || 4.0.6-alpha.1
-      '@deepseek-ai/dsh-api-remotes': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-client-connection': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-client-locale': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-conversation': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-model-selection': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-primitives': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-settings': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-slots': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-tool': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-credentials': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-llm': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-llm-pi-ai': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-settings': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-subagent-codex': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-tools': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
-      '@deepseek-ai/dsh-web': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-api-remotes': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-connection': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-locale': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-conversation': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-model-selection': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-primitives': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-settings': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-slots': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-tool': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-credentials': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-llm': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-llm-pi-ai': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-settings': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-subagent-codex': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-tools': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-web': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
       '@deepseek-ai/schemastery': 3.18.1 || ^3.18.2 || 3.18.6-alpha.1
       '@earendil-works/pi-ai': 0.85.1 || 0.87.1 || 1.1.0 || 1.2.0 || 1.3.0 || 1.4.0
       react: ^18.2.0
@@ -996,9 +1528,9 @@ packages:
       react-dom:
         optional: true
 
-  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cc506287ac096e366b155c26fdd5767d6a53bd98:
-    resolution: {gitHosted: true, integrity: sha512-8c0EeAjd1XepSkTnHFqhYcpoDWP93McVBWy3Yt8Lgt7y0U8DwQ1pAk9wQYqhb6rB2lyyEETy0NggfVcSsLPExQ==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cc506287ac096e366b155c26fdd5767d6a53bd98}
-    version: 10.29.0
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/992ad1f3436056e2aa016bfa9a32171e8aec76a7:
+    resolution: {gitHosted: true, integrity: sha512-iOKhKuUKZBJtfv+F03M34ONMuu/meJNvWXFaMpHtVv6w027mVhKR0uAO/3zTXz+t5VR3cj8a3+F3aoFXobq4bQ==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/992ad1f3436056e2aa016bfa9a32171e8aec76a7}
+    version: 10.30.0
     engines: {node: '>=18'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1 || >=4.0.5-0 <5
@@ -1027,9 +1559,9 @@ packages:
       react:
         optional: true
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/7d34fcba55f6a3d679cf732af29c19b5f990375f:
-    resolution: {gitHosted: true, integrity: sha512-5NAFLieYuGo43AvYqMG1pveNPqQR1EDjDYS2eyjyxdvR8swerpSlRohCONlfp11kEsZ4/CWGgze3zCM2b5ouow==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/7d34fcba55f6a3d679cf732af29c19b5f990375f}
-    version: 0.1.71
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/c54f143cdec4791c4ba4d20d214a00282df2601d:
+    resolution: {gitHosted: true, integrity: sha512-ppwY9VuFROhxJH4DISnqz8cPqvncfk4w4YK6hoh7WRy8UgHyZ/yNN9+JPU1X96BSFFryuyXot/5KcjmnidgYYw==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/c54f143cdec4791c4ba4d20d214a00282df2601d}
+    version: 0.1.72
     hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -1096,6 +1628,10 @@ packages:
   get-caller-file@2.0.5:
     resolution: {integrity: sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==}
     engines: {node: 6.* || 8.* || >= 10.*}
+
+  get-east-asian-width@1.7.0:
+    resolution: {integrity: sha512-XjH1AECxf0giL2V1aU8vKyRR2ppRUb5c0EvT7zuJTokQ74bNo52zOtghqdWIqrhUD79fo3x0WfKZdOqxF6LG1Q==}
+    engines: {node: '>=18'}
 
   hachure-fill@0.5.2:
     resolution: {integrity: sha512-3GKBOn+m2LX9iq+JC1064cSFprJY4jL1jCXTcpnfER5HYE2l/4EfWSGzkPa/ZDBmYI0ZOEj5VHV/eKnPGkHuOg==}
@@ -1262,6 +1798,9 @@ packages:
   minimalistic-assert@1.0.1:
     resolution: {integrity: sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==}
 
+  minisearch@7.2.0:
+    resolution: {integrity: sha512-dqT2XBYUOZOiC5t2HRnwADjhNS2cecp9u+TJRiJ1Qp/f5qjkeT5APcGPjHw+bz89Ms8Jp+cG4AlE+QZ/QnDglg==}
+
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
@@ -1269,6 +1808,72 @@ packages:
     resolution: {integrity: sha512-kVrnsrJqMR8+oLJnGEmSWw9BivK5mt7H3FZatVRjrc5wGqFYuBxX1yG7+A7Gi5AefkX6t/oCkizcQgpu0cY1dQ==}
     engines: {node: ^18 || >=20}
     hasBin: true
+
+  node-addon-native-custom-loader@0.1.9:
+    resolution: {integrity: sha512-Zh87aubSc1UF8CzZsRws1KtSwXiPDH0tbcg8V/2OA8Tcq9yGJRESFcEOC5NGLFama5IGfC3aJhubZbrj9Un2qA==}
+    engines: {node: '>=20'}
+
+  node-addon-require-builtin-darwin-arm64@0.1.9:
+    resolution: {integrity: sha512-n45xEILQVOLZ2hVhzRXesTMYS4odHquyI/B/IkPMPUCONa8PjNfBag6lYBH4wDrhgpLNNBwMsUD8d8O/13QPPA==}
+    engines: {node: '>=20'}
+    cpu: [arm64]
+    os: [darwin]
+
+  node-addon-require-builtin-darwin-x64@0.1.9:
+    resolution: {integrity: sha512-Sm4Liqh1uo9zgJB2F/pACPPZdHu+fj9Qniyr1Q99dDQB0v71VgZgkAgv3K0/E1iPQBlZq9rakFkY7MGUIfWc0A==}
+    engines: {node: '>=20'}
+    cpu: [x64]
+    os: [darwin]
+
+  node-addon-require-builtin-linux-arm64-gnu@0.1.9:
+    resolution: {integrity: sha512-ToU4wGtOD/069i2y4fJ3cjDJiiWtcjSQTZMf0YKlotb5BmTM7FjhR3X1aub8J/YjlOwl6665J/XAYuvCaDO5sA==}
+    engines: {node: '>=20'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  node-addon-require-builtin-linux-arm64-musl@0.1.9:
+    resolution: {integrity: sha512-85Z5Avp++wfa9iiTIH8LC/r6qvlC/CiwpifiwIz0gYQ9PzajTSkz06gX7YDqf1oUqWYxU9uwNEOmo7mktHOOfA==}
+    engines: {node: '>=20'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  node-addon-require-builtin-linux-x64-gnu@0.1.9:
+    resolution: {integrity: sha512-fh3K3/JvBfSYwU8vEOpp4Wdp4N/jX0EnZYq5GsaftlQin1FVqgve/yDNoh+asxBMOQyHOG8F4dXlV1WCierrfg==}
+    engines: {node: '>=20'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  node-addon-require-builtin-linux-x64-musl@0.1.9:
+    resolution: {integrity: sha512-B6fu/5xmbRxnifM7nWz0IESkYnUl8dwFZmRDMsxdhzv2nb+EtBRFAXg4lf73qhX3yoZD4SnWJILBQMlIAwBCzw==}
+    engines: {node: '>=20'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  node-addon-require-builtin-win32-arm64-msvc@0.1.9:
+    resolution: {integrity: sha512-FOQuzNe8B1BANu886rJgdbQuRxPGUQmewkykw87wSr32U0ibQ3AWGuUM/Gh7LG4RekjFaifj7gEI/tq2+6GU6g==}
+    engines: {node: '>=20'}
+    cpu: [arm64]
+    os: [win32]
+
+  node-addon-require-builtin-win32-ia32-msvc@0.1.9:
+    resolution: {integrity: sha512-N29P0kmIBT6hnkNNFYzxn+o9ydT6OYZe9RFAi8dSxV1rNSul1FlxtuKWYe8w2sQpbQGYuGDEtpOwdeFtq2iFTg==}
+    engines: {node: '>=20 <23'}
+    cpu: [ia32]
+    os: [win32]
+
+  node-addon-require-builtin-win32-x64-msvc@0.1.9:
+    resolution: {integrity: sha512-+i6N4A7m7txjbw8pDYESdWXiKO9EEVq0SzTzwPS0WZuV4F1MzQnaDJwJJnO7T6zAc0BvqHXBOkpharCrUjFhbQ==}
+    engines: {node: '>=20'}
+    cpu: [x64]
+    os: [win32]
+
+  node-addon-require-builtin@0.1.9:
+    resolution: {integrity: sha512-BCxXCMZDs/VLLh64SwKNw/me7Qx1I7Be4qxWwYVRRm8tJoOB8fL7qg6CmXhSXeUqsKt72t8RaKCX4EN+5nocVg==}
+    engines: {node: '>=20'}
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
@@ -1326,6 +1931,11 @@ packages:
   pngjs@5.0.0:
     resolution: {integrity: sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==}
     engines: {node: '>=10.13.0'}
+
+  pnpm@11.7.0:
+    resolution: {integrity: sha512-GcyFLBIMcSV2DyRD7mvgyltA+fUFmN4aCaHxd1A+AQ5Xwjx3ZG4B52HeWb+HT7IqM5jDOrlpH8E+uUa28PTWIA==}
+    engines: {node: '>=22.13'}
+    hasBin: true
 
   points-on-curve@0.2.0:
     resolution: {integrity: sha512-0mYKnYYe9ZcqMCWhUjItv/oHjvgEsfKvnUTg8sAtnHr3GVy7rGkXCb6d5cSyqrWqL4k81b9CPg3urd+T7aop3A==}
@@ -1455,6 +2065,10 @@ packages:
   require-main-filename@2.0.0:
     resolution: {integrity: sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==}
 
+  resolve.exports@2.0.4:
+    resolution: {integrity: sha512-zepuGL0ulf+nt+XaFrlKeaiTJeyPFPLLY62+ncq1/VTHBdt3HsfXOH60priZ6tnXQozdGcDeIF5JVTanvIcYWQ==}
+    engines: {node: '>=10'}
+
   rgbcolor@1.0.1:
     resolution: {integrity: sha512-9aZLIrhRaD97sgVhtJOW6ckOEh6/GnvQtdVNfdZ6s67+3/XwLS9lBcQYzEEhYVeUowN7pRzMLsyGhK2i/xvWbw==}
     engines: {node: '>= 0.8.15'}
@@ -1484,11 +2098,25 @@ packages:
   scheduler@0.27.0:
     resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
+  semver@7.8.5:
+    resolution: {integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
 
   setimmediate@1.0.5:
     resolution: {integrity: sha512-MATJdZp8sLqDl/68LfQmbP8zKPLQNV6BIZoIgrscFDQ+RsvK/BxeDQOgyxKKoh0y/8h3BqVFnCqQ/gd+reiIXA==}
+
+  sharp@0.35.5:
+    resolution: {integrity: sha512-Ywn4OnzGukp7CDMrp08RQ50YKmuwG47brZgIVPTvBaaAfQlRlygrRqSrxdCiL9M+LlzLBiJ68IR1QqvzHyjC7g==}
+    engines: {node: '>=20.9.0'}
+    peerDependencies:
+      '@types/node': '*'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
 
   stackblur-canvas@2.7.0:
     resolution: {integrity: sha512-yf7OENo23AGJhBriGx0QivY5JP6Y1HbrrDI6WLt6C5auYZXlQrheoY8hD4ibekFKz1HOfE48Ww8kMWMnJD/zcQ==}
@@ -1501,12 +2129,20 @@ packages:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
     engines: {node: '>=8'}
 
+  string-width@8.3.0:
+    resolution: {integrity: sha512-ZbmZM0JCihQN91dWnxoipT2KOEyHqEyfRXUyjuRhW8b/xnqPDoq4gWEVApTVa9db2wN8mmoikgFBbjh71+cGeQ==}
+    engines: {node: '>=20'}
+
   string_decoder@1.1.1:
     resolution: {integrity: sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==}
 
   strip-ansi@6.0.1:
     resolution: {integrity: sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==}
     engines: {node: '>=8'}
+
+  strip-ansi@7.2.0:
+    resolution: {integrity: sha512-yDPMNjp4WyfYBkHnjIRLfca1i6KMyGCtsVgoKe/z1+6vukgaENdgGBZt+ZmKPc4gavvEZ5OgHfHdrazhgNyG7w==}
+    engines: {node: '>=12'}
 
   style-mod@4.1.3:
     resolution: {integrity: sha512-i/n8VsZydrugj3Iuzll8+x/00GH2vnYsk1eomD8QiRrSAeW6ItbCQDtfXCeJHd0iwiNagqjQkvpvREEPtW3IoQ==}
@@ -1537,6 +2173,9 @@ packages:
   ts-dedent@2.3.0:
     resolution: {integrity: sha512-JfJeIHke7y2egdGGgRAvpCwYFUsHlM2gPcrVOxFkznt/4uzQ7HFmvE63iFHVLBJNDuyDOQgijDK/tXH/f6Msjg==}
     engines: {node: '>=6.10'}
+
+  tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
   tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/4af1de4d458c7d03adc2615893e4793766c1bb87:
     resolution: {gitHosted: true, integrity: sha512-PN8CFLguCRPK/QogUFiges0ZakEkw4tTsSbPUUGV6NuFFimh0zL//jPpiFHML97Zr8eAEQMeq8+pR/i1c/wdVg==, tarball: https://codeload.github.com/zuorn/Tydora/tar.gz/4af1de4d458c7d03adc2615893e4793766c1bb87}
@@ -1645,6 +2284,12 @@ packages:
   yargs@15.4.1:
     resolution: {integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==}
     engines: {node: '>=8'}
+
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
   zustand@4.5.7:
     resolution: {integrity: sha512-CHOUy7mu3lbD6o6LJLfllpjkzhHXSBlX8B9+qPddUsIfeF5S/UZ5q0kmCsnRqT1UHFQZchNFDDzMbQsuesHWlw==}
@@ -1825,7 +2470,98 @@ snapshots:
       style-mod: 4.1.3
       w3c-keyname: 2.2.8
 
+  '@deepseek-ai/cosmokit@1.8.6': {}
+
+  '@deepseek-ai/dsh-agent-preset-registry@0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4)':
+    dependencies:
+      '@deepseek-ai/dsh-app-boot': 0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4)
+      '@deepseek-ai/schemastery': 3.18.5
+      js-yaml: 4.3.2
+      zod: 4.4.3
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis-plugin-group'
+      - '@deepseek-ai/dsh-home-paths'
+      - '@deepseek-ai/dsh-launch-environment'
+
+  '@deepseek-ai/dsh-agent-preset@0.2.1-rc.4(@deepseek-ai/dsh-agent-preset-registry@0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4))':
+    dependencies:
+      '@deepseek-ai/dsh-agent-preset-registry': 0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4)
+      '@deepseek-ai/schemastery': 3.18.5
+
+  '@deepseek-ai/dsh-app-boot@0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4)':
+    dependencies:
+      '@deepseek-ai/dsh-atomic-write': 0.2.1-rc.4
+      '@deepseek-ai/dsh-home-paths': 0.2.1-rc.4
+      '@deepseek-ai/dsh-package-manifest': 0.2.1-rc.4
+      '@eslint-community/regexpp': 4.12.2
+      ajv: 8.20.0
+      js-yaml: 4.3.2
+      node-addon-require-builtin: 0.1.9
+      resolve.exports: 2.0.4
+      semver: 7.8.5
+
+  '@deepseek-ai/dsh-atomic-write@0.2.1-rc.4': {}
+
+  '@deepseek-ai/dsh-cordis-host-runner@0.2.1-rc.4':
+    dependencies:
+      '@deepseek-ai/dsh-util-values': 0.2.1-rc.4
+      '@deepseek-ai/schemastery': 3.18.5
+      zod: 4.4.3
+
   '@deepseek-ai/dsh-home-paths@0.2.1-rc.4': {}
+
+  '@deepseek-ai/dsh-home-paths@0.2.1-rc.5': {}
+
+  '@deepseek-ai/dsh-package-manifest@0.2.1-rc.4': {}
+
+  '@deepseek-ai/dsh-plugin-market-index@0.2.1-rc.4':
+    dependencies:
+      '@deepseek-ai/dsh-package-manifest': 0.2.1-rc.4
+      semver: 7.8.5
+
+  '@deepseek-ai/dsh-plugin-market@0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4)':
+    dependencies:
+      '@deepseek-ai/dsh-app-boot': 0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4)
+      '@deepseek-ai/dsh-package-manifest': 0.2.1-rc.4
+      '@deepseek-ai/dsh-plugin-market-index': 0.2.1-rc.4
+      '@deepseek-ai/dsh-timeout': 0.2.1-rc.4
+      '@deepseek-ai/dsh-util-values': 0.2.1-rc.4
+      '@deepseek-ai/schemastery': 3.18.5
+      minisearch: 7.2.0
+      semver: 7.8.5
+      zod: 4.6.7
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis-plugin-group'
+      - '@deepseek-ai/cordis-plugin-include'
+      - '@deepseek-ai/dsh-home-paths'
+      - '@deepseek-ai/dsh-launch-environment'
+
+  '@deepseek-ai/dsh-time-context@0.2.1-rc.4':
+    dependencies:
+      '@deepseek-ai/dsh-util-values': 0.2.1-rc.4
+      '@deepseek-ai/schemastery': 3.18.5
+      zod: 4.4.3
+
+  '@deepseek-ai/dsh-timeout@0.2.1-rc.4': {}
+
+  '@deepseek-ai/dsh-tool-cordis@0.2.1-rc.4(@deepseek-ai/dsh-app-boot@0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4))(@deepseek-ai/dsh-cordis-host-runner@0.2.1-rc.4)':
+    dependencies:
+      '@deepseek-ai/dsh-app-boot': 0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4)
+      '@deepseek-ai/dsh-cordis-host-runner': 0.2.1-rc.4
+
+  '@deepseek-ai/dsh-util-values@0.2.1-rc.4': {}
+
+  '@deepseek-ai/schemastery@3.18.5':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.6
+      '@standard-schema/spec': 1.1.0
+
+  '@emnapi/runtime@1.11.3':
+    dependencies:
+      tslib: 2.8.1
+    optional: true
+
+  '@eslint-community/regexpp@4.12.2': {}
 
   '@floating-ui/core@1.8.0':
     dependencies:
@@ -1841,6 +2577,228 @@ snapshots:
   '@floating-ui/utils@0.2.12':
     optional: true
 
+  '@huiliyi37/cordis-plugin-include@0.8.0(@huiliyi37/cordis-plugin-loader@0.8.0)(@huiliyi37/cordis@0.8.0)':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/cordis-plugin-loader': 0.8.0(@huiliyi37/cordis@0.8.0)(node-addon-require-builtin@0.1.9)
+      '@huiliyi37/cosmokit': 0.8.0
+      js-yaml: 4.3.2
+
+  '@huiliyi37/cordis-plugin-loader@0.8.0(@huiliyi37/cordis@0.8.0)(node-addon-require-builtin@0.1.9)':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/cosmokit': 0.8.0
+      pnpm: 11.7.0
+    optionalDependencies:
+      node-addon-require-builtin: 0.1.9
+
+  '@huiliyi37/cordis@0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)':
+    dependencies:
+      '@huiliyi37/cosmokit': 0.8.0
+      '@standard-schema/spec': 1.1.0
+    optionalDependencies:
+      '@huiliyi37/cordis-plugin-include': 0.8.0(@huiliyi37/cordis-plugin-loader@0.8.0)(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/cordis-plugin-loader': 0.8.0(@huiliyi37/cordis@0.8.0)(node-addon-require-builtin@0.1.9)
+
+  '@huiliyi37/cosmokit@0.8.0': {}
+
+  '@huiliyi37/dsh-agent@0.8.0(26bcaace02991c9ccf15f77fb435503d)':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/dsh-llm': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-scope': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-session': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-scope@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-type-meta@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-system-prompt': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-scope@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-type-meta': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+
+  '@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+
+  '@huiliyi37/dsh-code-runtime@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+
+  '@huiliyi37/dsh-fs@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-sandbox@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))))':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-brand': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/dsh-llm': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-sandbox': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))
+
+  '@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/schemastery': 0.8.0
+
+  '@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-brand': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/dsh-timeout': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/schemastery': 0.8.0
+
+  '@huiliyi37/dsh-lsp-local@0.8.0(adf66728d3e06203a50ab92c57e7da18)':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-brand': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-fs': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-sandbox@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))))
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/dsh-llm': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-lsp': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))
+      '@huiliyi37/dsh-subprocess': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-timeout': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/schemastery': 0.8.0
+
+  '@huiliyi37/dsh-lsp@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-brand': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/dsh-llm': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+
+  '@huiliyi37/dsh-sandbox@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/dsh-llm': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+
+  '@huiliyi37/dsh-scope@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+
+  '@huiliyi37/dsh-session@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-scope@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-type-meta@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-brand': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/dsh-llm': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-scope': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-type-meta': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+
+  '@huiliyi37/dsh-subprocess@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+
+  '@huiliyi37/dsh-system-prompt@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-scope@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/dsh-llm': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-scope': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/schemastery': 0.8.0
+
+  '@huiliyi37/dsh-tianshu-tui@https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/446bfe373c962aa83e04b36a16da4f8588458242(@deepseek-ai/dsh-app-boot@0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4))(@deepseek-ai/dsh-atomic-write@0.2.1-rc.4)(@deepseek-ai/dsh-home-paths@0.2.1-rc.4)(@deepseek-ai/dsh-timeout@0.2.1-rc.4)(@types/node@25.9.5)':
+    dependencies:
+      '@deepseek-ai/dsh-agent-preset': 0.2.1-rc.4(@deepseek-ai/dsh-agent-preset-registry@0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4))
+      '@deepseek-ai/dsh-agent-preset-registry': 0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4)
+      '@deepseek-ai/dsh-atomic-write': 0.2.1-rc.4
+      '@deepseek-ai/dsh-cordis-host-runner': 0.2.1-rc.4
+      '@deepseek-ai/dsh-plugin-market': 0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4)
+      '@deepseek-ai/dsh-time-context': 0.2.1-rc.4
+      '@deepseek-ai/dsh-timeout': 0.2.1-rc.4
+      '@deepseek-ai/dsh-tool-cordis': 0.2.1-rc.4(@deepseek-ai/dsh-app-boot@0.2.1-rc.4(@deepseek-ai/dsh-home-paths@0.2.1-rc.4))(@deepseek-ai/dsh-cordis-host-runner@0.2.1-rc.4)
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/cordis-plugin-include': 0.8.0(@huiliyi37/cordis-plugin-loader@0.8.0)(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/cordis-plugin-loader': 0.8.0(@huiliyi37/cordis@0.8.0)(node-addon-require-builtin@0.1.9)
+      '@huiliyi37/dsh-agent': 0.8.0(26bcaace02991c9ccf15f77fb435503d)
+      '@huiliyi37/dsh-brand': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-code-runtime': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-fs': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-sandbox@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))))
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/dsh-llm': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-lsp': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))
+      '@huiliyi37/dsh-lsp-local': 0.8.0(adf66728d3e06203a50ab92c57e7da18)
+      '@huiliyi37/dsh-sandbox': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))
+      '@huiliyi37/dsh-scope': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-session': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-scope@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-type-meta@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-subprocess': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-system-prompt': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-scope@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-timeout': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-tool-lsp': 0.8.0(399b05bfc66b0b3b824e89a5a82a82bb)
+      '@huiliyi37/dsh-tools': 0.8.0(001f99ab00d4e8c594d8f8e4188a8b0f)
+      '@huiliyi37/dsh-type-meta': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-user-approval': 0.8.0(f867d2ddc325d0df9d43738aa74226b3)
+      chalk: 6.0.1
+      diff: 9.0.0
+      get-east-asian-width: 1.7.0
+      node-addon-require-builtin: 0.1.9
+      sharp: 0.35.5(@types/node@25.9.5)
+      string-width: 8.3.0
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis-plugin-group'
+      - '@deepseek-ai/cordis-plugin-include'
+      - '@deepseek-ai/cordis-plugin-loader'
+      - '@deepseek-ai/dsh-app-boot'
+      - '@deepseek-ai/dsh-brand'
+      - '@deepseek-ai/dsh-home-paths'
+      - '@deepseek-ai/dsh-launch-environment'
+      - '@deepseek-ai/dsh-plugin-manager'
+      - '@deepseek-ai/dsh-scope'
+      - '@deepseek-ai/dsh-session-projection'
+      - '@deepseek-ai/dsh-settings'
+      - '@deepseek-ai/dsh-system-prompt'
+      - '@deepseek-ai/dsh-typert-protocol'
+      - '@types/node'
+
+  '@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+
+  '@huiliyi37/dsh-tool-lsp@0.8.0(399b05bfc66b0b3b824e89a5a82a82bb)':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/dsh-llm': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-lsp': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))
+      '@huiliyi37/dsh-system-prompt': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-scope@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-timeout': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-tools': 0.8.0(001f99ab00d4e8c594d8f8e4188a8b0f)
+      '@huiliyi37/schemastery': 0.8.0
+
+  '@huiliyi37/dsh-tools@0.8.0(001f99ab00d4e8c594d8f8e4188a8b0f)':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-agent': 0.8.0(26bcaace02991c9ccf15f77fb435503d)
+      '@huiliyi37/dsh-code-runtime': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/dsh-llm': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-scope': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-session': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-scope@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-type-meta@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-system-prompt': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-scope@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-user-approval': 0.8.0(f867d2ddc325d0df9d43738aa74226b3)
+      '@huiliyi37/schemastery': 0.8.0
+
+  '@huiliyi37/dsh-type-meta@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+
+  '@huiliyi37/dsh-user-approval@0.8.0(f867d2ddc325d0df9d43738aa74226b3)':
+    dependencies:
+      '@huiliyi37/cordis': 0.8.0(@huiliyi37/cordis-plugin-include@0.8.0)(@huiliyi37/cordis-plugin-loader@0.8.0)
+      '@huiliyi37/dsh-agent': 0.8.0(26bcaace02991c9ccf15f77fb435503d)
+      '@huiliyi37/dsh-brand': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-invariants': 0.8.0(@huiliyi37/cordis@0.8.0)
+      '@huiliyi37/dsh-llm': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-scope': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))
+      '@huiliyi37/dsh-session': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-scope@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-type-meta@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/dsh-system-prompt': 0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-llm@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-brand@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))(@huiliyi37/dsh-timeout@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0))))(@huiliyi37/dsh-scope@0.8.0(@huiliyi37/cordis@0.8.0)(@huiliyi37/dsh-invariants@0.8.0(@huiliyi37/cordis@0.8.0)))
+      '@huiliyi37/schemastery': 0.8.0
+
+  '@huiliyi37/schemastery@0.8.0':
+    dependencies:
+      '@huiliyi37/cosmokit': 0.8.0
+      '@standard-schema/spec': 1.1.0
+
   '@iconify/types@2.0.0': {}
 
   '@iconify/utils@3.1.4':
@@ -1848,6 +2806,112 @@ snapshots:
       '@antfu/install-pkg': 1.1.0
       '@iconify/types': 2.0.0
       import-meta-resolve: 4.2.0
+
+  '@img/colour@1.1.0': {}
+
+  '@img/sharp-darwin-arm64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-darwin-arm64': 1.3.4
+    optional: true
+
+  '@img/sharp-darwin-x64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-darwin-x64': 1.3.4
+    optional: true
+
+  '@img/sharp-freebsd-wasm32@0.35.5':
+    dependencies:
+      '@img/sharp-wasm32': 0.35.5
+    optional: true
+
+  '@img/sharp-libvips-darwin-arm64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-darwin-x64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-arm64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-arm@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-ppc64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-riscv64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-s390x@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-x64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linuxmusl-arm64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linuxmusl-x64@1.3.4':
+    optional: true
+
+  '@img/sharp-linux-arm64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-arm64': 1.3.4
+    optional: true
+
+  '@img/sharp-linux-arm@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-arm': 1.3.4
+    optional: true
+
+  '@img/sharp-linux-ppc64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-ppc64': 1.3.4
+    optional: true
+
+  '@img/sharp-linux-riscv64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-riscv64': 1.3.4
+    optional: true
+
+  '@img/sharp-linux-s390x@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-s390x': 1.3.4
+    optional: true
+
+  '@img/sharp-linux-x64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-x64': 1.3.4
+    optional: true
+
+  '@img/sharp-linuxmusl-arm64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linuxmusl-arm64': 1.3.4
+    optional: true
+
+  '@img/sharp-linuxmusl-x64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linuxmusl-x64': 1.3.4
+    optional: true
+
+  '@img/sharp-wasm32@0.35.5':
+    dependencies:
+      '@emnapi/runtime': 1.11.3
+    optional: true
+
+  '@img/sharp-webcontainers-wasm32@0.35.5':
+    dependencies:
+      '@img/sharp-wasm32': 0.35.5
+    optional: true
+
+  '@img/sharp-win32-arm64@0.35.5':
+    optional: true
+
+  '@img/sharp-win32-ia32@0.35.5':
+    optional: true
+
+  '@img/sharp-win32-x64@0.35.5':
+    optional: true
 
   '@lezer/common@1.5.2': {}
 
@@ -1949,6 +3013,8 @@ snapshots:
 
   '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41': {}
 
+  '@standard-schema/spec@1.1.0': {}
+
   '@tauri-apps/api@2.11.1': {}
 
   '@tauri-apps/plugin-clipboard-manager@2.3.3':
@@ -1975,8 +3041,9 @@ snapshots:
     dependencies:
       '@tauri-apps/api': 2.11.1
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/25bcaa72bab9ef0bd8f7ce8a2a9f9e4366f55639':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/e49dadfd90afe6c0d449bf0692c93c2a7603db10(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
       '@tencent-connect/qqbot-connector': 1.2.0
       '@tencent-connect/qqbot-nodejs': 1.0.5
       js-yaml: 4.3.2
@@ -2430,6 +3497,8 @@ snapshots:
 
   ansi-regex@5.0.1: {}
 
+  ansi-regex@6.4.0: {}
+
   ansi-styles@4.3.0:
     dependencies:
       color-convert: 2.0.1
@@ -2455,6 +3524,8 @@ snapshots:
       stackblur-canvas: 2.7.0
       svg-pathdata: 6.0.3
     optional: true
+
+  chalk@6.0.1: {}
 
   cheerio-select@2.1.0:
     dependencies:
@@ -2724,9 +3795,13 @@ snapshots:
 
   dequal@2.0.3: {}
 
+  detect-libc@2.1.2: {}
+
   devlop@1.1.0:
     dependencies:
       dequal: 2.0.3
+
+  diff@9.0.0: {}
 
   dijkstrajs@1.0.3: {}
 
@@ -2761,13 +3836,15 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/dae686faadb44bbd1e5a71f9fd618c2d2e926cee:
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/dae686faadb44bbd1e5a71f9fd618c2d2e926cee(@deepseek-ai/schemastery@3.18.5):
     dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
       fzstd: 0.1.1
 
-  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/92ec287380e9b9f2ab99ea849662aee7998563d5(react-dom@19.2.8(react@19.2.8)):
+  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/c6f5b55e4fc6936ddf3f8570d52af465c5329434(@deepseek-ai/schemastery@3.18.5)(react-dom@19.2.8(react@19.2.8)):
     dependencies:
-      '@deepseek-ai/dsh-home-paths': 0.2.1-rc.4
+      '@deepseek-ai/dsh-home-paths': 0.2.1-rc.5
+      '@deepseek-ai/schemastery': 3.18.5
       https-proxy-agent: 7.0.6
       ws: 8.21.3
     optionalDependencies:
@@ -2777,9 +3854,9 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/cc506287ac096e366b155c26fdd5767d6a53bd98: {}
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/992ad1f3436056e2aa016bfa9a32171e8aec76a7: {}
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/7d34fcba55f6a3d679cf732af29c19b5f990375f(react-dom@19.2.8(react@19.2.8)):
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/c54f143cdec4791c4ba4d20d214a00282df2601d(react-dom@19.2.8(react@19.2.8)):
     dependencies:
       '@phosphor-icons/react': 2.1.10(react-dom@19.2.8(react@19.2.8))
       '@primer/octicons-react': 19.33.0
@@ -2831,6 +3908,8 @@ snapshots:
   fzstd@0.1.1: {}
 
   get-caller-file@2.0.5: {}
+
+  get-east-asian-width@1.7.0: {}
 
   hachure-fill@0.5.2: {}
 
@@ -3024,9 +4103,72 @@ snapshots:
 
   minimalistic-assert@1.0.1: {}
 
+  minisearch@7.2.0: {}
+
   ms@2.1.3: {}
 
   nanoid@5.1.16: {}
+
+  node-addon-native-custom-loader@0.1.9: {}
+
+  node-addon-require-builtin-darwin-arm64@0.1.9:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.9
+    optional: true
+
+  node-addon-require-builtin-darwin-x64@0.1.9:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.9
+    optional: true
+
+  node-addon-require-builtin-linux-arm64-gnu@0.1.9:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.9
+    optional: true
+
+  node-addon-require-builtin-linux-arm64-musl@0.1.9:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.9
+    optional: true
+
+  node-addon-require-builtin-linux-x64-gnu@0.1.9:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.9
+    optional: true
+
+  node-addon-require-builtin-linux-x64-musl@0.1.9:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.9
+    optional: true
+
+  node-addon-require-builtin-win32-arm64-msvc@0.1.9:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.9
+    optional: true
+
+  node-addon-require-builtin-win32-ia32-msvc@0.1.9:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.9
+    optional: true
+
+  node-addon-require-builtin-win32-x64-msvc@0.1.9:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.9
+    optional: true
+
+  node-addon-require-builtin@0.1.9:
+    dependencies:
+      node-addon-native-custom-loader: 0.1.9
+    optionalDependencies:
+      node-addon-require-builtin-darwin-arm64: 0.1.9
+      node-addon-require-builtin-darwin-x64: 0.1.9
+      node-addon-require-builtin-linux-arm64-gnu: 0.1.9
+      node-addon-require-builtin-linux-arm64-musl: 0.1.9
+      node-addon-require-builtin-linux-x64-gnu: 0.1.9
+      node-addon-require-builtin-linux-x64-musl: 0.1.9
+      node-addon-require-builtin-win32-arm64-msvc: 0.1.9
+      node-addon-require-builtin-win32-ia32-msvc: 0.1.9
+      node-addon-require-builtin-win32-x64-msvc: 0.1.9
 
   nth-check@2.1.1:
     dependencies:
@@ -3073,6 +4215,8 @@ snapshots:
     optional: true
 
   pngjs@5.0.0: {}
+
+  pnpm@11.7.0: {}
 
   points-on-curve@0.2.0: {}
 
@@ -3219,6 +4363,8 @@ snapshots:
 
   require-main-filename@2.0.0: {}
 
+  resolve.exports@2.0.4: {}
+
   rgbcolor@1.0.1:
     optional: true
 
@@ -3243,9 +4389,44 @@ snapshots:
 
   scheduler@0.27.0: {}
 
+  semver@7.8.5: {}
+
   set-blocking@2.0.0: {}
 
   setimmediate@1.0.5: {}
+
+  sharp@0.35.5(@types/node@25.9.5):
+    dependencies:
+      '@img/colour': 1.1.0
+      detect-libc: 2.1.2
+      semver: 7.8.5
+    optionalDependencies:
+      '@img/sharp-darwin-arm64': 0.35.5
+      '@img/sharp-darwin-x64': 0.35.5
+      '@img/sharp-freebsd-wasm32': 0.35.5
+      '@img/sharp-libvips-darwin-arm64': 1.3.4
+      '@img/sharp-libvips-darwin-x64': 1.3.4
+      '@img/sharp-libvips-linux-arm': 1.3.4
+      '@img/sharp-libvips-linux-arm64': 1.3.4
+      '@img/sharp-libvips-linux-ppc64': 1.3.4
+      '@img/sharp-libvips-linux-riscv64': 1.3.4
+      '@img/sharp-libvips-linux-s390x': 1.3.4
+      '@img/sharp-libvips-linux-x64': 1.3.4
+      '@img/sharp-libvips-linuxmusl-arm64': 1.3.4
+      '@img/sharp-libvips-linuxmusl-x64': 1.3.4
+      '@img/sharp-linux-arm': 0.35.5
+      '@img/sharp-linux-arm64': 0.35.5
+      '@img/sharp-linux-ppc64': 0.35.5
+      '@img/sharp-linux-riscv64': 0.35.5
+      '@img/sharp-linux-s390x': 0.35.5
+      '@img/sharp-linux-x64': 0.35.5
+      '@img/sharp-linuxmusl-arm64': 0.35.5
+      '@img/sharp-linuxmusl-x64': 0.35.5
+      '@img/sharp-webcontainers-wasm32': 0.35.5
+      '@img/sharp-win32-arm64': 0.35.5
+      '@img/sharp-win32-ia32': 0.35.5
+      '@img/sharp-win32-x64': 0.35.5
+      '@types/node': 25.9.5
 
   stackblur-canvas@2.7.0:
     optional: true
@@ -3258,6 +4439,11 @@ snapshots:
       is-fullwidth-code-point: 3.0.0
       strip-ansi: 6.0.1
 
+  string-width@8.3.0:
+    dependencies:
+      get-east-asian-width: 1.7.0
+      strip-ansi: 7.2.0
+
   string_decoder@1.1.1:
     dependencies:
       safe-buffer: 5.1.2
@@ -3265,6 +4451,10 @@ snapshots:
   strip-ansi@6.0.1:
     dependencies:
       ansi-regex: 5.0.1
+
+  strip-ansi@7.2.0:
+    dependencies:
+      ansi-regex: 6.4.0
 
   style-mod@4.1.3: {}
 
@@ -3290,6 +4480,9 @@ snapshots:
       prosemirror-markdown: 1.13.7
 
   ts-dedent@2.3.0: {}
+
+  tslib@2.8.1:
+    optional: true
 
   tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/4af1de4d458c7d03adc2615893e4793766c1bb87(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extension-list@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(@tiptap/extensions@3.31.0(@tiptap/core@3.31.0(@tiptap/pm@3.31.0))(@tiptap/pm@3.31.0))(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(typescript@6.0.3)(use-sync-external-store@1.6.0(react@19.2.8)):
     dependencies:
@@ -3469,6 +4662,10 @@ snapshots:
       which-module: 2.0.1
       y18n: 4.0.3
       yargs-parser: 18.1.3
+
+  zod@4.4.3: {}
+
+  zod@4.6.7: {}
 
   zustand@4.5.7(immer@11.1.18)(react@19.2.8):
     dependencies:
