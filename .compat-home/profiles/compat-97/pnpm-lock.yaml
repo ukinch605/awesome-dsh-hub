@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@ayanehana/dsh-reasoning-effort':
+        specifier: github:HanaAyane/dsh-reasoning-effort
+        version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30(react@18.3.1)
       '@changfenhuang/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
         version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/14111b20b47ff9a9cf6299a481a2ec2a7dd7272d
@@ -19,25 +22,25 @@ importers:
         version: https://codeload.github.com/lehhair/dsh-mobile/tar.gz/1144e6b98419010588cb01a207dfb1b33035ca9f(react@18.3.1)
       '@michengai/dsh-codex-ui':
         specifier: github:MichengAI/dsh-codex-ui
-        version: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/8557de13a77f767153d450e0dc695568feca894f(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/450232b296ab82ce4ce6b59b40f5e5c0cec8dcea(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@oil-oil/dsh-vision':
         specifier: github:oil-oil/dsh-vision
         version: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7(react@18.3.1)
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/e49dadfd90afe6c0d449bf0692c93c2a7603db10(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/a4a01fa9f122e187733fbd990c3d6a41e4d7e538(@deepseek-ai/schemastery@3.18.5)
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
         version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9
       dsh-computer-use-win:
         specifier: github:Yu-tao-Li/dsh-computer-use-win
-        version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662(@deepseek-ai/schemastery@3.18.5)
       dsh-custom-skin:
         specifier: github:SLin-code/dsh-custom-skin
         version: https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/03d3117fa426d14df4e7a58248adfce094e94633(react@18.3.1)
       dsh-fish-memory:
         specifier: github:Yuuyuko-uu/dsh-fish-memory
-        version: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/978b5929fd11be669ae9072309f3da03e3b01fa5
+        version: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/44f3db3b1c4333c178d7e4af2e7f085fbc8f1b44
       dsh-science:
         specifier: github:biociao/dsh-science
         version: https://codeload.github.com/biociao/dsh-science/tar.gz/23767ab2f8d7bcf84a0820daa4c6ae79549da000
@@ -50,6 +53,25 @@ importers:
 
 packages:
 
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30':
+    resolution: {gitHosted: true, integrity: sha512-LixlHYQTvZuYmkiFAbE3x00Z+P/wgH3QjPkBkZGtDN+c91U8rc664djyAZN4ln7ZRGIQPdRa583rDAOlZVNtKw==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30}
+    version: 0.9.1
+    engines: {dsh: '>=0.2.1-rc.2 <0.3.0', node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.5
+      '@deepseek-ai/dsh-api-remotes': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-api-session-controller': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-connection': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-locale': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-store': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-model-selection': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-renderer': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-session': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-settings': ^0.2.1-rc.2
+      '@deepseek-ai/dsh-client-ui-slots': ^0.2.1-rc.2
+      react: ^18.2.0
+
   '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/14111b20b47ff9a9cf6299a481a2ec2a7dd7272d':
     resolution: {gitHosted: true, integrity: sha512-ia1E+gPyPye5Shu+QZ08lC8moOs1WwiGsXg4dU50XXTUezU6RAuS1/WDK5+9fI6LeoAWG8+gUKtYMjDsnNJPfQ==, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/14111b20b47ff9a9cf6299a481a2ec2a7dd7272d}
     version: 1.4.11
@@ -60,8 +82,14 @@ packages:
   '@deepseek-ai/cosmokit@1.8.2':
     resolution: {integrity: sha512-muBOKtSrUKU5m/xpq8ZXWL6hQ/jgd4PhU2PqH97bcxIiLEJfNwZOGQEx4t/aS/GgxRAR+ra9pMHPMtTHU4sqqA==}
 
+  '@deepseek-ai/cosmokit@1.8.6':
+    resolution: {integrity: sha512-ZSD/fN52L498LBIOYwjIOlaLv5veY6ZEwI2yzvZUKQtctn0QAPqu8tKdJ+OF5+Tv6NBq1U+wJWH+QI6OGy5EvQ==}
+
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
+
+  '@deepseek-ai/schemastery@3.18.5':
+    resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
   '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/0d73a4e03639d4f63d0771ae4490e2718b7e7aa0':
     resolution: {gitHosted: true, integrity: sha512-WTTmASPPZVgdUyLgxA1JVSbg5kx8+A2VcpEltaYPqrQl2vv6CJpVRFTpG+eWvg6VHkFJNndcsiEFG78RejDMJw==, tarball: https://codeload.github.com/titanwings/dsh-automation/tar.gz/0d73a4e03639d4f63d0771ae4490e2718b7e7aa0}
@@ -91,9 +119,9 @@ packages:
     peerDependencies:
       hono: ^4 || ^5.0.0-0
 
-  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/8557de13a77f767153d450e0dc695568feca894f':
-    resolution: {gitHosted: true, integrity: sha512-DFQdmXk9jUFwopEb2j1GuE7mgATZyLo3hel5bSrBUQL4Z8AWqNnuoraNvISGElv/lvNLJhVPv5MlCM2HnCzb1w==, tarball: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/8557de13a77f767153d450e0dc695568feca894f}
-    version: 2.0.6
+  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/450232b296ab82ce4ce6b59b40f5e5c0cec8dcea':
+    resolution: {gitHosted: true, integrity: sha512-o9m9H/VZsD14UIXHekkz30OuxLjPUJIfvbCq9pN8cWHUjCVNtDWHH2TJ2TC7uPJjHtn0CLan0gJ6pTJq2QXysg==, tarball: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/450232b296ab82ce4ce6b59b40f5e5c0cec8dcea}
+    version: 2.0.9
     engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.2 <5.0.0'
@@ -148,9 +176,9 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/e49dadfd90afe6c0d449bf0692c93c2a7603db10':
-    resolution: {gitHosted: true, integrity: sha512-nF3tAgK5A/QijArX6Sj0MMloqp/wYQeMLFL+SJRX90KaYFiQGiYTouAwbWv5Tyvjsx6pDmiDtekmgQhBJSL+Qw==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/e49dadfd90afe6c0d449bf0692c93c2a7603db10}
-    version: 0.5.4
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/a4a01fa9f122e187733fbd990c3d6a41e4d7e538':
+    resolution: {gitHosted: true, integrity: sha512-VvhABuESGacczD6l8lVNwRcPownrU8lDgaW1+G7QkG95BcFbAygADFtBTCJqdoDMQjqh9P2jbSU1yN8HppbELw==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/a4a01fa9f122e187733fbd990c3d6a41e4d7e538}
+    version: 0.5.5
     engines: {node: '>=20.3.0'}
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1'
@@ -464,9 +492,9 @@ packages:
       '@deepseek-ai/dsh-client-ui-settings-general': '>=0.1.0-rc.7 <0.2.0-0 || >=0.1.1-rc.1 <0.2.0-0'
       react: ^18.2.0
 
-  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/978b5929fd11be669ae9072309f3da03e3b01fa5:
-    resolution: {gitHosted: true, integrity: sha512-PHp/zJRP3/kYl0dztiI4b/l0uWmQJXmd6d/i7jQfshWcOwNey1DVS0vcvAGirxGGkzoG0xHPhYlL5JYJq307NA==, tarball: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/978b5929fd11be669ae9072309f3da03e3b01fa5}
-    version: 1.4.4
+  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/44f3db3b1c4333c178d7e4af2e7f085fbc8f1b44:
+    resolution: {gitHosted: true, integrity: sha512-0fxgDga/YTWRysltJpEQCwhsYiyNQtSs4ar1Ssi/XcbZvlTKIJbq4nNnRY4e9YqF2PmnNIFTEv3a2YT7L4EDfQ==, tarball: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/44f3db3b1c4333c178d7e4af2e7f085fbc8f1b44}
+    version: 1.4.7
     peerDependencies:
       '@deepseek-ai/dsh-llm': '*'
       '@deepseek-ai/dsh-tools': '*'
@@ -1037,13 +1065,25 @@ packages:
 
 snapshots:
 
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30(react@18.3.1)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      react: 18.3.1
+
   '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/14111b20b47ff9a9cf6299a481a2ec2a7dd7272d': {}
 
   '@deepseek-ai/cosmokit@1.8.2': {}
 
+  '@deepseek-ai/cosmokit@1.8.6': {}
+
   '@deepseek-ai/schemastery@3.18.1':
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.2
+      '@standard-schema/spec': 1.1.0
+
+  '@deepseek-ai/schemastery@3.18.5':
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
   '@dsh-external/dsh-automation@https://codeload.github.com/titanwings/dsh-automation/tar.gz/0d73a4e03639d4f63d0771ae4490e2718b7e7aa0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
@@ -1062,7 +1102,7 @@ snapshots:
     dependencies:
       hono: 4.13.13
 
-  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/8557de13a77f767153d450e0dc695568feca894f(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/450232b296ab82ce4ce6b59b40f5e5c0cec8dcea(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       lucide-react: 1.64.0(react@18.3.1)
       react: 18.3.1
@@ -1099,9 +1139,9 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/e49dadfd90afe6c0d449bf0692c93c2a7603db10(@deepseek-ai/schemastery@3.18.1)':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/a4a01fa9f122e187733fbd990c3d6a41e4d7e538(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.1
+      '@deepseek-ai/schemastery': 3.18.5
       '@tencent-connect/qqbot-connector': 1.2.0
       '@tencent-connect/qqbot-nodejs': 1.0.5
       js-yaml: 4.3.1
@@ -1395,15 +1435,15 @@ snapshots:
 
   dijkstrajs@1.0.3: {}
 
-  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662(@deepseek-ai/schemastery@3.18.1):
+  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662(@deepseek-ai/schemastery@3.18.5):
     optionalDependencies:
-      '@deepseek-ai/schemastery': 3.18.1
+      '@deepseek-ai/schemastery': 3.18.5
 
   dsh-custom-skin@https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/03d3117fa426d14df4e7a58248adfce094e94633(react@18.3.1):
     dependencies:
       react: 18.3.1
 
-  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/978b5929fd11be669ae9072309f3da03e3b01fa5: {}
+  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/44f3db3b1c4333c178d7e4af2e7f085fbc8f1b44: {}
 
   dsh-model-tier@0.1.0: {}
 

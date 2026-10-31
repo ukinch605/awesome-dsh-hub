@@ -16,18 +16,21 @@ importers:
         version: https://codeload.github.com/LoserFox/distill/tar.gz/78a508c8839a0cd4205c95416905d7d5e2e2775e(@deepseek-ai/schemastery@3.18.5)
       ds-harness-remote:
         specifier: github:liguobao/deepseek-harness-remote
-        version: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/c8846ec9e380678f220a3872012569dc8afbc747
+        version: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/794ae4a8179ab175d6d26d6ddeda35427acaf032
+      dsh-computer-use-win:
+        specifier: github:Yu-tao-Li/dsh-computer-use-win
+        version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662(@deepseek-ai/schemastery@3.18.5)
       dsh-harmony-next:
         specifier: github:linhay/harmony-next.skills
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101
       dsh-reasoning-effort:
         specifier: github:HanaAyane/dsh-reasoning-effort
-        version: '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16'
+        version: '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30'
 
 packages:
 
-  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16':
-    resolution: {gitHosted: true, integrity: sha512-qwbNxjEg3zu3q8W5esZWJZOQs4GlGhkZDSvuNvvyhCd7x+uZ7VGL4z7IqJpzm5Cj5f9ZW+57Is4RATHeiDqSeQ==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16}
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30':
+    resolution: {gitHosted: true, integrity: sha512-LixlHYQTvZuYmkiFAbE3x00Z+P/wgH3QjPkBkZGtDN+c91U8rc664djyAZN4ln7ZRGIQPdRa583rDAOlZVNtKw==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30}
     version: 0.9.1
     engines: {dsh: '>=0.2.1-rc.2 <0.3.0', node: '>=22.19'}
     peerDependencies:
@@ -167,9 +170,9 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/c8846ec9e380678f220a3872012569dc8afbc747:
-    resolution: {gitHosted: true, integrity: sha512-4ZIoBItNTeKijdUNyC/6+tBoYxC1/cKFCdvpO7Sb+RA/8wAXCOMidoY0/XrsbEzeUP1fTJAdw/EWu+54MY5GpA==, tarball: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/c8846ec9e380678f220a3872012569dc8afbc747}
-    version: 0.5.23
+  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/794ae4a8179ab175d6d26d6ddeda35427acaf032:
+    resolution: {gitHosted: true, integrity: sha512-XEkqKqDqjNypVj1kX2yjNyyEL9M7n8r56rEWQjzVirBnU0w5/TafybaPXQMuNJRuL/12x+yt3VE0TWD2EpdTgw==, tarball: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/794ae4a8179ab175d6d26d6ddeda35427acaf032}
+    version: 0.6.0
     hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1 <5 || >=4.0.5-alpha.1 <4.0.6-0'
@@ -203,6 +206,21 @@ packages:
       '@deepseek-ai/dsh-client-ui-sidebar':
         optional: true
       '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+
+  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662:
+    resolution: {gitHosted: true, integrity: sha512-P6iPLdYLwuOZ6uh6WfG+c1I+D69z4m4r/lxhca42GhVEM+Z9bqhOvxieL1RqhYBDoWWhWqHJdvnw/E4HJWQawQ==, tarball: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662}
+    version: 0.5.3
+    engines: {node: '>=22'}
+    os: [win32]
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.2 || >=0.2.0-rc.2'
+      '@deepseek-ai/schemastery': '>=3.18.1'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-mcp-client':
+        optional: true
+      '@deepseek-ai/schemastery':
         optional: true
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101:
@@ -310,7 +328,7 @@ packages:
 
 snapshots:
 
-  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7aea9d9ddef74dc9823dcc725e7d2bf344e99e16':
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -385,7 +403,7 @@ snapshots:
       webidl-conversions: 7.0.0
     optional: true
 
-  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/c8846ec9e380678f220a3872012569dc8afbc747:
+  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/794ae4a8179ab175d6d26d6ddeda35427acaf032:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       qrcode: 1.5.4
@@ -396,6 +414,10 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+
+  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662(@deepseek-ai/schemastery@3.18.5):
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.5
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101: {}
 

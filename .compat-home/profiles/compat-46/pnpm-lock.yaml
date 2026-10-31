@@ -19,7 +19,7 @@ importers:
         version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/6a649fe930aeab4247d3e8b936b6bf393aa71e8c
       dsh-bili-scroll:
         specifier: github:c1overzz/dsh-bili-scroll
-        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a
+        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
         version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/eafed896c270a2952e4b5247f2a4ac25bcdaa599
@@ -29,6 +29,9 @@ importers:
       dsh-interconnect:
         specifier: github:Chinesezjc/dsh-interconnect
         version: https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/5547b03466a5db4a3d69e25fc48fa07611e8cff6(@deepseek-ai/schemastery@3.18.2)
+      dsh-startup-screen:
+        specifier: github:6shenhonghong9/dsh-startup-screen
+        version: https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/1f35ea33810e02a900b31df01f9c806f92f398df
       dsh-tokenledger:
         specifier: github:zh667/TokenLedger
         version: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b(@deepseek-ai/schemastery@3.18.2)
@@ -176,9 +179,9 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a:
-    resolution: {gitHosted: true, integrity: sha512-Y/8+v9JnAe7cG/TZoJminf/4EhGO8qMuvCSmfwAYPV/FlpjPqsrC59RNmm9DJGK9tfcIH5YBjUPCuGGWdPLNcg==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a}
-    version: 2.3.1
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59:
+    resolution: {gitHosted: true, integrity: sha512-/oQ+Fs0CDWuWysn5OGgvpUT2GnhDU9bAkRxSkuZkuEgRn9Y2VawPDw5DN7XFJO9be1w+x9IHTn+S0xyTqbXr4g==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59}
+    version: 2.4.0
     engines: {dsh: '>=0.1.7-rc.1', node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
@@ -224,6 +227,11 @@ packages:
     peerDependenciesMeta:
       '@deepseek-ai/dsh-host-webserver':
         optional: true
+
+  dsh-startup-screen@https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/1f35ea33810e02a900b31df01f9c806f92f398df:
+    resolution: {gitHosted: true, integrity: sha512-duUVncGMaamfDz9KxTKlzRfpj13FHWs5sO1ukJmU8OKgrOLqTLeIG5nhfWwjw5yz/0GoqRn7nRbpjNb4SYRWGQ==, tarball: https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/1f35ea33810e02a900b31df01f9c806f92f398df}
+    version: 1.2.0
+    engines: {node: '>=20'}
 
   dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b:
     resolution: {gitHosted: true, integrity: sha512-dl09Z90KbsjLXiJGU+nnpG1xSx9ez13tgRPzq2cwRU6rEIj3kpjwR+LC/dryJxsjFdAZlQMp1ST+u6oi6x2TXQ==, tarball: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b}
@@ -339,7 +347,7 @@ snapshots:
 
   cosmokit@1.8.1: {}
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a:
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
 
@@ -353,6 +361,8 @@ snapshots:
   dsh-interconnect@https://codeload.github.com/Chinesezjc/dsh-interconnect/tar.gz/5547b03466a5db4a3d69e25fc48fa07611e8cff6(@deepseek-ai/schemastery@3.18.2):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
+
+  dsh-startup-screen@https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/1f35ea33810e02a900b31df01f9c806f92f398df: {}
 
   dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b(@deepseek-ai/schemastery@3.18.2):
     optionalDependencies:

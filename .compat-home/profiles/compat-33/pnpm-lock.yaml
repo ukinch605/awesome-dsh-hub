@@ -20,18 +20,21 @@ importers:
       '@zseven-w/dsh-ios':
         specifier: github:ZSeven-W/dsh-ios
         version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c
+      dsh-api-relay-audit:
+        specifier: github:toby-bridges/api-relay-audit
+        version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59
       dsh-dafeiyu:
         specifier: github:QCYTSN/dsh-dafeiyu
         version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98
       dsh-purge:
         specifier: github:YuJunZhiXue/dsh-purge
-        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/0c933dc7d3252698f3f0f9756932dcc88355f532
+        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/9716ca3e8711c7bb680668d34cc2e93e184028ad
       dsh-toy:
         specifier: github:c3ll256/dsh-toy
         version: https://codeload.github.com/c3ll256/dsh-toy/tar.gz/51b582507aa8aad8332e1a5b5a0bc2ae607f4860
       easyeda-agent-dsh:
         specifier: github:zhoushoujianwork/easyeda-agent
-        version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7a73a6834d8d76fd9765dd06f9d4e4bdd6b0556a
+        version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/a0aa9620b342f6c9c937b7d7f267e56f80806722
       perfect-web-clone:
         specifier: github:ericshang98/Perfect-Web-Clone
         version: https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5
@@ -262,6 +265,18 @@ packages:
     resolution: {integrity: sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==}
     engines: {node: '>= 0.8'}
 
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59:
+    resolution: {gitHosted: true, integrity: sha512-U94NbchvcrU90Cb+v5iR8/sKAB6XFL/8rxvtoNnj+ys13s5ZZhZYK0iLVGIPf9i/W5bvsv8Sz2maViApFt23pg==, tarball: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59}
+    version: 2.5.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-commands': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-llm': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-settings': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-subprocess': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+
   dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98:
     resolution: {gitHosted: true, integrity: sha512-Eo/JhKwo9OAZm5N24g4qatTY6Uq64D8dMg/J/gDZVbcT1BG+F3PMsB4dkIMqErBbjyvCTNXheS+H47UBz8dCVw==, tarball: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98}
     version: 0.1.6
@@ -271,9 +286,9 @@ packages:
       - '@deepseek-ai/schemastery'
       - '@standard-schema/spec'
 
-  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/0c933dc7d3252698f3f0f9756932dcc88355f532:
-    resolution: {gitHosted: true, integrity: sha512-67PqL5UagHgpPDWEnaYe6tGWgBeuuqOkK4dBHopp5E3pBx09EhVke8zKnluT3harT1cWUhSWC/yTHuoi94Ircw==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/0c933dc7d3252698f3f0f9756932dcc88355f532}
-    version: 1.1.82
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/9716ca3e8711c7bb680668d34cc2e93e184028ad:
+    resolution: {gitHosted: true, integrity: sha512-x3z2ke7nsR4brEqLd1/y1fUgMviiSWnoAuxgJrjNb6b13aR+/AKD/m0qi3DIm/D4nPhqsV4XLPZ5ntDBmDgt1g==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/9716ca3e8711c7bb680668d34cc2e93e184028ad}
+    version: 1.1.85
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -293,8 +308,8 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7a73a6834d8d76fd9765dd06f9d4e4bdd6b0556a:
-    resolution: {gitHosted: true, integrity: sha512-yd3/64tQhTQDZjTZFwcwfDaW5WkU1OA+qw+KB675JpH169vrpWpAjD6ErLq4NpCvZs0fzlJlPqSiifpvXf6sRg==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7a73a6834d8d76fd9765dd06f9d4e4bdd6b0556a}
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/a0aa9620b342f6c9c937b7d7f267e56f80806722:
+    resolution: {gitHosted: true, integrity: sha512-o7WYo3LVBJd5DMZIOG5eiYurAB2EI4BI0cVlQ2sHX9OnNNVwUi0PpAHmyIwM7LQkZrw+JQK9v099ig40KJQUIA==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/a0aa9620b342f6c9c937b7d7f267e56f80806722}
     version: 1.13.1
     engines: {node: '>=20.17.0'}
 
@@ -814,9 +829,11 @@ snapshots:
 
   depd@2.0.0: {}
 
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59: {}
+
   dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98: {}
 
-  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/0c933dc7d3252698f3f0f9756932dcc88355f532: {}
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/9716ca3e8711c7bb680668d34cc2e93e184028ad: {}
 
   dsh-toy@https://codeload.github.com/c3ll256/dsh-toy/tar.gz/51b582507aa8aad8332e1a5b5a0bc2ae607f4860:
     dependencies:
@@ -832,7 +849,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7a73a6834d8d76fd9765dd06f9d4e4bdd6b0556a:
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/a0aa9620b342f6c9c937b7d7f267e56f80806722:
     dependencies:
       '@modelcontextprotocol/sdk': 1.30.0
     transitivePeerDependencies:
