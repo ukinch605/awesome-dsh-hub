@@ -35,9 +35,12 @@ importers:
       dsh-client-auto-continue:
         specifier: github:HsiangNianian/dsh-auto-continue
         version: https://codeload.github.com/HsiangNianian/dsh-auto-continue/tar.gz/f8169d6b336d15e0f58f2c15f0955ba796016c0f(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
+      dsh-codex-subscription:
+        specifier: github:WSL043/dsh-codex-subscription
+        version: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/2431d418788b0f08e11854fe22e37189425ab5a1(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dsh-dream-skin:
         specifier: github:RevolutionLA/dsh-dream-skin
-        version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/8837c444f4ebe49fc994bd2fbcad3d6f4fddfac5(react@18.3.1)
+        version: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/137c3d732feb78a786bf9e22acd5cb247db6d356(react@18.3.1)
       dsh-milestone:
         specifier: github:SnowCrescenter-tech/dsh-milestone
         version: https://codeload.github.com/SnowCrescenter-tech/dsh-milestone/tar.gz/3bdd8d1327f30b64a1119aeb62c752ef1e12c713(react@18.3.1)
@@ -97,6 +100,11 @@ packages:
     resolution: {integrity: sha512-pzbPtyEwnFMCrUYLwFio8GmUxtTqqAkhW5IheWH1tSgUnVIAu4OwVbxwTNiDGMRbgTRAzT9xZ7bukUejpyob4w==}
     peerDependencies:
       '@deepseek-ai/cordis': 4.0.2
+
+  '@deepseek-ai/dsh-home-paths@0.2.1-rc.5':
+    resolution: {integrity: sha512-yEGBsUON7xynPYAQKHxvRJ5kywht2ByHfEh20j9FkPluopNRtEnlF0f0/mRL1eC9UMVzDUqUArnAY6dWdb2NDw==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.5
 
   '@deepseek-ai/dsh-llm@0.1.5-rc.3':
     resolution: {integrity: sha512-c6Z7S1SlRAgLKQ/MZKp0mCMrBz06X9XEddLFxhK5Flq0PM18dsJgIbRgNpobILy2AJyYx0vnHbepjmITW6BXWA==}
@@ -324,6 +332,10 @@ packages:
   accepts@2.0.0:
     resolution: {integrity: sha512-5cvg6CtKwfgdmVqY1WIiXKc3Q1bkRqGLi+2W/6ao+6Y7gu/RCwRuAhGEzh5B4KlszSuTLgZYuqFqo5bImjNKng==}
     engines: {node: '>= 0.6'}
+
+  agent-base@7.1.4:
+    resolution: {integrity: sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==}
+    engines: {node: '>= 14'}
 
   ajv-formats@3.0.1:
     resolution: {integrity: sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==}
@@ -558,9 +570,43 @@ packages:
       '@deepseek-ai/dsh-settings':
         optional: true
 
-  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/8837c444f4ebe49fc994bd2fbcad3d6f4fddfac5:
-    resolution: {gitHosted: true, integrity: sha512-L77nhErYvvZxkBABn2M3kbhaSTDGYQToy1DBwe8gZQTepg3KnsRRU8Pt4JOW7DnOdsIdIqHOh7QPFGwXWjrKPA==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/8837c444f4ebe49fc994bd2fbcad3d6f4fddfac5}
-    version: 10.31.0
+  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/2431d418788b0f08e11854fe22e37189425ab5a1:
+    resolution: {gitHosted: true, integrity: sha512-Ka08vYOgkRmnilvh5WI3mgUACgTH1HAx04LrbLj54THcB2Ds41grrfPIc2R93s5Eip4MfS2+X7jeawPjk+2csQ==, tarball: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/2431d418788b0f08e11854fe22e37189425ab5a1}
+    version: 3.2.3
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': 4.0.4 || 4.0.5-alpha.1 || 4.0.5-alpha.2 || 4.0.5 || 4.0.6-alpha.1
+      '@deepseek-ai/dsh-api-remotes': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-connection': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-locale': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-conversation': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-model-selection': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-primitives': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-settings': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-slots': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-client-ui-tool': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-credentials': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-llm': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-llm-pi-ai': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-settings': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-subagent-codex': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-tools': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/dsh-web': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2
+      '@deepseek-ai/schemastery': 3.18.1 || ^3.18.2 || 3.18.6-alpha.1
+      '@earendil-works/pi-ai': 0.85.1 || 0.87.1 || 1.1.0 || 1.2.0 || 1.3.0 || 1.4.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-subagent-codex':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/137c3d732feb78a786bf9e22acd5cb247db6d356:
+    resolution: {gitHosted: true, integrity: sha512-pUZzkd/KcmPQjdzQd/+Baj65A0y2Opy3tSwjJWB3nn0fuE4ssnWtq54ESouzhs8coNquNUbrQ4ffVjky+f9joA==, tarball: https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/137c3d732feb78a786bf9e22acd5cb247db6d356}
+    version: 11.1.1
     engines: {node: '>=18'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1 || >=4.0.5-0 <5
@@ -722,6 +768,10 @@ packages:
   http-errors@2.0.1:
     resolution: {integrity: sha512-4FbRdAX+bSdmo4AUFuS0WNiPz8NgFt+r8ThgNWmlrjQjt1Q7ZR9+zTlce2859x4KSXrwIsaeTqDoKQmtP8pLmQ==}
     engines: {node: '>= 0.8'}
+
+  https-proxy-agent@7.0.6:
+    resolution: {integrity: sha512-vK9P5/iUfdl95AI+JVyUuIcVtd4ofvtrOr3HNtM2yxC9bnMbEdp3x01OhQNnjb8IJYi38VlTE3mBXwcfvywuSw==}
+    engines: {node: '>= 14'}
 
   https@1.0.0:
     resolution: {integrity: sha512-4EC57ddXrkaF0x83Oj8sM6SLQHAWXw90Skqu2M4AEWENZ3F02dFJE/GARA8igO79tcgYqGrD7ae4f5L3um2lgg==}
@@ -1070,6 +1120,18 @@ packages:
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
+  ws@8.21.3:
+    resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
   zod-to-json-schema@3.25.2:
     resolution: {integrity: sha512-O/PgfnpT1xKSDeQYSCfRI5Gy3hPf91mKVDuYLUHZJMiDFptvP41MSnWofm8dnCm0256ZNfZIM7DSzuSMAFnjHA==}
     peerDependencies:
@@ -1096,6 +1158,8 @@ snapshots:
   '@deepseek-ai/cosmokit@1.8.6': {}
 
   '@deepseek-ai/dsh-brand@0.1.5-rc.3': {}
+
+  '@deepseek-ai/dsh-home-paths@0.2.1-rc.5': {}
 
   '@deepseek-ai/dsh-llm@0.1.5-rc.3':
     dependencies:
@@ -1238,6 +1302,8 @@ snapshots:
     dependencies:
       mime-types: 3.0.2
       negotiator: 1.1.0
+
+  agent-base@7.1.4: {}
 
   ajv-formats@3.0.1:
     dependencies:
@@ -1481,7 +1547,21 @@ snapshots:
       '@deepseek-ai/schemastery': 3.18.5
       react: 18.3.1
 
-  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/8837c444f4ebe49fc994bd2fbcad3d6f4fddfac5(react@18.3.1):
+  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/2431d418788b0f08e11854fe22e37189425ab5a1(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      '@deepseek-ai/dsh-home-paths': 0.2.1-rc.5
+      '@deepseek-ai/schemastery': 3.18.5
+      https-proxy-agent: 7.0.6
+      ws: 8.21.3
+    optionalDependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+
+  dsh-dream-skin@https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/137c3d732feb78a786bf9e22acd5cb247db6d356(react@18.3.1):
     optionalDependencies:
       react: 18.3.1
 
@@ -1661,6 +1741,13 @@ snapshots:
       setprototypeof: 1.2.0
       statuses: 2.0.2
       toidentifier: 1.0.1
+
+  https-proxy-agent@7.0.6:
+    dependencies:
+      agent-base: 7.1.4
+      debug: 4.4.3
+    transitivePeerDependencies:
+      - supports-color
 
   https@1.0.0: {}
 
@@ -1981,6 +2068,8 @@ snapshots:
       isexe: 2.0.0
 
   wrappy@1.0.2: {}
+
+  ws@8.21.3: {}
 
   zod-to-json-schema@3.25.2(zod@3.25.76):
     dependencies:

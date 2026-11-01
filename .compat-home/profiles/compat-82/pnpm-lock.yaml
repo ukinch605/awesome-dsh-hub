@@ -11,6 +11,9 @@ importers:
       '@huiliyi37/dsh-tianshu-tui':
         specifier: github:huiliyi37/dsh-tianshu-tui
         version: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/446bfe373c962aa83e04b36a16da4f8588458242(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)(@deepseek-ai/dsh-atomic-write@0.2.1-rc.4)(@deepseek-ai/dsh-timeout@0.2.1-rc.4)(@types/node@26.6.3)
+      '@nagi-ovo/dsh-visualize':
+        specifier: github:Nagi-ovo/dsh-visualize
+        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
       '@oh-dsh/desktop':
         specifier: github:hust-open-atom-club/oh-dsh
         version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa
@@ -25,7 +28,7 @@ importers:
         version: https://codeload.github.com/ZSeven-W/dsh-crew/tar.gz/b0ddd92eeccbd7623c5a5924f0eb61005a2038ec(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dsh-codex-subscription:
         specifier: github:WSL043/dsh-codex-subscription
-        version: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/84cef3c26f66467984a885a9e2f2a315c82616ed(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/2431d418788b0f08e11854fe22e37189425ab5a1(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dsh-computer-use-win:
         specifier: github:Yu-tao-Li/dsh-computer-use-win
         version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662(@deepseek-ai/schemastery@3.18.5)
@@ -49,7 +52,7 @@ importers:
         version: https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72
       dsh-skin-market:
         specifier: github:kingOfSoySauce/dsh-skin-market
-        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/6d9415127f5559f203b2ba129d7e8b8c2bc58c42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b73f2f290d883dcebed49be92e8434315ac8537(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dsh-xdpool:
         specifier: github:XDTrees/dsh-xdpool
         version: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/74a80b6e6b568d97957a623a0d9d3b625035fed7(@deepseek-ai/schemastery@3.18.5)
@@ -764,6 +767,20 @@ packages:
     peerDependenciesMeta:
       '@cfworker/json-schema':
         optional: true
+
+  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344':
+    resolution: {gitHosted: true, integrity: sha512-QIBLfR5VR1lJ1TiQkPXmXTABHkRaiseT4+1aws9IikciAy/uCTQAp4KYErsv2bZ+q/RP55WyhYNSbFpxFUYXWw==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344}
+    version: 0.1.7
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-fs': ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0
+      '@deepseek-ai/dsh-sandbox-policy': ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0
+      '@deepseek-ai/dsh-skill': ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
 
   '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa':
     resolution: {gitHosted: true, integrity: sha512-R3fSfJei4LAkxs/7qF8Si2wN3icKxwF7Zp05Q7o+HR24NXg4JJvPrQeeCzaotsAOIBcH9LRoGNI/PJRPhFXOfg==, tarball: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa}
@@ -1646,9 +1663,9 @@ packages:
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
 
-  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/84cef3c26f66467984a885a9e2f2a315c82616ed:
-    resolution: {gitHosted: true, integrity: sha512-Rw3+r0aPMlyFLKJG6bYwf8idNxtH5vHO3fEuNKFtBe/O5anh0qMRWHQ1GAZ2H7Gh2CrWrQ9Iw4J/pOzuT54oyg==, tarball: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/84cef3c26f66467984a885a9e2f2a315c82616ed}
-    version: 3.2.2
+  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/2431d418788b0f08e11854fe22e37189425ab5a1:
+    resolution: {gitHosted: true, integrity: sha512-Ka08vYOgkRmnilvh5WI3mgUACgTH1HAx04LrbLj54THcB2Ds41grrfPIc2R93s5Eip4MfS2+X7jeawPjk+2csQ==, tarball: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/2431d418788b0f08e11854fe22e37189425ab5a1}
+    version: 3.2.3
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': 4.0.4 || 4.0.5-alpha.1 || 4.0.5-alpha.2 || 4.0.5 || 4.0.6-alpha.1
@@ -1782,8 +1799,8 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-3S73Yr11Da3uuL95XIXxWtdova6NVRTYBYm+JOS/3LORWj0+xu27pjW4Ugni4QHUXlFSVuus0N1C4O0NitqPIA==, tarball: https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72}
     version: 1.1.0
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/6d9415127f5559f203b2ba129d7e8b8c2bc58c42:
-    resolution: {gitHosted: true, integrity: sha512-bgneER9fsIM1N8dcidGK4CN5TbBr+fFBr8UnIh7Z3/SlWPj8xmTSuabgaTWtPe/JrNMlJ3gReiYiIwN1XhlM5g==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/6d9415127f5559f203b2ba129d7e8b8c2bc58c42}
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b73f2f290d883dcebed49be92e8434315ac8537:
+    resolution: {gitHosted: true, integrity: sha512-3REA8mB9aELj4lrtJRFEb6gI17CPrwx7LRazzzEXJ2TkzkM8c4iE1BhTEalZQwfjwCPWzucJXKyFvRDOoSAJMA==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b73f2f290d883dcebed49be92e8434315ac8537}
     version: 0.1.72
     hasBin: true
     peerDependencies:
@@ -3659,6 +3676,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      react: 18.3.1
+
   '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa':
     dependencies:
       electron-updater: 6.8.9
@@ -4608,7 +4630,7 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/84cef3c26f66467984a885a9e2f2a315c82616ed(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/2431d418788b0f08e11854fe22e37189425ab5a1(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@deepseek-ai/dsh-home-paths': 0.2.1-rc.5
       '@deepseek-ai/schemastery': 3.18.5
@@ -4664,7 +4686,7 @@ snapshots:
 
   dsh-recall-unread@https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72: {}
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/6d9415127f5559f203b2ba129d7e8b8c2bc58c42(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b73f2f290d883dcebed49be92e8434315ac8537(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@phosphor-icons/react': 2.1.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@primer/octicons-react': 19.33.0(react@18.3.1)

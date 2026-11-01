@@ -26,6 +26,9 @@ importers:
       '@zseven-w/dsh-android':
         specifier: github:ZSeven-W/dsh-android
         version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/3363a85b1bbeefe994d42d52bd8e792c1527e9ec
+      '@zseven-w/dsh-ios':
+        specifier: github:ZSeven-W/dsh-ios
+        version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c(react@18.3.1)
       argo-search:
         specifier: github:taxueseek/argo
         version: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146
@@ -183,6 +186,11 @@ packages:
     version: 0.1.0-rc.12
     engines: {node: '>=24.11.0'}
 
+  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c':
+    resolution: {gitHosted: true, integrity: sha512-3RlNwYzVnO71ptOCu86KjDK18pZhPavrX/WF5jU1uvSKI/Ep8bMDpcxAdeCy6+PJ8YUhiAwSrgefU79nNrSn8w==, tarball: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c}
+    version: 0.1.0-rc.10
+    engines: {node: '>=24.11.0'}
+
   argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146:
     resolution: {gitHosted: true, integrity: sha512-FIDMg6H6slarKzFLNzaxIX5eASEVCZ1MmncmjjAb4OUXyrjmVyyDnfVcy3MmviD9QU3Vs7NQVbiwnaalpAIPrw==, tarball: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146}
     version: 2.8.4
@@ -245,6 +253,12 @@ packages:
   fzstd@0.1.1:
     resolution: {integrity: sha512-dkuVSOKKwh3eas5VkJy1AW1vFpet8TA/fGmVA5krThl8YcOVE/8ZIoEA1+U1vEn5ckxxhLirSdY837azmbaNHA==}
 
+  inspect-webkit@0.0.5:
+    resolution: {integrity: sha512-584wP/2nJO1LX74nqHP2j0tQzlK9ZTi+D0Z9qeLQjtUR/LCMXQHGX8M0vrsqBwTeGakF7q5GMFpg81nxUYlCvw==}
+    hasBin: true
+    peerDependencies:
+      typescript: ^5
+
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -262,6 +276,33 @@ packages:
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
     engines: {node: '>=0.10.0'}
+
+  serve-sim@0.1.48:
+    resolution: {integrity: sha512-Kfg++zbtrRHYEOGAVk/9ftZamp40Qpz8WgP3idWaHoGaCJ01TrEZeq0UnWIsrGSaGhGgi0ytxMOsrEo3H/bFiA==}
+    engines: {node: '>=20'}
+    hasBin: true
+
+  sonner@2.0.8:
+    resolution: {integrity: sha512-UM/ByIoFra8yzV75n1o0Puu0bw5U/9UNnDacrJNspekBewIfsQ3D6ez1nvlWpt7aTsO6rujQtifBpycwIivqlg==}
+    peerDependencies:
+      '@types/react': ^18.0.0 || ^19.0.0
+      react: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+      react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  ws@8.22.1:
+    resolution: {integrity: sha512-oyL6OPYme/CmiFvNuGzeoxCJ4nOrZE2O1FwM9MWM1AsGri6nLXB2pg+lNA8aLeXMSav0J6eIVS1j6vUPzUtK9g==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
 
   zod@4.6.7:
     resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
@@ -317,6 +358,17 @@ snapshots:
 
   '@zseven-w/dsh-android@https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/3363a85b1bbeefe994d42d52bd8e792c1527e9ec': {}
 
+  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c(react@18.3.1)':
+    dependencies:
+      serve-sim: 0.1.48(react@18.3.1)
+    transitivePeerDependencies:
+      - '@types/react'
+      - bufferutil
+      - react
+      - react-dom
+      - typescript
+      - utf-8-validate
+
   argo-search@https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146: {}
 
   dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/080dc99c64630a628d3a744983e1856d0600d478(@deepseek-ai/schemastery@3.18.1)(react@18.3.1):
@@ -334,6 +386,8 @@ snapshots:
       '@deepseek-ai/schemastery': 3.18.1
 
   fzstd@0.1.1: {}
+
+  inspect-webkit@0.0.5: {}
 
   js-tokens@4.0.0: {}
 
@@ -356,5 +410,24 @@ snapshots:
   react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
+
+  serve-sim@0.1.48(react@18.3.1):
+    dependencies:
+      inspect-webkit: 0.0.5
+      sonner: 2.0.8(react@18.3.1)
+      ws: 8.22.1
+    transitivePeerDependencies:
+      - '@types/react'
+      - bufferutil
+      - react
+      - react-dom
+      - typescript
+      - utf-8-validate
+
+  sonner@2.0.8(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+
+  ws@8.22.1: {}
 
   zod@4.6.7: {}

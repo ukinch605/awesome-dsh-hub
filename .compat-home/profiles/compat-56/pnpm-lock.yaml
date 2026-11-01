@@ -26,6 +26,9 @@ importers:
       dsh-memory-evolve:
         specifier: github:csyangwen/dsh-memory-evolve
         version: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/e6f6b84c56f0fc18ba4a6a1a5959fbf86ea9ec8b
+      misakanet:
+        specifier: github:Ikalus1988/MisakaNet
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f04350b797f9a9b135747a81260a05950b279423
 
 packages:
 
@@ -141,6 +144,19 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-U/nS/Gw0OkYxedrZVcNSkYVes6/s7QvZ6BVhQKw20RJSstp2Ah7n0HiqAfo3UpjnCsvOJmD/3BEJ3WwJ9qKMNg==, tarball: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/e6f6b84c56f0fc18ba4a6a1a5959fbf86ea9ec8b}
     version: 0.1.0
 
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f04350b797f9a9b135747a81260a05950b279423:
+    resolution: {gitHosted: true, integrity: sha512-XheJzKxGa8R2MTW8piBR/ea6pkFranIwTB7Mfe/OjqH5AFPf/5ewwX/PZoazliybonod4wTjjIFgpIQZvel5Qg==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f04350b797f9a9b135747a81260a05950b279423}
+    version: 3.3.0
+    engines: {node: '>=20.0.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
+      '@deepseek-ai/schemastery': '>=3.0.0'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-mcp-client':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+
 snapshots:
 
   '@dsh-external/dsh-plugin-workshop@https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/f53a7e466948a6c5636f2079b2382976a1eea4c8': {}
@@ -209,3 +225,5 @@ snapshots:
   dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/afce1cd43f98b8a8b02e4a35cd6a65d6444de412: {}
 
   dsh-memory-evolve@https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/e6f6b84c56f0fc18ba4a6a1a5959fbf86ea9ec8b: {}
+
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f04350b797f9a9b135747a81260a05950b279423: {}

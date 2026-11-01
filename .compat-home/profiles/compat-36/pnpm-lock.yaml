@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
-        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/85516202beaad3b1abdb277f606a1ea385c32833
+        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cordis@4.0.5)(@deepseek-ai/cosmokit@1.8.6)(@deepseek-ai/dsh-mcp-client@0.1.0-rc.8(@deepseek-ai/cordis@4.0.5))(@deepseek-ai/schemastery@3.18.5)
       '@nagi-ovo/dsh-ads':
         specifier: github:Nagi-ovo/dsh-ads
         version: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/a5854a37bbe24078878740ae4567e59cc75c29ec(@deepseek-ai/cordis@4.0.5)(@deepseek-ai/schemastery@3.18.5)
@@ -22,13 +22,16 @@ importers:
         version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8(@deepseek-ai/cordis@4.0.5)(@deepseek-ai/schemastery@3.18.5)
       '@zseven-w/dsh-ios':
         specifier: github:ZSeven-W/dsh-ios
-        version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c(@deepseek-ai/cordis@4.0.5)
+        version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c
       dsh-memory-evolve:
         specifier: github:csyangwen/dsh-memory-evolve
         version: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/1e6e7eb15ce515b0f2bd2142bdee9a36c46c8b91
       dsh-mnemon:
         specifier: github:omdsh-dev/dsh-mnemon
-        version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)
+        version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)
+      dsh-unrestricted:
+        specifier: github:yexi-by/dsh-unrestricted
+        version: https://codeload.github.com/yexi-by/dsh-unrestricted/tar.gz/35e3e7d9bced275361a6a938d1899647a919c8a3
       superpowers-dsh:
         specifier: github:LayneChai/superpowers-dsh
         version: https://codeload.github.com/LayneChai/superpowers-dsh/tar.gz/0b660254ab93b592e9810b493ccd63ecdf1a4663
@@ -67,12 +70,16 @@ packages:
   '@deepseek-ai/schemastery@3.18.5':
     resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
-  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/85516202beaad3b1abdb277f606a1ea385c32833':
-    resolution: {gitHosted: true, integrity: sha512-D6nrbVANT+Xa2qnW3Df4R9IeUuubc5fqNhH5AnUQgGcqivKptKQ0CqNmllpSiBuKU6cbD5E3CyDSOQnzA1D1lg==, tarball: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/85516202beaad3b1abdb277f606a1ea385c32833}
-    version: 1.1.1
+  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562':
+    resolution: {gitHosted: true, integrity: sha512-VXJVrs5ogeLv1Inl5/GhreTZZnPrW4dl/Cnzs1MzGe2zN72PPByeC/Wgnwz8IR2vaO8xiuSkhk/CCtCn9ZAy8A==, tarball: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562}
+    version: 1.1.2
     engines: {node: '>=22'}
     peerDependencies:
-      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6 || ^0.1.1-rc.0 || ^0.2.0-rc.0
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/cosmokit': ^1.8.4
+      '@deepseek-ai/dsh-mcp-client': ^0.1.0-rc.6 || ^0.2.0-rc.0 || ^0.2.1-rc.0
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6 || ^0.1.1-rc.0 || ^0.2.0-rc.0 || ^0.2.1-rc.0
+      '@deepseek-ai/schemastery': ^3.18.0
 
   '@hono/node-server@2.1.5':
     resolution: {integrity: sha512-MgP/I06GdvsilDspMk/qmRzpk8LOUStP6jFAbSRi40W09DhoyUn+Mj7eyKICPqeYKybOjVFLVIAQzvu1bfIa7Q==}
@@ -100,7 +107,7 @@ packages:
       react: ^18.2.0
 
   '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41}
+    resolution: {gitHosted: true, integrity: sha512-YXbHkVgNb104GXaKZuzl6t3cV/66E/4YGQbXZ70ZTgubqk/lQRLiXNXhtv/BLwmafSZxLDSYevQzABuynPhDig==, tarball: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41}
     version: 0.5.5
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
@@ -186,25 +193,10 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c':
-    resolution: {gitHosted: true, integrity: sha512-wD69QZHNKiDPv4VJKvg5Qqgpwq1Jo965D84nofntkiVlnXdDaIUuGzZ5OTNhcfKCdx4VngZ8FQ2y0jHMJ9iQoA==, tarball: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c}
-    version: 0.1.0-rc.5
+  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c':
+    resolution: {gitHosted: true, integrity: sha512-3RlNwYzVnO71ptOCu86KjDK18pZhPavrX/WF5jU1uvSKI/Ep8bMDpcxAdeCy6+PJ8YUhiAwSrgefU79nNrSn8w==, tarball: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c}
+    version: 0.1.0-rc.10
     engines: {node: '>=24.11.0'}
-    peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-runtime': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-theme': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-client-ui-tool': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-fs': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-sandbox-policy': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-session': ^0.1.0-rc.6
-      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
-      react: ^18.2.0
-      react-dom: ^18.2.0
 
   accepts@2.0.0:
     resolution: {integrity: sha512-5cvg6CtKwfgdmVqY1WIiXKc3Q1bkRqGLi+2W/6ao+6Y7gu/RCwRuAhGEzh5B4KlszSuTLgZYuqFqo5bImjNKng==}
@@ -293,17 +285,17 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon-source-memory-spaces: ^0.5.1
 
-  dsh-mnemon-provider-hindsight@0.5.6:
-    resolution: {integrity: sha512-ryhc17JAXfIfSkYDe5L9MzHvl6+nMXMymqD0IUE6NIeFYj2cynFVQNqRHCCfFmQDZ5LDRh2Mql1rVp6txvZLqA==}
-    version: 0.5.6
+  dsh-mnemon-provider-hindsight@0.5.7:
+    resolution: {integrity: sha512-sOEThpl56k6DuqSvOrma9ZFMAFmfll/XuUOLZkJ/4nB4M5z/fYvKMTMAmJ2PXUhWPO3KEnOj5m+V5axmrZefbg==}
+    version: 0.5.7
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon-source-memory-spaces: ^0.5.1
 
-  dsh-mnemon-provider-holographic@0.5.6:
-    resolution: {integrity: sha512-mzIsCsH4IuDQwsLJhzdRzCYlMAQHueiWb9gJL13RfD+y7gDxJBBlv/sgqLrtJg+DetcpMqISqClZwTw7tXxElQ==}
-    version: 0.5.6
+  dsh-mnemon-provider-holographic@0.5.7:
+    resolution: {integrity: sha512-WFzAILBve6zhG1+ZFOxHBNRacMdKyeh3VebfARhQglKRqXYiw4JQAFEFaPwqYx7dZfL6XYySQN/EiLF0idMn9Q==}
+    version: 0.5.7
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -325,17 +317,17 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon-source-memory-spaces: ^0.5.1
 
-  dsh-mnemon-provider-mnemon-native@0.5.9:
-    resolution: {integrity: sha512-I8q7arLcP26EmrmsijLh8lygpn+Y2kdSfQ1hRGFwBdz2ghvuTnE9NSAIQrbPZpknGyJ+k6QIpkI+CLPk0n9fFQ==}
-    version: 0.5.9
+  dsh-mnemon-provider-mnemon-native@0.5.10:
+    resolution: {integrity: sha512-5UXVMlgcOPGuhl4SOFY6GoG2a1Wq6m644wlvvM9dOXMv78AGchLD3bTotmCn4eu99r1nUWgEcJqzTtdeEpUJZg==}
+    version: 0.5.10
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon-source-memory-spaces: ^0.5.1
 
-  dsh-mnemon-provider-openviking@0.5.8:
-    resolution: {integrity: sha512-hfg6PsPcrsNBQCipaCPpv+5AiluZXgNsMRxpPMfwXKQxC6G6XMTFjTbpEIQkdwmCliu1Rm9alWp7SC7JyccW9Q==}
-    version: 0.5.8
+  dsh-mnemon-provider-openviking@0.5.10:
+    resolution: {integrity: sha512-S/e/zdEOHvHcuY7yrQuvAX2OKRXVRLqg+2CJU0ZM0EHT1G6/uscO8PsCbwXAjTcTvCO8fzkzbnC0TmkPXxIObg==}
+    version: 0.5.10
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -369,9 +361,9 @@ packages:
       react:
         optional: true
 
-  dsh-mnemon-source-memory-spaces@0.5.22:
-    resolution: {integrity: sha512-qFXLqNwDXQeLsXy9zNhHeGenUjyh3+9dCOc/M5L0OiAJ9g3/icJxkboR/U9J6cixNPzP2ZnEERWw7kFqWdVlbQ==}
-    version: 0.5.22
+  dsh-mnemon-source-memory-spaces@0.5.24:
+    resolution: {integrity: sha512-PNjCF3NF/l5SxCkXglM0R01Cxm18B08+Xr5AYh+8kVlzgFb6I6HnfbBD6X578qxUIgA0ZF1M8jbyS/orktKBfw==}
+    version: 0.5.24
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -381,9 +373,9 @@ packages:
       react:
         optional: true
 
-  dsh-mnemon-source-runtime@0.5.15:
-    resolution: {integrity: sha512-n2Mnrcwowwxk4OWag/rMOw9ENwNeObCFgJmhobgVE5z7D33D/4+jhRvYeCB3xgOso/xjTCARU5f49jN9EAwcyw==}
-    version: 0.5.15
+  dsh-mnemon-source-runtime@0.5.16:
+    resolution: {integrity: sha512-X5yukZ0fwhZU4yUOyZaJoT4roAFy+azGg6VwDW4tgN/EvAPASbydo0O1876A+m8Hdt6EGIhGOyIgRUsCYEq4/A==}
+    version: 0.5.16
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -393,13 +385,13 @@ packages:
       react:
         optional: true
 
-  dsh-mnemon-source-skills@0.5.1:
-    resolution: {integrity: sha512-urMMV/Ec1ZV/gUrkdYQD/t9OdPPaxES7FWbWKPmIUEcEO6KY6t17YYB7FORVTRySu2/zknVj/60atb7QG/9tIg==}
-    version: 0.5.1
+  dsh-mnemon-source-skills@0.5.4:
+    resolution: {integrity: sha512-K+m2+J3uuQJBHIXyeIUC+usYt+U8CniaCdQYalBi2VjEsK1GriJO/vHeu68Y63v0Sxl4YMkbWdriQKLbf5/0Ow==}
+    version: 0.5.4
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      dsh-mnemon: ^0.5.33
+      dsh-mnemon: ^0.5.37
       react: ^18.2.0
     peerDependenciesMeta:
       react:
@@ -413,9 +405,9 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon: ^0.5.17
 
-  dsh-mnemon-strategy-default-three-tier@0.5.10:
-    resolution: {integrity: sha512-b8IZ0ylTs43CoapBDRqggqCI1uVhjYqztURkeDsBezMzrKrhmXHNIsrL4tlg6jgeMyF5U0mAsQJLdw1XnWNkhA==}
-    version: 0.5.10
+  dsh-mnemon-strategy-default-three-tier@0.5.11:
+    resolution: {integrity: sha512-0Bcbq4skgkjTiOjuLaqOUb7KoPF1aF0qKUSM9ky2f0VHUbJfFlSRGXZW2/VpXnmOkLJ+xWENUTPxQHWrYgv8WQ==}
+    version: 0.5.11
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -445,9 +437,9 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon: ^0.5.17
 
-  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3:
-    resolution: {gitHosted: true, integrity: sha512-nvkJloHosT7GGNguzw034gFrBoA+jQn+1i8WYHxy3ux85pCWJPqZxfF/kdtj7G34847k9HZJdmvdJHaW8eL5ug==, tarball: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3}
-    version: 0.5.34
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6:
+    resolution: {gitHosted: true, integrity: sha512-jESVEbDtO7CMRGqJUB+pxeJVz3PqNWba9DrBbq7Brxnazofetp0EuCNU8nm4OgYJMCW8eY7KWPTEdRbDsz8YIQ==, tarball: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6}
+    version: 0.5.37
     engines: {dsh: '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0', node: '>=20'}
     hasBin: true
     peerDependencies:
@@ -459,6 +451,11 @@ packages:
     peerDependenciesMeta:
       '@deepseek-ai/dsh-app-boot':
         optional: true
+
+  dsh-unrestricted@https://codeload.github.com/yexi-by/dsh-unrestricted/tar.gz/35e3e7d9bced275361a6a938d1899647a919c8a3:
+    resolution: {gitHosted: true, integrity: sha512-/9Y8tx4sw9ERenH+H31oYQv/UcySDaTLuhPEaVgjDCpSMo2pXnApWSsTXdFm/e3kgi5YqDdpH+RcP58XfLc+Xw==, tarball: https://codeload.github.com/yexi-by/dsh-unrestricted/tar.gz/35e3e7d9bced275361a6a938d1899647a919c8a3}
+    version: 0.2.6
+    engines: {dsh: '>=0.2.0-rc.2 <0.2.3-0'}
 
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
@@ -827,23 +824,12 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
-  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/85516202beaad3b1abdb277f606a1ea385c32833':
+  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cordis@4.0.5)(@deepseek-ai/cosmokit@1.8.6)(@deepseek-ai/dsh-mcp-client@0.1.0-rc.8(@deepseek-ai/cordis@4.0.5))(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
       '@deepseek-ai/cosmokit': 1.8.6
       '@deepseek-ai/dsh-mcp-client': 0.1.0-rc.8(@deepseek-ai/cordis@4.0.5)
       '@deepseek-ai/schemastery': 3.18.5
-    transitivePeerDependencies:
-      - '@cfworker/json-schema'
-      - '@deepseek-ai/cordis-plugin-include'
-      - '@deepseek-ai/cordis-plugin-loader'
-      - '@deepseek-ai/dsh-attachment'
-      - '@deepseek-ai/dsh-invariants'
-      - '@deepseek-ai/dsh-llm'
-      - '@deepseek-ai/dsh-subprocess'
-      - '@deepseek-ai/dsh-timeout'
-      - '@deepseek-ai/dsh-tools'
-      - supports-color
 
   '@hono/node-server@2.1.5(hono@4.13.14)':
     dependencies:
@@ -889,13 +875,14 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/9e3b600ba556baf64bbe74ebf39fa1b2ce30545c(@deepseek-ai/cordis@4.0.5)':
+  '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c':
     dependencies:
-      '@deepseek-ai/cordis': 4.0.5
       serve-sim: 0.1.46
     transitivePeerDependencies:
       - '@types/react'
       - bufferutil
+      - react
+      - react-dom
       - typescript
       - utf-8-validate
 
@@ -972,128 +959,130 @@ snapshots:
 
   dsh-memory-evolve@https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/1e6e7eb15ce515b0f2bd2142bdee9a36c46c8b91: {}
 
-  dsh-mnemon-provider-byterover@0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))):
+  dsh-mnemon-provider-byterover@0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon-source-memory-spaces: 0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-source-memory-spaces: 0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
 
-  dsh-mnemon-provider-hindsight@0.5.6(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))):
+  dsh-mnemon-provider-hindsight@0.5.7(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon-source-memory-spaces: 0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-source-memory-spaces: 0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
 
-  dsh-mnemon-provider-holographic@0.5.6(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))):
+  dsh-mnemon-provider-holographic@0.5.7(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon-source-memory-spaces: 0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-source-memory-spaces: 0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
 
-  dsh-mnemon-provider-honcho@0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))):
+  dsh-mnemon-provider-honcho@0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon-source-memory-spaces: 0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-source-memory-spaces: 0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
 
-  dsh-mnemon-provider-mem0@0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))):
+  dsh-mnemon-provider-mem0@0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon-source-memory-spaces: 0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-source-memory-spaces: 0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
 
-  dsh-mnemon-provider-mnemon-native@0.5.9(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))):
+  dsh-mnemon-provider-mnemon-native@0.5.10(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon-source-memory-spaces: 0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-source-memory-spaces: 0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
 
-  dsh-mnemon-provider-openviking@0.5.8(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))):
+  dsh-mnemon-provider-openviking@0.5.10(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon-source-memory-spaces: 0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-source-memory-spaces: 0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
 
-  dsh-mnemon-provider-retaindb@0.5.6(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))):
+  dsh-mnemon-provider-retaindb@0.5.6(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon-source-memory-spaces: 0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-source-memory-spaces: 0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
 
-  dsh-mnemon-provider-supermemory@0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))):
+  dsh-mnemon-provider-supermemory@0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon-source-memory-spaces: 0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-source-memory-spaces: 0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
 
-  dsh-mnemon-source-documents@0.5.11(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)):
+  dsh-mnemon-source-documents@0.5.11(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)
       markdown-to-jsx: 7.7.17
 
-  dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)):
+  dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)
 
-  dsh-mnemon-source-runtime@0.5.15(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)):
+  dsh-mnemon-source-runtime@0.5.16(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)
 
-  dsh-mnemon-source-skills@0.5.1(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)):
+  dsh-mnemon-source-skills@0.5.4(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)
       markdown-to-jsx: 7.7.17
       yaml: 2.9.1
 
-  dsh-mnemon-strategy-auto-capture@0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)):
+  dsh-mnemon-strategy-auto-capture@0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)
 
-  dsh-mnemon-strategy-default-three-tier@0.5.10(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)):
+  dsh-mnemon-strategy-default-three-tier@0.5.11(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)
 
-  dsh-mnemon-strategy-general@0.5.1(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)):
+  dsh-mnemon-strategy-general@0.5.1(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)
 
-  dsh-mnemon-strategy-light-context@0.5.6(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)):
+  dsh-mnemon-strategy-light-context@0.5.6(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)
 
-  dsh-mnemon-strategy-scoped@0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)):
+  dsh-mnemon-strategy-scoped@0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)
 
-  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5):
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5):
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
       '@deepseek-ai/cosmokit': 1.8.6
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon-provider-byterover: 0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)))
-      dsh-mnemon-provider-hindsight: 0.5.6(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)))
-      dsh-mnemon-provider-holographic: 0.5.6(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)))
-      dsh-mnemon-provider-honcho: 0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)))
-      dsh-mnemon-provider-mem0: 0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)))
-      dsh-mnemon-provider-mnemon-native: 0.5.9(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)))
-      dsh-mnemon-provider-openviking: 0.5.8(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)))
-      dsh-mnemon-provider-retaindb: 0.5.6(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)))
-      dsh-mnemon-provider-supermemory: 0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5)))
-      dsh-mnemon-source-documents: 0.5.11(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
-      dsh-mnemon-source-memory-spaces: 0.5.22(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
-      dsh-mnemon-source-runtime: 0.5.15(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
-      dsh-mnemon-source-skills: 0.5.1(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
-      dsh-mnemon-strategy-auto-capture: 0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
-      dsh-mnemon-strategy-default-three-tier: 0.5.10(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
-      dsh-mnemon-strategy-general: 0.5.1(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
-      dsh-mnemon-strategy-light-context: 0.5.6(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
-      dsh-mnemon-strategy-scoped: 0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/a7e3bc549c777ada56ca703099eb61a7340b1da3(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-provider-byterover: 0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)))
+      dsh-mnemon-provider-hindsight: 0.5.7(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)))
+      dsh-mnemon-provider-holographic: 0.5.7(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)))
+      dsh-mnemon-provider-honcho: 0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)))
+      dsh-mnemon-provider-mem0: 0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)))
+      dsh-mnemon-provider-mnemon-native: 0.5.10(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)))
+      dsh-mnemon-provider-openviking: 0.5.10(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)))
+      dsh-mnemon-provider-retaindb: 0.5.6(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)))
+      dsh-mnemon-provider-supermemory: 0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon-source-memory-spaces@0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5)))
+      dsh-mnemon-source-documents: 0.5.11(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-source-memory-spaces: 0.5.24(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-source-runtime: 0.5.16(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-source-skills: 0.5.4(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-strategy-auto-capture: 0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-strategy-default-three-tier: 0.5.11(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-strategy-general: 0.5.1(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-strategy-light-context: 0.5.6(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
+      dsh-mnemon-strategy-scoped: 0.5.5(@deepseek-ai/cordis@4.0.5)(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6(@deepseek-ai/cordis@4.0.5))
       fflate: 0.8.3
       yaml: 2.9.1
       zod: 4.5.4
+
+  dsh-unrestricted@https://codeload.github.com/yexi-by/dsh-unrestricted/tar.gz/35e3e7d9bced275361a6a938d1899647a919c8a3: {}
 
   dunder-proto@1.0.1:
     dependencies:

@@ -25,10 +25,10 @@ importers:
         version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/080dc99c64630a628d3a744983e1856d0600d478(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
       dsh-ego-browser:
         specifier: github:Fisfzy/dsh-ego-browser
-        version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/50d3d8782521904af12157a0399bf563a8130299(react@18.3.1)
+        version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/5d13f2391b7b25a2025ddc4ef57ab5f74a546a4f(react@18.3.1)
       dsh-plugin-marketplace:
         specifier: github:YELEBAI/dsh-plugin-marketplace
-        version: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/2375dcb2a9dc67be084a852cb363066d5faa277d
+        version: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/e6bec6a8e6570fc0dfa5e38dbd0bfefb53c8d050
       dsh-undo-savepoint:
         specifier: github:lire1131/dsh-undo-savepoint
         version: https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/9d9a3fa3eab12469bf613e4278dc267ff81e37c0
@@ -38,6 +38,9 @@ importers:
       gal-view:
         specifier: github:Ayase34/gal-view
         version: https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a
+      open-sea-skin:
+        specifier: github:d-dev0101/open-sea-skin
+        version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/5a969094a275768f88703776f44d3d9dd7f4c765
 
 packages:
 
@@ -330,9 +333,9 @@ packages:
       '@deepseek-ai/schemastery': '>=3.0.0'
       react: '>=18.0.0'
 
-  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/50d3d8782521904af12157a0399bf563a8130299:
-    resolution: {gitHosted: true, integrity: sha512-C6PSWj1ONmsuY2Wzoc+jZbTVGjOXiUfyhozVUb+YLA6fMeN9PqtGWSf86msPclXN89LIakYvVB2QH9Qhk+O2yg==, tarball: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/50d3d8782521904af12157a0399bf563a8130299}
-    version: 0.9.7
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/5d13f2391b7b25a2025ddc4ef57ab5f74a546a4f:
+    resolution: {gitHosted: true, integrity: sha512-OJAiWHEa9pvBtpLAq3IwXYWZYGXLkhto6j45rJnr7/Udttp5YHFafwxjl6kjV5m3xGrMiWu58klbFSeYY4ZPng==, tarball: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/5d13f2391b7b25a2025ddc4ef57ab5f74a546a4f}
+    version: 0.9.8
     engines: {node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-client-locale': '>=0.1.2-rc.1'
@@ -361,8 +364,8 @@ packages:
       schemastery:
         optional: true
 
-  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/2375dcb2a9dc67be084a852cb363066d5faa277d:
-    resolution: {gitHosted: true, integrity: sha512-nFmJqB0vVqSTD1AIwkMkCumQJV0wrA6bMQ1XKJAoECOxBfq2iJ4wMCtyGR9WNVk7QZjvalmmkL9+ZdpScXWWPA==, tarball: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/2375dcb2a9dc67be084a852cb363066d5faa277d}
+  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/e6bec6a8e6570fc0dfa5e38dbd0bfefb53c8d050:
+    resolution: {gitHosted: true, integrity: sha512-PjTvj6An54cMweF//FBe5eH2/W5RASqt6bvryiRHR7A6hSurOw7IcRcilC6/jVmffwUsA4fXGrQHEBWrfCSBxA==, tarball: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/e6bec6a8e6570fc0dfa5e38dbd0bfefb53c8d050}
     version: 0.9.5
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
@@ -630,6 +633,11 @@ packages:
   once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
 
+  open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/5a969094a275768f88703776f44d3d9dd7f4c765:
+    resolution: {gitHosted: true, integrity: sha512-YLTnH9zYKGlz7apJnfG8hlKYArOghjVsZ6z75ZjJ1WC29eKuH05ethWElN0VB0Nbo1cyw5daC/XjJ+uRZopMpA==, tarball: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/5a969094a275768f88703776f44d3d9dd7f4c765}
+    version: 1.2.7
+    engines: {node: '>=20'}
+
   opentype.js@2.0.0:
     resolution: {integrity: sha512-kCyjv6xdDY1W/jLWZ/L3QhhTlKUqDZMQ5+Jdlw12b3dXkKNpYBqqlMMj0YDQPShWFTMwgZI1hG14kN3XUDSg/A==}
     hasBin: true
@@ -867,9 +875,6 @@ packages:
     resolution: {integrity: sha512-O/PgfnpT1xKSDeQYSCfRI5Gy3hPf91mKVDuYLUHZJMiDFptvP41MSnWofm8dnCm0256ZNfZIM7DSzuSMAFnjHA==}
     peerDependencies:
       zod: ^3.25.28 || ^4
-
-  zod@4.4.3:
-    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
   zod@4.6.7:
     resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
@@ -1190,16 +1195,16 @@ snapshots:
       fzstd: 0.1.1
       react: 18.3.1
 
-  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/50d3d8782521904af12157a0399bf563a8130299(react@18.3.1):
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/5d13f2391b7b25a2025ddc4ef57ab5f74a546a4f(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       schemastery: 3.18.0
     optionalDependencies:
       react: 18.3.1
 
-  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/2375dcb2a9dc67be084a852cb363066d5faa277d:
+  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/e6bec6a8e6570fc0dfa5e38dbd0bfefb53c8d050:
     dependencies:
-      zod: 4.4.3
+      zod: 4.6.7
 
   dsh-undo-savepoint@https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/9d9a3fa3eab12469bf613e4278dc267ff81e37c0: {}
 
@@ -1478,6 +1483,8 @@ snapshots:
     dependencies:
       wrappy: 1.0.2
 
+  open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/5a969094a275768f88703776f44d3d9dd7f4c765: {}
+
   opentype.js@2.0.0: {}
 
   pako@1.0.11: {}
@@ -1717,7 +1724,5 @@ snapshots:
   zod-to-json-schema@3.25.2(zod@4.6.7):
     dependencies:
       zod: 4.6.7
-
-  zod@4.4.3: {}
 
   zod@4.6.7: {}

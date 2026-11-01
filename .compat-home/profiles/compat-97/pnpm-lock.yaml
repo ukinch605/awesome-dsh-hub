@@ -20,9 +20,12 @@ importers:
       '@dsh-external/dsh-mobile':
         specifier: github:lehhair/dsh-mobile
         version: https://codeload.github.com/lehhair/dsh-mobile/tar.gz/1144e6b98419010588cb01a207dfb1b33035ca9f(react@18.3.1)
+      '@fylar/dsh-fylar-office-editor':
+        specifier: github:FylarOpen/dsh-fylar-office-editor
+        version: https://codeload.github.com/FylarOpen/dsh-fylar-office-editor/tar.gz/263bedfb3103831ab561f437c36b50bd9062f6f2
       '@michengai/dsh-codex-ui':
         specifier: github:MichengAI/dsh-codex-ui
-        version: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/450232b296ab82ce4ce6b59b40f5e5c0cec8dcea(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/2e1ac7d0033f3e689b04a900baf60f8b5476d159(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@oil-oil/dsh-vision':
         specifier: github:oil-oil/dsh-vision
         version: https://codeload.github.com/oil-oil/dsh-vision/tar.gz/9446a41dc96bd9fc96a7cc3b3a11365e125c9bd7(react@18.3.1)
@@ -31,7 +34,7 @@ importers:
         version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/a4a01fa9f122e187733fbd990c3d6a41e4d7e538(@deepseek-ai/schemastery@3.18.5)
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
-        version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9
+        version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7eac21a6cd08a84441938e405a374279ebb3fce5
       dsh-computer-use-win:
         specifier: github:Yu-tao-Li/dsh-computer-use-win
         version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662(@deepseek-ai/schemastery@3.18.5)
@@ -40,7 +43,7 @@ importers:
         version: https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/03d3117fa426d14df4e7a58248adfce094e94633(react@18.3.1)
       dsh-fish-memory:
         specifier: github:Yuuyuko-uu/dsh-fish-memory
-        version: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/44f3db3b1c4333c178d7e4af2e7f085fbc8f1b44
+        version: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/003716b0f682177c9237214dac19a7a052a39812
       dsh-science:
         specifier: github:biociao/dsh-science
         version: https://codeload.github.com/biociao/dsh-science/tar.gz/23767ab2f8d7bcf84a0820daa4c6ae79549da000
@@ -113,15 +116,37 @@ packages:
       cordis: ^4.0.0-rc.7
       react: ^18.2.0
 
+  '@fylar/dsh-fylar-office-editor@https://codeload.github.com/FylarOpen/dsh-fylar-office-editor/tar.gz/263bedfb3103831ab561f437c36b50bd9062f6f2':
+    resolution: {gitHosted: true, integrity: sha512-M3SSmgthaaC1fxF3xvMUco96eyDZ6d9CpuYTJhw+GhfP92kP5L3pYh6zh+u7Fwa5i3D3sznmns76jti++gKQNQ==, tarball: https://codeload.github.com/FylarOpen/dsh-fylar-office-editor/tar.gz/263bedfb3103831ab561f437c36b50bd9062f6f2}
+    version: 0.1.6
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.4
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-ui-chat': '*'
+      '@deepseek-ai/dsh-client-ui-conversation': '*'
+      '@deepseek-ai/dsh-client-ui-layout': '*'
+      '@deepseek-ai/dsh-client-ui-renderer': '*'
+      '@deepseek-ai/dsh-client-ui-sidebar-right': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-client-ui-tool': '*'
+      '@deepseek-ai/dsh-fs': '*'
+      '@deepseek-ai/dsh-host-webserver': '*'
+      '@deepseek-ai/dsh-sandbox-policy': '*'
+      '@deepseek-ai/dsh-session': '*'
+      '@deepseek-ai/dsh-system-prompt': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-workspace': '*'
+
   '@hono/node-server@2.1.5':
     resolution: {integrity: sha512-MgP/I06GdvsilDspMk/qmRzpk8LOUStP6jFAbSRi40W09DhoyUn+Mj7eyKICPqeYKybOjVFLVIAQzvu1bfIa7Q==}
     engines: {node: '>=20'}
     peerDependencies:
       hono: ^4 || ^5.0.0-0
 
-  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/450232b296ab82ce4ce6b59b40f5e5c0cec8dcea':
-    resolution: {gitHosted: true, integrity: sha512-o9m9H/VZsD14UIXHekkz30OuxLjPUJIfvbCq9pN8cWHUjCVNtDWHH2TJ2TC7uPJjHtn0CLan0gJ6pTJq2QXysg==, tarball: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/450232b296ab82ce4ce6b59b40f5e5c0cec8dcea}
-    version: 2.0.9
+  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/2e1ac7d0033f3e689b04a900baf60f8b5476d159':
+    resolution: {gitHosted: true, integrity: sha512-7Ul8m4qJQfFhknQxbFXu3mTWdl29syYVDHy919WMfDmPrRwe79dinCXetFUBKc5u7lmED8vI4J5PEMaGJhh3Lg==, tarball: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/2e1ac7d0033f3e689b04a900baf60f8b5476d159}
+    version: 2.0.11
     engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.2 <5.0.0'
@@ -211,8 +236,11 @@ packages:
   '@types/node@22.20.5':
     resolution: {integrity: sha512-U2+DNr+wSjpsTS/wZGYHq7GcwfuSmKiKvoPvK22zwTlRhU91yOniN4qRR5KhIjvif7ysw/dz/hKmfDH0Ris4aA==}
 
-  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9':
-    resolution: {gitHosted: true, integrity: sha512-Zm8FBXGNopwjqrwooreXR3cerefT4y+6ODDwOWVE7qHEkA2i2x4AKfHvWMvUZHQo8dpyNXtO/CG5fTzo4zpJQA==, tarball: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9}
+  '@types/node@25.9.9':
+    resolution: {integrity: sha512-b4e2xxj/yMeT2hNlD6x7zNFiQK2Dlmkb9CQ6v3/1G2RezKN4YS2lcEv8lzGm1mhs4f2lM4yNAMI/zUDBZBBt7w==}
+
+  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7eac21a6cd08a84441938e405a374279ebb3fce5':
+    resolution: {gitHosted: true, integrity: sha512-SzJrO4mFqvE0GfGvksuvsceJ4RE+6Enb9CxxStuemoN7JSPVjyHWVYESr5G8maowAG3fjhCQDtk/jrUk8EtSIw==, tarball: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7eac21a6cd08a84441938e405a374279ebb3fce5}
     version: 2.17.5
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
@@ -466,6 +494,10 @@ packages:
   dijkstrajs@1.0.3:
     resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
 
+  docx@9.7.1:
+    resolution: {integrity: sha512-ilXFf9Moz47ABjFpDiA5s1w9lpb4EFSp7+5iiJSbfyYDM+bpZdAgLlSr7fW4aXhVe/E+F6QCv0EvRVFEd5CsWg==}
+    engines: {node: '>=10'}
+
   dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662:
     resolution: {gitHosted: true, integrity: sha512-P6iPLdYLwuOZ6uh6WfG+c1I+D69z4m4r/lxhca42GhVEM+Z9bqhOvxieL1RqhYBDoWWhWqHJdvnw/E4HJWQawQ==, tarball: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662}
     version: 0.5.3
@@ -492,9 +524,10 @@ packages:
       '@deepseek-ai/dsh-client-ui-settings-general': '>=0.1.0-rc.7 <0.2.0-0 || >=0.1.1-rc.1 <0.2.0-0'
       react: ^18.2.0
 
-  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/44f3db3b1c4333c178d7e4af2e7f085fbc8f1b44:
-    resolution: {gitHosted: true, integrity: sha512-0fxgDga/YTWRysltJpEQCwhsYiyNQtSs4ar1Ssi/XcbZvlTKIJbq4nNnRY4e9YqF2PmnNIFTEv3a2YT7L4EDfQ==, tarball: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/44f3db3b1c4333c178d7e4af2e7f085fbc8f1b44}
-    version: 1.4.7
+  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/003716b0f682177c9237214dac19a7a052a39812:
+    resolution: {gitHosted: true, integrity: sha512-Zod54V8rxQlEPmT61dZhhwo41lui/AEdJSGWxXd+PVUhpLMt59q/U48K1X/m1M+BI5CAZ8Kp4BCzepgdhkw0cQ==, tarball: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/003716b0f682177c9237214dac19a7a052a39812}
+    version: 1.5.1
+    engines: {dsh: '>=0.2.1-rc.2', node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-llm': '*'
       '@deepseek-ai/dsh-tools': '*'
@@ -634,6 +667,9 @@ packages:
     resolution: {integrity: sha512-1cDNdwJ2Jaohmb3sg4OmKaMBwuC48sYni5HUw2DvsC8LjGTLK9h+eb1X6RyuOHe4hT0ULCW68iomhjUoKUqlPQ==}
     engines: {node: '>= 0.4'}
 
+  hash.js@1.1.7:
+    resolution: {integrity: sha512-taOaskGt4z4SOANNseOviYDvjEJinIkRgmp7LbKP2YTTmVxWBl87s/uzK9r+44BclBSp2X7K1hqeNfz9JbBeXA==}
+
   hasown@2.0.4:
     resolution: {integrity: sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==}
     engines: {node: '>= 0.4'}
@@ -761,8 +797,16 @@ packages:
     resolution: {integrity: sha512-Lbgzdk0h4juoQ9fCKXW4by0UJqj+nOOrI9MJ1sSj4nI8aI2eo1qmvQEie4VD1glsS250n15LsWsYtCugiStS5A==}
     engines: {node: '>=18'}
 
+  minimalistic-assert@1.0.1:
+    resolution: {integrity: sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==}
+
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
+
+  nanoid@5.1.16:
+    resolution: {integrity: sha512-kVrnsrJqMR8+oLJnGEmSWw9BivK5mt7H3FZatVRjrc5wGqFYuBxX1yG7+A7Gi5AefkX6t/oCkizcQgpu0cY1dQ==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
 
   negotiator@1.1.0:
     resolution: {integrity: sha512-NMPBRMJgiQHjbd8phG3Vebdx4kZ1H121rbl5IkMqeOsahptB9BKo/d7oJ3zTXqTgagn2bWlNSXkh0QUGM31RYg==}
@@ -915,6 +959,10 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
+  sax@1.6.1:
+    resolution: {integrity: sha512-42tBVwLWnaQvW5zc4HbZrTuWccECCZfBi92FDuwtqxasH+JbPB3/FOKb1m222K42R4WxuxzzMsTswfzgtSu64Q==}
+    engines: {node: '>=11.0.0'}
+
   scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
 
@@ -998,6 +1046,9 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
+  undici-types@7.24.6:
+    resolution: {integrity: sha512-WRNW+sJgj5OBN4/0JpHFqtqzhpbnV0GuB+OozA9gCL7a993SmU+1JBZCzLNxYsbMfIeDL+lTsphD5jN5N+n0zg==}
+
   unpipe@1.0.0:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
@@ -1035,6 +1086,13 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
+
+  xml-js@1.6.11:
+    resolution: {integrity: sha512-7rVi2KMfwfWFl+GpPg6m80IVMWXLRjO+PxTq7V2CDhoGak0wzYzFgUY2m4XJ47OGdXd8eLE8EmwfAmdjw7lC1g==}
+    hasBin: true
+
+  xml@1.0.1:
+    resolution: {integrity: sha512-huCv9IH9Tcf95zuYCsQraZtWnJvBtLVE0QHMOs8bWyZAFZNDcYjsPq1nEx8jKA9y+Beo9v+7OBPRisQTjinQMw==}
 
   y18n@4.0.3:
     resolution: {integrity: sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ==}
@@ -1098,11 +1156,15 @@ snapshots:
     dependencies:
       react: 18.3.1
 
+  '@fylar/dsh-fylar-office-editor@https://codeload.github.com/FylarOpen/dsh-fylar-office-editor/tar.gz/263bedfb3103831ab561f437c36b50bd9062f6f2':
+    dependencies:
+      docx: 9.7.1
+
   '@hono/node-server@2.1.5(hono@4.13.13)':
     dependencies:
       hono: 4.13.13
 
-  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/450232b296ab82ce4ce6b59b40f5e5c0cec8dcea(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/2e1ac7d0033f3e689b04a900baf60f8b5476d159(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       lucide-react: 1.64.0(react@18.3.1)
       react: 18.3.1
@@ -1168,7 +1230,11 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
-  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9':
+  '@types/node@25.9.9':
+    dependencies:
+      undici-types: 7.24.6
+
+  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7eac21a6cd08a84441938e405a374279ebb3fce5':
     dependencies:
       qrcode: 1.5.4
       ws: 8.21.3
@@ -1435,6 +1501,15 @@ snapshots:
 
   dijkstrajs@1.0.3: {}
 
+  docx@9.7.1:
+    dependencies:
+      '@types/node': 25.9.9
+      hash.js: 1.1.7
+      jszip: 3.10.2
+      nanoid: 5.1.16
+      xml: 1.0.1
+      xml-js: 1.6.11
+
   dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662(@deepseek-ai/schemastery@3.18.5):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
@@ -1443,7 +1518,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/44f3db3b1c4333c178d7e4af2e7f085fbc8f1b44: {}
+  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/003716b0f682177c9237214dac19a7a052a39812: {}
 
   dsh-model-tier@0.1.0: {}
 
@@ -1598,6 +1673,11 @@ snapshots:
 
   has-symbols@1.1.0: {}
 
+  hash.js@1.1.7:
+    dependencies:
+      inherits: 2.0.4
+      minimalistic-assert: 1.0.1
+
   hasown@2.0.4:
     dependencies:
       function-bind: 1.1.2
@@ -1697,7 +1777,11 @@ snapshots:
     dependencies:
       mime-db: 1.54.0
 
+  minimalistic-assert@1.0.1: {}
+
   ms@2.1.3: {}
+
+  nanoid@5.1.16: {}
 
   negotiator@1.1.0:
     dependencies:
@@ -1839,6 +1923,8 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
+  sax@1.6.1: {}
+
   scheduler@0.23.2:
     dependencies:
       loose-envify: 1.4.0
@@ -1944,6 +2030,8 @@ snapshots:
 
   undici-types@6.21.0: {}
 
+  undici-types@7.24.6: {}
+
   unpipe@1.0.0: {}
 
   util-deprecate@1.0.2: {}
@@ -1965,6 +2053,12 @@ snapshots:
   wrappy@1.0.2: {}
 
   ws@8.21.3: {}
+
+  xml-js@1.6.11:
+    dependencies:
+      sax: 1.6.1
+
+  xml@1.0.1: {}
 
   y18n@4.0.3: {}
 

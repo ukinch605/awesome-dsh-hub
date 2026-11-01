@@ -22,13 +22,16 @@ importers:
         version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
-        version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9
+        version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7eac21a6cd08a84441938e405a374279ebb3fce5
       '@ychris12138/dsh-usage-stats':
         specifier: github:Ychris12138/dsh-usage-stats
         version: https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/7e9c80467f20868b98f3b81beef1e4760158e0fa
       '@zseven-w/dsh-android':
         specifier: github:ZSeven-W/dsh-android
         version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/3363a85b1bbeefe994d42d52bd8e792c1527e9ec
+      dsh-ego-browser:
+        specifier: github:Fisfzy/dsh-ego-browser
+        version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/5d13f2391b7b25a2025ddc4ef57ab5f74a546a4f(react@18.3.1)
       dsh-git-memory:
         specifier: github:seriousz158/dsh-memory
         version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
@@ -642,8 +645,8 @@ packages:
   '@ungap/structured-clone@1.4.0':
     resolution: {integrity: sha512-1mEZtMKPM09vDmQt5y7YvmN2+DFTP7Tg0EWXdic8/C6VRnpb33e4ghisCIE3WZjsE2N8mf+QV1Zqh7ZFYLWInQ==}
 
-  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9':
-    resolution: {gitHosted: true, integrity: sha512-Zm8FBXGNopwjqrwooreXR3cerefT4y+6ODDwOWVE7qHEkA2i2x4AKfHvWMvUZHQo8dpyNXtO/CG5fTzo4zpJQA==, tarball: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9}
+  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7eac21a6cd08a84441938e405a374279ebb3fce5':
+    resolution: {gitHosted: true, integrity: sha512-SzJrO4mFqvE0GfGvksuvsceJ4RE+6Enb9CxxStuemoN7JSPVjyHWVYESr5G8maowAG3fjhCQDtk/jrUk8EtSIw==, tarball: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7eac21a6cd08a84441938e405a374279ebb3fce5}
     version: 2.17.5
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
@@ -776,6 +779,9 @@ packages:
   cors@2.8.6:
     resolution: {integrity: sha512-tJtZBBHA6vjIAaF6EnIaq6laBBP9aq/Y3ouVJjEfoHbRBcHBAHYcMh/w8LDrk2PvIMMq8gmopa5D4V8RmbrxGw==}
     engines: {node: '>= 0.10'}
+
+  cosmokit@1.8.1:
+    resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -945,6 +951,37 @@ packages:
 
   dijkstrajs@1.0.3:
     resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
+
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/5d13f2391b7b25a2025ddc4ef57ab5f74a546a4f:
+    resolution: {gitHosted: true, integrity: sha512-OJAiWHEa9pvBtpLAq3IwXYWZYGXLkhto6j45rJnr7/Udttp5YHFafwxjl6kjV5m3xGrMiWu58klbFSeYY4ZPng==, tarball: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/5d13f2391b7b25a2025ddc4ef57ab5f74a546a4f}
+    version: 0.9.8
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/dsh-client-locale': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-client-store': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-client-ui-settings-plugins': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-settings': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-tools': '>=0.1.2-rc.1'
+      react: ^18.2.0
+      schemastery: ^3.18.0
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-store':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings-plugins':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-settings':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      react:
+        optional: true
+      schemastery:
+        optional: true
 
   dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d:
     resolution: {gitHosted: true, integrity: sha512-ap81grYr3/a3sb2KkW6quA7zxjXaZjPVTMGE/ZrCPfcmhegQ9LqKe7V2KAkwSY5xUzegzT2ErazP7dl/Fq0Vug==, tarball: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d}
@@ -1519,6 +1556,9 @@ packages:
 
   scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
+
+  schemastery@3.18.0:
+    resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
   seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/42a2a7fa2a01b5a10a2e2ce368c151c8e0fdafc5:
     resolution: {gitHosted: true, integrity: sha512-1r0pzmId2xPAnGT89zGDNVjlK7FwMVOq4qXabeHSxnAwMyDHUUcstKbzEoF5IfRt9JFbKIg1iQLvyRzKOoul7w==, tarball: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/42a2a7fa2a01b5a10a2e2ce368c151c8e0fdafc5}
@@ -2455,7 +2495,7 @@ snapshots:
 
   '@ungap/structured-clone@1.4.0': {}
 
-  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9':
+  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7eac21a6cd08a84441938e405a374279ebb3fce5':
     dependencies:
       qrcode: 1.5.4
       ws: 8.21.3
@@ -2567,6 +2607,8 @@ snapshots:
     dependencies:
       object-assign: 4.1.1
       vary: 1.1.2
+
+  cosmokit@1.8.1: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -2749,6 +2791,13 @@ snapshots:
   diff@9.0.0: {}
 
   dijkstrajs@1.0.3: {}
+
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/5d13f2391b7b25a2025ddc4ef57ab5f74a546a4f(react@18.3.1):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      schemastery: 3.18.0
+    optionalDependencies:
+      react: 18.3.1
 
   dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.5)(react@18.3.1):
     dependencies:
@@ -3293,6 +3342,11 @@ snapshots:
   scheduler@0.23.2:
     dependencies:
       loose-envify: 1.4.0
+
+  schemastery@3.18.0:
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      cosmokit: 1.8.1
 
   seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/42a2a7fa2a01b5a10a2e2ce368c151c8e0fdafc5(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)(@deepseek-ai/schemastery@3.18.5)(react@18.3.1):
     dependencies:

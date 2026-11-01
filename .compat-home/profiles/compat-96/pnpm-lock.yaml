@@ -19,7 +19,7 @@ importers:
         version: https://codeload.github.com/FylarOpen/dsh-fylar-office-editor/tar.gz/263bedfb3103831ab561f437c36b50bd9062f6f2
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
-        version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9
+        version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7eac21a6cd08a84441938e405a374279ebb3fce5
       deepseek-pet:
         specifier: github:keleus/deepseek-pet
         version: '@keleus/deepseek-pet@https://codeload.github.com/keleus/deepseek-pet/tar.gz/b9b61a35c3b2443ecdeab0ed442d6b33c603d343'
@@ -29,9 +29,12 @@ importers:
       dsh-custom-skin:
         specifier: github:SLin-code/dsh-custom-skin
         version: https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/03d3117fa426d14df4e7a58248adfce094e94633
+      dsh-jev-decision-model:
+        specifier: github:Devin-AXIS/jev-dsh-decision
+        version: https://codeload.github.com/Devin-AXIS/jev-dsh-decision/tar.gz/adc88caa9bf174d367e79a5f254c7936bcef088e
       dsh-remote:
         specifier: github:flymysql/dsh-remote
-        version: https://codeload.github.com/flymysql/dsh-remote/tar.gz/4a696826eaa804f614014d1a555c03e638522fc4
+        version: https://codeload.github.com/flymysql/dsh-remote/tar.gz/a7758b60ef55f3e33ab820db2f34901342c45901
       dsh-skill-mcp-panel:
         specifier: github:Fishquito7/dsh-skill-mcp-panel
         version: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/83adb6cd68827b84ceb44b6ed698013c73041af1
@@ -678,8 +681,8 @@ packages:
   '@vscode/markdown-it-katex@1.1.2':
     resolution: {integrity: sha512-+4IIv5PgrmhKvW/3LpkpkGg257OViEhXkOOgCyj5KMsjsOfnRXkni8XAuuF9Ui5p3B8WnUovlDXAQNb8RJ/RaQ==}
 
-  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9':
-    resolution: {gitHosted: true, integrity: sha512-Zm8FBXGNopwjqrwooreXR3cerefT4y+6ODDwOWVE7qHEkA2i2x4AKfHvWMvUZHQo8dpyNXtO/CG5fTzo4zpJQA==, tarball: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9}
+  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7eac21a6cd08a84441938e405a374279ebb3fce5':
+    resolution: {gitHosted: true, integrity: sha512-SzJrO4mFqvE0GfGvksuvsceJ4RE+6Enb9CxxStuemoN7JSPVjyHWVYESr5G8maowAG3fjhCQDtk/jrUk8EtSIw==, tarball: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7eac21a6cd08a84441938e405a374279ebb3fce5}
     version: 2.17.5
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
@@ -1157,8 +1160,13 @@ packages:
       '@deepseek-ai/dsh-client-ui-settings-general': '>=0.1.0-rc.7 <0.2.0-0 || >=0.1.1-rc.1 <0.2.0-0'
       react: ^18.2.0
 
-  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/4a696826eaa804f614014d1a555c03e638522fc4:
-    resolution: {gitHosted: true, integrity: sha512-2Ueg21VUaRmOl3PqIn3qmh3whYSZcuIVynejyg5pED4MyojpQPHN+4DE2sG50GHmEX9ACnODkh2sG26/RzkjBg==, tarball: https://codeload.github.com/flymysql/dsh-remote/tar.gz/4a696826eaa804f614014d1a555c03e638522fc4}
+  dsh-jev-decision-model@https://codeload.github.com/Devin-AXIS/jev-dsh-decision/tar.gz/adc88caa9bf174d367e79a5f254c7936bcef088e:
+    resolution: {gitHosted: true, integrity: sha512-WKDwp9jkg7EM0243OakDNhDisrc8+0WP8incZ3iymckmZAg4CrlTfopEeHwrMdyiMuNAz6e+uOM+U80LBA/60w==, tarball: https://codeload.github.com/Devin-AXIS/jev-dsh-decision/tar.gz/adc88caa9bf174d367e79a5f254c7936bcef088e}
+    version: 0.1.2
+    engines: {node: '>=20.11'}
+
+  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/a7758b60ef55f3e33ab820db2f34901342c45901:
+    resolution: {gitHosted: true, integrity: sha512-9on1+OYbWgDH/1FxJqX9ADPSO24IS603ioq/Yo377omJ2zCgLw3m07ytd+CJuEIE3UGbxu9M/HZ/dAOnM5b6xA==, tarball: https://codeload.github.com/flymysql/dsh-remote/tar.gz/a7758b60ef55f3e33ab820db2f34901342c45901}
     version: 0.8.68
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -2782,7 +2790,7 @@ snapshots:
     dependencies:
       katex: 0.16.47
 
-  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/8ee121ca318b449cd483c2b337830cf9633f3dd9':
+  '@wenbin_wb/dsh-bridge@https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/7eac21a6cd08a84441938e405a374279ebb3fce5':
     dependencies:
       qrcode: 1.5.4
       ws: 8.21.3
@@ -3238,7 +3246,9 @@ snapshots:
 
   dsh-custom-skin@https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/03d3117fa426d14df4e7a58248adfce094e94633: {}
 
-  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/4a696826eaa804f614014d1a555c03e638522fc4:
+  dsh-jev-decision-model@https://codeload.github.com/Devin-AXIS/jev-dsh-decision/tar.gz/adc88caa9bf174d367e79a5f254c7936bcef088e: {}
+
+  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/a7758b60ef55f3e33ab820db2f34901342c45901:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       iconv-lite: 0.6.3

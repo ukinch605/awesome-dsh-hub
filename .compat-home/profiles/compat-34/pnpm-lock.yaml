@@ -23,9 +23,12 @@ importers:
       '@zseven-w/dsh-ios':
         specifier: github:ZSeven-W/dsh-ios
         version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/d9a9731ccd73b38858fcfbf2f35d7120a861654c
+      dsh-api-relay-audit:
+        specifier: github:toby-bridges/api-relay-audit
+        version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59(@deepseek-ai/cordis@4.0.5)
       dsh-bili-scroll:
         specifier: github:c1overzz/dsh-bili-scroll
-        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a
+        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59
       dsh-dafeiyu:
         specifier: github:QCYTSN/dsh-dafeiyu
         version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98
@@ -34,7 +37,7 @@ importers:
         version: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/1e6e7eb15ce515b0f2bd2142bdee9a36c46c8b91
       easyeda-agent-dsh:
         specifier: github:zhoushoujianwork/easyeda-agent
-        version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7a73a6834d8d76fd9765dd06f9d4e4bdd6b0556a
+        version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/4a74c5636670e91c9894ac413f0badcf425757a9
       gal-view:
         specifier: github:Ayase34/gal-view
         version: https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a
@@ -284,9 +287,21 @@ packages:
     resolution: {integrity: sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==}
     engines: {node: '>= 0.8'}
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a:
-    resolution: {gitHosted: true, integrity: sha512-Y/8+v9JnAe7cG/TZoJminf/4EhGO8qMuvCSmfwAYPV/FlpjPqsrC59RNmm9DJGK9tfcIH5YBjUPCuGGWdPLNcg==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a}
-    version: 2.3.1
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59:
+    resolution: {gitHosted: true, integrity: sha512-U94NbchvcrU90Cb+v5iR8/sKAB6XFL/8rxvtoNnj+ys13s5ZZhZYK0iLVGIPf9i/W5bvsv8Sz2maViApFt23pg==, tarball: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59}
+    version: 2.5.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-commands': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-llm': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-settings': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-subprocess': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59:
+    resolution: {gitHosted: true, integrity: sha512-/oQ+Fs0CDWuWysn5OGgvpUT2GnhDU9bAkRxSkuZkuEgRn9Y2VawPDw5DN7XFJO9be1w+x9IHTn+S0xyTqbXr4g==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59}
+    version: 2.4.0
     engines: {dsh: '>=0.1.7-rc.1', node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
@@ -314,8 +329,8 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7a73a6834d8d76fd9765dd06f9d4e4bdd6b0556a:
-    resolution: {gitHosted: true, integrity: sha512-yd3/64tQhTQDZjTZFwcwfDaW5WkU1OA+qw+KB675JpH169vrpWpAjD6ErLq4NpCvZs0fzlJlPqSiifpvXf6sRg==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7a73a6834d8d76fd9765dd06f9d4e4bdd6b0556a}
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/4a74c5636670e91c9894ac413f0badcf425757a9:
+    resolution: {gitHosted: true, integrity: sha512-YpcgrAkqlYlhrSERHjGzItRx19k+H30czrU0pYvnC6ibCSq3KH0PgwflEax+J1GfYb7tFtHkRwK6iZTBFxd59g==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/4a74c5636670e91c9894ac413f0badcf425757a9}
     version: 1.13.1
     engines: {node: '>=20.17.0'}
 
@@ -824,7 +839,11 @@ snapshots:
 
   depd@2.0.0: {}
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a:
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59(@deepseek-ai/cordis@4.0.5):
+    dependencies:
+      '@deepseek-ai/cordis': 4.0.5
+
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -838,7 +857,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/7a73a6834d8d76fd9765dd06f9d4e4bdd6b0556a:
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/4a74c5636670e91c9894ac413f0badcf425757a9:
     dependencies:
       '@modelcontextprotocol/sdk': 1.30.0
     transitivePeerDependencies:

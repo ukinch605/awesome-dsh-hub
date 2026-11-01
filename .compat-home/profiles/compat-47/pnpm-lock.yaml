@@ -19,7 +19,7 @@ importers:
         version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8(@deepseek-ai/schemastery@3.18.5)
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
-        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/eafed896c270a2952e4b5247f2a4ac25bcdaa599
+        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/0971ffec188140876eacd6dc0eb57f8f22129af1
       dsh-engramory:
         specifier: github:tinqiao-oss/engramory
         version: https://codeload.github.com/tinqiao-oss/engramory/tar.gz/39efc183a55cb3d2c56e11a42b2b5e059a193ce3
@@ -28,7 +28,7 @@ importers:
         version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/7cbdefc64c019a073cfdb493b0b516b5b7177bb6
       dsh-plugin-wallpaper-engine:
         specifier: github:elysia395/dsh-wallpaper-engine
-        version: https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/7ba44b2424e55b70fe28fea753a7abf27ae7cdb3
+        version: https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/42459ec505aedfe0bc0a6f76b52132f8b2cf9224
       dsh-popout-sidebar:
         specifier: github:e2mcc/dsh-popout-sidebar
         version: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162
@@ -38,6 +38,9 @@ importers:
       dsh-tokenledger:
         specifier: github:zh667/TokenLedger
         version: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b(@deepseek-ai/schemastery@3.18.5)
+      graph-memory:
+        specifier: github:adoresever/graph-memory
+        version: https://codeload.github.com/adoresever/graph-memory/tar.gz/5841b1987c3967998818764c9d4238add5f3aa7c
       open-sea-skin:
         specifier: github:d-dev0101/open-sea-skin
         version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025
@@ -161,6 +164,9 @@ packages:
       react:
         optional: true
 
+  '@sinclair/typebox@0.34.52':
+    resolution: {integrity: sha512-XiMQh7qqVlxZzcVD+kkGMNGMzcTrDMLWI7S4x7z1MkCkbDPrekpZXEUK0eZqZFMuHQg2a2DZOcDIh9o5v3Gonw==}
+
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
@@ -175,9 +181,9 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/eafed896c270a2952e4b5247f2a4ac25bcdaa599:
-    resolution: {gitHosted: true, integrity: sha512-1Dbu343e4KuDoLe1p/8fNekZSHEtdO2gSoi8mpkhX6W3OVER+VGVF2s9MSuH7wfL2/umb61iBawWHWbIwH/kQw==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/eafed896c270a2952e4b5247f2a4ac25bcdaa599}
-    version: 1.9.46
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/0971ffec188140876eacd6dc0eb57f8f22129af1:
+    resolution: {gitHosted: true, integrity: sha512-DMTQJsS8Gp04PfUAGOMNnB5uYPDygoPpRhFOEVNY8scDe6RO+YrM9E9zw0c8FHABidwjwERVK+EsWeHdpfM2MQ==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/0971ffec188140876eacd6dc0eb57f8f22129af1}
+    version: 1.9.48
     engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: '>=20'}
     os: [darwin, linux, win32]
     hasBin: true
@@ -364,8 +370,8 @@ packages:
       '@deepseek-ai/dsh-app-boot':
         optional: true
 
-  dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/7ba44b2424e55b70fe28fea753a7abf27ae7cdb3:
-    resolution: {gitHosted: true, integrity: sha512-MAclGSlIp43SgqtuUXQEsHu24aqwk8TP7OOlPgTTggmC/e2N/822LsiDwtSrWMY5Xz5A0pcrQdKAL0vOCKceiw==, tarball: https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/7ba44b2424e55b70fe28fea753a7abf27ae7cdb3}
+  dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/42459ec505aedfe0bc0a6f76b52132f8b2cf9224:
+    resolution: {gitHosted: true, integrity: sha512-0dwo4G5mWB6Dwl640yIzbfWy0uiSclwiBJ9woIkZ96eO0FQ2w45ymKSWjCRjbR8UM9dMXMrW9x21Fh76qU4+hw==, tarball: https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/42459ec505aedfe0bc0a6f76b52132f8b2cf9224}
     version: 1.4.0
     engines: {dsh: ^0.2.0-rc.1, node: '>=22.12.0'}
     peerDependencies:
@@ -405,6 +411,22 @@ packages:
 
   fflate@0.8.3:
     resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
+
+  graph-memory@https://codeload.github.com/adoresever/graph-memory/tar.gz/5841b1987c3967998818764c9d4238add5f3aa7c:
+    resolution: {gitHosted: true, integrity: sha512-dQtAK37MMyD4MST+Ta4juG6CCHn8OpkdHA7Bz62qJygmu79htK3rla83KAEueNK4Pl1kVxqFwoThqfOqTwljKA==, tarball: https://codeload.github.com/adoresever/graph-memory/tar.gz/5841b1987c3967998818764c9d4238add5f3aa7c}
+    version: 1.6.0-beta.17
+    engines: {node: '>=22.13.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4'
+      '@deepseek-ai/dsh-typert-protocol': '>=0.1.0-rc.5'
+      openclaw: '*'
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      openclaw:
+        optional: true
 
   markdown-to-jsx@7.7.17:
     resolution: {integrity: sha512-7mG/1feQ0TX5I7YyMZVDgCC/y2I3CiEhIRQIhyov9nGBP5eoVrOXXHuL5ZP8GRfxVZKRiXWJgwXkb9It+nQZfQ==}
@@ -473,6 +495,8 @@ snapshots:
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
+  '@sinclair/typebox@0.34.52': {}
+
   '@standard-schema/spec@1.1.0': {}
 
   '@types/dom-mediacapture-transform@0.1.12':
@@ -483,7 +507,7 @@ snapshots:
 
   acorn@8.15.0: {}
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/eafed896c270a2952e4b5247f2a4ac25bcdaa599:
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/0971ffec188140876eacd6dc0eb57f8f22129af1:
     dependencies:
       acorn: 8.15.0
       zod: 4.6.6
@@ -594,7 +618,7 @@ snapshots:
       yaml: 2.9.1
       zod: 4.4.3
 
-  dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/7ba44b2424e55b70fe28fea753a7abf27ae7cdb3:
+  dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/42459ec505aedfe0bc0a6f76b52132f8b2cf9224:
     dependencies:
       webwallgl: 3.0.0
       x11: 4.3.3
@@ -608,6 +632,10 @@ snapshots:
       '@deepseek-ai/schemastery': 3.18.5
 
   fflate@0.8.3: {}
+
+  graph-memory@https://codeload.github.com/adoresever/graph-memory/tar.gz/5841b1987c3967998818764c9d4238add5f3aa7c:
+    dependencies:
+      '@sinclair/typebox': 0.34.52
 
   markdown-to-jsx@7.7.17: {}
 

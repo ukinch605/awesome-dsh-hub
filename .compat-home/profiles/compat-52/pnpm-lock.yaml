@@ -10,7 +10,10 @@ importers:
     dependencies:
       '@anionex/dsh-computer-use':
         specifier: github:Anionex/dsh-computer-use
-        version: https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/c6448e83ab0fb5892b3f327c67e72a769c745549
+        version: https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/d3fd041c15bba6e8859098e466c21e4186d1dbb4
+      '@ljwei-stak/dsh-model-router':
+        specifier: github:Alice-Marx/dsh-model-router
+        version: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/de82df4e737954ba0458d597ea82f9a6666c1a9b
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/6be9b76c7ddeedcb4e40dd0444846b71775819b0
@@ -34,39 +37,86 @@ importers:
         version: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4dc4c05e5dcf1a719d153be01706121035d0027f
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f04350b797f9a9b135747a81260a05950b279423
 
 packages:
 
-  '@anionex/dsh-computer-use@https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/c6448e83ab0fb5892b3f327c67e72a769c745549':
-    resolution: {gitHosted: true, integrity: sha512-8fM4ukBfwxsq+ktL8NSmQqxdHF4TrLmXe3pUFjescw2/4BWHpmoKXCVYyzwsXBLsfhSmfveelq6w3bkIVCOsGQ==, tarball: https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/c6448e83ab0fb5892b3f327c67e72a769c745549}
+  '@anionex/dsh-computer-use@https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/d3fd041c15bba6e8859098e466c21e4186d1dbb4':
+    resolution: {gitHosted: true, integrity: sha512-mJU13NzBDpLgqb6Et4q0jsS+LN54RoPY82nduNvsyPhNW0MadmTyXS98n35CfuWhHqX78j6sIDFjNrp7qr3+Ug==, tarball: https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/d3fd041c15bba6e8859098e466c21e4186d1dbb4}
     version: 0.3.7
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-agent': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-brand': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-session': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-skill': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-storage-domain': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-subprocess': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-user-approval': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-util-values': ^0.1.0-rc.6 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-agent': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-api-remotes': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-brand': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-client-ui-settings': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-client-ui-slots': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-host-webserver': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-llm': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-session': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-settings': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-skill': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-storage-domain': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-subprocess': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-user-approval': ^0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-util-values': ^0.1.0-rc.6 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.5
       '@deepseek-ai/schemastery': ^3.18.1
       react: ^18.2.0
     peerDependenciesMeta:
       '@deepseek-ai/dsh-host-webserver':
         optional: true
+
+  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/de82df4e737954ba0458d597ea82f9a6666c1a9b':
+    resolution: {gitHosted: true, integrity: sha512-9J3E8r+x8RC/+q+ZBGWEa9V2p0cVCq2uv3E3flP4Xokjy/7vhfM5KmVlMJKb3cr11trqtzkbZicE7LkOAbujMg==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/de82df4e737954ba0458d597ea82f9a6666c1a9b}
+    version: 0.25.5
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.4
+      '@deepseek-ai/dsh-commands': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-llm': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-sandbox': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-settings': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-tools': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-typert-protocol': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/schemastery': ~3.18.4
+
+  '@lydell/node-pty-darwin-arm64@1.2.0-beta.15':
+    resolution: {integrity: sha512-6TSBbzdcLiNTHl1mTuzflqXrkmcC36USVGvERoDgvHk2ItEDaMaFZuAJ1CqPmwYj0DyhCS16TVS8OGK9xZnjyQ==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@lydell/node-pty-darwin-x64@1.2.0-beta.15':
+    resolution: {integrity: sha512-yDT2oqPqYMBScyuk1U9Rg5VKcrbMOD9o9jWYYamDADA3NSbUISroPChrqYRQ74Y7BQtNH4gqYAiWOZRi5uQZ0Q==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@lydell/node-pty-linux-arm64@1.2.0-beta.15':
+    resolution: {integrity: sha512-wkbNF7dYAmtJv+o2+iztVlNwnUB4B0uX0wh/UD+mwMcmE2gNMnW9GChXO7fEE5XJokD0vB5idiHpGegaN+G/sg==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@lydell/node-pty-linux-x64@1.2.0-beta.15':
+    resolution: {integrity: sha512-+U/5AVvHT6W+8OCYcnJgN0Qgc0ycO3TfD6aaFJHK+WHij797f8gsi5dV1HEO9l6YQmWCD+VL5gaLDhx3mxHwCA==}
+    cpu: [x64]
+    os: [linux]
+
+  '@lydell/node-pty-win32-arm64@1.2.0-beta.15':
+    resolution: {integrity: sha512-pyAk91w7wnnKrD4mrHXtIXRfmzSWV5bEzvRhurXcMCtCc2TJ424ciUskIgWMhAPP6y3KyUnqElj+U6kY3iOt0A==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@lydell/node-pty-win32-x64@1.2.0-beta.15':
+    resolution: {integrity: sha512-2f8twEmDVxZ7drchAXjtevpmSPhFok0avAnzXro4t5gmz0xsPNKkoZvymwtuIS3xo7PzQqZOPQ/YzwEMb7oIzQ==}
+    cpu: [x64]
+    os: [win32]
+
+  '@lydell/node-pty@1.2.0-beta.15':
+    resolution: {integrity: sha512-Br8wBxzbxFwdWgk9uQ+rdzE0xfoxOK4QuGH54swhRwc5IxP6H9Y1/bcyazRGvNUs6XkB5qNVkezuKSRxUwZe7A==}
 
   '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.14':
     resolution: {integrity: sha512-3YoPDmtqv8R0oL7KtgRTRiD5pY9fG5ftgXIAvuXapQN0NGByR13DpYUTJFe8jvwcszIg1lxIhVm8WVHjBRtmsw==}
@@ -231,9 +281,9 @@ packages:
       '@deepseek-ai/schemastery':
         optional: true
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4dc4c05e5dcf1a719d153be01706121035d0027f:
-    resolution: {gitHosted: true, integrity: sha512-kpfVsPjTaE/BNhqWqJ2/qrNhGaAatmP5Jd2gYIPbGUd5iGglBWhwHCXOVJlHu1dmZgAjF0KDyjCZFlBcpnINEg==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4dc4c05e5dcf1a719d153be01706121035d0027f}
-    version: 2.50.1
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f04350b797f9a9b135747a81260a05950b279423:
+    resolution: {gitHosted: true, integrity: sha512-XheJzKxGa8R2MTW8piBR/ea6pkFranIwTB7Mfe/OjqH5AFPf/5ewwX/PZoazliybonod4wTjjIFgpIQZvel5Qg==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f04350b797f9a9b135747a81260a05950b279423}
+    version: 3.3.0
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
@@ -249,9 +299,41 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-computer-use@https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/c6448e83ab0fb5892b3f327c67e72a769c745549':
+  '@anionex/dsh-computer-use@https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/d3fd041c15bba6e8859098e466c21e4186d1dbb4':
     dependencies:
       zod: 4.4.3
+
+  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/de82df4e737954ba0458d597ea82f9a6666c1a9b':
+    optionalDependencies:
+      '@lydell/node-pty': 1.2.0-beta.15
+
+  '@lydell/node-pty-darwin-arm64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-darwin-x64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-linux-arm64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-linux-x64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-win32-arm64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-win32-x64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty@1.2.0-beta.15':
+    optionalDependencies:
+      '@lydell/node-pty-darwin-arm64': 1.2.0-beta.15
+      '@lydell/node-pty-darwin-x64': 1.2.0-beta.15
+      '@lydell/node-pty-linux-arm64': 1.2.0-beta.15
+      '@lydell/node-pty-linux-x64': 1.2.0-beta.15
+      '@lydell/node-pty-win32-arm64': 1.2.0-beta.15
+      '@lydell/node-pty-win32-x64': 1.2.0-beta.15
+    optional: true
 
   '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.14':
     optional: true
@@ -294,6 +376,6 @@ snapshots:
 
   dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b: {}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4dc4c05e5dcf1a719d153be01706121035d0027f: {}
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f04350b797f9a9b135747a81260a05950b279423: {}
 
   zod@4.4.3: {}
