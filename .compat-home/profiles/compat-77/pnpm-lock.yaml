@@ -22,7 +22,7 @@ importers:
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef
       '@shengsheng/dsh-taskboard':
         specifier: github:shengsheng90/DSH-taskboard
-        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8(@deepseek-ai/schemastery@3.18.1)(react@18.3.1)
+        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.18.1)(react@18.3.1)
       '@zseven-w/dsh-android':
         specifier: github:ZSeven-W/dsh-android
         version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/3363a85b1bbeefe994d42d52bd8e792c1527e9ec
@@ -38,6 +38,9 @@ importers:
       dsh-file-explorer:
         specifier: github:joejojoking-cloud/dsh-file-explorer
         version: https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/4b3a609649af9d81b75e91dc194a74bf6b026811(react@18.3.1)
+      dsh-video-storyboard:
+        specifier: github:SAOS-3624/dsh-video-storyboard
+        version: https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/e2308a88ced8d9b78011b9b9c4683b258ee13871
       dsh-xdpool:
         specifier: github:XDTrees/dsh-xdpool
         version: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/74a80b6e6b568d97957a623a0d9d3b625035fed7(@deepseek-ai/schemastery@3.18.1)
@@ -104,9 +107,9 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-IE/0HsGk18fsn1ddXp690ZdvgqP3KoUhmvc4QiPWF1x+BwUQ9oU4TaMk/6LiDVpcb3cbMVBtV0clphnKfOYzfA==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef}
     version: 0.1.15-settings.4
 
-  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8':
-    resolution: {gitHosted: true, integrity: sha512-pm8bK1yCa1ouPYuChjOeh2Jk6cznt8atjjqComeEKsxEIFNDqIO4zu2Irz8m0D2NQvYPr3QdoqQkitfTPd8FwA==, tarball: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8}
-    version: 0.1.10
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5':
+    resolution: {gitHosted: true, integrity: sha512-h7tkKsSaUtad+N24BDOYcKE9Pa725dUPd373h0VTB/1NTqPWq3nUcpDNYeEWg2Beero+04uTUdItNlG9RcEHFw==, tarball: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5}
+    version: 0.1.11
     engines: {node: ^22.19.0 || >=24.0.0}
     hasBin: true
     peerDependencies:
@@ -220,6 +223,17 @@ packages:
       '@deepseek-ai/dsh-client-ui-conversation': ^0.0.1-rc.1
       '@deepseek-ai/dsh-client-ui-slots': ^0.0.1-rc.1
       react: ^18.2.0
+
+  dsh-video-storyboard@https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/e2308a88ced8d9b78011b9b9c4683b258ee13871:
+    resolution: {gitHosted: true, integrity: sha512-0I89H4cuAlr6I9nDp3ljg8Y1qc4EVzzUgWVEtRxXwEVAhCFH8cgS/Ia7Bv6lYAqLbPtX/zEueNyfYmQdavc0XQ==, tarball: https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/e2308a88ced8d9b78011b9b9c4683b258ee13871}
+    version: 0.6.4
+    engines: {node: '>=20'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/dsh-tools': '>=0.1.0-rc.7'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-tools':
+        optional: true
 
   dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/74a80b6e6b568d97957a623a0d9d3b625035fed7:
     resolution: {gitHosted: true, integrity: sha512-QYFKW4r7na49yd1hC0+w8s989yxEAShEqnhutDnQOghAvEvoNKlyxfRiyKdC0Cl/mBt4zztaXfIbWBxy9rod5g==, tarball: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/74a80b6e6b568d97957a623a0d9d3b625035fed7}
@@ -347,7 +361,7 @@ snapshots:
 
   '@leon___/dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef': {}
 
-  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/0fa3f97ed7f2266e173d6643819921b9f3963aa8(@deepseek-ai/schemastery@3.18.1)(react@18.3.1)':
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.18.1)(react@18.3.1)':
     dependencies:
       zod: 4.6.7
     optionalDependencies:
@@ -380,6 +394,8 @@ snapshots:
   dsh-file-explorer@https://codeload.github.com/joejojoking-cloud/dsh-file-explorer/tar.gz/4b3a609649af9d81b75e91dc194a74bf6b026811(react@18.3.1):
     dependencies:
       react: 18.3.1
+
+  dsh-video-storyboard@https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/e2308a88ced8d9b78011b9b9c4683b258ee13871: {}
 
   dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/74a80b6e6b568d97957a623a0d9d3b625035fed7(@deepseek-ai/schemastery@3.18.1):
     optionalDependencies:

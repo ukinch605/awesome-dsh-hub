@@ -17,6 +17,9 @@ importers:
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/6be9b76c7ddeedcb4e40dd0444846b71775819b0
+      dsh-at-file:
+        specifier: github:FSMargoo/dsh-at-file
+        version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
       dsh-client-liang-intensity-skin:
         specifier: github:kingOfSoySauce/dsh-liang-skin
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3
@@ -28,7 +31,7 @@ importers:
         version: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/e6f6b84c56f0fc18ba4a6a1a5959fbf86ea9ec8b
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f04350b797f9a9b135747a81260a05950b279423
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/9d84edcb521b576d45396496497d125fc806937f
 
 packages:
 
@@ -129,6 +132,60 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
+  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
+    resolution: {gitHosted: true, integrity: sha512-aXpz1DsFOgd4cUEIeWyTubH9wORj8b/ruLaefeynSwO+M5sp4JOg/RrFj2qya9nKex3jFMdTWVGueZyhpfKDXA==, tarball: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524}
+    version: 0.7.0
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-agent': '*'
+      '@deepseek-ai/dsh-api-remotes': '*'
+      '@deepseek-ai/dsh-client-connection': '*'
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-runtime': '*'
+      '@deepseek-ai/dsh-client-store': '*'
+      '@deepseek-ai/dsh-client-ui-conversation': '*'
+      '@deepseek-ai/dsh-client-ui-input-trigger': '*'
+      '@deepseek-ai/dsh-client-ui-settings': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-settings': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      '@deepseek-ai/dsh-typert-registry': '*'
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-api-remotes':
+        optional: true
+      '@deepseek-ai/dsh-client-connection':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-store':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-input-trigger':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-settings':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      '@deepseek-ai/dsh-typert-registry':
+        optional: true
+      react:
+        optional: true
+
   dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3:
     resolution: {gitHosted: true, integrity: sha512-okn8dw8JWDvkky4SNeh7igGtnLH6x1ntFZ1swKN7TEI0GGOx0E3RRAj0mpf6fWtlBkv408LUHajObFi2NNYi7w==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3}
     version: 0.1.7
@@ -144,9 +201,9 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-U/nS/Gw0OkYxedrZVcNSkYVes6/s7QvZ6BVhQKw20RJSstp2Ah7n0HiqAfo3UpjnCsvOJmD/3BEJ3WwJ9qKMNg==, tarball: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/e6f6b84c56f0fc18ba4a6a1a5959fbf86ea9ec8b}
     version: 0.1.0
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f04350b797f9a9b135747a81260a05950b279423:
-    resolution: {gitHosted: true, integrity: sha512-XheJzKxGa8R2MTW8piBR/ea6pkFranIwTB7Mfe/OjqH5AFPf/5ewwX/PZoazliybonod4wTjjIFgpIQZvel5Qg==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f04350b797f9a9b135747a81260a05950b279423}
-    version: 3.3.0
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/9d84edcb521b576d45396496497d125fc806937f:
+    resolution: {gitHosted: true, integrity: sha512-R1oLpqgO2DSDj7yO+bZt+n26RgmF/gjnFKqEe2S1vYRoXuM4w9aGiqIFg8QkxzfevEr4z14gEf/to+Eu1l+/tQ==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/9d84edcb521b576d45396496497d125fc806937f}
+    version: 3.5.0
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
@@ -156,6 +213,9 @@ packages:
         optional: true
       '@deepseek-ai/schemastery':
         optional: true
+
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
 snapshots:
 
@@ -220,10 +280,16 @@ snapshots:
       '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.14
       '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.14
 
+  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
+    dependencies:
+      zod: 4.6.7
+
   dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3: {}
 
   dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/afce1cd43f98b8a8b02e4a35cd6a65d6444de412: {}
 
   dsh-memory-evolve@https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/e6f6b84c56f0fc18ba4a6a1a5959fbf86ea9ec8b: {}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f04350b797f9a9b135747a81260a05950b279423: {}
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/9d84edcb521b576d45396496497d125fc806937f: {}
+
+  zod@4.6.7: {}

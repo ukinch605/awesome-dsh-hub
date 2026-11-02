@@ -22,13 +22,16 @@ importers:
         version: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/446bfe373c962aa83e04b36a16da4f8588458242(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)(@deepseek-ai/dsh-atomic-write@0.2.1-rc.4)(@deepseek-ai/dsh-timeout@0.2.1-rc.4)
       '@mnemon-dev/dsh-mnemon':
         specifier: github:mnemon-dev/mnemon
-        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/fb3f186be865a0797ab390839cb7af6b02064708(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
+        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/bbc9151234e0c4f563a0d581e4bc2d5a2d4f83ec(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
         version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/6a649fe930aeab4247d3e8b936b6bf393aa71e8c(@deepseek-ai/dsh-agent-preset-registry@0.2.1-rc.4)(@deepseek-ai/dsh-util-values@0.2.1-rc.4)
       dsh-free-search:
         specifier: github:DDDMUC/dsh-free-search
-        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/2fe792ece666acdc43b0ee4ac87fac16aac83bf6
+        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/88ee7fdf65171505bd4019605afc4324327e5453
+      dsh-startup-screen:
+        specifier: github:6shenhonghong9/dsh-startup-screen
+        version: https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/7f3d2837c1aaef8293abc69093b0a35c80d0f0e8
       open-sea-skin:
         specifier: github:d-dev0101/open-sea-skin
         version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/2437d80a96de4124c54fbe89872fa7090103f025
@@ -579,8 +582,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/fb3f186be865a0797ab390839cb7af6b02064708':
-    resolution: {gitHosted: true, integrity: sha512-4gBpwmSGGq3V/t0sRVa3S8cl4ytfPOuUl5fpZijxyI7RVd/a0XkjqhmnIyifNgpRdgxmQS4AkQg/PZzhMu+UWQ==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/fb3f186be865a0797ab390839cb7af6b02064708}
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/bbc9151234e0c4f563a0d581e4bc2d5a2d4f83ec':
+    resolution: {gitHosted: true, integrity: sha512-kgcOvPdqKZimskO6a8Z1Us4E5g7IDPIklEGhvFMgFQprEVm2vsLT2po7t6+h7Us6w6sFzCv5EWKHMxeMC9WAlg==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/bbc9151234e0c4f563a0d581e4bc2d5a2d4f83ec}
     version: 0.1.0
     engines: {node: '>=20'}
 
@@ -693,9 +696,9 @@ packages:
     resolution: {integrity: sha512-svtcdpS8CgJyqAjEQIXdb3OjhFVVYjzGAPO8WGCmRbrml64SPw/jJD4GoE98aR7r25A0XcgrK3F02yw9R/vhQw==}
     engines: {node: '>=0.3.1'}
 
-  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/2fe792ece666acdc43b0ee4ac87fac16aac83bf6:
-    resolution: {gitHosted: true, integrity: sha512-/m1nLNwe3NzBcQYEKtC52S37LOdobx0yZjLxbI+QLRUn9ynb1YqNFBPTpjlwKgrY4pvge89ZM04wHhYSVzqyMw==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/2fe792ece666acdc43b0ee4ac87fac16aac83bf6}
-    version: 0.9.22
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/88ee7fdf65171505bd4019605afc4324327e5453:
+    resolution: {gitHosted: true, integrity: sha512-Bj2jhe7zwquPOCjxresPltWBg+oWDzmrz2v+wI/XpjT7VTwPHECTEqJzaznfaBGXjEnebh9hcaC+OLa5o7N6QQ==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/88ee7fdf65171505bd4019605afc4324327e5453}
+    version: 0.9.27
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -879,6 +882,11 @@ packages:
     peerDependenciesMeta:
       '@deepseek-ai/dsh-app-boot':
         optional: true
+
+  dsh-startup-screen@https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/7f3d2837c1aaef8293abc69093b0a35c80d0f0e8:
+    resolution: {gitHosted: true, integrity: sha512-IHclym0phtBGTi7uXeRFx2GrgUubudmhz0z+Yk1egTkfz7MMK2StXHCSz7ZkUqC4mGnpXTeF5/zKo7t02eaRJw==, tarball: https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/7f3d2837c1aaef8293abc69093b0a35c80d0f0e8}
+    version: 1.3.0
+    engines: {node: '>=20'}
 
   echarts@6.1.0:
     resolution: {integrity: sha512-q0yaFPggC9FUdsWH4blavRWFmxdrIodbkoKNAjJudAI6CA9gNPxHtV2RcZNEepZVlk4yvBYkOkbk6HIVpIyHZA==}
@@ -1495,7 +1503,7 @@ snapshots:
   '@img/sharp-win32-x64@0.35.4':
     optional: true
 
-  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/fb3f186be865a0797ab390839cb7af6b02064708(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)':
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/bbc9151234e0c4f563a0d581e4bc2d5a2d4f83ec(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)':
     dependencies:
       dsh-mnemon: 0.5.37(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
     transitivePeerDependencies:
@@ -1544,7 +1552,7 @@ snapshots:
 
   diff@9.0.0: {}
 
-  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/2fe792ece666acdc43b0ee4ac87fac16aac83bf6:
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/88ee7fdf65171505bd4019605afc4324327e5453:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -1653,6 +1661,8 @@ snapshots:
       zod: 4.4.3
     optionalDependencies:
       '@deepseek-ai/dsh-app-boot': 0.2.1-rc.4
+
+  dsh-startup-screen@https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/7f3d2837c1aaef8293abc69093b0a35c80d0f0e8: {}
 
   echarts@6.1.0:
     dependencies:
