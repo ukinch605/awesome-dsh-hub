@@ -11,6 +11,9 @@ importers:
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/6be9b76c7ddeedcb4e40dd0444846b71775819b0
+      dsh-dafeiyu:
+        specifier: github:QCYTSN/dsh-dafeiyu
+        version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a
       dsh-emoji:
         specifier: github:hellodigua/dsh-emoji
         version: https://codeload.github.com/hellodigua/dsh-emoji/tar.gz/f14b8c804ab87487ec331de62b3912c39ce75329
@@ -28,7 +31,7 @@ importers:
         version: https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/1e72ce48c01b01149c0c65d4b07df6057e386700
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/9d84edcb521b576d45396496497d125fc806937f
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/caf640296233bea588cba3616257943b26ded71a
       my-app:
         specifier: github:theBigGavin/marketingdashboard
         version: https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/2d71054d76bb78b82ddb7818af4bdff49a6179a7
@@ -127,6 +130,15 @@ packages:
 
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a:
+    resolution: {gitHosted: true, integrity: sha512-hIZyZNS1nYtLlYEEtz0P120y10RS0j4TfdZuG882xIRN7z++jvdrhXlOFkNDzKkgh302b3I2ycF6/DTota05Sg==, tarball: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a}
+    version: 0.1.23
+    engines: {node: '>=22.19'}
+    bundledDependencies:
+      - '@deepseek-ai/cosmokit'
+      - '@deepseek-ai/schemastery'
+      - '@standard-schema/spec'
 
   dsh-emoji@https://codeload.github.com/hellodigua/dsh-emoji/tar.gz/f14b8c804ab87487ec331de62b3912c39ce75329:
     resolution: {gitHosted: true, integrity: sha512-mCVIbvRCSKeJsP90dg8fel30F5xpuVJtNkqbqtlE+KsSBhiC+PduAMSqrgX9Ouj+sQwuLRVc4Xz2dbQJvlk0bg==, tarball: https://codeload.github.com/hellodigua/dsh-emoji/tar.gz/f14b8c804ab87487ec331de62b3912c39ce75329}
@@ -297,8 +309,8 @@ packages:
   micromark@4.0.2:
     resolution: {integrity: sha512-zpe98Q6kvavpCr1NPVSCMebCKfD7CA2NqZ+rykeNhONIJBpc1tFKt9hucLGwha3jNTNI8lHpctWJWoimVF4PfA==}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/9d84edcb521b576d45396496497d125fc806937f:
-    resolution: {gitHosted: true, integrity: sha512-R1oLpqgO2DSDj7yO+bZt+n26RgmF/gjnFKqEe2S1vYRoXuM4w9aGiqIFg8QkxzfevEr4z14gEf/to+Eu1l+/tQ==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/9d84edcb521b576d45396496497d125fc806937f}
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/caf640296233bea588cba3616257943b26ded71a:
+    resolution: {gitHosted: true, integrity: sha512-cph5jjRCr85c3XdceH5gUbvgtF6J84g6IwLV6kuvUejPmnz/GMuax+bf8Jjb9JHMkBSU+kox80mNS+TGCIYNHQ==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/caf640296233bea588cba3616257943b26ded71a}
     version: 3.5.0
     engines: {node: '>=20.0.0'}
     peerDependencies:
@@ -419,6 +431,8 @@ snapshots:
   devlop@1.1.0:
     dependencies:
       dequal: 2.0.3
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a: {}
 
   dsh-emoji@https://codeload.github.com/hellodigua/dsh-emoji/tar.gz/f14b8c804ab87487ec331de62b3912c39ce75329:
     dependencies:
@@ -602,7 +616,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/9d84edcb521b576d45396496497d125fc806937f: {}
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/caf640296233bea588cba3616257943b26ded71a: {}
 
   ms@2.1.3: {}
 

@@ -11,6 +11,9 @@ importers:
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
         version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cordis@4.0.5)(@deepseek-ai/cosmokit@1.8.6)(@deepseek-ai/dsh-mcp-client@0.1.0-rc.8(@deepseek-ai/cordis@4.0.5))(@deepseek-ai/schemastery@3.18.5)
+      '@liustack/modsearch':
+        specifier: github:liustack/modsearch
+        version: https://codeload.github.com/liustack/modsearch/tar.gz/d5582ce9f2e0af09eeb85f0eb3d46eb93b5caa2c
       '@nagi-ovo/dsh-ads':
         specifier: github:Nagi-ovo/dsh-ads
         version: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/a5854a37bbe24078878740ae4567e59cc75c29ec(@deepseek-ai/cordis@4.0.5)(@deepseek-ai/schemastery@3.18.5)
@@ -89,6 +92,12 @@ packages:
     engines: {node: '>=20'}
     peerDependencies:
       hono: ^4 || ^5.0.0-0
+
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/d5582ce9f2e0af09eeb85f0eb3d46eb93b5caa2c':
+    resolution: {gitHosted: true, integrity: sha512-w+kawR+derAPTmA6x1x4AsYAsF4E2coJl7urcDdFmx8hnbHsbVnFIe4yuCQf60U83uF3NemSzrKqFAaCmDm4/A==, tarball: https://codeload.github.com/liustack/modsearch/tar.gz/d5582ce9f2e0af09eeb85f0eb3d46eb93b5caa2c}
+    version: 5.10.11
+    engines: {node: '>=22.13'}
+    hasBin: true
 
   '@modelcontextprotocol/sdk@1.32.2':
     resolution: {integrity: sha512-SWsVtH/0vULSQStoZ6xxH2K09Li8fXYTMC64ZeogCdpZ3XSi1eCPOByV1OpuJxuI3OcmHhosDWYyii07tpPsLw==}
@@ -231,6 +240,10 @@ packages:
   call-bound@1.0.4:
     resolution: {integrity: sha512-+ys997U96po4Kx/ABpBCqhA9EuxJaQWDQg7295H4hBphv3IZg0boBKuwYpt4YXp6MZ5AmZQnU/tyMTlRpaSejg==}
     engines: {node: '>= 0.4'}
+
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
 
   content-disposition@2.0.1:
     resolution: {integrity: sha512-e+H0ZXHSWYrENhQzw1LPuP4oF5MzVKmDU6d3hxlvaPEYLLg62MxtQNPRx4SYSuYJSBUgnQIG4HIN2tEtNv7Dog==}
@@ -770,6 +783,10 @@ packages:
     resolution: {integrity: sha512-faYHw0anBbc/kWF3zFTEnxSFOAGUX9GFbOBthvDdLsIlEoWOFOtS0zgCiQYwIskL9iGXZL3kAXD8OoZ4GmMATA==}
     engines: {node: '>= 18'}
 
+  undici@7.30.1:
+    resolution: {integrity: sha512-03KrMbjIFDWQR5RNPrSw3bd1r12JpyFQl9/yxjUbJtqkjmllqC5lFjZh6ujeuJCKr8EOQvRW872Oy/az+nLYxg==}
+    engines: {node: '>=20.18.1'}
+
   unpipe@1.0.0:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
@@ -849,6 +866,11 @@ snapshots:
   '@hono/node-server@2.1.5(hono@4.13.14)':
     dependencies:
       hono: 4.13.14
+
+  '@liustack/modsearch@https://codeload.github.com/liustack/modsearch/tar.gz/d5582ce9f2e0af09eeb85f0eb3d46eb93b5caa2c':
+    dependencies:
+      commander: 13.1.0
+      undici: 7.30.1
 
   '@modelcontextprotocol/sdk@1.32.2':
     dependencies:
@@ -942,6 +964,8 @@ snapshots:
     dependencies:
       call-bind-apply-helpers: 1.0.2
       get-intrinsic: 1.3.0
+
+  commander@13.1.0: {}
 
   content-disposition@2.0.1: {}
 
@@ -1418,6 +1442,8 @@ snapshots:
       content-type: 2.1.0
       media-typer: 1.1.1
       mime-types: 3.0.2
+
+  undici@7.30.1: {}
 
   unpipe@1.0.0: {}
 

@@ -8,15 +8,18 @@ importers:
 
   .:
     dependencies:
+      '@anysearch/anysearch-dsh':
+        specifier: github:anysearch-team/anysearch-dsh
+        version: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03
       '@graysilver/dsh-evolve-modes':
         specifier: github:GraySilver/dsh-evolve-modes
-        version: https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/2be63b3cf84bfe3903eb30a35fb7150ebc613b88
+        version: https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/58b2742ec6f5c38200efdacd38f61c780d7977da
       '@ychris12138/dsh-usage-stats':
         specifier: github:Ychris12138/dsh-usage-stats
         version: https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/f7191519d96480df8b92a462131040f9f5390861
       '@yejiming/dsh-data-agent':
         specifier: github:omdsh-dev/dsh-data-agent
-        version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/d1bd4381ed771d505db69f2a9065379f7d3165a0
+        version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/6a649fe930aeab4247d3e8b936b6bf393aa71e8c
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
@@ -31,9 +34,21 @@ importers:
         version: '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/f7191519d96480df8b92a462131040f9f5390861'
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/dc55a6a0be345087af5cbd25043564032244255f(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/caf640296233bea588cba3616257943b26ded71a(@deepseek-ai/schemastery@3.18.1)
 
 packages:
+
+  '@anysearch/anysearch-dsh@https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03':
+    resolution: {gitHosted: true, integrity: sha512-lfcd+JP9iuNJ80RYIMi33yEYiRFwc+/H4FKe5LQKd/SoYAvE0MOPgh0vQUVYwVxLdEtn3lmc0k8cjEGUMfAZ6g==, tarball: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03}
+    version: 0.1.8
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.1-rc.1 <5 || 4.0.5-alpha.1'
+      '@deepseek-ai/dsh-credentials': '*'
+      '@deepseek-ai/dsh-system-prompt': '*'
+      '@deepseek-ai/dsh-tool-web': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-web': '*'
 
   '@clickhouse/client@1.23.1':
     resolution: {integrity: sha512-vs3/Zc1dHvT171btW5nMoPsPCJ6QVJ5pp7obxzO5sjqwFx/jjz9wwCAqcFOdc2DhprugDBaVn+4dVY8hG3A9nw==}
@@ -65,24 +80,24 @@ packages:
     resolution: {integrity: sha512-qWGGoJ5TZC8uckbpnFcg6mhXV3/YohPOoxCWVkoZPG/vRmmRUfAdG0l5Ci/XPljekHR9dko2747fhk81l6CBaw==}
     engines: {node: ^22.19 || >=24}
 
-  '@graysilver/dsh-evolve-modes@https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/2be63b3cf84bfe3903eb30a35fb7150ebc613b88':
-    resolution: {gitHosted: true, integrity: sha512-HELtTVaCrtNkclSbC+7n8gv0uN3qxgU/rGWWn0F+HSIp3DXnWfwBT7VHVx1dlh7SUueAJ4T4xkWn91oBS53K+Q==, tarball: https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/2be63b3cf84bfe3903eb30a35fb7150ebc613b88}
-    version: 0.3.2
+  '@graysilver/dsh-evolve-modes@https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/58b2742ec6f5c38200efdacd38f61c780d7977da':
+    resolution: {gitHosted: true, integrity: sha512-lX/EE4BjLeH8Z5px1KXo4E+r7dPUHaY1vLijp9bkAs1aJhrA6RXFfKp8kN4fa60JYW/mwp5LDptaElSbUo4hYA==, tarball: https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/58b2742ec6f5c38200efdacd38f61c780d7977da}
+    version: 0.4.1
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-agent': ^0.1.1-rc.2
-      '@deepseek-ai/dsh-agent-presets': ^0.1.1-rc.2
-      '@deepseek-ai/dsh-api-remotes': ^0.1.1-rc.2
-      '@deepseek-ai/dsh-commands': ^0.1.1-rc.2
-      '@deepseek-ai/dsh-llm': ^0.1.1-rc.2
-      '@deepseek-ai/dsh-plan-mode': ^0.1.1-rc.2
-      '@deepseek-ai/dsh-session': ^0.1.1-rc.2
-      '@deepseek-ai/dsh-storage-domain': ^0.1.1-rc.2
-      '@deepseek-ai/dsh-subagent': ^0.1.1-rc.2
-      '@deepseek-ai/dsh-system-prompt': ^0.1.1-rc.2
-      '@deepseek-ai/dsh-tools': ^0.1.1-rc.2
-      '@deepseek-ai/dsh-typert-protocol': ^0.1.1-rc.2
+      '@deepseek-ai/dsh-agent': ^0.1.1-rc.2 || ^0.1.2-rc.1
+      '@deepseek-ai/dsh-agent-presets': ^0.1.1-rc.2 || ^0.1.2-rc.1
+      '@deepseek-ai/dsh-api-remotes': ^0.1.1-rc.2 || ^0.1.2-rc.1
+      '@deepseek-ai/dsh-commands': ^0.1.1-rc.2 || ^0.1.2-rc.1
+      '@deepseek-ai/dsh-llm': ^0.1.1-rc.2 || ^0.1.2-rc.1
+      '@deepseek-ai/dsh-plan-mode': ^0.1.1-rc.2 || ^0.1.2-rc.1
+      '@deepseek-ai/dsh-session': ^0.1.1-rc.2 || ^0.1.2-rc.1
+      '@deepseek-ai/dsh-storage-domain': ^0.1.1-rc.2 || ^0.1.2-rc.1
+      '@deepseek-ai/dsh-subagent': ^0.1.1-rc.2 || ^0.1.2-rc.1
+      '@deepseek-ai/dsh-system-prompt': ^0.1.1-rc.2 || ^0.1.2-rc.1
+      '@deepseek-ai/dsh-tools': ^0.1.1-rc.2 || ^0.1.2-rc.1
+      '@deepseek-ai/dsh-typert-protocol': ^0.1.1-rc.2 || ^0.1.2-rc.1
       react: ^18.2.0
 
   '@standard-schema/spec@1.1.0':
@@ -93,37 +108,37 @@ packages:
     version: 0.2.10
     hasBin: true
 
-  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/d1bd4381ed771d505db69f2a9065379f7d3165a0':
-    resolution: {gitHosted: true, integrity: sha512-j2EOaG0thi091atgiZN1N5GNbUGSBUHdAWQqSoToceajQu35/Kqnibwgbw8U6f2lsVdKf66uIBYWnZn6lHsr5Q==, tarball: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/d1bd4381ed771d505db69f2a9065379f7d3165a0}
-    version: 0.1.4
+  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/6a649fe930aeab4247d3e8b936b6bf393aa71e8c':
+    resolution: {gitHosted: true, integrity: sha512-dfvoahNI0vGHJr7T3CYYqBFrFWNKbc2C4iVXNrK+z7Jb1+6tUZVSr6g16hrVQvSsh9QCobr8Jp0sY6TaVUA7ww==, tarball: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/6a649fe930aeab4247d3e8b936b6bf393aa71e8c}
+    version: 0.2.2
     peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.2
-      '@deepseek-ai/dsh-agent': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-agent-presets': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-api-session-controller': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-locale': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-agent-preset': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-conversation': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-primitives': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-renderer': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-session': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-slots': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-tool': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-client-ui-workspace': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-commands': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-credentials': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-host-webserver': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-invariants': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-llm': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-scope': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-session': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-storage': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-storage-domain': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-storage-json': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-subprocess': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-tools': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-user-questions': ^0.1.2-alpha.2
-      '@deepseek-ai/dsh-util-values': ^0.1.2-alpha.2
+      '@deepseek-ai/cordis': 4.0.4
+      '@deepseek-ai/dsh-agent': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-agent-preset-registry': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-api-session-controller': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-client-locale': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-client-ui-agent-preset': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-client-ui-conversation': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-client-ui-renderer': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-client-ui-session': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-client-ui-tool': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-client-ui-workspace': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-commands': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-credentials': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-host-webserver': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-invariants': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-llm': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-scope': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-session': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-storage': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-storage-domain': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-storage-json': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-subprocess': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-tools': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-user-questions': '>=0.2.0-rc.1'
+      '@deepseek-ai/dsh-util-values': '>=0.2.0-rc.1'
       react: ^18.2.0 || ^19.0.0
     peerDependenciesMeta:
       '@deepseek-ai/dsh-api-session-controller':
@@ -152,6 +167,9 @@ packages:
         optional: true
       react:
         optional: true
+
+  argparse@2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
@@ -232,9 +250,13 @@ packages:
   fflate@0.8.3:
     resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/dc55a6a0be345087af5cbd25043564032244255f:
-    resolution: {gitHosted: true, integrity: sha512-Zep7yhD4cdKWTiqfJzJ6edRfO3wBMNaFNUqYMFguX0YF3Qnnt3WkC4XESz1DqyVs5wmQUJ/912V1bQghwWwDng==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/dc55a6a0be345087af5cbd25043564032244255f}
-    version: 2.50.1
+  js-yaml@4.3.1:
+    resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
+    hasBin: true
+
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/caf640296233bea588cba3616257943b26ded71a:
+    resolution: {gitHosted: true, integrity: sha512-cph5jjRCr85c3XdceH5gUbvgtF6J84g6IwLV6kuvUejPmnz/GMuax+bf8Jjb9JHMkBSU+kox80mNS+TGCIYNHQ==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/caf640296233bea588cba3616257943b26ded71a}
+    version: 3.5.0
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
@@ -258,6 +280,10 @@ packages:
     resolution: {integrity: sha512-oEGMDB6pOP2S6OwRR4PdVv610zrjnA3Bh+JnSG12fYJlBKjtNAoEb5fSUoCOOINlH96I2fU38/A2UpRKs67xYQ==}
 
 snapshots:
+
+  '@anysearch/anysearch-dsh@https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.1
 
   '@clickhouse/client@1.23.1': {}
 
@@ -290,7 +316,7 @@ snapshots:
       '@dsh-std/core': 0.1.0-rc1
       '@dsh-std/lifecycle': 0.1.0-rc1
 
-  '@graysilver/dsh-evolve-modes@https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/2be63b3cf84bfe3903eb30a35fb7150ebc613b88':
+  '@graysilver/dsh-evolve-modes@https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/58b2742ec6f5c38200efdacd38f61c780d7977da':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
       zod: 4.5.2
@@ -299,14 +325,17 @@ snapshots:
 
   '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/f7191519d96480df8b92a462131040f9f5390861': {}
 
-  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/d1bd4381ed771d505db69f2a9065379f7d3165a0':
+  '@yejiming/dsh-data-agent@https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/6a649fe930aeab4247d3e8b936b6bf393aa71e8c':
     dependencies:
       '@clickhouse/client': 1.23.1
       '@dsh-std/sdk': 0.1.0-rc1
       echarts: 6.1.0
       fflate: 0.8.3
+      js-yaml: 4.3.1
       schemastery: 3.18.0
       zod: 4.5.2
+
+  argparse@2.0.1: {}
 
   cosmokit@1.8.1: {}
 
@@ -327,7 +356,11 @@ snapshots:
 
   fflate@0.8.3: {}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/dc55a6a0be345087af5cbd25043564032244255f(@deepseek-ai/schemastery@3.18.1):
+  js-yaml@4.3.1:
+    dependencies:
+      argparse: 2.0.1
+
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/caf640296233bea588cba3616257943b26ded71a(@deepseek-ai/schemastery@3.18.1):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.1
 

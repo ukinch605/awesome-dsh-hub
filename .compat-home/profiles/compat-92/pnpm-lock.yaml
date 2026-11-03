@@ -22,16 +22,19 @@ importers:
         version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.8.5)(@deepseek-ai/schemastery@3.18.4)
       '@michengai/dsh-archive-manager':
         specifier: github:MichengAI/dsh-archive-manager
-        version: https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/866fd95c157a6c943e697d58f589826a6cbf97e0(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.2)
+        version: https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/5303b76033c92d1667a1b4ea81515d68e033fbea(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.2)
       '@sanqi-normal/dsh-webui-market-plugin':
         specifier: github:Sanqi-normal/dsh-webui-market-plugin
         version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/a4a01fa9f122e187733fbd990c3d6a41e4d7e538(@deepseek-ai/schemastery@3.18.4)
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/14d5eef97274e47f34f91dcaa833be994ba2a770(@deepseek-ai/schemastery@3.18.4)
+      dsh-boot-animation:
+        specifier: github:lxj5820/dsh-boot-animation
+        version: https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/b7786cd749ef18608340a8f5e2071a3656ebf009(@deepseek-ai/schemastery@3.18.4)
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/080dc99c64630a628d3a744983e1856d0600d478(@deepseek-ai/schemastery@3.18.4)
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/2bc71bdf37edb92209c592588eb15f17dddfe4b6(@deepseek-ai/schemastery@3.18.4)
       dsh-composer-polish:
         specifier: github:tianji-qingtian/dsh-composer-polish
         version: https://codeload.github.com/tianji-qingtian/dsh-composer-polish/tar.gz/efb2b3b224a2b6bb8aea294f16cb5caa4f9d2b91
@@ -46,7 +49,7 @@ importers:
         version: https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72
       dsh-skill-mcp-panel:
         specifier: github:Fishquito7/dsh-skill-mcp-panel
-        version: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/83adb6cd68827b84ceb44b6ed698013c73041af1
+        version: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/6481a72f216298ef0a26250342c4ea1d54c04f4f
       dsh-video-lens:
         specifier: github:dundunhan/dsh-video-lens
         version: https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/9ef313c3a0a7e9786f9464cfc23b675ac1dfb8f9
@@ -251,9 +254,9 @@ packages:
   '@mermaid-js/parser@1.2.1':
     resolution: {integrity: sha512-n12NohV3mrUyUL2o93IgG/ifeW9FTyeJn3zDxkhwa8MJ9Fxg3HQMlA3RiGmD/3UnJvheztkjjQAjA2T4LmUcpw==}
 
-  '@michengai/dsh-archive-manager@https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/866fd95c157a6c943e697d58f589826a6cbf97e0':
-    resolution: {gitHosted: true, integrity: sha512-fePEvgFiCjkH5mD4IF07mNTjcRm3u+A8YZXNypSylcER6F2cP1O9fk+pLsNwhgVJnlPOD8MEREbdMTmiaKL6sw==, tarball: https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/866fd95c157a6c943e697d58f589826a6cbf97e0}
-    version: 1.1.22
+  '@michengai/dsh-archive-manager@https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/5303b76033c92d1667a1b4ea81515d68e033fbea':
+    resolution: {gitHosted: true, integrity: sha512-6aD4b6dogm2riXElS1WJoueleAuMsbFt/Hlp6KqwMuzPCjmEShFjZDir9y1YU14NINmwBkq4uRX5d1Ih2Aowtg==, tarball: https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/5303b76033c92d1667a1b4ea81515d68e033fbea}
+    version: 1.2.3
     engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1 <5.0.0'
@@ -332,8 +335,8 @@ packages:
   '@tauri-apps/plugin-window-state@2.4.1':
     resolution: {integrity: sha512-OuvdrzyY8Q5Dbzpj+GcrnV1iCeoZbcFdzMjanZMMcAEUNy/6PH5pxZPXpaZLOR7whlzXiuzx0L9EKZbH7zpdRw==}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/a4a01fa9f122e187733fbd990c3d6a41e4d7e538':
-    resolution: {gitHosted: true, integrity: sha512-VvhABuESGacczD6l8lVNwRcPownrU8lDgaW1+G7QkG95BcFbAygADFtBTCJqdoDMQjqh9P2jbSU1yN8HppbELw==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/a4a01fa9f122e187733fbd990c3d6a41e4d7e538}
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/14d5eef97274e47f34f91dcaa833be994ba2a770':
+    resolution: {gitHosted: true, integrity: sha512-kkECyTq+pmDI6lc5Y6K+SdXLw/ZTRWptsIeww3b6CJQWCYC8bilfeou7qENCiU0wAlsnWabWQ1NpEFwjIyMnhA==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/14d5eef97274e47f34f91dcaa833be994ba2a770}
     version: 0.5.5
     engines: {node: '>=20.3.0'}
     peerDependencies:
@@ -1097,9 +1100,16 @@ packages:
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/080dc99c64630a628d3a744983e1856d0600d478:
-    resolution: {gitHosted: true, integrity: sha512-guPRyPt8561Nf29duuI4MJkZESEps8P9FSXD1DEXr2M8N+hd13JE3Sbuzeis25GJZuoQMTIP0cDQFO0JrWyW1g==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/080dc99c64630a628d3a744983e1856d0600d478}
-    version: 0.26.3
+  dsh-boot-animation@https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/b7786cd749ef18608340a8f5e2071a3656ebf009:
+    resolution: {gitHosted: true, integrity: sha512-wVsfzYou8GFKrw+vOsdwkWGBt1c/68bwJmFcdCbFzOIviRsv77TfunFqImMu0Wg2VeQFO0bXgFS2q+JCYcu5BA==, tarball: https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/b7786cd749ef18608340a8f5e2071a3656ebf009}
+    version: 0.3.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/schemastery': '*'
+
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/2bc71bdf37edb92209c592588eb15f17dddfe4b6:
+    resolution: {gitHosted: true, integrity: sha512-nJ6MWVAGWP5aZV44YFiY7QshBbuNHVejszlUkN9ZS56muyAh4Nr+DrOaRzwUDrFZPvYmnPmMyW04qub5MIqgzg==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/2bc71bdf37edb92209c592588eb15f17dddfe4b6}
+    version: 0.26.4
     engines: {node: '>=22.13'}
     hasBin: true
     peerDependencies:
@@ -1136,9 +1146,9 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-3S73Yr11Da3uuL95XIXxWtdova6NVRTYBYm+JOS/3LORWj0+xu27pjW4Ugni4QHUXlFSVuus0N1C4O0NitqPIA==, tarball: https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72}
     version: 1.1.0
 
-  dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/83adb6cd68827b84ceb44b6ed698013c73041af1:
-    resolution: {gitHosted: true, integrity: sha512-/E8C1uyVe8blFvucCgByBojLvt2amgNm/0BhVQ0cIvnDteISs3Mq19nhTQHojCA/HMLAuyHebSM2vOAgTzX3Vw==, tarball: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/83adb6cd68827b84ceb44b6ed698013c73041af1}
-    version: 2.3.5
+  dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/6481a72f216298ef0a26250342c4ea1d54c04f4f:
+    resolution: {gitHosted: true, integrity: sha512-03BytAl1WVuFCxEDJm6i9VFf0Zi4n7Teff8CmMaPCi+ZS7QFq0jn++qRm0yQIZWQj75+4jSKnvhNpXQ0bXE48A==, tarball: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/6481a72f216298ef0a26250342c4ea1d54c04f4f}
+    version: 2.3.6
     hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -2308,7 +2318,7 @@ snapshots:
     dependencies:
       '@chevrotain/types': 11.1.2
 
-  '@michengai/dsh-archive-manager@https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/866fd95c157a6c943e697d58f589826a6cbf97e0(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.2)':
+  '@michengai/dsh-archive-manager@https://codeload.github.com/MichengAI/dsh-archive-manager/tar.gz/5303b76033c92d1667a1b4ea81515d68e033fbea(@deepseek-ai/dsh-typert-protocol@0.2.1-rc.2)':
     dependencies:
       '@deepseek-ai/dsh-typert-protocol': 0.2.1-rc.2
 
@@ -2375,7 +2385,7 @@ snapshots:
     dependencies:
       '@tauri-apps/api': 2.11.1
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/a4a01fa9f122e187733fbd990c3d6a41e4d7e538(@deepseek-ai/schemastery@3.18.4)':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/14d5eef97274e47f34f91dcaa833be994ba2a770(@deepseek-ai/schemastery@3.18.4)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.4
       '@tencent-connect/qqbot-connector': 1.2.0
@@ -3220,7 +3230,11 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/080dc99c64630a628d3a744983e1856d0600d478(@deepseek-ai/schemastery@3.18.4):
+  dsh-boot-animation@https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/b7786cd749ef18608340a8f5e2071a3656ebf009(@deepseek-ai/schemastery@3.18.4):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.4
+
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/2bc71bdf37edb92209c592588eb15f17dddfe4b6(@deepseek-ai/schemastery@3.18.4):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.4
       fzstd: 0.1.1
@@ -3233,7 +3247,7 @@ snapshots:
 
   dsh-recall-unread@https://codeload.github.com/hg1048596-pixel/dsh-recall-unread/tar.gz/e9a22bad1f246584ac153a250436732c754b7e72: {}
 
-  dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/83adb6cd68827b84ceb44b6ed698013c73041af1:
+  dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/6481a72f216298ef0a26250342c4ea1d54c04f4f:
     dependencies:
       '@deepseek-ai/dsh-typert-protocol': 0.2.1-rc.2
       '@modelcontextprotocol/sdk': 1.32.1

@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@changfenhuang/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
-        version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/14111b20b47ff9a9cf6299a481a2ec2a7dd7272d
+        version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/48eac63badf93641f2276b8b0068f6ebbe22ba9b
       '@fylar/dsh-fylar-office-editor':
         specifier: github:FylarOpen/dsh-fylar-office-editor
         version: https://codeload.github.com/FylarOpen/dsh-fylar-office-editor/tar.gz/263bedfb3103831ab561f437c36b50bd9062f6f2
@@ -23,6 +23,9 @@ importers:
       argo-search:
         specifier: github:taxueseek/argo
         version: https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f
+      dsh-aurabot-qq:
+        specifier: github:aureth-labs/dsh-aurabot-qq
+        version: https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/b3301f6b014016e141c07d266a716c0fea566aab
       dsh-damage-pulse:
         specifier: github:wssfk12138/dsh-damage-pulse
         version: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/26e8d5ce3689f6bb4b053b14a6e953adc37d8fdf(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)(zod@4.6.7)
@@ -50,8 +53,8 @@ importers:
 
 packages:
 
-  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/14111b20b47ff9a9cf6299a481a2ec2a7dd7272d':
-    resolution: {gitHosted: true, integrity: sha512-ia1E+gPyPye5Shu+QZ08lC8moOs1WwiGsXg4dU50XXTUezU6RAuS1/WDK5+9fI6LeoAWG8+gUKtYMjDsnNJPfQ==, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/14111b20b47ff9a9cf6299a481a2ec2a7dd7272d}
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/48eac63badf93641f2276b8b0068f6ebbe22ba9b':
+    resolution: {gitHosted: true, integrity: sha512-LbwBU4vwKvdmkb6Gx7yrCazXq+BimKmsSuQQLXOMIXnTEVDDozLDodNFizOOa5vIWR2ssq1C7v8CWY0He7dSjw==, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/48eac63badf93641f2276b8b0068f6ebbe22ba9b}
     version: 1.4.11
     engines: {node: '>=20'}
     peerDependencies:
@@ -934,6 +937,11 @@ packages:
     resolution: {integrity: sha512-ilXFf9Moz47ABjFpDiA5s1w9lpb4EFSp7+5iiJSbfyYDM+bpZdAgLlSr7fW4aXhVe/E+F6QCv0EvRVFEd5CsWg==}
     engines: {node: '>=10'}
 
+  dsh-aurabot-qq@https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/b3301f6b014016e141c07d266a716c0fea566aab:
+    resolution: {gitHosted: true, integrity: sha512-WcWOdfOpHnBdxpIHXU5DS3HC7QljFU7XO0+kfCzGLgwKaI2tDBMM/KSbOhdv/grzyKPEuuUa5wnYdD9Quxj7Hg==, tarball: https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/b3301f6b014016e141c07d266a716c0fea566aab}
+    version: 1.1.24
+    engines: {node: '>=22.13.0'}
+
   dsh-damage-pulse@https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/26e8d5ce3689f6bb4b053b14a6e953adc37d8fdf:
     resolution: {gitHosted: true, integrity: sha512-3xKuAhbMJAz68k7lzh9ZOjEnF/ZWDO8wTjcNxX5PUOVVpxRqhZbQPtj9KgfotmxoXwf2+avI0jFjLQKXMAlv3A==, tarball: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/26e8d5ce3689f6bb4b053b14a6e953adc37d8fdf}
     version: 4.3.2
@@ -1679,7 +1687,7 @@ packages:
 
 snapshots:
 
-  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/14111b20b47ff9a9cf6299a481a2ec2a7dd7272d': {}
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/48eac63badf93641f2276b8b0068f6ebbe22ba9b': {}
 
   '@deepseek-ai/cosmokit@1.8.3': {}
 
@@ -2456,6 +2464,8 @@ snapshots:
       nanoid: 5.1.16
       xml: 1.0.1
       xml-js: 1.6.11
+
+  dsh-aurabot-qq@https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/b3301f6b014016e141c07d266a716c0fea566aab: {}
 
   dsh-damage-pulse@https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/26e8d5ce3689f6bb4b053b14a6e953adc37d8fdf(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)(zod@4.6.7):
     dependencies:

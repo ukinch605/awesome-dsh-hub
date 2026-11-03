@@ -29,6 +29,9 @@ importers:
       '@oh-dsh/desktop':
         specifier: github:hust-open-atom-club/oh-dsh
         version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa
+      '@uumit-ai/dsh-uumit-remote':
+        specifier: github:uumit-ai/dsh-uumit-remote
+        version: https://codeload.github.com/uumit-ai/dsh-uumit-remote/tar.gz/9e64809f6db492f5eff4381cb90ddbbb7164c215
       '@yejiming/dsh-gomoku':
         specifier: github:omdsh-dev/dsh-gomoku
         version: https://codeload.github.com/omdsh-dev/dsh-gomoku/tar.gz/26fdf6e99c95447f250ab51478fbc694b6024e8d
@@ -46,7 +49,7 @@ importers:
         version: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/080dc99c64630a628d3a744983e1856d0600d478(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/2bc71bdf37edb92209c592588eb15f17dddfe4b6(@deepseek-ai/schemastery@3.18.5)
       dsh-harmony-next:
         specifier: github:linhay/harmony-next.skills
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101
@@ -660,6 +663,11 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  '@uumit-ai/dsh-uumit-remote@https://codeload.github.com/uumit-ai/dsh-uumit-remote/tar.gz/9e64809f6db492f5eff4381cb90ddbbb7164c215':
+    resolution: {gitHosted: true, integrity: sha512-cYi/3Y0XfntNsZRGGNeXVNJbf2b4YBi3tIDM3hS8LCwOQtQA2CpOaEbZxB7Q1Yyxi8u0DVGmWhf051U7wfusJA==, tarball: https://codeload.github.com/uumit-ai/dsh-uumit-remote/tar.gz/9e64809f6db492f5eff4381cb90ddbbb7164c215}
+    version: 0.1.0-beta.3
+    engines: {node: ^22.19.0 || >=24.0.0}
+
   '@yejiming/dsh-gomoku@https://codeload.github.com/omdsh-dev/dsh-gomoku/tar.gz/26fdf6e99c95447f250ab51478fbc694b6024e8d':
     resolution: {gitHosted: true, integrity: sha512-BcdqdMSEeX4sicu2l6Es25Zu3rawApWQae8WCC+/XpNeEIwzNfG0zevYk5R9YYUj5flt0kWO3PBsAdHwrmke0w==, tarball: https://codeload.github.com/omdsh-dev/dsh-gomoku/tar.gz/26fdf6e99c95447f250ab51478fbc694b6024e8d}
     version: 0.0.3
@@ -771,9 +779,9 @@ packages:
     resolution: {integrity: sha512-svtcdpS8CgJyqAjEQIXdb3OjhFVVYjzGAPO8WGCmRbrml64SPw/jJD4GoE98aR7r25A0XcgrK3F02yw9R/vhQw==}
     engines: {node: '>=0.3.1'}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/080dc99c64630a628d3a744983e1856d0600d478:
-    resolution: {gitHosted: true, integrity: sha512-guPRyPt8561Nf29duuI4MJkZESEps8P9FSXD1DEXr2M8N+hd13JE3Sbuzeis25GJZuoQMTIP0cDQFO0JrWyW1g==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/080dc99c64630a628d3a744983e1856d0600d478}
-    version: 0.26.3
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/2bc71bdf37edb92209c592588eb15f17dddfe4b6:
+    resolution: {gitHosted: true, integrity: sha512-nJ6MWVAGWP5aZV44YFiY7QshBbuNHVejszlUkN9ZS56muyAh4Nr+DrOaRzwUDrFZPvYmnPmMyW04qub5MIqgzg==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/2bc71bdf37edb92209c592588eb15f17dddfe4b6}
+    version: 0.26.4
     engines: {node: '>=22.13'}
     hasBin: true
     peerDependencies:
@@ -1472,6 +1480,8 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
+  '@uumit-ai/dsh-uumit-remote@https://codeload.github.com/uumit-ai/dsh-uumit-remote/tar.gz/9e64809f6db492f5eff4381cb90ddbbb7164c215': {}
+
   '@yejiming/dsh-gomoku@https://codeload.github.com/omdsh-dev/dsh-gomoku/tar.gz/26fdf6e99c95447f250ab51478fbc694b6024e8d':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
@@ -1546,7 +1556,7 @@ snapshots:
 
   diff@9.0.0: {}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/080dc99c64630a628d3a744983e1856d0600d478(@deepseek-ai/schemastery@3.18.5):
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/2bc71bdf37edb92209c592588eb15f17dddfe4b6(@deepseek-ai/schemastery@3.18.5):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       fzstd: 0.1.1

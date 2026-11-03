@@ -13,7 +13,7 @@ importers:
         version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/864968a84007e15400429bc9fb46a415500ddfc3(@deepseek-ai/schemastery@3.18.5)
       '@changfenhuang/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
-        version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/14111b20b47ff9a9cf6299a481a2ec2a7dd7272d
+        version: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/48eac63badf93641f2276b8b0068f6ebbe22ba9b
       '@howmp/dsh-pentest':
         specifier: github:howmp/dsh-pentest
         version: https://codeload.github.com/howmp/dsh-pentest/tar.gz/f518e8f48405a9f99a4fa15d9b77bdac7bc52838
@@ -22,13 +22,16 @@ importers:
         version: https://codeload.github.com/liustack/modsearch/tar.gz/81ed4d16fbdec19d078f7bfbeac11b6c5ceb1e80
       '@omdsh-dev/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
-        version: '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/14111b20b47ff9a9cf6299a481a2ec2a7dd7272d'
+        version: '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/48eac63badf93641f2276b8b0068f6ebbe22ba9b'
       ds-harness-remote:
         specifier: github:liguobao/ds-harness-remote
-        version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/7e387df78479122306c65eefa2fa7a4ad7f26abf
+        version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1
       dsh-bili-scroll:
         specifier: github:c1overzz/dsh-bili-scroll
-        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a
+        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59
+      dsh-deja:
+        specifier: github:vshulcz/deja-vu
+        version: https://codeload.github.com/vshulcz/deja-vu/tar.gz/1dabba5f9df17ca2813029dba926a3186b868c5d
       easyeda-agent-dsh:
         specifier: github:zhoushoujianwork/easyeda-agent
         version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd
@@ -69,8 +72,8 @@ packages:
       '@deepseek-ai/dsh-host-webserver':
         optional: true
 
-  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/14111b20b47ff9a9cf6299a481a2ec2a7dd7272d':
-    resolution: {gitHosted: true, integrity: sha512-ia1E+gPyPye5Shu+QZ08lC8moOs1WwiGsXg4dU50XXTUezU6RAuS1/WDK5+9fI6LeoAWG8+gUKtYMjDsnNJPfQ==, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/14111b20b47ff9a9cf6299a481a2ec2a7dd7272d}
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/48eac63badf93641f2276b8b0068f6ebbe22ba9b':
+    resolution: {gitHosted: true, integrity: sha512-LbwBU4vwKvdmkb6Gx7yrCazXq+BimKmsSuQQLXOMIXnTEVDDozLDodNFizOOa5vIWR2ssq1C7v8CWY0He7dSjw==, tarball: https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/48eac63badf93641f2276b8b0068f6ebbe22ba9b}
     version: 1.4.11
     engines: {node: '>=20'}
     peerDependencies:
@@ -140,6 +143,41 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  '@vshulcz/deja-vu-darwin-amd64@0.23.5':
+    resolution: {integrity: sha512-9XhR4RPUTfNK9h1BC24u3iRnrrCzPRy8v6IfsoCEyicDUIZSBgdx8JGEN6T2UDvLhNPDa8aE27dysqis/+kmCg==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@vshulcz/deja-vu-darwin-arm64@0.23.5':
+    resolution: {integrity: sha512-gwm45P8pZLc6D5ddSi9D2Doi1NDFctSupAnj1th7c282GNI0zIoUtyLeqgEpWyFfDUShsilZ4tFqK5YOMU/fXA==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@vshulcz/deja-vu-linux-amd64@0.23.5':
+    resolution: {integrity: sha512-CDr+wU8dXyjoqOrKU4fiSlIsrIdMEhfAFjQHF7wgG/Iijx8yFywnBqR71d6TPZ6XjZNPaKjptRlo9qAc2HGGrQ==}
+    cpu: [x64]
+    os: [linux]
+
+  '@vshulcz/deja-vu-linux-arm64@0.23.5':
+    resolution: {integrity: sha512-d+xu4eY0JO3fUmOBC1yFzX5Pk3qV6Ih16QLRWEzbmvlUpwP5Uqm4YfI8napmmz5bMSMk0ZF8Gmtvxr6X9VNMig==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@vshulcz/deja-vu-windows-amd64@0.23.5':
+    resolution: {integrity: sha512-7omIHcFJffaxwUfoXExZTRa4OXJBtWJNVD56FxygTTWbUZ+CLlXap7wdtouJo3foYVP13W36JSFmsAxYxKdA8w==}
+    cpu: [x64]
+    os: [win32]
+
+  '@vshulcz/deja-vu-windows-arm64@0.23.5':
+    resolution: {integrity: sha512-Y6aUvjawHIJfJ2EMKqYHbHPuemxFqzESoosu0juiDKJCJLXrSTXIAX1TpU485rNXykIYQ0h0aUWTviXSe3G+fw==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@vshulcz/deja-vu@0.23.5':
+    resolution: {integrity: sha512-PYsMAdjpVG5ojpx9MosHE5wSPhKIk4iIeE7Yt6gvJlv7OxhzEZzdYy8zmrXRgfN9pwc9mUvclB3nkBrcdkOpxw==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
@@ -185,9 +223,9 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/7e387df78479122306c65eefa2fa7a4ad7f26abf:
-    resolution: {gitHosted: true, integrity: sha512-hKL1CktM5a2IUqDEOFx4xil7qJjJ8ANhqBpEb9WH9Jd9av6qtQkM9/LYhBxhQH2mmyNTq9Tj4bbITO939kXjvg==, tarball: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/7e387df78479122306c65eefa2fa7a4ad7f26abf}
-    version: 0.6.0
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1:
+    resolution: {gitHosted: true, integrity: sha512-zuMalS6JRJx8AFuNzl+xEo+4Xbw04oGi628pju8lBV0vAGPq+cdFyZ9z7jnFigP1wbDDov6nLiHL3jul9Gahzw==, tarball: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1}
+    version: 0.6.2
     hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1 <5 || >=4.0.5-alpha.1 <4.0.6-0'
@@ -223,9 +261,9 @@ packages:
       '@deepseek-ai/dsh-client-ui-slots':
         optional: true
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a:
-    resolution: {gitHosted: true, integrity: sha512-Y/8+v9JnAe7cG/TZoJminf/4EhGO8qMuvCSmfwAYPV/FlpjPqsrC59RNmm9DJGK9tfcIH5YBjUPCuGGWdPLNcg==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a}
-    version: 2.3.1
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59:
+    resolution: {gitHosted: true, integrity: sha512-/oQ+Fs0CDWuWysn5OGgvpUT2GnhDU9bAkRxSkuZkuEgRn9Y2VawPDw5DN7XFJO9be1w+x9IHTn+S0xyTqbXr4g==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59}
+    version: 2.4.0
     engines: {dsh: '>=0.1.7-rc.1', node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
@@ -235,6 +273,11 @@ packages:
         optional: true
       '@deepseek-ai/schemastery':
         optional: true
+
+  dsh-deja@https://codeload.github.com/vshulcz/deja-vu/tar.gz/1dabba5f9df17ca2813029dba926a3186b868c5d:
+    resolution: {gitHosted: true, integrity: sha512-LM3f5wf874/2t703ThgGe/BVXH2l6EyDApc0EUZEpRxWOy2sNMT/m3Gc9YLkRuuUjgDPA3Jt6b91+/coMxYAIQ==, tarball: https://codeload.github.com/vshulcz/deja-vu/tar.gz/1dabba5f9df17ca2813029dba926a3186b868c5d}
+    version: 0.23.5
+    engines: {node: '>=18'}
 
   easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd:
     resolution: {gitHosted: true, integrity: sha512-0FQ1cA19iAnHY1dH6PvL6i69bxspWRBeLodsMo+QW7rjhClIcSvhnXH0Ati/pGS5gZU+p5dEbL1UtkXdHf4t7g==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd}
@@ -392,7 +435,7 @@ snapshots:
       undici: 8.10.0
       zod: 4.4.3
 
-  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/14111b20b47ff9a9cf6299a481a2ec2a7dd7272d': {}
+  '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/48eac63badf93641f2276b8b0068f6ebbe22ba9b': {}
 
   '@deepseek-ai/cosmokit@1.8.2': {}
 
@@ -450,6 +493,33 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
+  '@vshulcz/deja-vu-darwin-amd64@0.23.5':
+    optional: true
+
+  '@vshulcz/deja-vu-darwin-arm64@0.23.5':
+    optional: true
+
+  '@vshulcz/deja-vu-linux-amd64@0.23.5':
+    optional: true
+
+  '@vshulcz/deja-vu-linux-arm64@0.23.5':
+    optional: true
+
+  '@vshulcz/deja-vu-windows-amd64@0.23.5':
+    optional: true
+
+  '@vshulcz/deja-vu-windows-arm64@0.23.5':
+    optional: true
+
+  '@vshulcz/deja-vu@0.23.5':
+    optionalDependencies:
+      '@vshulcz/deja-vu-darwin-amd64': 0.23.5
+      '@vshulcz/deja-vu-darwin-arm64': 0.23.5
+      '@vshulcz/deja-vu-linux-amd64': 0.23.5
+      '@vshulcz/deja-vu-linux-arm64': 0.23.5
+      '@vshulcz/deja-vu-windows-amd64': 0.23.5
+      '@vshulcz/deja-vu-windows-arm64': 0.23.5
+
   ansi-regex@5.0.1: {}
 
   ansi-styles@4.3.0:
@@ -485,7 +555,7 @@ snapshots:
       webidl-conversions: 7.0.0
     optional: true
 
-  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/7e387df78479122306c65eefa2fa7a4ad7f26abf:
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       qrcode: 1.5.4
@@ -497,9 +567,13 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/2c7b3f14f525360f8657b102ec453fd8f02baf3a:
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59:
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.1
+      '@deepseek-ai/schemastery': 3.18.5
+
+  dsh-deja@https://codeload.github.com/vshulcz/deja-vu/tar.gz/1dabba5f9df17ca2813029dba926a3186b868c5d:
+    dependencies:
+      '@vshulcz/deja-vu': 0.23.5
 
   easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd: {}
 
