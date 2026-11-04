@@ -2,8 +2,8 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/ukinch605/awesome-dsh-hub)
 ![License](https://img.shields.io/github/license/ukinch605/awesome-dsh-hub)
-![Plugins](https://img.shields.io/badge/plugins-21597-4dabf7)
-![Last updated](https://img.shields.io/badge/last%20updated-2026--11--03-orange)
+![Plugins](https://img.shields.io/badge/plugins-21669-4dabf7)
+![Last updated](https://img.shields.io/badge/last%20updated-2026--11--04-orange)
 
 > 自动维护的 DeepSeek Harness（`dsh`）插件精品目录：机器可读 Registry、中英双语目录与可检索站点。Everything is a Plugin. 🐋
 > An auto-maintained, awesome-style directory of the DeepSeek Harness (`dsh`) plugin ecosystem: machine-readable registry, bilingual catalogs and a searchable site. Everything is a Plugin. 🐋
@@ -14,29 +14,29 @@
 
 | 指标 / Metric | 数值 / Value |
 | --- | ---: |
-| 收录插件 / Plugins | **21597** |
-| 监测仓库 / Monitored repos | 25430 |
-| 累计 Star / Total stars | 335,512 |
-| 最近更新 / Last updated | 2026-11-03 23:44:25.712 UTC |
+| 收录插件 / Plugins | **21669** |
+| 监测仓库 / Monitored repos | 25526 |
+| 累计 Star / Total stars | 336,680 |
+| 最近更新 / Last updated | 2026-11-04 03:27:15.136 UTC |
 
 ### 分类构成 / Categories
 
-Web UI 增强 3284 · Agent 能力 8599 · 编码开发 1612 · 消息通讯 891 · 视觉与多模态 1512 · 浏览器与网络 1116 · 皮肤与娱乐 583 · 文件与数据 2777 · 开发工具与教程 490 · 合集与发行版 529 · 生态项目 204
+Web UI 增强 3305 · Agent 能力 8622 · 编码开发 1617 · 消息通讯 896 · 视觉与多模态 1516 · 浏览器与网络 1118 · 皮肤与娱乐 584 · 文件与数据 2786 · 开发工具与教程 491 · 合集与发行版 530 · 生态项目 204
 
 ### Top 10 插件 / Top Plugins
 
 | # | 插件 / Plugin | Stars | 类型 / Type | 说明 / Description |
 | --- | --- | ---: | --- | --- |
-| 1 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 58,960 | Agent 能力 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flas… |
-| 2 | [alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill) | 37,359 | Agent 能力 | 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how a… |
-| 3 | [HunYiSage/dsh-purge](https://github.com/HunYiSage/dsh-purge) | 17,062 | Agent 能力 | DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Ja… |
-| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 10,513 | Agent 能力 | The plugin market inside DeepSeek Harness — browse, search,… |
-| 5 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 10,019 | 开发工具与教程 | DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSee… |
-| 6 | [superdesigndev/treg](https://github.com/superdesigndev/treg) | 7,107 | 消息通讯 | OpenRouter for agent tools. Join community here: https://di… |
+| 1 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 59,257 | Agent 能力 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flas… |
+| 2 | [alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill) | 37,394 | Agent 能力 | 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how a… |
+| 3 | [HunYiSage/dsh-purge](https://github.com/HunYiSage/dsh-purge) | 17,220 | Agent 能力 | DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Ja… |
+| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 10,539 | Agent 能力 | The plugin market inside DeepSeek Harness — browse, search,… |
+| 5 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 10,033 | 开发工具与教程 | DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSee… |
+| 6 | [superdesigndev/treg](https://github.com/superdesigndev/treg) | 7,115 | 消息通讯 | OpenRouter for agent tools. Join community here: https://di… |
 | 7 | [yjh051108/dsh-routing-suite](https://github.com/yjh051108/dsh-routing-suite) | 7,002 | Agent 能力 | dsh-routing-suite — injector + router-standard kit: install… |
-| 8 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 6,819 | Web UI 增强 | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
-| 9 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 6,721 | 编码开发 | DSH's officially top-recommended TUI plugin — high performa… |
-| 10 | [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 5,209 | 编码开发 | Answer me with HTML — an agent skill that answers hard ques… |
+| 8 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 6,823 | Web UI 增强 | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
+| 9 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 6,763 | 编码开发 | DSH's officially top-recommended TUI plugin — high performa… |
+| 10 | [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 5,239 | 编码开发 | Answer me with HTML — an agent skill that answers hard ques… |
 
 ## 快速使用 / Quick Start
 
