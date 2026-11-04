@@ -23,12 +23,15 @@ importers:
       '@omdsh-dev/dsh-annotation':
         specifier: github:omdsh-dev/dsh-annotation
         version: '@changfenhuang/dsh-annotation@https://codeload.github.com/omdsh-dev/dsh-annotation/tar.gz/48eac63badf93641f2276b8b0068f6ebbe22ba9b'
+      aegis:
+        specifier: github:GanyuanRan/Aegis
+        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1370a15001b9130316d51715bab44c87a3993dcb
       ds-harness-remote:
         specifier: github:liguobao/ds-harness-remote
-        version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1
+        version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058
       dsh-bili-scroll:
         specifier: github:c1overzz/dsh-bili-scroll
-        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59
+        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/f883d79fa536a2d1610dbb89796e6f48266103d7
       dsh-deja:
         specifier: github:vshulcz/deja-vu
         version: https://codeload.github.com/vshulcz/deja-vu/tar.gz/1dabba5f9df17ca2813029dba926a3186b868c5d
@@ -178,6 +181,21 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1370a15001b9130316d51715bab44c87a3993dcb:
+    resolution: {gitHosted: true, integrity: sha512-GTZiFOa5uj1YDkySHEAknvHxEU84gvwOsOMAh1wTN0fIQXqnTffeQ3NBfJBjhyN3S1HifvZrwkglOY4Nlh11Tg==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1370a15001b9130316d51715bab44c87a3993dcb}
+    version: 2.14.3
+    peerDependencies:
+      '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-skill-filesystem': '>=0.1.0-rc.6'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-skill-filesystem':
+        optional: true
+
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
@@ -223,8 +241,8 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1:
-    resolution: {gitHosted: true, integrity: sha512-zuMalS6JRJx8AFuNzl+xEo+4Xbw04oGi628pju8lBV0vAGPq+cdFyZ9z7jnFigP1wbDDov6nLiHL3jul9Gahzw==, tarball: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1}
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058:
+    resolution: {gitHosted: true, integrity: sha512-HG2OzgNC2yfRwWL4zD0HLCKgS67g9fyOR7JltBAgnIbudSMVRY5tzzhCsEgLjtAWr8Tt1DcdGDWdacqdIDut9g==, tarball: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058}
     version: 0.6.2
     hasBin: true
     peerDependencies:
@@ -261,9 +279,9 @@ packages:
       '@deepseek-ai/dsh-client-ui-slots':
         optional: true
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59:
-    resolution: {gitHosted: true, integrity: sha512-/oQ+Fs0CDWuWysn5OGgvpUT2GnhDU9bAkRxSkuZkuEgRn9Y2VawPDw5DN7XFJO9be1w+x9IHTn+S0xyTqbXr4g==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59}
-    version: 2.4.0
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/f883d79fa536a2d1610dbb89796e6f48266103d7:
+    resolution: {gitHosted: true, integrity: sha512-Hq9vi9NhGxr58hd5Kl+86AKpmxe/12gkhpkNuvX+Tk+7fyr4rOWvjYfIt2rZM8gP4AHvuP7m9lFhGPt9d7tQlg==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/f883d79fa536a2d1610dbb89796e6f48266103d7}
+    version: 2.5.0
     engines: {dsh: '>=0.1.7-rc.1', node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
@@ -520,6 +538,8 @@ snapshots:
       '@vshulcz/deja-vu-windows-amd64': 0.23.5
       '@vshulcz/deja-vu-windows-arm64': 0.23.5
 
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1370a15001b9130316d51715bab44c87a3993dcb: {}
+
   ansi-regex@5.0.1: {}
 
   ansi-styles@4.3.0:
@@ -555,7 +575,7 @@ snapshots:
       webidl-conversions: 7.0.0
     optional: true
 
-  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1:
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       qrcode: 1.5.4
@@ -567,7 +587,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59:
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/f883d79fa536a2d1610dbb89796e6f48266103d7:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 

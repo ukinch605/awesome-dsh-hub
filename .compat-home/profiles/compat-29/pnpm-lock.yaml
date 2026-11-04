@@ -11,6 +11,9 @@ importers:
       '@dsh-external/dsh-automation':
         specifier: github:titanwings/dsh-automation
         version: https://codeload.github.com/titanwings/dsh-automation/tar.gz/0d73a4e03639d4f63d0771ae4490e2718b7e7aa0
+      '@yunmiao/studymate':
+        specifier: github:Miaotofu01/Study-Mate
+        version: https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43
       dsh-harmony-next:
         specifier: github:linhay/harmony-next.skills
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249
@@ -19,7 +22,7 @@ importers:
         version: https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751
       dsh-purge:
         specifier: github:YuJunZhiXue/dsh-purge
-        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/0c933dc7d3252698f3f0f9756932dcc88355f532
+        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5
       easyeda-agent-dsh:
         specifier: github:zhoushoujianwork/easyeda-agent
         version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/217020d59fd3f2d1e43aa91307d220c628f655ee
@@ -41,6 +44,12 @@ packages:
         optional: true
       react-dom:
         optional: true
+
+  '@yunmiao/studymate@https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43':
+    resolution: {gitHosted: true, integrity: sha512-A37ZdT+JBXqfnxgJZj6HqsiRpZ+QZoD1r7hjM9sBVYtT8m5MG490n8EppnqU3l/k0fT5hAMd3pnj4lEW7uFusg==, tarball: https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43}
+    version: 2.0.3
+    engines: {node: ^22.19.0 || >=24.0.0}
+    hasBin: true
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249:
     resolution: {gitHosted: true, integrity: sha512-E1LkQtH6JO3XE6fg1v2d0R/FWVtJrc0z+3NhvARbg5XE2glXjCFGq4q7YhV6r39iUTv8gYw+sj3yCxnohmE+pw==, tarball: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249}
@@ -80,9 +89,9 @@ packages:
       react:
         optional: true
 
-  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/0c933dc7d3252698f3f0f9756932dcc88355f532:
-    resolution: {gitHosted: true, integrity: sha512-67PqL5UagHgpPDWEnaYe6tGWgBeuuqOkK4dBHopp5E3pBx09EhVke8zKnluT3harT1cWUhSWC/yTHuoi94Ircw==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/0c933dc7d3252698f3f0f9756932dcc88355f532}
-    version: 1.1.82
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5:
+    resolution: {gitHosted: true, integrity: sha512-E2fqgaDK36iqH0+gZ3j/5J+GXisbcCn3klDL5hGUF8/wQO4rs789eOEMNklrasJ8ZsAXGJonvS3Z6xjBlIqY3w==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5}
+    version: 1.1.90
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -111,13 +120,15 @@ snapshots:
       luxon: 3.7.2
       zod: 4.4.3
 
+  '@yunmiao/studymate@https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43': {}
+
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249: {}
 
   dsh-open-in-vscode@https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751:
     dependencies:
       zod: 4.4.3
 
-  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/0c933dc7d3252698f3f0f9756932dcc88355f532: {}
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5: {}
 
   easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/217020d59fd3f2d1e43aa91307d220c628f655ee: {}
 

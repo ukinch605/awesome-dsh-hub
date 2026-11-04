@@ -22,19 +22,22 @@ importers:
         version: https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43
       ds-harness-remote:
         specifier: github:liguobao/ds-harness-remote
-        version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1
+        version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058
       dsh-api-relay-audit:
         specifier: github:toby-bridges/api-relay-audit
         version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59
       dsh-bili-scroll:
         specifier: github:c1overzz/dsh-bili-scroll
-        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59
+        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/f883d79fa536a2d1610dbb89796e6f48266103d7
+      dsh-deja:
+        specifier: github:vshulcz/deja-vu
+        version: https://codeload.github.com/vshulcz/deja-vu/tar.gz/451ead76eac92965f50f4a8a73a3fa10be5a87f6
       dsh-notification:
         specifier: github:omdsh-dev/dsh-notification
         version: https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/675aab9b43d5011738feb6185281596c0365ccba
       dsh-purge:
         specifier: github:YuJunZhiXue/dsh-purge
-        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/217d60d3d61881079ea95bbe2c174f338a02182b
+        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5
       easyeda-agent-dsh:
         specifier: github:zhoushoujianwork/easyeda-agent
         version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd
@@ -162,6 +165,41 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  '@vshulcz/deja-vu-darwin-amd64@0.23.5':
+    resolution: {integrity: sha512-9XhR4RPUTfNK9h1BC24u3iRnrrCzPRy8v6IfsoCEyicDUIZSBgdx8JGEN6T2UDvLhNPDa8aE27dysqis/+kmCg==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@vshulcz/deja-vu-darwin-arm64@0.23.5':
+    resolution: {integrity: sha512-gwm45P8pZLc6D5ddSi9D2Doi1NDFctSupAnj1th7c282GNI0zIoUtyLeqgEpWyFfDUShsilZ4tFqK5YOMU/fXA==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@vshulcz/deja-vu-linux-amd64@0.23.5':
+    resolution: {integrity: sha512-CDr+wU8dXyjoqOrKU4fiSlIsrIdMEhfAFjQHF7wgG/Iijx8yFywnBqR71d6TPZ6XjZNPaKjptRlo9qAc2HGGrQ==}
+    cpu: [x64]
+    os: [linux]
+
+  '@vshulcz/deja-vu-linux-arm64@0.23.5':
+    resolution: {integrity: sha512-d+xu4eY0JO3fUmOBC1yFzX5Pk3qV6Ih16QLRWEzbmvlUpwP5Uqm4YfI8napmmz5bMSMk0ZF8Gmtvxr6X9VNMig==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@vshulcz/deja-vu-windows-amd64@0.23.5':
+    resolution: {integrity: sha512-7omIHcFJffaxwUfoXExZTRa4OXJBtWJNVD56FxygTTWbUZ+CLlXap7wdtouJo3foYVP13W36JSFmsAxYxKdA8w==}
+    cpu: [x64]
+    os: [win32]
+
+  '@vshulcz/deja-vu-windows-arm64@0.23.5':
+    resolution: {integrity: sha512-Y6aUvjawHIJfJ2EMKqYHbHPuemxFqzESoosu0juiDKJCJLXrSTXIAX1TpU485rNXykIYQ0h0aUWTviXSe3G+fw==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@vshulcz/deja-vu@0.23.5':
+    resolution: {integrity: sha512-PYsMAdjpVG5ojpx9MosHE5wSPhKIk4iIeE7Yt6gvJlv7OxhzEZzdYy8zmrXRgfN9pwc9mUvclB3nkBrcdkOpxw==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   '@yunmiao/studymate@https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43':
     resolution: {gitHosted: true, integrity: sha512-A37ZdT+JBXqfnxgJZj6HqsiRpZ+QZoD1r7hjM9sBVYtT8m5MG490n8EppnqU3l/k0fT5hAMd3pnj4lEW7uFusg==, tarball: https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43}
     version: 2.0.3
@@ -213,8 +251,8 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1:
-    resolution: {gitHosted: true, integrity: sha512-zuMalS6JRJx8AFuNzl+xEo+4Xbw04oGi628pju8lBV0vAGPq+cdFyZ9z7jnFigP1wbDDov6nLiHL3jul9Gahzw==, tarball: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1}
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058:
+    resolution: {gitHosted: true, integrity: sha512-HG2OzgNC2yfRwWL4zD0HLCKgS67g9fyOR7JltBAgnIbudSMVRY5tzzhCsEgLjtAWr8Tt1DcdGDWdacqdIDut9g==, tarball: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058}
     version: 0.6.2
     hasBin: true
     peerDependencies:
@@ -263,9 +301,9 @@ packages:
       '@deepseek-ai/dsh-settings': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
       '@deepseek-ai/dsh-subprocess': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59:
-    resolution: {gitHosted: true, integrity: sha512-/oQ+Fs0CDWuWysn5OGgvpUT2GnhDU9bAkRxSkuZkuEgRn9Y2VawPDw5DN7XFJO9be1w+x9IHTn+S0xyTqbXr4g==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59}
-    version: 2.4.0
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/f883d79fa536a2d1610dbb89796e6f48266103d7:
+    resolution: {gitHosted: true, integrity: sha512-Hq9vi9NhGxr58hd5Kl+86AKpmxe/12gkhpkNuvX+Tk+7fyr4rOWvjYfIt2rZM8gP4AHvuP7m9lFhGPt9d7tQlg==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/f883d79fa536a2d1610dbb89796e6f48266103d7}
+    version: 2.5.0
     engines: {dsh: '>=0.1.7-rc.1', node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
@@ -275,6 +313,11 @@ packages:
         optional: true
       '@deepseek-ai/schemastery':
         optional: true
+
+  dsh-deja@https://codeload.github.com/vshulcz/deja-vu/tar.gz/451ead76eac92965f50f4a8a73a3fa10be5a87f6:
+    resolution: {gitHosted: true, integrity: sha512-w5JnYs/xD4f6V5eJy9reXOlQRnyHyZTPbojuVtrCzkBdQgvsmSrLyVsvhMOZY/gvsYsyhgd3y+E6R6m5Bk5hCg==, tarball: https://codeload.github.com/vshulcz/deja-vu/tar.gz/451ead76eac92965f50f4a8a73a3fa10be5a87f6}
+    version: 0.23.5
+    engines: {node: '>=18'}
 
   dsh-notification@https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/675aab9b43d5011738feb6185281596c0365ccba:
     resolution: {gitHosted: true, integrity: sha512-Y2qXoNhWYkYlhDkjGka02Uz0kOh6vshrS6wy0GYFCQfuilerF786wnqCQnXAIteJ4erkMOsQQyQ7C9IrqNlcYA==, tarball: https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/675aab9b43d5011738feb6185281596c0365ccba}
@@ -312,8 +355,8 @@ packages:
       react:
         optional: true
 
-  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/217d60d3d61881079ea95bbe2c174f338a02182b:
-    resolution: {gitHosted: true, integrity: sha512-pn/092/MhxlYVMCP1jaUd1cKj0qlRmdDD6IF7zp9mhqfGj8K9b+GTU/5078LL5Y8rzBedrOl/BPv+ePYAiH+NQ==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/217d60d3d61881079ea95bbe2c174f338a02182b}
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5:
+    resolution: {gitHosted: true, integrity: sha512-E2fqgaDK36iqH0+gZ3j/5J+GXisbcCn3klDL5hGUF8/wQO4rs789eOEMNklrasJ8ZsAXGJonvS3Z6xjBlIqY3w==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5}
     version: 1.1.90
     engines: {node: '>=18'}
     hasBin: true
@@ -524,6 +567,33 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
+  '@vshulcz/deja-vu-darwin-amd64@0.23.5':
+    optional: true
+
+  '@vshulcz/deja-vu-darwin-arm64@0.23.5':
+    optional: true
+
+  '@vshulcz/deja-vu-linux-amd64@0.23.5':
+    optional: true
+
+  '@vshulcz/deja-vu-linux-arm64@0.23.5':
+    optional: true
+
+  '@vshulcz/deja-vu-windows-amd64@0.23.5':
+    optional: true
+
+  '@vshulcz/deja-vu-windows-arm64@0.23.5':
+    optional: true
+
+  '@vshulcz/deja-vu@0.23.5':
+    optionalDependencies:
+      '@vshulcz/deja-vu-darwin-amd64': 0.23.5
+      '@vshulcz/deja-vu-darwin-arm64': 0.23.5
+      '@vshulcz/deja-vu-linux-amd64': 0.23.5
+      '@vshulcz/deja-vu-linux-arm64': 0.23.5
+      '@vshulcz/deja-vu-windows-amd64': 0.23.5
+      '@vshulcz/deja-vu-windows-arm64': 0.23.5
+
   '@yunmiao/studymate@https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43': {}
 
   ansi-regex@5.0.1: {}
@@ -561,7 +631,7 @@ snapshots:
       webidl-conversions: 7.0.0
     optional: true
 
-  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1:
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       qrcode: 1.5.4
@@ -575,15 +645,19 @@ snapshots:
 
   dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59: {}
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/398e4724a481b09b6383a950bcd08723c632da59:
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/f883d79fa536a2d1610dbb89796e6f48266103d7:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
+
+  dsh-deja@https://codeload.github.com/vshulcz/deja-vu/tar.gz/451ead76eac92965f50f4a8a73a3fa10be5a87f6:
+    dependencies:
+      '@vshulcz/deja-vu': 0.23.5
 
   dsh-notification@https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/675aab9b43d5011738feb6185281596c0365ccba:
     dependencies:
       zod: 4.4.3
 
-  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/217d60d3d61881079ea95bbe2c174f338a02182b: {}
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5: {}
 
   easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd: {}
 

@@ -16,10 +16,13 @@ importers:
         version: https://codeload.github.com/LoserFox/distill/tar.gz/78a508c8839a0cd4205c95416905d7d5e2e2775e(@deepseek-ai/schemastery@3.18.5)
       ds-harness-remote:
         specifier: github:liguobao/deepseek-harness-remote
-        version: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1(react@18.3.1)
+        version: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058(react@18.3.1)
+      dsh-claude-style:
+        specifier: github:Nwflower/dsh-claude-style
+        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/b964c77278dc322810df053f4658240c25f52bc4(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dsh-computer-use-win:
         specifier: github:Yu-tao-Li/dsh-computer-use-win
-        version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/3083fd6b9f75e546cfc34c4ec8f8edca74845dde(@deepseek-ai/schemastery@3.18.5)
       dsh-harmony-next:
         specifier: github:linhay/harmony-next.skills
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101
@@ -411,8 +414,8 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1:
-    resolution: {gitHosted: true, integrity: sha512-zuMalS6JRJx8AFuNzl+xEo+4Xbw04oGi628pju8lBV0vAGPq+cdFyZ9z7jnFigP1wbDDov6nLiHL3jul9Gahzw==, tarball: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1}
+  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058:
+    resolution: {gitHosted: true, integrity: sha512-HG2OzgNC2yfRwWL4zD0HLCKgS67g9fyOR7JltBAgnIbudSMVRY5tzzhCsEgLjtAWr8Tt1DcdGDWdacqdIDut9g==, tarball: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058}
     version: 0.6.2
     hasBin: true
     peerDependencies:
@@ -449,9 +452,18 @@ packages:
       '@deepseek-ai/dsh-client-ui-slots':
         optional: true
 
-  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662:
-    resolution: {gitHosted: true, integrity: sha512-P6iPLdYLwuOZ6uh6WfG+c1I+D69z4m4r/lxhca42GhVEM+Z9bqhOvxieL1RqhYBDoWWhWqHJdvnw/E4HJWQawQ==, tarball: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662}
-    version: 0.5.3
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/b964c77278dc322810df053f4658240c25f52bc4:
+    resolution: {gitHosted: true, integrity: sha512-XEkrPEnMpb2ieQf+VzzNSDgUDYAw/jVnjoSA2uuKyBRm9wBn7qfobW1mbKSbxgzCMOtNgfDTLc5mtHBIgKfKJg==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/b964c77278dc322810df053f4658240c25f52bc4}
+    version: 0.19.7
+    peerDependencies:
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.1.5-rc.1'
+      '@deepseek-ai/schemastery': '>=3.18.0'
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
+  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/3083fd6b9f75e546cfc34c4ec8f8edca74845dde:
+    resolution: {gitHosted: true, integrity: sha512-7ESrTLEcYsY1WC/aMCy4LiVhrHgL7iYakfFDwhXDhsNQJbxP2PeDxrOZtHDBaPMAFCE8LHQj1U/zjqgmlp8kUw==, tarball: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/3083fd6b9f75e546cfc34c4ec8f8edca74845dde}
+    version: 0.5.4
     engines: {node: '>=22'}
     os: [win32]
     hasBin: true
@@ -1354,7 +1366,7 @@ snapshots:
       webidl-conversions: 7.0.0
     optional: true
 
-  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/22edce5c8a3dcea9a45bda9f1c5346ff03ee82e1(react@18.3.1):
+  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       qrcode: 1.5.4
@@ -1367,7 +1379,13 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/6fb642129595a6357588c70812974951db304662(@deepseek-ai/schemastery@3.18.5):
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/b964c77278dc322810df053f4658240c25f52bc4(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/3083fd6b9f75e546cfc34c4ec8f8edca74845dde(@deepseek-ai/schemastery@3.18.5):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
 

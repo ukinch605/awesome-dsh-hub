@@ -13,7 +13,7 @@ importers:
         version: https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/f53a7e466948a6c5636f2079b2382976a1eea4c8
       '@ljwei-stak/dsh-model-router':
         specifier: github:Alice-Marx/dsh-model-router
-        version: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/de82df4e737954ba0458d597ea82f9a6666c1a9b
+        version: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/4db5741f4b7be01c58090ffd394cc9a641f30c4b
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/6be9b76c7ddeedcb4e40dd0444846b71775819b0
@@ -23,6 +23,9 @@ importers:
       dsh-client-liang-intensity-skin:
         specifier: github:kingOfSoySauce/dsh-liang-skin
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3
+      dsh-cost-meter:
+        specifier: github:Han-1413141/dsh-cost-meter
+        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/041de64824119106ef16105ec7ec0e3ac2c342ba
       dsh-find-plugin:
         specifier: github:awesome-dsh-plugin/dsh-find-plugin
         version: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/afce1cd43f98b8a8b02e4a35cd6a65d6444de412
@@ -31,7 +34,7 @@ importers:
         version: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/e6f6b84c56f0fc18ba4a6a1a5959fbf86ea9ec8b
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/9d84edcb521b576d45396496497d125fc806937f
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/c7461c25573985c36ba2354d7682b4b390e101c5
 
 packages:
 
@@ -39,18 +42,19 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-/jbNLMhrDvnnq1C+Jz93ZFadq0XUzmWg7V/1nVKtKPapkGS5kYk3wHEb/WIrHG2agyP1woBdgxy81G/qqCuQ9w==, tarball: https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/f53a7e466948a6c5636f2079b2382976a1eea4c8}
     version: 1.6.2
 
-  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/de82df4e737954ba0458d597ea82f9a6666c1a9b':
-    resolution: {gitHosted: true, integrity: sha512-9J3E8r+x8RC/+q+ZBGWEa9V2p0cVCq2uv3E3flP4Xokjy/7vhfM5KmVlMJKb3cr11trqtzkbZicE7LkOAbujMg==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/de82df4e737954ba0458d597ea82f9a6666c1a9b}
-    version: 0.25.5
+  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/4db5741f4b7be01c58090ffd394cc9a641f30c4b':
+    resolution: {gitHosted: true, integrity: sha512-7zwlat4dEMoJY33V92n97rL3DFGvcWd3tiKO8pCg9qhkvGl1uWasYkPwT8W+c5f+KyQ7nmvgf5tSAqGdG6r0qw==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/4db5741f4b7be01c58090ffd394cc9a641f30c4b}
+    version: 0.35.0
     engines: {node: '>=22.19'}
     peerDependencies:
       '@deepseek-ai/cordis': ~4.0.4
-      '@deepseek-ai/dsh-commands': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-llm': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-sandbox': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-settings': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-tools': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
-      '@deepseek-ai/dsh-typert-protocol': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3
+      '@deepseek-ai/dsh-commands': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-llm': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-sandbox': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-settings': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-tools': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-typert-protocol': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5
+      '@deepseek-ai/dsh-web': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5
       '@deepseek-ai/schemastery': ~3.18.4
 
   '@lydell/node-pty-darwin-arm64@1.2.0-beta.15':
@@ -85,6 +89,14 @@ packages:
 
   '@lydell/node-pty@1.2.0-beta.15':
     resolution: {integrity: sha512-Br8wBxzbxFwdWgk9uQ+rdzE0xfoxOK4QuGH54swhRwc5IxP6H9Y1/bcyazRGvNUs6XkB5qNVkezuKSRxUwZe7A==}
+
+  '@modelcontextprotocol/core@2.4.0':
+    resolution: {integrity: sha512-z8QBKqdfXLPzkLQuG4xp8hrVEMm1PZ1IgxMN2sMbJiFiAKOWXnAzogXn2W4aqIBlP1ea6U5yiqVquvUNM1Cj6Q==}
+    engines: {node: '>=20'}
+
+  '@modelcontextprotocol/server@2.4.0':
+    resolution: {integrity: sha512-rgR9yxSaAJ+bcsi/XroT/S2AfPiIWloXAnrdfYSCms9ivVju0ishu/wW0J21Ho6+ZOR1r7RyeRbjiRuF87ix5Q==}
+    engines: {node: '>=20'}
 
   '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.14':
     resolution: {integrity: sha512-3YoPDmtqv8R0oL7KtgRTRiD5pY9fG5ftgXIAvuXapQN0NGByR13DpYUTJFe8jvwcszIg1lxIhVm8WVHjBRtmsw==}
@@ -131,6 +143,23 @@ packages:
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
+
+  acorn@8.15.0:
+    resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
+  better-sqlite3@13.0.3:
+    resolution: {integrity: sha512-RbOBxmLBG8uvFUc15X9+9SFemKcQ0WBuISBVkpuiaUB2qblC8UWlHEjdWVoZ8AdhSwmoEgsiXKfopX0CQxaACQ==}
+    engines: {node: '>=22'}
+
+  deep-view@0.1.0:
+    resolution: {integrity: sha512-INK3vzw/p68GjfIjy06Dgk429VpNRREkzHXTK6BhwrPCeh/3gj7uArBKion7nzBfRQhnoTV6v22Nl0CbVX89Gw==}
+    peerDependencies:
+      '@deepseek-ai/cordis': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-web': '*'
 
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
     resolution: {gitHosted: true, integrity: sha512-aXpz1DsFOgd4cUEIeWyTubH9wORj8b/ruLaefeynSwO+M5sp4JOg/RrFj2qya9nKex3jFMdTWVGueZyhpfKDXA==, tarball: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524}
@@ -190,6 +219,16 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-okn8dw8JWDvkky4SNeh7igGtnLH6x1ntFZ1swKN7TEI0GGOx0E3RRAj0mpf6fWtlBkv408LUHajObFi2NNYi7w==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3}
     version: 0.1.7
 
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/041de64824119106ef16105ec7ec0e3ac2c342ba:
+    resolution: {gitHosted: true, integrity: sha512-FRINfI2/f44V434iuZQSFBlUOy9B0ARYioUwFVBZAUZ1Chp7zsnd5nSBnlHhSElKeKaenNXFxCNPP0QqdrJCLg==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/041de64824119106ef16105ec7ec0e3ac2c342ba}
+    version: 1.9.57
+    engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: '>=20'}
+    os: [darwin, linux, win32]
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/dsh-credentials': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0 || >=0.2.2-0 <0.3.0-0'
+      '@deepseek-ai/dsh-home-paths': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0 || >=0.2.2-0 <0.3.0-0'
+
   dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/afce1cd43f98b8a8b02e4a35cd6a65d6444de412:
     resolution: {gitHosted: true, integrity: sha512-vjEZISg9BrL69FuQeT7M0g4x4uLPfthLzQcewAJTK/8D553mcyj5KFevPrS1JxRmqbCbt9ydFRO5MwE8aKlCsg==, tarball: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/afce1cd43f98b8a8b02e4a35cd6a65d6444de412}
     version: 0.4.0
@@ -201,8 +240,8 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-U/nS/Gw0OkYxedrZVcNSkYVes6/s7QvZ6BVhQKw20RJSstp2Ah7n0HiqAfo3UpjnCsvOJmD/3BEJ3WwJ9qKMNg==, tarball: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/e6f6b84c56f0fc18ba4a6a1a5959fbf86ea9ec8b}
     version: 0.1.0
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/9d84edcb521b576d45396496497d125fc806937f:
-    resolution: {gitHosted: true, integrity: sha512-R1oLpqgO2DSDj7yO+bZt+n26RgmF/gjnFKqEe2S1vYRoXuM4w9aGiqIFg8QkxzfevEr4z14gEf/to+Eu1l+/tQ==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/9d84edcb521b576d45396496497d125fc806937f}
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/c7461c25573985c36ba2354d7682b4b390e101c5:
+    resolution: {gitHosted: true, integrity: sha512-AXWC/6LU555pGPE/sFoUcySpOO3q9IKPrn5Z6l8ht9mIa2s0iyQ984huY2B2Re6Wj/Ui9bQ6wf//UBZvMaivUw==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/c7461c25573985c36ba2354d7682b4b390e101c5}
     version: 3.5.0
     engines: {node: '>=20.0.0'}
     peerDependencies:
@@ -214,6 +253,23 @@ packages:
       '@deepseek-ai/schemastery':
         optional: true
 
+  node-addon-api@8.9.2:
+    resolution: {integrity: sha512-VijLXbi3UACN69I0JVXJsX4tjACjNoQDgv2gTF6sx2wWEi8tkSg2eX8p5gSIFi8z2+DL3oHmY6OyKce38SDolg==}
+    engines: {node: ^18 || ^20 || >= 21}
+
+  playwright-core@1.64.1:
+    resolution: {integrity: sha512-BC4s8y6SEVA6Q1rSxZTto8hI1KUI3xXlHGZgvGqP4IqPdI/a6FX9H29IDNz7vKo9l21b6LfYosScPL6M3xxyDQ==}
+    engines: {node: '>=20'}
+    hasBin: true
+
+  playwright@1.64.1:
+    resolution: {integrity: sha512-HCrVhHr5QQuwYoswEUGTb7gGp522yflbv/ST8nF4sFWGuLjQCt17Q/EubpGGSNKYn1tsTCPZxqHhHCfVURu7UA==}
+    engines: {node: '>=20'}
+    hasBin: true
+
+  zod@4.6.6:
+    resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
+
   zod@4.6.7:
     resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
@@ -221,9 +277,14 @@ snapshots:
 
   '@dsh-external/dsh-plugin-workshop@https://codeload.github.com/yyyyukari/dsh-plugin-workshop/tar.gz/f53a7e466948a6c5636f2079b2382976a1eea4c8': {}
 
-  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/de82df4e737954ba0458d597ea82f9a6666c1a9b':
+  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/4db5741f4b7be01c58090ffd394cc9a641f30c4b':
+    dependencies:
+      '@modelcontextprotocol/server': 2.4.0
+      better-sqlite3: 13.0.3
+      deep-view: 0.1.0
     optionalDependencies:
       '@lydell/node-pty': 1.2.0-beta.15
+      playwright: 1.64.1
 
   '@lydell/node-pty-darwin-arm64@1.2.0-beta.15':
     optional: true
@@ -253,6 +314,15 @@ snapshots:
       '@lydell/node-pty-win32-x64': 1.2.0-beta.15
     optional: true
 
+  '@modelcontextprotocol/core@2.4.0':
+    dependencies:
+      zod: 4.6.7
+
+  '@modelcontextprotocol/server@2.4.0':
+    dependencies:
+      '@modelcontextprotocol/core': 2.4.0
+      zod: 4.6.7
+
   '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.14':
     optional: true
 
@@ -280,16 +350,41 @@ snapshots:
       '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.14
       '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.14
 
+  acorn@8.15.0: {}
+
+  better-sqlite3@13.0.3:
+    dependencies:
+      node-addon-api: 8.9.2
+
+  deep-view@0.1.0: {}
+
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
     dependencies:
       zod: 4.6.7
 
   dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3: {}
 
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/041de64824119106ef16105ec7ec0e3ac2c342ba:
+    dependencies:
+      acorn: 8.15.0
+      zod: 4.6.6
+
   dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/afce1cd43f98b8a8b02e4a35cd6a65d6444de412: {}
 
   dsh-memory-evolve@https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/e6f6b84c56f0fc18ba4a6a1a5959fbf86ea9ec8b: {}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/9d84edcb521b576d45396496497d125fc806937f: {}
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/c7461c25573985c36ba2354d7682b4b390e101c5: {}
+
+  node-addon-api@8.9.2: {}
+
+  playwright-core@1.64.1:
+    optional: true
+
+  playwright@1.64.1:
+    dependencies:
+      playwright-core: 1.64.1
+    optional: true
+
+  zod@4.6.6: {}
 
   zod@4.6.7: {}
