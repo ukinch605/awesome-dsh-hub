@@ -26,15 +26,18 @@ importers:
       '@shengsheng/dsh-taskboard':
         specifier: github:shengsheng90/DSH-taskboard
         version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.18.5)
+      dsh-api-relay-audit:
+        specifier: github:toby-bridges/api-relay-audit
+        version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59
       dsh-custom-tool:
         specifier: github:omdsh-dev/dsh-custom-tool
         version: https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/7cb95649dca9b380c9a30af96bdbef87a76a2259
       dsh-mnemon:
         specifier: github:omdsh-dev/dsh-mnemon
-        version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
+        version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
       dsh-purge:
         specifier: github:YuJunZhiXue/dsh-purge
-        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5
+        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4edcc0f353625779a351c97c679b73c2c3a6b5d8
 
 packages:
 
@@ -705,6 +708,18 @@ packages:
     resolution: {integrity: sha512-svtcdpS8CgJyqAjEQIXdb3OjhFVVYjzGAPO8WGCmRbrml64SPw/jJD4GoE98aR7r25A0XcgrK3F02yw9R/vhQw==}
     engines: {node: '>=0.3.1'}
 
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59:
+    resolution: {gitHosted: true, integrity: sha512-U94NbchvcrU90Cb+v5iR8/sKAB6XFL/8rxvtoNnj+ys13s5ZZhZYK0iLVGIPf9i/W5bvsv8Sz2maViApFt23pg==, tarball: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59}
+    version: 2.5.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-commands': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-llm': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-settings': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-subprocess': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+
   dsh-custom-tool@https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/7cb95649dca9b380c9a30af96bdbef87a76a2259:
     resolution: {gitHosted: true, integrity: sha512-v1TTywyraYFCrWt0jc2KsmN1IUiQPXNWv5sAy/lDsCuNxyh/sGI/ZfJS8gtxw4ZVvsjU4A0FzeWdESafqFo+ig==, tarball: https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/7cb95649dca9b380c9a30af96bdbef87a76a2259}
     version: 0.1.2
@@ -811,13 +826,13 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon-source-memory-spaces: ^0.5.1
 
-  dsh-mnemon-source-documents@0.5.12:
-    resolution: {integrity: sha512-RX2RQlp2XLiun/q1Vc/uCRiuduVoz2+wxMDcvB2QJz8M1TC0EgiORYQDFZNNTfHEAiaBMJPsv+QN/D/T7SQh0A==}
-    version: 0.5.12
+  dsh-mnemon-source-documents@0.5.13:
+    resolution: {integrity: sha512-O2WCD0GZ9mBS/43YLMbX++FDkGZx88vzK+05EF5LoJO5ox0HudtI3wjVbHYUVcDtNtcABWqMxJ+10Tcm99CV7A==}
+    version: 0.5.13
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      dsh-mnemon: ^0.5.19
+      dsh-mnemon: ^0.5.40
       react: ^18.2.0
     peerDependenciesMeta:
       react:
@@ -847,9 +862,9 @@ packages:
       react:
         optional: true
 
-  dsh-mnemon-source-skills@0.5.6:
-    resolution: {integrity: sha512-XuB5qMNhIunqOFbDDmLjIWp0DUeRwy3Gfzu97k7oB1/K5/I6/Szt60wKRmCLkMGswfLPSyiz0PwTnrcBFpz5CQ==}
-    version: 0.5.6
+  dsh-mnemon-source-skills@0.5.7:
+    resolution: {integrity: sha512-89tR80dEwpVFz7tL2jigbzoPC8Z4awyO1c6GHyXK3YF38r8Qdxppvf4TRF4+n7HhZyhaVm2ooEjH7C9KING1Fw==}
+    version: 0.5.7
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -867,9 +882,9 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon: ^0.5.17
 
-  dsh-mnemon-strategy-default-three-tier@0.5.11:
-    resolution: {integrity: sha512-0Bcbq4skgkjTiOjuLaqOUb7KoPF1aF0qKUSM9ky2f0VHUbJfFlSRGXZW2/VpXnmOkLJ+xWENUTPxQHWrYgv8WQ==}
-    version: 0.5.11
+  dsh-mnemon-strategy-default-three-tier@0.5.12:
+    resolution: {integrity: sha512-lNGBdyPBJUA5MSgn1tY1OSDtc9HrS1lf0/mZh/0ZCorJwQcxoBy4Ho007VeNRHETeIcmSVSljXBpy4I5DXpMpA==}
+    version: 0.5.12
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -899,9 +914,9 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon: ^0.5.17
 
-  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f:
-    resolution: {gitHosted: true, integrity: sha512-H95rhl5wLwAMNehnOawLj9NPjSdcj608KipqMs8S89ByYAjVXj3nwo1RevibBlYXP2SWTQ3LmVDC0baAX8tPWg==, tarball: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f}
-    version: 0.5.39
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0:
+    resolution: {gitHosted: true, integrity: sha512-Uya7x8kgB2aryLRu0UGcNIu1PNxgsiOlXo/1rV7/Z7oRwXEaY9lVv6RbiqaAvUy3zvARe9ym/Uq/8oeQhmV2bg==, tarball: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0}
+    version: 0.5.40
     engines: {dsh: '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0', node: '>=20'}
     hasBin: true
     peerDependencies:
@@ -914,8 +929,8 @@ packages:
       '@deepseek-ai/dsh-app-boot':
         optional: true
 
-  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5:
-    resolution: {gitHosted: true, integrity: sha512-E2fqgaDK36iqH0+gZ3j/5J+GXisbcCn3klDL5hGUF8/wQO4rs789eOEMNklrasJ8ZsAXGJonvS3Z6xjBlIqY3w==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5}
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4edcc0f353625779a351c97c679b73c2c3a6b5d8:
+    resolution: {gitHosted: true, integrity: sha512-fOGwCBBZFusEdDp5C/ToqpProrDibatV8vPH1D22SxpFalOnJQhD2Efz23LCBm6BDTBRKrTO1R4zJxMca1RCAg==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4edcc0f353625779a351c97c679b73c2c3a6b5d8}
     version: 1.1.90
     engines: {node: '>=18'}
     hasBin: true
@@ -1536,115 +1551,117 @@ snapshots:
 
   diff@9.0.0: {}
 
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59: {}
+
   dsh-custom-tool@https://codeload.github.com/omdsh-dev/dsh-custom-tool/tar.gz/7cb95649dca9b380c9a30af96bdbef87a76a2259: {}
 
-  dsh-mnemon-provider-byterover@0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
+  dsh-mnemon-provider-byterover@0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
 
-  dsh-mnemon-provider-hindsight@0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
+  dsh-mnemon-provider-hindsight@0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
 
-  dsh-mnemon-provider-holographic@0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
+  dsh-mnemon-provider-holographic@0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
 
-  dsh-mnemon-provider-honcho@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
+  dsh-mnemon-provider-honcho@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
 
-  dsh-mnemon-provider-mem0@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
+  dsh-mnemon-provider-mem0@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
 
-  dsh-mnemon-provider-mnemon-native@0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
+  dsh-mnemon-provider-mnemon-native@0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
 
-  dsh-mnemon-provider-openviking@0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
+  dsh-mnemon-provider-openviking@0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
 
-  dsh-mnemon-provider-retaindb@0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
+  dsh-mnemon-provider-retaindb@0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
 
-  dsh-mnemon-provider-supermemory@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
+  dsh-mnemon-provider-supermemory@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
 
-  dsh-mnemon-source-documents@0.5.12(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
+  dsh-mnemon-source-documents@0.5.13(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
       markdown-to-jsx: 7.7.17
 
-  dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
+  dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
 
-  dsh-mnemon-source-runtime@0.5.17(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
+  dsh-mnemon-source-runtime@0.5.17(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
 
-  dsh-mnemon-source-skills@0.5.6(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
+  dsh-mnemon-source-skills@0.5.7(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
     dependencies:
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
       markdown-to-jsx: 7.7.17
       yaml: 2.9.1
 
-  dsh-mnemon-strategy-auto-capture@0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
+  dsh-mnemon-strategy-auto-capture@0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
     dependencies:
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
 
-  dsh-mnemon-strategy-default-three-tier@0.5.11(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
+  dsh-mnemon-strategy-default-three-tier@0.5.12(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
     dependencies:
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
 
-  dsh-mnemon-strategy-general@0.5.1(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
+  dsh-mnemon-strategy-general@0.5.1(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
     dependencies:
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
 
-  dsh-mnemon-strategy-light-context@0.5.6(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
+  dsh-mnemon-strategy-light-context@0.5.6(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
     dependencies:
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
 
-  dsh-mnemon-strategy-scoped@0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
+  dsh-mnemon-strategy-scoped@0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)):
     dependencies:
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)
 
-  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4):
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4):
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.6
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon-provider-byterover: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
-      dsh-mnemon-provider-hindsight: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
-      dsh-mnemon-provider-holographic: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
-      dsh-mnemon-provider-honcho: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
-      dsh-mnemon-provider-mem0: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
-      dsh-mnemon-provider-mnemon-native: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
-      dsh-mnemon-provider-openviking: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
-      dsh-mnemon-provider-retaindb: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
-      dsh-mnemon-provider-supermemory: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
-      dsh-mnemon-source-documents: 0.5.12(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
-      dsh-mnemon-source-runtime: 0.5.17(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
-      dsh-mnemon-source-skills: 0.5.6(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
-      dsh-mnemon-strategy-auto-capture: 0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
-      dsh-mnemon-strategy-default-three-tier: 0.5.11(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
-      dsh-mnemon-strategy-general: 0.5.1(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
-      dsh-mnemon-strategy-light-context: 0.5.6(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
-      dsh-mnemon-strategy-scoped: 0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/8ce68baf3ecda56f12b36701ff06ba5dcaf26d1f(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-provider-byterover: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
+      dsh-mnemon-provider-hindsight: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
+      dsh-mnemon-provider-holographic: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
+      dsh-mnemon-provider-honcho: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
+      dsh-mnemon-provider-mem0: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
+      dsh-mnemon-provider-mnemon-native: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
+      dsh-mnemon-provider-openviking: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
+      dsh-mnemon-provider-retaindb: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
+      dsh-mnemon-provider-supermemory: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)))
+      dsh-mnemon-source-documents: 0.5.13(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-source-runtime: 0.5.17(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-source-skills: 0.5.7(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-strategy-auto-capture: 0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-strategy-default-three-tier: 0.5.12(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-strategy-general: 0.5.1(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-strategy-light-context: 0.5.6(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
+      dsh-mnemon-strategy-scoped: 0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/cce2ab186db2edba30fda25d8b64b1750f0835f0(@deepseek-ai/dsh-app-boot@0.2.1-rc.4))
       fflate: 0.8.3
       yaml: 2.9.1
       zod: 4.5.2
     optionalDependencies:
       '@deepseek-ai/dsh-app-boot': 0.2.1-rc.4
 
-  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5: {}
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4edcc0f353625779a351c97c679b73c2c3a6b5d8: {}
 
   fast-deep-equal@3.1.3: {}
 
