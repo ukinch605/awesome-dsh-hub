@@ -20,9 +20,12 @@ importers:
       '@yunmiao/studymate':
         specifier: github:Miaotofu01/Study-Mate
         version: https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43
+      aegis:
+        specifier: github:GanyuanRan/Aegis
+        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/952b150a16b9cf9c702022ea779bcc6750b0d48d
       ds-harness-remote:
         specifier: github:liguobao/ds-harness-remote
-        version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058
+        version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/24160bd52e070f55e4e5a949d111644ca4a9a763
       dsh-api-relay-audit:
         specifier: github:toby-bridges/api-relay-audit
         version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59
@@ -37,7 +40,7 @@ importers:
         version: https://codeload.github.com/omdsh-dev/dsh-notification/tar.gz/675aab9b43d5011738feb6185281596c0365ccba
       dsh-purge:
         specifier: github:YuJunZhiXue/dsh-purge
-        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5
+        version: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/fc6e787dda5cfbc48c342cf427831b403239b866
       easyeda-agent-dsh:
         specifier: github:zhoushoujianwork/easyeda-agent
         version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd
@@ -206,6 +209,21 @@ packages:
     engines: {node: ^22.19.0 || >=24.0.0}
     hasBin: true
 
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/952b150a16b9cf9c702022ea779bcc6750b0d48d:
+    resolution: {gitHosted: true, integrity: sha512-1kusEOr+2Nph1jLxGTDjugWjxnOb+qxpuYTZWhblqOCApU8vPQaK4jK1vDHfUCVKg/QR9ia/3mzLftKSfZeqSA==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/952b150a16b9cf9c702022ea779bcc6750b0d48d}
+    version: 2.15.0
+    peerDependencies:
+      '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-skill-filesystem': '>=0.1.0-rc.6'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-skill-filesystem':
+        optional: true
+
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
@@ -251,9 +269,9 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058:
-    resolution: {gitHosted: true, integrity: sha512-HG2OzgNC2yfRwWL4zD0HLCKgS67g9fyOR7JltBAgnIbudSMVRY5tzzhCsEgLjtAWr8Tt1DcdGDWdacqdIDut9g==, tarball: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058}
-    version: 0.6.2
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/24160bd52e070f55e4e5a949d111644ca4a9a763:
+    resolution: {gitHosted: true, integrity: sha512-L+582STg8L7B0H4yS5ILlTCfIOhnn95OhpPDebH6XqzMEHGLxq34wENiiBnVzi93gbmkrh1RgVWfbgF8UFuY1Q==, tarball: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/24160bd52e070f55e4e5a949d111644ca4a9a763}
+    version: 0.6.3
     hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1 <5 || >=4.0.5-alpha.1 <4.0.6-0'
@@ -355,9 +373,9 @@ packages:
       react:
         optional: true
 
-  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5:
-    resolution: {gitHosted: true, integrity: sha512-E2fqgaDK36iqH0+gZ3j/5J+GXisbcCn3klDL5hGUF8/wQO4rs789eOEMNklrasJ8ZsAXGJonvS3Z6xjBlIqY3w==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5}
-    version: 1.1.90
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/fc6e787dda5cfbc48c342cf427831b403239b866:
+    resolution: {gitHosted: true, integrity: sha512-l3T48CP4c6VZv3zdz3MKOK5NWuhopThwRUF2ed08cZPwG9i4u9Mz6mMydNR9weAYwMLJqP4+YLC+B2fZmEfOkw==, tarball: https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/fc6e787dda5cfbc48c342cf427831b403239b866}
+    version: 1.1.92
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -596,6 +614,8 @@ snapshots:
 
   '@yunmiao/studymate@https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43': {}
 
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/952b150a16b9cf9c702022ea779bcc6750b0d48d: {}
+
   ansi-regex@5.0.1: {}
 
   ansi-styles@4.3.0:
@@ -631,7 +651,7 @@ snapshots:
       webidl-conversions: 7.0.0
     optional: true
 
-  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/a0dca1af66cff788e467ee98e92a39afdafbb058:
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/24160bd52e070f55e4e5a949d111644ca4a9a763:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       qrcode: 1.5.4
@@ -657,7 +677,7 @@ snapshots:
     dependencies:
       zod: 4.4.3
 
-  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5: {}
+  dsh-purge@https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/fc6e787dda5cfbc48c342cf427831b403239b866: {}
 
   easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd: {}
 

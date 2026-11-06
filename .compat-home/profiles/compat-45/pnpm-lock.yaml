@@ -13,13 +13,16 @@ importers:
         version: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03
       '@dsh-external/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
-        version: '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344(@deepseek-ai/schemastery@3.18.5)'
+        version: '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/b0946439d4dfe0ab8c66d25053e56383f3b487fd(@deepseek-ai/schemastery@3.18.5)'
+      '@ljwei-stak/dsh-model-route-bot':
+        specifier: github:Alice-Marx/dsh-model-router
+        version: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/42b7cb0105f6e7f7d5b365ce628e70b15f14be88(@deepseek-ai/schemastery@3.18.5)
       '@ljwei-stak/dsh-model-router':
         specifier: github:Alice-Marx/dsh-model-router
-        version: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/3d4ad2847a734d2694275add66484bf8853eff81(@deepseek-ai/schemastery@3.18.5)
+        version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/42b7cb0105f6e7f7d5b365ce628e70b15f14be88(@deepseek-ai/schemastery@3.18.5)'
       '@nagi-ovo/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
-        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/b0946439d4dfe0ab8c66d25053e56383f3b487fd(@deepseek-ai/schemastery@3.18.5)
       clearai-dsh:
         specifier: github:Clearailhc/clearai-dsh
         version: https://codeload.github.com/Clearailhc/clearai-dsh/tar.gz/47f8cda175ed3bf73162fa3dc47a4c0d3874a542
@@ -28,7 +31,7 @@ importers:
         version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/e356e79fcaf3f07b8b4d2b1e0a777c59a76e17d5
       dsh-free-search:
         specifier: github:DDDMUC/dsh-free-search
-        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/da7f4d44f14feaa8e90829dd9038f7ef40e333e8
+        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/bfb36c072886eefdac99d74ee1de4ac4b9d77014
       dsh-startup-screen:
         specifier: github:6shenhonghong9/dsh-startup-screen
         version: https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/7f3d2837c1aaef8293abc69093b0a35c80d0f0e8
@@ -65,9 +68,9 @@ packages:
   '@deepseek-ai/schemastery@3.18.5':
     resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
-  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/3d4ad2847a734d2694275add66484bf8853eff81':
-    resolution: {gitHosted: true, integrity: sha512-kDF+igj1KWH8IUEStcY6TV6YjLG4vH823S4FuGhCE8cnxnV+GGCycmXXxHV1aZm1KllSAdjtD/xC4mmcJI/2wg==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/3d4ad2847a734d2694275add66484bf8853eff81}
-    version: 0.63.0
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/42b7cb0105f6e7f7d5b365ce628e70b15f14be88':
+    resolution: {gitHosted: true, integrity: sha512-L+EhJS/H4i282VmP/LzHsSdKKNMTMwLAIJ5uNRgaZ+RXeGwgSAptXczXR7I249apRg82mhhQpWuv0GIxd31SPQ==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/42b7cb0105f6e7f7d5b365ce628e70b15f14be88}
+    version: 0.64.0
     engines: {node: '>=22.19'}
     peerDependencies:
       '@deepseek-ai/cordis': ~4.0.4
@@ -122,9 +125,9 @@ packages:
     resolution: {integrity: sha512-rgR9yxSaAJ+bcsi/XroT/S2AfPiIWloXAnrdfYSCms9ivVju0ishu/wW0J21Ho6+ZOR1r7RyeRbjiRuF87ix5Q==}
     engines: {node: '>=20'}
 
-  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344':
-    resolution: {gitHosted: true, integrity: sha512-QIBLfR5VR1lJ1TiQkPXmXTABHkRaiseT4+1aws9IikciAy/uCTQAp4KYErsv2bZ+q/RP55WyhYNSbFpxFUYXWw==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344}
-    version: 0.1.7
+  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/b0946439d4dfe0ab8c66d25053e56383f3b487fd':
+    resolution: {gitHosted: true, integrity: sha512-2auAxF2H+ZjRrUqw5hEqsVbJ/yKog5z1/r0yZjCZqBYibY/tkH7OAWw0BFszoUUD6opevKPT4IvH7yCAsWV0qw==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/b0946439d4dfe0ab8c66d25053e56383f3b487fd}
+    version: 0.1.8
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-fs': ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0
@@ -175,9 +178,9 @@ packages:
       '@deepseek-ai/dsh-credentials': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0 || >=0.2.2-0 <0.3.0-0'
       '@deepseek-ai/dsh-home-paths': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0 || >=0.2.2-0 <0.3.0-0'
 
-  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/da7f4d44f14feaa8e90829dd9038f7ef40e333e8:
-    resolution: {gitHosted: true, integrity: sha512-GZXfLyyqthGW4XBu8//Gd47IoTQsDvMy5OyfrDYvp2vi1aMqPOTVagOXqx3n+HiL9D6w049EfYd1g/Atn+dyRw==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/da7f4d44f14feaa8e90829dd9038f7ef40e333e8}
-    version: 0.9.32
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/bfb36c072886eefdac99d74ee1de4ac4b9d77014:
+    resolution: {gitHosted: true, integrity: sha512-EufeNwSLxhokkmJ7O1Jr46eysY+e7bE6A3WJaOP/araMBTYd9aSiWKasOQLORqyhUoPzwp7b3jLEyZwBMxkuHQ==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/bfb36c072886eefdac99d74ee1de4ac4b9d77014}
+    version: 0.9.33
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -278,7 +281,7 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
-  '@ljwei-stak/dsh-model-router@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/3d4ad2847a734d2694275add66484bf8853eff81(@deepseek-ai/schemastery@3.18.5)':
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/42b7cb0105f6e7f7d5b365ce628e70b15f14be88(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       '@modelcontextprotocol/server': 2.4.0
@@ -325,7 +328,7 @@ snapshots:
       '@modelcontextprotocol/core': 2.4.0
       zod: 4.6.6
 
-  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/cf6b3a3f5a3f02b83a380890a5b672a350715344(@deepseek-ai/schemastery@3.18.5)':
+  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/b0946439d4dfe0ab8c66d25053e56383f3b487fd(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -350,7 +353,7 @@ snapshots:
       acorn: 8.15.0
       zod: 4.6.6
 
-  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/da7f4d44f14feaa8e90829dd9038f7ef40e333e8:
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/bfb36c072886eefdac99d74ee1de4ac4b9d77014:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
