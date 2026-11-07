@@ -16,7 +16,7 @@ importers:
         version: https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/1b8753fc905e440cedc06e78a20176398a8b2aff
       '@ljwei-stak/dsh-model-router':
         specifier: github:Alice-Marx/dsh-model-router
-        version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/42b7cb0105f6e7f7d5b365ce628e70b15f14be88(@deepseek-ai/schemastery@3.18.5)'
+        version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e(@deepseek-ai/schemastery@3.18.5)'
       '@noob-stupid/dsh-plugin-console':
         specifier: github:Noob-stupid/dsh-plugin-hub
         version: https://codeload.github.com/Noob-stupid/dsh-plugin-hub/tar.gz/a22488ef5f32b34d060c1840740dcaf331addf4d
@@ -25,13 +25,16 @@ importers:
         version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/6a649fe930aeab4247d3e8b936b6bf393aa71e8c
       dsh-bili-scroll:
         specifier: github:c1overzz/dsh-bili-scroll
-        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/f883d79fa536a2d1610dbb89796e6f48266103d7
+        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1096b042e2d6d35a6ce3a373ebc0be51552e43c7
       dsh-dafeiyu:
         specifier: github:QCYTSN/dsh-dafeiyu
         version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/dc0dbde9d05899aea663e4b60f0d1727ecee4253
       dsh-engramory:
         specifier: github:tinqiao-oss/engramory
         version: https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5
+      dsh-memory-evolve:
+        specifier: github:csyangwen/dsh-memory-evolve
+        version: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/44b6b3eb65a1d50ceba0afb2c13acdd4a8b81423
       graph-memory:
         specifier: github:adoresever/graph-memory
         version: https://codeload.github.com/adoresever/graph-memory/tar.gz/5841b1987c3967998818764c9d4238add5f3aa7c
@@ -42,14 +45,8 @@ packages:
     resolution: {integrity: sha512-vs3/Zc1dHvT171btW5nMoPsPCJ6QVJ5pp7obxzO5sjqwFx/jjz9wwCAqcFOdc2DhprugDBaVn+4dVY8hG3A9nw==}
     engines: {node: '>=20'}
 
-  '@deepseek-ai/cosmokit@1.8.2':
-    resolution: {integrity: sha512-muBOKtSrUKU5m/xpq8ZXWL6hQ/jgd4PhU2PqH97bcxIiLEJfNwZOGQEx4t/aS/GgxRAR+ra9pMHPMtTHU4sqqA==}
-
   '@deepseek-ai/cosmokit@1.8.6':
     resolution: {integrity: sha512-ZSD/fN52L498LBIOYwjIOlaLv5veY6ZEwI2yzvZUKQtctn0QAPqu8tKdJ+OF5+Tv6NBq1U+wJWH+QI6OGy5EvQ==}
-
-  '@deepseek-ai/schemastery@3.18.1':
-    resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
 
   '@deepseek-ai/schemastery@3.18.5':
     resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
@@ -98,9 +95,9 @@ packages:
       '@deepseek-ai/dsh-typert-protocol': '>=0.2.1-rc.2 <=0.2.1-rc.5'
       react: ^18.2.0
 
-  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/42b7cb0105f6e7f7d5b365ce628e70b15f14be88':
-    resolution: {gitHosted: true, integrity: sha512-L+EhJS/H4i282VmP/LzHsSdKKNMTMwLAIJ5uNRgaZ+RXeGwgSAptXczXR7I249apRg82mhhQpWuv0GIxd31SPQ==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/42b7cb0105f6e7f7d5b365ce628e70b15f14be88}
-    version: 0.64.0
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e':
+    resolution: {gitHosted: true, integrity: sha512-/Izf6XJzT6HMNxYfapvF/D5sjm0KhvoOciWgSSEAiVkEnohFR5gFX9ybQkoMHiB3OhaIXNmcSfY7naZy+RJmJw==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e}
+    version: 0.66.4
     engines: {node: '>=22.19'}
     peerDependencies:
       '@deepseek-ai/cordis': ~4.0.4
@@ -243,9 +240,9 @@ packages:
       '@deepseek-ai/dsh-tools': '*'
       '@deepseek-ai/dsh-web': '*'
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/f883d79fa536a2d1610dbb89796e6f48266103d7:
-    resolution: {gitHosted: true, integrity: sha512-Hq9vi9NhGxr58hd5Kl+86AKpmxe/12gkhpkNuvX+Tk+7fyr4rOWvjYfIt2rZM8gP4AHvuP7m9lFhGPt9d7tQlg==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/f883d79fa536a2d1610dbb89796e6f48266103d7}
-    version: 2.5.0
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1096b042e2d6d35a6ce3a373ebc0be51552e43c7:
+    resolution: {gitHosted: true, integrity: sha512-pT/vEWMPlF7OJRBl3Zo8Wt1QAF7+00XVnetHBF2v+t6+FGdmBO1CBDwaEZltUtNEQPG5HMgv5MakNBGzKA+4CQ==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1096b042e2d6d35a6ce3a373ebc0be51552e43c7}
+    version: 2.5.1
     engines: {dsh: '>=0.1.7-rc.1', node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
@@ -268,6 +265,10 @@ packages:
   dsh-engramory@https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5:
     resolution: {gitHosted: true, integrity: sha512-CMI6QImzoOGYavF2MBH4WV+bKJrbw8X7fhtIg6X/aZi8SdxsY+24Dhz13qj2SEbaxzEUksDFNo0A+GEdKhkg4A==, tarball: https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5}
     version: 0.2.4
+
+  dsh-memory-evolve@https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/44b6b3eb65a1d50ceba0afb2c13acdd4a8b81423:
+    resolution: {gitHosted: true, integrity: sha512-0J/Nm+95QJDAqMELoJ3mjFjY2pP3ELm9Kxp8pLTGE3QRrmNZ6+LvHSIfxct/VaN1aa2G7/oEdxw1LorepPc0tQ==, tarball: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/44b6b3eb65a1d50ceba0afb2c13acdd4a8b81423}
+    version: 0.1.0
 
   echarts@6.1.0:
     resolution: {integrity: sha512-q0yaFPggC9FUdsWH4blavRWFmxdrIodbkoKNAjJudAI6CA9gNPxHtV2RcZNEepZVlk4yvBYkOkbk6HIVpIyHZA==}
@@ -325,14 +326,7 @@ snapshots:
 
   '@clickhouse/client@1.23.1': {}
 
-  '@deepseek-ai/cosmokit@1.8.2': {}
-
   '@deepseek-ai/cosmokit@1.8.6': {}
-
-  '@deepseek-ai/schemastery@3.18.1':
-    dependencies:
-      '@deepseek-ai/cosmokit': 1.8.2
-      '@standard-schema/spec': 1.1.0
 
   '@deepseek-ai/schemastery@3.18.5':
     dependencies:
@@ -366,7 +360,7 @@ snapshots:
       '@deepseek-ai/schemastery': 3.18.5
       zod: 4.4.3
 
-  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/42b7cb0105f6e7f7d5b365ce628e70b15f14be88(@deepseek-ai/schemastery@3.18.5)':
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       '@modelcontextprotocol/server': 2.4.0
@@ -439,13 +433,15 @@ snapshots:
 
   deep-view@0.1.0: {}
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/f883d79fa536a2d1610dbb89796e6f48266103d7:
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1096b042e2d6d35a6ce3a373ebc0be51552e43c7:
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.1
+      '@deepseek-ai/schemastery': 3.18.5
 
   dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/dc0dbde9d05899aea663e4b60f0d1727ecee4253: {}
 
   dsh-engramory@https://codeload.github.com/tinqiao-oss/engramory/tar.gz/1bc98e32aa33ba4acd6984b4845f8668be8bcdd5: {}
+
+  dsh-memory-evolve@https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/44b6b3eb65a1d50ceba0afb2c13acdd4a8b81423: {}
 
   echarts@6.1.0:
     dependencies:

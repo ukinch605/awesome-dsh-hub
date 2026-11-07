@@ -19,13 +19,16 @@ importers:
         version: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/8d6b850f91fde835411aaa1f3263265220337d5c(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       ds-harness-remote:
         specifier: github:liguobao/deepseek-harness-remote
-        version: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/24160bd52e070f55e4e5a949d111644ca4a9a763(react@18.3.1)
+        version: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/2f0df33b423da616d53875acdfe8be5c8801d08e(react@18.3.1)
       dsh-claude-style:
         specifier: github:Nwflower/dsh-claude-style
-        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/775c0c6eb2d827bbd708ccf63725dded1df2748a(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/4887ae6d205802ca90cd67916ce566ed7ec20305(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dsh-computer-use-win:
         specifier: github:Yu-tao-Li/dsh-computer-use-win
         version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/84557813b79328270a1529cd400e1b8c8f531c17(@deepseek-ai/schemastery@3.18.5)
+      dsh-fish-memory:
+        specifier: github:Yuuyuko-uu/dsh-fish-memory
+        version: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/09678d242ea67ecad94572a8e15ef012a30d8e17
       dsh-harmony-next:
         specifier: github:linhay/harmony-next.skills
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101
@@ -434,8 +437,8 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/24160bd52e070f55e4e5a949d111644ca4a9a763:
-    resolution: {gitHosted: true, integrity: sha512-L+582STg8L7B0H4yS5ILlTCfIOhnn95OhpPDebH6XqzMEHGLxq34wENiiBnVzi93gbmkrh1RgVWfbgF8UFuY1Q==, tarball: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/24160bd52e070f55e4e5a949d111644ca4a9a763}
+  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/2f0df33b423da616d53875acdfe8be5c8801d08e:
+    resolution: {gitHosted: true, integrity: sha512-sXDJIp3rveIieKgz4zCLkJDewoaBwqnYZJPbIzPeXj7XSTdpBcWzn2rEz7fhYPMC/b/4RoxFgPZsDujYezfpDQ==, tarball: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/2f0df33b423da616d53875acdfe8be5c8801d08e}
     version: 0.6.3
     hasBin: true
     peerDependencies:
@@ -472,9 +475,9 @@ packages:
       '@deepseek-ai/dsh-client-ui-slots':
         optional: true
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/775c0c6eb2d827bbd708ccf63725dded1df2748a:
-    resolution: {gitHosted: true, integrity: sha512-pI387E/C080MSZtS/33HCrFCS2ioaHYrTcBBVPK4WhddgFEn9FNz56kvWMfaUgC21W6qCFycgiHelLOuL+4Qpg==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/775c0c6eb2d827bbd708ccf63725dded1df2748a}
-    version: 0.19.9
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/4887ae6d205802ca90cd67916ce566ed7ec20305:
+    resolution: {gitHosted: true, integrity: sha512-++Tpa6QK/FiM40yu7SKTuJBFbmA1K4dkuFpp8VCCEZeN6vQhU8DUqLrw8JYFOYDWMUAPGKftUT0G4xm7PXcpMw==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/4887ae6d205802ca90cd67916ce566ed7ec20305}
+    version: 0.19.10
     peerDependencies:
       '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.2-rc.1'
       '@deepseek-ai/schemastery': '>=3.18.0'
@@ -494,6 +497,19 @@ packages:
       '@deepseek-ai/dsh-mcp-client':
         optional: true
       '@deepseek-ai/schemastery':
+        optional: true
+
+  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/09678d242ea67ecad94572a8e15ef012a30d8e17:
+    resolution: {gitHosted: true, integrity: sha512-zWcDzn6g5frONuy7ehbbigTzrbMf3ImNXDBAQM51OXZVBkxoBgRVBK1mAqziWGjG/gvn9qCPF1a17g9b8YZV3A==, tarball: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/09678d242ea67ecad94572a8e15ef012a30d8e17}
+    version: 1.5.6
+    engines: {dsh: '>=0.2.1-rc.2', node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-tools': '*'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-tools':
         optional: true
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101:
@@ -1395,7 +1411,7 @@ snapshots:
       webidl-conversions: 7.0.0
     optional: true
 
-  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/24160bd52e070f55e4e5a949d111644ca4a9a763(react@18.3.1):
+  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/2f0df33b423da616d53875acdfe8be5c8801d08e(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       qrcode: 1.5.4
@@ -1408,7 +1424,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/775c0c6eb2d827bbd708ccf63725dded1df2748a(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/4887ae6d205802ca90cd67916ce566ed7ec20305(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       react: 18.3.1
@@ -1417,6 +1433,8 @@ snapshots:
   dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/84557813b79328270a1529cd400e1b8c8f531c17(@deepseek-ai/schemastery@3.18.5):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
+
+  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/09678d242ea67ecad94572a8e15ef012a30d8e17: {}
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101: {}
 

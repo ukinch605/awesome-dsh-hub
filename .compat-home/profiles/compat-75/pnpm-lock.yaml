@@ -19,7 +19,7 @@ importers:
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/f6c90d173c67112217a5adecea71d14d8bc9063d
       '@nagi-ovo/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
-        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/b0946439d4dfe0ab8c66d25053e56383f3b487fd(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
+        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/7496c9b1886ab37df5c7f58bc6c8b5eb92ab7696(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
         version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/615286bbcc1701f8ac19487e82f93f1dff066470
@@ -29,9 +29,12 @@ importers:
       '@zseven-w/dsh-android':
         specifier: github:ZSeven-W/dsh-android
         version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/3363a85b1bbeefe994d42d52bd8e792c1527e9ec
+      dsh-aurabot-qq:
+        specifier: github:aureth-labs/dsh-aurabot-qq
+        version: https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/a41519c0da82916ae3b374f4df71a09975883e45
       dsh-ego-browser:
         specifier: github:Fisfzy/dsh-ego-browser
-        version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/ce67518adf10894584ebfc39353c730bdee88046(react@18.3.1)
+        version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/18068f95dc8acab1bc7489b76c201f6147c58a49(react@18.3.1)
       dsh-git-memory:
         specifier: github:seriousz158/dsh-memory
         version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
@@ -592,9 +595,9 @@ packages:
       '@cfworker/json-schema':
         optional: true
 
-  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/b0946439d4dfe0ab8c66d25053e56383f3b487fd':
-    resolution: {gitHosted: true, integrity: sha512-2auAxF2H+ZjRrUqw5hEqsVbJ/yKog5z1/r0yZjCZqBYibY/tkH7OAWw0BFszoUUD6opevKPT4IvH7yCAsWV0qw==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/b0946439d4dfe0ab8c66d25053e56383f3b487fd}
-    version: 0.1.8
+  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/7496c9b1886ab37df5c7f58bc6c8b5eb92ab7696':
+    resolution: {gitHosted: true, integrity: sha512-HymabAgJFkjSxgj6xBaK3JtFsZVxuNfFjkDdqypyaziHtqCElrGoxJ4EZaLgI/CcZq6M71rQN+wMHFqZM9bq0w==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/7496c9b1886ab37df5c7f58bc6c8b5eb92ab7696}
+    version: 0.1.9
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-fs': ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0
@@ -958,9 +961,14 @@ packages:
   dijkstrajs@1.0.3:
     resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
 
-  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/ce67518adf10894584ebfc39353c730bdee88046:
-    resolution: {gitHosted: true, integrity: sha512-JmWmBlKLuX/novFGFwM62pBVypdcxAeBToqq2t7ADfZx/ePNbt0RL4Lo2z4ndKLEIwYIqPkZjICk47TEPxkeLw==, tarball: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/ce67518adf10894584ebfc39353c730bdee88046}
-    version: 0.9.10
+  dsh-aurabot-qq@https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/a41519c0da82916ae3b374f4df71a09975883e45:
+    resolution: {gitHosted: true, integrity: sha512-++V3weacubb/9FMUJMzh80HgznMxTbdtPR7nW/C3r6vvUMmhatkfDM+wjNgbFjPstfMhLMlmmtnfqlNQbzK+Yw==, tarball: https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/a41519c0da82916ae3b374f4df71a09975883e45}
+    version: 1.2.0
+    engines: {node: '>=22.13.0'}
+
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/18068f95dc8acab1bc7489b76c201f6147c58a49:
+    resolution: {gitHosted: true, integrity: sha512-K92p5vhCp4aKZ3Q3eJGtVPQU0WPWEzeGU+6sba/G6hN8y/aPxeNYO7WN0ZOYkKoKldgB7zH1yhArVHI3tSVATA==, tarball: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/18068f95dc8acab1bc7489b76c201f6147c58a49}
+    version: 0.9.11
     engines: {node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-client-locale': '>=0.1.2-rc.1'
@@ -2450,7 +2458,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/b0946439d4dfe0ab8c66d25053e56383f3b487fd(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)':
+  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/7496c9b1886ab37df5c7f58bc6c8b5eb92ab7696(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       react: 18.3.1
@@ -2806,7 +2814,9 @@ snapshots:
 
   dijkstrajs@1.0.3: {}
 
-  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/ce67518adf10894584ebfc39353c730bdee88046(react@18.3.1):
+  dsh-aurabot-qq@https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/a41519c0da82916ae3b374f4df71a09975883e45: {}
+
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/18068f95dc8acab1bc7489b76c201f6147c58a49(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       schemastery: 3.18.0

@@ -10,13 +10,16 @@ importers:
     dependencies:
       '@ayanehana/dsh-reasoning-effort':
         specifier: github:HanaAyane/dsh-reasoning-effort
-        version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30
+        version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/1df90b198a188a9981b8b207bc499466a2f1a161
       '@dhicoc/dsh-reverse-skill':
         specifier: github:dhicoc/dsh-reverse-skill
         version: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/f1b61cf3deec370198ae81a23b8512338002d073
       '@fylar/dsh-fylar-office-editor':
         specifier: github:FylarOpen/dsh-fylar-office-editor
         version: https://codeload.github.com/FylarOpen/dsh-fylar-office-editor/tar.gz/263bedfb3103831ab561f437c36b50bd9062f6f2
+      '@oh-dsh/desktop':
+        specifier: github:hust-open-atom-club/oh-dsh
+        version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
         version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/615286bbcc1701f8ac19487e82f93f1dff066470
@@ -34,13 +37,13 @@ importers:
         version: https://codeload.github.com/Devin-AXIS/jev-dsh-decision/tar.gz/adc88caa9bf174d367e79a5f254c7936bcef088e
       dsh-remote:
         specifier: github:flymysql/dsh-remote
-        version: https://codeload.github.com/flymysql/dsh-remote/tar.gz/c021295ad4012e246b826c9ba680e77eceb22da9
+        version: https://codeload.github.com/flymysql/dsh-remote/tar.gz/aed73fbccf41e7b18b01eb03f25abed4ad9b03ee
       dsh-skill-mcp-panel:
         specifier: github:Fishquito7/dsh-skill-mcp-panel
-        version: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/6481a72f216298ef0a26250342c4ea1d54c04f4f
+        version: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/937aeb82580d7a8f3da8a04b6cf3dae96162dd07
       dsh-skin-market:
         specifier: github:kingOfSoySauce/dsh-skin-market
-        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/5408465bf517c5ad94172019a7c5565b0b23e5f1(react-dom@19.3.1(react@19.3.1))
+        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b611b502f38a627daf0ad6f0bdd2a1b34d10a83(react-dom@19.3.1(react@19.3.1))
       perfect-web-clone:
         specifier: github:ericshang98/Perfect-Web-Clone
         version: https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5
@@ -53,8 +56,8 @@ packages:
   '@antfu/install-pkg@1.1.0':
     resolution: {integrity: sha512-MGQsmw10ZyI+EJo45CdSER4zEb+p31LpDAFp2Z3gkSd1yqVZGi0Ebx++YTEMonJy4oChEMLsxZ64j8FH6sSqtQ==}
 
-  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30':
-    resolution: {gitHosted: true, integrity: sha512-LixlHYQTvZuYmkiFAbE3x00Z+P/wgH3QjPkBkZGtDN+c91U8rc664djyAZN4ln7ZRGIQPdRa583rDAOlZVNtKw==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30}
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/1df90b198a188a9981b8b207bc499466a2f1a161':
+    resolution: {gitHosted: true, integrity: sha512-ynzKZuZINfU1XSluq1tiGv99IKM5hYC/4ZYX2hCu9WnGAarwSFsBDsXKOxloHQST/kdQrBI3z51OqZHjPOf81g==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/1df90b198a188a9981b8b207bc499466a2f1a161}
     version: 0.9.1
     engines: {dsh: '>=0.2.1-rc.2 <0.3.0', node: '>=22.19'}
     peerDependencies:
@@ -148,6 +151,12 @@ packages:
     resolution: {integrity: sha512-ycKq2jF0h/iE/gwQFXn7Fx/pdKsVnPe6rkaA8F0SIZ8QfbAK8KcYmpG1Kn9zjwZAWPyb6pLMhD2GI/gXlM7f0Q==}
     peerDependencies:
       '@deepseek-ai/cordis': ~4.0.5
+
+  '@deepseek-ai/node-addon-system-linux-x64@0.1.2':
+    resolution: {integrity: sha512-S2aPVHvYCpNCppCFyNlooMYuTB7ucK5lvD9oXQQ42v5Z2s5AoaiCdjz9r2l+ED2rI5oS1x0cUZmKjJH2dxV0pg==}
+    engines: {node: '>=20'}
+    cpu: [x64]
+    os: [linux]
 
   '@deepseek-ai/schemastery@3.18.5':
     resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
@@ -285,6 +294,12 @@ packages:
     peerDependenciesMeta:
       '@cfworker/json-schema':
         optional: true
+
+  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa':
+    resolution: {gitHosted: true, integrity: sha512-R3fSfJei4LAkxs/7qF8Si2wN3icKxwF7Zp05Q7o+HR24NXg4JJvPrQeeCzaotsAOIBcH9LRoGNI/PJRPhFXOfg==, tarball: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa}
+    version: 0.2.0
+    engines: {node: '>=24'}
+    hasBin: true
 
   '@phosphor-icons/react@2.1.10':
     resolution: {integrity: sha512-vt8Tvq8GLjheAZZYa+YG/pW7HDbov8El/MANW8pOAz4eGxrwhnbfrQZq0Cp4q8zBEu8NIhHdnr+r8thnfRSNYA==}
@@ -771,6 +786,10 @@ packages:
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
 
+  builder-util-runtime@9.7.0:
+    resolution: {integrity: sha512-g/kR520giAFYkSXTzcmF3kqQq7wi8F6N6SzeDgZrqTBN+VHdmgWOyTdD1yD7AATDId/yXLvuP34CxW46/BwCdw==}
+    engines: {node: '>=12.0.0'}
+
   bytes@3.1.2:
     resolution: {integrity: sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==}
     engines: {node: '>= 0.8'}
@@ -1183,9 +1202,9 @@ packages:
     version: 0.1.2
     engines: {node: '>=20.11'}
 
-  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/c021295ad4012e246b826c9ba680e77eceb22da9:
-    resolution: {gitHosted: true, integrity: sha512-3P8P0WYsTRirL6Swz+R6vbwesucHRLvVV3Cd7/A241Enl7OsnMOHXP7Nvhj6x8xlUzyYZX23xSIh+WvYYc9VNg==, tarball: https://codeload.github.com/flymysql/dsh-remote/tar.gz/c021295ad4012e246b826c9ba680e77eceb22da9}
-    version: 0.8.72
+  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/aed73fbccf41e7b18b01eb03f25abed4ad9b03ee:
+    resolution: {gitHosted: true, integrity: sha512-uoWXOkv6UUKf0m8PNHS5kceJeSgLf3XjWtTM6E9qpYShP2DmHVBybtBClRSYf6c0Qv2///APD0UFY6J65FUJQQ==, tarball: https://codeload.github.com/flymysql/dsh-remote/tar.gz/aed73fbccf41e7b18b01eb03f25abed4ad9b03ee}
+    version: 0.8.74
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.5
       '@deepseek-ai/dsh-client-connection': '>=0.1.2-rc.1 <0.3.0'
@@ -1206,9 +1225,9 @@ packages:
       - bcrypt-pbkdf
       - tweetnacl
 
-  dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/6481a72f216298ef0a26250342c4ea1d54c04f4f:
-    resolution: {gitHosted: true, integrity: sha512-03BytAl1WVuFCxEDJm6i9VFf0Zi4n7Teff8CmMaPCi+ZS7QFq0jn++qRm0yQIZWQj75+4jSKnvhNpXQ0bXE48A==, tarball: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/6481a72f216298ef0a26250342c4ea1d54c04f4f}
-    version: 2.3.6
+  dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/937aeb82580d7a8f3da8a04b6cf3dae96162dd07:
+    resolution: {gitHosted: true, integrity: sha512-QwFosDuadcK1Ja+iVvna0FMfa/7td5GclBcjPLE2JbN3EbpHaRNgMP369XgZGetCNQfGL6YmiGPxWkxgHX3BRA==, tarball: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/937aeb82580d7a8f3da8a04b6cf3dae96162dd07}
+    version: 2.3.7
     hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -1217,9 +1236,9 @@ packages:
       '@deepseek-ai/dsh':
         optional: true
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/5408465bf517c5ad94172019a7c5565b0b23e5f1:
-    resolution: {gitHosted: true, integrity: sha512-uDvlMdNo+wVHYuIj537JIKXgV/HqT5el2rkEFBu3JmcGZdjzwQh3is/DCthrfLqSrnPRlTKbzdebhUcikFJdEA==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/5408465bf517c5ad94172019a7c5565b0b23e5f1}
-    version: 0.1.72
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b611b502f38a627daf0ad6f0bdd2a1b34d10a83:
+    resolution: {gitHosted: true, integrity: sha512-6IfDd4ajpXp+OAR1ulwZe5FWIrZdkyB7qfixfaSFNEaBEMRYYuElpOCbI7v+NS2jMEoC0tVNpUNodNqK8QG9jQ==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b611b502f38a627daf0ad6f0bdd2a1b34d10a83}
+    version: 0.1.75
     hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -1230,6 +1249,9 @@ packages:
 
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
+
+  electron-updater@6.8.9:
+    resolution: {integrity: sha512-ZhVxM9iGONUpZGI1FxdMRgJjUFXi7AYGVa5PwKlO1tV1/4zDxQmfKpXOHVztKrd6L9rLcFjERvi1Mf2vxyTkig==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1324,6 +1346,10 @@ packages:
     resolution: {integrity: sha512-Rx/WycZ60HOaqLKAi6cHRKKI7zxWbJ31MhntmtwMoaTeF7XFH9hhBp8vITaMidfljRQ6eYWCKkaTK+ykVJHP2A==}
     engines: {node: '>= 0.8'}
 
+  fs-extra@10.1.0:
+    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
+    engines: {node: '>=12'}
+
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
@@ -1342,6 +1368,9 @@ packages:
   gopd@1.2.0:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
     engines: {node: '>= 0.4'}
+
+  graceful-fs@4.2.11:
+    resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
   hachure-fill@0.5.2:
     resolution: {integrity: sha512-3GKBOn+m2LX9iq+JC1064cSFprJY4jL1jCXTcpnfER5HYE2l/4EfWSGzkPa/ZDBmYI0ZOEj5VHV/eKnPGkHuOg==}
@@ -1448,11 +1477,18 @@ packages:
   jose@6.2.13:
     resolution: {integrity: sha512-7TIg10ZE1x82YediN+lcrPNvGMKge9yFHQD+Qho/b8y2adfugU3AsvvHfxV0fzyFllT6l9xCjf4RWY9g/Z9PJQ==}
 
+  js-yaml@4.3.2:
+    resolution: {integrity: sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==}
+    hasBin: true
+
   json-schema-traverse@1.0.0:
     resolution: {integrity: sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==}
 
   json-schema-typed@8.0.2:
     resolution: {integrity: sha512-fQhoXdcvc3V28x7C7BMs4P5+kNlgUURe2jmUT1T//oBRMDrqy1QPelJimwZGo7Hg9VPV3EQV5Bnq4hbFy2vetA==}
+
+  jsonfile@6.2.1:
+    resolution: {integrity: sha512-zwOTdL3rFQ/lRdBnntKVOX6k5cKJwEc1HdilT71BWEu7J41gXIB2MRp+vxduPSwZJPWBxEzv4yH1wYLJGUHX4Q==}
 
   jspdf@4.2.1:
     resolution: {integrity: sha512-YyAXyvnmjTbR4bHQRLzex3CuINCDlQnBqoSYyjJwTP2x9jDLuKDzy7aKUl0hgx3uhcl7xzg32agn5vlie6HIlQ==}
@@ -1473,6 +1509,9 @@ packages:
   layout-base@2.0.1:
     resolution: {integrity: sha512-dp3s92+uNI1hWIpPGH3jK2kxE2lMjdXdr+DH8ynZHpd6PUlH6x6cbuXnoMmiNumznqaNO31xu9e79F0uuZ0JFg==}
 
+  lazy-val@1.0.5:
+    resolution: {integrity: sha512-0/BnGCCfyUMkBpeDgWihanIAF9JmZhHBgUhEqzvf+adhNGLoP6TaiI5oF8oyb3I45P+PcnrqihSf01M0l0G5+Q==}
+
   lie@3.3.0:
     resolution: {integrity: sha512-UaiMJzeWRlEujzAuw5LokY1L5ecNQYZKfmyZ9L7wDHb/p5etKaxXhohBcrw0EYby+G/NA52vRSN4N39dxHAIwQ==}
 
@@ -1488,6 +1527,13 @@ packages:
 
   lodash-es@4.18.1:
     resolution: {integrity: sha512-J8xewKD/Gk22OZbhpOVSwcs60zhd95ESDwezOFuA3/099925PdHJ7OFHNTGtajL3AlZkykD32HykiMo+BIBI8A==}
+
+  lodash.escaperegexp@4.1.2:
+    resolution: {integrity: sha512-TM9YBvyC84ZxE3rgfefxUWiQKLilstD6k7PTGt6wfbtXF8ixIJLOL3VYyV/z+ZiPLsVxAsKAFVwWlWeb2Y8Yyw==}
+
+  lodash.isequal@4.5.0:
+    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    deprecated: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
 
   lowlight@3.3.0:
     resolution: {integrity: sha512-0JNhgFoPvP6U6lE/UdVsSq99tn6DhjjpAj5MxG49ewd2mOBVtwWYIT8ClyABhq198aXXODMU6Ox8DrGy/CpTZQ==}
@@ -1830,6 +1876,11 @@ packages:
   scheduler@0.28.0:
     resolution: {integrity: sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==}
 
+  semver@7.7.4:
+    resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   send@1.2.1:
     resolution: {integrity: sha512-1gnZf7DFcoIcajTjTwjwuDjzuz4PPcY2StKPlsGAQ1+YH20IRVrBaXSWmdjowTJ6u8Rc01PoYOGHXfP1mYcZNQ==}
     engines: {node: '>= 18'}
@@ -1906,6 +1957,9 @@ packages:
   text-segmentation@1.0.3:
     resolution: {integrity: sha512-iOiPUo/BGnZ6+54OsWxZidGCsdU8YbE4PSpdPinp7DeMtUJNJBoJ/ouUSTJjHkh1KntHaltHl/gDs2FC4i5+Nw==}
 
+  tiny-typed-emitter@2.1.0:
+    resolution: {integrity: sha512-qVtvMxeXbVej0cQWKqVSSAHmKZEHAvxdF8HEUBFWts8h+xEo5m/lEiPakuyZ3BnCBjOD8i24kzNOiOLLgsSxhA==}
+
   tinyexec@1.3.0:
     resolution: {integrity: sha512-QKAl9m8gWWGHV8jZcPeym6j+XULi6tOf1mT83WYJ4Lk2ytW/uwAWkrP0uFsdoYMdueVJ0qs26wZ+23xeB4ibNQ==}
     engines: {node: '>=18'}
@@ -1947,6 +2001,10 @@ packages:
   undici@7.30.1:
     resolution: {integrity: sha512-03KrMbjIFDWQR5RNPrSw3bd1r12JpyFQl9/yxjUbJtqkjmllqC5lFjZh6ujeuJCKr8EOQvRW872Oy/az+nLYxg==}
     engines: {node: '>=20.18.1'}
+
+  universalify@2.0.1:
+    resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
+    engines: {node: '>= 10.0.0'}
 
   unpipe@1.0.0:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
@@ -2092,7 +2150,7 @@ snapshots:
       package-manager-detector: 1.8.0
       tinyexec: 1.3.0
 
-  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/33a2beaf758b3da24b4bc6d1ded5560d11c5dc30':
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/1df90b198a188a9981b8b207bc499466a2f1a161':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -2244,6 +2302,9 @@ snapshots:
       '@deepseek-ai/dsh-brand': 0.2.1-rc.3
       zod: 4.5.4
 
+  '@deepseek-ai/node-addon-system-linux-x64@0.1.2':
+    optional: true
+
   '@deepseek-ai/schemastery@3.18.5':
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.6
@@ -2383,6 +2444,15 @@ snapshots:
       raw-body: 3.0.2
       zod: 4.5.4
       zod-to-json-schema: 3.25.2(zod@4.5.4)
+    transitivePeerDependencies:
+      - supports-color
+
+  '@oh-dsh/desktop@https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa':
+    dependencies:
+      electron-updater: 6.8.9
+      semver: 7.7.4
+    optionalDependencies:
+      '@deepseek-ai/node-addon-system-linux-x64': 0.1.2
     transitivePeerDependencies:
       - supports-color
 
@@ -2912,6 +2982,13 @@ snapshots:
 
   boolbase@1.0.0: {}
 
+  builder-util-runtime@9.7.0:
+    dependencies:
+      debug: 4.4.3
+      sax: 1.6.1
+    transitivePeerDependencies:
+      - supports-color
+
   bytes@3.1.2: {}
 
   call-bind-apply-helpers@1.0.2:
@@ -3290,12 +3367,12 @@ snapshots:
 
   dsh-jev-decision-model@https://codeload.github.com/Devin-AXIS/jev-dsh-decision/tar.gz/adc88caa9bf174d367e79a5f254c7936bcef088e: {}
 
-  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/c021295ad4012e246b826c9ba680e77eceb22da9:
+  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/aed73fbccf41e7b18b01eb03f25abed4ad9b03ee:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       iconv-lite: 0.7.3
 
-  dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/6481a72f216298ef0a26250342c4ea1d54c04f4f:
+  dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/937aeb82580d7a8f3da8a04b6cf3dae96162dd07:
     dependencies:
       '@deepseek-ai/dsh-typert-protocol': 0.2.1-rc.3
       '@modelcontextprotocol/sdk': 1.32.2
@@ -3307,7 +3384,7 @@ snapshots:
       - '@cfworker/json-schema'
       - supports-color
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/5408465bf517c5ad94172019a7c5565b0b23e5f1(react-dom@19.3.1(react@19.3.1)):
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b611b502f38a627daf0ad6f0bdd2a1b34d10a83(react-dom@19.3.1(react@19.3.1)):
     dependencies:
       '@phosphor-icons/react': 2.1.10(react-dom@19.3.1(react@19.3.1))
       '@primer/octicons-react': 19.42.0
@@ -3325,6 +3402,19 @@ snapshots:
       gopd: 1.2.0
 
   ee-first@1.1.1: {}
+
+  electron-updater@6.8.9:
+    dependencies:
+      builder-util-runtime: 9.7.0
+      fs-extra: 10.1.0
+      js-yaml: 4.3.2
+      lazy-val: 1.0.5
+      lodash.escaperegexp: 4.1.2
+      lodash.isequal: 4.5.0
+      semver: 7.7.4
+      tiny-typed-emitter: 2.1.0
+    transitivePeerDependencies:
+      - supports-color
 
   emoji-regex@8.0.0: {}
 
@@ -3438,6 +3528,12 @@ snapshots:
 
   fresh@2.0.0: {}
 
+  fs-extra@10.1.0:
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.2.1
+      universalify: 2.0.1
+
   function-bind@1.1.2: {}
 
   get-caller-file@2.0.5: {}
@@ -3461,6 +3557,8 @@ snapshots:
       es-object-atoms: 1.1.2
 
   gopd@1.2.0: {}
+
+  graceful-fs@4.2.11: {}
 
   hachure-fill@0.5.2: {}
 
@@ -3543,9 +3641,19 @@ snapshots:
 
   jose@6.2.13: {}
 
+  js-yaml@4.3.2:
+    dependencies:
+      argparse: 2.0.1
+
   json-schema-traverse@1.0.0: {}
 
   json-schema-typed@8.0.2: {}
+
+  jsonfile@6.2.1:
+    dependencies:
+      universalify: 2.0.1
+    optionalDependencies:
+      graceful-fs: 4.2.11
 
   jspdf@4.2.1:
     dependencies:
@@ -3575,6 +3683,8 @@ snapshots:
 
   layout-base@2.0.1: {}
 
+  lazy-val@1.0.5: {}
+
   lie@3.3.0:
     dependencies:
       immediate: 3.0.6
@@ -3590,6 +3700,10 @@ snapshots:
       p-locate: 4.1.0
 
   lodash-es@4.18.1: {}
+
+  lodash.escaperegexp@4.1.2: {}
+
+  lodash.isequal@4.5.0: {}
 
   lowlight@3.3.0:
     dependencies:
@@ -3959,6 +4073,8 @@ snapshots:
 
   scheduler@0.28.0: {}
 
+  semver@7.7.4: {}
+
   send@1.2.1:
     dependencies:
       debug: 4.4.3
@@ -4055,6 +4171,8 @@ snapshots:
   text-segmentation@1.0.3:
     dependencies:
       utrie: 1.0.2
+
+  tiny-typed-emitter@2.1.0: {}
 
   tinyexec@1.3.0: {}
 
@@ -4184,6 +4302,8 @@ snapshots:
   undici@6.29.1: {}
 
   undici@7.30.1: {}
+
+  universalify@2.0.1: {}
 
   unpipe@1.0.0: {}
 

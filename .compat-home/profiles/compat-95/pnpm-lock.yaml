@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@anionex/dsh-turn-rewind':
         specifier: github:Anionex/dsh-turn-rewind
-        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/737d716c5f693f96eb2adc3e9a79f4e55cda8735(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/fa4fde65da2f503c0269d5425904bf9d9f340b34(@deepseek-ai/schemastery@3.18.5)
       '@ayanehana/dsh-reasoning-effort':
         specifier: github:HanaAyane/dsh-reasoning-effort
         version: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/1df90b198a188a9981b8b207bc499466a2f1a161
@@ -41,31 +41,34 @@ importers:
       '@sanqi-normal/dsh-webui-market-plugin':
         specifier: github:Sanqi-normal/dsh-webui-market-plugin
         version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41
+      '@shengsheng/dsh-taskboard':
+        specifier: github:shengsheng90/DSH-taskboard
+        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.18.5)
       dsh-boot-animation:
         specifier: github:lxj5820/dsh-boot-animation
-        version: https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/33d9505e8da6bee2cb79c987d5a207ffce82d172(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/00a3b422ad5a17262f23514fc3e359ac1a83463d(@deepseek-ai/schemastery@3.18.5)
       dsh-free-search:
         specifier: github:DDDMUC/dsh-free-search
-        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/bfb36c072886eefdac99d74ee1de4ac4b9d77014
+        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/ab98d2920c22b6a550bdc52bff37b4ba90867758
       dsh-liketavern:
         specifier: github:Amakurai/dsh-liketavern
         version: https://codeload.github.com/Amakurai/dsh-liketavern/tar.gz/df8f775824cc52ea597667584e353655b81be1ca(@deepseek-ai/schemastery@3.18.5)
       dsh-see-now:
         specifier: github:SAOS-3624/dsh-see-now
-        version: https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/d7e8d5940926ef1f768f6339e7d951a3182f4594
+        version: https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/8a5490885d23feec8aff6b035af95465d172c1f2
       dsh-skin-market:
         specifier: github:kingOfSoySauce/dsh-skin-market
-        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/701a288c1c0e151b2fde22d4f3f94df3cd3713b8
+        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b611b502f38a627daf0ad6f0bdd2a1b34d10a83
 
 packages:
 
-  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/737d716c5f693f96eb2adc3e9a79f4e55cda8735':
-    resolution: {gitHosted: true, integrity: sha512-bS/Yzm3YexNpjFV8WK0rOC/yWWXcHiVkbcPaEQoY9Vrc/Q1zyOKdKUQLR/92TJLkdpqbd3Nwkqn+Cjbd8+ubOg==, tarball: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/737d716c5f693f96eb2adc3e9a79f4e55cda8735}
-    version: 0.3.11
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/fa4fde65da2f503c0269d5425904bf9d9f340b34':
+    resolution: {gitHosted: true, integrity: sha512-qDF2E0wx2lWvJk4mdzZcaRRWaKL7kPsoGxfOFJiDl2PObFZjWjcyMftgeQIekpckEsPIBnaac6Ls956WPg/amg==, tarball: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/fa4fde65da2f503c0269d5425904bf9d9f340b34}
+    version: 0.3.12
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      '@deepseek-ai/dsh-settings': 0.2.1-rc.3 || >=0.1.0-rc.8 <0.2.0 || ^0.1.1-rc.1 || ^0.1.2-alpha.1 || ^0.1.5-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2
+      '@deepseek-ai/dsh-settings': 0.2.1-rc.3 || >=0.1.0-rc.8 <0.2.0 || ^0.1.1-rc.1 || ^0.1.2-alpha.1 || ^0.1.5-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.5
       '@deepseek-ai/schemastery': ^3.18.1
     peerDependenciesMeta:
       '@deepseek-ai/dsh-settings':
@@ -238,6 +241,80 @@ packages:
       '@deepseek-ai/dsh-client-ui-slots': '>=0.0.1-rc.2 <0.2.0-0 || >=0.1.0-rc.2 <0.2.0-0'
       react: ^18.2.0
 
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5':
+    resolution: {gitHosted: true, integrity: sha512-h7tkKsSaUtad+N24BDOYcKE9Pa725dUPd373h0VTB/1NTqPWq3nUcpDNYeEWg2Beero+04uTUdItNlG9RcEHFw==, tarball: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5}
+    version: 0.1.11
+    engines: {node: ^22.19.0 || >=24.0.0}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/dsh-agent': '*'
+      '@deepseek-ai/dsh-agent-presets': '*'
+      '@deepseek-ai/dsh-api-remotes': '*'
+      '@deepseek-ai/dsh-api-session-controller': '*'
+      '@deepseek-ai/dsh-api-workspace-controller': '*'
+      '@deepseek-ai/dsh-client-connection': '*'
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-ui-conversation': '*'
+      '@deepseek-ai/dsh-client-ui-layout': '*'
+      '@deepseek-ai/dsh-client-ui-sidebar': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-client-ui-workspace': '*'
+      '@deepseek-ai/dsh-goal': '*'
+      '@deepseek-ai/dsh-host-webserver': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-session': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      '@deepseek-ai/dsh-workspace': '*'
+      '@deepseek-ai/schemastery': ^3.18.2
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-agent-presets':
+        optional: true
+      '@deepseek-ai/dsh-api-remotes':
+        optional: true
+      '@deepseek-ai/dsh-api-session-controller':
+        optional: true
+      '@deepseek-ai/dsh-api-workspace-controller':
+        optional: true
+      '@deepseek-ai/dsh-client-connection':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-layout':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-sidebar':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-workspace':
+        optional: true
+      '@deepseek-ai/dsh-goal':
+        optional: true
+      '@deepseek-ai/dsh-host-webserver':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-session':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      '@deepseek-ai/dsh-workspace':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+      react:
+        optional: true
+
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
@@ -273,16 +350,16 @@ packages:
     resolution: {integrity: sha512-ilXFf9Moz47ABjFpDiA5s1w9lpb4EFSp7+5iiJSbfyYDM+bpZdAgLlSr7fW4aXhVe/E+F6QCv0EvRVFEd5CsWg==}
     engines: {node: '>=10'}
 
-  dsh-boot-animation@https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/33d9505e8da6bee2cb79c987d5a207ffce82d172:
-    resolution: {gitHosted: true, integrity: sha512-rp2UaahLPQWv+pKOL209ICq6UrQnTv4dnA4Nup3mtQkMwdbTox4J0xIprXhX03glg7/IeOKpPNqOMTEh/CZgpw==, tarball: https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/33d9505e8da6bee2cb79c987d5a207ffce82d172}
+  dsh-boot-animation@https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/00a3b422ad5a17262f23514fc3e359ac1a83463d:
+    resolution: {gitHosted: true, integrity: sha512-yLjKsi/p95uviAX3rSwEuJNshzTT5hGV3W9NWkTb9OgvAGsN5MTYj0sezJTKDadpp9fKFrkdvjnralEk/grf6w==, tarball: https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/00a3b422ad5a17262f23514fc3e359ac1a83463d}
     version: 0.3.0
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/schemastery': '*'
 
-  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/bfb36c072886eefdac99d74ee1de4ac4b9d77014:
-    resolution: {gitHosted: true, integrity: sha512-EufeNwSLxhokkmJ7O1Jr46eysY+e7bE6A3WJaOP/araMBTYd9aSiWKasOQLORqyhUoPzwp7b3jLEyZwBMxkuHQ==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/bfb36c072886eefdac99d74ee1de4ac4b9d77014}
-    version: 0.9.33
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/ab98d2920c22b6a550bdc52bff37b4ba90867758:
+    resolution: {gitHosted: true, integrity: sha512-E6apOqBu2aGHwRK5AD0zw8uimniRZdbiAkk33aP9X9G0aq+uK5H9O+YIFHgHA+WmzzmKsYwV3ypbFqRwb97LvA==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/ab98d2920c22b6a550bdc52bff37b4ba90867758}
+    version: 0.9.34
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -346,9 +423,9 @@ packages:
       '@deepseek-ai/dsh-util-values': '*'
       '@deepseek-ai/schemastery': '*'
 
-  dsh-see-now@https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/d7e8d5940926ef1f768f6339e7d951a3182f4594:
-    resolution: {gitHosted: true, integrity: sha512-hFCBs7bd8SS1NknOAoWeOp0JwmNWUp7i21N5kn/nx/piIp+M4j5z2GnEDfcctZjIrKdxA8HKqaP/y0QQ8ZhoIg==, tarball: https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/d7e8d5940926ef1f768f6339e7d951a3182f4594}
-    version: 0.1.4
+  dsh-see-now@https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/8a5490885d23feec8aff6b035af95465d172c1f2:
+    resolution: {gitHosted: true, integrity: sha512-v27Z21iiCo/ZMp+lOCTUWqHlMb40V3ymTuoJxe0wHEaEooFIqWL5jk4t/84kxtmictWFsGJbIrbo7bQ7+9dTXA==, tarball: https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/8a5490885d23feec8aff6b035af95465d172c1f2}
+    version: 0.2.0
     engines: {node: '>=20'}
     hasBin: true
     peerDependencies:
@@ -357,9 +434,9 @@ packages:
       '@deepseek-ai/dsh-tools':
         optional: true
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/701a288c1c0e151b2fde22d4f3f94df3cd3713b8:
-    resolution: {gitHosted: true, integrity: sha512-dPU3hUGuwvto55GKKIHB4YTOxHvuf1ohhTT7VxWqn9OFc4B0FC4ZNNAJGtWa0bWkf5J8Az8+TnApKObY3KR8dg==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/701a288c1c0e151b2fde22d4f3f94df3cd3713b8}
-    version: 0.1.74
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b611b502f38a627daf0ad6f0bdd2a1b34d10a83:
+    resolution: {gitHosted: true, integrity: sha512-6IfDd4ajpXp+OAR1ulwZe5FWIrZdkyB7qfixfaSFNEaBEMRYYuElpOCbI7v+NS2jMEoC0tVNpUNodNqK8QG9jQ==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b611b502f38a627daf0ad6f0bdd2a1b34d10a83}
+    version: 0.1.75
     hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -549,7 +626,7 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/737d716c5f693f96eb2adc3e9a79f4e55cda8735(@deepseek-ai/schemastery@3.18.5)':
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/fa4fde65da2f503c0269d5425904bf9d9f340b34(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       ignore: 7.0.14
@@ -622,6 +699,12 @@ snapshots:
 
   '@sanqi-normal/dsh-webui-market-plugin@https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41': {}
 
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.18.5)':
+    dependencies:
+      zod: 4.6.7
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+
   '@standard-schema/spec@1.1.0': {}
 
   '@types/node@25.9.9':
@@ -661,11 +744,11 @@ snapshots:
       xml: 1.0.1
       xml-js: 1.6.11
 
-  dsh-boot-animation@https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/33d9505e8da6bee2cb79c987d5a207ffce82d172(@deepseek-ai/schemastery@3.18.5):
+  dsh-boot-animation@https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/00a3b422ad5a17262f23514fc3e359ac1a83463d(@deepseek-ai/schemastery@3.18.5):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
-  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/bfb36c072886eefdac99d74ee1de4ac4b9d77014:
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/ab98d2920c22b6a550bdc52bff37b4ba90867758:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -684,9 +767,9 @@ snapshots:
       yaml: 2.9.0
       zod: 4.6.7
 
-  dsh-see-now@https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/d7e8d5940926ef1f768f6339e7d951a3182f4594: {}
+  dsh-see-now@https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/8a5490885d23feec8aff6b035af95465d172c1f2: {}
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/701a288c1c0e151b2fde22d4f3f94df3cd3713b8:
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b611b502f38a627daf0ad6f0bdd2a1b34d10a83:
     dependencies:
       '@phosphor-icons/react': 2.1.10
       '@primer/octicons-react': 19.42.0
