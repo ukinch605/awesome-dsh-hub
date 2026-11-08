@@ -2,8 +2,8 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/ukinch605/awesome-dsh-hub)
 ![License](https://img.shields.io/github/license/ukinch605/awesome-dsh-hub)
-![Plugins](https://img.shields.io/badge/plugins-23050-4dabf7)
-![Last updated](https://img.shields.io/badge/last%20updated-2026--11--07-orange)
+![Plugins](https://img.shields.io/badge/plugins-23092-4dabf7)
+![Last updated](https://img.shields.io/badge/last%20updated-2026--11--08-orange)
 
 > An auto-maintained, awesome-style directory of the DeepSeek Harness (`dsh`) plugin ecosystem: machine-readable registry, bilingual catalogs and a searchable site. Everything is a Plugin. 🐋
 >
@@ -13,29 +13,29 @@
 
 | Metric | Value |
 | --- | ---: |
-| Plugins | **23050** |
-| Monitored repos | 28159 |
-| Total stars | 372,469 |
-| Last updated | 2026-11-07 23:08:24.831 UTC |
+| Plugins | **23092** |
+| Monitored repos | 28223 |
+| Total stars | 373,347 |
+| Last updated | 2026-11-08 02:49:23.207 UTC |
 
 ### Categories
 
-Web UI 3543 · Agent Capabilities 9053 · Coding & Engineering 1722 · Messaging & Notifications 977 · Vision & Multimodal 1621 · Browser & Web 1172 · Skins & Fun 617 · Files & Data 3018 · Dev Tools & Tutorials 523 · Bundles & Distros 592 · Ecosystem Projects 212
+Web UI 3550 · Agent Capabilities 9076 · Coding & Engineering 1724 · Messaging & Notifications 978 · Vision & Multimodal 1622 · Browser & Web 1173 · Skins & Fun 617 · Files & Data 3025 · Dev Tools & Tutorials 524 · Bundles & Distros 592 · Ecosystem Projects 211
 
 ### Top 10 Plugins
 
 | # | Plugin | Stars | Type | Description |
 | --- | --- | ---: | --- | --- |
-| 1 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 65,384 | Agent Capabilities | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flas… |
-| 2 | [alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill) | 37,749 | Coding & Engineering | 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how a… |
-| 3 | [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | 28,943 | Browser & Web | Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编… |
-| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 11,340 | Agent Capabilities | The plugin market inside DeepSeek Harness — browse, search,… |
-| 5 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 10,205 | Dev Tools & Tutorials | DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSee… |
-| 6 | [superdesigndev/treg](https://github.com/superdesigndev/treg) | 7,567 | Messaging & Notifications | OpenRouter for agent tools. Join community here: https://di… |
-| 7 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 7,161 | Coding & Engineering | DSH's officially top-recommended TUI plugin — high performa… |
+| 1 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 65,482 | Agent Capabilities | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flas… |
+| 2 | [alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill) | 37,759 | Coding & Engineering | 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how a… |
+| 3 | [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | 28,946 | Browser & Web | Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编… |
+| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 11,353 | Agent Capabilities | The plugin market inside DeepSeek Harness — browse, search,… |
+| 5 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 10,209 | Dev Tools & Tutorials | DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSee… |
+| 6 | [superdesigndev/treg](https://github.com/superdesigndev/treg) | 7,586 | Messaging & Notifications | OpenRouter for agent tools. Join community here: https://di… |
+| 7 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 7,164 | Coding & Engineering | DSH's officially top-recommended TUI plugin — high performa… |
 | 8 | [yjh051108/dsh-routing-suite](https://github.com/yjh051108/dsh-routing-suite) | 7,007 | Agent Capabilities | dsh-routing-suite — injector + router-standard kit: install… |
-| 9 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 6,997 | Web UI | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
-| 10 | [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 5,996 | Coding & Engineering | Answer me with HTML — an agent skill that answers hard ques… |
+| 9 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 7,005 | Web UI | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
+| 10 | [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 6,006 | Coding & Engineering | Answer me with HTML — an agent skill that answers hard ques… |
 
 ## Quick Start
 
