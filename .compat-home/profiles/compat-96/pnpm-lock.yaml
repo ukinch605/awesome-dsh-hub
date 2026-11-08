@@ -20,6 +20,9 @@ importers:
       '@oh-dsh/desktop':
         specifier: github:hust-open-atom-club/oh-dsh
         version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa
+      '@shengsheng/dsh-taskboard':
+        specifier: github:shengsheng90/DSH-taskboard
+        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.18.5)
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
         version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/615286bbcc1701f8ac19487e82f93f1dff066470
@@ -37,13 +40,13 @@ importers:
         version: https://codeload.github.com/Devin-AXIS/jev-dsh-decision/tar.gz/adc88caa9bf174d367e79a5f254c7936bcef088e
       dsh-remote:
         specifier: github:flymysql/dsh-remote
-        version: https://codeload.github.com/flymysql/dsh-remote/tar.gz/aed73fbccf41e7b18b01eb03f25abed4ad9b03ee
+        version: https://codeload.github.com/flymysql/dsh-remote/tar.gz/6bd51ec90af097533942e0c0fad9d9df0c9f3d41
       dsh-skill-mcp-panel:
         specifier: github:Fishquito7/dsh-skill-mcp-panel
         version: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/937aeb82580d7a8f3da8a04b6cf3dae96162dd07
       dsh-skin-market:
         specifier: github:kingOfSoySauce/dsh-skin-market
-        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b611b502f38a627daf0ad6f0bdd2a1b34d10a83(react-dom@19.3.1(react@19.3.1))
+        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/0c15b253cc5a0a22a584da99b0b76ee7a53d672e(react-dom@19.3.1(react@19.3.1))
       perfect-web-clone:
         specifier: github:ericshang98/Perfect-Web-Clone
         version: https://codeload.github.com/ericshang98/Perfect-Web-Clone/tar.gz/c846c37937a70497d37d082c26c85aa1289a9fa5
@@ -324,6 +327,80 @@ packages:
       '@codemirror/search': 6.x.x
       '@codemirror/state': 6.x.x
       '@codemirror/view': 6.x.x
+
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5':
+    resolution: {gitHosted: true, integrity: sha512-h7tkKsSaUtad+N24BDOYcKE9Pa725dUPd373h0VTB/1NTqPWq3nUcpDNYeEWg2Beero+04uTUdItNlG9RcEHFw==, tarball: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5}
+    version: 0.1.11
+    engines: {node: ^22.19.0 || >=24.0.0}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/dsh-agent': '*'
+      '@deepseek-ai/dsh-agent-presets': '*'
+      '@deepseek-ai/dsh-api-remotes': '*'
+      '@deepseek-ai/dsh-api-session-controller': '*'
+      '@deepseek-ai/dsh-api-workspace-controller': '*'
+      '@deepseek-ai/dsh-client-connection': '*'
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-ui-conversation': '*'
+      '@deepseek-ai/dsh-client-ui-layout': '*'
+      '@deepseek-ai/dsh-client-ui-sidebar': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-client-ui-workspace': '*'
+      '@deepseek-ai/dsh-goal': '*'
+      '@deepseek-ai/dsh-host-webserver': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-session': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      '@deepseek-ai/dsh-workspace': '*'
+      '@deepseek-ai/schemastery': ^3.18.2
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-agent-presets':
+        optional: true
+      '@deepseek-ai/dsh-api-remotes':
+        optional: true
+      '@deepseek-ai/dsh-api-session-controller':
+        optional: true
+      '@deepseek-ai/dsh-api-workspace-controller':
+        optional: true
+      '@deepseek-ai/dsh-client-connection':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-layout':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-sidebar':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-workspace':
+        optional: true
+      '@deepseek-ai/dsh-goal':
+        optional: true
+      '@deepseek-ai/dsh-host-webserver':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-session':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      '@deepseek-ai/dsh-workspace':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+      react:
+        optional: true
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -1202,9 +1279,9 @@ packages:
     version: 0.1.2
     engines: {node: '>=20.11'}
 
-  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/aed73fbccf41e7b18b01eb03f25abed4ad9b03ee:
-    resolution: {gitHosted: true, integrity: sha512-uoWXOkv6UUKf0m8PNHS5kceJeSgLf3XjWtTM6E9qpYShP2DmHVBybtBClRSYf6c0Qv2///APD0UFY6J65FUJQQ==, tarball: https://codeload.github.com/flymysql/dsh-remote/tar.gz/aed73fbccf41e7b18b01eb03f25abed4ad9b03ee}
-    version: 0.8.74
+  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/6bd51ec90af097533942e0c0fad9d9df0c9f3d41:
+    resolution: {gitHosted: true, integrity: sha512-qhRWVUgvR/vF+ncFHD48XgPeMrGK1ClmLscxBffmjd2PS/MFkqy4gET7e838vbswzsNBW6R2fiwG06vqPgy/3A==, tarball: https://codeload.github.com/flymysql/dsh-remote/tar.gz/6bd51ec90af097533942e0c0fad9d9df0c9f3d41}
+    version: 0.8.79
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.5
       '@deepseek-ai/dsh-client-connection': '>=0.1.2-rc.1 <0.3.0'
@@ -1236,8 +1313,8 @@ packages:
       '@deepseek-ai/dsh':
         optional: true
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b611b502f38a627daf0ad6f0bdd2a1b34d10a83:
-    resolution: {gitHosted: true, integrity: sha512-6IfDd4ajpXp+OAR1ulwZe5FWIrZdkyB7qfixfaSFNEaBEMRYYuElpOCbI7v+NS2jMEoC0tVNpUNodNqK8QG9jQ==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b611b502f38a627daf0ad6f0bdd2a1b34d10a83}
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/0c15b253cc5a0a22a584da99b0b76ee7a53d672e:
+    resolution: {gitHosted: true, integrity: sha512-udZaTjYx3eGLhurGNIHIKjYs1Yu2iGPJqS3iVcLrCx+XTv/bkDOeEnEOs4AaugO5P6TXRyYpteEJLvGAZ18+NA==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/0c15b253cc5a0a22a584da99b0b76ee7a53d672e}
     version: 0.1.75
     hasBin: true
     peerDependencies:
@@ -1564,16 +1641,19 @@ packages:
 
   markmap-html-parser@0.18.11:
     resolution: {integrity: sha512-+kC5C4sCGntGUhGvTa5VIb5rtM75cSy/VCy3tzZoNAcn2qZGdgYvljN0WvjsOzrEzp+V6XKgwzO0u2TdzNAiOg==}
+    deprecated: Replaced by @markmap/* in 1.0.0. See https://markmap.js.org/docs/migration
     peerDependencies:
       markmap-common: '*'
 
   markmap-lib@0.18.12:
     resolution: {integrity: sha512-WCA4OT+b71jYg0e4PS/6NRKqihod5OpPsvw1jEGHQwCtqQrY/yXXCeRyuL3axOS5cMy5pV8BSl4CwKfJU1LxJg==}
+    deprecated: Replaced by @markmap/* in 1.0.0. See https://markmap.js.org/docs/migration
     peerDependencies:
       markmap-common: '*'
 
   markmap-view@0.18.12:
     resolution: {integrity: sha512-D8bzT1YwIC/8rkbwm6WzigVUrpOAGv7ioEGTi1Lj+Oo8gO5sAm6hhli27jvTgUcZ9TwBeIWZ+dSUP+AupYUGlQ==}
+    deprecated: Replaced by @markmap/* in 1.0.0. See https://markmap.js.org/docs/migration
     peerDependencies:
       markmap-common: '*'
 
@@ -2473,6 +2553,12 @@ snapshots:
       '@codemirror/view': 6.43.9
       '@replit/codemirror-vim-core': 0.1.0
 
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.18.5)':
+    dependencies:
+      zod: 4.5.4
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+
   '@standard-schema/spec@1.1.0': {}
 
   '@tauri-apps/api@2.12.4': {}
@@ -3367,7 +3453,7 @@ snapshots:
 
   dsh-jev-decision-model@https://codeload.github.com/Devin-AXIS/jev-dsh-decision/tar.gz/adc88caa9bf174d367e79a5f254c7936bcef088e: {}
 
-  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/aed73fbccf41e7b18b01eb03f25abed4ad9b03ee:
+  dsh-remote@https://codeload.github.com/flymysql/dsh-remote/tar.gz/6bd51ec90af097533942e0c0fad9d9df0c9f3d41:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       iconv-lite: 0.7.3
@@ -3384,7 +3470,7 @@ snapshots:
       - '@cfworker/json-schema'
       - supports-color
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/4b611b502f38a627daf0ad6f0bdd2a1b34d10a83(react-dom@19.3.1(react@19.3.1)):
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/0c15b253cc5a0a22a584da99b0b76ee7a53d672e(react-dom@19.3.1(react@19.3.1)):
     dependencies:
       '@phosphor-icons/react': 2.1.10(react-dom@19.3.1(react@19.3.1))
       '@primer/octicons-react': 19.42.0

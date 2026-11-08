@@ -28,7 +28,7 @@ importers:
         version: https://codeload.github.com/taxueseek/argo/tar.gz/7e25a816e4a865a12d9b307a51aa5897eca7c146
       ds-harness-remote:
         specifier: github:liguobao/deepseek-harness-remote
-        version: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/2f0df33b423da616d53875acdfe8be5c8801d08e(react@18.3.1)
+        version: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/d75a7bd046f6cd727e12d92d930787df047f6b51(react@18.3.1)
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
         version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/c1c4f627d03d95a60dd8bade12212150ed8af276(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
@@ -55,7 +55,10 @@ importers:
         version: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/937aeb82580d7a8f3da8a04b6cf3dae96162dd07
       dsh-video-storyboard:
         specifier: github:SAOS-3624/dsh-video-storyboard
-        version: https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/ffa5ea76bb94916be3379d9a95795ebce2f8ebea
+        version: https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/60aedccd32b7f28815770e0a283f49ebac2e106a
+      dsh-xdpool:
+        specifier: github:XDTrees/dsh-xdpool
+        version: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/813d51c2501f728d90b7ff54aa3823f9aca17020(@deepseek-ai/schemastery@3.18.5)(@earendil-works/pi-ai@0.82.1(@modelcontextprotocol/sdk@1.30.0(zod@4.6.7))(ws@8.22.0)(zod@4.6.7))
       opencode2dsh:
         specifier: github:FishBottle7/opencode2dsh
         version: https://codeload.github.com/FishBottle7/opencode2dsh/tar.gz/37d3ea202187767d6576ef72798e270c12da9b4e(@modelcontextprotocol/sdk@1.30.0(zod@4.6.7))(ws@8.22.0)(zod@4.6.7)
@@ -1253,9 +1256,9 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/2f0df33b423da616d53875acdfe8be5c8801d08e:
-    resolution: {gitHosted: true, integrity: sha512-sXDJIp3rveIieKgz4zCLkJDewoaBwqnYZJPbIzPeXj7XSTdpBcWzn2rEz7fhYPMC/b/4RoxFgPZsDujYezfpDQ==, tarball: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/2f0df33b423da616d53875acdfe8be5c8801d08e}
-    version: 0.6.3
+  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/d75a7bd046f6cd727e12d92d930787df047f6b51:
+    resolution: {gitHosted: true, integrity: sha512-NzUSbt5cFEBTIkWUREVWgKPWuvcga2xBiDeOxQGKTa78fI1/45X+KEoUsVMrsuucTO+xiCqnZDF59dmzOG+JyA==, tarball: https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/d75a7bd046f6cd727e12d92d930787df047f6b51}
+    version: 0.6.4
     hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1 <5 || >=4.0.5-alpha.1 <4.0.6-0'
@@ -1412,15 +1415,44 @@ packages:
       '@deepseek-ai/dsh':
         optional: true
 
-  dsh-video-storyboard@https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/ffa5ea76bb94916be3379d9a95795ebce2f8ebea:
-    resolution: {gitHosted: true, integrity: sha512-+UWV9jQC6CWoIn0g+mfaB5fmKcfI/aGvJCjjB54vBByBH92C93IvV9Hd7t0vEcx4WIfHbc24WlnfXjYA7GB5OQ==, tarball: https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/ffa5ea76bb94916be3379d9a95795ebce2f8ebea}
-    version: 0.7.0
+  dsh-video-storyboard@https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/60aedccd32b7f28815770e0a283f49ebac2e106a:
+    resolution: {gitHosted: true, integrity: sha512-RkyXFjbm6e7FVHfON1tqxgGr66oiphAtFD3YBQP9zowRv1scoaWKeqBfuNtCpfT6o+3G5mgwHmTtScyjHQe9LQ==, tarball: https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/60aedccd32b7f28815770e0a283f49ebac2e106a}
+    version: 0.7.1
     engines: {node: '>=20'}
     hasBin: true
     peerDependencies:
       '@deepseek-ai/dsh-tools': '>=0.1.0-rc.7'
     peerDependenciesMeta:
       '@deepseek-ai/dsh-tools':
+        optional: true
+
+  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/813d51c2501f728d90b7ff54aa3823f9aca17020:
+    resolution: {gitHosted: true, integrity: sha512-ubtbLD/Yh1zKc4Ypzsx1Z6vNN0BXA0iJuZBngyweHWC2aVb6zXiJGOAxakF/r/Gvq3OFOJk8BGPZyKOHRbm2xg==, tarball: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/813d51c2501f728d90b7ff54aa3823f9aca17020}
+    version: 2.6.4
+    engines: {dsh: '>=0.1.5-rc.1 <0.3.0', node: ^22.19.0 || >=24.0.0}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-credentials': '>=0.1.1-rc.1 <0.3.0'
+      '@deepseek-ai/dsh-llm': '>=0.1.1-rc.1 <0.3.0'
+      '@deepseek-ai/dsh-llm-pi-ai': '>=0.1.1-rc.1 <0.3.0'
+      '@deepseek-ai/dsh-settings': '>=0.1.1-rc.1 <0.3.0'
+      '@deepseek-ai/schemastery': ^3.18.1
+      '@earendil-works/pi-ai': '>=0.82.1'
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-credentials':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-llm-pi-ai':
+        optional: true
+      '@deepseek-ai/dsh-settings':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+      '@earendil-works/pi-ai':
         optional: true
 
   dunder-proto@1.0.1:
@@ -3488,7 +3520,7 @@ snapshots:
       webidl-conversions: 7.0.0
     optional: true
 
-  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/2f0df33b423da616d53875acdfe8be5c8801d08e(react@18.3.1):
+  ds-harness-remote@https://codeload.github.com/liguobao/deepseek-harness-remote/tar.gz/d75a7bd046f6cd727e12d92d930787df047f6b51(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       qrcode: 1.5.4
@@ -3566,7 +3598,12 @@ snapshots:
       - '@cfworker/json-schema'
       - supports-color
 
-  dsh-video-storyboard@https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/ffa5ea76bb94916be3379d9a95795ebce2f8ebea: {}
+  dsh-video-storyboard@https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/60aedccd32b7f28815770e0a283f49ebac2e106a: {}
+
+  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/813d51c2501f728d90b7ff54aa3823f9aca17020(@deepseek-ai/schemastery@3.18.5)(@earendil-works/pi-ai@0.82.1(@modelcontextprotocol/sdk@1.30.0(zod@4.6.7))(ws@8.22.0)(zod@4.6.7)):
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      '@earendil-works/pi-ai': 0.82.1(@modelcontextprotocol/sdk@1.30.0(zod@4.6.7))(ws@8.22.0)(zod@4.6.7)
 
   dunder-proto@1.0.1:
     dependencies:

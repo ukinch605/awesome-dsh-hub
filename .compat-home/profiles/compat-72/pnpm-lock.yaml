@@ -25,22 +25,25 @@ importers:
         version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/c1c4f627d03d95a60dd8bade12212150ed8af276(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
       dsh-ego-browser:
         specifier: github:Fisfzy/dsh-ego-browser
-        version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/ce67518adf10894584ebfc39353c730bdee88046(react@18.3.1)
+        version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/18068f95dc8acab1bc7489b76c201f6147c58a49(react@18.3.1)
+      dsh-fish-memory:
+        specifier: github:Yuuyuko-uu/dsh-fish-memory
+        version: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/9da1e0b0ba9f475a232a5a55089143c1c96932e5
       dsh-guizang-design:
         specifier: github:op7418/dsh-guizang-design
         version: https://codeload.github.com/op7418/dsh-guizang-design/tar.gz/e275f1e4d4a81bd4875c251d33c643c242a8a8fd(bare-buffer@3.7.1)(react@18.3.1)
       dsh-plugin:
         specifier: github:dshplugin/dsh-plugin-hub
-        version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/33fcecfc5010b4ef4980f48a2c9d1cc8bbef31d1
+        version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/bd8c30505fdac41928e9aac2b0f4dd80a74a33d6
       dsh-plugin-marketplace:
         specifier: github:YELEBAI/dsh-plugin-marketplace
-        version: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/40b35db1c63bfe6040b67fcfe8894ef73bf27074
+        version: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/86518c8ad0428b017bdbe458d2f3dbd4743394ed
       dsh-undo-savepoint:
         specifier: github:lire1131/dsh-undo-savepoint
         version: https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/9d9a3fa3eab12469bf613e4278dc267ff81e37c0
       eac-design-world:
         specifier: github:Ebony-Vinyl/EAC-design-world
-        version: https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/8b3a2167bbd9ffe29974b0b183ce014f48e8332d
+        version: https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/5ec98987fb93b1ff4f17cbe3e567e1a3bcbee4d5
       gal-view:
         specifier: github:Ayase34/gal-view
         version: https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a
@@ -449,9 +452,9 @@ packages:
       '@deepseek-ai/schemastery': '>=3.0.0'
       react: '>=18.0.0'
 
-  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/ce67518adf10894584ebfc39353c730bdee88046:
-    resolution: {gitHosted: true, integrity: sha512-JmWmBlKLuX/novFGFwM62pBVypdcxAeBToqq2t7ADfZx/ePNbt0RL4Lo2z4ndKLEIwYIqPkZjICk47TEPxkeLw==, tarball: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/ce67518adf10894584ebfc39353c730bdee88046}
-    version: 0.9.10
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/18068f95dc8acab1bc7489b76c201f6147c58a49:
+    resolution: {gitHosted: true, integrity: sha512-K92p5vhCp4aKZ3Q3eJGtVPQU0WPWEzeGU+6sba/G6hN8y/aPxeNYO7WN0ZOYkKoKldgB7zH1yhArVHI3tSVATA==, tarball: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/18068f95dc8acab1bc7489b76c201f6147c58a49}
+    version: 0.9.11
     engines: {node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-client-locale': '>=0.1.2-rc.1'
@@ -480,6 +483,19 @@ packages:
       schemastery:
         optional: true
 
+  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/9da1e0b0ba9f475a232a5a55089143c1c96932e5:
+    resolution: {gitHosted: true, integrity: sha512-Vke59LtqOaKKkTKSjKJL05CYaHPTQTb1/xD+6HY0hDwx5fimgnukH6Bv5YTZjrLKPa94vpSgk6Iqctk9XOIR8w==, tarball: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/9da1e0b0ba9f475a232a5a55089143c1c96932e5}
+    version: 1.5.8
+    engines: {dsh: '>=0.2.1-rc.2', node: '>=22'}
+    peerDependencies:
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-tools': '*'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+
   dsh-guizang-design@https://codeload.github.com/op7418/dsh-guizang-design/tar.gz/e275f1e4d4a81bd4875c251d33c643c242a8a8fd:
     resolution: {gitHosted: true, integrity: sha512-4MBGXxWF75KSXzLEaHSA6bRII/vbFYHH1xC49bgcSVcWqpNk2+aSPtUaKtqId2ai3qVQ7GYcIbIPWjRQsfaU5A==, tarball: https://codeload.github.com/op7418/dsh-guizang-design/tar.gz/e275f1e4d4a81bd4875c251d33c643c242a8a8fd}
     version: 0.1.4
@@ -487,8 +503,8 @@ packages:
     peerDependencies:
       react: ^18.2.0 || ^19.0.0
 
-  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/40b35db1c63bfe6040b67fcfe8894ef73bf27074:
-    resolution: {gitHosted: true, integrity: sha512-OQc4lTnyB9gbjNyyrrdH7aAUQR/ClIUfCLEHoeq6khicvPsD0L1AfBMJg9agSkkpe+yYeEGc/8ORFr+EJnFS7A==, tarball: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/40b35db1c63bfe6040b67fcfe8894ef73bf27074}
+  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/86518c8ad0428b017bdbe458d2f3dbd4743394ed:
+    resolution: {gitHosted: true, integrity: sha512-rKggFNEDZREJcqcjvV2mkeeJM6wET2AksPo6Zbkubop8BPig79L4aMFe0ZXd0WO96ztJIq/u+LV3bM/hHbagJA==, tarball: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/86518c8ad0428b017bdbe458d2f3dbd4743394ed}
     version: 0.9.5
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
@@ -496,9 +512,9 @@ packages:
       '@deepseek-ai/dsh-app-boot': ^0.1.0-rc.5 || ^0.1.7-alpha.2 || ^0.2.0-rc.2
       '@deepseek-ai/dsh-typert-protocol': ^0.1.0-rc.5 || ^0.1.7-alpha.2 || ^0.2.0-rc.2
 
-  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/33fcecfc5010b4ef4980f48a2c9d1cc8bbef31d1:
-    resolution: {gitHosted: true, integrity: sha512-DBE2zUGTOTd2FObvHlYEP0TSw+w0VbVHmMQAKSIFz7YhrMb/lHKEpc6VZiX6F/8WXKG0jS5uP0EyR+a4CerKbQ==, tarball: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/33fcecfc5010b4ef4980f48a2c9d1cc8bbef31d1}
-    version: 2.3.4
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/bd8c30505fdac41928e9aac2b0f4dd80a74a33d6:
+    resolution: {gitHosted: true, integrity: sha512-3ym/oFYjpAJehK9XDGJ4DDjpUzOCbTba6RmoJZ33SJTDAROokNgmz5YciyWD/EHxDvuTOyi2y+3Dbfe3V+x9ww==, tarball: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/bd8c30505fdac41928e9aac2b0f4dd80a74a33d6}
+    version: 2.3.5
     engines: {node: '>=22.6'}
     peerDependencies:
       '@deepseek-ai/cordis': 4.0.1
@@ -515,9 +531,9 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  eac-design-world@https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/8b3a2167bbd9ffe29974b0b183ce014f48e8332d:
-    resolution: {gitHosted: true, integrity: sha512-Zu4qakI7fBYiPOi5ni22KcFGLU8hd9C9cj1+WT75jD1qiwh0AEcvJTT7TlVpCdd1+NVPJgbDNO6RgcPSnlsGtg==, tarball: https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/8b3a2167bbd9ffe29974b0b183ce014f48e8332d}
-    version: 0.6.0
+  eac-design-world@https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/5ec98987fb93b1ff4f17cbe3e567e1a3bcbee4d5:
+    resolution: {gitHosted: true, integrity: sha512-4wXpf5AI6dsM6q4CdIhyHwt1+hRMUqRAo5kBrPRWGbyrN+Q+AAWZQyTf9W/KBTw2Z2ylEKWj7bIZt+MfAvWXnw==, tarball: https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/5ec98987fb93b1ff4f17cbe3e567e1a3bcbee4d5}
+    version: 0.6.1
     engines: {node: '>=22'}
     hasBin: true
 
@@ -1635,12 +1651,14 @@ snapshots:
       fzstd: 0.1.1
       react: 18.3.1
 
-  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/ce67518adf10894584ebfc39353c730bdee88046(react@18.3.1):
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/18068f95dc8acab1bc7489b76c201f6147c58a49(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       schemastery: 3.18.0
     optionalDependencies:
       react: 18.3.1
+
+  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/9da1e0b0ba9f475a232a5a55089143c1c96932e5: {}
 
   dsh-guizang-design@https://codeload.github.com/op7418/dsh-guizang-design/tar.gz/e275f1e4d4a81bd4875c251d33c643c242a8a8fd(bare-buffer@3.7.1)(react@18.3.1):
     dependencies:
@@ -1656,11 +1674,11 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/40b35db1c63bfe6040b67fcfe8894ef73bf27074:
+  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/86518c8ad0428b017bdbe458d2f3dbd4743394ed:
     dependencies:
       zod: 4.6.7
 
-  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/33fcecfc5010b4ef4980f48a2c9d1cc8bbef31d1: {}
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/bd8c30505fdac41928e9aac2b0f4dd80a74a33d6: {}
 
   dsh-undo-savepoint@https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/9d9a3fa3eab12469bf613e4278dc267ff81e37c0: {}
 
@@ -1670,7 +1688,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  eac-design-world@https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/8b3a2167bbd9ffe29974b0b183ce014f48e8332d:
+  eac-design-world@https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/5ec98987fb93b1ff4f17cbe3e567e1a3bcbee4d5:
     dependencies:
       '@modelcontextprotocol/sdk': 1.32.2
       d3: 7.9.0

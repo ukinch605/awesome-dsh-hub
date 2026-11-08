@@ -25,7 +25,10 @@ importers:
         version: https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43
       aegis:
         specifier: github:GanyuanRan/Aegis
-        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1370a15001b9130316d51715bab44c87a3993dcb
+        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/952b150a16b9cf9c702022ea779bcc6750b0d48d
+      brooks-lint:
+        specifier: github:hyhmrright/brooks-lint
+        version: https://codeload.github.com/hyhmrright/brooks-lint/tar.gz/f34624f7d67855abc55f4ad25399e3bfbaaea66d
       dsh-harmony-next:
         specifier: github:linhay/harmony-next.skills
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249
@@ -116,9 +119,9 @@ packages:
     engines: {node: ^22.19.0 || >=24.0.0}
     hasBin: true
 
-  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1370a15001b9130316d51715bab44c87a3993dcb:
-    resolution: {gitHosted: true, integrity: sha512-GTZiFOa5uj1YDkySHEAknvHxEU84gvwOsOMAh1wTN0fIQXqnTffeQ3NBfJBjhyN3S1HifvZrwkglOY4Nlh11Tg==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1370a15001b9130316d51715bab44c87a3993dcb}
-    version: 2.14.3
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/952b150a16b9cf9c702022ea779bcc6750b0d48d:
+    resolution: {gitHosted: true, integrity: sha512-1kusEOr+2Nph1jLxGTDjugWjxnOb+qxpuYTZWhblqOCApU8vPQaK4jK1vDHfUCVKg/QR9ia/3mzLftKSfZeqSA==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/952b150a16b9cf9c702022ea779bcc6750b0d48d}
+    version: 2.15.0
     peerDependencies:
       '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6'
       '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6'
@@ -133,6 +136,12 @@ packages:
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+
+  brooks-lint@https://codeload.github.com/hyhmrright/brooks-lint/tar.gz/f34624f7d67855abc55f4ad25399e3bfbaaea66d:
+    resolution: {gitHosted: true, integrity: sha512-hvD64bh7T2jQCLMVQ3Mn1Ooz/EYelmBzt4AZeDl6Cz6WRmHRAmyQDq/uNyQ6nPqjkMmysjNDLMLfVd0aCXm2gg==, tarball: https://codeload.github.com/hyhmrright/brooks-lint/tar.gz/f34624f7d67855abc55f4ad25399e3bfbaaea66d}
+    version: 1.9.1
+    engines: {node: '>=20'}
+    hasBin: true
 
   commander@13.1.0:
     resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
@@ -250,9 +259,11 @@ snapshots:
 
   '@yunmiao/studymate@https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43': {}
 
-  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1370a15001b9130316d51715bab44c87a3993dcb: {}
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/952b150a16b9cf9c702022ea779bcc6750b0d48d: {}
 
   argparse@2.0.1: {}
+
+  brooks-lint@https://codeload.github.com/hyhmrright/brooks-lint/tar.gz/f34624f7d67855abc55f4ad25399e3bfbaaea66d: {}
 
   commander@13.1.0: {}
 

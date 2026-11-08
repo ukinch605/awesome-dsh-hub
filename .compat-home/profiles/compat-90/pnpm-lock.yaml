@@ -17,9 +17,12 @@ importers:
       '@huiliyi37/dsh-tianshu-tui':
         specifier: github:huiliyi37/dsh-tianshu-tui
         version: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/446bfe373c962aa83e04b36a16da4f8588458242(@deepseek-ai/dsh-app-boot@0.2.1-rc.4)(@deepseek-ai/dsh-atomic-write@0.2.1-rc.4)(@deepseek-ai/dsh-timeout@0.2.1-rc.4)(@types/node@25.9.9)
+      '@leon___/dsh-client-liang-intensity-skin':
+        specifier: github:kingOfSoySauce/dsh-liang-skin
+        version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef
       '@nagi-ovo/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
-        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/7496c9b1886ab37df5c7f58bc6c8b5eb92ab7696(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
+        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/af4efe7a59a36d4562b340ff50d771d2691cdc8c(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
       '@sanqi-normal/dsh-webui-market-plugin':
         specifier: github:Sanqi-normal/dsh-webui-market-plugin
         version: https://codeload.github.com/Sanqi-normal/dsh-webui-market-plugin/tar.gz/f0cfc501a9e66b3c77da37e346d311d092cb1e41(react@18.3.1)
@@ -58,7 +61,7 @@ importers:
         version: https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/9ef313c3a0a7e9786f9464cfc23b675ac1dfb8f9
       eac-design-world:
         specifier: github:Ebony-Vinyl/EAC-design-world
-        version: https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/8b3a2167bbd9ffe29974b0b183ce014f48e8332d
+        version: https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/5ec98987fb93b1ff4f17cbe3e567e1a3bcbee4d5
 
 packages:
 
@@ -643,6 +646,10 @@ packages:
   '@jitl/quickjs-wasmfile-release-sync@0.31.0':
     resolution: {integrity: sha512-hYduecOByj9AsAfsJhZh5nA6exokmuFC8cls39+lYmTCGY51bgjJJJwReEu7Ff7vBWaQCL6TeDdVlnp2WYz0jw==}
 
+  '@leon___/dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef':
+    resolution: {gitHosted: true, integrity: sha512-IE/0HsGk18fsn1ddXp690ZdvgqP3KoUhmvc4QiPWF1x+BwUQ9oU4TaMk/6LiDVpcb3cbMVBtV0clphnKfOYzfA==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef}
+    version: 0.1.15-settings.4
+
   '@modelcontextprotocol/sdk@1.30.0':
     resolution: {integrity: sha512-xKd8OIzlqNzcqcNumGAa6g+PW2kjD5vrpcKOnfldAUPP3j7lnqMPwlTXQm8gF+UwH72z0lqaRbjr9hqGz0eITA==}
     engines: {node: '>=18'}
@@ -653,8 +660,8 @@ packages:
       '@cfworker/json-schema':
         optional: true
 
-  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/7496c9b1886ab37df5c7f58bc6c8b5eb92ab7696':
-    resolution: {gitHosted: true, integrity: sha512-HymabAgJFkjSxgj6xBaK3JtFsZVxuNfFjkDdqypyaziHtqCElrGoxJ4EZaLgI/CcZq6M71rQN+wMHFqZM9bq0w==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/7496c9b1886ab37df5c7f58bc6c8b5eb92ab7696}
+  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/af4efe7a59a36d4562b340ff50d771d2691cdc8c':
+    resolution: {gitHosted: true, integrity: sha512-CgoWcIkHzVyyUBGyu6jSdVrhPu2kR5sW0+slwaUcfAQTfQXo4IUFp1kqr1N1a77TU6Pp+xteGHKB+C53Lu7Xhw==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/af4efe7a59a36d4562b340ff50d771d2691cdc8c}
     version: 0.1.9
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -1066,9 +1073,9 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  eac-design-world@https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/8b3a2167bbd9ffe29974b0b183ce014f48e8332d:
-    resolution: {gitHosted: true, integrity: sha512-Zu4qakI7fBYiPOi5ni22KcFGLU8hd9C9cj1+WT75jD1qiwh0AEcvJTT7TlVpCdd1+NVPJgbDNO6RgcPSnlsGtg==, tarball: https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/8b3a2167bbd9ffe29974b0b183ce014f48e8332d}
-    version: 0.6.0
+  eac-design-world@https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/5ec98987fb93b1ff4f17cbe3e567e1a3bcbee4d5:
+    resolution: {gitHosted: true, integrity: sha512-4wXpf5AI6dsM6q4CdIhyHwt1+hRMUqRAo5kBrPRWGbyrN+Q+AAWZQyTf9W/KBTw2Z2ylEKWj7bIZt+MfAvWXnw==, tarball: https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/5ec98987fb93b1ff4f17cbe3e567e1a3bcbee4d5}
+    version: 0.6.1
     engines: {node: '>=22'}
     hasBin: true
 
@@ -2214,6 +2221,8 @@ snapshots:
     dependencies:
       '@jitl/quickjs-ffi-types': 0.31.0
 
+  '@leon___/dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef': {}
+
   '@modelcontextprotocol/sdk@1.30.0':
     dependencies:
       '@hono/node-server': 2.1.1(hono@4.13.7)
@@ -2236,7 +2245,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/7496c9b1886ab37df5c7f58bc6c8b5eb92ab7696(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)':
+  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/af4efe7a59a36d4562b340ff50d771d2691cdc8c(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       react: 18.3.1
@@ -2591,7 +2600,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  eac-design-world@https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/8b3a2167bbd9ffe29974b0b183ce014f48e8332d:
+  eac-design-world@https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/5ec98987fb93b1ff4f17cbe3e567e1a3bcbee4d5:
     dependencies:
       '@modelcontextprotocol/sdk': 1.30.0
       d3: 7.9.0

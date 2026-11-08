@@ -19,13 +19,16 @@ importers:
         version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e(@deepseek-ai/schemastery@3.18.5)'
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/14d5eef97274e47f34f91dcaa833be994ba2a770(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0ddf232ef24a6e38b8ebd73c68b360c39f87adf7(@deepseek-ai/schemastery@3.18.5)
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
       dsh-client-liang-intensity-skin:
         specifier: github:kingOfSoySauce/dsh-liang-skin
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3
+      dsh-dafeiyu:
+        specifier: github:QCYTSN/dsh-dafeiyu
+        version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a
       dsh-damage-pulse:
         specifier: github:wssfk12138/dsh-damage-pulse
         version: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/5af02af66f0548b542734b219cab531f016cbfa4(@deepseek-ai/schemastery@3.18.5)(zod@4.6.7)
@@ -37,7 +40,7 @@ importers:
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101
       dsh-meme:
         specifier: github:yyh-001/dsh-meme
-        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/32e0282b9a3aa4fb4793ad836e3c17b4180dc2c4(@types/node@26.6.6)
+        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/0851c99daac417ae812e0d1066dc27ede8dfb006(@types/node@26.6.6)
       dsh-plugin-bridge:
         specifier: github:Totoro-qaq/dsh-plugin-bridge
         version: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/f6b064482445960ab4c69a41c11191fccbe7216f
@@ -323,8 +326,8 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/14d5eef97274e47f34f91dcaa833be994ba2a770':
-    resolution: {gitHosted: true, integrity: sha512-kkECyTq+pmDI6lc5Y6K+SdXLw/ZTRWptsIeww3b6CJQWCYC8bilfeou7qENCiU0wAlsnWabWQ1NpEFwjIyMnhA==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/14d5eef97274e47f34f91dcaa833be994ba2a770}
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0ddf232ef24a6e38b8ebd73c68b360c39f87adf7':
+    resolution: {gitHosted: true, integrity: sha512-Cy/25mgG8iz+7J7KWjTvACcYgvhzwWS/rgIettDiSaJXRlCso5DzfEK3yhp3VzErXRA5HecX35VibYYr0OxstA==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0ddf232ef24a6e38b8ebd73c68b360c39f87adf7}
     version: 0.5.5
     engines: {node: '>=20.3.0'}
     peerDependencies:
@@ -563,6 +566,15 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-okn8dw8JWDvkky4SNeh7igGtnLH6x1ntFZ1swKN7TEI0GGOx0E3RRAj0mpf6fWtlBkv408LUHajObFi2NNYi7w==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3}
     version: 0.1.7
 
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a:
+    resolution: {gitHosted: true, integrity: sha512-hIZyZNS1nYtLlYEEtz0P120y10RS0j4TfdZuG882xIRN7z++jvdrhXlOFkNDzKkgh302b3I2ycF6/DTota05Sg==, tarball: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a}
+    version: 0.1.23
+    engines: {node: '>=22.19'}
+    bundledDependencies:
+      - '@deepseek-ai/cosmokit'
+      - '@deepseek-ai/schemastery'
+      - '@standard-schema/spec'
+
   dsh-damage-pulse@https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/5af02af66f0548b542734b219cab531f016cbfa4:
     resolution: {gitHosted: true, integrity: sha512-twv/yYgS95rYRE0IeDboNxhZH6w9SMRK3CZEasYbYGXABmnSTNKJJVtXUreMzDxf3vRgA8MVWTxVn6rm+tGyUw==, tarball: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/5af02af66f0548b542734b219cab531f016cbfa4}
     version: 4.3.4
@@ -597,9 +609,9 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-P4ytCwQp0RX6fJ+TiQTL+KtdbgVLZUk3jlF6s1P0Db2KnrDly4fD7v+f7vOgibNEmfZ7N3d+RDR12ln3Y2+RPw==, tarball: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101}
     version: 1.3.37
 
-  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/32e0282b9a3aa4fb4793ad836e3c17b4180dc2c4:
-    resolution: {gitHosted: true, integrity: sha512-VWPRdl04wNKnSNZK1rSvk7+YRyjUFSNcbqXypvd07ZbTJh3SDjHl4S9+ZrUKJlQ6lftCvYf/AuDb6RLgsmjsNQ==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/32e0282b9a3aa4fb4793ad836e3c17b4180dc2c4}
-    version: 0.1.78
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/0851c99daac417ae812e0d1066dc27ede8dfb006:
+    resolution: {gitHosted: true, integrity: sha512-IMH2XowkiyhXYP3B6M8k1lF2JgGSiRV6yKiS58cF6c27KLTg4mW0UBaFPqYZBHffif+yYPAnhFhQVsIqyxEU0g==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/0851c99daac417ae812e0d1066dc27ede8dfb006}
+    version: 0.1.79
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
@@ -1219,7 +1231,7 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/14d5eef97274e47f34f91dcaa833be994ba2a770(@deepseek-ai/schemastery@3.18.5)':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0ddf232ef24a6e38b8ebd73c68b360c39f87adf7(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       '@tencent-connect/qqbot-connector': 1.2.0
@@ -1370,6 +1382,8 @@ snapshots:
 
   dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3: {}
 
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a: {}
+
   dsh-damage-pulse@https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/5af02af66f0548b542734b219cab531f016cbfa4(@deepseek-ai/schemastery@3.18.5)(zod@4.6.7):
     dependencies:
       '@deepseek-ai/dsh-atomic-write': 0.1.7-alpha.2
@@ -1395,7 +1409,7 @@ snapshots:
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101: {}
 
-  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/32e0282b9a3aa4fb4793ad836e3c17b4180dc2c4(@types/node@26.6.6):
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/0851c99daac417ae812e0d1066dc27ede8dfb006(@types/node@26.6.6):
     optionalDependencies:
       sharp: 0.35.5(@types/node@26.6.6)
     transitivePeerDependencies:
