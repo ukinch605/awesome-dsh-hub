@@ -34,10 +34,10 @@ importers:
         version: https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/3eaa46e24776cd8f10d613c84947e884d8e7f10b
       dsh-codex-subscription:
         specifier: github:WSL043/dsh-codex-subscription
-        version: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/7795f5914b78363a0264652e240bd98354834c00(react-dom@19.2.8(react@19.2.8))
+        version: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/45208a49c91d14dc8896868c77df4376c6086151(react-dom@19.2.8(react@19.2.8))
       dsh-computer-use-win:
         specifier: github:Yu-tao-Li/dsh-computer-use-win
-        version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/84557813b79328270a1529cd400e1b8c8f531c17
+        version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/92d6b35273034d4978bbae5f8fb0773754cf0ad5
       dsh-damage-pulse:
         specifier: github:wssfk12138/dsh-damage-pulse
         version: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/5af02af66f0548b542734b219cab531f016cbfa4(zod@4.4.3)
@@ -49,7 +49,10 @@ importers:
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101
       dsh-skin-market:
         specifier: github:kingOfSoySauce/dsh-skin-market
-        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/0c15b253cc5a0a22a584da99b0b76ee7a53d672e(react-dom@19.2.8(react@19.2.8))
+        version: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/dbe3e4787e6914a8a2b6a9376ebd19e2cd8313e3(react-dom@19.2.8(react@19.2.8))
+      open-sea-skin:
+        specifier: github:d-dev0101/open-sea-skin
+        version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/a8e79435d21eac28fbbf2574c60708c912c49ce1
       project-blueprint:
         specifier: github:shuguang1994/project-blueprint
         version: https://codeload.github.com/shuguang1994/project-blueprint/tar.gz/26588c08ab37f02d4c3440ef0b7b1929351cddb6
@@ -1196,8 +1199,8 @@ packages:
     peerDependencies:
       '@deepseek-ai/schemastery': '*'
 
-  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/7795f5914b78363a0264652e240bd98354834c00:
-    resolution: {gitHosted: true, integrity: sha512-quMDdROAPung71fX5jx5GlHfKauTa9xOViaVptkghbrMAgv3tu20A2gyXXBAdknObrrCrjDuB0EGt8bGJDb6rg==, tarball: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/7795f5914b78363a0264652e240bd98354834c00}
+  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/45208a49c91d14dc8896868c77df4376c6086151:
+    resolution: {gitHosted: true, integrity: sha512-bUZhEbvSsOmo9yzGR5rzQs+vWccM84YYJMDDRWWJ4Pf8YnKPz7ERiECt2q1jJQ+sSEpOKJNbzyVRtQ8Mpsa17A==, tarball: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/45208a49c91d14dc8896868c77df4376c6086151}
     version: 3.2.7
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
@@ -1207,7 +1210,6 @@ packages:
       '@deepseek-ai/dsh-client-locale': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-alpha.3 || 0.2.2-rc.1
       '@deepseek-ai/dsh-client-ui-conversation': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-alpha.3 || 0.2.2-rc.1
       '@deepseek-ai/dsh-client-ui-model-selection': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-alpha.3 || 0.2.2-rc.1
-      '@deepseek-ai/dsh-client-ui-primitives': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-alpha.3 || 0.2.2-rc.1
       '@deepseek-ai/dsh-client-ui-settings': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-alpha.3 || 0.2.2-rc.1
       '@deepseek-ai/dsh-client-ui-slots': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-alpha.3 || 0.2.2-rc.1
       '@deepseek-ai/dsh-client-ui-tool': 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-alpha.3 || 0.2.2-rc.1
@@ -1230,9 +1232,9 @@ packages:
       react-dom:
         optional: true
 
-  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/84557813b79328270a1529cd400e1b8c8f531c17:
-    resolution: {gitHosted: true, integrity: sha512-fAkAfbC+8krbOP/d/zArGrT6SmWWDDeaHTrpc8nQdUenaydHWkEaS8lK7QNTF9ACbTcWIzjhcRvjDULL/atZJA==, tarball: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/84557813b79328270a1529cd400e1b8c8f531c17}
-    version: 0.5.5
+  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/92d6b35273034d4978bbae5f8fb0773754cf0ad5:
+    resolution: {gitHosted: true, integrity: sha512-tIpsstbSLgzAPehFjVNyyJGsfVMJH5Dp+hWZSqF4AHpVoE9tA4kxJzIieRKl2Sl1/YFGAGy1y76Zs6O4X6PmwQ==, tarball: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/92d6b35273034d4978bbae5f8fb0773754cf0ad5}
+    version: 0.5.6
     engines: {node: '>=22'}
     os: [win32]
     hasBin: true
@@ -1279,9 +1281,9 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-P4ytCwQp0RX6fJ+TiQTL+KtdbgVLZUk3jlF6s1P0Db2KnrDly4fD7v+f7vOgibNEmfZ7N3d+RDR12ln3Y2+RPw==, tarball: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101}
     version: 1.3.37
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/0c15b253cc5a0a22a584da99b0b76ee7a53d672e:
-    resolution: {gitHosted: true, integrity: sha512-udZaTjYx3eGLhurGNIHIKjYs1Yu2iGPJqS3iVcLrCx+XTv/bkDOeEnEOs4AaugO5P6TXRyYpteEJLvGAZ18+NA==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/0c15b253cc5a0a22a584da99b0b76ee7a53d672e}
-    version: 0.1.75
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/dbe3e4787e6914a8a2b6a9376ebd19e2cd8313e3:
+    resolution: {gitHosted: true, integrity: sha512-Hl4opJo2iqeRo/pHhJU0HXDJvEYfFpbEFC4ajT3EOCsFdhtttab8eW9c50ryzLW7ra4NB9sskHEUkIcBBAHWOw==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/dbe3e4787e6914a8a2b6a9376ebd19e2cd8313e3}
+    version: 0.1.81
     hasBin: true
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -1583,6 +1585,11 @@ packages:
 
   once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
+
+  open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/a8e79435d21eac28fbbf2574c60708c912c49ce1:
+    resolution: {gitHosted: true, integrity: sha512-AT7rsJkpf4N3RWaSBttlTZ6BZj9DuIzQ457mWZdn1h2F8abXCt5O1eOX16x+ygVUoFrZ4V17rmWgd5xR/bUodg==, tarball: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/a8e79435d21eac28fbbf2574c60708c912c49ce1}
+    version: 1.2.8
+    engines: {node: '>=20'}
 
   orderedmap@2.1.1:
     resolution: {integrity: sha512-TvAWxi0nDe1j/rtMcWcIj94+Ffe6n7zhow33h40SKxmsmozs6dz/e+EajymfoFcHd7sxNn8yHM8839uixMOV6g==}
@@ -3330,7 +3337,7 @@ snapshots:
 
   dsh-boot-animation@https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/3eaa46e24776cd8f10d613c84947e884d8e7f10b: {}
 
-  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/7795f5914b78363a0264652e240bd98354834c00(react-dom@19.2.8(react@19.2.8)):
+  dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/45208a49c91d14dc8896868c77df4376c6086151(react-dom@19.2.8(react@19.2.8)):
     dependencies:
       '@deepseek-ai/dsh-home-paths': 0.2.2-rc.1
       https-proxy-agent: 7.0.6
@@ -3342,7 +3349,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/84557813b79328270a1529cd400e1b8c8f531c17: {}
+  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/92d6b35273034d4978bbae5f8fb0773754cf0ad5: {}
 
   dsh-damage-pulse@https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/5af02af66f0548b542734b219cab531f016cbfa4(zod@4.4.3):
     dependencies:
@@ -3368,7 +3375,7 @@ snapshots:
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101: {}
 
-  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/0c15b253cc5a0a22a584da99b0b76ee7a53d672e(react-dom@19.2.8(react@19.2.8)):
+  dsh-skin-market@https://codeload.github.com/kingOfSoySauce/dsh-skin-market/tar.gz/dbe3e4787e6914a8a2b6a9376ebd19e2cd8313e3(react-dom@19.2.8(react@19.2.8)):
     dependencies:
       '@phosphor-icons/react': 2.1.10(react-dom@19.2.8(react@19.2.8))
       '@primer/octicons-react': 19.33.0
@@ -3694,6 +3701,8 @@ snapshots:
   once@1.4.0:
     dependencies:
       wrappy: 1.0.2
+
+  open-sea-skin@https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/a8e79435d21eac28fbbf2574c60708c912c49ce1: {}
 
   orderedmap@2.1.1: {}
 

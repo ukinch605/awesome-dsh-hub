@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@anysearch/anysearch-dsh':
+        specifier: github:anysearch-team/anysearch-dsh
+        version: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
         version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/schemastery@3.18.2)
@@ -22,7 +25,7 @@ importers:
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
-        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/e356e79fcaf3f07b8b4d2b1e0a777c59a76e17d5
+        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/68e09308bdce2d6bc5b2e9773046c93e832c840f
       dsh-git-memory:
         specifier: github:seriousz158/dsh-memory
         version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.2)
@@ -46,9 +49,21 @@ importers:
         version: https://codeload.github.com/adoresever/graph-memory/tar.gz/5841b1987c3967998818764c9d4238add5f3aa7c
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/87d5c56098e986f4d8a51ba5d7c53dd01dd2a6ad(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/c7f7609164c3426ba3cd7c831747d2c7effca6f0(@deepseek-ai/schemastery@3.18.2)
 
 packages:
+
+  '@anysearch/anysearch-dsh@https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03':
+    resolution: {gitHosted: true, integrity: sha512-lfcd+JP9iuNJ80RYIMi33yEYiRFwc+/H4FKe5LQKd/SoYAvE0MOPgh0vQUVYwVxLdEtn3lmc0k8cjEGUMfAZ6g==, tarball: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03}
+    version: 0.1.8
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.1-rc.1 <5 || 4.0.5-alpha.1'
+      '@deepseek-ai/dsh-credentials': '*'
+      '@deepseek-ai/dsh-system-prompt': '*'
+      '@deepseek-ai/dsh-tool-web': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-web': '*'
 
   '@deepseek-ai/cosmokit@1.8.3':
     resolution: {integrity: sha512-qBo+ronVM6Eu2WNVJXi8JcMiqZ19T9BRIpV+5qJUFPXjGH/Z0QKcQMC/IZJ7L394YTOtJgcovbk9qP0w2GsBXQ==}
@@ -185,9 +200,9 @@ packages:
       react:
         optional: true
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/e356e79fcaf3f07b8b4d2b1e0a777c59a76e17d5:
-    resolution: {gitHosted: true, integrity: sha512-u4xdCw5CCjSg1rWV7FbCCLQo9Sr00MALTUk5CCAiyTgWGtNvxS6sjeGKeAwVpxikqr9aOGDUbAuAWxTH9PRdrw==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/e356e79fcaf3f07b8b4d2b1e0a777c59a76e17d5}
-    version: 1.9.58
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/68e09308bdce2d6bc5b2e9773046c93e832c840f:
+    resolution: {gitHosted: true, integrity: sha512-jFh+5UQB8+fczX7Z0eyB4ZhdDBlfcBQuiRuiydRIPaXQqTTnXy6k+S+EVEWUQtVcEHAtLYWgJJuTvkPs+cDt8Q==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/68e09308bdce2d6bc5b2e9773046c93e832c840f}
+    version: 1.9.62
     engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: '>=20'}
     os: [darwin, linux, win32]
     hasBin: true
@@ -291,9 +306,9 @@ packages:
       openclaw:
         optional: true
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/87d5c56098e986f4d8a51ba5d7c53dd01dd2a6ad:
-    resolution: {gitHosted: true, integrity: sha512-9LwAs0rZIvjl69AcNzh1aSSORn+uuyKRlkwSBDGE9m4LaeHeC0wSQkX4uRvvZLEx8CGM+oLmtZ7gpZOz90Kdfg==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/87d5c56098e986f4d8a51ba5d7c53dd01dd2a6ad}
-    version: 3.5.0
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/c7f7609164c3426ba3cd7c831747d2c7effca6f0:
+    resolution: {gitHosted: true, integrity: sha512-KN0QXHKze/S+WSRivs9dRHFB+JxTu2KSD3VRSpPFqPGfrJo/Hxk4qWKrFayHckRcmZcySXtQ/k1NeYxFw+8a5g==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/c7f7609164c3426ba3cd7c831747d2c7effca6f0}
+    version: 3.6.0
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
@@ -311,6 +326,10 @@ packages:
     resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
 snapshots:
+
+  '@anysearch/anysearch-dsh@https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
 
   '@deepseek-ai/cosmokit@1.8.3': {}
 
@@ -362,7 +381,7 @@ snapshots:
     dependencies:
       zod: 4.6.7
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/e356e79fcaf3f07b8b4d2b1e0a777c59a76e17d5:
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/68e09308bdce2d6bc5b2e9773046c93e832c840f:
     dependencies:
       acorn: 8.15.0
       zod: 4.6.6
@@ -387,7 +406,7 @@ snapshots:
     dependencies:
       '@sinclair/typebox': 0.34.52
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/87d5c56098e986f4d8a51ba5d7c53dd01dd2a6ad(@deepseek-ai/schemastery@3.18.2):
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/c7f7609164c3426ba3cd7c831747d2c7effca6f0(@deepseek-ai/schemastery@3.18.2):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.2
 

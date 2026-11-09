@@ -52,16 +52,19 @@ importers:
         version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/c1c4f627d03d95a60dd8bade12212150ed8af276(@deepseek-ai/schemastery@3.18.5)
       dsh-ego-browser:
         specifier: github:Fisfzy/dsh-ego-browser
-        version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/18068f95dc8acab1bc7489b76c201f6147c58a49
+        version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/feb87d60d8fc16349a0373de5209b6f35032b741
       dsh-harmony-next:
         specifier: github:linhay/harmony-next.skills
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101
+      dsh-plugin:
+        specifier: github:dshplugin/dsh-plugin-hub
+        version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/a80c3d1016110aa2ee6519346a737d44ecdd12fa
       dsh-reasoning-effort:
         specifier: github:HanaAyane/dsh-reasoning-effort
-        version: '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/1df90b198a188a9981b8b207bc499466a2f1a161'
+        version: '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7c976269e1628af0140d345fec918a126cd06cdb'
       dsh-video-storyboard:
         specifier: github:SAOS-3624/dsh-video-storyboard
-        version: https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/60aedccd32b7f28815770e0a283f49ebac2e106a
+        version: https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/2ae77249ef06a89e727bf401e24419fcaa407348
       huashu-excel:
         specifier: github:alchaincyf/huashu-excel
         version: https://codeload.github.com/alchaincyf/huashu-excel/tar.gz/2492fabbafc8498496edd70f7e2354016a8dd06e
@@ -71,9 +74,9 @@ importers:
 
 packages:
 
-  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/1df90b198a188a9981b8b207bc499466a2f1a161':
-    resolution: {gitHosted: true, integrity: sha512-ynzKZuZINfU1XSluq1tiGv99IKM5hYC/4ZYX2hCu9WnGAarwSFsBDsXKOxloHQST/kdQrBI3z51OqZHjPOf81g==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/1df90b198a188a9981b8b207bc499466a2f1a161}
-    version: 0.9.1
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7c976269e1628af0140d345fec918a126cd06cdb':
+    resolution: {gitHosted: true, integrity: sha512-T2J6xU1zXaOUDZUeSoAHjjPsxUTv8UgfaIOc01baLKl/X0FwRZsy1D4EVfz0eWoPxm75+4vp3g41HvtVUsPNhQ==, tarball: https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7c976269e1628af0140d345fec918a126cd06cdb}
+    version: 0.9.2
     engines: {dsh: '>=0.2.1-rc.2 <0.3.0', node: '>=22.19'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.5
@@ -811,9 +814,9 @@ packages:
       '@deepseek-ai/schemastery': '>=3.0.0'
       react: '>=18.0.0'
 
-  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/18068f95dc8acab1bc7489b76c201f6147c58a49:
-    resolution: {gitHosted: true, integrity: sha512-K92p5vhCp4aKZ3Q3eJGtVPQU0WPWEzeGU+6sba/G6hN8y/aPxeNYO7WN0ZOYkKoKldgB7zH1yhArVHI3tSVATA==, tarball: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/18068f95dc8acab1bc7489b76c201f6147c58a49}
-    version: 0.9.11
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/feb87d60d8fc16349a0373de5209b6f35032b741:
+    resolution: {gitHosted: true, integrity: sha512-KgnM5cdkESI7RF35gfYFmd1kzJX4YaMckWglzSNiM8v6E2Cfj27JAxIBYXXCrigNPjmb3Y4jWRhoOnkjm3Kyww==, tarball: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/feb87d60d8fc16349a0373de5209b6f35032b741}
+    version: 0.9.13
     engines: {node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-client-locale': '>=0.1.2-rc.1'
@@ -846,8 +849,18 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-P4ytCwQp0RX6fJ+TiQTL+KtdbgVLZUk3jlF6s1P0Db2KnrDly4fD7v+f7vOgibNEmfZ7N3d+RDR12ln3Y2+RPw==, tarball: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101}
     version: 1.3.37
 
-  dsh-video-storyboard@https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/60aedccd32b7f28815770e0a283f49ebac2e106a:
-    resolution: {gitHosted: true, integrity: sha512-RkyXFjbm6e7FVHfON1tqxgGr66oiphAtFD3YBQP9zowRv1scoaWKeqBfuNtCpfT6o+3G5mgwHmTtScyjHQe9LQ==, tarball: https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/60aedccd32b7f28815770e0a283f49ebac2e106a}
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/a80c3d1016110aa2ee6519346a737d44ecdd12fa:
+    resolution: {gitHosted: true, integrity: sha512-XJAuhPBe326lE0VNeBIgMZD6mjUbL5MfiDsa4iyJSDynrBOLdYXW/5ExTgAhg++H+JeKUNrpuXULjgy5tjL5Fw==, tarball: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/a80c3d1016110aa2ee6519346a737d44ecdd12fa}
+    version: 2.3.6
+    engines: {node: '>=22.6'}
+    peerDependencies:
+      '@deepseek-ai/cordis': 4.0.1
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+
+  dsh-video-storyboard@https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/2ae77249ef06a89e727bf401e24419fcaa407348:
+    resolution: {gitHosted: true, integrity: sha512-kpyIUMFLGX/ujvnwsf5bjm2MxTrXR3jjofl+hiAsBtAm7tdf3rSArj7GsgjjOUpm4/BF50GBU18v4Ai1yvZaVA==, tarball: https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/2ae77249ef06a89e727bf401e24419fcaa407348}
     version: 0.7.1
     engines: {node: '>=20'}
     hasBin: true
@@ -1122,7 +1135,7 @@ packages:
 
 snapshots:
 
-  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/1df90b198a188a9981b8b207bc499466a2f1a161':
+  '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/7c976269e1628af0140d345fec918a126cd06cdb':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -1674,14 +1687,16 @@ snapshots:
       '@deepseek-ai/schemastery': 3.18.5
       fzstd: 0.1.1
 
-  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/18068f95dc8acab1bc7489b76c201f6147c58a49:
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/feb87d60d8fc16349a0373de5209b6f35032b741:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       schemastery: 3.18.0
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101: {}
 
-  dsh-video-storyboard@https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/60aedccd32b7f28815770e0a283f49ebac2e106a: {}
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/a80c3d1016110aa2ee6519346a737d44ecdd12fa: {}
+
+  dsh-video-storyboard@https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/2ae77249ef06a89e727bf401e24419fcaa407348: {}
 
   electron-updater@6.8.9:
     dependencies:
