@@ -11,15 +11,18 @@ importers:
       '@anionex/dsh-computer-use':
         specifier: github:Anionex/dsh-computer-use
         version: https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/ea191366d52062acf8d3cc9ec1a6114c6b826101(@deepseek-ai/schemastery@3.18.5)
+      '@anysearch/anysearch-dsh':
+        specifier: github:anysearch-team/anysearch-dsh
+        version: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03
       '@ljwei-stak/dsh-model-router':
         specifier: github:Alice-Marx/dsh-model-router
-        version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e(@deepseek-ai/schemastery@3.18.5)'
+        version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200(@deepseek-ai/schemastery@3.18.5)'
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
         version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0ddf232ef24a6e38b8ebd73c68b360c39f87adf7(@deepseek-ai/schemastery@3.18.5)
       ds-harness-remote:
         specifier: github:liguobao/ds-harness-remote
-        version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/3c1199721fbb75ba0ce9019b03df0fe9f9bb13d2
+        version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/1c8687d3b7bb8167dd23eede1b291cef01736db8
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
@@ -28,7 +31,7 @@ importers:
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
-        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/68e09308bdce2d6bc5b2e9773046c93e832c840f
+        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23
       dsh-dafeiyu:
         specifier: github:QCYTSN/dsh-dafeiyu
         version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a
@@ -89,6 +92,18 @@ packages:
       '@deepseek-ai/dsh-host-webserver':
         optional: true
 
+  '@anysearch/anysearch-dsh@https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03':
+    resolution: {gitHosted: true, integrity: sha512-lfcd+JP9iuNJ80RYIMi33yEYiRFwc+/H4FKe5LQKd/SoYAvE0MOPgh0vQUVYwVxLdEtn3lmc0k8cjEGUMfAZ6g==, tarball: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03}
+    version: 0.1.8
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.1-rc.1 <5 || 4.0.5-alpha.1'
+      '@deepseek-ai/dsh-credentials': '*'
+      '@deepseek-ai/dsh-system-prompt': '*'
+      '@deepseek-ai/dsh-tool-web': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-web': '*'
+
   '@deepseek-ai/cosmokit@1.8.6':
     resolution: {integrity: sha512-ZSD/fN52L498LBIOYwjIOlaLv5veY6ZEwI2yzvZUKQtctn0QAPqu8tKdJ+OF5+Tv6NBq1U+wJWH+QI6OGy5EvQ==}
 
@@ -120,9 +135,9 @@ packages:
   '@jitl/quickjs-wasmfile-release-sync@0.31.0':
     resolution: {integrity: sha512-hYduecOByj9AsAfsJhZh5nA6exokmuFC8cls39+lYmTCGY51bgjJJJwReEu7Ff7vBWaQCL6TeDdVlnp2WYz0jw==}
 
-  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e':
-    resolution: {gitHosted: true, integrity: sha512-/Izf6XJzT6HMNxYfapvF/D5sjm0KhvoOciWgSSEAiVkEnohFR5gFX9ybQkoMHiB3OhaIXNmcSfY7naZy+RJmJw==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e}
-    version: 0.66.4
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200':
+    resolution: {gitHosted: true, integrity: sha512-PCF7tBF9vsx7g5sBXArZHKx0dGus+gw9l4Qt0OLolUULzJLLxFXDG4rrX8/6IQNahKWi/H0Gexg1Haz7crJv6Q==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200}
+    version: 0.68.0
     engines: {node: '>=22.19'}
     peerDependencies:
       '@deepseek-ai/cordis': ~4.0.4
@@ -360,8 +375,8 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/3c1199721fbb75ba0ce9019b03df0fe9f9bb13d2:
-    resolution: {gitHosted: true, integrity: sha512-PlVBiB0VMR+v7PVAtYX8Ve+FtmkOHyLanucIAW56MTOhjKru9mXFtOYD/gLvkXKHRbYsbqTxaSo/Umt5/ZFn2w==, tarball: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/3c1199721fbb75ba0ce9019b03df0fe9f9bb13d2}
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/1c8687d3b7bb8167dd23eede1b291cef01736db8:
+    resolution: {gitHosted: true, integrity: sha512-J+U20HnsXmkKVpqjqOiHg7FTWWNwxpOv8KocgvH+M8PxTHc+akDLZ6RX07DNvRTkzVfLPMGiMeWMwCqXSBNuFQ==, tarball: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/1c8687d3b7bb8167dd23eede1b291cef01736db8}
     version: 0.6.4
     hasBin: true
     peerDependencies:
@@ -456,9 +471,9 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-okn8dw8JWDvkky4SNeh7igGtnLH6x1ntFZ1swKN7TEI0GGOx0E3RRAj0mpf6fWtlBkv408LUHajObFi2NNYi7w==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3}
     version: 0.1.7
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/68e09308bdce2d6bc5b2e9773046c93e832c840f:
-    resolution: {gitHosted: true, integrity: sha512-jFh+5UQB8+fczX7Z0eyB4ZhdDBlfcBQuiRuiydRIPaXQqTTnXy6k+S+EVEWUQtVcEHAtLYWgJJuTvkPs+cDt8Q==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/68e09308bdce2d6bc5b2e9773046c93e832c840f}
-    version: 1.9.62
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23:
+    resolution: {gitHosted: true, integrity: sha512-bPeRGrtOhLwx1S2qfZCZaKHIADgAOP5o609cxcOh/9cKq0ptXsJUF8DRQf7ghc+rTPrlEHDgkE3N9EEX4D191Q==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23}
+    version: 1.9.64
     engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: '>=20'}
     os: [darwin, linux, win32]
     hasBin: true
@@ -610,6 +625,9 @@ packages:
 
   jsonc-parser@3.3.1:
     resolution: {integrity: sha512-HUgH65KyejrUFPvHFPbqOY0rsFip3Bo5wb4ngvdi1EpCYWUQDC5V+Y7mZws+DLkr4M//zQJoanu1SP+87Dv1oQ==}
+
+  jsqr@1.4.0:
+    resolution: {integrity: sha512-dxLob7q65Xg2DvstYkRpkYtmKm2sPJ9oFhrhmudT1dZvNFFTlroai3AWSpLey/w5vMcLBXRgOJsbXpdN9HzU/A==}
 
   locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
@@ -1046,6 +1064,18 @@ packages:
       utf-8-validate:
         optional: true
 
+  ws@8.22.1:
+    resolution: {integrity: sha512-oyL6OPYme/CmiFvNuGzeoxCJ4nOrZE2O1FwM9MWM1AsGri6nLXB2pg+lNA8aLeXMSav0J6eIVS1j6vUPzUtK9g==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
   y18n@4.0.3:
     resolution: {integrity: sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ==}
 
@@ -1096,6 +1126,10 @@ snapshots:
       '@deepseek-ai/schemastery': 3.18.5
       zod: 4.4.3
 
+  '@anysearch/anysearch-dsh@https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+
   '@deepseek-ai/cosmokit@1.8.6': {}
 
   '@deepseek-ai/dsh-atomic-write@0.1.7-alpha.2': {}
@@ -1125,15 +1159,21 @@ snapshots:
     dependencies:
       '@jitl/quickjs-ffi-types': 0.31.0
 
-  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e(@deepseek-ai/schemastery@3.18.5)':
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       '@modelcontextprotocol/server': 2.4.0
       better-sqlite3: 13.0.3
       deep-view: 0.1.0
+      jsqr: 1.4.0
+      qrcode: 1.5.4
+      ws: 8.22.1
     optionalDependencies:
       '@lydell/node-pty': 1.2.0-beta.15
       playwright: 1.64.1
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
 
   '@lydell/node-pty-darwin-arm64@1.2.0-beta.15':
     optional: true
@@ -1330,7 +1370,7 @@ snapshots:
       webidl-conversions: 7.0.0
     optional: true
 
-  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/3c1199721fbb75ba0ce9019b03df0fe9f9bb13d2:
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/1c8687d3b7bb8167dd23eede1b291cef01736db8:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       qrcode: 1.5.4
@@ -1348,7 +1388,7 @@ snapshots:
 
   dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3: {}
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/68e09308bdce2d6bc5b2e9773046c93e832c840f:
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23:
     dependencies:
       acorn: 8.15.0
       zod: 4.6.6
@@ -1423,6 +1463,8 @@ snapshots:
       argparse: 2.0.1
 
   jsonc-parser@3.3.1: {}
+
+  jsqr@1.4.0: {}
 
   locate-path@5.0.0:
     dependencies:
@@ -1658,6 +1700,8 @@ snapshots:
       strip-ansi: 6.0.1
 
   ws@8.22.0: {}
+
+  ws@8.22.1: {}
 
   y18n@4.0.3: {}
 

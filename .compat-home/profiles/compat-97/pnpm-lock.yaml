@@ -25,7 +25,7 @@ importers:
         version: https://codeload.github.com/FylarOpen/dsh-fylar-office-editor/tar.gz/263bedfb3103831ab561f437c36b50bd9062f6f2
       '@michengai/dsh-codex-ui':
         specifier: github:MichengAI/dsh-codex-ui
-        version: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/f0616b6c78f22a913b8d06d3d04215d221de0232(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/468ac7e237e7594578a0997ce4a1e51df0e0ef6c(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@nagi-ovo/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
         version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/af4efe7a59a36d4562b340ff50d771d2691cdc8c(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
@@ -41,18 +41,21 @@ importers:
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
         version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/9c529f526b6fce4eb7a2ceb85ebb0b749f44f928
+      '@zseven-w/dsh-android':
+        specifier: github:ZSeven-W/dsh-android
+        version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8f46b35203b8fb46b649d2a8ca9e2da63b2836c1
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
         version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/c6097b38346ba2e5e9fc21b765448b4ddbcf4f48(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
       dsh-computer-use-win:
         specifier: github:Yu-tao-Li/dsh-computer-use-win
-        version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/92d6b35273034d4978bbae5f8fb0773754cf0ad5(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/e136fcb87b2eb88d7192531b7ab941b475482ec6(@deepseek-ai/schemastery@3.18.5)
       dsh-custom-skin:
         specifier: github:SLin-code/dsh-custom-skin
         version: https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/03d3117fa426d14df4e7a58248adfce094e94633(react@18.3.1)
       dsh-drawai:
         specifier: github:fourzkw/dsh-drawai
-        version: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/aa737d87da702bc03aee5e62bf19f8d4936edf3f
+        version: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/5a9bc3d108d0513fdf85aeb752aa3df2c975848a
       dsh-fish-memory:
         specifier: github:Yuuyuko-uu/dsh-fish-memory
         version: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/9b49f20279835c1fce3e2f924a48ef0da2fd5a75
@@ -217,9 +220,9 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/f0616b6c78f22a913b8d06d3d04215d221de0232':
-    resolution: {gitHosted: true, integrity: sha512-+3YFdAw5s+jvd64rdRwcovDxW5FS18e65qJYKJwd21ju+2hyIiCM7CFZOGrI09Ec7dRhix/ay6gDiMdSJPE7RQ==, tarball: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/f0616b6c78f22a913b8d06d3d04215d221de0232}
-    version: 2.0.21
+  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/468ac7e237e7594578a0997ce4a1e51df0e0ef6c':
+    resolution: {gitHosted: true, integrity: sha512-wH3d2ipiywFBpprKH4yn8BYgeI8YJTGfF5S5t2nStwYfwXdxsAtOeqarrxeFISZT+TYgrrOuclDAEj3dvKQ1UQ==, tarball: https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/468ac7e237e7594578a0997ce4a1e51df0e0ef6c}
+    version: 2.0.22
     engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.2 <5.0.0'
@@ -422,6 +425,11 @@ packages:
     peerDependenciesMeta:
       '@deepseek-ai/dsh-llm':
         optional: true
+
+  '@zseven-w/dsh-android@https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8f46b35203b8fb46b649d2a8ca9e2da63b2836c1':
+    resolution: {gitHosted: true, integrity: sha512-PnGhJPqgju0XB2Np+yQ5R9z67b45tac+pVHChT02m3AiQ1LBoea0EOnCB2SasCGLF5szQOt2u+wEN81FMV4a3g==, tarball: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8f46b35203b8fb46b649d2a8ca9e2da63b2836c1}
+    version: 0.1.0-rc.13
+    engines: {node: '>=24.11.0'}
 
   accepts@2.0.0:
     resolution: {integrity: sha512-5cvg6CtKwfgdmVqY1WIiXKc3Q1bkRqGLi+2W/6ao+6Y7gu/RCwRuAhGEzh5B4KlszSuTLgZYuqFqo5bImjNKng==}
@@ -688,9 +696,9 @@ packages:
       '@deepseek-ai/schemastery': '>=3.0.0'
       react: '>=18.0.0'
 
-  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/92d6b35273034d4978bbae5f8fb0773754cf0ad5:
-    resolution: {gitHosted: true, integrity: sha512-tIpsstbSLgzAPehFjVNyyJGsfVMJH5Dp+hWZSqF4AHpVoE9tA4kxJzIieRKl2Sl1/YFGAGy1y76Zs6O4X6PmwQ==, tarball: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/92d6b35273034d4978bbae5f8fb0773754cf0ad5}
-    version: 0.5.6
+  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/e136fcb87b2eb88d7192531b7ab941b475482ec6:
+    resolution: {gitHosted: true, integrity: sha512-Gl9LtSENYxex/v9/FiGcg7pRqfeRdROYVaUbAwL+uaP/vI6pJKrZGSAFMV07W3UPmTul1f/8aVrnyZooaxGiuQ==, tarball: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/e136fcb87b2eb88d7192531b7ab941b475482ec6}
+    version: 0.5.7
     engines: {node: '>=22'}
     os: [win32]
     hasBin: true
@@ -714,9 +722,9 @@ packages:
       '@deepseek-ai/dsh-client-ui-settings-general': '>=0.1.0-rc.7 <0.2.0-0 || >=0.1.1-rc.1 <0.2.0-0'
       react: ^18.2.0
 
-  dsh-drawai@https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/aa737d87da702bc03aee5e62bf19f8d4936edf3f:
-    resolution: {gitHosted: true, integrity: sha512-tXA8pUl1ox7ilLPofPKR4gS+BZitlp0eoW+nHw36uvt1a8HtqjDF3rxMGnfKddnH5kUimgaK9PbI7vDBqNQNgA==, tarball: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/aa737d87da702bc03aee5e62bf19f8d4936edf3f}
-    version: 0.4.4
+  dsh-drawai@https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/5a9bc3d108d0513fdf85aeb752aa3df2c975848a:
+    resolution: {gitHosted: true, integrity: sha512-3+SwbgTmazNc/UsQzamWtizTUNGXXWhhmm7Vf5TVIMKHx6GwrDPP1E01Pb5XWKyQs6hIDuD8wq4yjviiMLiFFg==, tarball: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/5a9bc3d108d0513fdf85aeb752aa3df2c975848a}
+    version: 0.4.5
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': '>=0.1.0-rc.1 <0.1.0 || >=0.1.5-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0'
@@ -1566,7 +1574,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/f0616b6c78f22a913b8d06d3d04215d221de0232(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@michengai/dsh-codex-ui@https://codeload.github.com/MichengAI/dsh-codex-ui/tar.gz/468ac7e237e7594578a0997ce4a1e51df0e0ef6c(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       lucide-react: 1.64.0(react@18.3.1)
       react: 18.3.1
@@ -1710,6 +1718,8 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+
+  '@zseven-w/dsh-android@https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/8f46b35203b8fb46b649d2a8ca9e2da63b2836c1': {}
 
   accepts@2.0.0:
     dependencies:
@@ -1990,7 +2000,7 @@ snapshots:
       fzstd: 0.1.1
       react: 18.3.1
 
-  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/92d6b35273034d4978bbae5f8fb0773754cf0ad5(@deepseek-ai/schemastery@3.18.5):
+  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/e136fcb87b2eb88d7192531b7ab941b475482ec6(@deepseek-ai/schemastery@3.18.5):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -1998,7 +2008,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  dsh-drawai@https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/aa737d87da702bc03aee5e62bf19f8d4936edf3f:
+  dsh-drawai@https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/5a9bc3d108d0513fdf85aeb752aa3df2c975848a:
     dependencies:
       '@babel/parser': 7.28.5
       '@babel/traverse': 7.28.5

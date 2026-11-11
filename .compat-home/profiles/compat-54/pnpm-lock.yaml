@@ -16,7 +16,10 @@ importers:
         version: https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/1b8753fc905e440cedc06e78a20176398a8b2aff
       '@ljwei-stak/dsh-model-router':
         specifier: github:Alice-Marx/dsh-model-router
-        version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e(@deepseek-ai/schemastery@3.18.5)'
+        version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200(@deepseek-ai/schemastery@3.18.5)'
+      '@mnemon-dev/dsh-mnemon':
+        specifier: github:mnemon-dev/mnemon
+        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/7313b9284d0d15689352cae9a2e563102b4d8e1d
       '@noob-stupid/dsh-plugin-console':
         specifier: github:Noob-stupid/dsh-plugin-hub
         version: https://codeload.github.com/Noob-stupid/dsh-plugin-hub/tar.gz/a22488ef5f32b34d060c1840740dcaf331addf4d
@@ -25,7 +28,7 @@ importers:
         version: https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/6a649fe930aeab4247d3e8b936b6bf393aa71e8c
       dsh-bili-scroll:
         specifier: github:c1overzz/dsh-bili-scroll
-        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1096b042e2d6d35a6ce3a373ebc0be51552e43c7
+        version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/29510a0100d39da437814ce315f8ca4e1c4c211d
       dsh-dafeiyu:
         specifier: github:QCYTSN/dsh-dafeiyu
         version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/dc0dbde9d05899aea663e4b60f0d1727ecee4253
@@ -95,9 +98,9 @@ packages:
       '@deepseek-ai/dsh-typert-protocol': '>=0.2.1-rc.2 <=0.2.1-rc.5'
       react: ^18.2.0
 
-  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e':
-    resolution: {gitHosted: true, integrity: sha512-/Izf6XJzT6HMNxYfapvF/D5sjm0KhvoOciWgSSEAiVkEnohFR5gFX9ybQkoMHiB3OhaIXNmcSfY7naZy+RJmJw==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e}
-    version: 0.66.4
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200':
+    resolution: {gitHosted: true, integrity: sha512-PCF7tBF9vsx7g5sBXArZHKx0dGus+gw9l4Qt0OLolUULzJLLxFXDG4rrX8/6IQNahKWi/H0Gexg1Haz7crJv6Q==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200}
+    version: 0.68.0
     engines: {node: '>=22.19'}
     peerDependencies:
       '@deepseek-ai/cordis': ~4.0.4
@@ -143,6 +146,11 @@ packages:
 
   '@lydell/node-pty@1.2.0-beta.15':
     resolution: {integrity: sha512-Br8wBxzbxFwdWgk9uQ+rdzE0xfoxOK4QuGH54swhRwc5IxP6H9Y1/bcyazRGvNUs6XkB5qNVkezuKSRxUwZe7A==}
+
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/7313b9284d0d15689352cae9a2e563102b4d8e1d':
+    resolution: {gitHosted: true, integrity: sha512-7fWnjmkiSK+D/WNwYpzll8OpbJs6U3CVxBNbiaW4tDKTK8aReyrPGbcI6/v/3hK5/AvkKDlX1bCNVmZmEJPDUg==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/7313b9284d0d15689352cae9a2e563102b4d8e1d}
+    version: 0.1.0
+    engines: {node: '>=20'}
 
   '@modelcontextprotocol/core@2.4.0':
     resolution: {integrity: sha512-z8QBKqdfXLPzkLQuG4xp8hrVEMm1PZ1IgxMN2sMbJiFiAKOWXnAzogXn2W4aqIBlP1ea6U5yiqVquvUNM1Cj6Q==}
@@ -222,6 +230,14 @@ packages:
       react:
         optional: true
 
+  ansi-regex@5.0.1:
+    resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
+    engines: {node: '>=8'}
+
+  ansi-styles@4.3.0:
+    resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
+    engines: {node: '>=8'}
+
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
@@ -229,8 +245,26 @@ packages:
     resolution: {integrity: sha512-RbOBxmLBG8uvFUc15X9+9SFemKcQ0WBuISBVkpuiaUB2qblC8UWlHEjdWVoZ8AdhSwmoEgsiXKfopX0CQxaACQ==}
     engines: {node: '>=22'}
 
+  camelcase@5.3.1:
+    resolution: {integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==}
+    engines: {node: '>=6'}
+
+  cliui@6.0.0:
+    resolution: {integrity: sha512-t6wbgtoCXvAzst7QgXxJYqPt0usEfbgQdftEPbLL/cvv6HPE5VgvqCuAIDR0NgU52ds6rFwqrgakNLrHEjCbrQ==}
+
+  color-convert@2.0.1:
+    resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
+    engines: {node: '>=7.0.0'}
+
+  color-name@1.1.4:
+    resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
+  decamelize@1.2.0:
+    resolution: {integrity: sha512-z2S+W9X73hAUUki+N+9Za2lBlun89zigOyGrsax+KUQ6wKW4ZoWpEYBkGhQjwAjjDCkWxhY0VKEhk8wzY7F5cA==}
+    engines: {node: '>=0.10.0'}
 
   deep-view@0.1.0:
     resolution: {integrity: sha512-INK3vzw/p68GjfIjy06Dgk429VpNRREkzHXTK6BhwrPCeh/3gj7uArBKion7nzBfRQhnoTV6v22Nl0CbVX89Gw==}
@@ -240,8 +274,11 @@ packages:
       '@deepseek-ai/dsh-tools': '*'
       '@deepseek-ai/dsh-web': '*'
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1096b042e2d6d35a6ce3a373ebc0be51552e43c7:
-    resolution: {gitHosted: true, integrity: sha512-pT/vEWMPlF7OJRBl3Zo8Wt1QAF7+00XVnetHBF2v+t6+FGdmBO1CBDwaEZltUtNEQPG5HMgv5MakNBGzKA+4CQ==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1096b042e2d6d35a6ce3a373ebc0be51552e43c7}
+  dijkstrajs@1.0.3:
+    resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
+
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/29510a0100d39da437814ce315f8ca4e1c4c211d:
+    resolution: {gitHosted: true, integrity: sha512-xoFw/sgguvpCEMmRVGtmj7w4qwjgiOOev1w2uObT4At6BA4sAD/w0g8vUDytrH6rzOSLQsxqqdE2dXmJ8t3FrA==, tarball: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/29510a0100d39da437814ce315f8ca4e1c4c211d}
     version: 2.5.1
     engines: {dsh: '>=0.1.7-rc.1', node: '>=22'}
     peerDependencies:
@@ -270,11 +307,178 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-0J/Nm+95QJDAqMELoJ3mjFjY2pP3ELm9Kxp8pLTGE3QRrmNZ6+LvHSIfxct/VaN1aa2G7/oEdxw1LorepPc0tQ==, tarball: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/44b6b3eb65a1d50ceba0afb2c13acdd4a8b81423}
     version: 0.1.0
 
+  dsh-mnemon-provider-byterover@0.5.7:
+    resolution: {integrity: sha512-HSo1NbmLLh8PqWaVvsqbqh6Ay0uFmafq1ukCeAsdJ/IuzjUSu5cuKmKdlsoOD8vBhXCwzmnb96UgEb3cZUod0A==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-hindsight@0.5.7:
+    resolution: {integrity: sha512-sOEThpl56k6DuqSvOrma9ZFMAFmfll/XuUOLZkJ/4nB4M5z/fYvKMTMAmJ2PXUhWPO3KEnOj5m+V5axmrZefbg==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-holographic@0.5.7:
+    resolution: {integrity: sha512-WFzAILBve6zhG1+ZFOxHBNRacMdKyeh3VebfARhQglKRqXYiw4JQAFEFaPwqYx7dZfL6XYySQN/EiLF0idMn9Q==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-honcho@0.5.5:
+    resolution: {integrity: sha512-TKtpODsQ6MeLZ1zCgca37s656u9q89M1SimTqSvT6/GCRiqi9A0mAbqAj1uzAMcbTuHOYAr3hFSAQYo55TbcXQ==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-mem0@0.5.5:
+    resolution: {integrity: sha512-rxCSNx/TTMeaj7BjneMYtQOUjzNFiYB/7rFPZitBzQGdJmzVrm1KVDPZplXvHZaZ2XdQ86yfT1R+Le7NLjvrsQ==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-mnemon-native@0.5.11:
+    resolution: {integrity: sha512-rS/XVk6kd6JWXg+qM2zzm+ycRWQrTg9aBBSn56ZgJbL5y8l1+LTBTPslc1rJ4tWSHwtqYPBjWmeY9IYvRWMLMA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-openviking@0.5.10:
+    resolution: {integrity: sha512-S/e/zdEOHvHcuY7yrQuvAX2OKRXVRLqg+2CJU0ZM0EHT1G6/uscO8PsCbwXAjTcTvCO8fzkzbnC0TmkPXxIObg==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-retaindb@0.5.6:
+    resolution: {integrity: sha512-NyvMiF3G+WEmEYFyWrI7FhWdQAGYQnPWzLY2/K42ip5eV9ycVvMkeA6igowwvPbvVWuN7zdCFOGPHg+iNYT3Bw==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-supermemory@0.5.5:
+    resolution: {integrity: sha512-IvBpeRV1Gl/gACasyQZ9UmdsJhEoO3frzi2+SrOBqDuMqfus4kgdcadBMFcZJzrtq65h30arIRcSIIB3ZZda+w==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-source-documents@0.6.0:
+    resolution: {integrity: sha512-QMBavZq3GrVW1n/ByDhEaSBjOIGxysf1iXKM1I4KZiFN+TmmSeLDSpLI2vRS0ern2FbZ6hiPaojRX32eFQjuWA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.40
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-source-memory-spaces@0.5.26:
+    resolution: {integrity: sha512-pdnGMHzd9ykrp4YQlcJ9iOlLUvQHCxwgB0TBdOBfkY4UVOJmQd38HQ0AMWUnsq5TRhqiuzs4xSixaBPn76TVKA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.19
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-source-runtime@0.5.19:
+    resolution: {integrity: sha512-FcHkcn9v53cwYS5Mp7Nhn2PH6hzV945Ua6PKGXUUlyz96+1bvk/VJkG4UYI/89HEMq7WiwwNE9aJI7sHD5OznA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.43
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-source-skills@0.5.10:
+    resolution: {integrity: sha512-OIyGyf+AhLghsQ0XxMIuk6CU5mWQj0zUevpjfcADQGplHwZ5W0vIx/QO3SEwQ0CSWI+3Ij6Dvn4Byllpkc5Hrg==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.37
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-strategy-auto-capture@0.5.5:
+    resolution: {integrity: sha512-jSCjednHJmDatWavhhDly8dnoNuclImx2H0U0EB8OgMw00xXXL/nWOHQLxKabOJnEykaDdl2EX7rTBX5xTuOJw==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.17
+
+  dsh-mnemon-strategy-default-three-tier@0.5.13:
+    resolution: {integrity: sha512-02/CEgd1fKqnD18nwxkiZsWXSmXIAuL/SlPOAioRPrqbB2py6lWhJEsgXZfmaGidwtUfwsyr/t6V04bA2noDPQ==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.43
+
+  dsh-mnemon-strategy-general@0.5.2:
+    resolution: {integrity: sha512-8pbutlZ9Lo4T5MY7rLf6zCbwUzRoDtYLxot/Vsb0KMirHc2Ec/Tckao/OPm9StxtJ71K5RRGexZQve17Yh6ZGA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.43
+
+  dsh-mnemon-strategy-light-context@0.5.6:
+    resolution: {integrity: sha512-rpuIqIiFQpWQEveQehLaO3b1wX1NeAEMUKChZ8NFa4+RwcPAX47t081VgRAWNnw4NgclenAenp9mTAQXOzmmxA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.17
+
+  dsh-mnemon-strategy-scoped@0.5.5:
+    resolution: {integrity: sha512-HyJRpv4s8DzE9GZm7FnKUhxtwjv0eD9xcsYt5zQUbX1pH0e7jtkqaeozPfPgp0DHvjmv2nOaKOxDLzaw3B01qg==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.17
+
+  dsh-mnemon@0.5.43:
+    resolution: {integrity: sha512-uSb1vOs6nS52ADzUFrZCGyEfv/jymBbfGYSE8WG47WxldU2lrMnhKsgtEgz1rz1Wd857MwcRhYO/VdWKIoMfSg==}
+    engines: {dsh: '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0', node: '>=20'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.4
+      '@deepseek-ai/dsh-app-boot': '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-typert-protocol': '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0'
+      react: ^18.2.0
+      react-dom: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-app-boot':
+        optional: true
+
   echarts@6.1.0:
     resolution: {integrity: sha512-q0yaFPggC9FUdsWH4blavRWFmxdrIodbkoKNAjJudAI6CA9gNPxHtV2RcZNEepZVlk4yvBYkOkbk6HIVpIyHZA==}
 
+  emoji-regex@8.0.0:
+    resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
+
   fflate@0.8.3:
     resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
+
+  find-up@4.1.0:
+    resolution: {integrity: sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==}
+    engines: {node: '>=8'}
+
+  get-caller-file@2.0.5:
+    resolution: {integrity: sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==}
+    engines: {node: 6.* || 8.* || >= 10.*}
 
   graph-memory@https://codeload.github.com/adoresever/graph-memory/tar.gz/5841b1987c3967998818764c9d4238add5f3aa7c:
     resolution: {gitHosted: true, integrity: sha512-dQtAK37MMyD4MST+Ta4juG6CCHn8OpkdHA7Bz62qJygmu79htK3rla83KAEueNK4Pl1kVxqFwoThqfOqTwljKA==, tarball: https://codeload.github.com/adoresever/graph-memory/tar.gz/5841b1987c3967998818764c9d4238add5f3aa7c}
@@ -292,13 +496,49 @@ packages:
       openclaw:
         optional: true
 
+  is-fullwidth-code-point@3.0.0:
+    resolution: {integrity: sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==}
+    engines: {node: '>=8'}
+
   js-yaml@4.3.1:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
     hasBin: true
 
+  jsqr@1.4.0:
+    resolution: {integrity: sha512-dxLob7q65Xg2DvstYkRpkYtmKm2sPJ9oFhrhmudT1dZvNFFTlroai3AWSpLey/w5vMcLBXRgOJsbXpdN9HzU/A==}
+
+  locate-path@5.0.0:
+    resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
+    engines: {node: '>=8'}
+
+  markdown-to-jsx@7.7.17:
+    resolution: {integrity: sha512-7mG/1feQ0TX5I7YyMZVDgCC/y2I3CiEhIRQIhyov9nGBP5eoVrOXXHuL5ZP8GRfxVZKRiXWJgwXkb9It+nQZfQ==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      react: '>= 0.14.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+
   node-addon-api@8.9.2:
     resolution: {integrity: sha512-VijLXbi3UACN69I0JVXJsX4tjACjNoQDgv2gTF6sx2wWEi8tkSg2eX8p5gSIFi8z2+DL3oHmY6OyKce38SDolg==}
     engines: {node: ^18 || ^20 || >= 21}
+
+  p-limit@2.3.0:
+    resolution: {integrity: sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==}
+    engines: {node: '>=6'}
+
+  p-locate@4.1.0:
+    resolution: {integrity: sha512-R79ZZ/0wAxKGu3oYMlz8jy/kbhsNrS7SKZ7PxEHBgJ5+F2mtFW2fK2cOtBh1cHYkQsbzFV7I+EoRKe6Yt0oK7A==}
+    engines: {node: '>=8'}
+
+  p-try@2.2.0:
+    resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
+    engines: {node: '>=6'}
+
+  path-exists@4.0.0:
+    resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
+    engines: {node: '>=8'}
 
   playwright-core@1.64.1:
     resolution: {integrity: sha512-BC4s8y6SEVA6Q1rSxZTto8hI1KUI3xXlHGZgvGqP4IqPdI/a6FX9H29IDNz7vKo9l21b6LfYosScPL6M3xxyDQ==}
@@ -310,11 +550,73 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
+  pngjs@5.0.0:
+    resolution: {integrity: sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==}
+    engines: {node: '>=10.13.0'}
+
+  qrcode@1.5.4:
+    resolution: {integrity: sha512-1ca71Zgiu6ORjHqFBDpnSMTR2ReToX4l1Au1VFLyVeBTFavzQnv5JxMFr3ukHVKpSrSA2MCk0lNJSykjUfz7Zg==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+
+  require-directory@2.1.1:
+    resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
+    engines: {node: '>=0.10.0'}
+
+  require-main-filename@2.0.0:
+    resolution: {integrity: sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==}
+
   schemastery@3.18.0:
     resolution: {integrity: sha512-Jw2uxjoyyqc/yeurmChUEc/jbi8GsrdXV/KmqRUDZXJAXAmrJiPsz8vKa17l/VckyzljHZ9oGaul443CQiXxtA==}
 
+  set-blocking@2.0.0:
+    resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
+
+  string-width@4.2.3:
+    resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
+    engines: {node: '>=8'}
+
+  strip-ansi@6.0.1:
+    resolution: {integrity: sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==}
+    engines: {node: '>=8'}
+
   tslib@2.3.0:
     resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+
+  which-module@2.0.1:
+    resolution: {integrity: sha512-iBdZ57RDvnOR9AGBhML2vFZf7h8vmBjhoaZqODJBFWHVtKkDmKuHai3cx5PgVMrX5YDNp27AofYbAwctSS+vhQ==}
+
+  wrap-ansi@6.2.0:
+    resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
+    engines: {node: '>=8'}
+
+  ws@8.22.1:
+    resolution: {integrity: sha512-oyL6OPYme/CmiFvNuGzeoxCJ4nOrZE2O1FwM9MWM1AsGri6nLXB2pg+lNA8aLeXMSav0J6eIVS1j6vUPzUtK9g==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
+  y18n@4.0.3:
+    resolution: {integrity: sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ==}
+
+  yaml@2.9.1:
+    resolution: {integrity: sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
+  yargs-parser@18.1.3:
+    resolution: {integrity: sha512-o50j0JeToy/4K6OZcaQmW6lyXXKhq7csREXcDwk2omFPJEwUNOVtJKvmDr9EI1fAJZUyZcRF7kxGBWmRXudrCQ==}
+    engines: {node: '>=6'}
+
+  yargs@15.4.1:
+    resolution: {integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==}
+    engines: {node: '>=8'}
 
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
@@ -360,15 +662,21 @@ snapshots:
       '@deepseek-ai/schemastery': 3.18.5
       zod: 4.4.3
 
-  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e(@deepseek-ai/schemastery@3.18.5)':
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       '@modelcontextprotocol/server': 2.4.0
       better-sqlite3: 13.0.3
       deep-view: 0.1.0
+      jsqr: 1.4.0
+      qrcode: 1.5.4
+      ws: 8.22.1
     optionalDependencies:
       '@lydell/node-pty': 1.2.0-beta.15
       playwright: 1.64.1
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
 
   '@lydell/node-pty-darwin-arm64@1.2.0-beta.15':
     optional: true
@@ -398,6 +706,16 @@ snapshots:
       '@lydell/node-pty-win32-x64': 1.2.0-beta.15
     optional: true
 
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/7313b9284d0d15689352cae9a2e563102b4d8e1d':
+    dependencies:
+      dsh-mnemon: 0.5.43
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis'
+      - '@deepseek-ai/dsh-app-boot'
+      - '@deepseek-ai/dsh-typert-protocol'
+      - react
+      - react-dom
+
   '@modelcontextprotocol/core@2.4.0':
     dependencies:
       zod: 4.4.3
@@ -423,17 +741,41 @@ snapshots:
       schemastery: 3.18.0
       zod: 4.4.3
 
+  ansi-regex@5.0.1: {}
+
+  ansi-styles@4.3.0:
+    dependencies:
+      color-convert: 2.0.1
+
   argparse@2.0.1: {}
 
   better-sqlite3@13.0.3:
     dependencies:
       node-addon-api: 8.9.2
 
+  camelcase@5.3.1: {}
+
+  cliui@6.0.0:
+    dependencies:
+      string-width: 4.2.3
+      strip-ansi: 6.0.1
+      wrap-ansi: 6.2.0
+
+  color-convert@2.0.1:
+    dependencies:
+      color-name: 1.1.4
+
+  color-name@1.1.4: {}
+
   cosmokit@1.8.1: {}
+
+  decamelize@1.2.0: {}
 
   deep-view@0.1.0: {}
 
-  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/1096b042e2d6d35a6ce3a373ebc0be51552e43c7:
+  dijkstrajs@1.0.3: {}
+
+  dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/29510a0100d39da437814ce315f8ca4e1c4c211d:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -443,22 +785,157 @@ snapshots:
 
   dsh-memory-evolve@https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/44b6b3eb65a1d50ceba0afb2c13acdd4a8b81423: {}
 
+  dsh-mnemon-provider-byterover@0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+
+  dsh-mnemon-provider-hindsight@0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+
+  dsh-mnemon-provider-holographic@0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+
+  dsh-mnemon-provider-honcho@0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+
+  dsh-mnemon-provider-mem0@0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+
+  dsh-mnemon-provider-mnemon-native@0.5.11(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+
+  dsh-mnemon-provider-openviking@0.5.10(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+
+  dsh-mnemon-provider-retaindb@0.5.6(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+
+  dsh-mnemon-provider-supermemory@0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+
+  dsh-mnemon-source-documents@0.6.0(dsh-mnemon@0.5.43):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      dsh-mnemon: 0.5.43
+      markdown-to-jsx: 7.7.17
+
+  dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      dsh-mnemon: 0.5.43
+
+  dsh-mnemon-source-runtime@0.5.19(dsh-mnemon@0.5.43):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      dsh-mnemon: 0.5.43
+
+  dsh-mnemon-source-skills@0.5.10(dsh-mnemon@0.5.43):
+    dependencies:
+      dsh-mnemon: 0.5.43
+      markdown-to-jsx: 7.7.17
+      yaml: 2.9.1
+
+  dsh-mnemon-strategy-auto-capture@0.5.5(dsh-mnemon@0.5.43):
+    dependencies:
+      dsh-mnemon: 0.5.43
+
+  dsh-mnemon-strategy-default-three-tier@0.5.13(dsh-mnemon@0.5.43):
+    dependencies:
+      dsh-mnemon: 0.5.43
+
+  dsh-mnemon-strategy-general@0.5.2(dsh-mnemon@0.5.43):
+    dependencies:
+      dsh-mnemon: 0.5.43
+
+  dsh-mnemon-strategy-light-context@0.5.6(dsh-mnemon@0.5.43):
+    dependencies:
+      dsh-mnemon: 0.5.43
+
+  dsh-mnemon-strategy-scoped@0.5.5(dsh-mnemon@0.5.43):
+    dependencies:
+      dsh-mnemon: 0.5.43
+
+  dsh-mnemon@0.5.43:
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.6
+      '@deepseek-ai/schemastery': 3.18.5
+      dsh-mnemon-provider-byterover: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
+      dsh-mnemon-provider-hindsight: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
+      dsh-mnemon-provider-holographic: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
+      dsh-mnemon-provider-honcho: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
+      dsh-mnemon-provider-mem0: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
+      dsh-mnemon-provider-mnemon-native: 0.5.11(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
+      dsh-mnemon-provider-openviking: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
+      dsh-mnemon-provider-retaindb: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
+      dsh-mnemon-provider-supermemory: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
+      dsh-mnemon-source-documents: 0.6.0(dsh-mnemon@0.5.43)
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+      dsh-mnemon-source-runtime: 0.5.19(dsh-mnemon@0.5.43)
+      dsh-mnemon-source-skills: 0.5.10(dsh-mnemon@0.5.43)
+      dsh-mnemon-strategy-auto-capture: 0.5.5(dsh-mnemon@0.5.43)
+      dsh-mnemon-strategy-default-three-tier: 0.5.13(dsh-mnemon@0.5.43)
+      dsh-mnemon-strategy-general: 0.5.2(dsh-mnemon@0.5.43)
+      dsh-mnemon-strategy-light-context: 0.5.6(dsh-mnemon@0.5.43)
+      dsh-mnemon-strategy-scoped: 0.5.5(dsh-mnemon@0.5.43)
+      fflate: 0.8.3
+      yaml: 2.9.1
+      zod: 4.4.3
+
   echarts@6.1.0:
     dependencies:
       tslib: 2.3.0
       zrender: 6.1.0
 
+  emoji-regex@8.0.0: {}
+
   fflate@0.8.3: {}
+
+  find-up@4.1.0:
+    dependencies:
+      locate-path: 5.0.0
+      path-exists: 4.0.0
+
+  get-caller-file@2.0.5: {}
 
   graph-memory@https://codeload.github.com/adoresever/graph-memory/tar.gz/5841b1987c3967998818764c9d4238add5f3aa7c:
     dependencies:
       '@sinclair/typebox': 0.34.52
 
+  is-fullwidth-code-point@3.0.0: {}
+
   js-yaml@4.3.1:
     dependencies:
       argparse: 2.0.1
 
+  jsqr@1.4.0: {}
+
+  locate-path@5.0.0:
+    dependencies:
+      p-locate: 4.1.0
+
+  markdown-to-jsx@7.7.17: {}
+
   node-addon-api@8.9.2: {}
+
+  p-limit@2.3.0:
+    dependencies:
+      p-try: 2.2.0
+
+  p-locate@4.1.0:
+    dependencies:
+      p-limit: 2.3.0
+
+  p-try@2.2.0: {}
+
+  path-exists@4.0.0: {}
 
   playwright-core@1.64.1:
     optional: true
@@ -468,12 +945,69 @@ snapshots:
       playwright-core: 1.64.1
     optional: true
 
+  pngjs@5.0.0: {}
+
+  qrcode@1.5.4:
+    dependencies:
+      dijkstrajs: 1.0.3
+      pngjs: 5.0.0
+      yargs: 15.4.1
+
+  require-directory@2.1.1: {}
+
+  require-main-filename@2.0.0: {}
+
   schemastery@3.18.0:
     dependencies:
       '@standard-schema/spec': 1.1.0
       cosmokit: 1.8.1
 
+  set-blocking@2.0.0: {}
+
+  string-width@4.2.3:
+    dependencies:
+      emoji-regex: 8.0.0
+      is-fullwidth-code-point: 3.0.0
+      strip-ansi: 6.0.1
+
+  strip-ansi@6.0.1:
+    dependencies:
+      ansi-regex: 5.0.1
+
   tslib@2.3.0: {}
+
+  which-module@2.0.1: {}
+
+  wrap-ansi@6.2.0:
+    dependencies:
+      ansi-styles: 4.3.0
+      string-width: 4.2.3
+      strip-ansi: 6.0.1
+
+  ws@8.22.1: {}
+
+  y18n@4.0.3: {}
+
+  yaml@2.9.1: {}
+
+  yargs-parser@18.1.3:
+    dependencies:
+      camelcase: 5.3.1
+      decamelize: 1.2.0
+
+  yargs@15.4.1:
+    dependencies:
+      cliui: 6.0.0
+      decamelize: 1.2.0
+      find-up: 4.1.0
+      get-caller-file: 2.0.5
+      require-directory: 2.1.1
+      require-main-filename: 2.0.0
+      set-blocking: 2.0.0
+      string-width: 4.2.3
+      which-module: 2.0.1
+      y18n: 4.0.3
+      yargs-parser: 18.1.3
 
   zod@4.4.3: {}
 

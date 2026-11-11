@@ -16,7 +16,7 @@ importers:
         version: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8
       '@ljwei-stak/dsh-model-router':
         specifier: github:Alice-Marx/dsh-model-router
-        version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e(@deepseek-ai/schemastery@3.18.5)'
+        version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200(@deepseek-ai/schemastery@3.18.5)'
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
         version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0ddf232ef24a6e38b8ebd73c68b360c39f87adf7(@deepseek-ai/schemastery@3.18.5)
@@ -26,6 +26,9 @@ importers:
       dsh-client-liang-intensity-skin:
         specifier: github:kingOfSoySauce/dsh-liang-skin
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3
+      dsh-cost-meter:
+        specifier: github:Han-1413141/dsh-cost-meter
+        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23
       dsh-dafeiyu:
         specifier: github:QCYTSN/dsh-dafeiyu
         version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a
@@ -40,7 +43,7 @@ importers:
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101
       dsh-meme:
         specifier: github:yyh-001/dsh-meme
-        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/0851c99daac417ae812e0d1066dc27ede8dfb006(@types/node@26.6.6)
+        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/19db20dc1346fdeaf54aad576b5740c1815a8423(@types/node@26.6.6)
       dsh-plugin-bridge:
         specifier: github:Totoro-qaq/dsh-plugin-bridge
         version: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/f6b064482445960ab4c69a41c11191fccbe7216f
@@ -261,9 +264,9 @@ packages:
   '@jitl/quickjs-wasmfile-release-sync@0.31.0':
     resolution: {integrity: sha512-hYduecOByj9AsAfsJhZh5nA6exokmuFC8cls39+lYmTCGY51bgjJJJwReEu7Ff7vBWaQCL6TeDdVlnp2WYz0jw==}
 
-  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e':
-    resolution: {gitHosted: true, integrity: sha512-/Izf6XJzT6HMNxYfapvF/D5sjm0KhvoOciWgSSEAiVkEnohFR5gFX9ybQkoMHiB3OhaIXNmcSfY7naZy+RJmJw==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e}
-    version: 0.66.4
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200':
+    resolution: {gitHosted: true, integrity: sha512-PCF7tBF9vsx7g5sBXArZHKx0dGus+gw9l4Qt0OLolUULzJLLxFXDG4rrX8/6IQNahKWi/H0Gexg1Haz7crJv6Q==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200}
+    version: 0.68.0
     engines: {node: '>=22.19'}
     peerDependencies:
       '@deepseek-ai/cordis': ~4.0.4
@@ -366,6 +369,11 @@ packages:
 
   '@types/yauzl@2.10.3':
     resolution: {integrity: sha512-oJoftv0LSuaDZE3Le4DbKX+KS9G36NzOeSap90UIK0yMA/NhKJhqlSGtNDORNRaIbQfzjXDrQa0ytJ6mNRGz/Q==}
+
+  acorn@8.15.0:
+    resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
 
   agent-base@7.1.4:
     resolution: {integrity: sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==}
@@ -566,6 +574,16 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-okn8dw8JWDvkky4SNeh7igGtnLH6x1ntFZ1swKN7TEI0GGOx0E3RRAj0mpf6fWtlBkv408LUHajObFi2NNYi7w==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3}
     version: 0.1.7
 
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23:
+    resolution: {gitHosted: true, integrity: sha512-bPeRGrtOhLwx1S2qfZCZaKHIADgAOP5o609cxcOh/9cKq0ptXsJUF8DRQf7ghc+rTPrlEHDgkE3N9EEX4D191Q==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23}
+    version: 1.9.64
+    engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: '>=20'}
+    os: [darwin, linux, win32]
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/dsh-credentials': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0 || >=0.2.2-0 <0.3.0-0'
+      '@deepseek-ai/dsh-home-paths': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0 || >=0.2.2-0 <0.3.0-0'
+
   dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a:
     resolution: {gitHosted: true, integrity: sha512-hIZyZNS1nYtLlYEEtz0P120y10RS0j4TfdZuG882xIRN7z++jvdrhXlOFkNDzKkgh302b3I2ycF6/DTota05Sg==, tarball: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a}
     version: 0.1.23
@@ -609,9 +627,9 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-P4ytCwQp0RX6fJ+TiQTL+KtdbgVLZUk3jlF6s1P0Db2KnrDly4fD7v+f7vOgibNEmfZ7N3d+RDR12ln3Y2+RPw==, tarball: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101}
     version: 1.3.37
 
-  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/0851c99daac417ae812e0d1066dc27ede8dfb006:
-    resolution: {gitHosted: true, integrity: sha512-IMH2XowkiyhXYP3B6M8k1lF2JgGSiRV6yKiS58cF6c27KLTg4mW0UBaFPqYZBHffif+yYPAnhFhQVsIqyxEU0g==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/0851c99daac417ae812e0d1066dc27ede8dfb006}
-    version: 0.1.79
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/19db20dc1346fdeaf54aad576b5740c1815a8423:
+    resolution: {gitHosted: true, integrity: sha512-kjL9yIHZSrSyg37WSPiy0fvbT8cNYtijCBMwJRb//13+05HgUbJWcE5Q4e9j5dR/3GDERGEk/w9Dxtl3kbaXiw==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/19db20dc1346fdeaf54aad576b5740c1815a8423}
+    version: 0.1.81
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
@@ -747,6 +765,9 @@ packages:
   js-yaml@4.3.2:
     resolution: {integrity: sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==}
     hasBin: true
+
+  jsqr@1.4.0:
+    resolution: {integrity: sha512-dxLob7q65Xg2DvstYkRpkYtmKm2sPJ9oFhrhmudT1dZvNFFTlroai3AWSpLey/w5vMcLBXRgOJsbXpdN9HzU/A==}
 
   locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
@@ -979,6 +1000,18 @@ packages:
       utf-8-validate:
         optional: true
 
+  ws@8.22.1:
+    resolution: {integrity: sha512-oyL6OPYme/CmiFvNuGzeoxCJ4nOrZE2O1FwM9MWM1AsGri6nLXB2pg+lNA8aLeXMSav0J6eIVS1j6vUPzUtK9g==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
   y18n@4.0.3:
     resolution: {integrity: sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ==}
 
@@ -1016,6 +1049,9 @@ packages:
 
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
+
+  zod@4.6.6:
+    resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
 
   zod@4.6.7:
     resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
@@ -1167,15 +1203,21 @@ snapshots:
     dependencies:
       '@jitl/quickjs-ffi-types': 0.31.0
 
-  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/288a7cd13a503379250acd159f22b4424336025e(@deepseek-ai/schemastery@3.18.5)':
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       '@modelcontextprotocol/server': 2.4.0
       better-sqlite3: 13.0.3
       deep-view: 0.1.0
+      jsqr: 1.4.0
+      qrcode: 1.5.4
+      ws: 8.22.1
     optionalDependencies:
       '@lydell/node-pty': 1.2.0-beta.15
       playwright: 1.64.1
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
 
   '@lydell/node-pty-darwin-arm64@1.2.0-beta.15':
     optional: true
@@ -1267,6 +1309,8 @@ snapshots:
     dependencies:
       '@types/node': 26.6.6
     optional: true
+
+  acorn@8.15.0: {}
 
   agent-base@7.1.4: {}
 
@@ -1382,6 +1426,11 @@ snapshots:
 
   dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3: {}
 
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23:
+    dependencies:
+      acorn: 8.15.0
+      zod: 4.6.6
+
   dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a: {}
 
   dsh-damage-pulse@https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/5af02af66f0548b542734b219cab531f016cbfa4(@deepseek-ai/schemastery@3.18.5)(zod@4.6.7):
@@ -1409,7 +1458,7 @@ snapshots:
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101: {}
 
-  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/0851c99daac417ae812e0d1066dc27ede8dfb006(@types/node@26.6.6):
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/19db20dc1346fdeaf54aad576b5740c1815a8423(@types/node@26.6.6):
     optionalDependencies:
       sharp: 0.35.5(@types/node@26.6.6)
     transitivePeerDependencies:
@@ -1512,6 +1561,8 @@ snapshots:
   js-yaml@4.3.2:
     dependencies:
       argparse: 2.0.1
+
+  jsqr@1.4.0: {}
 
   locate-path@5.0.0:
     dependencies:
@@ -1800,6 +1851,8 @@ snapshots:
 
   ws@8.22.0: {}
 
+  ws@8.22.1: {}
+
   y18n@4.0.3: {}
 
   y18n@5.0.8: {}
@@ -1845,5 +1898,7 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   zod@3.25.76: {}
+
+  zod@4.6.6: {}
 
   zod@4.6.7: {}

@@ -17,9 +17,12 @@ importers:
       '@dsh-external/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
         version: '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/af4efe7a59a36d4562b340ff50d771d2691cdc8c(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)'
+      '@ljwei-stak/dsh-model-route-bot':
+        specifier: github:Alice-Marx/dsh-model-router
+        version: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200(@deepseek-ai/schemastery@3.18.5)
       '@mnemon-dev/dsh-mnemon':
         specifier: github:mnemon-dev/mnemon
-        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/bbc9151234e0c4f563a0d581e4bc2d5a2d4f83ec(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/7313b9284d0d15689352cae9a2e563102b4d8e1d(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@shengsheng/dsh-taskboard':
         specifier: github:shengsheng90/DSH-taskboard
         version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
@@ -37,13 +40,13 @@ importers:
         version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
-        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/7ff56f349f879e9b36ba11a7fcb056c0e3b60b1c
+        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23
       dsh-free-search:
         specifier: github:DDDMUC/dsh-free-search
-        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/da9779fb41411c7d2bd9efa6e8ab291950b789d4(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
+        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/11b4b8cc7d19cb1e5b3c5e2ad98ab5f3291572a5(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
       dsh-mnemon:
         specifier: github:omdsh-dev/dsh-mnemon
-        version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       eac-design-world:
         specifier: github:Ebony-Vinyl/EAC-design-world
         version: https://codeload.github.com/Ebony-Vinyl/EAC-design-world/tar.gz/5ec98987fb93b1ff4f17cbe3e567e1a3bcbee4d5
@@ -115,9 +118,62 @@ packages:
     peerDependencies:
       hono: ^4 || ^5.0.0-0
 
-  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/bbc9151234e0c4f563a0d581e4bc2d5a2d4f83ec':
-    resolution: {gitHosted: true, integrity: sha512-kgcOvPdqKZimskO6a8Z1Us4E5g7IDPIklEGhvFMgFQprEVm2vsLT2po7t6+h7Us6w6sFzCv5EWKHMxeMC9WAlg==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/bbc9151234e0c4f563a0d581e4bc2d5a2d4f83ec}
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200':
+    resolution: {gitHosted: true, integrity: sha512-PCF7tBF9vsx7g5sBXArZHKx0dGus+gw9l4Qt0OLolUULzJLLxFXDG4rrX8/6IQNahKWi/H0Gexg1Haz7crJv6Q==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200}
+    version: 0.68.0
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.4
+      '@deepseek-ai/dsh-commands': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3
+      '@deepseek-ai/dsh-llm': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3
+      '@deepseek-ai/dsh-sandbox': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3
+      '@deepseek-ai/dsh-scope': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3
+      '@deepseek-ai/dsh-settings': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3
+      '@deepseek-ai/dsh-tools': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3
+      '@deepseek-ai/dsh-typert-protocol': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3
+      '@deepseek-ai/dsh-web': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3
+      '@deepseek-ai/schemastery': ~3.18.4
+
+  '@lydell/node-pty-darwin-arm64@1.2.0-beta.15':
+    resolution: {integrity: sha512-6TSBbzdcLiNTHl1mTuzflqXrkmcC36USVGvERoDgvHk2ItEDaMaFZuAJ1CqPmwYj0DyhCS16TVS8OGK9xZnjyQ==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@lydell/node-pty-darwin-x64@1.2.0-beta.15':
+    resolution: {integrity: sha512-yDT2oqPqYMBScyuk1U9Rg5VKcrbMOD9o9jWYYamDADA3NSbUISroPChrqYRQ74Y7BQtNH4gqYAiWOZRi5uQZ0Q==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@lydell/node-pty-linux-arm64@1.2.0-beta.15':
+    resolution: {integrity: sha512-wkbNF7dYAmtJv+o2+iztVlNwnUB4B0uX0wh/UD+mwMcmE2gNMnW9GChXO7fEE5XJokD0vB5idiHpGegaN+G/sg==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@lydell/node-pty-linux-x64@1.2.0-beta.15':
+    resolution: {integrity: sha512-+U/5AVvHT6W+8OCYcnJgN0Qgc0ycO3TfD6aaFJHK+WHij797f8gsi5dV1HEO9l6YQmWCD+VL5gaLDhx3mxHwCA==}
+    cpu: [x64]
+    os: [linux]
+
+  '@lydell/node-pty-win32-arm64@1.2.0-beta.15':
+    resolution: {integrity: sha512-pyAk91w7wnnKrD4mrHXtIXRfmzSWV5bEzvRhurXcMCtCc2TJ424ciUskIgWMhAPP6y3KyUnqElj+U6kY3iOt0A==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@lydell/node-pty-win32-x64@1.2.0-beta.15':
+    resolution: {integrity: sha512-2f8twEmDVxZ7drchAXjtevpmSPhFok0avAnzXro4t5gmz0xsPNKkoZvymwtuIS3xo7PzQqZOPQ/YzwEMb7oIzQ==}
+    cpu: [x64]
+    os: [win32]
+
+  '@lydell/node-pty@1.2.0-beta.15':
+    resolution: {integrity: sha512-Br8wBxzbxFwdWgk9uQ+rdzE0xfoxOK4QuGH54swhRwc5IxP6H9Y1/bcyazRGvNUs6XkB5qNVkezuKSRxUwZe7A==}
+
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/7313b9284d0d15689352cae9a2e563102b4d8e1d':
+    resolution: {gitHosted: true, integrity: sha512-7fWnjmkiSK+D/WNwYpzll8OpbJs6U3CVxBNbiaW4tDKTK8aReyrPGbcI6/v/3hK5/AvkKDlX1bCNVmZmEJPDUg==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/7313b9284d0d15689352cae9a2e563102b4d8e1d}
     version: 0.1.0
+    engines: {node: '>=20'}
+
+  '@modelcontextprotocol/core@2.4.0':
+    resolution: {integrity: sha512-z8QBKqdfXLPzkLQuG4xp8hrVEMm1PZ1IgxMN2sMbJiFiAKOWXnAzogXn2W4aqIBlP1ea6U5yiqVquvUNM1Cj6Q==}
     engines: {node: '>=20'}
 
   '@modelcontextprotocol/sdk@1.32.2':
@@ -129,6 +185,10 @@ packages:
     peerDependenciesMeta:
       '@cfworker/json-schema':
         optional: true
+
+  '@modelcontextprotocol/server@2.4.0':
+    resolution: {integrity: sha512-rgR9yxSaAJ+bcsi/XroT/S2AfPiIWloXAnrdfYSCms9ivVju0ishu/wW0J21Ho6+ZOR1r7RyeRbjiRuF87ix5Q==}
+    engines: {node: '>=20'}
 
   '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/af4efe7a59a36d4562b340ff50d771d2691cdc8c':
     resolution: {gitHosted: true, integrity: sha512-CgoWcIkHzVyyUBGyu6jSdVrhPu2kR5sW0+slwaUcfAQTfQXo4IUFp1kqr1N1a77TU6Pp+xteGHKB+C53Lu7Xhw==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/af4efe7a59a36d4562b340ff50d771d2691cdc8c}
@@ -347,6 +407,10 @@ packages:
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
+  better-sqlite3@13.0.3:
+    resolution: {integrity: sha512-RbOBxmLBG8uvFUc15X9+9SFemKcQ0WBuISBVkpuiaUB2qblC8UWlHEjdWVoZ8AdhSwmoEgsiXKfopX0CQxaACQ==}
+    engines: {node: '>=22'}
+
   body-parser@2.4.0:
     resolution: {integrity: sha512-Ifk1KcLrxaGt1occQagQNFNNOqRt1LFuehEnHHzB8Z6cRgIxRU1TBaiIsUiCdA+gy5PL7Y1IX31DNKkRmxtXjQ==}
     engines: {node: '>=18'}
@@ -564,6 +628,14 @@ packages:
     resolution: {integrity: sha512-z2S+W9X73hAUUki+N+9Za2lBlun89zigOyGrsax+KUQ6wKW4ZoWpEYBkGhQjwAjjDCkWxhY0VKEhk8wzY7F5cA==}
     engines: {node: '>=0.10.0'}
 
+  deep-view@0.1.0:
+    resolution: {integrity: sha512-INK3vzw/p68GjfIjy06Dgk429VpNRREkzHXTK6BhwrPCeh/3gj7uArBKion7nzBfRQhnoTV6v22Nl0CbVX89Gw==}
+    peerDependencies:
+      '@deepseek-ai/cordis': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-web': '*'
+
   delaunator@5.1.0:
     resolution: {integrity: sha512-AGrQ4QSgssa1NGmWmLPqN5NY2KajF5MqxetNEO+o0n3ZwZZeTmt7bBnvzHWrmkZFxGgr4HdyFgelzgi06otLuQ==}
 
@@ -586,9 +658,9 @@ packages:
       '@deepseek-ai/dsh-settings': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
       '@deepseek-ai/dsh-subprocess': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/7ff56f349f879e9b36ba11a7fcb056c0e3b60b1c:
-    resolution: {gitHosted: true, integrity: sha512-79Xz+5BCELppzdk21ZPR7hbxuswP6wlyeRQmIHKtv4qYdS/IJANPJh6pVr/k8wsQTRHXMrJdkuCowhOyU0umNg==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/7ff56f349f879e9b36ba11a7fcb056c0e3b60b1c}
-    version: 1.9.60
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23:
+    resolution: {gitHosted: true, integrity: sha512-bPeRGrtOhLwx1S2qfZCZaKHIADgAOP5o609cxcOh/9cKq0ptXsJUF8DRQf7ghc+rTPrlEHDgkE3N9EEX4D191Q==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23}
+    version: 1.9.64
     engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: '>=20'}
     os: [darwin, linux, win32]
     hasBin: true
@@ -596,9 +668,9 @@ packages:
       '@deepseek-ai/dsh-credentials': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0 || >=0.2.2-0 <0.3.0-0'
       '@deepseek-ai/dsh-home-paths': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0 || >=0.2.2-0 <0.3.0-0'
 
-  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/da9779fb41411c7d2bd9efa6e8ab291950b789d4:
-    resolution: {gitHosted: true, integrity: sha512-4B00ITyxOc3Gk8r5KkQswR4n3gHycTdqp8cm1hypPMEXz5GHQ9WOwSKSaFk2CXbzpHKgnS1f7t/WvhCzRdMXEw==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/da9779fb41411c7d2bd9efa6e8ab291950b789d4}
-    version: 0.9.39
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/11b4b8cc7d19cb1e5b3c5e2ad98ab5f3291572a5:
+    resolution: {gitHosted: true, integrity: sha512-h//5KuSIfHOQpwX7vhmGIpcm9SgPHBW/2aG8m73PepOMESowU0XmMchlu5z5W2uutFFuteERODUmkXEybZDssA==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/11b4b8cc7d19cb1e5b3c5e2ad98ab5f3291572a5}
+    version: 0.9.43
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -627,8 +699,9 @@ packages:
       react:
         optional: true
 
-  dsh-mnemon-provider-byterover@0.5.6:
-    resolution: {integrity: sha512-cr0vyl5c3Ia+FZNhx9tgtswrLTLWApM6EF0BmO2zAnxLp2hlbi9T3gg5NPaTxqXANuPmOBChQ6iDc+6/QYIvaA==}
+  dsh-mnemon-provider-byterover@0.5.7:
+    resolution: {integrity: sha512-HSo1NbmLLh8PqWaVvsqbqh6Ay0uFmafq1ukCeAsdJ/IuzjUSu5cuKmKdlsoOD8vBhXCwzmnb96UgEb3cZUod0A==}
+    version: 0.5.7
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -636,7 +709,6 @@ packages:
 
   dsh-mnemon-provider-hindsight@0.5.7:
     resolution: {integrity: sha512-sOEThpl56k6DuqSvOrma9ZFMAFmfll/XuUOLZkJ/4nB4M5z/fYvKMTMAmJ2PXUhWPO3KEnOj5m+V5axmrZefbg==}
-    version: 0.5.7
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -651,7 +723,6 @@ packages:
 
   dsh-mnemon-provider-honcho@0.5.5:
     resolution: {integrity: sha512-TKtpODsQ6MeLZ1zCgca37s656u9q89M1SimTqSvT6/GCRiqi9A0mAbqAj1uzAMcbTuHOYAr3hFSAQYo55TbcXQ==}
-    version: 0.5.5
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -659,14 +730,13 @@ packages:
 
   dsh-mnemon-provider-mem0@0.5.5:
     resolution: {integrity: sha512-rxCSNx/TTMeaj7BjneMYtQOUjzNFiYB/7rFPZitBzQGdJmzVrm1KVDPZplXvHZaZ2XdQ86yfT1R+Le7NLjvrsQ==}
-    version: 0.5.5
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon-source-memory-spaces: ^0.5.1
 
-  dsh-mnemon-provider-mnemon-native@0.5.10:
-    resolution: {integrity: sha512-5UXVMlgcOPGuhl4SOFY6GoG2a1Wq6m644wlvvM9dOXMv78AGchLD3bTotmCn4eu99r1nUWgEcJqzTtdeEpUJZg==}
+  dsh-mnemon-provider-mnemon-native@0.5.11:
+    resolution: {integrity: sha512-rS/XVk6kd6JWXg+qM2zzm+ycRWQrTg9aBBSn56ZgJbL5y8l1+LTBTPslc1rJ4tWSHwtqYPBjWmeY9IYvRWMLMA==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -674,6 +744,7 @@ packages:
 
   dsh-mnemon-provider-openviking@0.5.10:
     resolution: {integrity: sha512-S/e/zdEOHvHcuY7yrQuvAX2OKRXVRLqg+2CJU0ZM0EHT1G6/uscO8PsCbwXAjTcTvCO8fzkzbnC0TmkPXxIObg==}
+    version: 0.5.10
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -688,6 +759,7 @@ packages:
 
   dsh-mnemon-provider-supermemory@0.5.5:
     resolution: {integrity: sha512-IvBpeRV1Gl/gACasyQZ9UmdsJhEoO3frzi2+SrOBqDuMqfus4kgdcadBMFcZJzrtq65h30arIRcSIIB3ZZda+w==}
+    version: 0.5.5
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -695,6 +767,7 @@ packages:
 
   dsh-mnemon-source-documents@0.6.0:
     resolution: {integrity: sha512-QMBavZq3GrVW1n/ByDhEaSBjOIGxysf1iXKM1I4KZiFN+TmmSeLDSpLI2vRS0ern2FbZ6hiPaojRX32eFQjuWA==}
+    version: 0.6.0
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -704,8 +777,8 @@ packages:
       react:
         optional: true
 
-  dsh-mnemon-source-memory-spaces@0.5.25:
-    resolution: {integrity: sha512-N3DFxAasXt/lICcE2QiXxmydrs8DMYyZFmZCf8HXU0AmVhGy18GNEqujZTBN1+mPdydmzoUCORRVXnq8GrWwFg==}
+  dsh-mnemon-source-memory-spaces@0.5.26:
+    resolution: {integrity: sha512-pdnGMHzd9ykrp4YQlcJ9iOlLUvQHCxwgB0TBdOBfkY4UVOJmQd38HQ0AMWUnsq5TRhqiuzs4xSixaBPn76TVKA==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -715,8 +788,9 @@ packages:
       react:
         optional: true
 
-  dsh-mnemon-source-runtime@0.5.18:
-    resolution: {integrity: sha512-RCkgSsmKRpTaDkTCyMV+23JNCzp6X2zCwt4jHG3y4k4Qy8SnRPABCsE5lSAHJbgMTSZNt1n2AH6LHuxPNw1P8w==}
+  dsh-mnemon-source-memory-spaces@0.5.27:
+    resolution: {integrity: sha512-Vha4m0Acu1cwoKMJzeVb4kqiFVjHWYihrkFxMM7ouhWGKBE9+33DjXfWDD0aCi4AT4bNAWere63/8v/at8IwOg==}
+    version: 0.5.27
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -726,8 +800,32 @@ packages:
       react:
         optional: true
 
-  dsh-mnemon-source-skills@0.5.9:
-    resolution: {integrity: sha512-NmEgxWCAwRpzXO1NOLb2+u49zOQypNHSyO00eCvFwme0/HmuAwKsoZVr3HC+RDFNuQV48FmyANFRggLeVZCi6A==}
+  dsh-mnemon-source-runtime@0.5.19:
+    resolution: {integrity: sha512-FcHkcn9v53cwYS5Mp7Nhn2PH6hzV945Ua6PKGXUUlyz96+1bvk/VJkG4UYI/89HEMq7WiwwNE9aJI7sHD5OznA==}
+    version: 0.5.19
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.43
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-source-skills@0.5.10:
+    resolution: {integrity: sha512-OIyGyf+AhLghsQ0XxMIuk6CU5mWQj0zUevpjfcADQGplHwZ5W0vIx/QO3SEwQ0CSWI+3Ij6Dvn4Byllpkc5Hrg==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.37
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-source-skills@0.5.11:
+    resolution: {integrity: sha512-p1KL2VgMpwCr5otdQSmLvMD8D+7nlDqTF0bImIZ3e2y/KUf+1Pyn6ie8e9E0BuY8pu5IINc3lFMcH6qaspUdLw==}
+    version: 0.5.11
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -739,25 +837,25 @@ packages:
 
   dsh-mnemon-strategy-auto-capture@0.5.5:
     resolution: {integrity: sha512-jSCjednHJmDatWavhhDly8dnoNuclImx2H0U0EB8OgMw00xXXL/nWOHQLxKabOJnEykaDdl2EX7rTBX5xTuOJw==}
-    version: 0.5.5
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon: ^0.5.17
 
-  dsh-mnemon-strategy-default-three-tier@0.5.12:
-    resolution: {integrity: sha512-lNGBdyPBJUA5MSgn1tY1OSDtc9HrS1lf0/mZh/0ZCorJwQcxoBy4Ho007VeNRHETeIcmSVSljXBpy4I5DXpMpA==}
+  dsh-mnemon-strategy-default-three-tier@0.5.13:
+    resolution: {integrity: sha512-02/CEgd1fKqnD18nwxkiZsWXSmXIAuL/SlPOAioRPrqbB2py6lWhJEsgXZfmaGidwtUfwsyr/t6V04bA2noDPQ==}
+    version: 0.5.13
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      dsh-mnemon: ^0.5.17
+      dsh-mnemon: ^0.5.43
 
-  dsh-mnemon-strategy-general@0.5.1:
-    resolution: {integrity: sha512-UzJWKRPyMwVCcVKYuWI5DjDjGvq3cBA24xl2zGhSvAXY32E8KiiYVleAvle4XIhmAfRbjCcZNCFpQGKZTXuz7g==}
+  dsh-mnemon-strategy-general@0.5.2:
+    resolution: {integrity: sha512-8pbutlZ9Lo4T5MY7rLf6zCbwUzRoDtYLxot/Vsb0KMirHc2Ec/Tckao/OPm9StxtJ71K5RRGexZQve17Yh6ZGA==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      dsh-mnemon: ^0.5.17
+      dsh-mnemon: ^0.5.43
 
   dsh-mnemon-strategy-light-context@0.5.6:
     resolution: {integrity: sha512-rpuIqIiFQpWQEveQehLaO3b1wX1NeAEMUKChZ8NFa4+RwcPAX47t081VgRAWNnw4NgclenAenp9mTAQXOzmmxA==}
@@ -769,14 +867,13 @@ packages:
 
   dsh-mnemon-strategy-scoped@0.5.5:
     resolution: {integrity: sha512-HyJRpv4s8DzE9GZm7FnKUhxtwjv0eD9xcsYt5zQUbX1pH0e7jtkqaeozPfPgp0DHvjmv2nOaKOxDLzaw3B01qg==}
-    version: 0.5.5
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon: ^0.5.17
 
-  dsh-mnemon@0.5.42:
-    resolution: {integrity: sha512-LXAhVZexnox+swoa/uP2zQO7S674/5Ek0veXJe8vpKKQ0+0aMdAlsa5U5yEmXdazoy6Yq/WdAjkPesL6Bg28kA==}
+  dsh-mnemon@0.5.43:
+    resolution: {integrity: sha512-uSb1vOs6nS52ADzUFrZCGyEfv/jymBbfGYSE8WG47WxldU2lrMnhKsgtEgz1rz1Wd857MwcRhYO/VdWKIoMfSg==}
     engines: {dsh: '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0', node: '>=20'}
     hasBin: true
     peerDependencies:
@@ -789,9 +886,9 @@ packages:
       '@deepseek-ai/dsh-app-boot':
         optional: true
 
-  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4:
-    resolution: {gitHosted: true, integrity: sha512-lXPSTlRZvjDigBAwphfFvy4bEo5QiyrZULhOqstQZWrH0TUNg5+ZOHaJgjoD6bWlyetGaza2DYqzA3P/g9SffA==, tarball: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4}
-    version: 0.5.42
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e:
+    resolution: {gitHosted: true, integrity: sha512-5DXLEIGwj1JXamANje3LcoSZQxZlmkRUxMeGvkLo6/EVOv/ig0GEHEVQh0h6rgzQAvi/wx2tYyDaP5sGqQQ32Q==, tarball: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e}
+    version: 0.5.44
     engines: {dsh: '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0', node: '>=20'}
     hasBin: true
     peerDependencies:
@@ -990,6 +1087,9 @@ packages:
   json-schema-typed@8.0.2:
     resolution: {integrity: sha512-fQhoXdcvc3V28x7C7BMs4P5+kNlgUURe2jmUT1T//oBRMDrqy1QPelJimwZGo7Hg9VPV3EQV5Bnq4hbFy2vetA==}
 
+  jsqr@1.4.0:
+    resolution: {integrity: sha512-dxLob7q65Xg2DvstYkRpkYtmKm2sPJ9oFhrhmudT1dZvNFFTlroai3AWSpLey/w5vMcLBXRgOJsbXpdN9HzU/A==}
+
   jszip@3.10.2:
     resolution: {integrity: sha512-3l+rb15IOWtUhU0H5MFqES/T6Kh7abYwjosBey/vD6hDt8zoEffkSC5Ws5SGtgVw3gBx2NEbhTeSW1+kWkpyTQ==}
 
@@ -1044,6 +1144,10 @@ packages:
   negotiator@1.1.0:
     resolution: {integrity: sha512-NMPBRMJgiQHjbd8phG3Vebdx4kZ1H121rbl5IkMqeOsahptB9BKo/d7oJ3zTXqTgagn2bWlNSXkh0QUGM31RYg==}
     engines: {node: '>=18'}
+
+  node-addon-api@8.9.2:
+    resolution: {integrity: sha512-VijLXbi3UACN69I0JVXJsX4tjACjNoQDgv2gTF6sx2wWEi8tkSg2eX8p5gSIFi8z2+DL3oHmY6OyKce38SDolg==}
+    engines: {node: ^18 || ^20 || >= 21}
 
   object-assign@4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
@@ -1110,8 +1214,18 @@ packages:
     resolution: {integrity: sha512-wQ0b/W4Fr01qtpHlqSqspcj3EhBvimsdh0KlHhH8HRZnMsEa0ea2fTULOXOS9ccQr3om+GcGRk4e+isrZWV8qQ==}
     engines: {node: '>=16.20.0'}
 
+  playwright-core@1.64.1:
+    resolution: {integrity: sha512-BC4s8y6SEVA6Q1rSxZTto8hI1KUI3xXlHGZgvGqP4IqPdI/a6FX9H29IDNz7vKo9l21b6LfYosScPL6M3xxyDQ==}
+    engines: {node: '>=20'}
+    hasBin: true
+
   playwright-core@1.65.0:
     resolution: {integrity: sha512-vNSKgH6YqtN7cdT/L334zo0a+YwkrpicyrHJlWWPIm/Q+Nn2SWInil01oT0mbu96U4GgoRtCYQD9CzJQgju+lA==}
+    engines: {node: '>=20'}
+    hasBin: true
+
+  playwright@1.64.1:
+    resolution: {integrity: sha512-HCrVhHr5QQuwYoswEUGTb7gGp522yflbv/ST8nF4sFWGuLjQCt17Q/EubpGGSNKYn1tsTCPZxqHhHCfVURu7UA==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -1331,6 +1445,18 @@ packages:
       utf-8-validate:
         optional: true
 
+  ws@8.22.1:
+    resolution: {integrity: sha512-oyL6OPYme/CmiFvNuGzeoxCJ4nOrZE2O1FwM9MWM1AsGri6nLXB2pg+lNA8aLeXMSav0J6eIVS1j6vUPzUtK9g==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
   y18n@4.0.3:
     resolution: {integrity: sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ==}
 
@@ -1412,15 +1538,63 @@ snapshots:
     dependencies:
       hono: 4.13.17
 
-  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/bbc9151234e0c4f563a0d581e4bc2d5a2d4f83ec(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/d90e6594a4005ba419c70c15416e73fe2a007200(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
-      dsh-mnemon: 0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@deepseek-ai/schemastery': 3.18.5
+      '@modelcontextprotocol/server': 2.4.0
+      better-sqlite3: 13.0.3
+      deep-view: 0.1.0
+      jsqr: 1.4.0
+      qrcode: 1.5.4
+      ws: 8.22.1
+    optionalDependencies:
+      '@lydell/node-pty': 1.2.0-beta.15
+      playwright: 1.64.1
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
+  '@lydell/node-pty-darwin-arm64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-darwin-x64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-linux-arm64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-linux-x64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-win32-arm64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty-win32-x64@1.2.0-beta.15':
+    optional: true
+
+  '@lydell/node-pty@1.2.0-beta.15':
+    optionalDependencies:
+      '@lydell/node-pty-darwin-arm64': 1.2.0-beta.15
+      '@lydell/node-pty-darwin-x64': 1.2.0-beta.15
+      '@lydell/node-pty-linux-arm64': 1.2.0-beta.15
+      '@lydell/node-pty-linux-x64': 1.2.0-beta.15
+      '@lydell/node-pty-win32-arm64': 1.2.0-beta.15
+      '@lydell/node-pty-win32-x64': 1.2.0-beta.15
+    optional: true
+
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/7313b9284d0d15689352cae9a2e563102b4d8e1d(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      dsh-mnemon: 0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
       - '@deepseek-ai/cordis'
       - '@deepseek-ai/dsh-app-boot'
       - '@deepseek-ai/dsh-typert-protocol'
       - react
       - react-dom
+
+  '@modelcontextprotocol/core@2.4.0':
+    dependencies:
+      zod: 4.6.7
 
   '@modelcontextprotocol/sdk@1.32.2':
     dependencies:
@@ -1443,6 +1617,11 @@ snapshots:
       zod-to-json-schema: 3.25.2(zod@4.6.7)
     transitivePeerDependencies:
       - supports-color
+
+  '@modelcontextprotocol/server@2.4.0':
+    dependencies:
+      '@modelcontextprotocol/core': 2.4.0
+      zod: 4.6.7
 
   '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/af4efe7a59a36d4562b340ff50d771d2691cdc8c(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)':
     dependencies:
@@ -1524,6 +1703,10 @@ snapshots:
       color-convert: 2.0.1
 
   argparse@2.0.1: {}
+
+  better-sqlite3@13.0.3:
+    dependencies:
+      node-addon-api: 8.9.2
 
   body-parser@2.4.0:
     dependencies:
@@ -1757,6 +1940,8 @@ snapshots:
 
   decamelize@1.2.0: {}
 
+  deep-view@0.1.0: {}
+
   delaunator@5.1.0:
     dependencies:
       robust-predicates: 3.0.3
@@ -1767,238 +1952,238 @@ snapshots:
 
   dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59: {}
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/7ff56f349f879e9b36ba11a7fcb056c0e3b60b1c:
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23:
     dependencies:
       acorn: 8.15.0
       zod: 4.6.6
 
-  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/da9779fb41411c7d2bd9efa6e8ab291950b789d4(@deepseek-ai/schemastery@3.18.5)(react@18.3.1):
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/11b4b8cc7d19cb1e5b3c5e2ad98ab5f3291572a5(@deepseek-ai/schemastery@3.18.5)(react@18.3.1):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
       react: 18.3.1
 
-  dsh-mnemon-provider-byterover@0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-byterover@0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-byterover@0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-byterover@0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-hindsight@0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-hindsight@0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-hindsight@0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-hindsight@0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-holographic@0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-holographic@0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-holographic@0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-holographic@0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-honcho@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-honcho@0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-honcho@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-honcho@0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-mem0@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-mem0@0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-mem0@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-mem0@0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-mnemon-native@0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-mnemon-native@0.5.11(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-mnemon-native@0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-mnemon-native@0.5.11(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-openviking@0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-openviking@0.5.10(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-openviking@0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-openviking@0.5.10(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-retaindb@0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-retaindb@0.5.6(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-retaindb@0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-retaindb@0.5.6(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-supermemory@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-supermemory@0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-provider-supermemory@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-provider-supermemory@0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-source-documents@0.6.0(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+  dsh-mnemon-source-documents@0.6.0(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: 0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: 0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       markdown-to-jsx: 7.7.17(react@18.3.1)
     optionalDependencies:
       react: 18.3.1
 
-  dsh-mnemon-source-documents@0.6.0(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+  dsh-mnemon-source-documents@0.6.0(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       markdown-to-jsx: 7.7.17(react@18.3.1)
     optionalDependencies:
       react: 18.3.1
 
-  dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+  dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: 0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: 0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     optionalDependencies:
       react: 18.3.1
 
-  dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+  dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     optionalDependencies:
       react: 18.3.1
 
-  dsh-mnemon-source-runtime@0.5.18(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+  dsh-mnemon-source-runtime@0.5.19(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: 0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: 0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     optionalDependencies:
       react: 18.3.1
 
-  dsh-mnemon-source-runtime@0.5.18(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+  dsh-mnemon-source-runtime@0.5.19(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     optionalDependencies:
       react: 18.3.1
 
-  dsh-mnemon-source-skills@0.5.9(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+  dsh-mnemon-source-skills@0.5.10(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
-      dsh-mnemon: 0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      markdown-to-jsx: 7.7.17(react@18.3.1)
-      yaml: 2.9.1
-    optionalDependencies:
-      react: 18.3.1
-
-  dsh-mnemon-source-skills@0.5.9(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
-    dependencies:
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: 0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       markdown-to-jsx: 7.7.17(react@18.3.1)
       yaml: 2.9.1
     optionalDependencies:
       react: 18.3.1
 
-  dsh-mnemon-strategy-auto-capture@0.5.5(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-source-skills@0.5.11(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
-      dsh-mnemon: 0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      markdown-to-jsx: 7.7.17(react@18.3.1)
+      yaml: 2.9.1
+    optionalDependencies:
+      react: 18.3.1
 
-  dsh-mnemon-strategy-auto-capture@0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-strategy-auto-capture@0.5.5(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: 0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-strategy-default-three-tier@0.5.12(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-strategy-auto-capture@0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon: 0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-strategy-default-three-tier@0.5.12(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-strategy-default-three-tier@0.5.13(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: 0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-strategy-general@0.5.1(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-strategy-default-three-tier@0.5.13(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon: 0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-strategy-general@0.5.1(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-strategy-general@0.5.2(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: 0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-strategy-light-context@0.5.6(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-strategy-general@0.5.2(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon: 0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-strategy-light-context@0.5.6(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-strategy-light-context@0.5.6(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: 0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-strategy-scoped@0.5.5(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-strategy-light-context@0.5.6(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon: 0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon-strategy-scoped@0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  dsh-mnemon-strategy-scoped@0.5.5(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
-      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-mnemon: 0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  dsh-mnemon-strategy-scoped@0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+    dependencies:
+      dsh-mnemon: https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+
+  dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.6
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon-provider-byterover: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-hindsight: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-holographic: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-honcho: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-mem0: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-mnemon-native: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-openviking: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-retaindb: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-supermemory: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-source-documents: 0.6.0(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
-      dsh-mnemon-source-runtime: 0.5.18(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
-      dsh-mnemon-source-skills: 0.5.9(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
-      dsh-mnemon-strategy-auto-capture: 0.5.5(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-strategy-default-three-tier: 0.5.12(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-strategy-general: 0.5.1(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-strategy-light-context: 0.5.6(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-strategy-scoped: 0.5.5(dsh-mnemon@0.5.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-byterover: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-hindsight: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-holographic: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-honcho: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-mem0: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-mnemon-native: 0.5.11(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-openviking: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-retaindb: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-supermemory: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-source-documents: 0.6.0(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-runtime: 0.5.19(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-skills: 0.5.10(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-strategy-auto-capture: 0.5.5(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-strategy-default-three-tier: 0.5.13(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-strategy-general: 0.5.2(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-strategy-light-context: 0.5.6(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-strategy-scoped: 0.5.5(dsh-mnemon@0.5.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       fflate: 0.8.3
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       yaml: 2.9.1
       zod: 4.6.7
 
-  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.6
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon-provider-byterover: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-hindsight: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-holographic: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-honcho: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-mem0: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-mnemon-native: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-openviking: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-retaindb: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-provider-supermemory: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-source-documents: 0.6.0(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
-      dsh-mnemon-source-runtime: 0.5.18(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
-      dsh-mnemon-source-skills: 0.5.9(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
-      dsh-mnemon-strategy-auto-capture: 0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-strategy-default-three-tier: 0.5.12(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-strategy-general: 0.5.1(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-strategy-light-context: 0.5.6(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      dsh-mnemon-strategy-scoped: 0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/ee080a7371759928c97c581621713819f31507d4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-byterover: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-hindsight: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-holographic: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-honcho: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-mem0: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-mnemon-native: 0.5.11(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-openviking: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-retaindb: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-provider-supermemory: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-source-documents: 0.6.0(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-runtime: 0.5.19(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-source-skills: 0.5.11(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      dsh-mnemon-strategy-auto-capture: 0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-strategy-default-three-tier: 0.5.13(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-strategy-general: 0.5.2(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-strategy-light-context: 0.5.6(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      dsh-mnemon-strategy-scoped: 0.5.5(dsh-mnemon@https://codeload.github.com/omdsh-dev/dsh-mnemon/tar.gz/455dd1c017d82c4f75af1b9510d383c059b0690e(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       fflate: 0.8.3
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -2212,6 +2397,8 @@ snapshots:
 
   json-schema-typed@8.0.2: {}
 
+  jsqr@1.4.0: {}
+
   jszip@3.10.2:
     dependencies:
       lie: 3.3.0
@@ -2257,6 +2444,8 @@ snapshots:
     dependencies:
       content-type: 2.1.0
 
+  node-addon-api@8.9.2: {}
+
   object-assign@4.1.1: {}
 
   object-inspect@1.13.4: {}
@@ -2297,7 +2486,15 @@ snapshots:
 
   pkce-challenge@5.0.1: {}
 
+  playwright-core@1.64.1:
+    optional: true
+
   playwright-core@1.65.0: {}
+
+  playwright@1.64.1:
+    dependencies:
+      playwright-core: 1.64.1
+    optional: true
 
   playwright@1.65.0:
     dependencies:
@@ -2530,6 +2727,8 @@ snapshots:
   wrappy@1.0.2: {}
 
   ws@8.21.3: {}
+
+  ws@8.22.1: {}
 
   y18n@4.0.3: {}
 
