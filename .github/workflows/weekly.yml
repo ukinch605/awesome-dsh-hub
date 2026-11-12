@@ -16,7 +16,11 @@ jobs:
   weekly:
     runs-on: ubuntu-latest
     steps:
+      # The run's trigger SHA can be stale after waiting in the shared writer queue.
+      # Read the current main only after this job obtains its writer slot.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: 20
