@@ -72,6 +72,22 @@ export function bisectDateRange(start, end) {
   ];
 }
 
+// GitHub repository search accepts second-level ISO-8601 created: ranges.
+// If a full UTC day still hits the 1,000-result cap, bisect its seconds rather
+// than treating the entire day as permanently unindexable. Boundaries are
+// inclusive and adjacent, so there is neither overlap nor a missing second.
+export function bisectTimestampRange(start, end) {
+  const first = Date.parse(start);
+  const last = Date.parse(end);
+  if (!Number.isFinite(first) || !Number.isFinite(last) || first >= last) return null;
+  const leftEnd = first + Math.floor((last - first) / 2_000) * 1_000;
+  const isoSecond = (value) => new Date(value).toISOString().slice(0, 19) + 'Z';
+  return [
+    { start, end: isoSecond(leftEnd) },
+    { start: isoSecond(leftEnd + 1_000), end },
+  ];
+}
+
 function withCreatedRange(query, start, end) {
   return `${query} created:${start}..${end}`;
 }
@@ -176,15 +192,18 @@ export async function searchTopicRepos({
         continue;
       }
       const subdivideOrRecord = (data, reason) => {
-        const created = /(?:^|\s)created:(\d{4}-\d{2}-\d{2})\.\.(\d{4}-\d{2}-\d{2})(?:\s|$)/.exec(segment.query);
+        const created = /(?:^|\s)created:(\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}Z)?)\.\.(\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}Z)?)(?:\s|$)/.exec(segment.query);
         const start = created?.[1] || creationStart;
         const end = created?.[2] || creationEnd;
-        const halves = bisectDateRange(start, end);
+        const halves = start.includes('T')
+          ? bisectTimestampRange(start, end)
+          : bisectDateRange(start, end)
+            || bisectTimestampRange(start + 'T00:00:00Z', end + 'T23:59:59Z');
         if (!halves) {
           diagnostics.unresolvedCappedSegments.push({
             query: withCreatedRange(segment.query.replace(/\s+created:[^\s]+/, ''), start, end),
             reportedTotal: data.total_count,
-            reason,
+            reason: reason === 'one-day-saturated' && start.includes('T') ? 'one-second-saturated' : reason,
           });
         } else {
           diagnostics.subdivided = true;
