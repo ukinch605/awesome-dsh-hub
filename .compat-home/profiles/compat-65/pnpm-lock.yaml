@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@dsh-external/dsh-minigames':
         specifier: github:lhh010/dsh-minigames
-        version: https://codeload.github.com/lhh010/dsh-minigames/tar.gz/3a5926baca4aa6d58ca864498ef9e16dab8231a0
+        version: https://codeload.github.com/lhh010/dsh-minigames/tar.gz/8bf93a05625a65be1b725fa15c7ed1009c95f227
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
         version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.8.6)(@deepseek-ai/schemastery@3.18.5)
@@ -31,13 +31,16 @@ importers:
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/56650083e8b1ea01c625b73a4a5c15b98ef53965
       ds-harness-remote:
         specifier: github:liguobao/ds-harness-remote
-        version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/1c8687d3b7bb8167dd23eede1b291cef01736db8
+        version: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/6d325c56a8ebc8d2d1d33bf8fc05c23cde2f88d0
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
+      dsh-aurabot-qq:
+        specifier: github:aureth-labs/dsh-aurabot-qq
+        version: https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/a138d14e3215f052dfa7d6a9dd16c0e409d9752d
       dsh-claude-style:
         specifier: github:Nwflower/dsh-claude-style
-        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c3c0f0ea6e829ea5bfb7e9a31ab426b8270471d0(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9(@deepseek-ai/schemastery@3.18.5)
       dsh-computer-use-win:
         specifier: github:Yu-tao-Li/dsh-computer-use-win
         version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/e136fcb87b2eb88d7192531b7ab941b475482ec6(@deepseek-ai/schemastery@3.18.5)
@@ -49,7 +52,7 @@ importers:
         version: https://codeload.github.com/wssfk12138/dsh-damage-pulse/tar.gz/5af02af66f0548b542734b219cab531f016cbfa4(@deepseek-ai/schemastery@3.18.5)(zod@4.6.7)
       dsh-meme:
         specifier: github:yyh-001/dsh-meme
-        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/19db20dc1346fdeaf54aad576b5740c1815a8423
+        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/b0aaabd987e565891c408b2d31eda934839815b6
       dsh-plugin:
         specifier: github:dshplugin/dsh-plugin-hub
         version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/e1af8da27e6a4bc20b4ee69637128430e5fcdcc1
@@ -107,9 +110,9 @@ packages:
   '@deepseek-ai/schemastery@3.18.5':
     resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
-  '@dsh-external/dsh-minigames@https://codeload.github.com/lhh010/dsh-minigames/tar.gz/3a5926baca4aa6d58ca864498ef9e16dab8231a0':
-    resolution: {gitHosted: true, integrity: sha512-m4Mvv7TFt4UQobl+qaqZ+nNotQCBakOyXNfbtQcPBlF0S7QzASRIGpiHSlR8kOcJFIfWeuiR5lPCNzzojO8kiA==, tarball: https://codeload.github.com/lhh010/dsh-minigames/tar.gz/3a5926baca4aa6d58ca864498ef9e16dab8231a0}
-    version: 0.12.2
+  '@dsh-external/dsh-minigames@https://codeload.github.com/lhh010/dsh-minigames/tar.gz/8bf93a05625a65be1b725fa15c7ed1009c95f227':
+    resolution: {gitHosted: true, integrity: sha512-D8NNMUjztd03siGlm3b+B0vCUlavUEBS9xHm3I47Ijg7miwxV2LjsvV/miAdmCslL2wIIQ/LoEVjr7PWpxYeCw==, tarball: https://codeload.github.com/lhh010/dsh-minigames/tar.gz/8bf93a05625a65be1b725fa15c7ed1009c95f227}
+    version: 0.12.3
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1-rc.1
       react: ^18.2.0
@@ -599,8 +602,8 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/1c8687d3b7bb8167dd23eede1b291cef01736db8:
-    resolution: {gitHosted: true, integrity: sha512-J+U20HnsXmkKVpqjqOiHg7FTWWNwxpOv8KocgvH+M8PxTHc+akDLZ6RX07DNvRTkzVfLPMGiMeWMwCqXSBNuFQ==, tarball: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/1c8687d3b7bb8167dd23eede1b291cef01736db8}
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/6d325c56a8ebc8d2d1d33bf8fc05c23cde2f88d0:
+    resolution: {gitHosted: true, integrity: sha512-5CHAj53sh3cNsHNWPAdpD0nilQAn2D/kzl5oL40sNXMsiJ+8M6kMcNl4D7zCs8hdw4+XPuPlBkBVn9fZoCbhpw==, tarball: https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/6d325c56a8ebc8d2d1d33bf8fc05c23cde2f88d0}
     version: 0.6.4
     hasBin: true
     peerDependencies:
@@ -691,8 +694,13 @@ packages:
       react:
         optional: true
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c3c0f0ea6e829ea5bfb7e9a31ab426b8270471d0:
-    resolution: {gitHosted: true, integrity: sha512-fWlF8nikrn4roolNa1EDpyOGrPKdF7i6h5lVkRj4IlLiw9coXmZR/acGFfdgVJ5rpww3OspxZBUgY1UN1gj58Q==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c3c0f0ea6e829ea5bfb7e9a31ab426b8270471d0}
+  dsh-aurabot-qq@https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/a138d14e3215f052dfa7d6a9dd16c0e409d9752d:
+    resolution: {gitHosted: true, integrity: sha512-aFRSqEB9oRsKPA5BoCrryIx/dj/jMBLV3xo2Lqeb7BWGLUlojs3rcD4/eJovRW50he0t3naFcgKzY5OTujA8Zw==, tarball: https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/a138d14e3215f052dfa7d6a9dd16c0e409d9752d}
+    version: 1.2.1
+    engines: {node: '>=22.13.0'}
+
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9:
+    resolution: {gitHosted: true, integrity: sha512-Low3XX1fAQMGcWSYpEwR2YUfSb2i+HTpTIB29wiJt7FjPoyFbGTafruKHHa6CieZBHosSqqQclP6K65eKnbMCA==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9}
     version: 0.20.3
     peerDependencies:
       '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.2-rc.1'
@@ -747,9 +755,9 @@ packages:
       react: ^18.2.0
       zod: ^4.4.3
 
-  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/19db20dc1346fdeaf54aad576b5740c1815a8423:
-    resolution: {gitHosted: true, integrity: sha512-kjL9yIHZSrSyg37WSPiy0fvbT8cNYtijCBMwJRb//13+05HgUbJWcE5Q4e9j5dR/3GDERGEk/w9Dxtl3kbaXiw==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/19db20dc1346fdeaf54aad576b5740c1815a8423}
-    version: 0.1.81
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/b0aaabd987e565891c408b2d31eda934839815b6:
+    resolution: {gitHosted: true, integrity: sha512-JXUgah0BnWQ98QqlISVJVbjO5oC9x2I1Tctf72J2wS5Pu6gQU5V0ANu19gZYnqZr5ipee6gFkjNfZMsjzRnEMw==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/b0aaabd987e565891c408b2d31eda934839815b6}
+    version: 0.1.82
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
@@ -1014,7 +1022,7 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
-  '@dsh-external/dsh-minigames@https://codeload.github.com/lhh010/dsh-minigames/tar.gz/3a5926baca4aa6d58ca864498ef9e16dab8231a0': {}
+  '@dsh-external/dsh-minigames@https://codeload.github.com/lhh010/dsh-minigames/tar.gz/8bf93a05625a65be1b725fa15c7ed1009c95f227': {}
 
   '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.8.6)(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
@@ -1333,7 +1341,7 @@ snapshots:
       webidl-conversions: 7.0.0
     optional: true
 
-  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/1c8687d3b7bb8167dd23eede1b291cef01736db8:
+  ds-harness-remote@https://codeload.github.com/liguobao/ds-harness-remote/tar.gz/6d325c56a8ebc8d2d1d33bf8fc05c23cde2f88d0:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       qrcode: 1.5.4
@@ -1349,7 +1357,9 @@ snapshots:
     dependencies:
       zod: 4.6.7
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c3c0f0ea6e829ea5bfb7e9a31ab426b8270471d0(@deepseek-ai/schemastery@3.18.5):
+  dsh-aurabot-qq@https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/a138d14e3215f052dfa7d6a9dd16c0e409d9752d: {}
+
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9(@deepseek-ai/schemastery@3.18.5):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -1369,7 +1379,7 @@ snapshots:
       quickjs-emscripten: 0.31.0
       zod: 4.6.7
 
-  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/19db20dc1346fdeaf54aad576b5740c1815a8423:
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/b0aaabd987e565891c408b2d31eda934839815b6:
     optionalDependencies:
       sharp: 0.35.5
     transitivePeerDependencies:

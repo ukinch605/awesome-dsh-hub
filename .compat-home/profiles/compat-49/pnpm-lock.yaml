@@ -41,9 +41,12 @@ importers:
       dsh-usage-stats:
         specifier: github:Ychris12138/dsh-usage-stats
         version: '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/f7191519d96480df8b92a462131040f9f5390861'
+      dsh-windows-mcp:
+        specifier: github:helloHub1212/dsh-windows-mcp
+        version: https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/e197f79a9c67549786b8872c91e6f9e1650a58e7
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/cf558d183f832460f7af4c91f3291a3a8918cf21(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/6ef4a1331b397357ffb42c9299be9b534952e421(@deepseek-ai/schemastery@3.18.1)
 
 packages:
 
@@ -330,8 +333,8 @@ packages:
       react:
         optional: true
 
-  dsh-mnemon-source-memory-spaces@0.5.26:
-    resolution: {integrity: sha512-pdnGMHzd9ykrp4YQlcJ9iOlLUvQHCxwgB0TBdOBfkY4UVOJmQd38HQ0AMWUnsq5TRhqiuzs4xSixaBPn76TVKA==}
+  dsh-mnemon-source-memory-spaces@0.5.27:
+    resolution: {integrity: sha512-Vha4m0Acu1cwoKMJzeVb4kqiFVjHWYihrkFxMM7ouhWGKBE9+33DjXfWDD0aCi4AT4bNAWere63/8v/at8IwOg==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -352,8 +355,8 @@ packages:
       react:
         optional: true
 
-  dsh-mnemon-source-skills@0.5.10:
-    resolution: {integrity: sha512-OIyGyf+AhLghsQ0XxMIuk6CU5mWQj0zUevpjfcADQGplHwZ5W0vIx/QO3SEwQ0CSWI+3Ij6Dvn4Byllpkc5Hrg==}
+  dsh-mnemon-source-skills@0.5.11:
+    resolution: {integrity: sha512-p1KL2VgMpwCr5otdQSmLvMD8D+7nlDqTF0bImIZ3e2y/KUf+1Pyn6ie8e9E0BuY8pu5IINc3lFMcH6qaspUdLw==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -398,8 +401,8 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon: ^0.5.17
 
-  dsh-mnemon@0.5.43:
-    resolution: {integrity: sha512-uSb1vOs6nS52ADzUFrZCGyEfv/jymBbfGYSE8WG47WxldU2lrMnhKsgtEgz1rz1Wd857MwcRhYO/VdWKIoMfSg==}
+  dsh-mnemon@0.5.44:
+    resolution: {integrity: sha512-J4W+x8jMk7NMCkdpm8CcfjUjQdb/AzdQ/q0EjpphfDDVVYEMVdhMao281/ArLixo5Xqomw431SZ/EEfmoP85eA==}
     engines: {dsh: '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0', node: '>=20'}
     hasBin: true
     peerDependencies:
@@ -433,6 +436,11 @@ packages:
       '@deepseek-ai/schemastery':
         optional: true
 
+  dsh-windows-mcp@https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/e197f79a9c67549786b8872c91e6f9e1650a58e7:
+    resolution: {gitHosted: true, integrity: sha512-368dvacQ9cxI88BpZg9rzf1UKseYymSppCu7xZoN+iFRW2/ou9m+jlKUVFxTxe7/yW5m/LoMCxNkeA6ToxI9CA==, tarball: https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/e197f79a9c67549786b8872c91e6f9e1650a58e7}
+    version: 0.2.9
+    engines: {node: '>=22'}
+
   echarts@6.1.0:
     resolution: {integrity: sha512-q0yaFPggC9FUdsWH4blavRWFmxdrIodbkoKNAjJudAI6CA9gNPxHtV2RcZNEepZVlk4yvBYkOkbk6HIVpIyHZA==}
 
@@ -452,9 +460,9 @@ packages:
       react:
         optional: true
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/cf558d183f832460f7af4c91f3291a3a8918cf21:
-    resolution: {gitHosted: true, integrity: sha512-60KsRYxbTtK0fM8xhHZbM5zKkAwLbs6SXx+tnxBFHTS92Mc7KN7Kgd3EX9ZMlanLo5SmrL1k2OblyaGVA35stA==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/cf558d183f832460f7af4c91f3291a3a8918cf21}
-    version: 3.10.1
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/6ef4a1331b397357ffb42c9299be9b534952e421:
+    resolution: {gitHosted: true, integrity: sha512-as6e8PvjsyrzMsEOtaP6OM8WnFrRQ3ykJvtFuhKvzcmoY0z82sRXYOOLDfx0TWFxmHq0qBjT0ztI2vavB/kyxg==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/6ef4a1331b397357ffb42c9299be9b534952e421}
+    version: 3.11.3
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
@@ -536,7 +544,7 @@ snapshots:
 
   '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/7313b9284d0d15689352cae9a2e563102b4d8e1d':
     dependencies:
-      dsh-mnemon: 0.5.43
+      dsh-mnemon: 0.5.44
     transitivePeerDependencies:
       - '@deepseek-ai/cordis'
       - '@deepseek-ai/dsh-app-boot'
@@ -568,106 +576,106 @@ snapshots:
 
   dsh-memory-evolve@https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/44b6b3eb65a1d50ceba0afb2c13acdd4a8b81423: {}
 
-  dsh-mnemon-provider-byterover@0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+  dsh-mnemon-provider-byterover@0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.44)
 
-  dsh-mnemon-provider-hindsight@0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+  dsh-mnemon-provider-hindsight@0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.44)
 
-  dsh-mnemon-provider-holographic@0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+  dsh-mnemon-provider-holographic@0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.44)
 
-  dsh-mnemon-provider-honcho@0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+  dsh-mnemon-provider-honcho@0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.44)
 
-  dsh-mnemon-provider-mem0@0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+  dsh-mnemon-provider-mem0@0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.44)
 
-  dsh-mnemon-provider-mnemon-native@0.5.11(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+  dsh-mnemon-provider-mnemon-native@0.5.11(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.44)
 
-  dsh-mnemon-provider-openviking@0.5.10(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+  dsh-mnemon-provider-openviking@0.5.10(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.44)
 
-  dsh-mnemon-provider-retaindb@0.5.6(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+  dsh-mnemon-provider-retaindb@0.5.6(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.44)
 
-  dsh-mnemon-provider-supermemory@0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43)):
+  dsh-mnemon-provider-supermemory@0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.44)
 
-  dsh-mnemon-source-documents@0.6.0(dsh-mnemon@0.5.43):
+  dsh-mnemon-source-documents@0.6.0(dsh-mnemon@0.5.44):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: 0.5.43
+      dsh-mnemon: 0.5.44
       markdown-to-jsx: 7.7.17
 
-  dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43):
+  dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: 0.5.43
+      dsh-mnemon: 0.5.44
 
-  dsh-mnemon-source-runtime@0.5.19(dsh-mnemon@0.5.43):
+  dsh-mnemon-source-runtime@0.5.19(dsh-mnemon@0.5.44):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: 0.5.43
+      dsh-mnemon: 0.5.44
 
-  dsh-mnemon-source-skills@0.5.10(dsh-mnemon@0.5.43):
+  dsh-mnemon-source-skills@0.5.11(dsh-mnemon@0.5.44):
     dependencies:
-      dsh-mnemon: 0.5.43
+      dsh-mnemon: 0.5.44
       markdown-to-jsx: 7.7.17
       yaml: 2.9.1
 
-  dsh-mnemon-strategy-auto-capture@0.5.5(dsh-mnemon@0.5.43):
+  dsh-mnemon-strategy-auto-capture@0.5.5(dsh-mnemon@0.5.44):
     dependencies:
-      dsh-mnemon: 0.5.43
+      dsh-mnemon: 0.5.44
 
-  dsh-mnemon-strategy-default-three-tier@0.5.13(dsh-mnemon@0.5.43):
+  dsh-mnemon-strategy-default-three-tier@0.5.13(dsh-mnemon@0.5.44):
     dependencies:
-      dsh-mnemon: 0.5.43
+      dsh-mnemon: 0.5.44
 
-  dsh-mnemon-strategy-general@0.5.2(dsh-mnemon@0.5.43):
+  dsh-mnemon-strategy-general@0.5.2(dsh-mnemon@0.5.44):
     dependencies:
-      dsh-mnemon: 0.5.43
+      dsh-mnemon: 0.5.44
 
-  dsh-mnemon-strategy-light-context@0.5.6(dsh-mnemon@0.5.43):
+  dsh-mnemon-strategy-light-context@0.5.6(dsh-mnemon@0.5.44):
     dependencies:
-      dsh-mnemon: 0.5.43
+      dsh-mnemon: 0.5.44
 
-  dsh-mnemon-strategy-scoped@0.5.5(dsh-mnemon@0.5.43):
+  dsh-mnemon-strategy-scoped@0.5.5(dsh-mnemon@0.5.44):
     dependencies:
-      dsh-mnemon: 0.5.43
+      dsh-mnemon: 0.5.44
 
-  dsh-mnemon@0.5.43:
+  dsh-mnemon@0.5.44:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.6
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon-provider-byterover: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
-      dsh-mnemon-provider-hindsight: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
-      dsh-mnemon-provider-holographic: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
-      dsh-mnemon-provider-honcho: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
-      dsh-mnemon-provider-mem0: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
-      dsh-mnemon-provider-mnemon-native: 0.5.11(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
-      dsh-mnemon-provider-openviking: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
-      dsh-mnemon-provider-retaindb: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
-      dsh-mnemon-provider-supermemory: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.26(dsh-mnemon@0.5.43))
-      dsh-mnemon-source-documents: 0.6.0(dsh-mnemon@0.5.43)
-      dsh-mnemon-source-memory-spaces: 0.5.26(dsh-mnemon@0.5.43)
-      dsh-mnemon-source-runtime: 0.5.19(dsh-mnemon@0.5.43)
-      dsh-mnemon-source-skills: 0.5.10(dsh-mnemon@0.5.43)
-      dsh-mnemon-strategy-auto-capture: 0.5.5(dsh-mnemon@0.5.43)
-      dsh-mnemon-strategy-default-three-tier: 0.5.13(dsh-mnemon@0.5.43)
-      dsh-mnemon-strategy-general: 0.5.2(dsh-mnemon@0.5.43)
-      dsh-mnemon-strategy-light-context: 0.5.6(dsh-mnemon@0.5.43)
-      dsh-mnemon-strategy-scoped: 0.5.5(dsh-mnemon@0.5.43)
+      dsh-mnemon-provider-byterover: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44))
+      dsh-mnemon-provider-hindsight: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44))
+      dsh-mnemon-provider-holographic: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44))
+      dsh-mnemon-provider-honcho: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44))
+      dsh-mnemon-provider-mem0: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44))
+      dsh-mnemon-provider-mnemon-native: 0.5.11(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44))
+      dsh-mnemon-provider-openviking: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44))
+      dsh-mnemon-provider-retaindb: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44))
+      dsh-mnemon-provider-supermemory: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.44))
+      dsh-mnemon-source-documents: 0.6.0(dsh-mnemon@0.5.44)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.44)
+      dsh-mnemon-source-runtime: 0.5.19(dsh-mnemon@0.5.44)
+      dsh-mnemon-source-skills: 0.5.11(dsh-mnemon@0.5.44)
+      dsh-mnemon-strategy-auto-capture: 0.5.5(dsh-mnemon@0.5.44)
+      dsh-mnemon-strategy-default-three-tier: 0.5.13(dsh-mnemon@0.5.44)
+      dsh-mnemon-strategy-general: 0.5.2(dsh-mnemon@0.5.44)
+      dsh-mnemon-strategy-light-context: 0.5.6(dsh-mnemon@0.5.44)
+      dsh-mnemon-strategy-scoped: 0.5.5(dsh-mnemon@0.5.44)
       fflate: 0.8.3
       yaml: 2.9.1
       zod: 4.5.2
@@ -679,6 +687,8 @@ snapshots:
   dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b(@deepseek-ai/schemastery@3.18.1):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.1
+
+  dsh-windows-mcp@https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/e197f79a9c67549786b8872c91e6f9e1650a58e7: {}
 
   echarts@6.1.0:
     dependencies:
@@ -693,7 +703,7 @@ snapshots:
 
   markdown-to-jsx@7.7.17: {}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/cf558d183f832460f7af4c91f3291a3a8918cf21(@deepseek-ai/schemastery@3.18.1):
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/6ef4a1331b397357ffb42c9299be9b534952e421(@deepseek-ai/schemastery@3.18.1):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.1
 

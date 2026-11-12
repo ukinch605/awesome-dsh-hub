@@ -25,10 +25,10 @@ importers:
         version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/ffa90be4c34d54848d862b1a4e0a5deacdd18a26(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/c6097b38346ba2e5e9fc21b765448b4ddbcf4f48(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/f159c98724a0171298c4824684efd23190ae873a(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
       dsh-claude-style:
         specifier: github:Nwflower/dsh-claude-style
-        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c3c0f0ea6e829ea5bfb7e9a31ab426b8270471d0(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dsh-ego-browser:
         specifier: github:Fisfzy/dsh-ego-browser
         version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/52a4a449b31d43cbe7a0235c520523a7a86f46b6(react@18.3.1)
@@ -38,12 +38,15 @@ importers:
       dsh-guizang-design:
         specifier: github:op7418/dsh-guizang-design
         version: https://codeload.github.com/op7418/dsh-guizang-design/tar.gz/e275f1e4d4a81bd4875c251d33c643c242a8a8fd(bare-buffer@3.7.1)(react@18.3.1)
+      dsh-meme:
+        specifier: github:yyh-001/dsh-meme
+        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/b0aaabd987e565891c408b2d31eda934839815b6(@types/node@22.20.5)
       dsh-plugin:
         specifier: github:dshplugin/dsh-plugin-hub
         version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/e1af8da27e6a4bc20b4ee69637128430e5fcdcc1
       dsh-plugin-marketplace:
         specifier: github:YELEBAI/dsh-plugin-marketplace
-        version: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/23418d95c816604608ca8ab03ac0af49ce09f70b
+        version: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/7ca46a122463efff3eb2b911cfce5ad7b0b23407
       dsh-see-now:
         specifier: github:SAOS-3624/dsh-see-now
         version: https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/1d98dd5bf1fdcad58fbf27b6906bb8c525ccccb3
@@ -74,11 +77,176 @@ packages:
   '@deepseek-ai/schemastery@3.18.5':
     resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
+  '@emnapi/runtime@1.11.3':
+    resolution: {integrity: sha512-Xz4Tpyki7XyrpbUK1jR1AhdAdaXyhhY4lZ3neLodmhpuWfy2PAQN5B46sAiU4liOXGLkHypn/qU+jvfWSCYYLA==}
+
   '@hono/node-server@2.1.5':
     resolution: {integrity: sha512-MgP/I06GdvsilDspMk/qmRzpk8LOUStP6jFAbSRi40W09DhoyUn+Mj7eyKICPqeYKybOjVFLVIAQzvu1bfIa7Q==}
     engines: {node: '>=20'}
     peerDependencies:
       hono: ^4 || ^5.0.0-0
+
+  '@img/colour@1.1.0':
+    resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
+    engines: {node: '>=18'}
+
+  '@img/sharp-darwin-arm64@0.35.5':
+    resolution: {integrity: sha512-QRUlFQ0WxvdWyqqG/WtI3iupfD5rBzmCHXSdPsY91sAtVtTo7Q4cb6zOccZ3gqEqkr0f1As1ehLqmEpDsRf+lg==}
+    engines: {node: '>=20.9.0'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@img/sharp-darwin-x64@0.35.5':
+    resolution: {integrity: sha512-+BR255RhDlpygUpOc/Jdt1nT6DQ3XG/ERo5wbcdOf5Q320dKtPCKPLR1LJs9VGXRaMa8l1uUa0tkCNOXiAxZUw==}
+    engines: {node: '>=20.9.0'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@img/sharp-freebsd-wasm32@0.35.5':
+    resolution: {integrity: sha512-Y/z91nEZ4uIBX5X3nfTovjU9lHNKFYbL2lpHCLVNmXQK03VIZvXBBt0KxbPGp2SdGSF+2mQU4e+hQaWOt86iAw==}
+    engines: {node: '>=20.9.0'}
+    os: [freebsd]
+
+  '@img/sharp-libvips-darwin-arm64@1.3.4':
+    resolution: {integrity: sha512-5R89nBYiRdUlSWJxPhO+GVtaXzXSxKnRu/xqMn3KTA3L9EB9Oy/P+Nn2f2vlhPuUdy/Zusb2DarbyTpGCfEDuw==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@img/sharp-libvips-darwin-x64@1.3.4':
+    resolution: {integrity: sha512-iR2OKH80yi0U+dUplyh3/xdpFvps6YkCwsXenIJxqxR1v9o+xtKTGbS9H7cps+2Vxjc8B1j96p75NmTGjIhtpQ==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@img/sharp-libvips-linux-arm64@1.3.4':
+    resolution: {integrity: sha512-Y3dgX/6lE2QhQb+Gxy0WZxfg9MEm/JBjamZpS2IklP7xIQoKN4hzAm7KcMVGtaVDt3neE9OKBC7vAfonA/Lr1A==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-libvips-linux-arm@1.3.4':
+    resolution: {integrity: sha512-LmRtTsOHuvM2+wlO2Db37dx5MiZhB0FvSunciw48YjdOkZz9KAiRbm8ujeMOA1INqmei5NapFxYEK1D1ZSidmw==}
+    cpu: [arm]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-libvips-linux-ppc64@1.3.4':
+    resolution: {integrity: sha512-Le6boB8Tai0Nis+gIxIpKx68UDVVIqdR8Tin5Yf1z2LJJQLDJvCDRqRu+jC2qCoD+eIomonmOwB4smBRxfVpYQ==}
+    cpu: [ppc64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-libvips-linux-riscv64@1.3.4':
+    resolution: {integrity: sha512-aHkkIEHPRdQEegJN20MLmGtxYD9R2wQr3Cwpddnu5+YKMt6Uzax7S9h5gpZTo8wyrGuZSlfQ63OevL5mTyOC7Q==}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-libvips-linux-s390x@1.3.4':
+    resolution: {integrity: sha512-ra/mB6MikESDUO7Yg+Mi95bFBb9GsObURuhnOv3OqknjGe9sZrG8tCe9q0xSIGrtLgvgw0gKnFWcK4blSgQOuQ==}
+    cpu: [s390x]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-libvips-linux-x64@1.3.4':
+    resolution: {integrity: sha512-GJ//SSXbnwSDes02umB3nDJLFcQzw8a18V8fyhqr6tV515tOEMdImjjxj1AoafMRz56F3PHgftnj1QEKSU1zkw==}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-libvips-linuxmusl-arm64@1.3.4':
+    resolution: {integrity: sha512-hvulFwtjUcagsis6BBxHwGFwWoNZjgYmULGVrZcyfNbjA8hKILbRxGg15/7w5HDyXHXUos/j6baAWqnCyQ2DWA==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@img/sharp-libvips-linuxmusl-x64@1.3.4':
+    resolution: {integrity: sha512-6zXKeE/p39I1AmA3cJG35eyBGNqNddLnUXjhwBnsGjFPWqf5VKkDBEqaEkPDoTEtkxwi2vv8Tcr2mDyP4So7Fg==}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@img/sharp-linux-arm64@0.35.5':
+    resolution: {integrity: sha512-LYVx5JTsOM2CBzmxreh+nl64/3H6Xb09iSLknqH47z2T2DFFxDeFLP5y4dJwe6H7uGQlHPyEEtIqyo3DYsRwdQ==}
+    engines: {node: '>=20.9.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-linux-arm@0.35.5':
+    resolution: {integrity: sha512-LEaXK2WdXVK5ykcw0buWyPMsmLLL2vpHLD6yrNSW+JGEL3BZPA4tpKN6iaMc4AxTTAoaX/sU1rOL51lcIz48ZQ==}
+    engines: {node: '>=20.9.0'}
+    cpu: [arm]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-linux-ppc64@0.35.5':
+    resolution: {integrity: sha512-QVxAAq8evVRI9ia2vqgwrmWucn5Dfv+JdWzj75pD8omHLPSP7f8p20O8jxzjCcuCEQEOtYOZUmX1hkiZ0kdevA==}
+    engines: {node: '>=20.9.0'}
+    cpu: [ppc64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-linux-riscv64@0.35.5':
+    resolution: {integrity: sha512-LtdreXguaavKODPIfzJ4kffx7UNt1omwtK0rch4EBbbSTXPnxWmYSayXdLJw0fJzQ97kHt1gL/yh4tvU+nCyRQ==}
+    engines: {node: '>=20.9.0'}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-linux-s390x@0.35.5':
+    resolution: {integrity: sha512-UZasTOFiYzotTsGOCu42BfUzP6Tu6Do/947iRm1RsLKvlllxwGcn4RN27LibGWceix4Y+Pmw3jsnTcCQIgWjqA==}
+    engines: {node: '>=20.9.0'}
+    cpu: [s390x]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-linux-x64@0.35.5':
+    resolution: {integrity: sha512-SxFtLTeJInhAA9Q836kux2vZNeOBQEx658qvbboZScr0wIARym3IcGmW7KpVD5sbVg0Ojy+udFQdayYIZyoNog==}
+    engines: {node: '>=20.9.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@img/sharp-linuxmusl-arm64@0.35.5':
+    resolution: {integrity: sha512-9HbMclmI1zlNkFRs3z9/eBtDjfD0sGlrX1z6b1qwmiFY5ElDLh4BC0LPBdVp7z1DXFiKlIcznf+ZlsuZzLxQqg==}
+    engines: {node: '>=20.9.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@img/sharp-linuxmusl-x64@0.35.5':
+    resolution: {integrity: sha512-4KOphqB035HrVdqLZfCgMzzERrQkkzOwRhl4OAkRO1YCldbaFjySXMaK534Mo0V+LndnlJk+sbUyLeU0ULyD1A==}
+    engines: {node: '>=20.9.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@img/sharp-wasm32@0.35.5':
+    resolution: {integrity: sha512-Ptsga1su4tQx+LLF1ECS9U6nz5kmrXKo6XVbtR48Ke3ZRxxgaWBu7IDtEe1quo8hiupwm6WFqxVlXaSf7IINGQ==}
+    engines: {node: '>=20.9.0'}
+
+  '@img/sharp-webcontainers-wasm32@0.35.5':
+    resolution: {integrity: sha512-hfhF/FmoQyTUkA0bIKFOtw536BQSeBMe6BF6QyWlrPxT754+TFLaZ7sKKTfvvM0yJgKgaYTwnFCIZ/GuDw5SUA==}
+    engines: {node: '>=20.9.0'}
+    cpu: [wasm32]
+
+  '@img/sharp-win32-arm64@0.35.5':
+    resolution: {integrity: sha512-X4t7g+7ZA5DKblCBEXGjUqqemj4vczING/5viFwAL8h4N3qYeyjwdCvRLHi4EdOUI+2Z7UFlp1VM+p/AuEtm6Q==}
+    engines: {node: '>=20.9.0'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@img/sharp-win32-ia32@0.35.5':
+    resolution: {integrity: sha512-5Zm82LoBc43nhwNybZlG7Y1KO//Zhsn306fQl29ZOuStHLGTo3BWL83q3cznX0poxSAMuYL1On/BHBxkBeKr6A==}
+    engines: {node: ^20.9.0}
+    cpu: [ia32]
+    os: [win32]
+
+  '@img/sharp-win32-x64@0.35.5':
+    resolution: {integrity: sha512-x76eH0vEiHlcMQu8Y8IenntaACtddpT6W0wmXtWrnKcnKI7ME5DdgqhAD6SEWOEl1v2zDvkZDhFA9KnURwpfqg==}
+    engines: {node: '>=20.9.0'}
+    cpu: [x64]
+    os: [win32]
 
   '@leon___/dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/f6c90d173c67112217a5adecea71d14d8bc9063d':
     resolution: {gitHosted: true, integrity: sha512-VY9afQVPW8mmoVP7qPLrB77AbZONovkNJ1ysWLyHUVDhdOe5TNF8HgibBmq6a6bza/ab3+HtWIxqa+rrDGjmSA==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/f6c90d173c67112217a5adecea71d14d8bc9063d}
@@ -450,12 +618,16 @@ packages:
     resolution: {integrity: sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==}
     engines: {node: '>= 0.8'}
 
+  detect-libc@2.1.2:
+    resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
+    engines: {node: '>=8'}
+
   devtools-protocol@0.0.1608973:
     resolution: {integrity: sha512-Tpm17fxYzt+J7VrGdc1k8YdRqS3YV7se/M6KeemEqvUbq/n7At1rWVuXMxQgpWkdwSdIEKYbU//Bve+Shm4YNQ==}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/c6097b38346ba2e5e9fc21b765448b4ddbcf4f48:
-    resolution: {gitHosted: true, integrity: sha512-syKwN2vNUYyvvKs8BzvLOEFImYR207SlLIsd189KzO+MkH+p2OLePM/UYRU0eIU8fR0f49x/bOAbR5m40VJPHg==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/c6097b38346ba2e5e9fc21b765448b4ddbcf4f48}
-    version: 0.26.5
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/f159c98724a0171298c4824684efd23190ae873a:
+    resolution: {gitHosted: true, integrity: sha512-r6aP5l5uGmOUdXLbRfbC8dlL7L6C2sK6Pn7F+Wua+LnJ/b3G011O6qv/HngFZqd80CI5yRL93fO4klnOskFuuA==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/f159c98724a0171298c4824684efd23190ae873a}
+    version: 0.26.6
     engines: {node: '>=22.13'}
     hasBin: true
     peerDependencies:
@@ -466,8 +638,8 @@ packages:
       '@deepseek-ai/schemastery': '>=3.0.0'
       react: '>=18.0.0'
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c3c0f0ea6e829ea5bfb7e9a31ab426b8270471d0:
-    resolution: {gitHosted: true, integrity: sha512-fWlF8nikrn4roolNa1EDpyOGrPKdF7i6h5lVkRj4IlLiw9coXmZR/acGFfdgVJ5rpww3OspxZBUgY1UN1gj58Q==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c3c0f0ea6e829ea5bfb7e9a31ab426b8270471d0}
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9:
+    resolution: {gitHosted: true, integrity: sha512-Low3XX1fAQMGcWSYpEwR2YUfSb2i+HTpTIB29wiJt7FjPoyFbGTafruKHHa6CieZBHosSqqQclP6K65eKnbMCA==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9}
     version: 0.20.3
     peerDependencies:
       '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.2-rc.1'
@@ -526,8 +698,15 @@ packages:
     peerDependencies:
       react: ^18.2.0 || ^19.0.0
 
-  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/23418d95c816604608ca8ab03ac0af49ce09f70b:
-    resolution: {gitHosted: true, integrity: sha512-GxNUP93XW3wis2UwbMQ1BVQu7Qug4jImec2lgpeKWFwfn22DF6GiOtM7kSkOU3DBOLtwrZqAAeFct3T7jazbcw==, tarball: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/23418d95c816604608ca8ab03ac0af49ce09f70b}
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/b0aaabd987e565891c408b2d31eda934839815b6:
+    resolution: {gitHosted: true, integrity: sha512-JXUgah0BnWQ98QqlISVJVbjO5oC9x2I1Tctf72J2wS5Pu6gQU5V0ANu19gZYnqZr5ipee6gFkjNfZMsjzRnEMw==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/b0aaabd987e565891c408b2d31eda934839815b6}
+    version: 0.1.82
+    engines: {node: '>=22.13.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh-tools': '*'
+
+  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/7ca46a122463efff3eb2b911cfce5ad7b0b23407:
+    resolution: {gitHosted: true, integrity: sha512-FUC8Zn318PQRgf+DamJecoYXgqz1HcPwLA+glaYr4LgxHXo/BkmHNZrJpBldO1x5HQF3O3KF8nkatxIpkh2jZg==, tarball: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/7ca46a122463efff3eb2b911cfce5ad7b0b23407}
     version: 0.9.5
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
@@ -1052,6 +1231,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.8.6:
+    resolution: {integrity: sha512-9lpSSU4Mly3mrtruwLs1eLK6+gzbzqeBFwRNjIjE+9LuDpWdYctrQlQ3ej1Ilgi7gknpsTRnPoLP8DpCHqHIJw==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   send@1.2.1:
     resolution: {integrity: sha512-1gnZf7DFcoIcajTjTwjwuDjzuz4PPcY2StKPlsGAQ1+YH20IRVrBaXSWmdjowTJ6u8Rc01PoYOGHXfP1mYcZNQ==}
     engines: {node: '>= 18'}
@@ -1070,6 +1254,15 @@ packages:
 
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
+
+  sharp@0.35.5:
+    resolution: {integrity: sha512-Ywn4OnzGukp7CDMrp08RQ50YKmuwG47brZgIVPTvBaaAfQlRlygrRqSrxdCiL9M+LlzLBiJ68IR1QqvzHyjC7g==}
+    engines: {node: '>=20.9.0'}
+    peerDependencies:
+      '@types/node': '*'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
 
   shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
@@ -1278,9 +1471,121 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
+  '@emnapi/runtime@1.11.3':
+    dependencies:
+      tslib: 2.9.1
+    optional: true
+
   '@hono/node-server@2.1.5(hono@4.13.14)':
     dependencies:
       hono: 4.13.14
+
+  '@img/colour@1.1.0':
+    optional: true
+
+  '@img/sharp-darwin-arm64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-darwin-arm64': 1.3.4
+    optional: true
+
+  '@img/sharp-darwin-x64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-darwin-x64': 1.3.4
+    optional: true
+
+  '@img/sharp-freebsd-wasm32@0.35.5':
+    dependencies:
+      '@img/sharp-wasm32': 0.35.5
+    optional: true
+
+  '@img/sharp-libvips-darwin-arm64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-darwin-x64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-arm64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-arm@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-ppc64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-riscv64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-s390x@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-x64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linuxmusl-arm64@1.3.4':
+    optional: true
+
+  '@img/sharp-libvips-linuxmusl-x64@1.3.4':
+    optional: true
+
+  '@img/sharp-linux-arm64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-arm64': 1.3.4
+    optional: true
+
+  '@img/sharp-linux-arm@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-arm': 1.3.4
+    optional: true
+
+  '@img/sharp-linux-ppc64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-ppc64': 1.3.4
+    optional: true
+
+  '@img/sharp-linux-riscv64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-riscv64': 1.3.4
+    optional: true
+
+  '@img/sharp-linux-s390x@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-s390x': 1.3.4
+    optional: true
+
+  '@img/sharp-linux-x64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-x64': 1.3.4
+    optional: true
+
+  '@img/sharp-linuxmusl-arm64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linuxmusl-arm64': 1.3.4
+    optional: true
+
+  '@img/sharp-linuxmusl-x64@0.35.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linuxmusl-x64': 1.3.4
+    optional: true
+
+  '@img/sharp-wasm32@0.35.5':
+    dependencies:
+      '@emnapi/runtime': 1.11.3
+    optional: true
+
+  '@img/sharp-webcontainers-wasm32@0.35.5':
+    dependencies:
+      '@img/sharp-wasm32': 0.35.5
+    optional: true
+
+  '@img/sharp-win32-arm64@0.35.5':
+    optional: true
+
+  '@img/sharp-win32-ia32@0.35.5':
+    optional: true
+
+  '@img/sharp-win32-x64@0.35.5':
+    optional: true
 
   '@leon___/dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/f6c90d173c67112217a5adecea71d14d8bc9063d': {}
 
@@ -1679,15 +1984,18 @@ snapshots:
 
   depd@2.0.0: {}
 
+  detect-libc@2.1.2:
+    optional: true
+
   devtools-protocol@0.0.1608973: {}
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/c6097b38346ba2e5e9fc21b765448b4ddbcf4f48(@deepseek-ai/schemastery@3.18.5)(react@18.3.1):
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/f159c98724a0171298c4824684efd23190ae873a(@deepseek-ai/schemastery@3.18.5)(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       fzstd: 0.1.1
       react: 18.3.1
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c3c0f0ea6e829ea5bfb7e9a31ab426b8270471d0(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       react: 18.3.1
@@ -1716,7 +2024,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/23418d95c816604608ca8ab03ac0af49ce09f70b:
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/b0aaabd987e565891c408b2d31eda934839815b6(@types/node@22.20.5):
+    optionalDependencies:
+      sharp: 0.35.5(@types/node@22.20.5)
+    transitivePeerDependencies:
+      - '@types/node'
+
+  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/7ca46a122463efff3eb2b911cfce5ad7b0b23407:
     dependencies:
       zod: 4.6.7
 
@@ -2266,6 +2580,9 @@ snapshots:
 
   semver@7.7.4: {}
 
+  semver@7.8.6:
+    optional: true
+
   send@1.2.1:
     dependencies:
       debug: 4.4.3
@@ -2307,6 +2624,40 @@ snapshots:
   setimmediate@1.0.5: {}
 
   setprototypeof@1.2.0: {}
+
+  sharp@0.35.5(@types/node@22.20.5):
+    dependencies:
+      '@img/colour': 1.1.0
+      detect-libc: 2.1.2
+      semver: 7.8.6
+    optionalDependencies:
+      '@img/sharp-darwin-arm64': 0.35.5
+      '@img/sharp-darwin-x64': 0.35.5
+      '@img/sharp-freebsd-wasm32': 0.35.5
+      '@img/sharp-libvips-darwin-arm64': 1.3.4
+      '@img/sharp-libvips-darwin-x64': 1.3.4
+      '@img/sharp-libvips-linux-arm': 1.3.4
+      '@img/sharp-libvips-linux-arm64': 1.3.4
+      '@img/sharp-libvips-linux-ppc64': 1.3.4
+      '@img/sharp-libvips-linux-riscv64': 1.3.4
+      '@img/sharp-libvips-linux-s390x': 1.3.4
+      '@img/sharp-libvips-linux-x64': 1.3.4
+      '@img/sharp-libvips-linuxmusl-arm64': 1.3.4
+      '@img/sharp-libvips-linuxmusl-x64': 1.3.4
+      '@img/sharp-linux-arm': 0.35.5
+      '@img/sharp-linux-arm64': 0.35.5
+      '@img/sharp-linux-ppc64': 0.35.5
+      '@img/sharp-linux-riscv64': 0.35.5
+      '@img/sharp-linux-s390x': 0.35.5
+      '@img/sharp-linux-x64': 0.35.5
+      '@img/sharp-linuxmusl-arm64': 0.35.5
+      '@img/sharp-linuxmusl-x64': 0.35.5
+      '@img/sharp-webcontainers-wasm32': 0.35.5
+      '@img/sharp-win32-arm64': 0.35.5
+      '@img/sharp-win32-ia32': 0.35.5
+      '@img/sharp-win32-x64': 0.35.5
+      '@types/node': 22.20.5
+    optional: true
 
   shebang-command@2.0.0:
     dependencies:
