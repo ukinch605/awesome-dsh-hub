@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { bisectDateRange, fetchRawPackageJson, fetchRawPackageJsonResult, hasBundlePatch, normalizeRepo, searchTopicRepos } from '../lib/github.js';
+import { bisectDateRange, bisectTimestampRange, fetchRawPackageJson, fetchRawPackageJsonResult, hasBundlePatch, normalizeRepo, searchTopicRepos } from '../lib/github.js';
 import { SEARCH_QUERIES } from '../lib/constants.js';
 
 const noSleep = async () => {};
@@ -109,9 +109,46 @@ for (const stars of ['stars:0', 'stars:1']) {
   });
 }
 
-test('searchTopicRepos: unresolved one-day saturation is explicit', async () => {
-  const repos = await searchTopicRepos({ queries: ['topic:dsh-plugin stars:1 created:2026-01-01..2026-01-01'], sorts: ['stars'], token: 't', sleepFn: noSleep, fetchFn: async () => ({ status: 200, headers: new Map(), json: async () => ({ total_count: 1000, items: [] }) }) });
-  assert.equal(repos.diagnostics.unresolvedCappedSegments[0].reason, 'one-day-saturated');
+test('searchTopicRepos: one UTC day over 1,000 splits into disjoint second-level ranges', async () => {
+  const requested = [];
+  const left = { id: 1, full_name: 'a/left' };
+  const right = { id: 2, full_name: 'a/right' };
+  const repos = await searchTopicRepos({
+    queries: ['topic:dsh-plugin stars:0 created:2026-08-20..2026-08-20'],
+    sorts: ['stars'], token: 't', segmentBudget: 3, sleepFn: noSleep,
+    fetchFn: async (url) => {
+      const q = new URL(url).searchParams.get('q');
+      requested.push(q);
+      const items = q.includes('T00:00:00Z..2026-08-20T11:59:59Z') ? [left]
+        : q.includes('T12:00:00Z..2026-08-20T23:59:59Z') ? [right] : [];
+      return { status: 200, headers: new Map(), json: async () => ({
+        total_count: items.length || 1006, items,
+      }) };
+    },
+  });
+  assert.deepEqual(requested, [
+    'topic:dsh-plugin stars:0 created:2026-08-20..2026-08-20',
+    'topic:dsh-plugin stars:0 created:2026-08-20T00:00:00Z..2026-08-20T11:59:59Z',
+    'topic:dsh-plugin stars:0 created:2026-08-20T12:00:00Z..2026-08-20T23:59:59Z',
+  ]);
+  assert.deepEqual(repos.map((r) => r.id), [1, 2]);
+  assert.equal(repos.diagnostics.resolvedLeaves, 2);
+  assert.equal(repos.diagnostics.resolvedLeafTotalCount, 2);
+  assert.deepEqual(repos.diagnostics.unresolvedCappedSegments, []);
+  assert.equal(repos.diagnostics.completeCoverageClaimed, true);
+  assert.deepEqual(bisectTimestampRange('2026-01-01T00:00:00Z', '2026-01-01T00:00:01Z'), [
+    { start: '2026-01-01T00:00:00Z', end: '2026-01-01T00:00:00Z' },
+    { start: '2026-01-01T00:00:01Z', end: '2026-01-01T00:00:01Z' },
+  ]);
+});
+
+test('searchTopicRepos: a saturated single second remains explicitly incomplete', async () => {
+  const repos = await searchTopicRepos({
+    queries: ['topic:dsh-plugin stars:1 created:2026-01-01T00:00:00Z..2026-01-01T00:00:00Z'],
+    sorts: ['stars'], token: 't', sleepFn: noSleep,
+    fetchFn: async () => ({ status: 200, headers: new Map(), json: async () => ({ total_count: 1000, items: [] }) }),
+  });
+  assert.equal(repos.diagnostics.unresolvedCappedSegments[0].reason, 'one-second-saturated');
   assert.equal(repos.diagnostics.completeCoverageClaimed, false);
 });
 
@@ -197,20 +234,40 @@ test('searchTopicRepos: incomplete page one subdivides and cannot resolve its pa
   assert.equal(repos.diagnostics.completeCoverageClaimed, true);
 });
 
-test('searchTopicRepos: an incomplete later page leaves a one-day query unresolved', async () => {
+test('searchTopicRepos: incomplete later page is recovered by second-level subdivision', async () => {
+  const requested = [];
   const repos = await searchTopicRepos({
     queries: ['topic:dsh-plugin stars:0 created:2026-01-01..2026-01-01'],
     sorts: ['stars'], token: 't', sleepFn: noSleep, pageSize: 100,
     fetchFn: async (url) => {
+      const q = new URL(url).searchParams.get('q');
       const page = Number(new URL(url).searchParams.get('page'));
-      return {
-        status: 200, headers: new Map(),
-        json: async () => ({ total_count: 150, incomplete_results: page === 2, items: [] }),
-      };
+      requested.push({ q, page });
+      const dayQuery = !q.includes('T');
+      return { status: 200, headers: new Map(), json: async () => ({
+        total_count: dayQuery ? 150 : 1,
+        incomplete_results: dayQuery && page === 2,
+        items: [],
+      }) };
     },
   });
+  assert.equal(requested.length, 4);
+  assert.equal(repos.diagnostics.resolvedLeaves, 2);
+  assert.equal(repos.diagnostics.resolvedLeafTotalCount, 2);
+  assert.deepEqual(repos.diagnostics.unresolvedCappedSegments, []);
+  assert.equal(repos.diagnostics.completeCoverageClaimed, true);
+});
+
+test('searchTopicRepos: incomplete page within one second is not falsely complete', async () => {
+  const repos = await searchTopicRepos({
+    queries: ['topic:dsh-plugin stars:0 created:2026-01-01T00:00:00Z..2026-01-01T00:00:00Z'],
+    sorts: ['stars'], token: 't', sleepFn: noSleep, pageSize: 100,
+    fetchFn: async (url) => ({
+      status: 200, headers: new Map(),
+      json: async () => ({ total_count: 150, incomplete_results: Number(new URL(url).searchParams.get('page')) === 2, items: [] }),
+    }),
+  });
   assert.equal(repos.diagnostics.resolvedLeaves, 0);
-  assert.equal(repos.diagnostics.resolvedLeafTotalCount, 0);
   assert.equal(repos.diagnostics.unresolvedCappedSegments[0].reason, 'search-incomplete');
   assert.equal(repos.diagnostics.completeCoverageClaimed, false);
 });
