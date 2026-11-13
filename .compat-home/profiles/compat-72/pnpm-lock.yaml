@@ -23,12 +23,15 @@ importers:
       '@zseven-w/dsh-ios':
         specifier: github:ZSeven-W/dsh-ios
         version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/ffa90be4c34d54848d862b1a4e0a5deacdd18a26(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      dsh-at-file:
+        specifier: github:FSMargoo/dsh-at-file
+        version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524(react@18.3.1)
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
         version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/f159c98724a0171298c4824684efd23190ae873a(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
       dsh-claude-style:
         specifier: github:Nwflower/dsh-claude-style
-        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c0f2863518a065d7d73b935baae97aca8648c936(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dsh-ego-browser:
         specifier: github:Fisfzy/dsh-ego-browser
         version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/52a4a449b31d43cbe7a0235c520523a7a86f46b6(react@18.3.1)
@@ -43,10 +46,10 @@ importers:
         version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/b0aaabd987e565891c408b2d31eda934839815b6(@types/node@22.20.5)
       dsh-plugin:
         specifier: github:dshplugin/dsh-plugin-hub
-        version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/e1af8da27e6a4bc20b4ee69637128430e5fcdcc1
+        version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/cdd8d717253dfb3dd08d3e267d74b477d63a6d5a
       dsh-plugin-marketplace:
         specifier: github:YELEBAI/dsh-plugin-marketplace
-        version: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/7ca46a122463efff3eb2b911cfce5ad7b0b23407
+        version: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/f468f76689fcae7e384a67f6c4116413c7212316
       dsh-see-now:
         specifier: github:SAOS-3624/dsh-see-now
         version: https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/1d98dd5bf1fdcad58fbf27b6906bb8c525ccccb3
@@ -625,6 +628,60 @@ packages:
   devtools-protocol@0.0.1608973:
     resolution: {integrity: sha512-Tpm17fxYzt+J7VrGdc1k8YdRqS3YV7se/M6KeemEqvUbq/n7At1rWVuXMxQgpWkdwSdIEKYbU//Bve+Shm4YNQ==}
 
+  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
+    resolution: {gitHosted: true, integrity: sha512-aXpz1DsFOgd4cUEIeWyTubH9wORj8b/ruLaefeynSwO+M5sp4JOg/RrFj2qya9nKex3jFMdTWVGueZyhpfKDXA==, tarball: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524}
+    version: 0.7.0
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-agent': '*'
+      '@deepseek-ai/dsh-api-remotes': '*'
+      '@deepseek-ai/dsh-client-connection': '*'
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-runtime': '*'
+      '@deepseek-ai/dsh-client-store': '*'
+      '@deepseek-ai/dsh-client-ui-conversation': '*'
+      '@deepseek-ai/dsh-client-ui-input-trigger': '*'
+      '@deepseek-ai/dsh-client-ui-settings': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-settings': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      '@deepseek-ai/dsh-typert-registry': '*'
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-api-remotes':
+        optional: true
+      '@deepseek-ai/dsh-client-connection':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-store':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-input-trigger':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-settings':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      '@deepseek-ai/dsh-typert-registry':
+        optional: true
+      react:
+        optional: true
+
   dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/f159c98724a0171298c4824684efd23190ae873a:
     resolution: {gitHosted: true, integrity: sha512-r6aP5l5uGmOUdXLbRfbC8dlL7L6C2sK6Pn7F+Wua+LnJ/b3G011O6qv/HngFZqd80CI5yRL93fO4klnOskFuuA==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/f159c98724a0171298c4824684efd23190ae873a}
     version: 0.26.6
@@ -638,9 +695,9 @@ packages:
       '@deepseek-ai/schemastery': '>=3.0.0'
       react: '>=18.0.0'
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9:
-    resolution: {gitHosted: true, integrity: sha512-Low3XX1fAQMGcWSYpEwR2YUfSb2i+HTpTIB29wiJt7FjPoyFbGTafruKHHa6CieZBHosSqqQclP6K65eKnbMCA==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9}
-    version: 0.20.3
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c0f2863518a065d7d73b935baae97aca8648c936:
+    resolution: {gitHosted: true, integrity: sha512-1K6rfoRl53Gbh8zI6sUTpyt+iYm4jFYZSOiS08Gh6sxLn7YcemHdVKaAmOrcWaj5wA9tinegwfTuRRqraRO1hA==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c0f2863518a065d7d73b935baae97aca8648c936}
+    version: 0.21.0
     peerDependencies:
       '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.2-rc.1'
       '@deepseek-ai/schemastery': '>=3.18.0'
@@ -705,8 +762,8 @@ packages:
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
 
-  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/7ca46a122463efff3eb2b911cfce5ad7b0b23407:
-    resolution: {gitHosted: true, integrity: sha512-FUC8Zn318PQRgf+DamJecoYXgqz1HcPwLA+glaYr4LgxHXo/BkmHNZrJpBldO1x5HQF3O3KF8nkatxIpkh2jZg==, tarball: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/7ca46a122463efff3eb2b911cfce5ad7b0b23407}
+  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/f468f76689fcae7e384a67f6c4116413c7212316:
+    resolution: {gitHosted: true, integrity: sha512-PN0fISonDhZD8fG2eHq3+yEbsMwn0Aax+iDs++3hKwyhjTvyAC31ya9BjC+dLTu5dEGzmCKZa2KJ8Su1AjGSWw==, tarball: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/f468f76689fcae7e384a67f6c4116413c7212316}
     version: 0.9.5
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
@@ -714,8 +771,8 @@ packages:
       '@deepseek-ai/dsh-app-boot': ^0.1.0-rc.5 || ^0.1.7-alpha.2 || ^0.2.0-rc.2
       '@deepseek-ai/dsh-typert-protocol': ^0.1.0-rc.5 || ^0.1.7-alpha.2 || ^0.2.0-rc.2
 
-  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/e1af8da27e6a4bc20b4ee69637128430e5fcdcc1:
-    resolution: {gitHosted: true, integrity: sha512-8b7vFnyZ+6bt0gB4JHhAmMICweMVzaKuFvd8g3keScHJI/WO4PA8c0qr9cEo+EpjhMDo43fxreePog2c3I1kjw==, tarball: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/e1af8da27e6a4bc20b4ee69637128430e5fcdcc1}
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/cdd8d717253dfb3dd08d3e267d74b477d63a6d5a:
+    resolution: {gitHosted: true, integrity: sha512-iLXeEx+8IS1A79r7g07PLMqGzuEF0CncXTnpm1BAn3chYLD2iDXWA3l8T6imGBJYUT93ueBDmACZFjRDfwgxTw==, tarball: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/cdd8d717253dfb3dd08d3e267d74b477d63a6d5a}
     version: 2.3.9
     engines: {node: '>=22.6'}
     peerDependencies:
@@ -1989,13 +2046,19 @@ snapshots:
 
   devtools-protocol@0.0.1608973: {}
 
+  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524(react@18.3.1):
+    dependencies:
+      zod: 4.6.7
+    optionalDependencies:
+      react: 18.3.1
+
   dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/f159c98724a0171298c4824684efd23190ae873a(@deepseek-ai/schemastery@3.18.5)(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       fzstd: 0.1.1
       react: 18.3.1
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c0f2863518a065d7d73b935baae97aca8648c936(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       react: 18.3.1
@@ -2030,11 +2093,11 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/7ca46a122463efff3eb2b911cfce5ad7b0b23407:
+  dsh-plugin-marketplace@https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/f468f76689fcae7e384a67f6c4116413c7212316:
     dependencies:
       zod: 4.6.7
 
-  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/e1af8da27e6a4bc20b4ee69637128430e5fcdcc1: {}
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/cdd8d717253dfb3dd08d3e267d74b477d63a6d5a: {}
 
   dsh-see-now@https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/1d98dd5bf1fdcad58fbf27b6906bb8c525ccccb3: {}
 

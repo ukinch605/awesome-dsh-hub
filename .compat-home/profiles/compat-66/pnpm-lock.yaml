@@ -13,7 +13,7 @@ importers:
         version: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8
       '@michengai/dsh-skills-manager':
         specifier: github:MichengAI/dsh-skills-manager
-        version: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/5d9db87081504d2c6751d5617665a54fb80c4bd5
+        version: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/55651863ed57786714fff2e9abe5933b9ecf08b5
       '@nagi-ovo/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
         version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/af4efe7a59a36d4562b340ff50d771d2691cdc8c(@deepseek-ai/schemastery@3.18.5)
@@ -37,7 +37,10 @@ importers:
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
       dsh-claude-style:
         specifier: github:Nwflower/dsh-claude-style
-        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c0f2863518a065d7d73b935baae97aca8648c936(@deepseek-ai/schemastery@3.18.5)
+      dsh-dafeiyu:
+        specifier: github:QCYTSN/dsh-dafeiyu
+        version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a
       dsh-git-memory:
         specifier: github:seriousz158/dsh-memory
         version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.5)
@@ -49,7 +52,7 @@ importers:
         version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/b0aaabd987e565891c408b2d31eda934839815b6(@types/node@26.6.5)
       dsh-plugin:
         specifier: github:dshplugin/dsh-plugin-hub
-        version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/e1af8da27e6a4bc20b4ee69637128430e5fcdcc1
+        version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/cdd8d717253dfb3dd08d3e267d74b477d63a6d5a
       dsh-plugin-marketplace:
         specifier: github:bradeGithub/DSH-Plugins-Marketplace
         version: https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/cf4896debab98ebe6113a6d91bb03c9ebd6c9612
@@ -67,7 +70,7 @@ importers:
         version: https://codeload.github.com/c3cvld7aag/fujiang-dsh/tar.gz/ab86ddcd169f0f13bc74923b6ed95eda55224931
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/6ef4a1331b397357ffb42c9299be9b534952e421(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f8225013cc6d89d3f856a2f80505d78ba678fcb4(@deepseek-ai/schemastery@3.18.5)
       open-sea-skin:
         specifier: github:d-dev0101/open-sea-skin
         version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/387740c974f3fd47ef22eebd7c20da4645f2f213
@@ -389,9 +392,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/5d9db87081504d2c6751d5617665a54fb80c4bd5':
-    resolution: {gitHosted: true, integrity: sha512-Eh0eOJmH+bS/jrXahmMmsY9nndyklIRYsKEIJQTJ9aNwAVMT7tJiy2W6480Uq86sHoeHkplSHurQd9cBhWfXHQ==, tarball: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/5d9db87081504d2c6751d5617665a54fb80c4bd5}
-    version: 1.4.3
+  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/55651863ed57786714fff2e9abe5933b9ecf08b5':
+    resolution: {gitHosted: true, integrity: sha512-hjI/zMAlSsBks7TaFBkmbel7XaohyByrw/CDl4/PvXzELP91LTQCKey6NH0fTpxC2pqRiEr+cafV6oadSDGRnQ==, tarball: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/55651863ed57786714fff2e9abe5933b9ecf08b5}
+    version: 1.4.5
     engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1 <5.0.0'
@@ -813,14 +816,23 @@ packages:
       react:
         optional: true
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9:
-    resolution: {gitHosted: true, integrity: sha512-Low3XX1fAQMGcWSYpEwR2YUfSb2i+HTpTIB29wiJt7FjPoyFbGTafruKHHa6CieZBHosSqqQclP6K65eKnbMCA==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9}
-    version: 0.20.3
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c0f2863518a065d7d73b935baae97aca8648c936:
+    resolution: {gitHosted: true, integrity: sha512-1K6rfoRl53Gbh8zI6sUTpyt+iYm4jFYZSOiS08Gh6sxLn7YcemHdVKaAmOrcWaj5wA9tinegwfTuRRqraRO1hA==, tarball: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c0f2863518a065d7d73b935baae97aca8648c936}
+    version: 0.21.0
     peerDependencies:
       '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.2-rc.1'
       '@deepseek-ai/schemastery': '>=3.18.0'
       react: ^18.2.0
       react-dom: ^18.2.0
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a:
+    resolution: {gitHosted: true, integrity: sha512-hIZyZNS1nYtLlYEEtz0P120y10RS0j4TfdZuG882xIRN7z++jvdrhXlOFkNDzKkgh302b3I2ycF6/DTota05Sg==, tarball: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a}
+    version: 0.1.23
+    engines: {node: '>=22.19'}
+    bundledDependencies:
+      - '@deepseek-ai/cosmokit'
+      - '@deepseek-ai/schemastery'
+      - '@standard-schema/spec'
 
   dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d:
     resolution: {gitHosted: true, integrity: sha512-ap81grYr3/a3sb2KkW6quA7zxjXaZjPVTMGE/ZrCPfcmhegQ9LqKe7V2KAkwSY5xUzegzT2ErazP7dl/Fq0Vug==, tarball: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d}
@@ -855,8 +867,8 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-QOccI6GbdfaAEfe8N7nvqAdV/g61LbIYbQms6yD1x2Vfq/EFi7LNuX4ifVs9WYl5T0wYpptKS40tilO1auZCww==, tarball: https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/cf4896debab98ebe6113a6d91bb03c9ebd6c9612}
     version: 1.5.5
 
-  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/e1af8da27e6a4bc20b4ee69637128430e5fcdcc1:
-    resolution: {gitHosted: true, integrity: sha512-8b7vFnyZ+6bt0gB4JHhAmMICweMVzaKuFvd8g3keScHJI/WO4PA8c0qr9cEo+EpjhMDo43fxreePog2c3I1kjw==, tarball: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/e1af8da27e6a4bc20b4ee69637128430e5fcdcc1}
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/cdd8d717253dfb3dd08d3e267d74b477d63a6d5a:
+    resolution: {gitHosted: true, integrity: sha512-iLXeEx+8IS1A79r7g07PLMqGzuEF0CncXTnpm1BAn3chYLD2iDXWA3l8T6imGBJYUT93ueBDmACZFjRDfwgxTw==, tarball: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/cdd8d717253dfb3dd08d3e267d74b477d63a6d5a}
     version: 2.3.9
     engines: {node: '>=22.6'}
     peerDependencies:
@@ -1049,9 +1061,9 @@ packages:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/6ef4a1331b397357ffb42c9299be9b534952e421:
-    resolution: {gitHosted: true, integrity: sha512-as6e8PvjsyrzMsEOtaP6OM8WnFrRQ3ykJvtFuhKvzcmoY0z82sRXYOOLDfx0TWFxmHq0qBjT0ztI2vavB/kyxg==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/6ef4a1331b397357ffb42c9299be9b534952e421}
-    version: 3.11.3
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f8225013cc6d89d3f856a2f80505d78ba678fcb4:
+    resolution: {gitHosted: true, integrity: sha512-1x6xueFLr6j92I99+gI+3nT//T2MyElfktPW+bBu0vdwWFeIbjb7vxxWqnPJ2DigWHglh5okNX3oqGvYXMrTOQ==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f8225013cc6d89d3f856a2f80505d78ba678fcb4}
+    version: 3.14.0
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
@@ -1729,7 +1741,7 @@ snapshots:
   '@img/sharp-win32-x64@0.35.5':
     optional: true
 
-  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/5d9db87081504d2c6751d5617665a54fb80c4bd5':
+  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/55651863ed57786714fff2e9abe5933b9ecf08b5':
     dependencies:
       fflate: 0.8.3
 
@@ -2025,9 +2037,11 @@ snapshots:
     dependencies:
       zod: 4.4.3
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/d9feb535c1ee2b811af7e35562a934ae2b59b1c9(@deepseek-ai/schemastery@3.18.5):
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c0f2863518a065d7d73b935baae97aca8648c936(@deepseek-ai/schemastery@3.18.5):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a: {}
 
   dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.5):
     dependencies:
@@ -2054,7 +2068,7 @@ snapshots:
 
   dsh-plugin-marketplace@https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/cf4896debab98ebe6113a6d91bb03c9ebd6c9612: {}
 
-  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/e1af8da27e6a4bc20b4ee69637128430e5fcdcc1: {}
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/cdd8d717253dfb3dd08d3e267d74b477d63a6d5a: {}
 
   dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162: {}
 
@@ -2254,7 +2268,7 @@ snapshots:
 
   lru-cache@7.18.3: {}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/6ef4a1331b397357ffb42c9299be9b534952e421(@deepseek-ai/schemastery@3.18.5):
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/f8225013cc6d89d3f856a2f80505d78ba678fcb4(@deepseek-ai/schemastery@3.18.5):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
