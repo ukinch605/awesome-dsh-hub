@@ -10,13 +10,16 @@ importers:
     dependencies:
       '@mnemon-dev/dsh-mnemon':
         specifier: github:mnemon-dev/mnemon
-        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/bbc9151234e0c4f563a0d581e4bc2d5a2d4f83ec
+        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/7313b9284d0d15689352cae9a2e563102b4d8e1d
       aegis:
         specifier: github:GanyuanRan/Aegis
-        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1370a15001b9130316d51715bab44c87a3993dcb
+        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2
+      dsh-purge-community:
+        specifier: github:kingcharleslzy-ai/dsh-purge
+        version: https://codeload.github.com/kingcharleslzy-ai/dsh-purge/tar.gz/44379d4e4b2d1d7a65b3518c412cca46b1b818c3
       dsh-web:
         specifier: github:zhu1090093659/dsh-web
-        version: https://codeload.github.com/zhu1090093659/dsh-web/tar.gz/746f580d96ad7d96bbc4a59885a900b42de2eeec
+        version: https://codeload.github.com/zhu1090093659/dsh-web/tar.gz/0af7b234f79e386634fbbfc7e99fd2ebd3ec0d7b
       dsh-whale-widget:
         specifier: github:MeteorNOX/DeepSeek-Balance-Whale-Widget
         version: https://codeload.github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget/tar.gz/4448c61db7d180c4c307aa3fa734db7c8507658d
@@ -32,164 +35,168 @@ packages:
   '@deepseek-ai/cosmokit@1.8.6':
     resolution: {integrity: sha512-ZSD/fN52L498LBIOYwjIOlaLv5veY6ZEwI2yzvZUKQtctn0QAPqu8tKdJ+OF5+Tv6NBq1U+wJWH+QI6OGy5EvQ==}
 
+  '@deepseek-ai/cosmokit@1.9.0':
+    resolution: {integrity: sha512-5O1S53mZiJyZYcvxxD0Qv1EY7qFPSxbGyD8CbVK6gw7W9FvcXZj2YIX1ZkOqyQQ3Xt2rFkZDHJv0+V3Zmmp8CA==}
+
   '@deepseek-ai/schemastery@3.18.5':
     resolution: {integrity: sha512-Mnobvqf9rHsZYv4g5edj5ddxS1oF1kIdSlz0DunUgnY3LWG5F26MqvH3YOOsSaodCgyzJ16OMN9O99/s5Crtdw==}
 
-  '@linxin666/dsh-agents@0.4.14':
-    resolution: {integrity: sha512-+BSTdLE7lCuyrW0anR+vy3OUzYghLANFbbtVKm0ptqpqzN8WlnOnIhofOGxZ6EbHBHJixg5Irw/vqh4zqZzGRQ==}
+  '@deepseek-ai/schemastery@3.19.0':
+    resolution: {integrity: sha512-bDXoYQa7ghAhmdYD5VPlzKxEzJV/aKkz5l4V5h1u06z8GAPN1ROewSjvR9WiXhpa52E9fng8lpH5QdCRIQgnyQ==}
+
+  '@linxin666/dsh-agents@0.4.18':
+    resolution: {integrity: sha512-2uGBKZx73BvcpbRUyNCvC4ZgPa9EX00XO9+FdcshRUu2/O7FlHo8v1Q4/V3M8Cq8Fu7o6mxvY6s/XnS+V9Eldg==}
     peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
       react: ^18.2.0
 
-  '@linxin666/dsh-client-ui-browser-view@0.4.14':
-    resolution: {integrity: sha512-A5eju4ZHX7fuhhS0ICXLgfFx/Unm+GrCfeVKHbULP7b7meUYToSceiE48yJQrLdIxfcgjC5EoNtAGxwLf8k9XQ==}
+  '@linxin666/dsh-client-ui-browser-view@0.4.18':
+    resolution: {integrity: sha512-8HnMdNgPGv+LGDBzeAaCqmRjyeHutLf1i0L38Fu1XHbHyaVgj3IJy8NOZHTmoCmmmJrXzyOYQ30FR8nt/5ktQw==}
     peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-      react-dom: ^18.2.0
-
-  '@linxin666/dsh-client-ui-community-plugins@0.4.14':
-    resolution: {integrity: sha512-kAkPbSthByDMyhmyPqR4pcZx5vAFBWmp6rlWpT8M/6yrFCjvuDjI5f1bT+x11cOAGlmqiH7Dxloezwz4UCGCPQ==}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-
-  '@linxin666/dsh-client-ui-git-graph@0.4.14':
-    resolution: {integrity: sha512-x75rWmqFwH1WjAKHJ7EyNI9u/N0FVobhzuJ6aBM5paCDet7+kEDyo79RcwH6cZn1LNqG2oqC88fXQ6l1tx7QVA==}
-    engines: {node: ^22.19.0 || >=24.0.0}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-
-  '@linxin666/dsh-client-ui-market@0.4.14':
-    resolution: {integrity: sha512-+WvsCTfjIBSnmKaWPpSgR7Y0nB+kXngrtJrDfZXQzTj34ggXfVonC3m4vhzVDhj09cg34rg9gcT5S61L9sESkw==}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-
-  '@linxin666/dsh-client-ui-message-edit@0.4.14':
-    resolution: {integrity: sha512-hmCf+67uz66/iPeBS+1iF6UvzSlDY7En7nFpUEoGOYfMwxTLFMVTWaz3UrEWR6XKF3JLqv1lAELlAAgJ0pwfZQ==}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-
-  '@linxin666/dsh-client-ui-plugin-manager@0.4.14':
-    resolution: {integrity: sha512-ERO/CGG9O4p6OD9Gzgp26CpHeq7pqd58hb6cEF3mHpA32PKnRuzAhHUbFVfrI/eRDFUlnvupD8RMJ4vWk389uA==}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-
-  '@linxin666/dsh-client-ui-preset-center@0.4.14':
-    resolution: {integrity: sha512-wkoIoORmqrWdzAC0jU3KgOT9CS0ABiT7npeWlmESxVaVAW6CkCsEv5A3TjdBDqQiqMGZahaPhepS+RaafOyC2A==}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-
-  '@linxin666/dsh-client-ui-skill-explorer@0.4.14':
-    resolution: {integrity: sha512-u4SJ6/vUTcpnLuhxjeH45reqdioWFH2PrzQzJoir0ektfqs1Njcsw/elTI2kpVfmqq2vtLilHStdkF/9blcgag==}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-
-  '@linxin666/dsh-client-ui-skin-center@0.4.14':
-    resolution: {integrity: sha512-R7gWCimNh3iMx4zSU8au6PUhxIvwaRR6PVDUMsVKyY4b0NqzSrQgD8+zdyBBT0gD2jmRrhA5FwIomXsljq7QJA==}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-
-  '@linxin666/dsh-client-ui-task-board-github@0.4.14':
-    resolution: {integrity: sha512-H8XSaRwn7Y4vUQLF5ASI/l1cFFHUOSh895cCiXWm3HULhLipAFhuZo+WMMMVK71eOYZa4XQjhTt/ocFTPdv+zA==}
-    engines: {node: ^22.19.0 || >=24.0.0}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-
-  '@linxin666/dsh-client-ui-task-board-team@0.4.14':
-    resolution: {integrity: sha512-FW7m4quD/BfnbzRHoKXvUnZyP159pmLg0ePxNoQLHa7mFoHJXY0MXXnYb/DMerq+CsK6Yi2o3oJ9rhO9MLizoQ==}
-    engines: {node: ^22.19.0 || >=24.0.0}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-
-  '@linxin666/dsh-client-ui-task-board@0.4.14':
-    resolution: {integrity: sha512-buISWLJQcZ2T+oUlQEB7K2QIyyIq1+ti8LxQKMG3mJquAbuLKOTs4cC3X0n6heIC26JT0/b92hfaB5pk0OKPXw==}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-
-  '@linxin666/dsh-client-ui-web-ui-settings@0.4.14':
-    resolution: {integrity: sha512-Bq/G85VDTQw+vk7aAUYg/AiePoxlhJDkZRQ4pDvs8CT2cKF/DtVCOv6SpQ6TePSYfrhzP7F6gO45MlMBKXgvcg==}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-
-  '@linxin666/dsh-i18n@0.4.14':
-    resolution: {integrity: sha512-YRIigzyyJ+TkSHaBC6fcQT6U+mkg8ijMMKFH910AUWLfP0bFq6X5C5f1bdBAci0DdCQiThJ2bgrGyVVjNicxRA==}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-
-  '@linxin666/dsh-liangshen@0.4.14':
-    resolution: {integrity: sha512-kWlyOedA4HqdPeIk13c1VQKPYhaRZmoAMxXOrNQ5EGIdQzgh8XavOwufcs+9oJThoSV3rrtpvF1NNf9l3iZiIA==}
-    engines: {node: ^22.19.0 || >=24.0.0}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-
-  '@linxin666/dsh-pet@0.4.14':
-    resolution: {integrity: sha512-Q/bLdaSO66PFVTIggmLxXXze8g0rizRJKkRg5N5HZ79A0XGAdtu9Mf72Q2EPCGWorASAuWMdLpj/q1sXg1ifsw==}
-    engines: {node: ^22.19.0 || >=24.0.0}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  '@linxin666/dsh-remote-bridge@0.4.14':
-    resolution: {integrity: sha512-qdPjgElkYsu9/2dqde9vVmoBnnhjieUkKNj/N0iomu4BD9NkcBo3HESfT/3csSeGTsORCA9FaXSOMeCOyMpUaQ==}
-    engines: {node: ^22.19.0 || >=24.0.0}
+  '@linxin666/dsh-client-ui-community-plugins@0.4.18':
+    resolution: {integrity: sha512-ZOqJg23fJe0xS0oSpwtyrpGk5Lxzb5+gI/277iA74BoBA3BHvRuI4Z6RQWPuyH/AYXfYyHGJ056kMVt1PI6LGw==}
     peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+      react: ^18.2.0
+
+  '@linxin666/dsh-client-ui-diagrams@0.4.18':
+    resolution: {integrity: sha512-WstyhNcF4MwDhEwps5K9rnz3FlrtKPJj64RUv/SaGo578ECXFSt/uq7dy86LRvEMFOO1Hq1kEsErmsIkZ0721g==}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+
+  '@linxin666/dsh-client-ui-market@0.4.18':
+    resolution: {integrity: sha512-bqMlXx4lCxA++CUxH2Z0l8x8F3x2dD9miZaSQVRXtlaS6HkpjQGdH3Z7I4ph/27BffJnzwWpd4P4kcHaKcc8KA==}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+      react: ^18.2.0
+
+  '@linxin666/dsh-client-ui-message-edit@0.4.18':
+    resolution: {integrity: sha512-Ztmx/ehl0mG041buPMxzxz1Fr9SZuYkZqLwKsDMXsxGEtw3rVDzQqGFl+GqYx7XbW399cUwf05TZ719Pfu43NQ==}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+      react: ^18.2.0
+
+  '@linxin666/dsh-client-ui-plugin-manager@0.4.18':
+    resolution: {integrity: sha512-V+MUZGsRPlwqIRrYAbBTwsj03xqW0YTQCdN+6I005Aou+f0X12ls7XYK9+23fcUwoT2Kj1NJg+JkywRDQ88tIA==}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+      react: ^18.2.0
+
+  '@linxin666/dsh-client-ui-preset-center@0.4.18':
+    resolution: {integrity: sha512-z+I60QSjVFHvV2iV1IWbXr8tjTmYRTaT1mQevLg10qLm/mBrwtvKDjiNjcATF1LVY6Gz3vb3HRASNAVI6MKDSg==}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+      react: ^18.2.0
+
+  '@linxin666/dsh-client-ui-skill-explorer@0.4.18':
+    resolution: {integrity: sha512-BIWp+YFjgeHEQe50OGHgQIQij5IHJA9o764aVNfyGYXmcDD77agYv4MSXkKiEUevtRtfI51++bQXYcGArTktoA==}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+      react: ^18.2.0
+
+  '@linxin666/dsh-client-ui-skin-center@0.4.18':
+    resolution: {integrity: sha512-DEVepHmRhU8RynKwnEKowEbAJGY3pR8DsiEPNrOHfMnYm2Znro80AgILoarZYhxm4jDbbwpotdEYOEHd9+zu9w==}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+      react: ^18.2.0
+
+  '@linxin666/dsh-client-ui-task-board-github@0.4.18':
+    resolution: {integrity: sha512-pWqhivBblWlJMbCRxGBEvqUvXmKblpBKAbkURvgF5O4q5QPrAHcSYZf9JntqtyRQ6Y8NMNFikqQ0Y7m5waSaWw==}
+    engines: {node: '>=24.9.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+      react: ^18.2.0
+
+  '@linxin666/dsh-client-ui-task-board-team@0.4.18':
+    resolution: {integrity: sha512-2zXs8cIUmMVnMVKTrwnygxwSaeUG80Iv5Pdo1zbxatwZobSG2WPbbZmWg5RSd2tlTPf5BWY5EVZ2XWNK53Hz3g==}
+    engines: {node: '>=24.9.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+      react: ^18.2.0
+
+  '@linxin666/dsh-client-ui-task-board@0.4.18':
+    resolution: {integrity: sha512-hlFB9zoPjN/vh7hISt6OEJfi+jEKqbIovp5zE+viHu7E7MNoP5FclilHdgfokGmra77JtxPfDPHza7bnbamAng==}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+      react: ^18.2.0
+
+  '@linxin666/dsh-client-ui-web-ui-settings@0.4.18':
+    resolution: {integrity: sha512-ltT1g9FkzpTqwrxMnTnhjdIqq+qSqYid4Pn1xDgwZd+PqgjoevRb6pYR0eVz+FlY0u+y/usy21alRmhs5cd7+Q==}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+      react: ^18.2.0
+
+  '@linxin666/dsh-i18n@0.4.18':
+    resolution: {integrity: sha512-exjTgF7YIPQTokADaN6cDULR4syxGUpFNz5K5mI/VUbEJf93YTkHKFXdqL0XtpI6oA8F/JjbRdUzwqlBxjEDZQ==}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+
+  '@linxin666/dsh-liangshen@0.4.18':
+    resolution: {integrity: sha512-y8SNNz3wgx3NWdZHcxvck0t3LiaOFybK4SWEntlyxMGQmUU9sM6PUvVzVvGaIcIGRq5PAbpPeoixkFmye4tI9g==}
+    engines: {node: '>=24.9.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+
+  '@linxin666/dsh-pet@0.4.18':
+    resolution: {integrity: sha512-+1GSDGXx42YZcUh1VS98iMvXxVjpaTYjQA/RNaHdRjdUboZAGHYjSofV3byduZy2ve/+bbLA8i8FQVPrNx8T1g==}
+    engines: {node: '>=24.9.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  '@linxin666/dsh-session-archive@0.4.14':
-    resolution: {integrity: sha512-JbL+zWsLUkE/IdCYugyKo61YHeWMm9p8+SGt7vbqqRNYQ5zXkh0s8NjnflkZnkCpAokEhFrGw4XFKqdFcR8nEA==}
-    engines: {node: ^22.19.0 || >=24.0.0}
+  '@linxin666/dsh-remote-bridge@0.4.18':
+    resolution: {integrity: sha512-8/g16Lug77kq0PxXGD58v4la5T2TZX2aAIbAR2PlKtgdffmeEqBTHe+m0W+6YZZcsXY17eQgHjEA3loYz9AvNg==}
+    engines: {node: '>=24.9.0'}
     peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-      react: ^18.2.0
-
-  '@linxin666/dsh-ssh@0.4.14':
-    resolution: {integrity: sha512-Und1Ii0zwBZoN7wnwuZXpExIEzU+raNQlEtPDhBMWCWNA/QuXE5UK4N6m4qCZt0PnrwINB4ef0XTHttECx1YNw==}
-    engines: {node: ^22.19.0 || >=24.0.0}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  '@linxin666/dsh-task-board-remote@0.4.14':
-    resolution: {integrity: sha512-qG7UKtdiEM3TER4S02fJG5r1G2EJiG2eo/dLzPOvVMgWx/v7UKfiy3pwXiWmSYbhpuhAei8IxStNJ+4uPh5g3w==}
-    engines: {node: ^22.19.0 || >=24.0.0}
+  '@linxin666/dsh-session-archive@0.4.18':
+    resolution: {integrity: sha512-s5pDfI5JG2iH4guDj/PUfJrTJ3bkNb8ucQK0VHk4rhhPcchgbu5q6p7G6Wn6bX/zpH+C3i1jctiqZGSKL2uW5Q==}
+    engines: {node: '>=24.9.0'}
     peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
-
-  '@linxin666/dsh-usage@0.4.14':
-    resolution: {integrity: sha512-mXNvsGyloEarJ3yOz7rJpAKVi9IrZG7JFCP9LQvW/m3MQwPiTCM9/5EWvIaBSsagin6dZwNIsz/RddMZjrKDSA==}
-    engines: {node: ^22.19.0 || >=24.0.0}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
       react: ^18.2.0
 
-  '@linxin666/dsh-web-all@0.4.14':
-    resolution: {integrity: sha512-NwUtaazh5B+iK6a/mosNHu98RIWOQ8UsWT7g1mbKD1dGGfZtWLL9GFDCxqF8/pEnSjEuEc+4yTVnX4w0SsZ6Cg==}
+  '@linxin666/dsh-ssh@0.4.18':
+    resolution: {integrity: sha512-xWR0IPbVyjLvq20iVuMCHUIXRdpkF21PSfkIPwZa5FSR/bJjylRyrT9gRZzx+0fAI3UM8ALFgMLkXaH/qbqsvg==}
+    engines: {node: '>=24.9.0'}
     peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
-  '@linxin666/dsh-win-bash@0.4.14':
-    resolution: {integrity: sha512-erWdyn1Y+qoTnszMF7wGIYVU6sw05ayeExRj3Kb0kkIft6nLaoLIr3kRIwwu7nv9dn2TMONExYl4LQOH2Wm5DA==}
+  '@linxin666/dsh-task-board-remote@0.4.18':
+    resolution: {integrity: sha512-nAKqm1E83FgreBVZwe2zc3lW5PnO3O/VJyXmEjWWQqSetv2fQkSEjQ65TdzGhdOyscWIlSxjglDzdmaq8MbTRg==}
+    engines: {node: '>=24.9.0'}
     peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.1-rc.3'
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
 
-  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/bbc9151234e0c4f563a0d581e4bc2d5a2d4f83ec':
-    resolution: {gitHosted: true, integrity: sha512-kgcOvPdqKZimskO6a8Z1Us4E5g7IDPIklEGhvFMgFQprEVm2vsLT2po7t6+h7Us6w6sFzCv5EWKHMxeMC9WAlg==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/bbc9151234e0c4f563a0d581e4bc2d5a2d4f83ec}
+  '@linxin666/dsh-usage@0.4.18':
+    resolution: {integrity: sha512-gJhDhWfvFmnvAFdRNEywVG4EPOhs4t8i0UI1AY6sqUBai38pHpW4hvAakxYch5hKikEWlJ9fy2mofxqkRp6OQg==}
+    engines: {node: '>=24.9.0'}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+      react: ^18.2.0
+
+  '@linxin666/dsh-web-all@0.4.18':
+    resolution: {integrity: sha512-sQD4oXgXn7vYSg1YwVmQYJEnWFLozvEPI3nxf7Ne7kMLcYEgUcNuIM+CIdvAeSWq1oi9h05mlSaZFjWEqrzs2Q==}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+
+  '@linxin666/dsh-win-bash@0.4.18':
+    resolution: {integrity: sha512-O+Y7rZfzQpuY/VNok2RcAAtOYiMfXtsju4FS+4JVAEsywzqTLuaCVqEiWeSFhOTqvALO772v+qmHXWG5Zdv0JQ==}
+    peerDependencies:
+      '@deepseek-ai/dsh': '>=0.2.2-rc.2'
+
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/7313b9284d0d15689352cae9a2e563102b4d8e1d':
+    resolution: {gitHosted: true, integrity: sha512-7fWnjmkiSK+D/WNwYpzll8OpbJs6U3CVxBNbiaW4tDKTK8aReyrPGbcI6/v/3hK5/AvkKDlX1bCNVmZmEJPDUg==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/7313b9284d0d15689352cae9a2e563102b4d8e1d}
     version: 0.1.0
     engines: {node: '>=20'}
 
@@ -205,9 +212,9 @@ packages:
   '@xterm/xterm@6.0.0':
     resolution: {integrity: sha512-TQwDdQGtwwDt+2cgKDLn0IRaSxYu1tSUjgKarSDkUM0ZNiSRXFpjxEsvc/Zgc5kq5omJ+V0a8/kIM2WD3sMOYg==}
 
-  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1370a15001b9130316d51715bab44c87a3993dcb:
-    resolution: {gitHosted: true, integrity: sha512-GTZiFOa5uj1YDkySHEAknvHxEU84gvwOsOMAh1wTN0fIQXqnTffeQ3NBfJBjhyN3S1HifvZrwkglOY4Nlh11Tg==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1370a15001b9130316d51715bab44c87a3993dcb}
-    version: 2.14.3
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2:
+    resolution: {gitHosted: true, integrity: sha512-0sUOGDVAgKn4wy1YsAapsfQA4XiNWUZ0sxhSA3GkZjSLeNx48yS3DeDCeaA5Av2EldDStMmXZ5cREnFJItwDwg==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2}
+    version: 2.15.2
     peerDependencies:
       '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6'
       '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6'
@@ -249,8 +256,8 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-  dsh-mnemon-provider-byterover@0.5.6:
-    resolution: {integrity: sha512-cr0vyl5c3Ia+FZNhx9tgtswrLTLWApM6EF0BmO2zAnxLp2hlbi9T3gg5NPaTxqXANuPmOBChQ6iDc+6/QYIvaA==}
+  dsh-mnemon-provider-byterover@0.5.7:
+    resolution: {integrity: sha512-HSo1NbmLLh8PqWaVvsqbqh6Ay0uFmafq1ukCeAsdJ/IuzjUSu5cuKmKdlsoOD8vBhXCwzmnb96UgEb3cZUod0A==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -284,8 +291,8 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon-source-memory-spaces: ^0.5.1
 
-  dsh-mnemon-provider-mnemon-native@0.5.10:
-    resolution: {integrity: sha512-5UXVMlgcOPGuhl4SOFY6GoG2a1Wq6m644wlvvM9dOXMv78AGchLD3bTotmCn4eu99r1nUWgEcJqzTtdeEpUJZg==}
+  dsh-mnemon-provider-mnemon-native@0.5.11:
+    resolution: {integrity: sha512-rS/XVk6kd6JWXg+qM2zzm+ycRWQrTg9aBBSn56ZgJbL5y8l1+LTBTPslc1rJ4tWSHwtqYPBjWmeY9IYvRWMLMA==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -312,8 +319,19 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon-source-memory-spaces: ^0.5.1
 
-  dsh-mnemon-source-documents@0.5.12:
-    resolution: {integrity: sha512-RX2RQlp2XLiun/q1Vc/uCRiuduVoz2+wxMDcvB2QJz8M1TC0EgiORYQDFZNNTfHEAiaBMJPsv+QN/D/T7SQh0A==}
+  dsh-mnemon-source-documents@0.6.0:
+    resolution: {integrity: sha512-QMBavZq3GrVW1n/ByDhEaSBjOIGxysf1iXKM1I4KZiFN+TmmSeLDSpLI2vRS0ern2FbZ6hiPaojRX32eFQjuWA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.40
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-source-memory-spaces@0.5.27:
+    resolution: {integrity: sha512-Vha4m0Acu1cwoKMJzeVb4kqiFVjHWYihrkFxMM7ouhWGKBE9+33DjXfWDD0aCi4AT4bNAWere63/8v/at8IwOg==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -323,30 +341,19 @@ packages:
       react:
         optional: true
 
-  dsh-mnemon-source-memory-spaces@0.5.25:
-    resolution: {integrity: sha512-N3DFxAasXt/lICcE2QiXxmydrs8DMYyZFmZCf8HXU0AmVhGy18GNEqujZTBN1+mPdydmzoUCORRVXnq8GrWwFg==}
+  dsh-mnemon-source-runtime@0.5.19:
+    resolution: {integrity: sha512-FcHkcn9v53cwYS5Mp7Nhn2PH6hzV945Ua6PKGXUUlyz96+1bvk/VJkG4UYI/89HEMq7WiwwNE9aJI7sHD5OznA==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      dsh-mnemon: ^0.5.19
+      dsh-mnemon: ^0.5.43
       react: ^18.2.0
     peerDependenciesMeta:
       react:
         optional: true
 
-  dsh-mnemon-source-runtime@0.5.17:
-    resolution: {integrity: sha512-uZhUZcJczjR8cLDO5gFfMAaajTy7aVqjkxkHlQp9gTGo46cN86rBlZFDstbqWacjzERbgtV2sSec1OwsMpFP2A==}
-    engines: {node: '>=20'}
-    peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1
-      dsh-mnemon: ^0.5.19
-      react: ^18.2.0
-    peerDependenciesMeta:
-      react:
-        optional: true
-
-  dsh-mnemon-source-skills@0.5.6:
-    resolution: {integrity: sha512-XuB5qMNhIunqOFbDDmLjIWp0DUeRwy3Gfzu97k7oB1/K5/I6/Szt60wKRmCLkMGswfLPSyiz0PwTnrcBFpz5CQ==}
+  dsh-mnemon-source-skills@0.5.12:
+    resolution: {integrity: sha512-0C72TuaVhf+dYvlpLOEW/bH2zG7lOomkkKhkB+BF+GUCc4OoVGHfO4YJkuAqQ4kby5hd6eGxKdYiWQutHRze+g==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -363,19 +370,19 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon: ^0.5.17
 
-  dsh-mnemon-strategy-default-three-tier@0.5.11:
-    resolution: {integrity: sha512-0Bcbq4skgkjTiOjuLaqOUb7KoPF1aF0qKUSM9ky2f0VHUbJfFlSRGXZW2/VpXnmOkLJ+xWENUTPxQHWrYgv8WQ==}
+  dsh-mnemon-strategy-default-three-tier@0.5.13:
+    resolution: {integrity: sha512-02/CEgd1fKqnD18nwxkiZsWXSmXIAuL/SlPOAioRPrqbB2py6lWhJEsgXZfmaGidwtUfwsyr/t6V04bA2noDPQ==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      dsh-mnemon: ^0.5.17
+      dsh-mnemon: ^0.5.43
 
-  dsh-mnemon-strategy-general@0.5.1:
-    resolution: {integrity: sha512-UzJWKRPyMwVCcVKYuWI5DjDjGvq3cBA24xl2zGhSvAXY32E8KiiYVleAvle4XIhmAfRbjCcZNCFpQGKZTXuz7g==}
+  dsh-mnemon-strategy-general@0.5.2:
+    resolution: {integrity: sha512-8pbutlZ9Lo4T5MY7rLf6zCbwUzRoDtYLxot/Vsb0KMirHc2Ec/Tckao/OPm9StxtJ71K5RRGexZQve17Yh6ZGA==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
-      dsh-mnemon: ^0.5.17
+      dsh-mnemon: ^0.5.43
 
   dsh-mnemon-strategy-light-context@0.5.6:
     resolution: {integrity: sha512-rpuIqIiFQpWQEveQehLaO3b1wX1NeAEMUKChZ8NFa4+RwcPAX47t081VgRAWNnw4NgclenAenp9mTAQXOzmmxA==}
@@ -391,8 +398,8 @@ packages:
       '@deepseek-ai/cordis': ^4.0.1
       dsh-mnemon: ^0.5.17
 
-  dsh-mnemon@0.5.39:
-    resolution: {integrity: sha512-rrbFLSMGVBY+quffzgwMd/o3rxGWbAPNSVmtHnWNL9VV7OQZM9wIlTHjlxQaZ3s/IuOpd+KLFwn3np3a3l729A==}
+  dsh-mnemon@0.5.45:
+    resolution: {integrity: sha512-3wTAzPQG0EVrnpgaejfOTNoMqfHI3hfL374T9PuJZfWyOu71Y+4Ya5w3mzKfURWTXIuFBi7dfIpQpp6mhHfKFg==}
     engines: {dsh: '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0', node: '>=20'}
     hasBin: true
     peerDependencies:
@@ -405,9 +412,17 @@ packages:
       '@deepseek-ai/dsh-app-boot':
         optional: true
 
-  dsh-web@https://codeload.github.com/zhu1090093659/dsh-web/tar.gz/746f580d96ad7d96bbc4a59885a900b42de2eeec:
-    resolution: {gitHosted: true, integrity: sha512-+JGUNgXphAckezK6DafmBAVvD2nO/F2bWkJ4XfK3Gux58XbzbTbG9aTChE6Hq40npFt7MayUAnomYCL773kVWg==, tarball: https://codeload.github.com/zhu1090093659/dsh-web/tar.gz/746f580d96ad7d96bbc4a59885a900b42de2eeec}
-    version: 0.4.14
+  dsh-purge-community@https://codeload.github.com/kingcharleslzy-ai/dsh-purge/tar.gz/44379d4e4b2d1d7a65b3518c412cca46b1b818c3:
+    resolution: {gitHosted: true, integrity: sha512-OtaBdM58BaQJaghjyrPU9QrSODCK2TlxKzSgokHEBHsruJc5AGiSovJ6e7NyEYAqkDc0VDaU+DILfRUjN+b9ag==, tarball: https://codeload.github.com/kingcharleslzy-ai/dsh-purge/tar.gz/44379d4e4b2d1d7a65b3518c412cca46b1b818c3}
+    version: 1.7.14
+    engines: {node: '>=18'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+
+  dsh-web@https://codeload.github.com/zhu1090093659/dsh-web/tar.gz/0af7b234f79e386634fbbfc7e99fd2ebd3ec0d7b:
+    resolution: {gitHosted: true, integrity: sha512-fr5ngHTaOmgTtp2Hdp+k93LDpvzk6FRyb6XI2NmbJfpCGiehfTXW4YeJ5BvAPTRRLZ7fetoanhpn5iXjau/eKQ==, tarball: https://codeload.github.com/zhu1090093659/dsh-web/tar.gz/0af7b234f79e386634fbbfc7e99fd2ebd3ec0d7b}
+    version: 0.4.18
 
   dsh-whale-widget@https://codeload.github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget/tar.gz/4448c61db7d180c4c307aa3fa734db7c8507658d:
     resolution: {gitHosted: true, integrity: sha512-PDXHIDTEBImDJb+g4/V1xL790nG7nEvtnTja7pzbGdMXfITh1f/jIkt+Rl/XoGwIuywAkyMjrO15K6gdMHw50Q==, tarball: https://codeload.github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget/tar.gz/4448c61db7d180c4c307aa3fa734db7c8507658d}
@@ -567,8 +582,8 @@ packages:
     engines: {node: '>= 14.6'}
     hasBin: true
 
-  zod@4.4.3:
-    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+  zod@4.6.6:
+    resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
 
   zod@4.6.7:
     resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
@@ -577,95 +592,100 @@ snapshots:
 
   '@deepseek-ai/cosmokit@1.8.6': {}
 
+  '@deepseek-ai/cosmokit@1.9.0': {}
+
   '@deepseek-ai/schemastery@3.18.5':
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
-  '@linxin666/dsh-agents@0.4.14':
+  '@deepseek-ai/schemastery@3.19.0':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.5
-      zod: 4.4.3
+      '@deepseek-ai/cosmokit': 1.9.0
+      '@standard-schema/spec': 1.1.0
 
-  '@linxin666/dsh-client-ui-browser-view@0.4.14':
+  '@linxin666/dsh-agents@0.4.18':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.19.0
+      zod: 4.6.6
+
+  '@linxin666/dsh-client-ui-browser-view@0.4.18':
     dependencies:
       ws: 8.22.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@linxin666/dsh-client-ui-community-plugins@0.4.14':
+  '@linxin666/dsh-client-ui-community-plugins@0.4.18':
     dependencies:
       schemastery: 3.18.0
 
-  '@linxin666/dsh-client-ui-git-graph@0.4.14':
-    dependencies:
-      '@deepseek-ai/schemastery': 3.18.5
+  '@linxin666/dsh-client-ui-diagrams@0.4.18': {}
 
-  '@linxin666/dsh-client-ui-market@0.4.14':
+  '@linxin666/dsh-client-ui-market@0.4.18':
     dependencies:
       schemastery: 3.18.0
 
-  '@linxin666/dsh-client-ui-message-edit@0.4.14': {}
+  '@linxin666/dsh-client-ui-message-edit@0.4.18': {}
 
-  '@linxin666/dsh-client-ui-plugin-manager@0.4.14':
+  '@linxin666/dsh-client-ui-plugin-manager@0.4.18':
     dependencies:
       semver: 7.8.6
       yaml: 2.9.1
 
-  '@linxin666/dsh-client-ui-preset-center@0.4.14':
+  '@linxin666/dsh-client-ui-preset-center@0.4.18':
     dependencies:
       schemastery: 3.18.0
 
-  '@linxin666/dsh-client-ui-skill-explorer@0.4.14': {}
+  '@linxin666/dsh-client-ui-skill-explorer@0.4.18': {}
 
-  '@linxin666/dsh-client-ui-skin-center@0.4.14':
+  '@linxin666/dsh-client-ui-skin-center@0.4.18':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.5
+      '@deepseek-ai/schemastery': 3.19.0
       lightningcss: 1.33.0
 
-  '@linxin666/dsh-client-ui-task-board-github@0.4.14':
+  '@linxin666/dsh-client-ui-task-board-github@0.4.18':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.5
+      '@deepseek-ai/schemastery': 3.19.0
 
-  '@linxin666/dsh-client-ui-task-board-team@0.4.14':
+  '@linxin666/dsh-client-ui-task-board-team@0.4.18':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.5
+      '@deepseek-ai/schemastery': 3.19.0
 
-  '@linxin666/dsh-client-ui-task-board@0.4.14':
+  '@linxin666/dsh-client-ui-task-board@0.4.18':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.5
+      '@deepseek-ai/schemastery': 3.19.0
       marked: 18.1.3
 
-  '@linxin666/dsh-client-ui-web-ui-settings@0.4.14':
+  '@linxin666/dsh-client-ui-web-ui-settings@0.4.18':
     dependencies:
       schemastery: 3.18.0
       yaml: 2.9.1
 
-  '@linxin666/dsh-i18n@0.4.14': {}
+  '@linxin666/dsh-i18n@0.4.18': {}
 
-  '@linxin666/dsh-liangshen@0.4.14':
+  '@linxin666/dsh-liangshen@0.4.18':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.5
+      '@deepseek-ai/schemastery': 3.19.0
 
-  '@linxin666/dsh-pet@0.4.14':
+  '@linxin666/dsh-pet@0.4.18':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.5
+      '@deepseek-ai/schemastery': 3.19.0
       clsx: 2.1.1
 
-  '@linxin666/dsh-remote-bridge@0.4.14':
+  '@linxin666/dsh-remote-bridge@0.4.18':
     dependencies:
       cloudflared: 0.7.3
       qrcode.react: 4.2.0
       yaml: 2.9.1
 
-  '@linxin666/dsh-session-archive@0.4.14':
+  '@linxin666/dsh-session-archive@0.4.18':
     dependencies:
       schemastery: 3.18.0
 
-  '@linxin666/dsh-ssh@0.4.14':
+  '@linxin666/dsh-ssh@0.4.18':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.5
+      '@deepseek-ai/schemastery': 3.19.0
       '@xterm/addon-fit': 0.11.0
       '@xterm/xterm': 6.0.0
       ssh2: 1.17.0
@@ -674,48 +694,48 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@linxin666/dsh-task-board-remote@0.4.14': {}
+  '@linxin666/dsh-task-board-remote@0.4.18': {}
 
-  '@linxin666/dsh-usage@0.4.14':
+  '@linxin666/dsh-usage@0.4.18':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.5
+      '@deepseek-ai/schemastery': 3.19.0
 
-  '@linxin666/dsh-web-all@0.4.14':
+  '@linxin666/dsh-web-all@0.4.18':
     dependencies:
-      '@linxin666/dsh-agents': 0.4.14
-      '@linxin666/dsh-client-ui-browser-view': 0.4.14
-      '@linxin666/dsh-client-ui-community-plugins': 0.4.14
-      '@linxin666/dsh-client-ui-git-graph': 0.4.14
-      '@linxin666/dsh-client-ui-market': 0.4.14
-      '@linxin666/dsh-client-ui-message-edit': 0.4.14
-      '@linxin666/dsh-client-ui-plugin-manager': 0.4.14
-      '@linxin666/dsh-client-ui-preset-center': 0.4.14
-      '@linxin666/dsh-client-ui-skill-explorer': 0.4.14
-      '@linxin666/dsh-client-ui-skin-center': 0.4.14
-      '@linxin666/dsh-client-ui-task-board': 0.4.14
-      '@linxin666/dsh-client-ui-task-board-github': 0.4.14
-      '@linxin666/dsh-client-ui-task-board-team': 0.4.14
-      '@linxin666/dsh-client-ui-web-ui-settings': 0.4.14
-      '@linxin666/dsh-i18n': 0.4.14
-      '@linxin666/dsh-liangshen': 0.4.14
-      '@linxin666/dsh-pet': 0.4.14
-      '@linxin666/dsh-remote-bridge': 0.4.14
-      '@linxin666/dsh-session-archive': 0.4.14
-      '@linxin666/dsh-ssh': 0.4.14
-      '@linxin666/dsh-task-board-remote': 0.4.14
-      '@linxin666/dsh-usage': 0.4.14
-      '@linxin666/dsh-win-bash': 0.4.14
+      '@linxin666/dsh-agents': 0.4.18
+      '@linxin666/dsh-client-ui-browser-view': 0.4.18
+      '@linxin666/dsh-client-ui-community-plugins': 0.4.18
+      '@linxin666/dsh-client-ui-diagrams': 0.4.18
+      '@linxin666/dsh-client-ui-market': 0.4.18
+      '@linxin666/dsh-client-ui-message-edit': 0.4.18
+      '@linxin666/dsh-client-ui-plugin-manager': 0.4.18
+      '@linxin666/dsh-client-ui-preset-center': 0.4.18
+      '@linxin666/dsh-client-ui-skill-explorer': 0.4.18
+      '@linxin666/dsh-client-ui-skin-center': 0.4.18
+      '@linxin666/dsh-client-ui-task-board': 0.4.18
+      '@linxin666/dsh-client-ui-task-board-github': 0.4.18
+      '@linxin666/dsh-client-ui-task-board-team': 0.4.18
+      '@linxin666/dsh-client-ui-web-ui-settings': 0.4.18
+      '@linxin666/dsh-i18n': 0.4.18
+      '@linxin666/dsh-liangshen': 0.4.18
+      '@linxin666/dsh-pet': 0.4.18
+      '@linxin666/dsh-remote-bridge': 0.4.18
+      '@linxin666/dsh-session-archive': 0.4.18
+      '@linxin666/dsh-ssh': 0.4.18
+      '@linxin666/dsh-task-board-remote': 0.4.18
+      '@linxin666/dsh-usage': 0.4.18
+      '@linxin666/dsh-win-bash': 0.4.18
     transitivePeerDependencies:
       - bufferutil
       - react
       - react-dom
       - utf-8-validate
 
-  '@linxin666/dsh-win-bash@0.4.14': {}
+  '@linxin666/dsh-win-bash@0.4.18': {}
 
-  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/bbc9151234e0c4f563a0d581e4bc2d5a2d4f83ec':
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/7313b9284d0d15689352cae9a2e563102b4d8e1d':
     dependencies:
-      dsh-mnemon: 0.5.39
+      dsh-mnemon: 0.5.45
     transitivePeerDependencies:
       - '@deepseek-ai/cordis'
       - '@deepseek-ai/dsh-app-boot'
@@ -731,7 +751,7 @@ snapshots:
 
   '@xterm/xterm@6.0.0': {}
 
-  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/1370a15001b9130316d51715bab44c87a3993dcb: {}
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2: {}
 
   asn1@0.2.6:
     dependencies:
@@ -758,113 +778,117 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  dsh-mnemon-provider-byterover@0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39)):
+  dsh-mnemon-provider-byterover@0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.39)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.45)
 
-  dsh-mnemon-provider-hindsight@0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39)):
+  dsh-mnemon-provider-hindsight@0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.39)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.45)
 
-  dsh-mnemon-provider-holographic@0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39)):
+  dsh-mnemon-provider-holographic@0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.39)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.45)
 
-  dsh-mnemon-provider-honcho@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39)):
+  dsh-mnemon-provider-honcho@0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.39)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.45)
 
-  dsh-mnemon-provider-mem0@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39)):
+  dsh-mnemon-provider-mem0@0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.39)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.45)
 
-  dsh-mnemon-provider-mnemon-native@0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39)):
+  dsh-mnemon-provider-mnemon-native@0.5.11(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.39)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.45)
 
-  dsh-mnemon-provider-openviking@0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39)):
+  dsh-mnemon-provider-openviking@0.5.10(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.39)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.45)
 
-  dsh-mnemon-provider-retaindb@0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39)):
+  dsh-mnemon-provider-retaindb@0.5.6(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.39)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.45)
 
-  dsh-mnemon-provider-supermemory@0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39)):
+  dsh-mnemon-provider-supermemory@0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45)):
     dependencies:
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.39)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.45)
 
-  dsh-mnemon-source-documents@0.5.12(dsh-mnemon@0.5.39):
+  dsh-mnemon-source-documents@0.6.0(dsh-mnemon@0.5.45):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: 0.5.39
+      dsh-mnemon: 0.5.45
       markdown-to-jsx: 7.7.17
 
-  dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39):
+  dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: 0.5.39
+      dsh-mnemon: 0.5.45
 
-  dsh-mnemon-source-runtime@0.5.17(dsh-mnemon@0.5.39):
+  dsh-mnemon-source-runtime@0.5.19(dsh-mnemon@0.5.45):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon: 0.5.39
+      dsh-mnemon: 0.5.45
 
-  dsh-mnemon-source-skills@0.5.6(dsh-mnemon@0.5.39):
+  dsh-mnemon-source-skills@0.5.12(dsh-mnemon@0.5.45):
     dependencies:
-      dsh-mnemon: 0.5.39
+      dsh-mnemon: 0.5.45
       markdown-to-jsx: 7.7.17
       yaml: 2.9.1
 
-  dsh-mnemon-strategy-auto-capture@0.5.5(dsh-mnemon@0.5.39):
+  dsh-mnemon-strategy-auto-capture@0.5.5(dsh-mnemon@0.5.45):
     dependencies:
-      dsh-mnemon: 0.5.39
+      dsh-mnemon: 0.5.45
 
-  dsh-mnemon-strategy-default-three-tier@0.5.11(dsh-mnemon@0.5.39):
+  dsh-mnemon-strategy-default-three-tier@0.5.13(dsh-mnemon@0.5.45):
     dependencies:
-      dsh-mnemon: 0.5.39
+      dsh-mnemon: 0.5.45
 
-  dsh-mnemon-strategy-general@0.5.1(dsh-mnemon@0.5.39):
+  dsh-mnemon-strategy-general@0.5.2(dsh-mnemon@0.5.45):
     dependencies:
-      dsh-mnemon: 0.5.39
+      dsh-mnemon: 0.5.45
 
-  dsh-mnemon-strategy-light-context@0.5.6(dsh-mnemon@0.5.39):
+  dsh-mnemon-strategy-light-context@0.5.6(dsh-mnemon@0.5.45):
     dependencies:
-      dsh-mnemon: 0.5.39
+      dsh-mnemon: 0.5.45
 
-  dsh-mnemon-strategy-scoped@0.5.5(dsh-mnemon@0.5.39):
+  dsh-mnemon-strategy-scoped@0.5.5(dsh-mnemon@0.5.45):
     dependencies:
-      dsh-mnemon: 0.5.39
+      dsh-mnemon: 0.5.45
 
-  dsh-mnemon@0.5.39:
+  dsh-mnemon@0.5.45:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.6
       '@deepseek-ai/schemastery': 3.18.5
-      dsh-mnemon-provider-byterover: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39))
-      dsh-mnemon-provider-hindsight: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39))
-      dsh-mnemon-provider-holographic: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39))
-      dsh-mnemon-provider-honcho: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39))
-      dsh-mnemon-provider-mem0: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39))
-      dsh-mnemon-provider-mnemon-native: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39))
-      dsh-mnemon-provider-openviking: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39))
-      dsh-mnemon-provider-retaindb: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39))
-      dsh-mnemon-provider-supermemory: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.25(dsh-mnemon@0.5.39))
-      dsh-mnemon-source-documents: 0.5.12(dsh-mnemon@0.5.39)
-      dsh-mnemon-source-memory-spaces: 0.5.25(dsh-mnemon@0.5.39)
-      dsh-mnemon-source-runtime: 0.5.17(dsh-mnemon@0.5.39)
-      dsh-mnemon-source-skills: 0.5.6(dsh-mnemon@0.5.39)
-      dsh-mnemon-strategy-auto-capture: 0.5.5(dsh-mnemon@0.5.39)
-      dsh-mnemon-strategy-default-three-tier: 0.5.11(dsh-mnemon@0.5.39)
-      dsh-mnemon-strategy-general: 0.5.1(dsh-mnemon@0.5.39)
-      dsh-mnemon-strategy-light-context: 0.5.6(dsh-mnemon@0.5.39)
-      dsh-mnemon-strategy-scoped: 0.5.5(dsh-mnemon@0.5.39)
+      dsh-mnemon-provider-byterover: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45))
+      dsh-mnemon-provider-hindsight: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45))
+      dsh-mnemon-provider-holographic: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45))
+      dsh-mnemon-provider-honcho: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45))
+      dsh-mnemon-provider-mem0: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45))
+      dsh-mnemon-provider-mnemon-native: 0.5.11(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45))
+      dsh-mnemon-provider-openviking: 0.5.10(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45))
+      dsh-mnemon-provider-retaindb: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45))
+      dsh-mnemon-provider-supermemory: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.27(dsh-mnemon@0.5.45))
+      dsh-mnemon-source-documents: 0.6.0(dsh-mnemon@0.5.45)
+      dsh-mnemon-source-memory-spaces: 0.5.27(dsh-mnemon@0.5.45)
+      dsh-mnemon-source-runtime: 0.5.19(dsh-mnemon@0.5.45)
+      dsh-mnemon-source-skills: 0.5.12(dsh-mnemon@0.5.45)
+      dsh-mnemon-strategy-auto-capture: 0.5.5(dsh-mnemon@0.5.45)
+      dsh-mnemon-strategy-default-three-tier: 0.5.13(dsh-mnemon@0.5.45)
+      dsh-mnemon-strategy-general: 0.5.2(dsh-mnemon@0.5.45)
+      dsh-mnemon-strategy-light-context: 0.5.6(dsh-mnemon@0.5.45)
+      dsh-mnemon-strategy-scoped: 0.5.5(dsh-mnemon@0.5.45)
       fflate: 0.8.3
       yaml: 2.9.1
       zod: 4.6.7
 
-  dsh-web@https://codeload.github.com/zhu1090093659/dsh-web/tar.gz/746f580d96ad7d96bbc4a59885a900b42de2eeec:
+  dsh-purge-community@https://codeload.github.com/kingcharleslzy-ai/dsh-purge/tar.gz/44379d4e4b2d1d7a65b3518c412cca46b1b818c3:
     dependencies:
-      '@linxin666/dsh-web-all': 0.4.14
+      yaml: 2.9.1
+
+  dsh-web@https://codeload.github.com/zhu1090093659/dsh-web/tar.gz/0af7b234f79e386634fbbfc7e99fd2ebd3ec0d7b:
+    dependencies:
+      '@linxin666/dsh-web-all': 0.4.18
     transitivePeerDependencies:
       - '@deepseek-ai/dsh'
       - bufferutil
@@ -963,6 +987,6 @@ snapshots:
 
   yaml@2.9.1: {}
 
-  zod@4.4.3: {}
+  zod@4.6.6: {}
 
   zod@4.6.7: {}
