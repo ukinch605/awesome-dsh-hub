@@ -19,7 +19,7 @@ importers:
         version: https://codeload.github.com/LoserFox/distill/tar.gz/78a508c8839a0cd4205c95416905d7d5e2e2775e(@deepseek-ai/schemastery@3.18.5)
       '@michengai/dsh-skills-manager':
         specifier: github:MichengAI/dsh-skills-manager
-        version: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/c289281e1728d95e36998265c3b9e5d634cf6b44
+        version: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/c93fabc89472608d7c928b85722f029469227cb6
       '@nanmicoder/dsh-auto-mode':
         specifier: github:NanmiCoder/dsh-auto-mode
         version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/907d663b7d65e3fcd9f328c598dee03772cac18b
@@ -28,13 +28,16 @@ importers:
         version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0ddf232ef24a6e38b8ebd73c68b360c39f87adf7(@deepseek-ai/schemastery@3.18.5)
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
-        version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/5fd1ccdd8cbc6280f0bfdb6d14000b21a5d2e537
+        version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/56650083e8b1ea01c625b73a4a5c15b98ef53965
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
+      dsh-drawai:
+        specifier: github:fourzkw/dsh-drawai
+        version: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/6914e5dd07e9c9b2864a7af963df5da6e29d8926
       dsh-fish-memory:
         specifier: github:Yuuyuko-uu/dsh-fish-memory
-        version: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/9b49f20279835c1fce3e2f924a48ef0da2fd5a75
+        version: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/55f4aadf82f94407dd04b7323723d19083df13a8
       dsh-harmony-next:
         specifier: github:linhay/harmony-next.skills
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101
@@ -43,7 +46,7 @@ importers:
         version: https://codeload.github.com/woniuniuniu/dsh-media-desk/tar.gz/fc237f3388d048f51c3145cfd411dbb80ba2b388
       dsh-meme:
         specifier: github:yyh-001/dsh-meme
-        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/48e10fedf1951d84c9eca4247f5c5bbc2ae38871(@types/node@26.6.5)
+        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/7d7e5edaf17c7b2d275f274d429a706c3d6451ac(@types/node@26.6.5)
       dsh-plugin-marketplace:
         specifier: github:bradeGithub/DSH-Plugins-Marketplace
         version: https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/73f24905a37ab68c271dff9342c48650601bae98
@@ -171,8 +174,50 @@ packages:
     resolution: {integrity: sha512-sl4Bm6yiMNYrZKkqqDFWN0UfnWhlS8ivKxrYl+6t0gCLrqr8y3B2IqZZbFRkfaVVp7C/baApyh71P+LeE1A2sQ==}
     engines: {node: '>=18.0.0'}
 
+  '@babel/code-frame@7.29.7':
+    resolution: {integrity: sha512-Aup7aUOfpbAUg2ROOJN6Iw5f9DMBlzu0mIkm/malLQFN/YQgO48wCj0Kxa3sEHJvPVFg7siR+qRInwXd2qhQKw==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/generator@7.29.14':
+    resolution: {integrity: sha512-qSY56jgW5JnSXzuekLVil6zaOQxOCtOHidr65KkaMBw772IuAY28Qx4ZykAcDn8+FRF15qk80XzKwgSc/RYW6g==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/helper-globals@7.29.7':
+    resolution: {integrity: sha512-3nQVUAtvkKH9zahfWgw96Jc/uFOmjACE1kQz82E2lqWmHBgjzbNlsC22nuQTfahmWeQtTq5nQ/4Nnd2A1wj4zA==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/helper-string-parser@7.29.14':
+    resolution: {integrity: sha512-CXvKMFvM80ihI7Vox9jb+kQjnyjESQNPM+vB7U0Zz6TWuZA+Z/FL0QPMH300h33qJtIx+REeBhXqWOPW48TcAQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/helper-validator-identifier@7.29.7':
+    resolution: {integrity: sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/parser@7.28.5':
+    resolution: {integrity: sha512-KKBU1VGYR7ORr3At5HAtUQ+TV3SzRCXmA/8OdDZiLDBIZxVyzXuztPjfLd3BV1PRAQGCMWWSHYhL0F8d5uHBDQ==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
+  '@babel/parser@7.29.14':
+    resolution: {integrity: sha512-VL220vXuyO2z3rNIQwY7ftj9UwpqOt+33sH+sBWkOekbsSR2g7EEMnOx24ZlCH0xOA3DM/33SifVFGbnJD8r/w==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
   '@babel/runtime@7.29.10':
     resolution: {integrity: sha512-NpugTzbKgGrNe45Ui32cN8vCFFMxVtP/9rtfwv0nP5FRDAjvYBxJcLVpYA9mr1jxP6cnIT7x9LUzuDTbWYYNRA==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/template@7.29.7':
+    resolution: {integrity: sha512-puq+Gf35oI24FeN11LkoUQFqv9uwNeWpxXZi/Ji3rRIoKAzKnxRaZ+Gkj0vKS9ZCiTESfng1N9LyOyXvo+m+Gg==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/traverse@7.28.5':
+    resolution: {integrity: sha512-TCCj4t55U90khlYkVV/0TfkJkAkUg3jZFA3Neb7unZT8CPok7iiRfaX0F+WnqWqt7OxhOn0uBKXCw4lbL8W0aQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/types@7.29.14':
+    resolution: {integrity: sha512-UjI/dKmwJwT9pOszJitq2G6EObZPnsZUfdCr92z2TlF3EZK9J3EdfOKUrCzHl6wFthbzwhzl1Soc/UIwxRiq6w==}
     engines: {node: '>=6.9.0'}
 
   '@deepseek-ai/cosmokit@1.8.6':
@@ -405,6 +450,19 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@jridgewell/gen-mapping@0.3.13':
+    resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
+
+  '@jridgewell/resolve-uri@3.1.3':
+    resolution: {integrity: sha512-lhTtjtoEArWBjismtfS761S9Hlyn+nIZqOZVYoZ1Xn82PMNMVnk+jj/NhC4fAXGTs7ydONcJiR5vyQBTMDu27g==}
+    engines: {node: '>=6.0.0'}
+
+  '@jridgewell/sourcemap-codec@1.6.0':
+    resolution: {integrity: sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==}
+
+  '@jridgewell/trace-mapping@0.3.31':
+    resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
   '@loserfox/distill@https://codeload.github.com/LoserFox/distill/tar.gz/78a508c8839a0cd4205c95416905d7d5e2e2775e':
     resolution: {gitHosted: true, integrity: sha512-TKnnf83RyYg4NmZzw4P5c6jWU1pLWNw2DFLWYILA4nw8sfwPE8kVUSH/iaH9JW2FNfIEHxW9LrSPfKI6yUx7Vg==, tarball: https://codeload.github.com/LoserFox/distill/tar.gz/78a508c8839a0cd4205c95416905d7d5e2e2775e}
     version: 0.1.0
@@ -419,9 +477,9 @@ packages:
       '@deepseek-ai/dsh-tools': ^0.0.1-rc.1
       '@deepseek-ai/schemastery': ^3.18.1
 
-  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/c289281e1728d95e36998265c3b9e5d634cf6b44':
-    resolution: {gitHosted: true, integrity: sha512-UPCs2MkUbZKNrfThVnXxr0USgYixfLtzEf3flvioLrPfvJxWXdPhMt/MaVJO17WFEbhHbkPtJa4c5BLfdD+Rqw==, tarball: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/c289281e1728d95e36998265c3b9e5d634cf6b44}
-    version: 1.4.1
+  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/c93fabc89472608d7c928b85722f029469227cb6':
+    resolution: {gitHosted: true, integrity: sha512-YXtlnvFfm4Ul+go9cCZDvuTowwLAIwhbxDkjvTeJctPOQ/RGYZq/tInoqq+RWfmwZxQEySB2wDhO09/YiWyC3Q==, tarball: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/c93fabc89472608d7c928b85722f029469227cb6}
+    version: 1.4.9
     engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1 <5.0.0'
@@ -516,6 +574,86 @@ packages:
 
   '@protobufjs/utf8@1.1.2':
     resolution: {integrity: sha512-b1UQwcEZ4yCnMCD8DAL1VlbvBJE9/IX4FTIp7BG1xYpf29SLazLSrqUkj4w7Y5y7cCVP6E5tcqqcI0xemPkHug==}
+
+  '@resvg/resvg-js-android-arm-eabi@2.6.2':
+    resolution: {integrity: sha512-FrJibrAk6v29eabIPgcTUMPXiEz8ssrAk7TXxsiZzww9UTQ1Z5KAbFJs+Z0Ez+VZTYgnE5IQJqBcoSiMebtPHA==}
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [android]
+
+  '@resvg/resvg-js-android-arm64@2.6.2':
+    resolution: {integrity: sha512-VcOKezEhm2VqzXpcIJoITuvUS/fcjIw5NA/w3tjzWyzmvoCdd+QXIqy3FBGulWdClvp4g+IfUemigrkLThSjAQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [android]
+
+  '@resvg/resvg-js-darwin-arm64@2.6.2':
+    resolution: {integrity: sha512-nmok2LnAd6nLUKI16aEB9ydMC6Lidiiq2m1nEBDR1LaaP7FGs4AJ90qDraxX+CWlVuRlvNjyYJTNv8qFjtL9+A==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@resvg/resvg-js-darwin-x64@2.6.2':
+    resolution: {integrity: sha512-GInyZLjgWDfsVT6+SHxQVRwNzV0AuA1uqGsOAW+0th56J7Nh6bHHKXHBWzUrihxMetcFDmQMAX1tZ1fZDYSRsw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@resvg/resvg-js-linux-arm-gnueabihf@2.6.2':
+    resolution: {integrity: sha512-YIV3u/R9zJbpqTTNwTZM5/ocWetDKGsro0SWp70eGEM9eV2MerWyBRZnQIgzU3YBnSBQ1RcxRZvY/UxwESfZIw==}
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [linux]
+
+  '@resvg/resvg-js-linux-arm64-gnu@2.6.2':
+    resolution: {integrity: sha512-zc2BlJSim7YR4FZDQ8OUoJg5holYzdiYMeobb9pJuGDidGL9KZUv7SbiD4E8oZogtYY42UZEap7dqkkYuA91pg==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@resvg/resvg-js-linux-arm64-musl@2.6.2':
+    resolution: {integrity: sha512-3h3dLPWNgSsD4lQBJPb4f+kvdOSJHa5PjTYVsWHxLUzH4IFTJUAnmuWpw4KqyQ3NA5QCyhw4TWgxk3jRkQxEKg==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@resvg/resvg-js-linux-x64-gnu@2.6.2':
+    resolution: {integrity: sha512-IVUe+ckIerA7xMZ50duAZzwf1U7khQe2E0QpUxu5MBJNao5RqC0zwV/Zm965vw6D3gGFUl7j4m+oJjubBVoftw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@resvg/resvg-js-linux-x64-musl@2.6.2':
+    resolution: {integrity: sha512-UOf83vqTzoYQO9SZ0fPl2ZIFtNIz/Rr/y+7X8XRX1ZnBYsQ/tTb+cj9TE+KHOdmlTFBxhYzVkP2lRByCzqi4jQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@resvg/resvg-js-win32-arm64-msvc@2.6.2':
+    resolution: {integrity: sha512-7C/RSgCa+7vqZ7qAbItfiaAWhyRSoD4l4BQAbVDqRRsRgY+S+hgS3in0Rxr7IorKUpGE69X48q6/nOAuTJQxeQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@resvg/resvg-js-win32-ia32-msvc@2.6.2':
+    resolution: {integrity: sha512-har4aPAlvjnLcil40AC77YDIk6loMawuJwFINEM7n0pZviwMkMvjb2W5ZirsNOZY4aDbo5tLx0wNMREp5Brk+w==}
+    engines: {node: '>= 10'}
+    cpu: [ia32]
+    os: [win32]
+
+  '@resvg/resvg-js-win32-x64-msvc@2.6.2':
+    resolution: {integrity: sha512-ZXtYhtUr5SSaBrUDq7DiyjOFJqBVL/dOBN7N/qmi/pO0IgiWW/f/ue3nbvu9joWE5aAKDoIzy/CxsY0suwGosQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@resvg/resvg-js@2.6.2':
+    resolution: {integrity: sha512-xBaJish5OeGmniDj9cW5PRa/PtmuVU3ziqrbr5xJj901ZDN4TosrVaNZpEiLZAxdfnhAe7uQ7QFWfjPe9d9K2Q==}
+    engines: {node: '>= 10'}
 
   '@shikijs/core@4.4.3':
     resolution: {integrity: sha512-QCR4q2ZO/ILJEuwiBMel4wdcTDb1JGwfjKTxPDF6x8ixOaluPrVqIn06C99AcRPhmYlBR56d/Fb+GN58GzExpg==}
@@ -634,47 +772,47 @@ packages:
   '@ungap/structured-clone@1.4.0':
     resolution: {integrity: sha512-1mEZtMKPM09vDmQt5y7YvmN2+DFTP7Tg0EWXdic8/C6VRnpb33e4ghisCIE3WZjsE2N8mf+QV1Zqh7ZFYLWInQ==}
 
-  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.14':
-    resolution: {integrity: sha512-3YoPDmtqv8R0oL7KtgRTRiD5pY9fG5ftgXIAvuXapQN0NGByR13DpYUTJFe8jvwcszIg1lxIhVm8WVHjBRtmsw==}
+  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.15':
+    resolution: {integrity: sha512-7YUb7sNxWR0ovy9zTGnNj/3+DPSS9ieLH+Telbv4+YMEYsTCGvXf+1d3Snjcu0A5D6ZXwwOD20XRBejDjKWldQ==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [darwin]
 
-  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.14':
-    resolution: {integrity: sha512-YQmYWB8U8hC/YOHd4tFWmK1q7rJbe+Z1bdaWE7eZgJNq52jayluF07rrcTCv7qCut2ofeG6ADuwYAK9Cyr8UOw==}
+  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.15':
+    resolution: {integrity: sha512-/lYvH0e7Y13cJvYqgkbOZ3Qj+56tx/50r5u6ySR69TuX0hEMEL/YSU6+5MKfzZlrre5zuIS3smEEby5PJ9ewWQ==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [darwin]
 
-  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.14':
-    resolution: {integrity: sha512-SgtkbVGzl/zjqis8sqVSrw2BBKfWRArqR76Eyh/YKG7dUNvYh7GSMxgwjZgKe0FaPqEFEGWB2q4btwMcY3mYZA==}
+  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.15':
+    resolution: {integrity: sha512-ekXZ5tXvFB0xsPD6b7E2Wu45QURRb8AZRZXKGAebHE+p81XcWSMr6A4slZYSnHja0C8ViBjIGutsUjalncv6pA==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.14':
-    resolution: {integrity: sha512-d759HCwkCzPJtLhIrbhdHBpWsIkhbHnBGDymIOKiNURH87lUm4KfgvPFn8cWmkZLaKVnyuJMhIMNdLT0ruA1Cw==}
+  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.15':
+    resolution: {integrity: sha512-RqSqY108dlZ/fZAJDbyFMI+8vs/eSS0AV2r4mIPLzQ/evgKqQ6j+/QRT2EuE6I50p6KtqUCOS5aBeqx+XnFINQ==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.14':
-    resolution: {integrity: sha512-zMPyRKieZuHbJ8h28I56G0Qyabwf5b5MUtWw8nPaYkm+vDnMa1tZLphBxuO1uWaq4iRgXqM3Aie154NqgCO08g==}
+  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.15':
+    resolution: {integrity: sha512-D+XwRRddyaU47HJQmRvLRySWdcRoA+nzJev6f4Ry+HwFf378IIqfEknugtuT+xZD8luE0K2wmJJZKdBak144Hg==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [win32]
 
-  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.14':
-    resolution: {integrity: sha512-bRPtGy9QEUHF7F/F1Dp0J1wG+H5yXUYapgXwy5YY1wPWG9ZA5gdmCLBfRAQyOve1NKCnMaYer156PZjO+DlL9Q==}
+  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.15':
+    resolution: {integrity: sha512-p32qjOjW9awEteZXH0ZODxmQp9MJhJb53hBxZrC/IRTgZQ+knwCNB0inxZRbzXLquUfRVXT76vab9Io/WJthKA==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [win32]
 
-  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/5fd1ccdd8cbc6280f0bfdb6d14000b21a5d2e537':
-    resolution: {gitHosted: true, integrity: sha512-D31gulrbowMlK6434sPQbgKwDrwKFc8VVjla15UoPQ27WrQTo/1blNiyU5Zlyzt1tXJ3SMCkc60jhr66TBIYpQ==, tarball: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/5fd1ccdd8cbc6280f0bfdb6d14000b21a5d2e537}
-    version: 0.1.0-rc.14
+  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/56650083e8b1ea01c625b73a4a5c15b98ef53965':
+    resolution: {gitHosted: true, integrity: sha512-V70M/6REt5bj2LKGRF0yecu0YWG4+KwLEBEFFlJkDsjEKBwxsoCzNPNXdiNM4DVbGMEmRUqWvmD9Jxbw9+Y7wg==, tarball: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/56650083e8b1ea01c625b73a4a5c15b98ef53965}
+    version: 0.1.0-rc.15
     engines: {node: '>=24.11.0'}
     peerDependencies:
       react: ^18.2.0
@@ -830,9 +968,16 @@ packages:
       react:
         optional: true
 
-  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/9b49f20279835c1fce3e2f924a48ef0da2fd5a75:
-    resolution: {gitHosted: true, integrity: sha512-DvBhIbj9NrrrJxrmvqDEzo7oOm8IFWzfdIKad8wZ/+r5RDDK5FVfEbLeazLPPaqRcQgJufa1juUC9/QfrClYyw==, tarball: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/9b49f20279835c1fce3e2f924a48ef0da2fd5a75}
-    version: 1.6.0
+  dsh-drawai@https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/6914e5dd07e9c9b2864a7af963df5da6e29d8926:
+    resolution: {gitHosted: true, integrity: sha512-id3E8HJ3u1VwL20ADNZKGS7JH/jUrm7+RvzpuYprDHHJMp6gXrytjqZjta/2lKPoVwLINQFT6OVHnxqLw41+Eg==, tarball: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/6914e5dd07e9c9b2864a7af963df5da6e29d8926}
+    version: 0.4.6
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/dsh-tools': '>=0.1.0-rc.1 <0.1.0 || >=0.1.5-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0'
+
+  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/55f4aadf82f94407dd04b7323723d19083df13a8:
+    resolution: {gitHosted: true, integrity: sha512-peBEpV3VHaMq95VSGygltceKdb+STbyQYg3BckGPrMO7dJB4VsmqjJzojKPosOqZuJV/7lNQcUSv6BxvFb4rlw==, tarball: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/55f4aadf82f94407dd04b7323723d19083df13a8}
+    version: 1.6.1
     engines: {dsh: '>=0.2.1-rc.2', node: '>=22'}
     peerDependencies:
       '@deepseek-ai/dsh-llm': '*'
@@ -852,9 +997,9 @@ packages:
     version: 2.6.2
     engines: {dsh: '>=0.2.1-rc.5 <0.3.0', node: '>=20'}
 
-  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/48e10fedf1951d84c9eca4247f5c5bbc2ae38871:
-    resolution: {gitHosted: true, integrity: sha512-LCTmKcO8K3EVvOvDBfeiOPYfGnovAs6jkSzNLcGVEIE3x68DdS57pmKkUpCRFQVxSs29tWnn6Ysk2B6fUW8uvw==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/48e10fedf1951d84c9eca4247f5c5bbc2ae38871}
-    version: 0.1.80
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/7d7e5edaf17c7b2d275f274d429a706c3d6451ac:
+    resolution: {gitHosted: true, integrity: sha512-EC2M+ve/lg8H5J4S8OBUNHPV1rQMxnesvKU3HvFRmIrXn9pnCkujMsDPL1eVSpBc+rWRlzwLfA68w1D71hTkiQ==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/7d7e5edaf17c7b2d275f274d429a706c3d6451ac}
+    version: 0.1.84
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
@@ -873,6 +1018,10 @@ packages:
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
+
+  entities@6.0.1:
+    resolution: {integrity: sha512-aN97NXWF6AWBTahfVOIrB/NShkzi5H7F9r1s9mD3cDj4Ko5f2qhhVoYMibXF7GlLveb/D2ioWay8lxI97Ven3g==}
+    engines: {node: '>=0.12'}
 
   extend@3.0.2:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
@@ -947,8 +1096,16 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
+  js-tokens@4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+
   js-yaml@4.3.1:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
+    hasBin: true
+
+  jsesc@3.1.0:
+    resolution: {integrity: sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==}
+    engines: {node: '>=6'}
     hasBin: true
 
   json-bigint@1.0.0:
@@ -1004,6 +1161,11 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-znGH/a/2HMZFdAQdw9okMiyON0ba9W2YCZe6aYDurxennpu43gDBYJTztVeBSCge2C0EQjr946qiWSeY3V4tIQ==, tarball: https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/2d71054d76bb78b82ddb7818af4bdff49a6179a7}
     version: 1.4.0
 
+  nanoid@3.3.20:
+    resolution: {integrity: sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
@@ -1012,6 +1174,80 @@ packages:
   node-fetch@3.3.2:
     resolution: {integrity: sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
+  npm@10.9.4:
+    resolution: {integrity: sha512-OnUG836FwboQIbqtefDNlyR0gTHzIfwRfE3DuiNewBvnMnWEpB0VEXwBlFVgqpNzIgYo/MHh3d2Hel/pszapAA==}
+    engines: {node: ^18.17.0 || >=20.5.0}
+    hasBin: true
+    bundledDependencies:
+      - '@isaacs/string-locale-compare'
+      - '@npmcli/arborist'
+      - '@npmcli/config'
+      - '@npmcli/fs'
+      - '@npmcli/map-workspaces'
+      - '@npmcli/package-json'
+      - '@npmcli/promise-spawn'
+      - '@npmcli/redact'
+      - '@npmcli/run-script'
+      - '@sigstore/tuf'
+      - abbrev
+      - archy
+      - cacache
+      - chalk
+      - ci-info
+      - cli-columns
+      - fastest-levenshtein
+      - fs-minipass
+      - glob
+      - graceful-fs
+      - hosted-git-info
+      - ini
+      - init-package-json
+      - is-cidr
+      - json-parse-even-better-errors
+      - libnpmaccess
+      - libnpmdiff
+      - libnpmexec
+      - libnpmfund
+      - libnpmhook
+      - libnpmorg
+      - libnpmpack
+      - libnpmpublish
+      - libnpmsearch
+      - libnpmteam
+      - libnpmversion
+      - make-fetch-happen
+      - minimatch
+      - minipass
+      - minipass-pipeline
+      - ms
+      - node-gyp
+      - nopt
+      - normalize-package-data
+      - npm-audit-report
+      - npm-install-checks
+      - npm-package-arg
+      - npm-pick-manifest
+      - npm-profile
+      - npm-registry-fetch
+      - npm-user-validate
+      - p-map
+      - pacote
+      - parse-conflict-json
+      - proc-log
+      - qrcode-terminal
+      - read
+      - semver
+      - spdx-expression-parse
+      - ssri
+      - supports-color
+      - tar
+      - text-table
+      - tiny-relative-date
+      - treeverse
+      - validate-npm-package-name
+      - which
+      - write-file-atomic
 
   oniguruma-parser@0.12.2:
     resolution: {integrity: sha512-6HVa5oIrgMC6aA6WF6XyyqbhRPJrKR02L20+2+zpDtO5QAzGHAUGw5TKQvwi5vctNnRHkJYmjAhRVQF2EKdTQw==}
@@ -1051,6 +1287,9 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
+  parse5@7.3.0:
+    resolution: {integrity: sha512-IInvU7fabl34qmi9gY8XOVxhYyMyuH2xUNpb2q8/Y+7552KlejkRvqvD19nMoUW/uQGGbqNpA6Tufu5FL5BZgw==}
+
   partial-json@0.1.7:
     resolution: {integrity: sha512-Njv/59hHaokb/hRUjce3Hdv12wd60MtM9Z5Olmn+nehe0QDAsRtRbJPvJ0Z91TusF0SuZRIvnM+S4l6EIP8leA==}
 
@@ -1062,9 +1301,16 @@ packages:
     resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
     engines: {node: '>=8'}
 
+  picocolors@1.1.1:
+    resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
+
   pngjs@5.0.0:
     resolution: {integrity: sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==}
     engines: {node: '>=10.13.0'}
+
+  postcss@8.5.32:
+    resolution: {integrity: sha512-LJlKCCAUFKOuZxipUdYw1NzIITEsPcgyOG9LkvRJvuKj/bRzbuRY0ARXvL0pWGpsZvn8jku+LMep2eU0seHp8g==}
+    engines: {node: ^10 || ^12 || >=14}
 
   property-information@7.2.0:
     resolution: {integrity: sha512-IAtzIB6sUiWaJYrX9smp3V46pBGbBeLFRGdh25kg1334VcBlD8HzhPeNIWQH9zhGmo2itIe25EHt9dQP7G5hmg==}
@@ -1367,6 +1613,10 @@ packages:
   shebang-regex@3.0.0:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
+
+  source-map-js@1.2.2:
+    resolution: {integrity: sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==}
+    engines: {node: '>=0.10.0'}
 
   space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
@@ -1724,7 +1974,58 @@ snapshots:
 
   '@aws/lambda-invoke-store@0.3.0': {}
 
+  '@babel/code-frame@7.29.7':
+    dependencies:
+      '@babel/helper-validator-identifier': 7.29.7
+      js-tokens: 4.0.0
+      picocolors: 1.1.1
+
+  '@babel/generator@7.29.14':
+    dependencies:
+      '@babel/parser': 7.29.14
+      '@babel/types': 7.29.14
+      '@jridgewell/gen-mapping': 0.3.13
+      '@jridgewell/trace-mapping': 0.3.31
+      jsesc: 3.1.0
+
+  '@babel/helper-globals@7.29.7': {}
+
+  '@babel/helper-string-parser@7.29.14': {}
+
+  '@babel/helper-validator-identifier@7.29.7': {}
+
+  '@babel/parser@7.28.5':
+    dependencies:
+      '@babel/types': 7.29.14
+
+  '@babel/parser@7.29.14':
+    dependencies:
+      '@babel/types': 7.29.14
+
   '@babel/runtime@7.29.10': {}
+
+  '@babel/template@7.29.7':
+    dependencies:
+      '@babel/code-frame': 7.29.7
+      '@babel/parser': 7.29.14
+      '@babel/types': 7.29.14
+
+  '@babel/traverse@7.28.5':
+    dependencies:
+      '@babel/code-frame': 7.29.7
+      '@babel/generator': 7.29.14
+      '@babel/helper-globals': 7.29.7
+      '@babel/parser': 7.28.5
+      '@babel/template': 7.29.7
+      '@babel/types': 7.29.14
+      debug: 4.4.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@babel/types@7.29.14':
+    dependencies:
+      '@babel/helper-string-parser': 7.29.14
+      '@babel/helper-validator-identifier': 7.29.7
 
   '@deepseek-ai/cosmokit@1.8.6': {}
 
@@ -1888,11 +2189,25 @@ snapshots:
   '@img/sharp-win32-x64@0.35.5':
     optional: true
 
+  '@jridgewell/gen-mapping@0.3.13':
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.6.0
+      '@jridgewell/trace-mapping': 0.3.31
+
+  '@jridgewell/resolve-uri@3.1.3': {}
+
+  '@jridgewell/sourcemap-codec@1.6.0': {}
+
+  '@jridgewell/trace-mapping@0.3.31':
+    dependencies:
+      '@jridgewell/resolve-uri': 3.1.3
+      '@jridgewell/sourcemap-codec': 1.6.0
+
   '@loserfox/distill@https://codeload.github.com/LoserFox/distill/tar.gz/78a508c8839a0cd4205c95416905d7d5e2e2775e(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
-  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/c289281e1728d95e36998265c3b9e5d634cf6b44':
+  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/c93fabc89472608d7c928b85722f029469227cb6':
     dependencies:
       fflate: 0.8.3
 
@@ -1949,6 +2264,57 @@ snapshots:
   '@protobufjs/pool@1.1.0': {}
 
   '@protobufjs/utf8@1.1.2': {}
+
+  '@resvg/resvg-js-android-arm-eabi@2.6.2':
+    optional: true
+
+  '@resvg/resvg-js-android-arm64@2.6.2':
+    optional: true
+
+  '@resvg/resvg-js-darwin-arm64@2.6.2':
+    optional: true
+
+  '@resvg/resvg-js-darwin-x64@2.6.2':
+    optional: true
+
+  '@resvg/resvg-js-linux-arm-gnueabihf@2.6.2':
+    optional: true
+
+  '@resvg/resvg-js-linux-arm64-gnu@2.6.2':
+    optional: true
+
+  '@resvg/resvg-js-linux-arm64-musl@2.6.2':
+    optional: true
+
+  '@resvg/resvg-js-linux-x64-gnu@2.6.2':
+    optional: true
+
+  '@resvg/resvg-js-linux-x64-musl@2.6.2':
+    optional: true
+
+  '@resvg/resvg-js-win32-arm64-msvc@2.6.2':
+    optional: true
+
+  '@resvg/resvg-js-win32-ia32-msvc@2.6.2':
+    optional: true
+
+  '@resvg/resvg-js-win32-x64-msvc@2.6.2':
+    optional: true
+
+  '@resvg/resvg-js@2.6.2':
+    optionalDependencies:
+      '@resvg/resvg-js-android-arm-eabi': 2.6.2
+      '@resvg/resvg-js-android-arm64': 2.6.2
+      '@resvg/resvg-js-darwin-arm64': 2.6.2
+      '@resvg/resvg-js-darwin-x64': 2.6.2
+      '@resvg/resvg-js-linux-arm-gnueabihf': 2.6.2
+      '@resvg/resvg-js-linux-arm64-gnu': 2.6.2
+      '@resvg/resvg-js-linux-arm64-musl': 2.6.2
+      '@resvg/resvg-js-linux-x64-gnu': 2.6.2
+      '@resvg/resvg-js-linux-x64-musl': 2.6.2
+      '@resvg/resvg-js-win32-arm64-msvc': 2.6.2
+      '@resvg/resvg-js-win32-ia32-msvc': 2.6.2
+      '@resvg/resvg-js-win32-x64-msvc': 2.6.2
 
   '@shikijs/core@4.4.3':
     dependencies:
@@ -2079,32 +2445,32 @@ snapshots:
 
   '@ungap/structured-clone@1.4.0': {}
 
-  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.14':
+  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.15':
     optional: true
 
-  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.14':
+  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.15':
     optional: true
 
-  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.14':
+  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.15':
     optional: true
 
-  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.14':
+  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.15':
     optional: true
 
-  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.14':
+  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.15':
     optional: true
 
-  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.14':
+  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.15':
     optional: true
 
-  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/5fd1ccdd8cbc6280f0bfdb6d14000b21a5d2e537':
+  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/56650083e8b1ea01c625b73a4a5c15b98ef53965':
     optionalDependencies:
-      '@zseven-w/dsh-openpencil-darwin-arm64': 0.1.0-rc.14
-      '@zseven-w/dsh-openpencil-darwin-x64': 0.1.0-rc.14
-      '@zseven-w/dsh-openpencil-linux-arm64': 0.1.0-rc.14
-      '@zseven-w/dsh-openpencil-linux-x64': 0.1.0-rc.14
-      '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.14
-      '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.14
+      '@zseven-w/dsh-openpencil-darwin-arm64': 0.1.0-rc.15
+      '@zseven-w/dsh-openpencil-darwin-x64': 0.1.0-rc.15
+      '@zseven-w/dsh-openpencil-linux-arm64': 0.1.0-rc.15
+      '@zseven-w/dsh-openpencil-linux-x64': 0.1.0-rc.15
+      '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.15
+      '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.15
 
   agent-base@7.1.4: {}
 
@@ -2179,13 +2545,24 @@ snapshots:
     dependencies:
       zod: 4.4.3
 
-  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/9b49f20279835c1fce3e2f924a48ef0da2fd5a75: {}
+  dsh-drawai@https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/6914e5dd07e9c9b2864a7af963df5da6e29d8926:
+    dependencies:
+      '@babel/parser': 7.28.5
+      '@babel/traverse': 7.28.5
+      '@resvg/resvg-js': 2.6.2
+      npm: 10.9.4
+      parse5: 7.3.0
+      postcss: 8.5.32
+    transitivePeerDependencies:
+      - supports-color
+
+  dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/55f4aadf82f94407dd04b7323723d19083df13a8: {}
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/0243a77451a2ffa97a43114c6b39232544704101: {}
 
   dsh-media-desk@https://codeload.github.com/woniuniuniu/dsh-media-desk/tar.gz/fc237f3388d048f51c3145cfd411dbb80ba2b388: {}
 
-  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/48e10fedf1951d84c9eca4247f5c5bbc2ae38871(@types/node@26.6.5):
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/7d7e5edaf17c7b2d275f274d429a706c3d6451ac(@types/node@26.6.5):
     optionalDependencies:
       sharp: 0.35.5(@types/node@26.6.5)
     transitivePeerDependencies:
@@ -2200,6 +2577,8 @@ snapshots:
       safe-buffer: 5.2.1
 
   emoji-regex@8.0.0: {}
+
+  entities@6.0.1: {}
 
   extend@3.0.2: {}
 
@@ -2296,9 +2675,13 @@ snapshots:
 
   isexe@2.0.0: {}
 
+  js-tokens@4.0.0: {}
+
   js-yaml@4.3.1:
     dependencies:
       argparse: 2.0.1
+
+  jsesc@3.1.0: {}
 
   json-bigint@1.0.0:
     dependencies:
@@ -2371,6 +2754,8 @@ snapshots:
       react-dom: 19.3.1(react@19.3.1)
       react-router: 7.18.5(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
 
+  nanoid@3.3.20: {}
+
   node-domexception@1.0.0: {}
 
   node-fetch@3.3.2:
@@ -2378,6 +2763,8 @@ snapshots:
       data-uri-to-buffer: 4.0.1
       fetch-blob: 3.2.0
       formdata-polyfill: 4.0.10
+
+  npm@10.9.4: {}
 
   oniguruma-parser@0.12.2: {}
 
@@ -2418,13 +2805,25 @@ snapshots:
 
   p-try@2.2.0: {}
 
+  parse5@7.3.0:
+    dependencies:
+      entities: 6.0.1
+
   partial-json@0.1.7: {}
 
   path-exists@4.0.0: {}
 
   path-key@3.1.1: {}
 
+  picocolors@1.1.1: {}
+
   pngjs@5.0.0: {}
+
+  postcss@8.5.32:
+    dependencies:
+      nanoid: 3.3.20
+      picocolors: 1.1.1
+      source-map-js: 1.2.2
 
   property-information@7.2.0: {}
 
@@ -2551,6 +2950,8 @@ snapshots:
       shebang-regex: 3.0.0
 
   shebang-regex@3.0.0: {}
+
+  source-map-js@1.2.2: {}
 
   space-separated-tokens@2.0.2: {}
 
