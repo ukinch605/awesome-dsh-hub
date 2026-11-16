@@ -14,12 +14,15 @@ importers:
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
         version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/schemastery@3.18.2)
+      '@nagi-ovo/dsh-ads':
+        specifier: github:Nagi-ovo/dsh-ads
+        version: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/b201f76e3b4e6648f853079f97371ef77a52f9dd(@deepseek-ai/schemastery@3.18.2)
       '@vlln/dsh-navbar':
         specifier: github:vlln/dsh-navbar
         version: https://codeload.github.com/vlln/dsh-navbar/tar.gz/e53adfc8c837ebcb4b6a52c2c4baf7cb6e8b795e
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
-        version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/5fd1ccdd8cbc6280f0bfdb6d14000b21a5d2e537
+        version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/56650083e8b1ea01c625b73a4a5c15b98ef53965
       clearai-dsh:
         specifier: github:Clearailhc/clearai-dsh
         version: https://codeload.github.com/Clearailhc/clearai-dsh/tar.gz/9e12d68521e7f14bae7efef72b867931b8b878bf
@@ -28,7 +31,7 @@ importers:
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
-        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23
+        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/b4c30981161ec4f678c330186c3c24756cbfbb9c
       dsh-git-memory:
         specifier: github:seriousz158/dsh-memory
         version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.2)
@@ -52,7 +55,7 @@ importers:
         version: https://codeload.github.com/adoresever/graph-memory/tar.gz/5841b1987c3967998818764c9d4238add5f3aa7c
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/83840ffec07aa9682c5eb82fd840eedb32be0855(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/960cdb04f7b2df714d479a916b719476e089ac4a(@deepseek-ai/schemastery@3.18.2)
 
 packages:
 
@@ -85,6 +88,15 @@ packages:
       '@deepseek-ai/dsh-settings': ^0.1.0-rc.6 || ^0.1.1-rc.0 || ^0.2.0-rc.0 || ^0.2.1-rc.0
       '@deepseek-ai/schemastery': ^3.18.0
 
+  '@nagi-ovo/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/b201f76e3b4e6648f853079f97371ef77a52f9dd':
+    resolution: {gitHosted: true, integrity: sha512-43vkZ985oJtBMPqsgPHUSD5gT/a/f9WtNyU45yNAnMy1op7qCjbO7yGBNV7jklU89kUpuS4GRWqY0+0Y8+z8fA==, tarball: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/b201f76e3b4e6648f853079f97371ef77a52f9dd}
+    version: 0.1.6
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0 || ^0.2.2-0
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
+
   '@sinclair/typebox@0.34.52':
     resolution: {integrity: sha512-XiMQh7qqVlxZzcVD+kkGMNGMzcTrDMLWI7S4x7z1MkCkbDPrekpZXEUK0eZqZFMuHQg2a2DZOcDIh9o5v3Gonw==}
 
@@ -98,47 +110,47 @@ packages:
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
 
-  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.14':
-    resolution: {integrity: sha512-3YoPDmtqv8R0oL7KtgRTRiD5pY9fG5ftgXIAvuXapQN0NGByR13DpYUTJFe8jvwcszIg1lxIhVm8WVHjBRtmsw==}
+  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.15':
+    resolution: {integrity: sha512-7YUb7sNxWR0ovy9zTGnNj/3+DPSS9ieLH+Telbv4+YMEYsTCGvXf+1d3Snjcu0A5D6ZXwwOD20XRBejDjKWldQ==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [darwin]
 
-  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.14':
-    resolution: {integrity: sha512-YQmYWB8U8hC/YOHd4tFWmK1q7rJbe+Z1bdaWE7eZgJNq52jayluF07rrcTCv7qCut2ofeG6ADuwYAK9Cyr8UOw==}
+  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.15':
+    resolution: {integrity: sha512-/lYvH0e7Y13cJvYqgkbOZ3Qj+56tx/50r5u6ySR69TuX0hEMEL/YSU6+5MKfzZlrre5zuIS3smEEby5PJ9ewWQ==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [darwin]
 
-  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.14':
-    resolution: {integrity: sha512-SgtkbVGzl/zjqis8sqVSrw2BBKfWRArqR76Eyh/YKG7dUNvYh7GSMxgwjZgKe0FaPqEFEGWB2q4btwMcY3mYZA==}
+  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.15':
+    resolution: {integrity: sha512-ekXZ5tXvFB0xsPD6b7E2Wu45QURRb8AZRZXKGAebHE+p81XcWSMr6A4slZYSnHja0C8ViBjIGutsUjalncv6pA==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.14':
-    resolution: {integrity: sha512-d759HCwkCzPJtLhIrbhdHBpWsIkhbHnBGDymIOKiNURH87lUm4KfgvPFn8cWmkZLaKVnyuJMhIMNdLT0ruA1Cw==}
+  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.15':
+    resolution: {integrity: sha512-RqSqY108dlZ/fZAJDbyFMI+8vs/eSS0AV2r4mIPLzQ/evgKqQ6j+/QRT2EuE6I50p6KtqUCOS5aBeqx+XnFINQ==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.14':
-    resolution: {integrity: sha512-zMPyRKieZuHbJ8h28I56G0Qyabwf5b5MUtWw8nPaYkm+vDnMa1tZLphBxuO1uWaq4iRgXqM3Aie154NqgCO08g==}
+  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.15':
+    resolution: {integrity: sha512-D+XwRRddyaU47HJQmRvLRySWdcRoA+nzJev6f4Ry+HwFf378IIqfEknugtuT+xZD8luE0K2wmJJZKdBak144Hg==}
     engines: {node: '>=24.11.0'}
     cpu: [arm64]
     os: [win32]
 
-  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.14':
-    resolution: {integrity: sha512-bRPtGy9QEUHF7F/F1Dp0J1wG+H5yXUYapgXwy5YY1wPWG9ZA5gdmCLBfRAQyOve1NKCnMaYer156PZjO+DlL9Q==}
+  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.15':
+    resolution: {integrity: sha512-p32qjOjW9awEteZXH0ZODxmQp9MJhJb53hBxZrC/IRTgZQ+knwCNB0inxZRbzXLquUfRVXT76vab9Io/WJthKA==}
     engines: {node: '>=24.11.0'}
     cpu: [x64]
     os: [win32]
 
-  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/5fd1ccdd8cbc6280f0bfdb6d14000b21a5d2e537':
-    resolution: {gitHosted: true, integrity: sha512-D31gulrbowMlK6434sPQbgKwDrwKFc8VVjla15UoPQ27WrQTo/1blNiyU5Zlyzt1tXJ3SMCkc60jhr66TBIYpQ==, tarball: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/5fd1ccdd8cbc6280f0bfdb6d14000b21a5d2e537}
-    version: 0.1.0-rc.14
+  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/56650083e8b1ea01c625b73a4a5c15b98ef53965':
+    resolution: {gitHosted: true, integrity: sha512-V70M/6REt5bj2LKGRF0yecu0YWG4+KwLEBEFFlJkDsjEKBwxsoCzNPNXdiNM4DVbGMEmRUqWvmD9Jxbw9+Y7wg==, tarball: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/56650083e8b1ea01c625b73a4a5c15b98ef53965}
+    version: 0.1.0-rc.15
     engines: {node: '>=24.11.0'}
     peerDependencies:
       react: ^18.2.0
@@ -209,9 +221,9 @@ packages:
       react:
         optional: true
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23:
-    resolution: {gitHosted: true, integrity: sha512-bPeRGrtOhLwx1S2qfZCZaKHIADgAOP5o609cxcOh/9cKq0ptXsJUF8DRQf7ghc+rTPrlEHDgkE3N9EEX4D191Q==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23}
-    version: 1.9.64
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/b4c30981161ec4f678c330186c3c24756cbfbb9c:
+    resolution: {gitHosted: true, integrity: sha512-33MRL1p5CX7hEdAs+xsyD7yq3frIsJyRNiYB/Lf5I3bnkbVrY5RuHnBDsvIBoTYNbdbHRlssvtxpBdK4wj5+fg==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/b4c30981161ec4f678c330186c3c24756cbfbb9c}
+    version: 1.9.70
     engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: '>=20'}
     os: [darwin, linux, win32]
     hasBin: true
@@ -315,9 +327,9 @@ packages:
       openclaw:
         optional: true
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/83840ffec07aa9682c5eb82fd840eedb32be0855:
-    resolution: {gitHosted: true, integrity: sha512-pbx1+Rk2CzDVn8NmWlt0iy6rgFsnQwXBKoy4XuOwOPT9SplivyT+RgY2JnjpJdp6R/cb3KVimD8QSfdefn9PnQ==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/83840ffec07aa9682c5eb82fd840eedb32be0855}
-    version: 3.9.0
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/960cdb04f7b2df714d479a916b719476e089ac4a:
+    resolution: {gitHosted: true, integrity: sha512-c0oeOpV+rjCIhOZRQXDQity7b4dnRCxwOVAkxh+3ALdhO9Kum8du/raDP5cw2uZvHR4SLtgIOrHcu1Ozmz4hbw==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/960cdb04f7b2df714d479a916b719476e089ac4a}
+    version: 3.18.0
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
@@ -351,38 +363,42 @@ snapshots:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
 
+  '@nagi-ovo/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/b201f76e3b4e6648f853079f97371ef77a52f9dd(@deepseek-ai/schemastery@3.18.2)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
+
   '@sinclair/typebox@0.34.52': {}
 
   '@standard-schema/spec@1.1.0': {}
 
   '@vlln/dsh-navbar@https://codeload.github.com/vlln/dsh-navbar/tar.gz/e53adfc8c837ebcb4b6a52c2c4baf7cb6e8b795e': {}
 
-  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.14':
+  '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.15':
     optional: true
 
-  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.14':
+  '@zseven-w/dsh-openpencil-darwin-x64@0.1.0-rc.15':
     optional: true
 
-  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.14':
+  '@zseven-w/dsh-openpencil-linux-arm64@0.1.0-rc.15':
     optional: true
 
-  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.14':
+  '@zseven-w/dsh-openpencil-linux-x64@0.1.0-rc.15':
     optional: true
 
-  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.14':
+  '@zseven-w/dsh-openpencil-win32-arm64@0.1.0-rc.15':
     optional: true
 
-  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.14':
+  '@zseven-w/dsh-openpencil-win32-x64@0.1.0-rc.15':
     optional: true
 
-  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/5fd1ccdd8cbc6280f0bfdb6d14000b21a5d2e537':
+  '@zseven-w/dsh-openpencil@https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/56650083e8b1ea01c625b73a4a5c15b98ef53965':
     optionalDependencies:
-      '@zseven-w/dsh-openpencil-darwin-arm64': 0.1.0-rc.14
-      '@zseven-w/dsh-openpencil-darwin-x64': 0.1.0-rc.14
-      '@zseven-w/dsh-openpencil-linux-arm64': 0.1.0-rc.14
-      '@zseven-w/dsh-openpencil-linux-x64': 0.1.0-rc.14
-      '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.14
-      '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.14
+      '@zseven-w/dsh-openpencil-darwin-arm64': 0.1.0-rc.15
+      '@zseven-w/dsh-openpencil-darwin-x64': 0.1.0-rc.15
+      '@zseven-w/dsh-openpencil-linux-arm64': 0.1.0-rc.15
+      '@zseven-w/dsh-openpencil-linux-x64': 0.1.0-rc.15
+      '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.15
+      '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.15
 
   acorn@8.15.0: {}
 
@@ -394,7 +410,7 @@ snapshots:
     dependencies:
       zod: 4.6.7
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/c876735d80760fc89d88fa99c19c90c56e984c23:
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/b4c30981161ec4f678c330186c3c24756cbfbb9c:
     dependencies:
       acorn: 8.15.0
       zod: 4.6.6
@@ -419,7 +435,7 @@ snapshots:
     dependencies:
       '@sinclair/typebox': 0.34.52
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/83840ffec07aa9682c5eb82fd840eedb32be0855(@deepseek-ai/schemastery@3.18.2):
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/960cdb04f7b2df714d479a916b719476e089ac4a(@deepseek-ai/schemastery@3.18.2):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.2
 
