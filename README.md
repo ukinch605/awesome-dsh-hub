@@ -2,7 +2,7 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/ukinch605/awesome-dsh-hub)
 ![License](https://img.shields.io/github/license/ukinch605/awesome-dsh-hub)
-![Plugins](https://img.shields.io/badge/plugins-26133-4dabf7)
+![Plugins](https://img.shields.io/badge/plugins-26255-4dabf7)
 ![Last updated](https://img.shields.io/badge/last%20updated-2026--11--16-orange)
 
 > 自动维护的 DeepSeek Harness（`dsh`）插件精品目录：机器可读 Registry、中英双语目录与可检索站点。Everything is a Plugin. 🐋
@@ -14,29 +14,29 @@
 
 | 指标 / Metric | 数值 / Value |
 | --- | ---: |
-| 收录插件 / Plugins | **26133** |
-| 监测仓库 / Monitored repos | 31587 |
-| 累计 Star / Total stars | 415,311 |
-| 最近更新 / Last updated | 2026-11-16 00:27:27.647 UTC |
+| 收录插件 / Plugins | **26255** |
+| 监测仓库 / Monitored repos | 31718 |
+| 累计 Star / Total stars | 419,845 |
+| 最近更新 / Last updated | 2026-11-16 07:23:20.729 UTC |
 
 ### 分类构成 / Categories
 
-Web UI 增强 4108 · Agent 能力 10174 · 编码开发 1922 · 消息通讯 1116 · 视觉与多模态 1842 · 浏览器与网络 1307 · 皮肤与娱乐 696 · 文件与数据 3490 · 开发工具与教程 585 · 合集与发行版 656 · 生态项目 237
+Web UI 增强 4129 · Agent 能力 10213 · 编码开发 1934 · 消息通讯 1123 · 视觉与多模态 1848 · 浏览器与网络 1309 · 皮肤与娱乐 701 · 文件与数据 3514 · 开发工具与教程 588 · 合集与发行版 658 · 生态项目 238
 
 ### Top 10 插件 / Top Plugins
 
 | # | 插件 / Plugin | Stars | 类型 / Type | 说明 / Description |
 | --- | --- | ---: | --- | --- |
-| 1 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 75,769 | Agent 能力 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flas… |
-| 2 | [alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill) | 38,349 | 编码开发 | 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how a… |
-| 3 | [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | 29,577 | 浏览器与网络 | Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编… |
-| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 12,525 | Agent 能力 | The plugin market inside DeepSeek Harness — browse, search,… |
-| 5 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 10,431 | 开发工具与教程 | DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSee… |
-| 6 | [kingcharleslzy-ai/dsh-purge](https://github.com/kingcharleslzy-ai/dsh-purge) | 8,733 | Agent 能力 | dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管… |
-| 7 | [superdesigndev/treg](https://github.com/superdesigndev/treg) | 8,089 | 消息通讯 | OpenRouter for agent tools. Join community here: https://di… |
-| 8 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 7,760 | 编码开发 | DSH's officially top-recommended TUI plugin — high performa… |
-| 9 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 7,246 | Web UI 增强 | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
-| 10 | [elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) | 7,077 | 浏览器与网络 | 把本机 Wallpaper Engine 的壁纸搬进 DSH 网页界面：场景壁纸由内置 MIT 开源引擎 WebWal… |
+| 1 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 76,393 | Agent 能力 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flas… |
+| 2 | [alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill) | 38,379 | 编码开发 | 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how a… |
+| 3 | [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | 29,615 | 浏览器与网络 | Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编… |
+| 4 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 12,572 | Agent 能力 | The plugin market inside DeepSeek Harness — browse, search,… |
+| 5 | [zhu1090093659/dsh-web](https://github.com/zhu1090093659/dsh-web) | 10,442 | 开发工具与教程 | DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSee… |
+| 6 | [kingcharleslzy-ai/dsh-purge](https://github.com/kingcharleslzy-ai/dsh-purge) | 8,911 | Agent 能力 | dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管… |
+| 7 | [superdesigndev/treg](https://github.com/superdesigndev/treg) | 8,120 | 消息通讯 | OpenRouter for agent tools. Join community here: https://di… |
+| 8 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 7,770 | 编码开发 | DSH's officially top-recommended TUI plugin — high performa… |
+| 9 | [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 7,252 | Web UI 增强 | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。Q… |
+| 10 | [elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) | 7,109 | 浏览器与网络 | 把本机 Wallpaper Engine 的壁纸搬进 DSH 网页界面：场景壁纸由内置 MIT 开源引擎 WebWal… |
 
 ## 快速使用 / Quick Start
 
