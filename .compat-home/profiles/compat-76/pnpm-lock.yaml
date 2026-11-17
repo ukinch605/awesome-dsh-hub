@@ -38,6 +38,9 @@ importers:
       '@zseven-w/dsh-android':
         specifier: github:ZSeven-W/dsh-android
         version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/3363a85b1bbeefe994d42d52bd8e792c1527e9ec
+      '@zseven-w/dsh-game-studio':
+        specifier: github:ZSeven-W/dsh-game-studio
+        version: https://codeload.github.com/ZSeven-W/dsh-game-studio/tar.gz/93459aafc9436d66364f05b804a7841d399c2594
       '@zseven-w/dsh-ios':
         specifier: github:ZSeven-W/dsh-ios
         version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/ffa90be4c34d54848d862b1a4e0a5deacdd18a26
@@ -64,7 +67,7 @@ importers:
         version: https://codeload.github.com/Roland0511/dsh-marktext/tar.gz/f8ebb6de2272edb7ebc4c542a93389bd106e72fb
       dsh-plugin:
         specifier: github:dshplugin/dsh-plugin-hub
-        version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/154d33f9e9775f7fee08ac4314c644e8074912ff
+        version: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/3028ea9c0f23f24fa2c73eb4051710356f627390
       dsh-reasoning-effort:
         specifier: github:HanaAyane/dsh-reasoning-effort
         version: '@ayanehana/dsh-reasoning-effort@https://codeload.github.com/HanaAyane/dsh-reasoning-effort/tar.gz/c3ccd549a46f6a8be6a0404d91f587f497f9f786'
@@ -76,7 +79,7 @@ importers:
         version: https://codeload.github.com/alchaincyf/huashu-excel/tar.gz/2492fabbafc8498496edd70f7e2354016a8dd06e
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/960cdb04f7b2df714d479a916b719476e089ac4a(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/8dfd9c4876faa1ae4178cb62a31db1f487f0a817(@deepseek-ai/schemastery@3.19.0)
       my-app:
         specifier: github:theBigGavin/marketingdashboard
         version: https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/2d71054d76bb78b82ddb7818af4bdff49a6179a7
@@ -760,6 +763,11 @@ packages:
     version: 0.1.0-rc.12
     engines: {node: '>=24.11.0'}
 
+  '@zseven-w/dsh-game-studio@https://codeload.github.com/ZSeven-W/dsh-game-studio/tar.gz/93459aafc9436d66364f05b804a7841d399c2594':
+    resolution: {gitHosted: true, integrity: sha512-KsA1/bW7jqjmOOUt/p/XXAniYpuWHIBCk5SXEsCS/IwTCtIFivvV8ay51kIPRTC2JxYKEchW4DhiwFPP1nYZ+Q==, tarball: https://codeload.github.com/ZSeven-W/dsh-game-studio/tar.gz/93459aafc9436d66364f05b804a7841d399c2594}
+    version: 0.1.0-rc.5
+    engines: {node: '>=24.11.0'}
+
   '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/ffa90be4c34d54848d862b1a4e0a5deacdd18a26':
     resolution: {gitHosted: true, integrity: sha512-6WXgTsXUJA18M+ncTuiUPBcKivbhJQTkyK0o6k4oaWJ66q5SdhIOhg+b26wRIYNO2VMfEmLgVmdqADACiLW8zg==, tarball: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/ffa90be4c34d54848d862b1a4e0a5deacdd18a26}
     version: 0.1.0-rc.12
@@ -969,9 +977,9 @@ packages:
     version: 0.1.13
     engines: {node: '>=20'}
 
-  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/154d33f9e9775f7fee08ac4314c644e8074912ff:
-    resolution: {gitHosted: true, integrity: sha512-LK0SRrlFtYrMdtZsW6b4GLXZkafUv4sGo17tWKK73BPZGFJRvzTL3TJfIL/HljYdCI4nO8ViTYIYm/bicMekQQ==, tarball: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/154d33f9e9775f7fee08ac4314c644e8074912ff}
-    version: 2.3.9
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/3028ea9c0f23f24fa2c73eb4051710356f627390:
+    resolution: {gitHosted: true, integrity: sha512-QQGKZfHY5LFyqK/b/AL/0odCzioKWOVMTXbiJ9eSEgp2g4pngViRwDi6zEVdv4IDE9y+gBqOrf5juNEv4VR0NQ==, tarball: https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/3028ea9c0f23f24fa2c73eb4051710356f627390}
+    version: 2.4.0
     engines: {node: '>=22.6'}
     peerDependencies:
       '@deepseek-ai/cordis': 4.0.1
@@ -1091,9 +1099,9 @@ packages:
   minisearch@7.2.0:
     resolution: {integrity: sha512-dqT2XBYUOZOiC5t2HRnwADjhNS2cecp9u+TJRiJ1Qp/f5qjkeT5APcGPjHw+bz89Ms8Jp+cG4AlE+QZ/QnDglg==}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/960cdb04f7b2df714d479a916b719476e089ac4a:
-    resolution: {gitHosted: true, integrity: sha512-c0oeOpV+rjCIhOZRQXDQity7b4dnRCxwOVAkxh+3ALdhO9Kum8du/raDP5cw2uZvHR4SLtgIOrHcu1Ozmz4hbw==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/960cdb04f7b2df714d479a916b719476e089ac4a}
-    version: 3.18.0
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/8dfd9c4876faa1ae4178cb62a31db1f487f0a817:
+    resolution: {gitHosted: true, integrity: sha512-Aip/wfq8GAgBGPMZUrkOvRdzJjQjKsPXNCb3sBH4lkB1cEudk3z/dtE2x18zD/OmnwsIgOuEIS80Ax0qL9buBA==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/8dfd9c4876faa1ae4178cb62a31db1f487f0a817}
+    version: 3.19.0
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
@@ -1188,6 +1196,15 @@ packages:
   path-key@4.0.0:
     resolution: {integrity: sha512-haREypq7xkM7ErfgIyA0z+Bj4AGKlMSdlQE2jvJo6huWD1EdkKYV+G/T4nq0YEF2vgTT8kqMFKo1uHn950r4SQ==}
     engines: {node: '>=12'}
+
+  playwright-core@1.64.1:
+    resolution: {integrity: sha512-BC4s8y6SEVA6Q1rSxZTto8hI1KUI3xXlHGZgvGqP4IqPdI/a6FX9H29IDNz7vKo9l21b6LfYosScPL6M3xxyDQ==}
+    engines: {node: '>=20'}
+    hasBin: true
+
+  pngjs@7.0.0:
+    resolution: {integrity: sha512-LKWqWJRhstyYo9pGvgor/ivk2w94eSjE3RGVuzLGlr3NmD8bf7RcYGze1mNdEHRP6TRP6rMuDHk5t44hnTRyow==}
+    engines: {node: '>=14.19.0'}
 
   pnpm@11.7.0:
     resolution: {integrity: sha512-GcyFLBIMcSV2DyRD7mvgyltA+fUFmN4aCaHxd1A+AQ5Xwjx3ZG4B52HeWb+HT7IqM5jDOrlpH8E+uUa28PTWIA==}
@@ -1303,6 +1320,10 @@ packages:
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
+  undici@7.30.2:
+    resolution: {integrity: sha512-mLyPQnHwUxaM/rideoK/+KL8DaAJLRl4aBCfmX444aCSLnIaomqPLtNRe2jdCYcsk5wZzXrDIQC8ZeYNRAYyIA==}
+    engines: {node: '>=20.18.1'}
 
   unicorn-magic@0.3.0:
     resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
@@ -1858,6 +1879,12 @@ snapshots:
 
   '@zseven-w/dsh-android@https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/3363a85b1bbeefe994d42d52bd8e792c1527e9ec': {}
 
+  '@zseven-w/dsh-game-studio@https://codeload.github.com/ZSeven-W/dsh-game-studio/tar.gz/93459aafc9436d66364f05b804a7841d399c2594':
+    dependencies:
+      playwright-core: 1.64.1
+      pngjs: 7.0.0
+      undici: 7.30.2
+
   '@zseven-w/dsh-ios@https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/ffa90be4c34d54848d862b1a4e0a5deacdd18a26':
     dependencies:
       serve-sim: 0.1.48
@@ -1948,7 +1975,7 @@ snapshots:
 
   dsh-marktext@https://codeload.github.com/Roland0511/dsh-marktext/tar.gz/f8ebb6de2272edb7ebc4c542a93389bd106e72fb: {}
 
-  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/154d33f9e9775f7fee08ac4314c644e8074912ff: {}
+  dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/3028ea9c0f23f24fa2c73eb4051710356f627390: {}
 
   dsh-video-storyboard@https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/8b2b5007746bcc4aa42b47570ae896cd6cba3864: {}
 
@@ -2051,7 +2078,7 @@ snapshots:
 
   minisearch@7.2.0: {}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/960cdb04f7b2df714d479a916b719476e089ac4a(@deepseek-ai/schemastery@3.19.0):
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/8dfd9c4876faa1ae4178cb62a31db1f487f0a817(@deepseek-ai/schemastery@3.19.0):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.19.0
 
@@ -2134,6 +2161,10 @@ snapshots:
   parse-ms@4.0.0: {}
 
   path-key@4.0.0: {}
+
+  playwright-core@1.64.1: {}
+
+  pngjs@7.0.0: {}
 
   pnpm@11.7.0: {}
 
@@ -2253,6 +2284,8 @@ snapshots:
 
   tslib@2.8.1:
     optional: true
+
+  undici@7.30.2: {}
 
   unicorn-magic@0.3.0: {}
 
