@@ -19,10 +19,13 @@ importers:
         version: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8
       '@ljwei-stak/dsh-model-router':
         specifier: github:Alice-Marx/dsh-model-router
-        version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/443d51dc1b0d99dca22c2685f6cb257f7e159334(@aws-sdk/credential-provider-node@3.972.97)(@deepseek-ai/schemastery@3.18.5)(@smithy/signature-v4@5.7.5)(zod@4.6.7)'
+        version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/cb081c4e3afa4e5998b523fe9f24ac28cf0e0f6c(@aws-sdk/credential-provider-node@3.972.97)(@deepseek-ai/schemastery@3.18.5)(@smithy/signature-v4@5.7.5)(zod@4.6.7)'
+      '@mnemon-dev/dsh-mnemon':
+        specifier: github:mnemon-dev/mnemon
+        version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/0ecea4c64f669126fe4512b7c7abfa3b8241c122
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/41ab8a2f13eb96dcc6867de74b792d837e7dfe09(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0f168b31584435515ce05824b9539597aa1eec4a(@deepseek-ai/schemastery@3.18.5)
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
@@ -31,7 +34,7 @@ importers:
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
-        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/b4c30981161ec4f678c330186c3c24756cbfbb9c
+        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/92dd9876fb73819ae602cc9649173ae94033fb7e
       dsh-dafeiyu:
         specifier: github:QCYTSN/dsh-dafeiyu
         version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a
@@ -49,7 +52,7 @@ importers:
         version: https://codeload.github.com/Roland0511/dsh-marktext/tar.gz/f8ebb6de2272edb7ebc4c542a93389bd106e72fb
       dsh-meme:
         specifier: github:yyh-001/dsh-meme
-        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/7d7e5edaf17c7b2d275f274d429a706c3d6451ac(@types/node@26.6.6)
+        version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/0a09eaa7b46811e3e3a4fe2b105c262ac15552ba(@types/node@26.6.6)
       dsh-plugin-bridge:
         specifier: github:Totoro-qaq/dsh-plugin-bridge
         version: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/f6b064482445960ab4c69a41c11191fccbe7216f
@@ -393,9 +396,9 @@ packages:
   '@jitl/quickjs-wasmfile-release-sync@0.31.0':
     resolution: {integrity: sha512-hYduecOByj9AsAfsJhZh5nA6exokmuFC8cls39+lYmTCGY51bgjJJJwReEu7Ff7vBWaQCL6TeDdVlnp2WYz0jw==}
 
-  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/443d51dc1b0d99dca22c2685f6cb257f7e159334':
-    resolution: {gitHosted: true, integrity: sha512-uj/f5ichdVEQNEax/TcVNhJV717Vp+Xu3AoHU57lEY2e/99qakbTGGdFRdrks5/FlcN8JGrMGQA/OI7u0BAykw==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/443d51dc1b0d99dca22c2685f6cb257f7e159334}
-    version: 0.76.0
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/cb081c4e3afa4e5998b523fe9f24ac28cf0e0f6c':
+    resolution: {gitHosted: true, integrity: sha512-8Ad+dewkdTPys/YWHPaB/3zF2jzbCSyMoFLx4rc7tL/NZHdFSiWnSC+Lbea557SvqaAjrQx4u60A83hRTlHFlA==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/cb081c4e3afa4e5998b523fe9f24ac28cf0e0f6c}
+    version: 0.79.0
     engines: {node: '>=22.19'}
     peerDependencies:
       '@deepseek-ai/cordis': ~4.0.4 || ~4.1.0
@@ -441,6 +444,11 @@ packages:
 
   '@lydell/node-pty@1.2.0-beta.15':
     resolution: {integrity: sha512-Br8wBxzbxFwdWgk9uQ+rdzE0xfoxOK4QuGH54swhRwc5IxP6H9Y1/bcyazRGvNUs6XkB5qNVkezuKSRxUwZe7A==}
+
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/0ecea4c64f669126fe4512b7c7abfa3b8241c122':
+    resolution: {gitHosted: true, integrity: sha512-G+hOD2dQ60YONBmUWxN7QvI+j3twQ0k+tmhPtMApdmqsqdt9NDMmU6amv9kwKB17EXPTLILBYHj5LNTTdrXlWQ==, tarball: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/0ecea4c64f669126fe4512b7c7abfa3b8241c122}
+    version: 0.1.0
+    engines: {node: '>=20'}
 
   '@modelcontextprotocol/core@2.4.0':
     resolution: {integrity: sha512-z8QBKqdfXLPzkLQuG4xp8hrVEMm1PZ1IgxMN2sMbJiFiAKOWXnAzogXn2W4aqIBlP1ea6U5yiqVquvUNM1Cj6Q==}
@@ -516,8 +524,8 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/41ab8a2f13eb96dcc6867de74b792d837e7dfe09':
-    resolution: {gitHosted: true, integrity: sha512-JlQu1zy48GFm1+pmO5HYBA9hJUMqX49zoQST1DHojpJMLJkDuae9mFLBHw1YNsSju0J+u6lXMdoJw9Uz9Wb8kQ==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/41ab8a2f13eb96dcc6867de74b792d837e7dfe09}
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0f168b31584435515ce05824b9539597aa1eec4a':
+    resolution: {gitHosted: true, integrity: sha512-eDlCtbNbaUjXruryCBsnNSqAVHVW2z6xjS7lQs7YF47pJJ1FRLRGfobkvrxPA2sYbajKN+O3U9FJC4NLcaLpPw==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0f168b31584435515ce05824b9539597aa1eec4a}
     version: 0.5.5
     engines: {node: '>=20.3.0'}
     peerDependencies:
@@ -784,9 +792,9 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-okn8dw8JWDvkky4SNeh7igGtnLH6x1ntFZ1swKN7TEI0GGOx0E3RRAj0mpf6fWtlBkv408LUHajObFi2NNYi7w==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3}
     version: 0.1.7
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/b4c30981161ec4f678c330186c3c24756cbfbb9c:
-    resolution: {gitHosted: true, integrity: sha512-33MRL1p5CX7hEdAs+xsyD7yq3frIsJyRNiYB/Lf5I3bnkbVrY5RuHnBDsvIBoTYNbdbHRlssvtxpBdK4wj5+fg==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/b4c30981161ec4f678c330186c3c24756cbfbb9c}
-    version: 1.9.70
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/92dd9876fb73819ae602cc9649173ae94033fb7e:
+    resolution: {gitHosted: true, integrity: sha512-DmtN2WYFhetADYqFXcfXNNxMR9QacLs8BGBoxfax+IHYpLEN3npblSZxw0at7bn926IN4hPnkdybTzOLTS+sDg==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/92dd9876fb73819ae602cc9649173ae94033fb7e}
+    version: 1.9.73
     engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: '>=20'}
     os: [darwin, linux, win32]
     hasBin: true
@@ -842,12 +850,168 @@ packages:
     version: 0.1.13
     engines: {node: '>=20'}
 
-  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/7d7e5edaf17c7b2d275f274d429a706c3d6451ac:
-    resolution: {gitHosted: true, integrity: sha512-EC2M+ve/lg8H5J4S8OBUNHPV1rQMxnesvKU3HvFRmIrXn9pnCkujMsDPL1eVSpBc+rWRlzwLfA68w1D71hTkiQ==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/7d7e5edaf17c7b2d275f274d429a706c3d6451ac}
-    version: 0.1.84
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/0a09eaa7b46811e3e3a4fe2b105c262ac15552ba:
+    resolution: {gitHosted: true, integrity: sha512-DwBzeY2xOurcAhldpp3aJnpwtGjeS5J1PxAmF5tg1c6IiQ/rQilob2uh9yRzxQTiJg8QjgWBiVI9Z+bos+ZSJQ==, tarball: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/0a09eaa7b46811e3e3a4fe2b105c262ac15552ba}
+    version: 0.1.85
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
+
+  dsh-mnemon-provider-byterover@0.5.8:
+    resolution: {integrity: sha512-RN/cbUG/IgKPyRmQD/2x6l1jmpLF3ujwrfdlRKG8ghYnREfw4O//JChTdtJOREdIz8y5xBoRTOQ8XAoFv5qMng==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-hindsight@0.5.7:
+    resolution: {integrity: sha512-sOEThpl56k6DuqSvOrma9ZFMAFmfll/XuUOLZkJ/4nB4M5z/fYvKMTMAmJ2PXUhWPO3KEnOj5m+V5axmrZefbg==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-holographic@0.5.8:
+    resolution: {integrity: sha512-mLKSE88zgBarQGr/pvtReYjrcl2uDUNkXfVlyJ3nhGykZ+jiSvCnc6G+TrhOSQtRadRwAqdrAh343RB7EwVCLA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-honcho@0.5.5:
+    resolution: {integrity: sha512-TKtpODsQ6MeLZ1zCgca37s656u9q89M1SimTqSvT6/GCRiqi9A0mAbqAj1uzAMcbTuHOYAr3hFSAQYo55TbcXQ==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-mem0@0.5.5:
+    resolution: {integrity: sha512-rxCSNx/TTMeaj7BjneMYtQOUjzNFiYB/7rFPZitBzQGdJmzVrm1KVDPZplXvHZaZ2XdQ86yfT1R+Le7NLjvrsQ==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-mnemon-native@0.5.11:
+    resolution: {integrity: sha512-rS/XVk6kd6JWXg+qM2zzm+ycRWQrTg9aBBSn56ZgJbL5y8l1+LTBTPslc1rJ4tWSHwtqYPBjWmeY9IYvRWMLMA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-openviking@0.5.11:
+    resolution: {integrity: sha512-Ccdrrf1Rfcpb6Joev+3eB9geph+v9lYmflbbn3PJB1SffEf/iIcRUSavQ1AHe0oAj/i1KEh2/tFhbzMHP74hMw==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-retaindb@0.5.7:
+    resolution: {integrity: sha512-nC6ycLguco8eTKU4xWmrNagXpNzy4b0V5jqoEx0PqstitgwRZDbIbhuPYedtNGK/euKUmgGsWrHmFSD2PWRlng==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-provider-supermemory@0.5.6:
+    resolution: {integrity: sha512-7kXlNlq+xOXQb9GOE+KyW73gQJRCCivUgvvNb2J2dvaJWUgPZrOrt/CLUocS4hpgqcpc8jOCRcs4gzbNwJZw8A==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon-source-memory-spaces: ^0.5.1
+
+  dsh-mnemon-source-documents@0.6.1:
+    resolution: {integrity: sha512-mLDODno9HNIcQMrP6yfkvkzLUejSRvHOtn9yYcMLablvSeW2LOX88fI/+UP52EupJm0cT5XA6cZJmHSsdik2DQ==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.40
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-source-memory-spaces@0.5.29:
+    resolution: {integrity: sha512-GATTrM8V/Lboro8lGzxYVP7GKZskYTeirRJI8A5tGN5GH9XaE5G94TMpcAnwgNU2U2yvByYo39aVQK9i0t2Yhw==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.19
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-source-runtime@0.5.21:
+    resolution: {integrity: sha512-nLwJ9Eyp7ns6JEi/ASCE7w9Is3JhtX6QOx8DXG/DzswlhLGVBhjk3XbmBWtmraUYYjz/4vozQnLt6OafMO2LIw==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.43
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-source-skills@0.5.14:
+    resolution: {integrity: sha512-DBd8Km7ZG1m8iD8EkA/nXaB7KcGSHT59a97ZQLDyHdwvM/cnZPWkmESJ0BGXJ97TeyNZAjEpBs8sXgCXhfp0CA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.37
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  dsh-mnemon-strategy-auto-capture@0.5.6:
+    resolution: {integrity: sha512-1bcWCvNPAfQh7ROnrx3/Z6l4Gi7qD7bngOJ/PwkIo4sEPk5pGSMEWlMdsETYijVMY+/XUN9H1jZAN+NXu2vDiw==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.17
+
+  dsh-mnemon-strategy-default-three-tier@0.5.14:
+    resolution: {integrity: sha512-4T7O1H9Th+/rBeXDtMTifGThsMjp0fkcZMYkXDTel3ivCZEvbcW44MolaycbdOh2gCf2z9Ubj9t9mlmdqhwx3w==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.43
+
+  dsh-mnemon-strategy-general@0.5.3:
+    resolution: {integrity: sha512-xW1rfxfJGd5qQH1HdWjyXkIfYIqB1r/9JjCyrwPn2hVkwNgS/30QbupAASyhokDOYyfSU4LF5jyjuQ+X+5FEiQ==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.43
+
+  dsh-mnemon-strategy-light-context@0.5.7:
+    resolution: {integrity: sha512-B8A6LTa/bFX1qfJ2d65Aep1D0fZJByVselj1RY4X2ETrIqs/Ods80hn6iEsZzuHy+/My+wxuBBLkaKyKJJsa6A==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.17
+
+  dsh-mnemon-strategy-scoped@0.5.6:
+    resolution: {integrity: sha512-XpoinvPiiynS4GByWDcbKCl3iQF/i1wM74rbdeIVGhyUpbi63NJUq8AzvGbOWVjiryDii2McmgJL0JflkD1xcA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      dsh-mnemon: ^0.5.17
+
+  dsh-mnemon@0.5.47:
+    resolution: {integrity: sha512-RavniawWPhT4Y1fh1Y10vm+OQuJaxfN5A54UWsODflrb0xxQWs8rK0/4hHPQNjSoNcoNCPEI1LiurF7kEUZ9iw==}
+    engines: {dsh: '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0', node: '>=20'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.4
+      '@deepseek-ai/dsh-app-boot': '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-typert-protocol': '>=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0'
+      react: ^18.2.0
+      react-dom: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-app-boot':
+        optional: true
 
   dsh-plugin-bridge@https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/f6b064482445960ab4c69a41c11191fccbe7216f:
     resolution: {gitHosted: true, integrity: sha512-K3BU4ATx8puo8bFGkTijoFIK+btQMiBvA6qCFUY56fHIMMUv6eX832Ti12GimSqGzvKFMVnh3RKNiigXAq/UZg==, tarball: https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/f6b064482445960ab4c69a41c11191fccbe7216f}
@@ -947,6 +1111,9 @@ packages:
   fetch-blob@3.2.0:
     resolution: {integrity: sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==}
     engines: {node: ^12.20 || >= 14.13}
+
+  fflate@0.8.3:
+    resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
 
   find-up@4.1.0:
     resolution: {integrity: sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==}
@@ -1373,6 +1540,11 @@ packages:
     engines: {node: '>= 14.6'}
     hasBin: true
 
+  yaml@2.9.1:
+    resolution: {integrity: sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
   yargs-parser@18.1.3:
     resolution: {integrity: sha512-o50j0JeToy/4K6OZcaQmW6lyXXKhq7csREXcDwk2omFPJEwUNOVtJKvmDr9EI1fAJZUyZcRF7kxGBWmRXudrCQ==}
     engines: {node: '>=6'}
@@ -1785,7 +1957,7 @@ snapshots:
     dependencies:
       '@jitl/quickjs-ffi-types': 0.31.0
 
-  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/443d51dc1b0d99dca22c2685f6cb257f7e159334(@aws-sdk/credential-provider-node@3.972.97)(@deepseek-ai/schemastery@3.18.5)(@smithy/signature-v4@5.7.5)(zod@4.6.7)':
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/cb081c4e3afa4e5998b523fe9f24ac28cf0e0f6c(@aws-sdk/credential-provider-node@3.972.97)(@deepseek-ai/schemastery@3.18.5)(@smithy/signature-v4@5.7.5)(zod@4.6.7)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       '@earendil-works/pi-ai': 1.3.0(@aws-sdk/credential-provider-node@3.972.97)(@smithy/signature-v4@5.7.5)(undici@7.30.2)(ws@8.22.1)(zod@4.6.7)
@@ -1837,6 +2009,16 @@ snapshots:
       '@lydell/node-pty-win32-arm64': 1.2.0-beta.15
       '@lydell/node-pty-win32-x64': 1.2.0-beta.15
     optional: true
+
+  '@mnemon-dev/dsh-mnemon@https://codeload.github.com/mnemon-dev/mnemon/tar.gz/0ecea4c64f669126fe4512b7c7abfa3b8241c122':
+    dependencies:
+      dsh-mnemon: 0.5.47
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis'
+      - '@deepseek-ai/dsh-app-boot'
+      - '@deepseek-ai/dsh-typert-protocol'
+      - react
+      - react-dom
 
   '@modelcontextprotocol/core@2.4.0':
     dependencies:
@@ -1925,7 +2107,7 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/41ab8a2f13eb96dcc6867de74b792d837e7dfe09(@deepseek-ai/schemastery@3.18.5)':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0f168b31584435515ce05824b9539597aa1eec4a(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       '@tencent-connect/qqbot-connector': 1.2.0
@@ -2091,7 +2273,7 @@ snapshots:
 
   dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3: {}
 
-  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/b4c30981161ec4f678c330186c3c24756cbfbb9c:
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/92dd9876fb73819ae602cc9649173ae94033fb7e:
     dependencies:
       acorn: 8.15.0
       zod: 4.6.6
@@ -2125,11 +2307,113 @@ snapshots:
 
   dsh-marktext@https://codeload.github.com/Roland0511/dsh-marktext/tar.gz/f8ebb6de2272edb7ebc4c542a93389bd106e72fb: {}
 
-  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/7d7e5edaf17c7b2d275f274d429a706c3d6451ac(@types/node@26.6.6):
+  dsh-meme@https://codeload.github.com/yyh-001/dsh-meme/tar.gz/0a09eaa7b46811e3e3a4fe2b105c262ac15552ba(@types/node@26.6.6):
     optionalDependencies:
       sharp: 0.35.5(@types/node@26.6.6)
     transitivePeerDependencies:
       - '@types/node'
+
+  dsh-mnemon-provider-byterover@0.5.8(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.29(dsh-mnemon@0.5.47)
+
+  dsh-mnemon-provider-hindsight@0.5.7(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.29(dsh-mnemon@0.5.47)
+
+  dsh-mnemon-provider-holographic@0.5.8(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.29(dsh-mnemon@0.5.47)
+
+  dsh-mnemon-provider-honcho@0.5.5(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.29(dsh-mnemon@0.5.47)
+
+  dsh-mnemon-provider-mem0@0.5.5(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.29(dsh-mnemon@0.5.47)
+
+  dsh-mnemon-provider-mnemon-native@0.5.11(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.29(dsh-mnemon@0.5.47)
+
+  dsh-mnemon-provider-openviking@0.5.11(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.29(dsh-mnemon@0.5.47)
+
+  dsh-mnemon-provider-retaindb@0.5.7(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.29(dsh-mnemon@0.5.47)
+
+  dsh-mnemon-provider-supermemory@0.5.6(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47)):
+    dependencies:
+      dsh-mnemon-source-memory-spaces: 0.5.29(dsh-mnemon@0.5.47)
+
+  dsh-mnemon-source-documents@0.6.1(dsh-mnemon@0.5.47):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      dsh-mnemon: 0.5.47
+
+  dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      dsh-mnemon: 0.5.47
+
+  dsh-mnemon-source-runtime@0.5.21(dsh-mnemon@0.5.47):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      dsh-mnemon: 0.5.47
+
+  dsh-mnemon-source-skills@0.5.14(dsh-mnemon@0.5.47):
+    dependencies:
+      dsh-mnemon: 0.5.47
+      yaml: 2.9.1
+
+  dsh-mnemon-strategy-auto-capture@0.5.6(dsh-mnemon@0.5.47):
+    dependencies:
+      dsh-mnemon: 0.5.47
+
+  dsh-mnemon-strategy-default-three-tier@0.5.14(dsh-mnemon@0.5.47):
+    dependencies:
+      dsh-mnemon: 0.5.47
+
+  dsh-mnemon-strategy-general@0.5.3(dsh-mnemon@0.5.47):
+    dependencies:
+      dsh-mnemon: 0.5.47
+
+  dsh-mnemon-strategy-light-context@0.5.7(dsh-mnemon@0.5.47):
+    dependencies:
+      dsh-mnemon: 0.5.47
+
+  dsh-mnemon-strategy-scoped@0.5.6(dsh-mnemon@0.5.47):
+    dependencies:
+      dsh-mnemon: 0.5.47
+
+  dsh-mnemon@0.5.47:
+    dependencies:
+      '@deepseek-ai/cosmokit': 1.8.6
+      '@deepseek-ai/schemastery': 3.18.5
+      dsh-mnemon-provider-byterover: 0.5.8(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47))
+      dsh-mnemon-provider-hindsight: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47))
+      dsh-mnemon-provider-holographic: 0.5.8(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47))
+      dsh-mnemon-provider-honcho: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47))
+      dsh-mnemon-provider-mem0: 0.5.5(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47))
+      dsh-mnemon-provider-mnemon-native: 0.5.11(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47))
+      dsh-mnemon-provider-openviking: 0.5.11(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47))
+      dsh-mnemon-provider-retaindb: 0.5.7(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47))
+      dsh-mnemon-provider-supermemory: 0.5.6(dsh-mnemon-source-memory-spaces@0.5.29(dsh-mnemon@0.5.47))
+      dsh-mnemon-source-documents: 0.6.1(dsh-mnemon@0.5.47)
+      dsh-mnemon-source-memory-spaces: 0.5.29(dsh-mnemon@0.5.47)
+      dsh-mnemon-source-runtime: 0.5.21(dsh-mnemon@0.5.47)
+      dsh-mnemon-source-skills: 0.5.14(dsh-mnemon@0.5.47)
+      dsh-mnemon-strategy-auto-capture: 0.5.6(dsh-mnemon@0.5.47)
+      dsh-mnemon-strategy-default-three-tier: 0.5.14(dsh-mnemon@0.5.47)
+      dsh-mnemon-strategy-general: 0.5.3(dsh-mnemon@0.5.47)
+      dsh-mnemon-strategy-light-context: 0.5.7(dsh-mnemon@0.5.47)
+      dsh-mnemon-strategy-scoped: 0.5.6(dsh-mnemon@0.5.47)
+      fflate: 0.8.3
+      yaml: 2.9.1
+      zod: 4.6.7
 
   dsh-plugin-bridge@https://codeload.github.com/Totoro-qaq/dsh-plugin-bridge/tar.gz/f6b064482445960ab4c69a41c11191fccbe7216f:
     dependencies:
@@ -2191,6 +2475,8 @@ snapshots:
     dependencies:
       node-domexception: 1.0.0
       web-streams-polyfill: 3.3.3
+
+  fflate@0.8.3: {}
 
   find-up@4.1.0:
     dependencies:
@@ -2666,6 +2952,8 @@ snapshots:
   y18n@5.0.8: {}
 
   yaml@2.8.1: {}
+
+  yaml@2.9.1: {}
 
   yargs-parser@18.1.3:
     dependencies:
