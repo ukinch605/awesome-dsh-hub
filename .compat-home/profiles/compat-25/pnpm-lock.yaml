@@ -25,7 +25,7 @@ importers:
         version: https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43
       aegis:
         specifier: github:GanyuanRan/Aegis
-        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/952b150a16b9cf9c702022ea779bcc6750b0d48d
+        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2
       brooks-lint:
         specifier: github:hyhmrright/brooks-lint
         version: https://codeload.github.com/hyhmrright/brooks-lint/tar.gz/f34624f7d67855abc55f4ad25399e3bfbaaea66d
@@ -38,6 +38,9 @@ importers:
       dsh-open-in-vscode:
         specifier: github:omdsh-dev/dsh-open-in-vscode
         version: https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751
+      dsh-windows-mcp:
+        specifier: github:helloHub1212/dsh-windows-mcp
+        version: https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/3eeb98423d26f5878b5ddf3f3abaa065e3e3f019
       easyeda-agent-dsh:
         specifier: github:zhoushoujianwork/easyeda-agent
         version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd
@@ -157,9 +160,9 @@ packages:
     engines: {node: ^22.19.0 || >=24.0.0}
     hasBin: true
 
-  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/952b150a16b9cf9c702022ea779bcc6750b0d48d:
-    resolution: {gitHosted: true, integrity: sha512-1kusEOr+2Nph1jLxGTDjugWjxnOb+qxpuYTZWhblqOCApU8vPQaK4jK1vDHfUCVKg/QR9ia/3mzLftKSfZeqSA==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/952b150a16b9cf9c702022ea779bcc6750b0d48d}
-    version: 2.15.0
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2:
+    resolution: {gitHosted: true, integrity: sha512-0sUOGDVAgKn4wy1YsAapsfQA4XiNWUZ0sxhSA3GkZjSLeNx48yS3DeDCeaA5Av2EldDStMmXZ5cREnFJItwDwg==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2}
+    version: 2.15.2
     peerDependencies:
       '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6'
       '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6'
@@ -227,6 +230,11 @@ packages:
         optional: true
       react:
         optional: true
+
+  dsh-windows-mcp@https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/3eeb98423d26f5878b5ddf3f3abaa065e3e3f019:
+    resolution: {gitHosted: true, integrity: sha512-2r03/9SWtiayjCRT/VzuFLHJE0oruD96uwLWjnjCXpe2Oxv91cUCF9b5tqqDPR3VRRo8XAXfxL3B0qVri0d9Tw==, tarball: https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/3eeb98423d26f5878b5ddf3f3abaa065e3e3f019}
+    version: 0.2.11
+    engines: {node: '>=22'}
 
   easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd:
     resolution: {gitHosted: true, integrity: sha512-0FQ1cA19iAnHY1dH6PvL6i69bxspWRBeLodsMo+QW7rjhClIcSvhnXH0Ati/pGS5gZU+p5dEbL1UtkXdHf4t7g==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd}
@@ -329,7 +337,7 @@ snapshots:
 
   '@yunmiao/studymate@https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43': {}
 
-  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/952b150a16b9cf9c702022ea779bcc6750b0d48d: {}
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2: {}
 
   argparse@2.0.1: {}
 
@@ -346,6 +354,8 @@ snapshots:
   dsh-open-in-vscode@https://codeload.github.com/omdsh-dev/dsh-open-in-vscode/tar.gz/8aed144abdc158a332aa73bce42fc217d962f751:
     dependencies:
       zod: 4.4.3
+
+  dsh-windows-mcp@https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/3eeb98423d26f5878b5ddf3f3abaa065e3e3f019: {}
 
   easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/935fea0ef22025bf73436a83d958fa6b24af5efd: {}
 

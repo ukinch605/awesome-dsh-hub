@@ -23,6 +23,9 @@ importers:
       '@leon___/dsh-client-liang-intensity-skin':
         specifier: github:kingOfSoySauce/dsh-liang-skin
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef
+      '@michengai/dsh-skills-manager':
+        specifier: github:MichengAI/dsh-skills-manager
+        version: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/ad17971746023a3daa5e7ffef4ba8ba263e58833
       '@nagi-ovo/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
         version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/6a713a74795fc3043eaad86acf49ac23211ac238(@deepseek-ai/schemastery@3.19.0)
@@ -55,7 +58,7 @@ importers:
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/ba599183390164484d5f5894585ddb8f6abb2228(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945(@deepseek-ai/schemastery@3.19.0)
       dsh-ego-browser:
         specifier: github:Fisfzy/dsh-ego-browser
         version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/14300ddb5ac9db57f0d22852b6c3f1f5dc97c5ce
@@ -79,7 +82,7 @@ importers:
         version: https://codeload.github.com/alchaincyf/huashu-excel/tar.gz/2492fabbafc8498496edd70f7e2354016a8dd06e
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/8dfd9c4876faa1ae4178cb62a31db1f487f0a817(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/d0a2c55a637aa46279834f50c65d376553bd8dfa(@deepseek-ai/schemastery@3.19.0)
       my-app:
         specifier: github:theBigGavin/marketingdashboard
         version: https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/2d71054d76bb78b82ddb7818af4bdff49a6179a7
@@ -709,6 +712,23 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-IE/0HsGk18fsn1ddXp690ZdvgqP3KoUhmvc4QiPWF1x+BwUQ9oU4TaMk/6LiDVpcb3cbMVBtV0clphnKfOYzfA==, tarball: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef}
     version: 0.1.15-settings.4
 
+  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/ad17971746023a3daa5e7ffef4ba8ba263e58833':
+    resolution: {gitHosted: true, integrity: sha512-PmJXSBQguJbz8E5ERVJuUhSEt9GgIJ7zzZnVvmRyzJTa1qcF0Bd54eJPKasxMEnyipd5lOBxWt8V53/TB1Y1AQ==, tarball: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/ad17971746023a3daa5e7ffef4ba8ba263e58833}
+    version: 1.5.0
+    engines: {dsh: '>=0.2.2-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.1 <5.0.0'
+      '@deepseek-ai/dsh-client-locale': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-host-webserver': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-session': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-skill': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-tools': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-web-app': '>=0.2.2-rc.1 <0.3.0-0'
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
   '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/6a713a74795fc3043eaad86acf49ac23211ac238':
     resolution: {gitHosted: true, integrity: sha512-oZyj/MVr78umRu3Dp/kRPjp7OqgcCqQks4IBN7/Op13fPXPEQqf1W6XLyitbWF2AWg8PboRSSQ8FarrqXb3ZQA==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/6a713a74795fc3043eaad86acf49ac23211ac238}
     version: 0.1.10
@@ -921,9 +941,9 @@ packages:
       react:
         optional: true
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/ba599183390164484d5f5894585ddb8f6abb2228:
-    resolution: {gitHosted: true, integrity: sha512-ZM2YLl0rqcmSh2otOpTncJVcg48rrKU+UX8uvzpr/bsWU3YK9PH/s6/8p77d0MalDiIMSxbzR36+7MN+W24t0w==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/ba599183390164484d5f5894585ddb8f6abb2228}
-    version: 0.26.7
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945:
+    resolution: {gitHosted: true, integrity: sha512-CeJUjCXlluz5/FpbFETxJUoM6P0xDaenn7RInmjoQVmpjb7Yek1zWKXvllLbzrY9ZtPN1kDE8o15tHDMUALl4g==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945}
+    version: 0.26.8
     engines: {node: '>=22.13'}
     hasBin: true
     peerDependencies:
@@ -1010,6 +1030,9 @@ packages:
 
   fast-uri@3.1.9:
     resolution: {integrity: sha512-hS/0Wt3Ya043oKXs0sIxrMpKQITXhMLIrVAKKXi4gozGC9v7YRWVnXIZzjNPTO02M9BdxLCWqK1yRXgNziVyJQ==}
+
+  fflate@0.8.3:
+    resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
 
   figures@6.1.0:
     resolution: {integrity: sha512-d+l3qxjSesT4V7v2fh+QnmFnUWv9lSpjarhShNTgBOfA0ttejbQUAlHLitbjkoRiDulW0OPoQPYIGhIC8ohejg==}
@@ -1099,8 +1122,8 @@ packages:
   minisearch@7.2.0:
     resolution: {integrity: sha512-dqT2XBYUOZOiC5t2HRnwADjhNS2cecp9u+TJRiJ1Qp/f5qjkeT5APcGPjHw+bz89Ms8Jp+cG4AlE+QZ/QnDglg==}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/8dfd9c4876faa1ae4178cb62a31db1f487f0a817:
-    resolution: {gitHosted: true, integrity: sha512-Aip/wfq8GAgBGPMZUrkOvRdzJjQjKsPXNCb3sBH4lkB1cEudk3z/dtE2x18zD/OmnwsIgOuEIS80Ax0qL9buBA==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/8dfd9c4876faa1ae4178cb62a31db1f487f0a817}
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/d0a2c55a637aa46279834f50c65d376553bd8dfa:
+    resolution: {gitHosted: true, integrity: sha512-TUULKyHhvrgHbckUYrrkbs+TzCKO+x0o4/ZhIbPHJ3gne7h4QQ2o7uCiMGh8PuOWAonTm4O5UPZTr+/RUmKRFw==, tarball: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/d0a2c55a637aa46279834f50c65d376553bd8dfa}
     version: 3.19.0
     engines: {node: '>=20.0.0'}
     peerDependencies:
@@ -1852,6 +1875,10 @@ snapshots:
 
   '@leon___/dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef': {}
 
+  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/ad17971746023a3daa5e7ffef4ba8ba263e58833':
+    dependencies:
+      fflate: 0.8.3
+
   '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/6a713a74795fc3043eaad86acf49ac23211ac238(@deepseek-ai/schemastery@3.19.0)':
     dependencies:
       '@deepseek-ai/schemastery': 3.19.0
@@ -1961,7 +1988,7 @@ snapshots:
     dependencies:
       zod: 4.6.7
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/ba599183390164484d5f5894585ddb8f6abb2228(@deepseek-ai/schemastery@3.19.0):
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945(@deepseek-ai/schemastery@3.19.0):
     dependencies:
       '@deepseek-ai/schemastery': 3.19.0
       fzstd: 0.1.1
@@ -2010,6 +2037,8 @@ snapshots:
   fast-deep-equal@3.1.3: {}
 
   fast-uri@3.1.9: {}
+
+  fflate@0.8.3: {}
 
   figures@6.1.0:
     dependencies:
@@ -2078,7 +2107,7 @@ snapshots:
 
   minisearch@7.2.0: {}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/8dfd9c4876faa1ae4178cb62a31db1f487f0a817(@deepseek-ai/schemastery@3.19.0):
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/d0a2c55a637aa46279834f50c65d376553bd8dfa(@deepseek-ai/schemastery@3.19.0):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.19.0
 

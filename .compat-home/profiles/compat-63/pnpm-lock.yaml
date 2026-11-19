@@ -19,13 +19,13 @@ importers:
         version: https://codeload.github.com/LoserFox/distill/tar.gz/78a508c8839a0cd4205c95416905d7d5e2e2775e(@deepseek-ai/schemastery@3.18.5)
       '@michengai/dsh-skills-manager':
         specifier: github:MichengAI/dsh-skills-manager
-        version: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/65aaed4d6c3d5d64cfec40ee150e0ae4f03bad2a
+        version: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/ad17971746023a3daa5e7ffef4ba8ba263e58833
       '@nanmicoder/dsh-auto-mode':
         specifier: github:NanmiCoder/dsh-auto-mode
         version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/907d663b7d65e3fcd9f328c598dee03772cac18b
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0f168b31584435515ce05824b9539597aa1eec4a(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/505b64e95f07b276a148034df9f854c78936f203(@deepseek-ai/schemastery@3.18.5)
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/56650083e8b1ea01c625b73a4a5c15b98ef53965
@@ -37,7 +37,7 @@ importers:
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
       dsh-drawai:
         specifier: github:fourzkw/dsh-drawai
-        version: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/3c5b88e40e787823f4c56468fd48cf2dc107dfc4
+        version: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/f6ca4f47d1a6f5f38f6a514a5480ae20d8844573
       dsh-fish-memory:
         specifier: github:Yuuyuko-uu/dsh-fish-memory
         version: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/ab3a80ed5b7608887323f6cb19c976052d5c2e78
@@ -53,6 +53,9 @@ importers:
       dsh-plugin-marketplace:
         specifier: github:bradeGithub/DSH-Plugins-Marketplace
         version: https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/73f24905a37ab68c271dff9342c48650601bae98
+      dsh-see-now:
+        specifier: github:SAOS-3624/dsh-see-now
+        version: https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/034d46d5f073b9a0e6536c6abd70fdcd2f43cd3d
       dsh-undo-savepoint:
         specifier: github:lire1131/dsh-undo-savepoint
         version: https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/c5046313eec6d65ecbd8bccb1e3852c7e9200946
@@ -480,20 +483,20 @@ packages:
       '@deepseek-ai/dsh-tools': ^0.0.1-rc.1
       '@deepseek-ai/schemastery': ^3.18.1
 
-  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/65aaed4d6c3d5d64cfec40ee150e0ae4f03bad2a':
-    resolution: {gitHosted: true, integrity: sha512-+SjdEEiYVDBkZpmLXOtfGASLbzWpLbqwW43euAJY7/cM4ZojPX3ncEK4MqnNRqzHKG7BpmDNPvj62kVUGxGx6A==, tarball: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/65aaed4d6c3d5d64cfec40ee150e0ae4f03bad2a}
-    version: 1.4.12
-    engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
+  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/ad17971746023a3daa5e7ffef4ba8ba263e58833':
+    resolution: {gitHosted: true, integrity: sha512-PmJXSBQguJbz8E5ERVJuUhSEt9GgIJ7zzZnVvmRyzJTa1qcF0Bd54eJPKasxMEnyipd5lOBxWt8V53/TB1Y1AQ==, tarball: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/ad17971746023a3daa5e7ffef4ba8ba263e58833}
+    version: 1.5.0
+    engines: {dsh: '>=0.2.2-rc.1 <0.3.0-0', node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': '>=4.0.1 <5.0.0'
-      '@deepseek-ai/dsh-client-locale': '>=0.2.0-rc.1 <0.3.0-0'
-      '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.0-rc.1 <0.3.0-0'
-      '@deepseek-ai/dsh-client-ui-slots': '>=0.2.0-rc.1 <0.3.0-0'
-      '@deepseek-ai/dsh-host-webserver': '>=0.2.0-rc.1 <0.3.0-0'
-      '@deepseek-ai/dsh-session': '>=0.2.0-rc.1 <0.3.0-0'
-      '@deepseek-ai/dsh-skill': '>=0.2.0-rc.1 <0.3.0-0'
-      '@deepseek-ai/dsh-tools': '>=0.2.0-rc.1 <0.3.0-0'
-      '@deepseek-ai/dsh-web-app': '>=0.2.0-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-locale': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-host-webserver': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-session': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-skill': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-tools': '>=0.2.2-rc.1 <0.3.0-0'
+      '@deepseek-ai/dsh-web-app': '>=0.2.2-rc.1 <0.3.0-0'
       react: ^18.2.0
       react-dom: ^18.2.0
 
@@ -725,8 +728,8 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0f168b31584435515ce05824b9539597aa1eec4a':
-    resolution: {gitHosted: true, integrity: sha512-eDlCtbNbaUjXruryCBsnNSqAVHVW2z6xjS7lQs7YF47pJJ1FRLRGfobkvrxPA2sYbajKN+O3U9FJC4NLcaLpPw==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0f168b31584435515ce05824b9539597aa1eec4a}
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/505b64e95f07b276a148034df9f854c78936f203':
+    resolution: {gitHosted: true, integrity: sha512-EaRa8OA5wxPtENkOSDe13k1z+4ePNpWXn0GZ8V+GVWtSOVF+bc0tha7NwtzLtd5s3yQ69k9hGAZ+V6awfr13ng==, tarball: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/505b64e95f07b276a148034df9f854c78936f203}
     version: 0.5.5
     engines: {node: '>=20.3.0'}
     peerDependencies:
@@ -977,8 +980,8 @@ packages:
       react:
         optional: true
 
-  dsh-drawai@https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/3c5b88e40e787823f4c56468fd48cf2dc107dfc4:
-    resolution: {gitHosted: true, integrity: sha512-o0h8q2vvjSHhY9ByvkDFDtviu/NFKcKUL/IjX0DoySIgoYmtxZwEdHBVci7YKTHYvucIkefxlaLhZB+oP+ANkA==, tarball: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/3c5b88e40e787823f4c56468fd48cf2dc107dfc4}
+  dsh-drawai@https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/f6ca4f47d1a6f5f38f6a514a5480ae20d8844573:
+    resolution: {gitHosted: true, integrity: sha512-XcM1bmD9hQWi1odOd6lq4oZeuHQ0sosVB/VAuyhAC6KV08G2mESv5Uo/+nDs9Ij++SAGooGC9j2bLdZ34YweDw==, tarball: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/f6ca4f47d1a6f5f38f6a514a5480ae20d8844573}
     version: 0.4.8
     engines: {node: '>=20'}
     peerDependencies:
@@ -1016,6 +1019,17 @@ packages:
   dsh-plugin-marketplace@https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/73f24905a37ab68c271dff9342c48650601bae98:
     resolution: {gitHosted: true, integrity: sha512-annk42gYVsuRABO+QbRCAcYmqqGmhMPkKxLOGL99zHJTc71ti0VF7jrKa7Ex95P/13qmupvmkxCQJD5pjlqvZg==, tarball: https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/73f24905a37ab68c271dff9342c48650601bae98}
     version: 1.5.5
+
+  dsh-see-now@https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/034d46d5f073b9a0e6536c6abd70fdcd2f43cd3d:
+    resolution: {gitHosted: true, integrity: sha512-vY4F4LOqx7BmgsbDTK4+gkJkaAqyqNyOZwfgyaX1WC39+pn506W0wO8zx52L/V4QsKUNhxSiXBN1hr3DsoY9qg==, tarball: https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/034d46d5f073b9a0e6536c6abd70fdcd2f43cd3d}
+    version: 0.2.5
+    engines: {node: '>=20'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/dsh-tools': '>=0.1.0-rc.7'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-tools':
+        optional: true
 
   dsh-undo-savepoint@https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/c5046313eec6d65ecbd8bccb1e3852c7e9200946:
     resolution: {gitHosted: true, integrity: sha512-cKC+ZWAp6xkdNUjUxk8Hw1nh2BQ606FyyXh3kNrgLUTNt7dLyKPA0b7S4DC3mpsYEQ2Z+csoDD11eDwwrzguxw==, tarball: https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/c5046313eec6d65ecbd8bccb1e3852c7e9200946}
@@ -2219,7 +2233,7 @@ snapshots:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
-  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/65aaed4d6c3d5d64cfec40ee150e0ae4f03bad2a':
+  '@michengai/dsh-skills-manager@https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/ad17971746023a3daa5e7ffef4ba8ba263e58833':
     dependencies:
       fflate: 0.8.3
 
@@ -2414,7 +2428,7 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/0f168b31584435515ce05824b9539597aa1eec4a(@deepseek-ai/schemastery@3.18.5)':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/505b64e95f07b276a148034df9f854c78936f203(@deepseek-ai/schemastery@3.18.5)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       '@tencent-connect/qqbot-connector': 1.2.0
@@ -2561,7 +2575,7 @@ snapshots:
     dependencies:
       zod: 4.4.3
 
-  dsh-drawai@https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/3c5b88e40e787823f4c56468fd48cf2dc107dfc4:
+  dsh-drawai@https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/f6ca4f47d1a6f5f38f6a514a5480ae20d8844573:
     dependencies:
       '@babel/parser': 7.28.5
       '@babel/traverse': 7.28.5
@@ -2585,6 +2599,8 @@ snapshots:
       - '@types/node'
 
   dsh-plugin-marketplace@https://codeload.github.com/bradeGithub/DSH-Plugins-Marketplace/tar.gz/73f24905a37ab68c271dff9342c48650601bae98: {}
+
+  dsh-see-now@https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/034d46d5f073b9a0e6536c6abd70fdcd2f43cd3d: {}
 
   dsh-undo-savepoint@https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/c5046313eec6d65ecbd8bccb1e3852c7e9200946: {}
 

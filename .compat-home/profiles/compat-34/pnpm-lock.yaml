@@ -26,6 +26,9 @@ importers:
       '@zseven-w/dsh-ios':
         specifier: github:ZSeven-W/dsh-ios
         version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/ffa90be4c34d54848d862b1a4e0a5deacdd18a26
+      aegis:
+        specifier: github:GanyuanRan/Aegis
+        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2
       dsh-api-relay-audit:
         specifier: github:toby-bridges/api-relay-audit
         version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59
@@ -37,7 +40,7 @@ importers:
         version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98
       dsh-free-search:
         specifier: github:DDDMUC/dsh-free-search
-        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/de02f0af12df61e14f4defd7baea1ec45bab39fe(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/5dabc1d1d73b75e8aadc9235e7cf94d2398a06e2(@deepseek-ai/schemastery@3.18.5)
       dsh-memory-evolve:
         specifier: github:csyangwen/dsh-memory-evolve
         version: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/1e6e7eb15ce515b0f2bd2142bdee9a36c46c8b91
@@ -49,7 +52,7 @@ importers:
         version: https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/3eeb98423d26f5878b5ddf3f3abaa065e3e3f019
       easyeda-agent-dsh:
         specifier: github:zhoushoujianwork/easyeda-agent
-        version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/af76cd7ea73cd9789a68782cb4ad18d921fd0074
+        version: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/b36de3472999f00418c9d3f6eb058159b2a8e380
       gal-view:
         specifier: github:Ayase34/gal-view
         version: https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a
@@ -232,6 +235,21 @@ packages:
     resolution: {integrity: sha512-5cvg6CtKwfgdmVqY1WIiXKc3Q1bkRqGLi+2W/6ao+6Y7gu/RCwRuAhGEzh5B4KlszSuTLgZYuqFqo5bImjNKng==}
     engines: {node: '>= 0.6'}
 
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2:
+    resolution: {gitHosted: true, integrity: sha512-0sUOGDVAgKn4wy1YsAapsfQA4XiNWUZ0sxhSA3GkZjSLeNx48yS3DeDCeaA5Av2EldDStMmXZ5cREnFJItwDwg==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2}
+    version: 2.15.2
+    peerDependencies:
+      '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-skill-filesystem': '>=0.1.0-rc.6'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-skill-filesystem':
+        optional: true
+
   ajv-formats@3.0.1:
     resolution: {integrity: sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==}
     peerDependencies:
@@ -342,9 +360,9 @@ packages:
       - '@deepseek-ai/schemastery'
       - '@standard-schema/spec'
 
-  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/de02f0af12df61e14f4defd7baea1ec45bab39fe:
-    resolution: {gitHosted: true, integrity: sha512-S2kc/1tKEbD/l2mqwh4OrJ9BRBMDxTjGDNO2/oqpfOuQ0vTTtoMQAMe80jiGjhI2XfEupLzqzK4in9Z2nPfP5Q==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/de02f0af12df61e14f4defd7baea1ec45bab39fe}
-    version: 0.9.52
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/5dabc1d1d73b75e8aadc9235e7cf94d2398a06e2:
+    resolution: {gitHosted: true, integrity: sha512-kXNf3NuNUyYcv3xn4KZGM1/4XzdfLR+aCPTzB9rMtDdqnPq/64eHjMKZSb5tkCxILDOImm6RT+RXaQdBaWxZ0Q==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/5dabc1d1d73b75e8aadc9235e7cf94d2398a06e2}
+    version: 0.9.73
     engines: {dsh: '>=0.2.1-rc.2 <0.4.0-0', node: '>=20'}
     hasBin: true
     peerDependencies:
@@ -392,8 +410,8 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/af76cd7ea73cd9789a68782cb4ad18d921fd0074:
-    resolution: {gitHosted: true, integrity: sha512-d9RWOVptqBGh35pdnPWPuPIBEanNLw+QKE1omKwgcZ63SW6BCwdr/dp5GUicNzz0fESc5bsMtNVshrmn861R5A==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/af76cd7ea73cd9789a68782cb4ad18d921fd0074}
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/b36de3472999f00418c9d3f6eb058159b2a8e380:
+    resolution: {gitHosted: true, integrity: sha512-a+6z/QBOGoyx3GUYz96az48w7YYJs1kUMRwhk2IRuiV1lqgFKiyosqUSU7FXjLuR5TSkcjUcEOmL163ekykuIw==, tarball: https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/b36de3472999f00418c9d3f6eb058159b2a8e380}
     version: 1.13.1
     engines: {node: '>=20.17.0'}
 
@@ -840,6 +858,8 @@ snapshots:
       mime-types: 3.0.2
       negotiator: 1.1.0
 
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2: {}
+
   ajv-formats@3.0.1:
     dependencies:
       ajv: 8.20.0
@@ -916,7 +936,7 @@ snapshots:
 
   dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/8567da6e21caa34b8d2e4f49483a0e1c8e6ebc98: {}
 
-  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/de02f0af12df61e14f4defd7baea1ec45bab39fe(@deepseek-ai/schemastery@3.18.5):
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/5dabc1d1d73b75e8aadc9235e7cf94d2398a06e2(@deepseek-ai/schemastery@3.18.5):
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -932,7 +952,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/af76cd7ea73cd9789a68782cb4ad18d921fd0074:
+  easyeda-agent-dsh@https://codeload.github.com/zhoushoujianwork/easyeda-agent/tar.gz/b36de3472999f00418c9d3f6eb058159b2a8e380:
     dependencies:
       '@modelcontextprotocol/sdk': 1.30.0
     transitivePeerDependencies:
