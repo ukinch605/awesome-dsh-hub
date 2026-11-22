@@ -2,9 +2,9 @@
 
 > 自动生成的周报草稿，发布到 GitHub Discussions 前可自行删改。
 
-# 🐋 awesome-dsh-hub 周报 #14（2026-11-08 ~ 2026-11-15）
+# 🐋 awesome-dsh-hub 周报 #15（2026-11-15 ~ 2026-11-22）
 
-<!-- WEEK_END: 2026-11-15 -->
+<!-- WEEK_END: 2026-11-22 -->
 
 
 
@@ -13,67 +13,67 @@
 ## 本周概览
 
 - 新增插件：**1000**
-- 收录总数：**25939**（监测 25939 仓库）
+- 收录总数：**28100**（监测 28100 仓库）
 
 ## 本周新增插件
 
 | 插件 | Stars | 说明 |
 | --- | ---: | --- |
-| [oil-oil/dsh-oil-ui](https://github.com/oil-oil/dsh-oil-ui) | 247 | Oil UI 的 DeepSeek Harness 原生插件，支持自动切换本地安装的 Oil UI Pro |
-| [lightsifter/sift-light](https://github.com/lightsifter/sift-light) | 103 | sift-light — Evidence-first search for AI agents. |
-| [kingcharleslzy-ai/DSH-Spicy](https://github.com/kingcharleslzy-ai/DSH-Spicy) | 90 | 完美适配 Purge 的 NSFW content creation 插件。在 DeepSeek Harness 中用自托管模型创作成人向图像、有声视频与多镜头短片，支持参考图编辑、LoRA 风格控制和 Agent 分镜剪辑。 |
-| [topmindspace/dsh-super-kanban](https://github.com/topmindspace/dsh-super-kanban) | 42 | AI task kanban plugin for DeepSeek Harness — derives task goals, progress and issues from DSH sessions, with session hand-off, subtasks, artifacts and a dual full-page/sidebar UI. |
-| [guohwa/dsh-plugin-image-workbench](https://github.com/guohwa/dsh-plugin-image-workbench) | 10 | Bluxe手绘工坊 · 生图工作台 DSH 插件：内置号池运行时，装一个插件即可独立运行；可配置任意 OpenAI 兼容接口（Base URL / API Key / 模型）。 |
-| [slowhiring/dsh-github-ops](https://github.com/slowhiring/dsh-github-ops) | 9 | 让 DeepSeek Harness 直接操作你的 GitHub：建仓库、写文件、克隆/提交/推送真实代码、开 PR、提问题、搜索。 |
-| [lonelycrab888/roundtable-bots](https://github.com/lonelycrab888/roundtable-bots) | 8 | A lightweight, minimally invasive multi-bot roundtable for DeepSeek Harness. In the native chat UI, KingBot delegates tasks, guides discussions, and brings conclusions back to the original chat. |
-| [loyalchiiina/dsh-deepseek-web-free](https://github.com/loyalchiiina/dsh-deepseek-web-free) | 6 | 将 DeepSeek 网页端模型、对话历史无缝接入 DeepSeek Harness |
-| [looki-ai/looki-plugin](https://github.com/looki-ai/looki-plugin) | 5 | Looki MCP Plugin for AI assistants |
-| [Punky971210/dsh-punky-swarm](https://github.com/Punky971210/dsh-punky-swarm) | 4 | Engine-enforced guardrails for DeepSeek Harness agent swarms: quality gates reject half-done work, crash-safe checkpoints resume in place — keeps AI teams from breaking, not just running. |
-| [antonio-mastropaolo/dsh-model-hub](https://github.com/antonio-mastropaolo/dsh-model-hub) | 4 | DeepSeek Harness plugin: model hub. DSH-native sign-in (Claude, Codex, Copilot, OpenRouter, xAI, Kimi), rocco GPU dispatch, per-model cost, spend caps, prompt-cache checks, and the dsh-hub CLI. |
-| [Hjay1101/dsh-opencode-go-usage](https://github.com/Hjay1101/dsh-opencode-go-usage) | 4 |  |
-| [ruohan0713/dsh-theme-studio](https://github.com/ruohan0713/dsh-theme-studio) | 3 | Twenty original literary themes for DeepSeek Harness (DSH): light/dark palettes, 116 design tokens, animated wallpapers. |
-| [YuigahamaHawk/dsh-paperhub](https://github.com/YuigahamaHawk/dsh-paperhub) | 3 | DeepSeek Harness插件：内置阅读器的文献库管理插件，具备AI排版、双语交替翻译与伴读助手功能，可从Zotero一键导入 |
-| [CheeseEri/dsh-sidebar-dock](https://github.com/CheeseEri/dsh-sidebar-dock) | 3 | DeepSeek Harness 侧边栏入口管理：一键收起/展开、拖动排序、常用入口固定 Sidebar entry manager for DeepSeek Harness — one-click collapse/expand, drag-to-reorder, and pinned favourites. |
-| [lonelycrab888/dsh-remote-dc](https://github.com/lonelycrab888/dsh-remote-dc) | 3 | Access files, search logs, and run commands on paired machines from DeepSeek Harness using Desktop Commander’s official Remote MCP. No public IP, inbound ports, or SSH required. |
-| [Dreverie/dsh-token-frugal](https://github.com/Dreverie/dsh-token-frugal) | 2 | Cut the input-token cost of long DeepSeek Harness sessions: source-side tool-output compression on tools/post-execute plus per-agent tool-catalogue visibility, with a measurement script. |
-| [Townrain/dsh-precise-cache](https://github.com/Townrain/dsh-precise-cache) | 2 | Five-decimal cache-hit readout beside the chat stats line for the DeepSeek Harness Web GUI (dsh-plugin) |
-| [Miyamiz39/dsh-consensus](https://github.com/Miyamiz39/dsh-consensus) | 2 | Consensus academic search and research agent for DeepSeek Harness |
-| [Basspoom/dsh-nextline](https://github.com/Basspoom/dsh-nextline) | 2 | Personalized next-message ghost text for DeepSeek Harness |
+| [omdsh-dev/dsh-ego-browser](https://github.com/omdsh-dev/dsh-ego-browser) | 558 | DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chrome 开箱即用，无需克隆官方仓库或手动构建。 |
+| [Fanqi89/dsh-craft-anything](https://github.com/Fanqi89/dsh-craft-anything) | 419 | Craft Anything for DeepSeek Harness: mcp__craft__* MCP bridge to the local craft-anything CLI, with a clean-room/deep mode switch in the composer, a status page, a CLI runner and a SHA256-verified ins |
+| [mochi-fish/dsh-fish](https://github.com/mochi-fish/dsh-fish) | 173 | DSH插件：养一个会自己刷b站会成长的agent：不通过面板配置，通过学习诞生人格。 |
+| [onlyLT/wow-gongwen-writing](https://github.com/onlyLT/wow-gongwen-writing) | 58 |  |
+| [thePlannerIvan/planners-form](https://github.com/thePlannerIvan/planners-form) | 27 | Planner's Desk 一键安装器（DSH 插件）：在设置页一键勾选安装整套 Skill、自动准备依赖与检查更新 |
+| [roost-qq/dsh-roost](https://github.com/roost-qq/dsh-roost) | 26 | DSH 插件：让 AI 通过 Roost 住进 QQ —— 官方接口，不用 hook 客户端 |
+| [fengshiyangrouguan/dsh-closure-pet](https://github.com/fengshiyangrouguan/dsh-closure-pet) | 20 | 《明日方舟》可露希尔卫戍协议皮肤的 DeepSeek Harness 桌宠插件：动画交互、像素气泡、余额与花费提示 |
+| [CM-Silence/dsh-mo-image](https://github.com/CM-Silence/dsh-mo-image) | 19 | 让DSH能够接入生图模型并像GPT一样生成图片 |
+| [AI4XE/ai4ai](https://github.com/AI4XE/ai4ai) | 14 | Let AI manage itself — a cross-harness kit for runtime status, context renewal, self-duplication and more |
+| [SamuelChung2010/DSHift](https://github.com/SamuelChung2010/DSHift) | 5 | 为 DeepSeek Harness 提供类似 ChatGPT 的原生聊天体验，支持联网搜索、深度思考、附件解析、会话管理、长期记忆、跨 AI 记忆迁移、DeepSeek 聊天记录导入，以及 Chat / Agent 双模式切换与一键任务交接。 |
+| [AIcivilization/dsh-her](https://github.com/AIcivilization/dsh-her) | 5 | 🐳 鲸鱼娘的身体引擎：住在壁纸里、浮在桌面上、住在网页和手机里，会说话、会听、会先开口、记得你。DeepSeek Harness (dsh) 插件 · A body engine for AI desktop companions. |
+| [maptec-api/agent-plugins](https://github.com/maptec-api/agent-plugins) | 4 | Maptec Maps plugin for AI Agent. Quickly add map rendering, place search, route planning, geocoding, and more. |
+| [linyucion/dsh-pet-ai-sisters](https://github.com/linyucion/dsh-pet-ai-sisters) | 4 | 🐾 十六位社区人气 AI 姐妹满帧 24fps 动画桌宠扩展包（适配 DeepSeek Harness / dsh-pet，含 272 段透明动画与双人贴贴破壁互动） |
+| [BioAIEvolu/dsh-superagent-ptc](https://github.com/BioAIEvolu/dsh-superagent-ptc) | 4 | SuperAgent PTC: long-task supervision for DeepSeek Harness - anchors, bounded delegation, independent reviewer, evidence-gated release |
+| [SamuelChung2010/dsh-chat](https://github.com/SamuelChung2010/dsh-chat) | 4 | **dsh-chat** — Bring a ChatGPT-like Chat & Agent experience to DeepSeek Harness, with seamless handoff to coding agents. |
+| [holosama212/dsh-rinko-nai](https://github.com/holosama212/dsh-rinko-nai) | 4 | 在 DeepSeek Harness (DSH) 里直接用 YesNAI（公益站 nai.rinko.ai / 主站 ynai.rinko.ai）出图的插件：原生 rinko_nai_image 工具 + 设置页（登录/余额/活动/图包/充值/画廊/流水/法术解析）+ 对话框悬浮球。 |
+| [zeki520/dsh-boot-nexus](https://github.com/zeki520/dsh-boot-nexus) | 4 | DeepSeek Harness 开机动画插件：片头视频 / suite 模板 / 屏保 / 素材池，带可视化设置卡 |
+| [dtyg123/dsh-oh-my-token](https://github.com/dtyg123/dsh-oh-my-token) | 4 | Native token admission for DeepSeek Harness: command-output filters, retrieval-style reads, a conservative prose trimmer, and a settings page that reports what was saved. No RTK binary, no codegraph s |
+| [oscarka/pocketagent](https://github.com/oscarka/pocketagent) | 3 | PocketAgent — Control Claude Code, OpenAI Codex, Antigravity IDE & DSH from your phone. 1-command npx + terminal QR, swipe approvals, voice input, 100% self-hosted. |
+| [HomoLand/dsh-trellis](https://github.com/HomoLand/dsh-trellis) | 3 | Trellis workflow integration for DeepSeek Harness |
 
 ## Star 飙升榜
 
 | 插件 | 上周 | 本周 | 增长 |
 | --- | ---: | ---: | ---: |
-| [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 65,856 | 74,954 | +9,098 |
-| [kingcharleslzy-ai/dsh-purge](https://github.com/kingcharleslzy-ai/dsh-purge) | 5,173 | 8,478 | +3,305 |
-| [mmparko/dsh-purge](https://github.com/mmparko/dsh-purge) | 3,441 | 4,976 | +1,535 |
-| [helloHub1212/dsh-windows-mcp](https://github.com/helloHub1212/dsh-windows-mcp) | 168 | 1,266 | +1,098 |
-| [elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) | 5,899 | 6,974 | +1,075 |
-| [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 11,420 | 12,463 | +1,043 |
-| [woniuniuniu/dsh-media-desk](https://github.com/woniuniuniu/dsh-media-desk) | 458 | 1,345 | +887 |
-| [liguobao/ds-harness-remote](https://github.com/liguobao/ds-harness-remote) | 2,232 | 2,924 | +692 |
-| [Ebony-Vinyl/EAC-design-world](https://github.com/Ebony-Vinyl/EAC-design-world) | 902 | 1,516 | +614 |
-| [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | 28,957 | 29,532 | +575 |
+| [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 74,954 | 83,521 | +8,567 |
+| [kingcharleslzy-ai/dsh-purge](https://github.com/kingcharleslzy-ai/dsh-purge) | 8,478 | 11,466 | +2,988 |
+| [helloHub1212/dsh-windows-mcp](https://github.com/helloHub1212/dsh-windows-mcp) | 1,266 | 2,144 | +878 |
+| [elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) | 6,974 | 7,831 | +857 |
+| [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | 29,532 | 30,334 | +802 |
+| [mmparko/dsh-purge](https://github.com/mmparko/dsh-purge) | 4,976 | 5,753 | +777 |
+| [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 12,463 | 13,194 | +731 |
+| [superdesigndev/treg](https://github.com/superdesigndev/treg) | 8,038 | 8,722 | +684 |
+| [liguobao/ds-harness-remote](https://github.com/liguobao/ds-harness-remote) | 2,924 | 3,524 | +600 |
+| [CallMeGuLab/dsh-purge-safe](https://github.com/CallMeGuLab/dsh-purge-safe) | 214 | 771 | +557 |
 
 ## 分类变化
 
 | 分类 | 上周 | 本周 | 变化 |
 | --- | ---: | ---: | ---: |
-| Web UI 增强 | 3584 | 4075 | +491 |
-| Agent 能力 | 9121 | 10095 | +974 |
-| 编码开发 | 1734 | 1912 | +178 |
-| 消息通讯 | 982 | 1104 | +122 |
-| 视觉与多模态 | 1631 | 1829 | +198 |
-| 浏览器与网络 | 1179 | 1299 | +120 |
-| 皮肤与娱乐 | 623 | 692 | +69 |
-| 文件与数据 | 3043 | 3465 | +422 |
-| 开发工具与教程 | 529 | 581 | +52 |
-| 合集与发行版 | 594 | 652 | +58 |
-| 生态项目 | 211 | 235 | +24 |
+| Web UI 增强 | 4075 | 4464 | +389 |
+| Agent 能力 | 10095 | 10859 | +764 |
+| 编码开发 | 1912 | 2057 | +145 |
+| 消息通讯 | 1104 | 1223 | +119 |
+| 视觉与多模态 | 1829 | 1972 | +143 |
+| 浏览器与网络 | 1299 | 1407 | +108 |
+| 皮肤与娱乐 | 692 | 742 | +50 |
+| 文件与数据 | 3465 | 3772 | +307 |
+| 开发工具与教程 | 581 | 633 | +52 |
+| 合集与发行版 | 652 | 716 | +64 |
+| 生态项目 | 235 | 255 | +20 |
 
 ## Top 10 变动
 
-- kingcharleslzy-ai/dsh-purge（#6，8,478⭐）
+- elysia395/dsh-wallpaper-engine（#9，7,831⭐）
 
 ---
 
