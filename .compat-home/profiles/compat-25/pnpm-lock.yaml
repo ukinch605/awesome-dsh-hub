@@ -13,7 +13,7 @@ importers:
         version: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03
       '@dsh-external/workflow':
         specifier: git+https://github.com/icetomoyo/dsh_workflow.git
-        version: https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/2c4d263ead8f3931721f46b7f4349cdc06764949
       '@howmp/dsh-pentest':
         specifier: github:howmp/dsh-pentest
         version: https://codeload.github.com/howmp/dsh-pentest/tar.gz/f518e8f48405a9f99a4fa15d9b77bdac7bc52838
@@ -25,10 +25,13 @@ importers:
         version: https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43
       aegis:
         specifier: github:GanyuanRan/Aegis
-        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2
+        version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/95d0733e4134b70552ee8b25b85c1e15aff33249
       brooks-lint:
         specifier: github:hyhmrright/brooks-lint
         version: https://codeload.github.com/hyhmrright/brooks-lint/tar.gz/f34624f7d67855abc55f4ad25399e3bfbaaea66d
+      cc-safety-net:
+        specifier: github:kenryu42/cc-safety-net
+        version: https://codeload.github.com/kenryu42/cc-safety-net/tar.gz/3246a93bb2178cd07b8ba55eecaf0f651d162917
       dsh-deja:
         specifier: github:vshulcz/deja-vu
         version: https://codeload.github.com/vshulcz/deja-vu/tar.gz/33378684d8e7860ea3958cfdf2579ae14c639d65
@@ -65,24 +68,27 @@ packages:
   '@deepseek-ai/schemastery@3.18.1':
     resolution: {integrity: sha512-Qn0FCSwCQnpnj6SB31I6i2sIKgKWnkbJM8O0EU91Gv2UsYVvtZTl6IA0sCwk2e2MZf5S8w5hpq9QkeVvK9qwxg==}
 
-  '@dsh-external/workflow@https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
-    resolution: {gitHosted: true, integrity: sha512-SvSTrCT/R1o8MDOemrO66M1qqUOL6fOiHaUFKx+HzwFZDEdir54jKHKLn7x7dECQ9tDC2UmbM0s04sbCdbn6PA==, tarball: https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f}
-    version: 0.1.2
-    engines: {node: ^22.19.0 || >=24.0.0}
+  '@dsh-external/workflow@https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/2c4d263ead8f3931721f46b7f4349cdc06764949':
+    resolution: {gitHosted: true, integrity: sha512-u+rQqQEG+yfFn3hNLDYteIvb3O0pakBXLekFQgAaXiFE6WyKtBxzUmDjeGQtM275y6lqpJMPcgo7+VHYEW3BNg==, tarball: https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/2c4d263ead8f3931721f46b7f4349cdc06764949}
+    version: 0.1.6
+    engines: {node: '>=24.9.0'}
     peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1-rc.1
-      '@deepseek-ai/dsh-agent': ^0.0.1-rc.2
-      '@deepseek-ai/dsh-commands': ^0.0.1-rc.2
-      '@deepseek-ai/dsh-jobs': ^0.0.1-rc.2
-      '@deepseek-ai/dsh-llm': ^0.0.1-rc.2
-      '@deepseek-ai/dsh-session': ^0.0.1-rc.2
-      '@deepseek-ai/dsh-subagent': ^0.0.1-rc.2
-      '@deepseek-ai/dsh-system-prompt': ^0.0.1-rc.2
-      '@deepseek-ai/dsh-tools': ^0.0.1-rc.2
-      '@deepseek-ai/dsh-user-approval': ^0.0.1-rc.2
-      '@deepseek-ai/dsh-user-questions': ^0.0.1-rc.2
-      '@deepseek-ai/dsh-workflow': ^0.0.1-rc.2
-      '@deepseek-ai/schemastery': ^3.18.1-rc.1
+      '@deepseek-ai/cordis': ^4.1.0
+      '@deepseek-ai/dsh-agent': ^0.2.2-rc.5
+      '@deepseek-ai/dsh-commands': ^0.2.2-rc.5
+      '@deepseek-ai/dsh-jobs': ^0.2.2-rc.5
+      '@deepseek-ai/dsh-llm': ^0.2.2-rc.5
+      '@deepseek-ai/dsh-package-manifest': ^0.2.2-rc.5
+      '@deepseek-ai/dsh-session': ^0.2.2-rc.5
+      '@deepseek-ai/dsh-subagent': ^0.2.2-rc.5
+      '@deepseek-ai/dsh-system-prompt': ^0.2.2-rc.5
+      '@deepseek-ai/dsh-tool-workflow': ^0.2.2-rc.5
+      '@deepseek-ai/dsh-tools': ^0.2.2-rc.5
+      '@deepseek-ai/dsh-user-approval': ^0.2.2-rc.5
+      '@deepseek-ai/dsh-user-questions': ^0.2.2-rc.5
+      '@deepseek-ai/dsh-workflow': ^0.2.2-rc.5
+      '@deepseek-ai/dsh-working-directory': ^0.2.2-rc.5
+      '@deepseek-ai/schemastery': ^3.19.0
 
   '@howmp/dsh-pentest@https://codeload.github.com/howmp/dsh-pentest/tar.gz/f518e8f48405a9f99a4fa15d9b77bdac7bc52838':
     resolution: {gitHosted: true, integrity: sha512-ZPSFN3noPFJiSYdqwCPV2oboHg0pEdZWmrTFQIDSUhzOZweSAw1uObEZTz5CsokynXD2lnemO0qIf4dBUEyGDg==, tarball: https://codeload.github.com/howmp/dsh-pentest/tar.gz/f518e8f48405a9f99a4fa15d9b77bdac7bc52838}
@@ -160,9 +166,9 @@ packages:
     engines: {node: ^22.19.0 || >=24.0.0}
     hasBin: true
 
-  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2:
-    resolution: {gitHosted: true, integrity: sha512-0sUOGDVAgKn4wy1YsAapsfQA4XiNWUZ0sxhSA3GkZjSLeNx48yS3DeDCeaA5Av2EldDStMmXZ5cREnFJItwDwg==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2}
-    version: 2.15.2
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/95d0733e4134b70552ee8b25b85c1e15aff33249:
+    resolution: {gitHosted: true, integrity: sha512-b6Q8011uHawUVV3JM7HxdA9YguoAABRy/j8lRa2I7HminSVmzjQODe7uo3Bcbr5eLcSSFtNA5N41MNAK6vJc0w==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/95d0733e4134b70552ee8b25b85c1e15aff33249}
+    version: 2.16.0
     peerDependencies:
       '@deepseek-ai/dsh-agent': '>=0.1.0-rc.6'
       '@deepseek-ai/dsh-llm': '>=0.1.0-rc.6'
@@ -183,6 +189,20 @@ packages:
     version: 1.9.1
     engines: {node: '>=20'}
     hasBin: true
+
+  cc-safety-net@https://codeload.github.com/kenryu42/cc-safety-net/tar.gz/3246a93bb2178cd07b8ba55eecaf0f651d162917:
+    resolution: {gitHosted: true, integrity: sha512-cAMjNBXJgbKAkqUkm8mGJ4Ope6Kdxjd/qCk3RCMb38czDmpiMHKyhWT/0cYMj7BJ3nc9JHd4WZW8pZ+JIyU8wQ==, tarball: https://codeload.github.com/kenryu42/cc-safety-net/tar.gz/3246a93bb2178cd07b8ba55eecaf0f651d162917}
+    version: 2.8.2
+    engines: {node: '>=22'}
+    hasBin: true
+    peerDependencies:
+      '@opencode-ai/plugin': ^1.18.29
+      '@opencode/plugin': ^2.0.6
+    peerDependenciesMeta:
+      '@opencode-ai/plugin':
+        optional: true
+      '@opencode/plugin':
+        optional: true
 
   commander@13.1.0:
     resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
@@ -272,9 +292,8 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.2
       '@standard-schema/spec': 1.1.0
 
-  '@dsh-external/workflow@https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.18.1)':
+  '@dsh-external/workflow@https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/2c4d263ead8f3931721f46b7f4349cdc06764949':
     dependencies:
-      '@deepseek-ai/schemastery': 3.18.1
       quickjs-emscripten: 0.32.0
 
   '@howmp/dsh-pentest@https://codeload.github.com/howmp/dsh-pentest/tar.gz/f518e8f48405a9f99a4fa15d9b77bdac7bc52838':
@@ -337,11 +356,13 @@ snapshots:
 
   '@yunmiao/studymate@https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/d8114f38363272852b339d6788b2f8f007243b43': {}
 
-  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2: {}
+  aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/95d0733e4134b70552ee8b25b85c1e15aff33249: {}
 
   argparse@2.0.1: {}
 
   brooks-lint@https://codeload.github.com/hyhmrright/brooks-lint/tar.gz/f34624f7d67855abc55f4ad25399e3bfbaaea66d: {}
+
+  cc-safety-net@https://codeload.github.com/kenryu42/cc-safety-net/tar.gz/3246a93bb2178cd07b8ba55eecaf0f651d162917: {}
 
   commander@13.1.0: {}
 
