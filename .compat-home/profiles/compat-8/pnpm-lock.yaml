@@ -10,13 +10,16 @@ importers:
     dependencies:
       '@nanmicoder/dsh-agent-teams':
         specifier: github:NanmiCoder/dsh-agent-teams
-        version: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/912aae5225d3d85fa841a1b0c8a5c77021876c25(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/912aae5225d3d85fa841a1b0c8a5c77021876c25
       aegis:
         specifier: github:GanyuanRan/Aegis
         version: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/296160cf2e8752a707483d291004a525509c57ea
       dsh-context:
         specifier: github:bowenliang123/dsh-context
-        version: https://codeload.github.com/bowenliang123/dsh-context/tar.gz/115e183de0c264c75fb6dd0e184a99d1caeffbac(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/bowenliang123/dsh-context/tar.gz/115e183de0c264c75fb6dd0e184a99d1caeffbac
+      dsh-plugin-wallpaper-engine:
+        specifier: github:elysia395/dsh-wallpaper-engine
+        version: https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/0857af3894cf549e6a8d3f42230d53d854b9ac74
       dsh-vision-router:
         specifier: github:ysr666/dsh-vision-router
         version: https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/f473911c48fee2c75efae6853f7cd4ed5cf08647
@@ -220,7 +223,6 @@ packages:
       '@deepseek-ai/dsh-subagent': ^0.1.0-rc.6
       '@deepseek-ai/dsh-system-prompt': ^0.1.0-rc.6
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
-      '@deepseek-ai/schemastery': ^3.18.1-rc.1
       react: ^18.2.0
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
@@ -251,8 +253,6 @@ packages:
         optional: true
       '@deepseek-ai/dsh-tools':
         optional: true
-      '@deepseek-ai/schemastery':
-        optional: true
       react:
         optional: true
 
@@ -271,6 +271,12 @@ packages:
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  '@types/dom-mediacapture-transform@0.1.12':
+    resolution: {integrity: sha512-d7/QsLRwF864A5mgIM/YrfiglHoYn7zgCcAoJgW404r+2DwnNr7EBbLnCWpmOMgH8y0te73L1AV6H1bmauaWFw==}
+
+  '@types/dom-webcodecs@0.1.13':
+    resolution: {integrity: sha512-O5hkiFIcjjszPIYyUSyvScyvrBoV3NOEEZx/pMlsu44TKzWNkLVBBxnxJz42in5n3QIolYOcBYFCPZZ0h8SkwQ==}
 
   '@types/node@16.9.1':
     resolution: {integrity: sha512-QpLcX9ZSsq3YYUUnD3nFDY8H7wctAhQj/TFKL8Ya8v5fMm3CFXxo8zStsLAl780ltoYoo1WvKUVGBQK+1ifr7g==}
@@ -349,6 +355,24 @@ packages:
       react:
         optional: true
 
+  dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/0857af3894cf549e6a8d3f42230d53d854b9ac74:
+    resolution: {gitHosted: true, integrity: sha512-mLm1u4+ldlQ3tG2jMxvpu6tgX/Gii4yviGQ4VWznzORE7UQZboz+uG1cOufQ7pV1Ko+rShzvZUjwZ4KK5EzKnA==, tarball: https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/0857af3894cf549e6a8d3f42230d53d854b9ac74}
+    version: 1.4.3
+    engines: {dsh: ^0.2.0-rc.1, node: '>=22.12.0'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.4
+      '@deepseek-ai/dsh-client-runtime': '>=0.1.5-rc.1'
+      '@deepseek-ai/dsh-client-ui-slots': '>=0.1.5-rc.1'
+      '@deepseek-ai/dsh-host-webserver': '>=0.1.5-rc.1'
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-host-webserver':
+        optional: true
+
   dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/f473911c48fee2c75efae6853f7cd4ed5cf08647:
     resolution: {gitHosted: true, integrity: sha512-q3lGNlpK7CGLy606fQrHSFirpxH/QBLU53kdLFSsLuEUaHwt8w6K1/MUjGQh7UqROwof7lvvnbHRF6Bn9xqJGg==, tarball: https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/f473911c48fee2c75efae6853f7cd4ed5cf08647}
     version: 2.0.1
@@ -420,6 +444,9 @@ packages:
 
   load-bmfont@1.4.2:
     resolution: {integrity: sha512-qElWkmjW9Oq1F9EI5Gt7aD9zcdHb9spJCW1L/dmPf7KzCCEJxq8nhHz5eCgI9aMf7vrG/wyaCqdsI+Iy9ZTlog==}
+
+  mediabunny@1.66.2:
+    resolution: {integrity: sha512-NTzRrBhAyRVi8qpJ9AH6XPyxiDVkfugxYY+gu3Z5zi+Nw2R/7nTAnXJEt2Ucy8wTIve1/UYGnCFf50x2LpvMDQ==}
 
   mime@1.6.0:
     resolution: {integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==}
@@ -531,6 +558,9 @@ packages:
   webdriver-bidi-protocol@0.4.2:
     resolution: {integrity: sha512-VSV+fzfChirL3e7jay2yUC7B4HQCGtEWEg/MSSQbK+qWbqeGlRLlXTzPpYr3XGUvbpDHumWZBJxgesg4N7dbtA==}
 
+  webwallgl@3.0.3:
+    resolution: {integrity: sha512-iW48sBEXvV+W6xeaBQk6gXrAhDp7DECQ22LmzdTrNvcoxUitvFo0LFU4xCTbzZqZ02Rsrv5oW5P8M448Ok7GKw==}
+
   wrap-ansi@9.0.2:
     resolution: {integrity: sha512-42AtmgqjV+X1VpdOfyTGOYRi0/zsoLqtXQckTmqTeybT+BDIbM/Guxo7x3pE2vtpr1ok6xRqM9OpBe+Jyoqyww==}
     engines: {node: '>=18'}
@@ -546,6 +576,10 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
+
+  x11@4.4.0:
+    resolution: {integrity: sha512-xqIUMvrWJawtd8pQgD85t0sUnBbk94Bd21Gevn0vPYvRH0hkyP3CQjeT85aJEw+ZK/txO4mIwj1P9LM1+mhuJA==}
+    engines: {node: '>=18'}
 
   xhr@2.6.0:
     resolution: {integrity: sha512-/eCGLb5rxjx5e3mF1A7s+pLlR6CGyqWN91fv1JgER5mVWg1MZmlhBvy9kjcsOdRk8RrIujotWyJamfyrp+WIcA==}
@@ -843,7 +877,7 @@ snapshots:
       '@babel/runtime': 7.29.7
       regenerator-runtime: 0.13.11
 
-  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/912aae5225d3d85fa841a1b0c8a5c77021876c25(@deepseek-ai/schemastery@3.18.1)':
+  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/912aae5225d3d85fa841a1b0c8a5c77021876c25':
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.1
 
@@ -853,6 +887,12 @@ snapshots:
       yargs: 18.1.0
 
   '@standard-schema/spec@1.1.0': {}
+
+  '@types/dom-mediacapture-transform@0.1.12':
+    dependencies:
+      '@types/dom-webcodecs': 0.1.13
+
+  '@types/dom-webcodecs@0.1.13': {}
 
   '@types/node@16.9.1': {}
 
@@ -897,10 +937,15 @@ snapshots:
 
   dom-walk@0.1.2: {}
 
-  dsh-context@https://codeload.github.com/bowenliang123/dsh-context/tar.gz/115e183de0c264c75fb6dd0e184a99d1caeffbac(@deepseek-ai/schemastery@3.18.1):
+  dsh-context@https://codeload.github.com/bowenliang123/dsh-context/tar.gz/115e183de0c264c75fb6dd0e184a99d1caeffbac:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
       zod: 4.5.4
+
+  dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/0857af3894cf549e6a8d3f42230d53d854b9ac74:
+    dependencies:
+      webwallgl: 3.0.3
+      x11: 4.4.0
 
   dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/f473911c48fee2c75efae6853f7cd4ed5cf08647:
     dependencies:
@@ -971,6 +1016,11 @@ snapshots:
       xtend: 4.0.2
     transitivePeerDependencies:
       - debug
+
+  mediabunny@1.66.2:
+    dependencies:
+      '@types/dom-mediacapture-transform': 0.1.12
+      '@types/dom-webcodecs': 0.1.13
 
   mime@1.6.0: {}
 
@@ -1074,6 +1124,10 @@ snapshots:
 
   webdriver-bidi-protocol@0.4.2: {}
 
+  webwallgl@3.0.3:
+    dependencies:
+      mediabunny: 1.66.2
+
   wrap-ansi@9.0.2:
     dependencies:
       ansi-styles: 6.2.3
@@ -1081,6 +1135,8 @@ snapshots:
       strip-ansi: 7.2.0
 
   ws@8.21.3: {}
+
+  x11@4.4.0: {}
 
   xhr@2.6.0:
     dependencies:

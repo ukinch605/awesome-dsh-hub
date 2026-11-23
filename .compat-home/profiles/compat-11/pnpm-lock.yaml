@@ -10,16 +10,19 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/864968a84007e15400429bc9fb46a415500ddfc3(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/864968a84007e15400429bc9fb46a415500ddfc3
       '@liustack/modlens':
         specifier: github:liustack/modlens
         version: https://codeload.github.com/liustack/modlens/tar.gz/ac278f885386f785dc1a35ddfbd8994bb5e744d7
       '@nanmicoder/dsh-agent-teams':
         specifier: github:NanmiCoder/dsh-agent-teams
-        version: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/c059636e541f9af644bded8a5e46cca0420c7451(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/c059636e541f9af644bded8a5e46cca0420c7451
       '@xmanrui/dsh-im':
         specifier: github:xmanrui/dsh-im
         version: https://codeload.github.com/xmanrui/dsh-im/tar.gz/38096d1589f6e434a77bb188962db2f7b40ca84b(debug@4.4.3)
+      answer-me-with-html:
+        specifier: github:QingYunA/answer-me-with-html
+        version: https://codeload.github.com/QingYunA/answer-me-with-html/tar.gz/8411df37a9aecb62a6048f18ba63bd27bb74abec
       dsh-api-relay-audit:
         specifier: github:toby-bridges/api-relay-audit
         version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/00ce80208ea1178ac39116bf0843517a748e4dce
@@ -67,11 +70,20 @@ packages:
     resolution: {integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==}
     engines: {node: '>=6.9.0'}
 
+  '@dagrejs/dagre@3.1.3':
+    resolution: {integrity: sha512-X4aUTwOReZvthaZWOVHqlJ52/ZdhZFEM4+Lh/uR4XooUSLE6p71bcy7MPGzYnNUcNh+nj+i/qJQpCMIdQnSmrg==}
+
+  '@dagrejs/graphlib@4.0.6':
+    resolution: {integrity: sha512-Hjv7hbfmSBMP4nVXMFt4gusqWWHghQF0qNT4V5KHo4Jatvd+2L5VHKFnnIjXVuDnaHIRz7ZuHSnlf0RuZkOwWA==}
+
   '@deepseek-ai/cosmokit@1.8.3':
     resolution: {integrity: sha512-qBo+ronVM6Eu2WNVJXi8JcMiqZ19T9BRIpV+5qJUFPXjGH/Z0QKcQMC/IZJ7L394YTOtJgcovbk9qP0w2GsBXQ==}
 
   '@deepseek-ai/schemastery@3.18.2':
     resolution: {integrity: sha512-njDtZsznjYxok7KLLlHOPyuv2efdWVbSflAHgztSfbMsg+CVraEoRe2DjOCgClYv3ZCSm7WXoaUkbB/+RY7tWQ==}
+
+  '@fontsource/bangers@5.3.0':
+    resolution: {integrity: sha512-tSRpmWwkqrO9PCqo9wjA/99/5sLOIWm5cf51G3ooEHd8qZus8sVSSJoWp/7EvM5rIgZMjKRG6XtY9yeisKxE7g==}
 
   '@isaacs/fs-minipass@4.0.1':
     resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
@@ -276,7 +288,6 @@ packages:
       '@deepseek-ai/dsh-system-prompt': 0.2.1-rc.3 || 0.2.1-rc.2 || 0.2.1-rc.1 || 0.2.0-rc.2 || 0.1.7-rc.2 || 0.1.5-rc.3 || 0.1.5-rc.2 || 0.1.5-rc.1 || 0.1.2-rc.1 || 0.1.2-alpha.5 || 0.1.2-alpha.2
       '@deepseek-ai/dsh-tools': 0.2.1-rc.3 || 0.2.1-rc.2 || 0.2.1-rc.1 || 0.2.0-rc.2 || 0.1.7-rc.2 || 0.1.5-rc.3 || 0.1.5-rc.2 || 0.1.5-rc.1 || 0.1.2-rc.1 || 0.1.2-alpha.5 || 0.1.2-alpha.2
       '@deepseek-ai/dsh-util-values': 0.2.1-rc.3 || 0.2.1-rc.2 || 0.2.1-rc.1 || 0.2.0-rc.2 || 0.1.7-rc.2 || 0.1.5-rc.3 || 0.1.5-rc.2 || 0.1.5-rc.1 || 0.1.2-rc.1 || 0.1.2-alpha.5 || 0.1.2-alpha.2
-      '@deepseek-ai/schemastery': ^3.18.2
       react: ^18.2.0
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
@@ -322,8 +333,6 @@ packages:
       '@deepseek-ai/dsh-tools':
         optional: true
       '@deepseek-ai/dsh-util-values':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
       react:
         optional: true
@@ -391,6 +400,12 @@ packages:
   ansi-styles@6.2.3:
     resolution: {integrity: sha512-4Dj6M28JB+oAH8kFkTLUo+a2jwOFkuqb3yucU0CANcRRUbxS0cP0nZYCGjcc3BNXwRIsUVmDGgzawme7zvJHvg==}
     engines: {node: '>=12'}
+
+  answer-me-with-html@https://codeload.github.com/QingYunA/answer-me-with-html/tar.gz/8411df37a9aecb62a6048f18ba63bd27bb74abec:
+    resolution: {gitHosted: true, integrity: sha512-jVZ16Y/2nKZsk+Nx/Kpc345dDCbVfD4gMqo2BVCKIfGURrFx8al7tW5hptdsz0BD090+l7YkbrFVvf5OjjZusQ==, tarball: https://codeload.github.com/QingYunA/answer-me-with-html/tar.gz/8411df37a9aecb62a6048f18ba63bd27bb74abec}
+    version: 0.6.2
+    engines: {node: '>=20'}
+    hasBin: true
 
   any-base@1.1.0:
     resolution: {integrity: sha512-uMgjozySS8adZZYePpaWs8cxB9/kdzmpX6SgJZ+wbz1K5eYk5QMYDVJaZKhxyIHUdnnJkfR7SVgStgH7LkGUyg==}
@@ -646,6 +661,11 @@ packages:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
     engines: {node: '>=8'}
 
+  marked@18.2.1:
+    resolution: {integrity: sha512-ii4bxCTCqqwpT86XZWgJNs+ZnAIZksmLGYMViWA7PDIXYIeNo1x6cDdX3JOip9NM/cI6p8z57FxliACboTruMA==}
+    engines: {node: '>= 20'}
+    hasBin: true
+
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
@@ -818,6 +838,10 @@ packages:
     resolution: {integrity: sha512-MFO/QzvtAOmJbkhOaCTvbGcFN9L9b+JunIsDwaKljSOdcLMea3NJ1k9Usz/rjdfSXTq4dfzfeS7W4p4YOAAHeA==}
     engines: {node: '>=18'}
 
+  temml@0.14.0:
+    resolution: {integrity: sha512-tz1LW/5IZpThK8c7ZpdTSH/n56eAj+ThirLieErtKxYC3EKCIiB4sKdRUehAgH+fQmvIKqMfP3gqTLBdLpy9zw==}
+    engines: {node: '>=18.13.0'}
+
   timm@1.7.1:
     resolution: {integrity: sha512-IjZc9KIotudix8bMaBW6QvMuq64BrJWFs1+4V0lXwWGQZwH+LnX87doAYhem4caOEusRP9/g6jVDQmZ8XOk1nw==}
 
@@ -924,7 +948,7 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/864968a84007e15400429bc9fb46a415500ddfc3(@deepseek-ai/schemastery@3.18.2)':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/864968a84007e15400429bc9fb46a415500ddfc3':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
       saxes: 6.0.0
@@ -934,12 +958,20 @@ snapshots:
 
   '@babel/runtime@7.29.7': {}
 
+  '@dagrejs/dagre@3.1.3':
+    dependencies:
+      '@dagrejs/graphlib': 4.0.6
+
+  '@dagrejs/graphlib@4.0.6': {}
+
   '@deepseek-ai/cosmokit@1.8.3': {}
 
   '@deepseek-ai/schemastery@3.18.2':
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.3
       '@standard-schema/spec': 1.1.0
+
+  '@fontsource/bangers@5.3.0': {}
 
   '@isaacs/fs-minipass@4.0.1':
     dependencies:
@@ -1199,7 +1231,7 @@ snapshots:
       commander: 13.1.0
       undici: 8.10.0
 
-  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/c059636e541f9af644bded8a5e46cca0420c7451(@deepseek-ai/schemastery@3.18.2)':
+  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/c059636e541f9af644bded8a5e46cca0420c7451':
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.2
 
@@ -1265,6 +1297,13 @@ snapshots:
       color-convert: 2.0.1
 
   ansi-styles@6.2.3: {}
+
+  answer-me-with-html@https://codeload.github.com/QingYunA/answer-me-with-html/tar.gz/8411df37a9aecb62a6048f18ba63bd27bb74abec:
+    dependencies:
+      '@dagrejs/dagre': 3.1.3
+      '@fontsource/bangers': 5.3.0
+      marked: 18.2.1
+      temml: 0.14.0
 
   any-base@1.1.0: {}
 
@@ -1519,6 +1558,8 @@ snapshots:
     dependencies:
       p-locate: 4.1.0
 
+  marked@18.2.1: {}
+
   math-intrinsics@1.1.0: {}
 
   mime-db@1.52.0: {}
@@ -1677,6 +1718,8 @@ snapshots:
       minipass: 7.1.3
       minizlib: 3.1.0
       yallist: 5.0.0
+
+  temml@0.14.0: {}
 
   timm@1.7.1: {}
 

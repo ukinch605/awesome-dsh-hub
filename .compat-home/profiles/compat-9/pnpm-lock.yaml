@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/864968a84007e15400429bc9fb46a415500ddfc3(@deepseek-ai/schemastery@3.18.1)
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/864968a84007e15400429bc9fb46a415500ddfc3
       '@liustack/modlens':
         specifier: github:liustack/modlens
         version: https://codeload.github.com/liustack/modlens/tar.gz/aa108d1796e3c4b5a6790516e2fcde87a35b189f
@@ -29,6 +29,9 @@ importers:
       dsh-vision-router:
         specifier: github:ysr666/dsh-vision-router
         version: https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/f3047a824bc6728fdac0fd05a0c86543314e5819(debug@4.4.3)
+      dsh-whale-widget:
+        specifier: github:MeteorNOX/DeepSeek-Balance-Whale-Widget
+        version: https://codeload.github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget/tar.gz/5247dd6813d6e4430728f39ccc63d43cda046022
       treg-dsh:
         specifier: github:superdesigndev/treg
         version: https://codeload.github.com/superdesigndev/treg/tar.gz/00e98c865570742a4cf3f83bb6495c8edac4c05d
@@ -474,6 +477,10 @@ packages:
         optional: true
       sharp:
         optional: true
+
+  dsh-whale-widget@https://codeload.github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget/tar.gz/5247dd6813d6e4430728f39ccc63d43cda046022:
+    resolution: {gitHosted: true, integrity: sha512-6V392pr9uFxY5hzkELuA94LSZX2R0kfkh7ZgB16AcJHy3xXLquO46pYFywJLYODHGWCBplVgJekpbvEx2DzP3w==, tarball: https://codeload.github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget/tar.gz/5247dd6813d6e4430728f39ccc63d43cda046022}
+    version: 0.4.2
 
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
@@ -926,7 +933,7 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/864968a84007e15400429bc9fb46a415500ddfc3(@deepseek-ai/schemastery@3.18.1)':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/864968a84007e15400429bc9fb46a415500ddfc3':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.1
       saxes: 6.0.0
@@ -1407,6 +1414,8 @@ snapshots:
       - proxy-agent
       - utf-8-validate
       - yauzl
+
+  dsh-whale-widget@https://codeload.github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget/tar.gz/5247dd6813d6e4430728f39ccc63d43cda046022: {}
 
   dunder-proto@1.0.1:
     dependencies:

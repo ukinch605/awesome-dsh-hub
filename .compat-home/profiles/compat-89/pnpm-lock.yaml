@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@anionex/dsh-turn-rewind':
         specifier: github:Anionex/dsh-turn-rewind
-        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/df0a18e565043ba48150b82f5243533099b1922d(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/df0a18e565043ba48150b82f5243533099b1922d
       '@dhicoc/dsh-reverse-skill':
         specifier: github:dhicoc/dsh-reverse-skill
         version: https://codeload.github.com/dhicoc/dsh-reverse-skill/tar.gz/453f35d82bde07334637c4f7367b07c259a32732
@@ -25,25 +25,28 @@ importers:
         version: https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f
       dsh-find-plugin:
         specifier: github:awesome-dsh-plugin/dsh-find-plugin
-        version: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc(@deepseek-ai/dsh-tools@0.1.0-rc.7)
+        version: https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc
       dsh-plugin-genui:
         specifier: github:pengyue-polaron/deepseek-harness-genui
-        version: https://codeload.github.com/pengyue-polaron/deepseek-harness-genui/tar.gz/666076819ab2eae0f6f06980e99c013f89fb6b9f(@deepseek-ai/dsh-tools@0.1.0-rc.7)(immer@10.1.1)(use-sync-external-store@1.2.0(react@18.3.1))
+        version: https://codeload.github.com/pengyue-polaron/deepseek-harness-genui/tar.gz/666076819ab2eae0f6f06980e99c013f89fb6b9f(immer@10.1.1)(use-sync-external-store@1.2.0(react@18.3.1))
       dsh-skill-mcp-panel:
         specifier: github:Fishquito7/dsh-skill-mcp-panel
         version: https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/5fa5d87c68ad34337e073f82dc50767ed690eb27
       dsh-skin:
         specifier: github:KinGao294/dsh-skin
-        version: https://codeload.github.com/KinGao294/dsh-skin/tar.gz/0a571a27adcc5f780b7b72386c9c294243eec5b3(react@18.3.1)
+        version: https://codeload.github.com/KinGao294/dsh-skin/tar.gz/0a571a27adcc5f780b7b72386c9c294243eec5b3
       dsh-tabbit:
         specifier: github:Tabbit-Browser/dsh-tabbit
-        version: https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c(@deepseek-ai/dsh-tools@0.1.0-rc.7)
+        version: https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c
       dsh-video-lens:
         specifier: github:dundunhan/dsh-video-lens
         version: https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234
+      my-app:
+        specifier: github:theBigGavin/marketingdashboard
+        version: https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/2d71054d76bb78b82ddb7818af4bdff49a6179a7
       seektty:
         specifier: github:Hilbert-beinghappy/seektty
-        version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/8b41904278a207edc546477cdebba24cb2008971(@deepseek-ai/dsh-tools@0.1.0-rc.7)(@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6)(@deepseek-ai/schemastery@3.18.2)(react@18.3.1)
+        version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/8b41904278a207edc546477cdebba24cb2008971(react@18.3.1)
 
 packages:
 
@@ -278,6 +281,7 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       '@cfworker/json-schema': ^4.1.1
+      zod: ^3.25 || ^4.0
     peerDependenciesMeta:
       '@cfworker/json-schema':
         optional: true
@@ -426,6 +430,10 @@ packages:
     resolution: {integrity: sha512-yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXEByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0v6Ew/w==}
     engines: {node: '>= 0.6'}
 
+  cookie@1.1.1:
+    resolution: {integrity: sha512-ei8Aos7ja0weRpFzJnEA9UHJ/7XQmqglbRwnf2ATjcB9Wq874VKH9kfjjirM6UhU2/E5fFYadylyhFldcqSidQ==}
+    engines: {node: '>=18'}
+
   cors@2.8.6:
     resolution: {integrity: sha512-tJtZBBHA6vjIAaF6EnIaq6laBBP9aq/Y3ouVJjEfoHbRBcHBAHYcMh/w8LDrk2PvIMMq8gmopa5D4V8RmbrxGw==}
     engines: {node: '>= 0.10'}
@@ -534,7 +542,6 @@ packages:
       '@deepseek-ai/dsh-session': '>=0.1.0-rc.6 <=0.1.0-rc.8 || >=0.1.1-rc.1 <=0.1.1-rc.2'
       '@deepseek-ai/dsh-settings': '>=0.1.0-rc.6 <=0.1.0-rc.8 || >=0.1.1-rc.1 <=0.1.1-rc.2'
       '@deepseek-ai/dsh-system-prompt': '>=0.1.0-rc.6 <=0.1.0-rc.8 || >=0.1.1-rc.1 <=0.1.1-rc.2'
-      '@deepseek-ai/dsh-tools': '>=0.1.0-rc.6 <=0.1.0-rc.8 || >=0.1.1-rc.1 <=0.1.1-rc.2'
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
         optional: true
@@ -559,8 +566,6 @@ packages:
       '@deepseek-ai/dsh-settings':
         optional: true
       '@deepseek-ai/dsh-system-prompt':
-        optional: true
-      '@deepseek-ai/dsh-tools':
         optional: true
 
   dsh-skill-mcp-panel@https://codeload.github.com/Fishquito7/dsh-skill-mcp-panel/tar.gz/5fa5d87c68ad34337e073f82dc50767ed690eb27:
@@ -788,6 +793,11 @@ packages:
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
 
+  lucide-react@0.562.0:
+    resolution: {integrity: sha512-82hOAu7y0dbVuFfmO4bYF1XEwYk/mEbM5E+b1jgci/udUBEE/R7LF5Ip0CCEmXe8AybRM8L+04eP+LGZeDvkiw==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
@@ -834,6 +844,10 @@ packages:
 
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
+
+  my-app@https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/2d71054d76bb78b82ddb7818af4bdff49a6179a7:
+    resolution: {gitHosted: true, integrity: sha512-znGH/a/2HMZFdAQdw9okMiyON0ba9W2YCZe6aYDurxennpu43gDBYJTztVeBSCge2C0EQjr946qiWSeY3V4tIQ==, tarball: https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/2d71054d76bb78b82ddb7818af4bdff49a6179a7}
+    version: 1.4.0
 
   negotiator@1.1.0:
     resolution: {integrity: sha512-NMPBRMJgiQHjbd8phG3Vebdx4kZ1H121rbl5IkMqeOsahptB9BKo/d7oJ3zTXqTgagn2bWlNSXkh0QUGM31RYg==}
@@ -902,11 +916,26 @@ packages:
     peerDependencies:
       react: ^18.3.1
 
+  react-dom@19.3.1:
+    resolution: {integrity: sha512-Y0bARz53lhEC1NMCASs0/j+faB/zqt3R8hpvg1e8+61ZVJ4UL0UdC4cBbXfZMcIuhrfgeILTLe+ZeBCavQPtKQ==}
+    peerDependencies:
+      react: ^19.3.1
+
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
+
+  react-router@7.18.6:
+    resolution: {integrity: sha512-SP8KqKfRLlJzqzPseC+r6yYFsqPEavtQCC4BKV810tBGijjESLtwVPam+gPOO+wYeXrYN/TNy2CAykQVcNg4iQ==}
+    engines: {node: '>=20.0.0'}
+    peerDependencies:
+      react: '>=18'
+      react-dom: '>=18'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
 
   react-smooth@4.0.4:
     resolution: {integrity: sha512-gnGKTpYwqL0Iii09gHobNolvX4Kiq4PKx6eWBCYYix+8cdw+cGo3do906l1NBPKkSWx1DghC1dlWG9L2uGd61Q==}
@@ -922,6 +951,10 @@ packages:
 
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
+    engines: {node: '>=0.10.0'}
+
+  react@19.3.1:
+    resolution: {integrity: sha512-QNhWdt7nrgVWWQG58QuGsAR3jv3Hbe4mb4vz7w2csnHavciZJgda1CPNaldF6eVxv90ud3jUXpKlHL69gO38yw==}
     engines: {node: '>=0.10.0'}
 
   readdirp@5.1.1:
@@ -961,6 +994,9 @@ packages:
 
   scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
+
+  scheduler@0.28.0:
+    resolution: {integrity: sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==}
 
   seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/8b41904278a207edc546477cdebba24cb2008971:
     resolution: {gitHosted: true, integrity: sha512-5kjXiTfdWnXdXgofKeV7qRGsjB9KyiPiXDenp5nMNo9xan6QvLKXZpBSgO92c9PExEj/I7yYrn616hLyD7Zs6w==, tarball: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/8b41904278a207edc546477cdebba24cb2008971}
@@ -1002,11 +1038,8 @@ packages:
       '@deepseek-ai/dsh-storage': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
       '@deepseek-ai/dsh-storage-domain': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
       '@deepseek-ai/dsh-storage-json': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-tools': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/dsh-typert-protocol': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
       '@deepseek-ai/dsh-typert-registry': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
       '@deepseek-ai/dsh-workspace': '>=0.1.0-rc.6 <=0.1.0-rc.8 || 0.1.1-rc.2'
-      '@deepseek-ai/schemastery': ^3.18.1
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
         optional: true
@@ -1074,15 +1107,9 @@ packages:
         optional: true
       '@deepseek-ai/dsh-storage-json':
         optional: true
-      '@deepseek-ai/dsh-tools':
-        optional: true
-      '@deepseek-ai/dsh-typert-protocol':
-        optional: true
       '@deepseek-ai/dsh-typert-registry':
         optional: true
       '@deepseek-ai/dsh-workspace':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
 
   send@1.2.1:
@@ -1092,6 +1119,9 @@ packages:
   serve-static@2.2.1:
     resolution: {integrity: sha512-xRXBn0pPqQTVQiC8wyQrKs2MOlX24zQ0POGaj0kultvoOCstBQM5yvOhAVSUwOMjQtTvsPWoNCHfPGwaaQJhTw==}
     engines: {node: '>= 18'}
+
+  set-cookie-parser@2.7.3:
+    resolution: {integrity: sha512-irZHtTqurLna57KQG/s+fzOwv/J6XSH4cs8M/vsrY3uCaQ3S6+QJguAH0WdN47SXlk82voMZ4naWMQf8fdEoIg==}
 
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
@@ -1243,7 +1273,7 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/df0a18e565043ba48150b82f5243533099b1922d(@deepseek-ai/schemastery@3.18.2)':
+  '@anionex/dsh-turn-rewind@https://codeload.github.com/Anionex/dsh-turn-rewind/tar.gz/df0a18e565043ba48150b82f5243533099b1922d':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
 
@@ -1515,6 +1545,8 @@ snapshots:
 
   cookie@0.7.2: {}
 
+  cookie@1.1.1: {}
+
   cors@2.8.6:
     dependencies:
       object-assign: 4.1.1
@@ -1587,11 +1619,20 @@ snapshots:
       '@babel/runtime': 7.29.7
       csstype: 3.2.3
 
-  dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc(@deepseek-ai/dsh-tools@0.1.0-rc.7):
+  dsh-find-plugin@https://codeload.github.com/awesome-dsh-plugin/dsh-find-plugin/tar.gz/e7a27eb01606e6deccdaacccb8e0cfd992c0bcdc:
     dependencies:
       '@deepseek-ai/dsh-tools': 0.1.0-rc.7
+    transitivePeerDependencies:
+      - '@deepseek-ai/dsh-agent'
+      - '@deepseek-ai/dsh-code-runtime'
+      - '@deepseek-ai/dsh-invariants'
+      - '@deepseek-ai/dsh-llm'
+      - '@deepseek-ai/dsh-scope'
+      - '@deepseek-ai/dsh-session'
+      - '@deepseek-ai/dsh-system-prompt'
+      - '@deepseek-ai/dsh-user-approval'
 
-  dsh-plugin-genui@https://codeload.github.com/pengyue-polaron/deepseek-harness-genui/tar.gz/666076819ab2eae0f6f06980e99c013f89fb6b9f(@deepseek-ai/dsh-tools@0.1.0-rc.7)(immer@10.1.1)(use-sync-external-store@1.2.0(react@18.3.1)):
+  dsh-plugin-genui@https://codeload.github.com/pengyue-polaron/deepseek-harness-genui/tar.gz/666076819ab2eae0f6f06980e99c013f89fb6b9f(immer@10.1.1)(use-sync-external-store@1.2.0(react@18.3.1)):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
       date-fns: 4.4.0
@@ -1605,6 +1646,10 @@ snapshots:
     optionalDependencies:
       '@deepseek-ai/dsh-tools': 0.1.0-rc.7
     transitivePeerDependencies:
+      - '@deepseek-ai/dsh-code-runtime'
+      - '@deepseek-ai/dsh-invariants'
+      - '@deepseek-ai/dsh-scope'
+      - '@deepseek-ai/dsh-user-approval'
       - '@emotion/is-prop-valid'
       - '@types/react'
       - immer
@@ -1626,13 +1671,22 @@ snapshots:
       - '@deepseek-ai/dsh-invariants'
       - supports-color
 
-  dsh-skin@https://codeload.github.com/KinGao294/dsh-skin/tar.gz/0a571a27adcc5f780b7b72386c9c294243eec5b3(react@18.3.1):
+  dsh-skin@https://codeload.github.com/KinGao294/dsh-skin/tar.gz/0a571a27adcc5f780b7b72386c9c294243eec5b3:
     dependencies:
       react: 18.3.1
 
-  dsh-tabbit@https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c(@deepseek-ai/dsh-tools@0.1.0-rc.7):
+  dsh-tabbit@https://codeload.github.com/Tabbit-Browser/dsh-tabbit/tar.gz/64dfa964aac38754ca7a38da0ce2810a7603934c:
     dependencies:
       '@deepseek-ai/dsh-tools': 0.1.0-rc.7
+    transitivePeerDependencies:
+      - '@deepseek-ai/dsh-agent'
+      - '@deepseek-ai/dsh-code-runtime'
+      - '@deepseek-ai/dsh-invariants'
+      - '@deepseek-ai/dsh-llm'
+      - '@deepseek-ai/dsh-scope'
+      - '@deepseek-ai/dsh-session'
+      - '@deepseek-ai/dsh-system-prompt'
+      - '@deepseek-ai/dsh-user-approval'
 
   dsh-video-lens@https://codeload.github.com/dundunhan/dsh-video-lens/tar.gz/73c30b168c4b4562f1d9833c28ba12fa93284234:
     dependencies:
@@ -1881,6 +1935,10 @@ snapshots:
     dependencies:
       react: 18.3.1
 
+  lucide-react@0.562.0(react@19.3.1):
+    dependencies:
+      react: 19.3.1
+
   math-intrinsics@1.1.0: {}
 
   mdast-util-to-hast@13.2.1:
@@ -1929,6 +1987,14 @@ snapshots:
   motion-utils@12.39.0: {}
 
   ms@2.1.3: {}
+
+  my-app@https://codeload.github.com/theBigGavin/marketingdashboard/tar.gz/2d71054d76bb78b82ddb7818af4bdff49a6179a7:
+    dependencies:
+      iconv-lite: 0.7.3
+      lucide-react: 0.562.0(react@19.3.1)
+      react: 19.3.1
+      react-dom: 19.3.1(react@19.3.1)
+      react-router: 7.18.6(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
 
   negotiator@1.1.0:
     dependencies:
@@ -1995,9 +2061,22 @@ snapshots:
       react: 18.3.1
       scheduler: 0.23.2
 
+  react-dom@19.3.1(react@19.3.1):
+    dependencies:
+      react: 19.3.1
+      scheduler: 0.28.0
+
   react-is@16.13.1: {}
 
   react-is@18.3.1: {}
+
+  react-router@7.18.6(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
+    dependencies:
+      cookie: 1.1.1
+      react: 19.3.1
+      set-cookie-parser: 2.7.3
+    optionalDependencies:
+      react-dom: 19.3.1(react@19.3.1)
 
   react-smooth@4.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -2019,6 +2098,8 @@ snapshots:
   react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
+
+  react@19.3.1: {}
 
   readdirp@5.1.1: {}
 
@@ -2067,7 +2148,9 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
-  seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/8b41904278a207edc546477cdebba24cb2008971(@deepseek-ai/dsh-tools@0.1.0-rc.7)(@deepseek-ai/dsh-typert-protocol@0.1.0-rc.6)(@deepseek-ai/schemastery@3.18.2)(react@18.3.1):
+  scheduler@0.28.0: {}
+
+  seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/8b41904278a207edc546477cdebba24cb2008971(react@18.3.1):
     dependencies:
       '@shikijs/core': 4.4.3
       '@shikijs/engine-javascript': 4.4.3
@@ -2084,6 +2167,12 @@ snapshots:
       '@deepseek-ai/dsh-typert-protocol': 0.1.0-rc.6
       '@deepseek-ai/schemastery': 3.18.2
     transitivePeerDependencies:
+      - '@deepseek-ai/dsh-agent'
+      - '@deepseek-ai/dsh-code-runtime'
+      - '@deepseek-ai/dsh-invariants'
+      - '@deepseek-ai/dsh-scope'
+      - '@deepseek-ai/dsh-system-prompt'
+      - '@deepseek-ai/dsh-user-approval'
       - '@types/react'
       - react
 
@@ -2111,6 +2200,8 @@ snapshots:
       send: 1.2.1
     transitivePeerDependencies:
       - supports-color
+
+  set-cookie-parser@2.7.3: {}
 
   setprototypeof@1.2.0: {}
 

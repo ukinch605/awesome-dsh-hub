@@ -25,7 +25,7 @@ importers:
         version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa
       '@shengsheng/dsh-taskboard':
         specifier: github:shengsheng90/DSH-taskboard
-        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5
       '@wenbin_wb/dsh-bridge':
         specifier: github:wenbin-wb/dsh-bridge
         version: https://codeload.github.com/wenbin-wb/dsh-bridge/tar.gz/9c529f526b6fce4eb7a2ceb85ebb0b749f44f928
@@ -37,10 +37,10 @@ importers:
         version: https://codeload.github.com/lijiaqi-AI-Product-Manager/dsh-agent-compare/tar.gz/bb1a9beb1de3b400ef1ba3b1f912819b5030b25d
       dsh-auth-in-one:
         specifier: github:Stormycry-cryp/dsh-AuthInOne
-        version: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706
       dsh-boot-animation:
         specifier: github:lxj5820/dsh-boot-animation
-        version: https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/6c2ef4b1d5ca4b791323d247fea5b7f6e272cc71(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/6c2ef4b1d5ca4b791323d247fea5b7f6e272cc71
       dsh-custom-skin:
         specifier: github:SLin-code/dsh-custom-skin
         version: https://codeload.github.com/SLin-code/dsh-custom-skin/tar.gz/03d3117fa426d14df4e7a58248adfce094e94633
@@ -74,6 +74,9 @@ importers:
       tydora:
         specifier: github:zuorn/Tydora
         version: https://codeload.github.com/zuorn/Tydora/tar.gz/090fe27640f7da30ba776ff52469412ad9e24ad0(@floating-ui/dom@1.8.0)(@tiptap/extension-code-block@3.32.0(@tiptap/core@3.32.0(@tiptap/pm@3.32.0))(@tiptap/pm@3.32.0))(@tiptap/extension-list@3.32.0(@tiptap/core@3.32.0(@tiptap/pm@3.32.0))(@tiptap/pm@3.32.0))(@tiptap/extensions@3.32.0(@tiptap/core@3.32.0(@tiptap/pm@3.32.0))(@tiptap/pm@3.32.0))(prosemirror-model@1.25.12)(prosemirror-state@1.4.4)(prosemirror-view@1.42.7)(use-sync-external-store@1.7.0(react@19.3.1))
+      whale-girl:
+        specifier: github:vlln/whale-girl
+        version: https://codeload.github.com/vlln/whale-girl/tar.gz/c3f4afb400755062991c7e9991b745b3016abeeb
 
 packages:
 
@@ -542,7 +545,6 @@ packages:
       '@deepseek-ai/dsh-tools': '*'
       '@deepseek-ai/dsh-typert-protocol': '*'
       '@deepseek-ai/dsh-workspace': '*'
-      '@deepseek-ai/schemastery': ^3.18.2
       react: ^18.2.0
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
@@ -584,8 +586,6 @@ packages:
       '@deepseek-ai/dsh-typert-protocol':
         optional: true
       '@deepseek-ai/dsh-workspace':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
       react:
         optional: true
@@ -1509,7 +1509,6 @@ packages:
       '@deepseek-ai/dsh-session-persistence': '>=0.1.0-rc.5'
       '@deepseek-ai/dsh-settings': '>=0.1.0-rc.5'
       '@deepseek-ai/dsh-typert-protocol': '>=0.1.0-rc.5'
-      '@deepseek-ai/schemastery': '>=3.18.1'
       react: '>=18.2.0'
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
@@ -1551,8 +1550,6 @@ packages:
       '@deepseek-ai/dsh-settings':
         optional: true
       '@deepseek-ai/dsh-typert-protocol':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
       react:
         optional: true
@@ -2558,6 +2555,10 @@ packages:
     resolution: {integrity: sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw==}
     engines: {node: '>= 8'}
 
+  whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/c3f4afb400755062991c7e9991b745b3016abeeb:
+    resolution: {gitHosted: true, integrity: sha512-hyEaHLRZ/JjayjT5sJz6LeB7xMutpQjytsnWJ57UNGHFcyVxlvScgjCcJh+1C+7PSlXCgaaTIWT+Alq1AV9uaw==, tarball: https://codeload.github.com/vlln/whale-girl/tar.gz/c3f4afb400755062991c7e9991b745b3016abeeb}
+    version: 0.2.4
+
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
     engines: {node: '>=18'}
@@ -3294,7 +3295,7 @@ snapshots:
       '@codemirror/view': 6.43.9
       '@replit/codemirror-vim-core': 0.1.0
 
-  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.19.0)':
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5':
     dependencies:
       zod: 4.5.4
     optionalDependencies:
@@ -4254,14 +4255,14 @@ snapshots:
     optionalDependencies:
       playwright-core: 1.65.0
 
-  dsh-auth-in-one@https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706(@deepseek-ai/schemastery@3.19.0):
+  dsh-auth-in-one@https://codeload.github.com/Stormycry-cryp/dsh-AuthInOne/tar.gz/190ecc2d834ba06da008522684e689324a9c2706:
     dependencies:
       clsx: 2.1.1
       zod: 4.5.4
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.19.0
 
-  dsh-boot-animation@https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/6c2ef4b1d5ca4b791323d247fea5b7f6e272cc71(@deepseek-ai/schemastery@3.19.0):
+  dsh-boot-animation@https://codeload.github.com/lxj5820/dsh-boot-animation/tar.gz/6c2ef4b1d5ca4b791323d247fea5b7f6e272cc71:
     dependencies:
       '@deepseek-ai/schemastery': 3.19.0
 
@@ -5378,6 +5379,10 @@ snapshots:
   w3c-keyname@2.2.8: {}
 
   web-streams-polyfill@3.3.3: {}
+
+  whale-girl@https://codeload.github.com/vlln/whale-girl/tar.gz/c3f4afb400755062991c7e9991b745b3016abeeb:
+    dependencies:
+      '@deepseek-ai/schemastery': 3.19.0
 
   whatwg-encoding@3.1.1:
     dependencies:

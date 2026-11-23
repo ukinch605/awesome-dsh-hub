@@ -17,9 +17,12 @@ importers:
       '@michengai/dsh-skills-manager':
         specifier: github:MichengAI/dsh-skills-manager
         version: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/ad17971746023a3daa5e7ffef4ba8ba263e58833
+      '@nagi-ovo/dsh-ads':
+        specifier: github:Nagi-ovo/dsh-ads
+        version: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/b201f76e3b4e6648f853079f97371ef77a52f9dd(@deepseek-ai/schemastery@3.18.5)
       '@nagi-ovo/dsh-visualize':
         specifier: github:Nagi-ovo/dsh-visualize
-        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/6a713a74795fc3043eaad86acf49ac23211ac238(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/6a713a74795fc3043eaad86acf49ac23211ac238
       '@nanmicoder/dsh-auto-mode':
         specifier: github:NanmiCoder/dsh-auto-mode
         version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/907d663b7d65e3fcd9f328c598dee03772cac18b
@@ -43,7 +46,7 @@ importers:
         version: https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/a138d14e3215f052dfa7d6a9dd16c0e409d9752d
       dsh-claude-style:
         specifier: github:Nwflower/dsh-claude-style
-        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c2bbd72a8e2aa3f344406c805c879b42333e03d0(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c2bbd72a8e2aa3f344406c805c879b42333e03d0
       dsh-dafeiyu:
         specifier: github:QCYTSN/dsh-dafeiyu
         version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a
@@ -52,7 +55,7 @@ importers:
         version: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/e672a7a780f97861696c1722768d30c09ea6e660
       dsh-git-memory:
         specifier: github:seriousz158/dsh-memory
-        version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d
       dsh-guizang-design:
         specifier: github:op7418/dsh-guizang-design
         version: https://codeload.github.com/op7418/dsh-guizang-design/tar.gz/e275f1e4d4a81bd4875c251d33c643c242a8a8fd(bare-buffer@3.7.1)
@@ -85,7 +88,7 @@ importers:
         version: https://codeload.github.com/adoresever/graph-memory/tar.gz/5841b1987c3967998818764c9d4238add5f3aa7c
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4a3097116dec6deebbd13f655ce32e196b11dfae(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4a3097116dec6deebbd13f655ce32e196b11dfae
       open-sea-skin:
         specifier: github:d-dev0101/open-sea-skin
         version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/387740c974f3fd47ef22eebd7c20da4645f2f213
@@ -498,6 +501,15 @@ packages:
     peerDependenciesMeta:
       '@opentelemetry/api':
         optional: true
+
+  '@nagi-ovo/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/b201f76e3b4e6648f853079f97371ef77a52f9dd':
+    resolution: {gitHosted: true, integrity: sha512-43vkZ985oJtBMPqsgPHUSD5gT/a/f9WtNyU45yNAnMy1op7qCjbO7yGBNV7jklU89kUpuS4GRWqY0+0Y8+z8fA==, tarball: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/b201f76e3b4e6648f853079f97371ef77a52f9dd}
+    version: 0.1.6
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0 || ^0.2.2-0
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
 
   '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/6a713a74795fc3043eaad86acf49ac23211ac238':
     resolution: {gitHosted: true, integrity: sha512-oZyj/MVr78umRu3Dp/kRPjp7OqgcCqQks4IBN7/Op13fPXPEQqf1W6XLyitbWF2AWg8PboRSSQ8FarrqXb3ZQA==, tarball: https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/6a713a74795fc3043eaad86acf49ac23211ac238}
@@ -1283,11 +1295,8 @@ packages:
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
-      '@deepseek-ai/schemastery': '>=3.0.0'
     peerDependenciesMeta:
       '@deepseek-ai/dsh-mcp-client':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
 
   mitt@3.0.1:
@@ -2135,7 +2144,11 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/6a713a74795fc3043eaad86acf49ac23211ac238(@deepseek-ai/schemastery@3.18.5)':
+  '@nagi-ovo/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/b201f76e3b4e6648f853079f97371ef77a52f9dd(@deepseek-ai/schemastery@3.18.5)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+
+  '@nagi-ovo/dsh-visualize@https://codeload.github.com/Nagi-ovo/dsh-visualize/tar.gz/6a713a74795fc3043eaad86acf49ac23211ac238':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -2470,7 +2483,7 @@ snapshots:
 
   dsh-aurabot-qq@https://codeload.github.com/aureth-labs/dsh-aurabot-qq/tar.gz/a138d14e3215f052dfa7d6a9dd16c0e409d9752d: {}
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c2bbd72a8e2aa3f344406c805c879b42333e03d0(@deepseek-ai/schemastery@3.18.5):
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/c2bbd72a8e2aa3f344406c805c879b42333e03d0:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -2487,7 +2500,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.5):
+  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -2724,7 +2737,7 @@ snapshots:
 
   lru-cache@7.18.3: {}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4a3097116dec6deebbd13f655ce32e196b11dfae(@deepseek-ai/schemastery@3.18.5):
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4a3097116dec6deebbd13f655ce32e196b11dfae:
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
 

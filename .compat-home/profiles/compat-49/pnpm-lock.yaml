@@ -13,7 +13,7 @@ importers:
         version: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
-        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.8.6)(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562
       '@graysilver/dsh-evolve-modes':
         specifier: github:GraySilver/dsh-evolve-modes
         version: https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/1b8753fc905e440cedc06e78a20176398a8b2aff
@@ -29,6 +29,9 @@ importers:
       agy-staff:
         specifier: github:keli-wen/agy-staff
         version: https://codeload.github.com/keli-wen/agy-staff/tar.gz/2b78b4548070af6b8ff154379aecfca6b6762907
+      dsh-api-relay-audit:
+        specifier: github:toby-bridges/api-relay-audit
+        version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/c21351f709cade291122941e00de0accc620d7be
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
@@ -49,7 +52,7 @@ importers:
         version: https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/7f3d2837c1aaef8293abc69093b0a35c80d0f0e8
       dsh-tokenledger:
         specifier: github:zh667/TokenLedger
-        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b
       dsh-usage-stats:
         specifier: github:Ychris12138/dsh-usage-stats
         version: '@ychris12138/dsh-usage-stats@https://codeload.github.com/Ychris12138/dsh-usage-stats/tar.gz/f7191519d96480df8b92a462131040f9f5390861'
@@ -58,7 +61,7 @@ importers:
         version: https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/e197f79a9c67549786b8872c91e6f9e1650a58e7
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/fecdc45cdb7f9d7bb307ad9ad2fffda912ba1d6f(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/fecdc45cdb7f9d7bb307ad9ad2fffda912ba1d6f
 
 packages:
 
@@ -447,6 +450,18 @@ packages:
     resolution: {integrity: sha512-l4gcSouhcgIKRvyy99RNVOgxXiicE+2jZoNmaNmZ6JXiGajBOJAesk1OBlJuM5k2c+eudGdLxDqXuPCKIj6kpw==}
     engines: {node: '>=6'}
 
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/c21351f709cade291122941e00de0accc620d7be:
+    resolution: {gitHosted: true, integrity: sha512-C7i7yNqGP39eXCwvpmPJRUJwMYZumCyEMcQErAep5CCaNjiKCODec5UHFoL03Q23meRV4lUay7Be777Rns0dPA==, tarball: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/c21351f709cade291122941e00de0accc620d7be}
+    version: 2.5.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-commands': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-llm': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-settings': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-subprocess': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
     resolution: {gitHosted: true, integrity: sha512-aXpz1DsFOgd4cUEIeWyTubH9wORj8b/ruLaefeynSwO+M5sp4JOg/RrFj2qya9nKex3jFMdTWVGueZyhpfKDXA==, tarball: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524}
     version: 0.7.0
@@ -710,10 +725,6 @@ packages:
     engines: {node: '>=22'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.2
-      '@deepseek-ai/schemastery': ^3.18.1
-    peerDependenciesMeta:
-      '@deepseek-ai/schemastery':
-        optional: true
 
   dsh-windows-mcp@https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/e197f79a9c67549786b8872c91e6f9e1650a58e7:
     resolution: {gitHosted: true, integrity: sha512-368dvacQ9cxI88BpZg9rzf1UKseYymSppCu7xZoN+iFRW2/ou9m+jlKUVFxTxe7/yW5m/LoMCxNkeA6ToxI9CA==, tarball: https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/e197f79a9c67549786b8872c91e6f9e1650a58e7}
@@ -853,11 +864,8 @@ packages:
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
-      '@deepseek-ai/schemastery': '>=3.0.0'
     peerDependenciesMeta:
       '@deepseek-ai/dsh-mcp-client':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
 
   mitt@3.0.1:
@@ -1179,7 +1187,7 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
-  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.8.6)(@deepseek-ai/schemastery@3.18.5)':
+  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562':
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.6
       '@deepseek-ai/schemastery': 3.18.5
@@ -1493,6 +1501,8 @@ snapshots:
     dependencies:
       '@leichtgewicht/ip-codec': 2.0.5
 
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/c21351f709cade291122941e00de0accc620d7be: {}
+
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
     dependencies:
       zod: 4.5.2
@@ -1634,7 +1644,7 @@ snapshots:
 
   dsh-startup-screen@https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/7f3d2837c1aaef8293abc69093b0a35c80d0f0e8: {}
 
-  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b(@deepseek-ai/schemastery@3.18.5):
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b:
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -1772,7 +1782,7 @@ snapshots:
 
   minimist@1.2.8: {}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/fecdc45cdb7f9d7bb307ad9ad2fffda912ba1d6f(@deepseek-ai/schemastery@3.18.5):
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/fecdc45cdb7f9d7bb307ad9ad2fffda912ba1d6f:
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
 

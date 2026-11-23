@@ -10,22 +10,25 @@ importers:
     dependencies:
       '@changfenhuang/dsh-genui':
         specifier: github:omdsh-dev/dsh-genui
-        version: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae(@deepseek-ai/cordis@4.0.1)
+        version: https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae
       '@mnemon-dev/dsh-mnemon':
         specifier: github:mnemon-dev/mnemon
         version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/e04c3b5089616ac893313b105fcd4e5c200288ed(react@18.3.1)
+      '@nanmicoder/dsh-agent-teams':
+        specifier: github:NanmiCoder/dsh-agent-teams
+        version: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/d80316b23d37be49a8521108a20855086a128a3d(react@18.3.1)
       '@omdsh-dev/dsh-genui':
         specifier: github:omdsh-dev/dsh-genui
-        version: '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae(@deepseek-ai/cordis@4.0.1)'
+        version: '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae'
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
-        version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb(@deepseek-ai/cordis@4.0.1)(react@18.3.1)
+        version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb
       forkprobe-dsh:
         specifier: github:Jayden-X-L/forkprobe
         version: https://codeload.github.com/Jayden-X-L/forkprobe/tar.gz/707d02b5a03c280237bb6d602bd8f1d09accf13e
       graph-memory:
         specifier: github:adoresever/graph-memory
-        version: https://codeload.github.com/adoresever/graph-memory/tar.gz/1dadb34c0db7a204847f209e9290ae115f8e046b(@deepseek-ai/cordis@4.0.1)
+        version: https://codeload.github.com/adoresever/graph-memory/tar.gz/1dadb34c0db7a204847f209e9290ae115f8e046b
       superdesign-dsh:
         specifier: github:superdesigndev/superdesign-skill
         version: https://codeload.github.com/superdesigndev/superdesign-skill/tar.gz/f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b
@@ -86,6 +89,86 @@ packages:
     version: 0.1.0
     engines: {node: '>=20'}
 
+  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/d80316b23d37be49a8521108a20855086a128a3d':
+    resolution: {gitHosted: true, integrity: sha512-px2SYuTH1eL2KTZzlZf3sWLRVQWMLPlJorZBg4FUBaxPgG345PawLdIdKuO16k8MEK6bkr5N8UNuIi8r6nJWbQ==, tarball: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/d80316b23d37be49a8521108a20855086a128a3d}
+    version: 0.1.31
+    engines: {dsh: '>=0.1.2-alpha.2', node: ^22.19.0 || >=24}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/dsh-agent': '*'
+      '@deepseek-ai/dsh-api-session-controller': '*'
+      '@deepseek-ai/dsh-client-connection': '*'
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-store': '*'
+      '@deepseek-ai/dsh-client-ui-chat': '*'
+      '@deepseek-ai/dsh-client-ui-conversation': '*'
+      '@deepseek-ai/dsh-client-ui-layout': '*'
+      '@deepseek-ai/dsh-client-ui-model-selection': '*'
+      '@deepseek-ai/dsh-client-ui-primitives': '*'
+      '@deepseek-ai/dsh-client-ui-renderer': '*'
+      '@deepseek-ai/dsh-client-ui-session': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-commands': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-session': '*'
+      '@deepseek-ai/dsh-session-projection': '*'
+      '@deepseek-ai/dsh-subagent': '*'
+      '@deepseek-ai/dsh-system-prompt': '*'
+      '@deepseek-ai/dsh-tools': '*'
+      '@deepseek-ai/dsh-util-values': '*'
+      '@deepseek-ai/schemastery': ^3.18.2
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-api-session-controller':
+        optional: true
+      '@deepseek-ai/dsh-client-connection':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-store':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-chat':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-layout':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-model-selection':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-primitives':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-renderer':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-session':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-commands':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-session':
+        optional: true
+      '@deepseek-ai/dsh-session-projection':
+        optional: true
+      '@deepseek-ai/dsh-subagent':
+        optional: true
+      '@deepseek-ai/dsh-system-prompt':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/dsh-util-values':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+      react:
+        optional: true
+
   '@sinclair/typebox@0.34.52':
     resolution: {integrity: sha512-XiMQh7qqVlxZzcVD+kkGMNGMzcTrDMLWI7S4x7z1MkCkbDPrekpZXEUK0eZqZFMuHQg2a2DZOcDIh9o5v3Gonw==}
 
@@ -99,7 +182,6 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-noxd7rkfRYdooA3ZZGTkT2sshbifl95XI0rgJ1MTbKirfJtujgxke4cQJQRjlZdq13QzWD4d4Ggf3yLsIYaMwQ==, tarball: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb}
     version: 0.6.9
     peerDependencies:
-      '@deepseek-ai/cordis': ^4.0.1-rc.1
       '@deepseek-ai/dsh-agent': '*'
       '@deepseek-ai/dsh-api-remotes': '*'
       '@deepseek-ai/dsh-client-connection': '*'
@@ -113,10 +195,7 @@ packages:
       '@deepseek-ai/dsh-settings': '*'
       '@deepseek-ai/dsh-typert-protocol': '*'
       '@deepseek-ai/dsh-typert-registry': '*'
-      react: ^18.2.0
     peerDependenciesMeta:
-      '@deepseek-ai/cordis':
-        optional: true
       '@deepseek-ai/dsh-agent':
         optional: true
       '@deepseek-ai/dsh-api-remotes':
@@ -142,8 +221,6 @@ packages:
       '@deepseek-ai/dsh-typert-protocol':
         optional: true
       '@deepseek-ai/dsh-typert-registry':
-        optional: true
-      react:
         optional: true
 
   dsh-mnemon@0.3.5:
@@ -171,12 +248,9 @@ packages:
     version: 1.6.0-beta.11
     engines: {node: '>=22.13.0'}
     peerDependencies:
-      '@deepseek-ai/cordis': '>=4'
       '@deepseek-ai/dsh-typert-protocol': '>=0.1.0-rc.5'
       openclaw: '*'
     peerDependenciesMeta:
-      '@deepseek-ai/cordis':
-        optional: true
       '@deepseek-ai/dsh-typert-protocol':
         optional: true
       openclaw:
@@ -214,10 +288,13 @@ packages:
 
 snapshots:
 
-  '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae(@deepseek-ai/cordis@4.0.1)':
+  '@changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae':
     dependencies:
       '@deepseek-ai/cordis': 4.0.1
       react: 18.3.1
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis-plugin-include'
+      - '@deepseek-ai/cordis-plugin-loader'
 
   '@deepseek-ai/cordis@4.0.1':
     dependencies:
@@ -244,18 +321,25 @@ snapshots:
       - react
       - react-dom
 
+  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/d80316b23d37be49a8521108a20855086a128a3d(react@18.3.1)':
+    optionalDependencies:
+      react: 18.3.1
+
   '@sinclair/typebox@0.34.52': {}
 
   '@standard-schema/spec@1.1.0': {}
 
   cosmokit@1.8.1: {}
 
-  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb(@deepseek-ai/cordis@4.0.1)(react@18.3.1):
+  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/75a9accbe2c58b26149e515248db2ce4670510eb:
     dependencies:
       zod: 4.4.3
     optionalDependencies:
       '@deepseek-ai/cordis': 4.0.1
       react: 18.3.1
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis-plugin-include'
+      - '@deepseek-ai/cordis-plugin-loader'
 
   dsh-mnemon@0.3.5(react@18.3.1):
     dependencies:
@@ -282,11 +366,14 @@ snapshots:
       - '@deepseek-ai/dsh-system-prompt'
       - '@deepseek-ai/dsh-user-approval'
 
-  graph-memory@https://codeload.github.com/adoresever/graph-memory/tar.gz/1dadb34c0db7a204847f209e9290ae115f8e046b(@deepseek-ai/cordis@4.0.1):
+  graph-memory@https://codeload.github.com/adoresever/graph-memory/tar.gz/1dadb34c0db7a204847f209e9290ae115f8e046b:
     dependencies:
       '@sinclair/typebox': 0.34.52
     optionalDependencies:
       '@deepseek-ai/cordis': 4.0.1
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis-plugin-include'
+      - '@deepseek-ai/cordis-plugin-loader'
 
   js-tokens@4.0.0: {}
 

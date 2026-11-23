@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/49dd4caf259e3751f5c668817ac972487081690a(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/49dd4caf259e3751f5c668817ac972487081690a
       '@dsh-external/dsh-automation':
         specifier: github:titanwings/dsh-automation
         version: https://codeload.github.com/titanwings/dsh-automation/tar.gz/0d73a4e03639d4f63d0771ae4490e2718b7e7aa0
@@ -19,10 +19,13 @@ importers:
         version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa
       '@shengsheng/dsh-taskboard':
         specifier: github:shengsheng90/DSH-taskboard
-        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5
       '@zseven-w/dsh-ios':
         specifier: github:ZSeven-W/dsh-ios
         version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/ffa90be4c34d54848d862b1a4e0a5deacdd18a26
+      brooks-lint:
+        specifier: github:hyhmrright/brooks-lint
+        version: https://codeload.github.com/hyhmrright/brooks-lint/tar.gz/7c1a6f3ce50de016ea0dc2f73db14b061bd11200
       dsh-api-relay-audit:
         specifier: github:toby-bridges/api-relay-audit
         version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/3af7126a34d099f65031c6e3af63b302a843fe59
@@ -31,7 +34,7 @@ importers:
         version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/6f3ab83993ccc51df9331048a8f9a51bef19bc28
       dsh-free-search:
         specifier: github:DDDMUC/dsh-free-search
-        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/27adda1ac1bd33e90dd9c6f7f0158834e9dbf91f(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/27adda1ac1bd33e90dd9c6f7f0158834e9dbf91f
       dsh-media-desk:
         specifier: github:woniuniuniu/dsh-media-desk
         version: https://codeload.github.com/woniuniuniu/dsh-media-desk/tar.gz/051f95841f8febea3d2a51bfaafb01f0f3d5015d
@@ -158,7 +161,6 @@ packages:
       '@deepseek-ai/dsh-tools': '*'
       '@deepseek-ai/dsh-typert-protocol': '*'
       '@deepseek-ai/dsh-workspace': '*'
-      '@deepseek-ai/schemastery': ^3.18.2
       react: ^18.2.0
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
@@ -201,8 +203,6 @@ packages:
         optional: true
       '@deepseek-ai/dsh-workspace':
         optional: true
-      '@deepseek-ai/schemastery':
-        optional: true
       react:
         optional: true
 
@@ -235,6 +235,12 @@ packages:
   body-parser@2.3.0:
     resolution: {integrity: sha512-2cGmJupaNgg+QUwVLAucDuWuoMZ6EX9iHDRswZ5lsNYEmwPaRknMPCLZz07yTzVq/83p4o/wzbDZbBrTvGGTIw==}
     engines: {node: '>=18'}
+
+  brooks-lint@https://codeload.github.com/hyhmrright/brooks-lint/tar.gz/7c1a6f3ce50de016ea0dc2f73db14b061bd11200:
+    resolution: {gitHosted: true, integrity: sha512-F0Ng2LltC2Von6M7MFQeuil39vd5Tfh0oEsbQCDvC+W/oHCZwj2pBo2XBrQyA7Ad0j8Bfp0H847FnMy8eENzPQ==, tarball: https://codeload.github.com/hyhmrright/brooks-lint/tar.gz/7c1a6f3ce50de016ea0dc2f73db14b061bd11200}
+    version: 2.0.0
+    engines: {node: '>=20'}
+    hasBin: true
 
   builder-util-runtime@9.7.0:
     resolution: {integrity: sha512-g/kR520giAFYkSXTzcmF3kqQq7wi8F6N6SzeDgZrqTBN+VHdmgWOyTdD1yD7AATDId/yXLvuP34CxW46/BwCdw==}
@@ -341,7 +347,6 @@ packages:
       '@deepseek-ai/dsh-client-ui-renderer': ^0.1.7-rc.1 || ^0.2.0-rc.1 || ^0.3.0-0
       '@deepseek-ai/dsh-settings': ^0.1.7-rc.1 || ^0.2.0-rc.1 || ^0.3.0-0
       '@deepseek-ai/dsh-tools': ^0.1.7-rc.1 || ^0.2.0-rc.1 || ^0.3.0-0
-      '@deepseek-ai/schemastery': '>=3.18.4 <4'
       react: ^18.2.0
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
@@ -355,8 +360,6 @@ packages:
       '@deepseek-ai/dsh-settings':
         optional: true
       '@deepseek-ai/dsh-tools':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
       react:
         optional: true
@@ -968,7 +971,7 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/49dd4caf259e3751f5c668817ac972487081690a(@deepseek-ai/schemastery@3.18.5)':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/49dd4caf259e3751f5c668817ac972487081690a':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       saxes: 6.0.0
@@ -1030,7 +1033,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.18.5)':
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5':
     dependencies:
       zod: 4.4.3
     optionalDependencies:
@@ -1080,6 +1083,8 @@ snapshots:
       type-is: 2.1.0
     transitivePeerDependencies:
       - supports-color
+
+  brooks-lint@https://codeload.github.com/hyhmrright/brooks-lint/tar.gz/7c1a6f3ce50de016ea0dc2f73db14b061bd11200: {}
 
   builder-util-runtime@9.7.0:
     dependencies:
@@ -1141,7 +1146,7 @@ snapshots:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
-  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/27adda1ac1bd33e90dd9c6f7f0158834e9dbf91f(@deepseek-ai/schemastery@3.18.5):
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/27adda1ac1bd33e90dd9c6f7f0158834e9dbf91f:
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
 

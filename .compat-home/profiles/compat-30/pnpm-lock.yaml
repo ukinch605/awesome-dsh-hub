@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/49dd4caf259e3751f5c668817ac972487081690a(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/49dd4caf259e3751f5c668817ac972487081690a
       '@liustack/modsearch':
         specifier: github:liustack/modsearch
         version: https://codeload.github.com/liustack/modsearch/tar.gz/df0cf76aea06d31ca07c06322b0c7ad47b6d3a6a
@@ -32,6 +32,9 @@ importers:
       dsh-bili-scroll:
         specifier: github:c1overzz/dsh-bili-scroll
         version: https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/6f3ab83993ccc51df9331048a8f9a51bef19bc28
+      dsh-deja:
+        specifier: github:vshulcz/deja-vu
+        version: https://codeload.github.com/vshulcz/deja-vu/tar.gz/f188c27b49eb1efc22d5c1864da52de80810630b
       dsh-harmony-next:
         specifier: github:linhay/harmony-next.skills
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249
@@ -177,6 +180,41 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  '@vshulcz/deja-vu-darwin-amd64@0.25.0':
+    resolution: {integrity: sha512-Mu/PioF1HIyxwX5kAxfxeQziMv9ShrOfUG0ZiElB0+rugoPN+qVvCsyn49Dq0SCuugUgIL2Y9PvB2bY6/WK4EQ==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@vshulcz/deja-vu-darwin-arm64@0.25.0':
+    resolution: {integrity: sha512-3yoa8JK9nrPDzruguuHHuoItuy/HeVF5B9QmWctQc92WoOMGjdkR86iVcaS6EO+G3oG1W+okOObvilRWmCuabA==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@vshulcz/deja-vu-linux-amd64@0.25.0':
+    resolution: {integrity: sha512-Q/FRGhHjmDlzpArlJb+JBguGkKK4eoNZeG2V8h4BDnMAmaODK7hRPXfQ2YSO8IhGHsf97m+uZiuT8YrGmQf37Q==}
+    cpu: [x64]
+    os: [linux]
+
+  '@vshulcz/deja-vu-linux-arm64@0.25.0':
+    resolution: {integrity: sha512-9x7BXBqiGc0/KtiSBgFz4mj5S3mHpBNWM9CmmojEf+masllBKPbpOQsQ7djRnnUCXZ7aHJlNp88GKCWuyHXIAQ==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@vshulcz/deja-vu-windows-amd64@0.25.0':
+    resolution: {integrity: sha512-ia3NSwodp5Li3+PcMoENNb0tdEhYTFH8flYxc2cAdxVSAaOm4g6RE4wYmp7oKIoUmWI2hlOJDXIexVqAZCzhqA==}
+    cpu: [x64]
+    os: [win32]
+
+  '@vshulcz/deja-vu-windows-arm64@0.25.0':
+    resolution: {integrity: sha512-4ThJ9cnz2bhRJMO2V7HsYAJxLvrHB4dcBXhoxOi1uFpoOeTzYw5H/x/h/y174V4j9v7R1nMchvQlPEuayb2a/A==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@vshulcz/deja-vu@0.25.0':
+    resolution: {integrity: sha512-5doWZGMsTS+ex8V898gt5ZHxyaW8Zx7xI1UfXm4fy7dVxj7ICSDxRDlVNhabBm6S1RjpB6JsibI/JG7l0hQtTA==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2:
     resolution: {gitHosted: true, integrity: sha512-0sUOGDVAgKn4wy1YsAapsfQA4XiNWUZ0sxhSA3GkZjSLeNx48yS3DeDCeaA5Av2EldDStMmXZ5cREnFJItwDwg==, tarball: https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2}
     version: 2.15.2
@@ -306,6 +344,11 @@ packages:
         optional: true
       '@deepseek-ai/schemastery':
         optional: true
+
+  dsh-deja@https://codeload.github.com/vshulcz/deja-vu/tar.gz/f188c27b49eb1efc22d5c1864da52de80810630b:
+    resolution: {gitHosted: true, integrity: sha512-nhODRKCh0AwUYj7AWn9l61aqP+nzUSGujPCxDxrL6Vvbw41zh7Lyt2oRO4l7I3CfxSz5A+xOJGw89ZZPLXuqHw==, tarball: https://codeload.github.com/vshulcz/deja-vu/tar.gz/f188c27b49eb1efc22d5c1864da52de80810630b}
+    version: 0.25.0
+    engines: {dsh: '>=0.2.0-rc.2', node: '>=18'}
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249:
     resolution: {gitHosted: true, integrity: sha512-E1LkQtH6JO3XE6fg1v2d0R/FWVtJrc0z+3NhvARbg5XE2glXjCFGq4q7YhV6r39iUTv8gYw+sj3yCxnohmE+pw==, tarball: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249}
@@ -689,7 +732,7 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/49dd4caf259e3751f5c668817ac972487081690a(@deepseek-ai/schemastery@3.18.5)':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/49dd4caf259e3751f5c668817ac972487081690a':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       saxes: 6.0.0
@@ -761,6 +804,33 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
+  '@vshulcz/deja-vu-darwin-amd64@0.25.0':
+    optional: true
+
+  '@vshulcz/deja-vu-darwin-arm64@0.25.0':
+    optional: true
+
+  '@vshulcz/deja-vu-linux-amd64@0.25.0':
+    optional: true
+
+  '@vshulcz/deja-vu-linux-arm64@0.25.0':
+    optional: true
+
+  '@vshulcz/deja-vu-windows-amd64@0.25.0':
+    optional: true
+
+  '@vshulcz/deja-vu-windows-arm64@0.25.0':
+    optional: true
+
+  '@vshulcz/deja-vu@0.25.0':
+    optionalDependencies:
+      '@vshulcz/deja-vu-darwin-amd64': 0.25.0
+      '@vshulcz/deja-vu-darwin-arm64': 0.25.0
+      '@vshulcz/deja-vu-linux-amd64': 0.25.0
+      '@vshulcz/deja-vu-linux-arm64': 0.25.0
+      '@vshulcz/deja-vu-windows-amd64': 0.25.0
+      '@vshulcz/deja-vu-windows-arm64': 0.25.0
+
   aegis@https://codeload.github.com/GanyuanRan/Aegis/tar.gz/ab3e7710496e638823162d6aa46c3ca525b0acd2: {}
 
   ansi-regex@5.0.1: {}
@@ -826,6 +896,10 @@ snapshots:
   dsh-bili-scroll@https://codeload.github.com/c1overzz/dsh-bili-scroll/tar.gz/6f3ab83993ccc51df9331048a8f9a51bef19bc28:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
+
+  dsh-deja@https://codeload.github.com/vshulcz/deja-vu/tar.gz/f188c27b49eb1efc22d5c1864da52de80810630b:
+    dependencies:
+      '@vshulcz/deja-vu': 0.25.0
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249: {}
 

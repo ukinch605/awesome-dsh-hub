@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
-        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.9.0)(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562
       '@dsh-external/workflow':
         specifier: github:omdsh-dev/dsh_workflow
-        version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f
       '@icelily/dsh-gitbash-preset':
         specifier: github:liceses/dsh-gitbash-preset
         version: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8
@@ -22,7 +22,7 @@ importers:
         version: https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef
       '@shengsheng/dsh-taskboard':
         specifier: github:shengsheng90/DSH-taskboard
-        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5
       '@zseven-w/dsh-android':
         specifier: github:ZSeven-W/dsh-android
         version: https://codeload.github.com/ZSeven-W/dsh-android/tar.gz/3363a85b1bbeefe994d42d52bd8e792c1527e9ec
@@ -40,7 +40,7 @@ importers:
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945
       dsh-ego-browser:
         specifier: github:Fisfzy/dsh-ego-browser
         version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/72f40ae97db4f6ae458afdf2d5aa5b6679d825b0
@@ -50,12 +50,15 @@ importers:
       dsh-meme:
         specifier: github:yyh-001/dsh-meme
         version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/205061ebb7c08e3ce2f879c6ab690fca03a780a6
+      dsh-purge:
+        specifier: github:ZXEB/dsh-purge
+        version: https://codeload.github.com/ZXEB/dsh-purge/tar.gz/b5de843d20b5e61c0e0cfbd2aaf4fefefeb419ae
       dsh-video-storyboard:
         specifier: github:SAOS-3624/dsh-video-storyboard
         version: https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/8b2b5007746bcc4aa42b47570ae896cd6cba3864
       dsh-xdpool:
         specifier: github:XDTrees/dsh-xdpool
-        version: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/ccd4db397a04d9d266a94c018ae035e66cd5aefe(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/ccd4db397a04d9d266a94c018ae035e66cd5aefe
 
 packages:
 
@@ -310,7 +313,6 @@ packages:
       '@deepseek-ai/dsh-tools': '*'
       '@deepseek-ai/dsh-typert-protocol': '*'
       '@deepseek-ai/dsh-workspace': '*'
-      '@deepseek-ai/schemastery': ^3.18.2
       react: ^18.2.0
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
@@ -352,8 +354,6 @@ packages:
       '@deepseek-ai/dsh-typert-protocol':
         optional: true
       '@deepseek-ai/dsh-workspace':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
       react:
         optional: true
@@ -508,6 +508,14 @@ packages:
     peerDependencies:
       '@deepseek-ai/dsh-tools': '*'
 
+  dsh-purge@https://codeload.github.com/ZXEB/dsh-purge/tar.gz/b5de843d20b5e61c0e0cfbd2aaf4fefefeb419ae:
+    resolution: {gitHosted: true, integrity: sha512-KxXeLYOWFK1OZyMSvufqkwzLL/gu34gGZ/9uWN4HJ6ksHVyRorpZCQX78ZRFaVwAxO3X/0ZIrUK7JJXrK2l1gw==, tarball: https://codeload.github.com/ZXEB/dsh-purge/tar.gz/b5de843d20b5e61c0e0cfbd2aaf4fefefeb419ae}
+    version: 1.1.76
+    engines: {node: '>=18'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+
   dsh-video-storyboard@https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/8b2b5007746bcc4aa42b47570ae896cd6cba3864:
     resolution: {gitHosted: true, integrity: sha512-upPaRvB7hLE/WAIWDPE8S0PrQoyR4jHv/ufSYfMFV/xm9Wt39dYylWtr9dKa7/o2MHPW80ulu+KFOzFouC15Sw==, tarball: https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/8b2b5007746bcc4aa42b47570ae896cd6cba3864}
     version: 0.7.6
@@ -530,7 +538,6 @@ packages:
       '@deepseek-ai/dsh-llm': '>=0.1.1-rc.1 <0.3.0'
       '@deepseek-ai/dsh-llm-pi-ai': '>=0.1.1-rc.1 <0.3.0'
       '@deepseek-ai/dsh-settings': '>=0.1.1-rc.1 <0.3.0'
-      '@deepseek-ai/schemastery': ^3.18.1
       '@earendil-works/pi-ai': '>=0.82.1'
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
@@ -542,8 +549,6 @@ packages:
       '@deepseek-ai/dsh-llm-pi-ai':
         optional: true
       '@deepseek-ai/dsh-settings':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
       '@earendil-works/pi-ai':
         optional: true
@@ -636,12 +641,12 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.9.0
       '@standard-schema/spec': 1.1.0
 
-  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.9.0)(@deepseek-ai/schemastery@3.19.0)':
+  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562':
     dependencies:
       '@deepseek-ai/cosmokit': 1.9.0
       '@deepseek-ai/schemastery': 3.19.0
 
-  '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.19.0)':
+  '@dsh-external/workflow@https://codeload.github.com/omdsh-dev/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
     dependencies:
       '@deepseek-ai/schemastery': 3.19.0
       quickjs-emscripten: 0.32.0
@@ -780,7 +785,7 @@ snapshots:
 
   '@leon___/dsh-client-liang-intensity-skin@https://codeload.github.com/kingOfSoySauce/dsh-liang-skin/tar.gz/dcd348e0bec148af45bc0b1a8f33ef82c44aeeef': {}
 
-  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.19.0)':
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5':
     dependencies:
       zod: 4.6.7
     optionalDependencies:
@@ -818,7 +823,7 @@ snapshots:
     dependencies:
       zod: 4.6.7
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945(@deepseek-ai/schemastery@3.19.0):
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945:
     dependencies:
       '@deepseek-ai/schemastery': 3.19.0
       fzstd: 0.1.1
@@ -836,9 +841,11 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
+  dsh-purge@https://codeload.github.com/ZXEB/dsh-purge/tar.gz/b5de843d20b5e61c0e0cfbd2aaf4fefefeb419ae: {}
+
   dsh-video-storyboard@https://codeload.github.com/SAOS-3624/dsh-video-storyboard/tar.gz/8b2b5007746bcc4aa42b47570ae896cd6cba3864: {}
 
-  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/ccd4db397a04d9d266a94c018ae035e66cd5aefe(@deepseek-ai/schemastery@3.19.0):
+  dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/ccd4db397a04d9d266a94c018ae035e66cd5aefe:
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.19.0
 

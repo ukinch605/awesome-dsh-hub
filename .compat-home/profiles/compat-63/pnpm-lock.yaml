@@ -16,7 +16,7 @@ importers:
         version: https://codeload.github.com/liceses/dsh-gitbash-preset/tar.gz/db21575b52e249f6a2eeeef0eb9ff92dc72943c8
       '@loserfox/distill':
         specifier: github:LoserFox/distill
-        version: https://codeload.github.com/LoserFox/distill/tar.gz/78a508c8839a0cd4205c95416905d7d5e2e2775e(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/LoserFox/distill/tar.gz/78a508c8839a0cd4205c95416905d7d5e2e2775e
       '@michengai/dsh-skills-manager':
         specifier: github:MichengAI/dsh-skills-manager
         version: https://codeload.github.com/MichengAI/dsh-skills-manager/tar.gz/ad17971746023a3daa5e7ffef4ba8ba263e58833
@@ -25,7 +25,7 @@ importers:
         version: https://codeload.github.com/NanmiCoder/dsh-auto-mode/tar.gz/907d663b7d65e3fcd9f328c598dee03772cac18b
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/505b64e95f07b276a148034df9f854c78936f203(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/505b64e95f07b276a148034df9f854c78936f203
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/56650083e8b1ea01c625b73a4a5c15b98ef53965
@@ -59,6 +59,9 @@ importers:
       dsh-undo-savepoint:
         specifier: github:lire1131/dsh-undo-savepoint
         version: https://codeload.github.com/lire1131/dsh-undo-savepoint/tar.gz/c5046313eec6d65ecbd8bccb1e3852c7e9200946
+      fujiang-armor:
+        specifier: github:c3cvld7aag/fujiang-dsh
+        version: https://codeload.github.com/c3cvld7aag/fujiang-dsh/tar.gz/ab86ddcd169f0f13bc74923b6ed95eda55224931
       gal-view:
         specifier: github:Ayase34/gal-view
         version: https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a
@@ -70,7 +73,7 @@ importers:
         version: https://codeload.github.com/FishBottle7/opencode2dsh/tar.gz/37d3ea202187767d6576ef72798e270c12da9b4e(ws@8.22.0)(zod@4.4.3)
       seektty:
         specifier: github:Hilbert-beinghappy/seektty
-        version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/42a2a7fa2a01b5a10a2e2ce368c151c8e0fdafc5(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/42a2a7fa2a01b5a10a2e2ce368c151c8e0fdafc5
 
 packages:
 
@@ -1064,6 +1067,10 @@ packages:
     resolution: {integrity: sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g==}
     engines: {node: '>=12.20.0'}
 
+  fujiang-armor@https://codeload.github.com/c3cvld7aag/fujiang-dsh/tar.gz/ab86ddcd169f0f13bc74923b6ed95eda55224931:
+    resolution: {gitHosted: true, integrity: sha512-QkYmydttQHj4p5EG9Dgu9B2lqYeyiYLqtpTKfF13WLB60uZAtcVbnme59G4WSW9C0MowdWRJKRq6qurTWdmzEg==, tarball: https://codeload.github.com/c3cvld7aag/fujiang-dsh/tar.gz/ab86ddcd169f0f13bc74923b6ed95eda55224931}
+    version: 0.4.3
+
   gal-view@https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a:
     resolution: {gitHosted: true, integrity: sha512-zVpjAExArNW6aZIUdTjieY6olq4Oec4QD5dTMJ5a8UyIksT/b7WlBHjdqSWSP83ExId+9rL/8WCNKDBjyk2zQg==, tarball: https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a}
     version: 0.3.3
@@ -1472,7 +1479,6 @@ packages:
       '@deepseek-ai/dsh-web-app': 0.2.0-rc.2
       '@deepseek-ai/dsh-workflow': 0.2.0-rc.2
       '@deepseek-ai/dsh-workspace': 0.2.0-rc.2
-      '@deepseek-ai/schemastery': ~3.18.4
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
         optional: true
@@ -1605,8 +1611,6 @@ packages:
       '@deepseek-ai/dsh-workflow':
         optional: true
       '@deepseek-ai/dsh-workspace':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
 
   semver@7.8.5:
@@ -2229,7 +2233,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.3
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@loserfox/distill@https://codeload.github.com/LoserFox/distill/tar.gz/78a508c8839a0cd4205c95416905d7d5e2e2775e(@deepseek-ai/schemastery@3.18.5)':
+  '@loserfox/distill@https://codeload.github.com/LoserFox/distill/tar.gz/78a508c8839a0cd4205c95416905d7d5e2e2775e':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -2428,7 +2432,7 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/505b64e95f07b276a148034df9f854c78936f203(@deepseek-ai/schemastery@3.18.5)':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/505b64e95f07b276a148034df9f854c78936f203':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       '@tencent-connect/qqbot-connector': 1.2.0
@@ -2629,6 +2633,8 @@ snapshots:
   formdata-polyfill@4.0.10:
     dependencies:
       fetch-blob: 3.2.0
+
+  fujiang-armor@https://codeload.github.com/c3cvld7aag/fujiang-dsh/tar.gz/ab86ddcd169f0f13bc74923b6ed95eda55224931: {}
 
   gal-view@https://codeload.github.com/Ayase34/gal-view/tar.gz/d002fe0e7051c618a2665af3c653f9838cd6aa8a: {}
 
@@ -2918,7 +2924,7 @@ snapshots:
 
   scheduler@0.28.0: {}
 
-  seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/42a2a7fa2a01b5a10a2e2ce368c151c8e0fdafc5(@deepseek-ai/schemastery@3.18.5):
+  seektty@https://codeload.github.com/Hilbert-beinghappy/seektty/tar.gz/42a2a7fa2a01b5a10a2e2ce368c151c8e0fdafc5:
     dependencies:
       '@shikijs/core': 4.4.3
       '@shikijs/engine-javascript': 4.4.3
