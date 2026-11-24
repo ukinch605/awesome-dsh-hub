@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-23T16:14:18.979Z",
+  "generatedAt": "2026-11-24T03:19:09.065Z",
   "semantics": "shadow-plugin-dependent-data-v3",
   "authoritative": false,
   "compatibilitySemantics": "legacy-repo-install-probe-root-only",
@@ -579,9 +579,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-4 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-4/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/5a9b8e14856138814a2139a0105481e1dcdaece4  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-4 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-4/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:19.078Z",
+        "checkedAt": "2026-11-23T18:39:26.388Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -1489,9 +1489,9 @@
       },
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-better-sidebar@https://codeload.github.com/omdsh-dev/DSH-better-         sidebar/tar.gz/2811573c9c0bad51d77db6c3c94d78f5aed8d38a: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-15 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-15/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-better-sidebar@https://codeload.github.com/omdsh-dev/DSH-better-sidebar/tar.gz/2811573c9c0bad51d77db6c3c94d78f5aed8d38a: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-15 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-15/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:49:02.259Z",
+        "checkedAt": "2026-11-23T18:40:37.847Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -1853,13 +1853,6 @@
       "compatibility": null
     },
     {
-      "pluginId": "dshp_02127a294db8cb3c4b70",
-      "githubRepoId": "1462809885",
-      "packagePath": "package.json",
-      "override": null,
-      "compatibility": null
-    },
-    {
       "pluginId": "dshp_021310f1db3eb62c2891",
       "githubRepoId": "1382864524",
       "packagePath": "package.json",
@@ -2093,6 +2086,13 @@
     {
       "pluginId": "dshp_02595ee17d5f8c323d7b",
       "githubRepoId": "1340984078",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_0259fd47fb69bda557d9",
+      "githubRepoId": "1469228131",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -4063,10 +4063,10 @@
         }
       },
       "compatibility": {
-        "status": "installed",
-        "reason": null,
+        "status": "blocked",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@1.52.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-66 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-66/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:25.592Z",
+        "checkedAt": "2026-11-23T18:45:12.810Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -6493,6 +6493,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_06e007383149aa58b52e",
+      "githubRepoId": "1469483557",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_06e4da1c558b765f526a",
       "githubRepoId": "1444248510",
       "packagePath": "package.json",
@@ -6507,15 +6514,22 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_06e73db188b69b4204b8",
+      "githubRepoId": "1467170561",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_06ebd6330bcb8f68fc9a",
       "githubRepoId": "1336280167",
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-54 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-54/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:51:33.929Z",
+        "checkedAt": "2026-11-23T18:44:19.854Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -7037,9 +7051,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-2 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-2/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/af7cd22d5b3faec540e883239c55bde1620f718a  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-2 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-2/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:17.439Z",
+        "checkedAt": "2026-11-23T18:39:28.044Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -7235,6 +7249,13 @@
     {
       "pluginId": "dshp_07c03ab2827398e7518f",
       "githubRepoId": "1338598627",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_07c068108c7d2816a267",
+      "githubRepoId": "1469554918",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -7491,9 +7512,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-79 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-79/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/bfbd8601903c47db06d87d3086d364e9c0abb0dd  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-80 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-80/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:04.947Z",
+        "checkedAt": "2026-11-23T18:45:29.180Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -8182,10 +8203,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "        allowBuilds:           dsh-blender-plugin@https://codeload.github.com/sixtysevenlf/dsh-         blender-plugin/tar.gz/6c5614712972a5cbca52b13d4df9193d76e76b0d: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-23 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-23/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:49:26.710Z",
+        "checkedAt": "2026-11-23T18:42:27.223Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -8482,10 +8503,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "installed",
-        "reason": null,
+        "status": "blocked",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/9ffe0a60e91481252c58d5a35e6874950d3eab67  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-79 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-79/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:57.850Z",
+        "checkedAt": "2026-11-23T18:45:28.412Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -9269,6 +9290,13 @@
     {
       "pluginId": "dshp_09fc8fa081c560c94be1",
       "githubRepoId": "1432369525",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_0a04d13cbdf9d647227f",
+      "githubRepoId": "1469554377",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -10624,9 +10652,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-freestyle-theme@https://codeload.github.com/suzike/freestyle-         dsh-theme/tar.gz/12db4f059aa2ca3e318297167e170abbb7d7bed4: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-98 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-98/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-mattpocock-skills-deck@https://codeload.github.com/FeatherHunter/dsh-mattpocock-skills-deck/tar.gz/d0bc9aa0b72ca1f6f28a9d595279d3ebd6906eef: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-97 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-97/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:55:09.875Z",
+        "checkedAt": "2026-11-23T18:48:04.357Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -12299,6 +12327,13 @@
     {
       "pluginId": "dshp_0d49e8f21d9c4e8113f6",
       "githubRepoId": "1464541598",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_0d4b6f014790092d6c98",
+      "githubRepoId": "1469517248",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -14389,9 +14424,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "          @deepseek-harness-tui/dsh-tui@https://codeload.github.com/         ccch1mneyyy/dsh-TUI/tar.gz/1c087baeff0961998e057415177aeb364e4d97e3:         true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-7 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-7/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           @deepseek-harness-tui/dsh-tui@https://codeload.github.com/ccch1mneyyy/dsh-TUI/tar.gz/1c087baeff0961998e057415177aeb364e4d97e3: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-7 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-7/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:31.341Z",
+        "checkedAt": "2026-11-23T18:39:38.402Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -14696,9 +14731,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-univer-office@https://codeload.github.com/dream-num/dsh-univer-         office/tar.gz/c0991ca54d7ab61c8bc7c4e6bceddb673b51f846: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-58 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-58/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-univer-office@https://codeload.github.com/dream-num/dsh-univer-office/tar.gz/163f58c96e45cc742ef79a180a5ac328e5af9005: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-61 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-61/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:04.718Z",
+        "checkedAt": "2026-11-23T18:44:53.206Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -15382,6 +15417,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_10a09209214a992c5864",
+      "githubRepoId": "1456550454",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_10a0be91523f4acd6719",
       "githubRepoId": "1340805248",
       "packagePath": "package.json",
@@ -15958,6 +16000,13 @@
     {
       "pluginId": "dshp_114e20791db19e94d99c",
       "githubRepoId": "1466120404",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_115612385a7f0c2b0cfd",
+      "githubRepoId": "1468919389",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -18112,13 +18161,6 @@
       "compatibility": null
     },
     {
-      "pluginId": "dshp_139ecf177c9c2fe5eedb",
-      "githubRepoId": "1428151163",
-      "packagePath": "package.json",
-      "override": null,
-      "compatibility": null
-    },
-    {
       "pluginId": "dshp_139fa54a86ee9a25b445",
       "githubRepoId": "1452600928",
       "packagePath": "plugin/package.json",
@@ -18791,6 +18833,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_14583bcea14f6c7217fc",
+      "githubRepoId": "1469491298",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_145be0611a6de07a8880",
       "githubRepoId": "1365336780",
       "packagePath": "archive/file-change-viewer/package.json",
@@ -19072,7 +19121,7 @@
         "status": "installed",
         "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:24.853Z",
+        "checkedAt": "2026-11-23T18:43:04.913Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -21176,9 +21225,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "      tar.gz/86214ae12bd815b88502a8fa513b2a38d51e5ced   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-99 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-99/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: core-js@3.51.0, tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/86214ae12bd815b88502a8fa513b2a38d51e5ced   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-99 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-99/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:54:33.504Z",
+        "checkedAt": "2026-11-23T18:48:07.679Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -23316,10 +23365,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "installed",
-        "reason": null,
+        "status": "blocked",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@1.52.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-63 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-63/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:39.732Z",
+        "checkedAt": "2026-11-23T18:45:05.000Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -23947,6 +23996,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_19db240a08f653612af5",
+      "githubRepoId": "1469088357",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_19dc53f2b3a1893c70ad",
       "githubRepoId": "1301657572",
       "packagePath": "package.json",
@@ -23955,7 +24011,7 @@
         "status": "installed",
         "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:25.586Z",
+        "checkedAt": "2026-11-23T18:39:34.138Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -24771,9 +24827,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-56 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-56/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-58 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-58/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:51:55.005Z",
+        "checkedAt": "2026-11-23T18:44:39.638Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -25645,9 +25701,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "      tar.gz/090fe27640f7da30ba776ff52469412ad9e24ad0   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-82 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-82/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@1.52.0, core-js@3.50.0, dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/ccd4db397a04d9d266a94c018ae035e66cd5aefe, protobufjs@7.6.6, tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/090fe27640f7da30ba776ff52469412ad9e24ad0   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-82 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-82/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:42.346Z",
+        "checkedAt": "2026-11-23T18:46:04.371Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -26204,9 +26260,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "      dsh-xdpool/tar.gz/ccd4db397a04d9d266a94c018ae035e66cd5aefe   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-77 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-77/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@1.52.0, @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-78 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-78/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:59.628Z",
+        "checkedAt": "2026-11-23T18:45:26.368Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -30117,6 +30173,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_20d40d494d8cecceb430",
+      "githubRepoId": "1469141776",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_20d4a5f638907dba0ce7",
       "githubRepoId": "1378138611",
       "packagePath": "package.json",
@@ -30490,6 +30553,13 @@
     {
       "pluginId": "dshp_21374f8292c521563e0b",
       "githubRepoId": "1351875431",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_2137f0bf67a6fab5b730",
+      "githubRepoId": "1469198218",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -32896,6 +32966,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_23e177e7a623684f1ba6",
+      "githubRepoId": "1469549442",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_23e47afcb0643d7258b8",
       "githubRepoId": "1341807901",
       "packagePath": "package.json",
@@ -34001,9 +34078,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           @furongjun1999/dsh-memory@https://codeload.github.com/FuRongJun-         1999/dsh-memory/tar.gz/61f8553b54547d94a2bad5535322e0ea36dcd52a: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-61 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-61/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           @furongjun1999/dsh-memory@https://codeload.github.com/FuRongJun-1999/dsh-memory/tar.gz/53b75394aa7c4a2be30adc40dfabdc7a80911b10: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-64 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-64/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:31.671Z",
+        "checkedAt": "2026-11-23T18:45:08.581Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -34584,6 +34661,13 @@
     {
       "pluginId": "dshp_25b93036d3821e61c2bb",
       "githubRepoId": "1451493047",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_25ba692f53e0e4c493e0",
+      "githubRepoId": "1469023284",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -35709,13 +35793,6 @@
       "compatibility": null
     },
     {
-      "pluginId": "dshp_26e506714bbdca34a156",
-      "githubRepoId": "1436607073",
-      "packagePath": "package.json",
-      "override": null,
-      "compatibility": null
-    },
-    {
       "pluginId": "dshp_26e628db74f4e30dc8ad",
       "githubRepoId": "1424831072",
       "packagePath": "package.json",
@@ -35770,10 +35847,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "installed",
-        "reason": null,
+        "status": "blocked",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@1.52.0, core-js@3.50.0, protobufjs@7.6.6, tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/636d0cb563bacf06ec02540f80d291eac8621542   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-92 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-92/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:58.755Z",
+        "checkedAt": "2026-11-23T18:46:55.006Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -36953,9 +37030,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-         router/tar.gz/3b1bf425a015dc9fcd89b1d239c23cae8218aab0: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-10 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-10/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           @dsh-external/dsh-super-injector@https://codeload.github.com/yjh051108/dsh-routing-suite/tar.gz/195273352f23bff7f9023ebe2ec0cdbdf9c98f10: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-10 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-10/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:44.325Z",
+        "checkedAt": "2026-11-23T18:39:47.301Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -37441,10 +37518,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "      dsh-xdpool/tar.gz/ccd4db397a04d9d266a94c018ae035e66cd5aefe   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-75 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-75/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:55.121Z",
+        "checkedAt": "2026-11-23T18:45:22.023Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -38709,6 +38786,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_29f667e57ea9cd100dc6",
+      "githubRepoId": "1469118033",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_29f7bb9309eed1de5728",
       "githubRepoId": "1209989887",
       "packagePath": "dsh-astp/package.json",
@@ -39733,6 +39817,13 @@
     {
       "pluginId": "dshp_2b04019aca117d4a2c66",
       "githubRepoId": "1344630699",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_2b057cbf5d4ceeb723c6",
+      "githubRepoId": "1467705428",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -41732,9 +41823,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-tabbit@https://codeload.github.com/Tabbit-Browser/dsh-tabbit/         tar.gz/4d256b7db3317961e3599bf2820e8b1be6e2d2be: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-94 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-94/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@1.52.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-95 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-95/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:54:03.935Z",
+        "checkedAt": "2026-11-23T18:46:56.044Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -44818,9 +44909,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-45 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-45/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-46 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-46/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:56.606Z",
+        "checkedAt": "2026-11-23T18:43:42.905Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -45094,6 +45185,13 @@
       "pluginId": "dshp_30d21d9c25fdec65a7d7",
       "githubRepoId": "1334209436",
       "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_30d257fbda04e2784855",
+      "githubRepoId": "1335128020",
+      "packagePath": "plugins/dsh-img2img-config/package.json",
       "override": null,
       "compatibility": null
     },
@@ -48926,9 +49024,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-28 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-28/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-image-gen@https://codeload.github.com/shanliuling/dsh-image-gen/tar.gz/4881f6d5a579eb20ba16be4d97866fb8c9659df3: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-28 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-28/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:06.661Z",
+        "checkedAt": "2026-11-23T18:43:01.388Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -50641,6 +50739,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_36d63e4615c47658098c",
+      "githubRepoId": "1468974123",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_36da754f3bbca38202ca",
       "githubRepoId": "1463559404",
       "packagePath": "package.json",
@@ -51248,10 +51353,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "installed",
-        "reason": null,
+        "status": "blocked",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-54 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-54/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:51:29.752Z",
+        "checkedAt": "2026-11-23T18:44:09.434Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -52242,9 +52347,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-39 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-39/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/f72b886b10edb05de757da39f7e7ad87582f2319  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-40 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-40/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:44.935Z",
+        "checkedAt": "2026-11-23T18:43:29.107Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -52585,6 +52690,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_3926363346ce9b4a6ae0",
+      "githubRepoId": "1468787586",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_392bf44d037e4f906d37",
       "githubRepoId": "1335196377",
       "packagePath": "bundle/mobile-web/package.json",
@@ -52668,9 +52780,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-qwen-studio@https://codeload.github.com/kingcharleslzy-ai/DSH-         Spicy/tar.gz/c7505df04c042eff60e54d035242b3719f46c094: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-91 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-91/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-qwen-studio@https://codeload.github.com/kingcharleslzy-ai/DSH-Spicy/tar.gz/c7505df04c042eff60e54d035242b3719f46c094: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-87 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-87/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:54.762Z",
+        "checkedAt": "2026-11-23T18:46:38.551Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -52852,6 +52964,13 @@
     {
       "pluginId": "dshp_39729ca52db39661568b",
       "githubRepoId": "1468849648",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_3972c16cc12e3b407701",
+      "githubRepoId": "1469198045",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -53389,6 +53508,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_39f41206f7e16c414670",
+      "githubRepoId": "1468788264",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_39f5f31ebb1edab6f8c5",
       "githubRepoId": "1333888566",
       "packagePath": "package.json",
@@ -53837,6 +53963,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_3a5e96b99627c471372a",
+      "githubRepoId": "1469085677",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_3a610de3491722e9f76d",
       "githubRepoId": "1335839725",
       "packagePath": "package.json",
@@ -53965,6 +54098,13 @@
     {
       "pluginId": "dshp_3a85227dc1d1aa5ade1e",
       "githubRepoId": "1442972785",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_3a85ba6b3d14ed511977",
+      "githubRepoId": "1469536701",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -57686,9 +57826,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-85 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-85/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/9ffe0a60e91481252c58d5a35e6874950d3eab67  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-86 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-86/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:44.106Z",
+        "checkedAt": "2026-11-23T18:46:37.128Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -59861,10 +60001,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "        allowBuilds:           dsh-blender-plugin@https://codeload.github.com/sixtysevenlf/dsh-         blender-plugin/tar.gz/6c5614712972a5cbca52b13d4df9193d76e76b0d: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-24 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-24/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:49:28.690Z",
+        "checkedAt": "2026-11-23T18:42:23.759Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -61809,7 +61949,7 @@
         "status": "installed",
         "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:15.799Z",
+        "checkedAt": "2026-11-23T18:39:22.642Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -62340,7 +62480,7 @@
         "status": "installed",
         "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:04.258Z",
+        "checkedAt": "2026-11-23T18:42:58.333Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -67111,9 +67251,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-59 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-59/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-60 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-60/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:13.705Z",
+        "checkedAt": "2026-11-23T18:44:51.653Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -67771,6 +67911,13 @@
     {
       "pluginId": "dshp_499e1537c09603275670",
       "githubRepoId": "1385903666",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_499efe065e2d133be2ca",
+      "githubRepoId": "1469515439",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -68517,9 +68664,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "          dsh-plugin-subscriptions@https://codeload.github.com/V1ki/dsh-         plugin-subscriptions/tar.gz/c58464c92f86b03ca99e2706d5573f1db8bcf4fb:         true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-72 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-72/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-plugin-subscriptions@https://codeload.github.com/V1ki/dsh-plugin-subscriptions/tar.gz/093569c2b0e88eee14488f6d72d631dbdbeb9753: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-73 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-73/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:03.230Z",
+        "checkedAt": "2026-11-23T18:45:17.490Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -68641,10 +68788,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "installed",
-        "reason": null,
+        "status": "blocked",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-56 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-56/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:51:59.755Z",
+        "checkedAt": "2026-11-23T18:44:21.557Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -70755,9 +70902,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-88 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-88/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           @mars-sea/dsh-commandcode-provider@https://codeload.github.com/Mars-Sea/dsh-commandcode-provider/tar.gz/b6f7578492bf8b4e20e3575ab9b71cc90c4dff69: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-90 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-90/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:47.930Z",
+        "checkedAt": "2026-11-23T18:46:44.153Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -72841,6 +72988,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_4f1010576e58925c5bb0",
+      "githubRepoId": "1466861588",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_4f118b2be424c65b4c9f",
       "githubRepoId": "1334189917",
       "packagePath": "package.json",
@@ -73323,9 +73477,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "      ssh2@1.17.0   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-5 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-5/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: cloudflared@0.7.3, cpu-features@0.0.10, ssh2@1.17.0   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-5 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-5/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:49:14.335Z",
+        "checkedAt": "2026-11-23T18:40:28.912Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -74203,10 +74357,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "        allowBuilds:           dsh-tabbit@https://codeload.github.com/Tabbit-Browser/dsh-tabbit/         tar.gz/4d256b7db3317961e3599bf2820e8b1be6e2d2be: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-89 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-89/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:50.785Z",
+        "checkedAt": "2026-11-23T18:46:48.372Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -74759,6 +74913,13 @@
     {
       "pluginId": "dshp_511fa6e6f932cca6e43d",
       "githubRepoId": "1338036899",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_512167c438d06a805705",
+      "githubRepoId": "1463775515",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -79347,10 +79508,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "installed",
-        "reason": null,
+        "status": "blocked",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4c3369a945701598275dcabbe958b7b815570ed5  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-29 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-29/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:19.143Z",
+        "checkedAt": "2026-11-23T18:43:02.567Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -79391,7 +79552,7 @@
         "status": "installed",
         "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:51:04.950Z",
+        "checkedAt": "2026-11-23T18:43:48.478Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -80053,15 +80214,22 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-86 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-86/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/shuguang1994/project-blueprint/tar.gz/26588c08ab37f02d4c3440ef0b7b1929351cddb6  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-88 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-88/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:46.152Z",
+        "checkedAt": "2026-11-23T18:46:40.573Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
     {
       "pluginId": "dshp_56eff5320e70fe49c2e6",
       "githubRepoId": "1463778469",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_56f07c9a4805545cfd6e",
+      "githubRepoId": "1468941961",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -80573,6 +80741,13 @@
     {
       "pluginId": "dshp_5773962eb87f75cbc7a5",
       "githubRepoId": "1459739011",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_5773b03c8aabc538b3f8",
+      "githubRepoId": "1469114013",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -82356,6 +82531,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_5974621f896ecaf5d020",
+      "githubRepoId": "1468787789",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_5975e957c73d61f043aa",
       "githubRepoId": "1333676289",
       "packagePath": "package.json",
@@ -82711,10 +82893,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "        allowBuilds:           @changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-         genui/tar.gz/a5c4232c9ea0caac118c388ed1b519e407bbd71b: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-20 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-20/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:49:19.447Z",
+        "checkedAt": "2026-11-23T18:42:20.858Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -82868,6 +83050,13 @@
     {
       "pluginId": "dshp_5a04e035d5a2b62e12f4",
       "githubRepoId": "1376940260",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_5a04f7f3e52bb163297f",
+      "githubRepoId": "1469502246",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -84565,10 +84754,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@1.52.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-64 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-64/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:36.991Z",
+        "checkedAt": "2026-11-23T18:45:08.104Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -84876,6 +85065,13 @@
     {
       "pluginId": "dshp_5c1c88b9f33062fda7bc",
       "githubRepoId": "1453588522",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_5c1c974d3622774e546c",
+      "githubRepoId": "1469495568",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -85244,9 +85440,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-84 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-84/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/bfbd8601903c47db06d87d3086d364e9c0abb0dd  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-85 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-85/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:44.018Z",
+        "checkedAt": "2026-11-23T18:46:36.175Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -85846,13 +86042,6 @@
       "compatibility": null
     },
     {
-      "pluginId": "dshp_5d394178bed4430cc513",
-      "githubRepoId": "1448391594",
-      "packagePath": "package.json",
-      "override": null,
-      "compatibility": null
-    },
-    {
       "pluginId": "dshp_5d39acc0811bf5f1c6cc",
       "githubRepoId": "1450740592",
       "packagePath": "package.json",
@@ -85902,6 +86091,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_5d498cc147925951e41b",
+      "githubRepoId": "1468109337",
+      "packagePath": "dsh-web/package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_5d4c37d9c9752b18aa5b",
       "githubRepoId": "1335194093",
       "packagePath": "package.json",
@@ -85911,6 +86107,13 @@
     {
       "pluginId": "dshp_5d4fcd14a3f9e3e27bee",
       "githubRepoId": "1341055942",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_5d51542a77cffb52ad15",
+      "githubRepoId": "1469001525",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -86574,6 +86777,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_5e259a44c39babcad0b5",
+      "githubRepoId": "1468788152",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_5e2a0307571b88246e9a",
       "githubRepoId": "1451417473",
       "packagePath": "package.json",
@@ -86657,9 +86867,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "      tar.gz/636d0cb563bacf06ec02540f80d291eac8621542   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-92 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-92/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/9ffe0a60e91481252c58d5a35e6874950d3eab67  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-93 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-93/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:54:05.280Z",
+        "checkedAt": "2026-11-23T18:46:51.144Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -87372,7 +87582,7 @@
         "status": "installed",
         "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:49:33.037Z",
+        "checkedAt": "2026-11-23T18:42:29.735Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -88091,6 +88301,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_5ff4c2a37c75f2a78a9c",
+      "githubRepoId": "1468787694",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_5ff663f203b5b32a8baa",
       "githubRepoId": "1443771732",
       "packagePath": "package.json",
@@ -88650,9 +88867,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-93 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-93/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-wechat-workspace@https://codeload.github.com/xcisxc29/dsh-wechat/tar.gz/5513f99fed697db75e7f8f0e1f56f0b4d2be8e1a: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-94 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-94/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:54:00.431Z",
+        "checkedAt": "2026-11-23T18:46:52.398Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -89000,6 +89217,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_60f8584e1e5d40c9c28e",
+      "githubRepoId": "1468964981",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_60fc2ed74795b329e379",
       "githubRepoId": "1437150065",
       "packagePath": "package.json",
@@ -89107,6 +89331,13 @@
     {
       "pluginId": "dshp_611a37b7950dedb19d02",
       "githubRepoId": "1344414677",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_611d0e7fd64fc98e08ed",
+      "githubRepoId": "1469198370",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -92381,6 +92612,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_6502c77573c4fe7898e3",
+      "githubRepoId": "1468916402",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_650355dba5cb89aedd9b",
       "githubRepoId": "1356064516",
       "packagePath": "package.json",
@@ -92773,6 +93011,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_657a82507912e209e1ed",
+      "githubRepoId": "1464407142",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_657bfc3aca98a76447bb",
       "githubRepoId": "1372601127",
       "packagePath": "package.json",
@@ -92873,6 +93118,13 @@
     {
       "pluginId": "dshp_65943409bc2d214abf82",
       "githubRepoId": "1468732672",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_6595a9b9e4f6d181aa23",
+      "githubRepoId": "1469202983",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -93049,6 +93301,13 @@
       "pluginId": "dshp_65cdf93e464a622d3cfa",
       "githubRepoId": "1334303936",
       "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_65cfc6346c82c60d186e",
+      "githubRepoId": "1442101061",
+      "packagePath": "skeleton/package.json",
       "override": null,
       "compatibility": null
     },
@@ -95146,6 +95405,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_6811188464a1c28b2856",
+      "githubRepoId": "1469176827",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_681739fc98b532a88efb",
       "githubRepoId": "1467483474",
       "packagePath": "package.json",
@@ -96440,9 +96706,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        local metadata cache), run `pnpm install --update-checksums`.         Otherwise treat this as a potential supply-chain issue and verify the         new content first.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-50 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-50/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-52 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-52/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:19.759Z",
+        "checkedAt": "2026-11-23T18:44:02.742Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -99065,6 +99331,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_6c429906ab32158dc228",
+      "githubRepoId": "1469106521",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_6c42fa94cf8bb3e91d55",
       "githubRepoId": "1362381214",
       "packagePath": "examples/starter/package.json",
@@ -100087,6 +100360,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_6d4d2fb1769b9320f308",
+      "githubRepoId": "1469120657",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_6d4f49c110997f414616",
       "githubRepoId": "1336916713",
       "packagePath": "plugins/desktop-experience/package.json",
@@ -100191,9 +100471,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-68 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-68/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/d519514ebbd4cc1c4199d524d1b4704f9d95e028  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-69 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-69/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:43.893Z",
+        "checkedAt": "2026-11-23T18:45:16.093Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -102878,9 +103158,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@1.52.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-95 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-95/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@1.52.0, core-js@3.51.0, protobufjs@7.6.6, tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/090fe27640f7da30ba776ff52469412ad9e24ad0   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-96 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-96/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:54:08.576Z",
+        "checkedAt": "2026-11-23T18:46:58.596Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -102919,9 +103199,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-73 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-73/pnpm-workspace.yaml, then re-run",
+        "reason": "      \tWanted: sha512-sBp0ZIabf8rKWuHGkUVog7/i0Rn8EI2C8OydiQCzHej34Z0v/Xv/fFga39h8SZLYibjFiombTBHsYRQaYFL1PA==       \tActual: sha512-xMmGEUCyxKi5Li6QLEKGNTBO85/GFjLKCYKY4vdJJZ2pBq/YSjRIRVG2hPy/3P3Jabf2CNTjGZ54YkpyDydnlg==   help: The downloaded tarball does not match the integrity recorded in the lockfile. If you trust the new content (legitimate republish, or stale local metadata cache), run `pnpm install --update-checksums`. Otherwise treat this as a potential supply-chain issue and verify the new content first.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-74 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-74/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:49.248Z",
+        "checkedAt": "2026-11-23T18:46:33.655Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -105010,10 +105290,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-52 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-52/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:51:26.133Z",
+        "checkedAt": "2026-11-23T18:44:05.761Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -105853,6 +106133,13 @@
     {
       "pluginId": "dshp_732c871e0bef2ba3e703",
       "githubRepoId": "1441992709",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_732d85481d28d959d41e",
+      "githubRepoId": "1468832847",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -108924,6 +109211,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_76b66fd84203d5607193",
+      "githubRepoId": "1468920977",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_76b9ec614e5349a9f12a",
       "githubRepoId": "1348039004",
       "packagePath": "package.json",
@@ -111555,9 +111849,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@1.52.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-66 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-66/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/bfbd8601903c47db06d87d3086d364e9c0abb0dd  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-67 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-67/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:40.230Z",
+        "checkedAt": "2026-11-23T18:45:09.424Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -111793,6 +112087,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_7a0a9a092e04d6654cfc",
+      "githubRepoId": "1466819265",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_7a0e794636dad3387ad3",
       "githubRepoId": "1450353343",
       "packagePath": "package.json",
@@ -111907,6 +112208,13 @@
     {
       "pluginId": "dshp_7a31224ade8ba8a20bbc",
       "githubRepoId": "1431912880",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_7a349018864d00fdc3af",
+      "githubRepoId": "1469235329",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -113156,10 +113464,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "installed",
-        "reason": null,
+        "status": "blocked",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-56 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-56/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:51:59.755Z",
+        "checkedAt": "2026-11-23T18:44:21.557Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -117658,6 +117966,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_80506fbbdb52bcaea9fa",
+      "githubRepoId": "1440991530",
+      "packagePath": "packages/dsh-tacz-gunpack/package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_8050f421073591e9da1a",
       "githubRepoId": "1420473376",
       "packagePath": "package.json",
@@ -117763,13 +118078,6 @@
       "compatibility": null
     },
     {
-      "pluginId": "dshp_8063fa73a44a099a98cf",
-      "githubRepoId": "1449880026",
-      "packagePath": "package.json",
-      "override": null,
-      "compatibility": null
-    },
-    {
       "pluginId": "dshp_8064fb24cbf159b1f7ed",
       "githubRepoId": "1408438901",
       "packagePath": "package.json",
@@ -117864,6 +118172,13 @@
       "pluginId": "dshp_8079d6143b4a8c8f66de",
       "githubRepoId": "1428422432",
       "packagePath": "plugins/dsh-session-done-notify/package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_807a149e392e3795156a",
+      "githubRepoId": "1469045473",
+      "packagePath": "package.json",
       "override": null,
       "compatibility": null
     },
@@ -118385,9 +118700,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-33 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-33/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           @yunmiao/studymate@https://codeload.github.com/Miaotofu01/Study-Mate/tar.gz/69e0884b0d88f26648a95de7d05bacdfa3f46517: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-33 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-33/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:23.969Z",
+        "checkedAt": "2026-11-23T18:43:16.503Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -119796,7 +120111,13 @@
       "githubRepoId": "1441494479",
       "packagePath": "package.json",
       "override": null,
-      "compatibility": null
+      "compatibility": {
+        "status": "blocked",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           @minglink/dsh-jailbreak-workflow@https://codeload.github.com/Minglink/dsh-jailbreak-workflow/tar.gz/52727fe91581b7d0e9df6267981fc3ea15074970: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-39 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-39/pnpm-workspace.yaml, then re-run",
+        "dshVersion": "0.1.0-rc.6",
+        "checkedAt": "2026-11-23T18:43:29.502Z",
+        "sourceScope": "legacy-repo-root-only"
+      }
     },
     {
       "pluginId": "dshp_82760f926fb699e180fe",
@@ -120042,10 +120363,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-29 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-29/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:09.408Z",
+        "checkedAt": "2026-11-23T18:43:15.047Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -121338,6 +121659,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_83eafa7c10d4251b0f92",
+      "githubRepoId": "1452634951",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_83eafb98bb6b6514dca5",
       "githubRepoId": "1346951164",
       "packagePath": "packages/dsh-rose-dream/package.json",
@@ -122127,10 +122455,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "        allowBuilds:           dsh-context@https://codeload.github.com/bowenliang123/dsh-context/         tar.gz/a69afd380adfe04009e54aed710d2fe523c3982f: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-35 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-35/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:28.141Z",
+        "checkedAt": "2026-11-23T18:43:18.659Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -122999,6 +123327,13 @@
       "pluginId": "dshp_85a00e5fbed7d8bc646a",
       "githubRepoId": "1411376160",
       "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_85a1d605d52bd036a8a1",
+      "githubRepoId": "1436590854",
+      "packagePath": "packages/dsh-plugin-aitoearn/package.json",
       "override": null,
       "compatibility": null
     },
@@ -124916,6 +125251,13 @@
     {
       "pluginId": "dshp_8776c36271baad3f622d",
       "githubRepoId": "1407229594",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_877bd8e63d03a6027b44",
+      "githubRepoId": "1469149410",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -129197,9 +129539,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-43 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-43/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-45 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-45/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:48.913Z",
+        "checkedAt": "2026-11-23T18:43:39.878Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -129455,9 +129797,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-67 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-67/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/9ffe0a60e91481252c58d5a35e6874950d3eab67  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-68 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-68/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:41.154Z",
+        "checkedAt": "2026-11-23T18:45:10.223Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -131205,6 +131547,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_8ed7544d388955979933",
+      "githubRepoId": "1469537517",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_8ed8ed60b43c4b293a48",
       "githubRepoId": "1439836891",
       "packagePath": "package.json",
@@ -131732,6 +132081,13 @@
     {
       "pluginId": "dshp_8f896d23b26527fc557c",
       "githubRepoId": "1468547180",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_8f8ba3216044806843fa",
+      "githubRepoId": "1463141167",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -132575,10 +132931,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "          @dsh-external/dsh-super-injector@https://codeload.github.com/         yjh051108/dsh-super-injector/tar.gz/         e2fca6e2dc5d926bb33fbd1376780bb5e93f4974: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-31 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-31/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:22.249Z",
+        "checkedAt": "2026-11-23T18:43:15.275Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -134255,9 +134611,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-71 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-71/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           managed-agents@https://codeload.github.com/sandbaseai/sandbase-harness/tar.gz/58d48004631a432ef98278f6ec688afc3b58ca36: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-72 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-72/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:45.759Z",
+        "checkedAt": "2026-11-23T18:45:18.927Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -135130,6 +135486,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_93569b8301c5153ee6bf",
+      "githubRepoId": "1469086863",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_935805f9b28d5561d0ef",
       "githubRepoId": "1465642427",
       "packagePath": "package.json",
@@ -135708,13 +136071,7 @@
       "githubRepoId": "1333986968",
       "packagePath": "package.json",
       "override": null,
-      "compatibility": {
-        "status": "blocked",
-        "reason": "        allowBuilds:           meow-memory@https://codeload.github.com/Phant0Meow/dsh-meow-memory/         tar.gz/9203521665c4101bd8c36720da9054e249dded18: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-97 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-97/pnpm-workspace.yaml, then re-run",
-        "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:54:23.159Z",
-        "sourceScope": "legacy-repo-root-only"
-      }
+      "compatibility": null
     },
     {
       "pluginId": "dshp_93ee8a60e138aa2ee4e6",
@@ -139993,9 +140350,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-synapse@https://codeload.github.com/liangmianya/dsh-synapse/         tar.gz/a861d03e2c22eef202d99dfe738a41f832378edc: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-60 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-60/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-synapse@https://codeload.github.com/liangmianya/dsh-synapse/tar.gz/e809baa27ef078b7642948e773ad6423b1efc9a1: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-62 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-62/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:18.285Z",
+        "checkedAt": "2026-11-23T18:44:53.986Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -142442,9 +142799,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-44 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-44/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-44 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-44/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:52.452Z",
+        "checkedAt": "2026-11-23T18:43:36.453Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -143170,6 +143527,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_9c18d8c0e090b1bcb2d0",
+      "githubRepoId": "1464896320",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_9c1d361e792bfbb342fe",
       "githubRepoId": "1457442779",
       "packagePath": "dsh-session-open/package.json",
@@ -143414,9 +143778,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-40 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-40/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/4edcc0f353625779a351c97c679b73c2c3a6b5d8  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-41 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-41/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:42.036Z",
+        "checkedAt": "2026-11-23T18:43:31.242Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -144672,10 +145036,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "        allowBuilds:           dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-         router/tar.gz/3b1bf425a015dc9fcd89b1d239c23cae8218aab0: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-11 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-11/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:47.135Z",
+        "checkedAt": "2026-11-23T18:39:49.649Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -146408,9 +146772,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "      protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-78 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-78/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/ccd4db397a04d9d266a94c018ae035e66cd5aefe   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-77 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-77/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:05.124Z",
+        "checkedAt": "2026-11-23T18:45:23.039Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -149319,9 +149683,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           @changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-         genui/tar.gz/a5c4232c9ea0caac118c388ed1b519e407bbd71b: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-16 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-16/pnpm-workspace.yaml, then re-run",
+        "reason": "      \tWanted: sha512-a8lYP7JjQe4sNWmoSFPrYNF8MMqIjwO5tV44JU/6D1K7sgA4KROeKicTIYM7z3k9RT3qp6ZuCcwmU6V9onwfZA==       \tActual: sha512-SJKM2NEeE0I1pDnKgfhbW2qOS7IuK+4ua/5lf+xCmGBLhUVLw9PoHBvV40Ui/YGtuwbsxEPZCUy4r0eKoNDuMA==   help: The downloaded tarball does not match the integrity recorded in the lockfile. If you trust the new content (legitimate republish, or stale local metadata cache), run `pnpm install --update-checksums`. Otherwise treat this as a potential supply-chain issue and verify the new content first.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-16 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-16/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:49:04.834Z",
+        "checkedAt": "2026-11-23T18:41:48.922Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -149487,6 +149851,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_a2d2e9be5fb1921b5c68",
+      "githubRepoId": "1468788361",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_a2d4061591fae9e003b3",
       "githubRepoId": "1453493184",
       "packagePath": "package.json",
@@ -149591,9 +149962,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-         router/tar.gz/3b1bf425a015dc9fcd89b1d239c23cae8218aab0: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-37 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-37/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/d5eae7cc65b7cb98609a55d1dac003f86f3897e4: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-38 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-38/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:31.477Z",
+        "checkedAt": "2026-11-23T18:43:26.362Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -150822,9 +151193,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           @changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-         genui/tar.gz/a5c4232c9ea0caac118c388ed1b519e407bbd71b: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-22 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-22/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-blender-plugin@https://codeload.github.com/sixtysevenlf/dsh-blender-plugin/tar.gz/6c5614712972a5cbca52b13d4df9193d76e76b0d: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-23 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-23/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:49:24.435Z",
+        "checkedAt": "2026-11-23T18:42:24.894Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -152216,7 +152587,7 @@
         "status": "installed",
         "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:49:16.727Z",
+        "checkedAt": "2026-11-23T18:42:18.581Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -152279,6 +152650,13 @@
     {
       "pluginId": "dshp_a5eb94e1e65da570fbe1",
       "githubRepoId": "1439400709",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_a5ebea2251d417127880",
+      "githubRepoId": "1467235995",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -152397,7 +152775,7 @@
         "status": "installed",
         "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:51:11.653Z",
+        "checkedAt": "2026-11-23T18:43:56.603Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -152839,6 +153217,13 @@
       "pluginId": "dshp_a68e849e2f7ef7a777d2",
       "githubRepoId": "1342522651",
       "packagePath": "flow-track/package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_a690cd1c08fa65c9d636",
+      "githubRepoId": "1341118615",
+      "packagePath": "package.json",
       "override": null,
       "compatibility": null
     },
@@ -154120,6 +154505,13 @@
       "pluginId": "dshp_a7cec5df08914db0a6fc",
       "githubRepoId": "1349520101",
       "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_a7d0c38f3c46b4d69a96",
+      "githubRepoId": "1456379441",
+      "packagePath": "packages/bundle/package.json",
       "override": null,
       "compatibility": null
     },
@@ -155425,9 +155817,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@1.52.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-63 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-63/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-59 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-59/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:36.923Z",
+        "checkedAt": "2026-11-23T18:44:48.048Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -155641,9 +156033,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "          dsh-connect-workbuddy@https://codeload.github.com/dingminhua/dsh-         connect-workbuddy/tar.gz/8f83b03e27f7fb82b6918aa6d109d2bc9d5c9d92:         true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-26 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-26/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-connect-workbuddy@https://codeload.github.com/dingminhua/dsh-connect-workbuddy/tar.gz/9a870c573b1b8604448fd33f1ea18a4bb37a5c5b: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-26 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-26/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:49:47.674Z",
+        "checkedAt": "2026-11-23T18:42:31.684Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -157060,10 +157452,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "        allowBuilds:           dsh-context@https://codeload.github.com/bowenliang123/dsh-context/         tar.gz/a69afd380adfe04009e54aed710d2fe523c3982f: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-8 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-8/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:36.816Z",
+        "checkedAt": "2026-11-23T18:39:43.355Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -158187,9 +158579,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-3 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-3/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dshmarket@https://codeload.github.com/dsh-market/dsh-market/tar.gz/ed2acb5caf10f1acd598b2faee263a1393a8d9ae: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-3 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-3/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:17.881Z",
+        "checkedAt": "2026-11-23T18:39:25.165Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -159026,9 +159418,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "      dsh-xdpool/tar.gz/ccd4db397a04d9d266a94c018ae035e66cd5aefe   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-87 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-87/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: esbuild@0.25.12   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-89 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-89/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:51.651Z",
+        "checkedAt": "2026-11-23T18:46:42.425Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -162043,8 +162435,8 @@
       "compatibility": null
     },
     {
-      "pluginId": "dshp_b08358f4a37d2c578c63",
-      "githubRepoId": "1339385039",
+      "pluginId": "dshp_b0874095d0a81d0d3a10",
+      "githubRepoId": "1469545226",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -162140,9 +162532,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-81 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-81/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@1.52.0, core-js@3.50.0, dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/ccd4db397a04d9d266a94c018ae035e66cd5aefe, protobufjs@7.6.6, tydora@https://codeload.github.com/zuorn/Tydora/tar.gz/33078c4184d1931d6a735488f88315ef7b37806f   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-83 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-83/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:07.301Z",
+        "checkedAt": "2026-11-23T18:46:42.463Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -162303,6 +162695,13 @@
     {
       "pluginId": "dshp_b0d0802263804980abf2",
       "githubRepoId": "1349426066",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_b0d35494f781abdea887",
+      "githubRepoId": "1469269375",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -163001,6 +163400,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_b19535ed44101a7ebeec",
+      "githubRepoId": "1465383177",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_b195360fa647b35a0d7b",
       "githubRepoId": "1425289803",
       "packagePath": "package.json",
@@ -163232,9 +163638,9 @@
       },
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-80 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-80/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/9ffe0a60e91481252c58d5a35e6874950d3eab67  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-81 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-81/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:06.606Z",
+        "checkedAt": "2026-11-23T18:45:30.247Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -163298,6 +163704,13 @@
       "pluginId": "dshp_b1d8e3aa18739455117a",
       "githubRepoId": "1431560616",
       "packagePath": "plugins/dsh-memory/package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_b1ddc69dba0ab161dd27",
+      "githubRepoId": "1468994584",
+      "packagePath": "package.json",
       "override": null,
       "compatibility": null
     },
@@ -164659,9 +165072,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-context@https://codeload.github.com/bowenliang123/dsh-context/         tar.gz/a69afd380adfe04009e54aed710d2fe523c3982f: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-14 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-14/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-context@https://codeload.github.com/bowenliang123/dsh-context/tar.gz/79a999e78aa3c65b8c3e257380cc04bd09fdd61d: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-14 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-14/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:58.757Z",
+        "checkedAt": "2026-11-23T18:40:35.564Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -166241,6 +166654,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_b5096429fec5dac5b2e4",
+      "githubRepoId": "1461549964",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_b509706e80e1d6c470f5",
       "githubRepoId": "1441462119",
       "packagePath": "package.json",
@@ -167088,6 +167508,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_b601450fe0d39a4f2a29",
+      "githubRepoId": "1468989997",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_b603568aab881b90f09f",
       "githubRepoId": "1433640428",
       "packagePath": "package.json",
@@ -167364,6 +167791,13 @@
       "pluginId": "dshp_b65516c84e6ff97fcafc",
       "githubRepoId": "1366089972",
       "packagePath": "workspace/plugins/dsh-cortex/package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_b65555038de34de97f4b",
+      "githubRepoId": "1469538116",
+      "packagePath": "package.json",
       "override": null,
       "compatibility": null
     },
@@ -169398,6 +169832,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_b889e1bb436dae7bf467",
+      "githubRepoId": "1469581780",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_b88be17ad0a63dbd2aa5",
       "githubRepoId": "1431740170",
       "packagePath": "package.json",
@@ -170355,10 +170796,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-69 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-69/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:42.860Z",
+        "checkedAt": "2026-11-23T18:45:15.504Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -170883,6 +171324,13 @@
     {
       "pluginId": "dshp_ba014b23100cd9302727",
       "githubRepoId": "1354298210",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_ba015d7f28a22688f1a9",
+      "githubRepoId": "1469188197",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -172849,20 +173297,13 @@
         "status": "installed",
         "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:40.133Z",
+        "checkedAt": "2026-11-23T18:43:26.956Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
     {
       "pluginId": "dshp_bc583fbf0e2a4b05037c",
       "githubRepoId": "1427161972",
-      "packagePath": "package.json",
-      "override": null,
-      "compatibility": null
-    },
-    {
-      "pluginId": "dshp_bc5c7b746ae9357e00d2",
-      "githubRepoId": "1354259593",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -174168,10 +174609,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "installed",
-        "reason": null,
+        "status": "blocked",
+        "reason": "      \tWanted: sha512-zKbRqbueNg2vcL2ZsYuZqQTxr7RJzOak1ik4q/Y8FkvuDTckzmPum2+1mknasP5oQTzXFwBwXOrjCcPevnCzkA==       \tActual: sha512-wvazSaoVdzBDKXSqdSv7RIEdDvP/EG5KeHX4bbTx+rrVWUMjBA0zKWY1Iuc2Sc8JccmdIgvJaou2pvQheOsKuQ==   help: The downloaded tarball does not match the integrity recorded in the lockfile. If you trust the new content (legitimate republish, or stale local metadata cache), run `pnpm install --update-checksums`. Otherwise treat this as a potential supply-chain issue and verify the new content first.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-50 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-50/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:51:21.117Z",
+        "checkedAt": "2026-11-23T18:45:01.531Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -174917,9 +175358,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "      tar.gz/33078c4184d1931d6a735488f88315ef7b37806f   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-83 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-83/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/bfbd8601903c47db06d87d3086d364e9c0abb0dd  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-84 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-84/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:53:42.423Z",
+        "checkedAt": "2026-11-23T18:46:34.845Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -175227,6 +175668,13 @@
     {
       "pluginId": "dshp_bef5e6b1c76c24239766",
       "githubRepoId": "1446981415",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_bef7521bb37555f3a138",
+      "githubRepoId": "1469014268",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -178529,6 +178977,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_c265ea03192ef740d113",
+      "githubRepoId": "1468767097",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_c266a5cab41be50ccbb0",
       "githubRepoId": "1452670777",
       "packagePath": "plugin/package.json",
@@ -181560,6 +182015,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_c595eb13cf2cddfeeabc",
+      "githubRepoId": "1458721080",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_c595f60bc6a1bdb11346",
       "githubRepoId": "1424984712",
       "packagePath": "package.json",
@@ -182134,6 +182596,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_c622d51faa4925093ee9",
+      "githubRepoId": "1467740905",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_c62724cbf0c76e0ab86b",
       "githubRepoId": "1333708285",
       "packagePath": "package.json",
@@ -182388,6 +182857,13 @@
     {
       "pluginId": "dshp_c67af9d5b842e650cbbd",
       "githubRepoId": "1336929609",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_c67ce3107c7a0cf47ee1",
+      "githubRepoId": "1469574841",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -183716,6 +184192,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_c7edfcb655c28d74c10c",
+      "githubRepoId": "1469321841",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_c7ef1281379323fc144a",
       "githubRepoId": "1445426081",
       "packagePath": "package.json",
@@ -183764,9 +184247,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-ops@https://codeload.github.com/T-Auto/dsh-ops/tar.gz/         bfdfdf68765f8bdd04914df0cade49de21913746: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-12 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-12/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-ops@https://codeload.github.com/T-Auto/dsh-ops/tar.gz/bfdfdf68765f8bdd04914df0cade49de21913746: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-12 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-12/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:49.813Z",
+        "checkedAt": "2026-11-23T18:39:51.192Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -183919,7 +184402,7 @@
         "status": "installed",
         "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:51:52.694Z",
+        "checkedAt": "2026-11-23T18:44:34.485Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -184602,9 +185085,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        local metadata cache), run `pnpm install --update-checksums`.         Otherwise treat this as a potential supply-chain issue and verify the         new content first.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-18 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-18/pnpm-workspace.yaml, then re-run",
+        "reason": "      \tWanted: sha512-a8lYP7JjQe4sNWmoSFPrYNF8MMqIjwO5tV44JU/6D1K7sgA4KROeKicTIYM7z3k9RT3qp6ZuCcwmU6V9onwfZA==       \tActual: sha512-SJKM2NEeE0I1pDnKgfhbW2qOS7IuK+4ua/5lf+xCmGBLhUVLw9PoHBvV40Ui/YGtuwbsxEPZCUy4r0eKoNDuMA==   help: The downloaded tarball does not match the integrity recorded in the lockfile. If you trust the new content (legitimate republish, or stale local metadata cache), run `pnpm install --update-checksums`. Otherwise treat this as a potential supply-chain issue and verify the new content first.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-18 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-18/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:21.915Z",
+        "checkedAt": "2026-11-23T18:43:01.666Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -185539,9 +186022,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "  × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/       YuJunZhiXue/dsh-purge/tar.gz/217d60d3d61881079ea95bbe2c174f338a02182b  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-1 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-1/pnpm-workspace.yaml, then re-run",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/YuJunZhiXue/dsh-purge/tar.gz/217d60d3d61881079ea95bbe2c174f338a02182b  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-1 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-1/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:14.548Z",
+        "checkedAt": "2026-11-23T18:39:22.434Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -185798,6 +186281,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_ca1702fc28265702aa36",
+      "githubRepoId": "1440897973",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_ca19bec68b1abc765540",
       "githubRepoId": "1425707346",
       "packagePath": "package.json",
@@ -186042,9 +186532,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-plugin-goecs@https://codeload.github.com/oneclickvirt/ecs/         tar.gz/af06ee83636dcd3b591fa14410a569916756cbaa: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-21 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-21/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-plugin-goecs@https://codeload.github.com/oneclickvirt/ecs/tar.gz/af06ee83636dcd3b591fa14410a569916756cbaa: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-21 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-21/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:49:22.086Z",
+        "checkedAt": "2026-11-23T18:42:21.632Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -188261,6 +188751,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_ccde01fe53b986ada695",
+      "githubRepoId": "1468787973",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_ccdf6f0a3f53caca7210",
       "githubRepoId": "1342522651",
       "packagePath": "session-title-cutoff/package.json",
@@ -188486,7 +188983,7 @@
         "status": "installed",
         "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:26.993Z",
+        "checkedAt": "2026-11-23T18:43:17.403Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -190829,6 +191326,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_cf93adc0347636fb4fa9",
+      "githubRepoId": "1468788075",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_cf9685e76ad2de4a7ffa",
       "githubRepoId": "1368214985",
       "packagePath": "package.json",
@@ -192004,9 +192508,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           managed-agents@https://codeload.github.com/sandbaseai/sandbase-         harness/tar.gz/58d48004631a432ef98278f6ec688afc3b58ca36: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-13 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-13/pnpm-workspace.yaml, then re-run",
+        "reason": "      \tWanted: sha512-4DfHFQUrqrFswZdX0CtY7AJewS4H9L3Kqjrn8AZRo7VduuHd4a7yXyWJZUUG013ec8yRqVwktFTVHsrKPT/QpQ==       \tActual: sha512-fswzRFb2SYituOUsS34/x+xmKXJCAXX4M5nAZMLiZ7WjFbKWrlKGpr3ZhEK/+xr+yFIU75uhdUtium9+6DBvCg==   help: The downloaded tarball does not match the integrity recorded in the lockfile. If you trust the new content (legitimate republish, or stale local metadata cache), run `pnpm install --update-checksums`. Otherwise treat this as a potential supply-chain issue and verify the new content first.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-13 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-13/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:52.520Z",
+        "checkedAt": "2026-11-23T18:41:02.276Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -192934,9 +193438,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "      tar.gz/090fe27640f7da30ba776ff52469412ad9e24ad0   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-96 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-96/pnpm-workspace.yaml, then re-run",
+        "reason": "      \tWanted: sha512-o5wR/i65Lr65ZYUy0lYk2XOZxSq/3v5d2K9yjzT6hgKYBywKCdJEbdZEi5hOv/7dygzmNfVQh4sgrQ1S+c5+uw==       \tActual: sha512-mHp65oamcP64GW9xMdbN1yei7+ugOAnwqfKCDtq8vDsxaROq5WWujP8D5kmpPUH0o1UGIvLrLZqQUj+FHeDJjA==   help: The downloaded tarball does not match the integrity recorded in the lockfile. If you trust the new content (legitimate republish, or stale local metadata cache), run `pnpm install --update-checksums`. Otherwise treat this as a potential supply-chain issue and verify the new content first.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-98 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-98/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:54:09.775Z",
+        "checkedAt": "2026-11-23T18:48:09.680Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -194696,10 +195200,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "installed",
-        "reason": null,
+        "status": "blocked",
+        "reason": "   × adding a new package   ╰─▶ Tarball server returned HTTP 404 for https://codeload.github.com/RevolutionLA/dsh-dream-skin/tar.gz/9ffe0a60e91481252c58d5a35e6874950d3eab67  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-71 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-71/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:46.097Z",
+        "checkedAt": "2026-11-23T18:45:16.409Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -195081,9 +195585,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-tabbit@https://codeload.github.com/Tabbit-Browser/dsh-plugin/         tar.gz/4d256b7db3317961e3599bf2820e8b1be6e2d2be: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-74 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-74/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: dsh-xdpool@https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/ccd4db397a04d9d266a94c018ae035e66cd5aefe   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-75 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-75/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:52:51.962Z",
+        "checkedAt": "2026-11-23T18:45:20.581Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -196217,6 +196721,13 @@
     {
       "pluginId": "dshp_d5a04fd5e74f14662c2a",
       "githubRepoId": "1337937395",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_d5a344f9d119a1d2c9e9",
+      "githubRepoId": "1460866006",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -198924,6 +199435,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_d89bcb8eaa227313c83e",
+      "githubRepoId": "1469551602",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_d8a01d01ad60dd0aa9e5",
       "githubRepoId": "1334949071",
       "packagePath": "package.json",
@@ -199388,6 +199906,13 @@
     {
       "pluginId": "dshp_d93f1c89ab33d75d9d5b",
       "githubRepoId": "1408155413",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_d94271a28141d69dd561",
+      "githubRepoId": "1469541444",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -200589,9 +201114,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-         router/tar.gz/3b1bf425a015dc9fcd89b1d239c23cae8218aab0: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-17 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-17/pnpm-workspace.yaml, then re-run",
+        "reason": "      \tWanted: sha512-a8lYP7JjQe4sNWmoSFPrYNF8MMqIjwO5tV44JU/6D1K7sgA4KROeKicTIYM7z3k9RT3qp6ZuCcwmU6V9onwfZA==       \tActual: sha512-SJKM2NEeE0I1pDnKgfhbW2qOS7IuK+4ua/5lf+xCmGBLhUVLw9PoHBvV40Ui/YGtuwbsxEPZCUy4r0eKoNDuMA==   help: The downloaded tarball does not match the integrity recorded in the lockfile. If you trust the new content (legitimate republish, or stale local metadata cache), run `pnpm install --update-checksums`. Otherwise treat this as a potential supply-chain issue and verify the new content first.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-17 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-17/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:49:07.595Z",
+        "checkedAt": "2026-11-23T18:42:16.851Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -201875,10 +202400,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "        allowBuilds:           dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-         router/tar.gz/3b1bf425a015dc9fcd89b1d239c23cae8218aab0: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-9 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-9/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:48:40.962Z",
+        "checkedAt": "2026-11-23T18:39:46.154Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -203059,6 +203584,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_dd4e005235a698543055",
+      "githubRepoId": "1469116318",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_dd4e8f618dafe7c6e34c",
       "githubRepoId": "1467440640",
       "packagePath": "package.json",
@@ -203404,6 +203936,13 @@
     {
       "pluginId": "dshp_dda9e19a8dbf18a76a88",
       "githubRepoId": "1341216093",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_ddaa2a032aab76a446e9",
+      "githubRepoId": "1468991870",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -205007,6 +205546,13 @@
     {
       "pluginId": "dshp_df8428a73cc899eb5573",
       "githubRepoId": "1443308017",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_df8517f99285ec9cc016",
+      "githubRepoId": "1469388535",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -206677,9 +207223,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "        allowBuilds:           dsh-openwrite@https://codeload.github.com/LiPu-jpg/Openwrite/         tar.gz/9fa0ef8e2ecc87f2acb684fe14b9c8ba8d69a5c7: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-46 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-46/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           dsh-openwrite@https://codeload.github.com/LiPu-jpg/Openwrite/tar.gz/9fa0ef8e2ecc87f2acb684fe14b9c8ba8d69a5c7: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-47 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-47/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:58.748Z",
+        "checkedAt": "2026-11-23T18:43:42.924Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -208483,6 +209029,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_e3a66880c26f11224438",
+      "githubRepoId": "1461370741",
+      "packagePath": "tests/dsh-probe/package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_e3a73f183781b3a645f2",
       "githubRepoId": "1415597215",
       "packagePath": "package.json",
@@ -208589,7 +209142,7 @@
         "status": "installed",
         "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:35.354Z",
+        "checkedAt": "2026-11-23T18:43:24.894Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -209027,9 +209580,9 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "                     git config --global url.\"git@github.com:\".insteadOf \"https://         github.com/\"  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-41 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-41/pnpm-workspace.yaml, then re-run",
+        "reason": "  help: Add the package to \"allowBuilds\" in your project's pnpm-workspace.yaml to allow it to run scripts. For example:         allowBuilds:           @changfenhuang/dsh-genui@https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/c523e9848e319124d26604ae6b3bbe1a3c979cef: true  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-43 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-43/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:43.800Z",
+        "checkedAt": "2026-11-23T18:43:33.287Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
@@ -209540,6 +210093,13 @@
     {
       "pluginId": "dshp_e4d44cd04c708c0604d6",
       "githubRepoId": "1458734481",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_e4d553873fb2fd348eae",
+      "githubRepoId": "1469549747",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -212177,6 +212737,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_e7ee9b4b1cc4a077bf9c",
+      "githubRepoId": "1469004689",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_e7ef863a9ef98f34bffa",
       "githubRepoId": "1376284428",
       "packagePath": "package.json",
@@ -214116,6 +214683,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_ea36f5166aac39793180",
+      "githubRepoId": "1465580493",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_ea37647efdb331a7791a",
       "githubRepoId": "1450807901",
       "packagePath": "package.json",
@@ -214686,6 +215260,13 @@
       "pluginId": "dshp_ead51220ba368d0a321b",
       "githubRepoId": "1427473101",
       "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_ead8abad942bd901c622",
+      "githubRepoId": "1335771179",
+      "packagePath": "packages/deepseek/package.json",
       "override": null,
       "compatibility": null
     },
@@ -215455,6 +216036,13 @@
     {
       "pluginId": "dshp_ebccd6b5d94f9eb5c15e",
       "githubRepoId": "1445423445",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_ebcefe42c952ba8becaa",
+      "githubRepoId": "1469523179",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -224035,6 +224623,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_f5563286a7fa545f9c12",
+      "githubRepoId": "1469102858",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_f55aea0cedd16d1be1c0",
       "githubRepoId": "1336312645",
       "packagePath": "dsh-bench/package.json",
@@ -224181,15 +224776,22 @@
       "override": null,
       "compatibility": {
         "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-42 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-42/pnpm-workspace.yaml, then re-run",
+        "reason": "  × adding a new package   ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-42 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-42/pnpm-workspace.yaml, then re-run",
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:50:53.878Z",
+        "checkedAt": "2026-11-23T18:43:39.469Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
     {
       "pluginId": "dshp_f57ef36b100582795786",
       "githubRepoId": "1340136397",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_f57f6c936cfb27ebd779",
+      "githubRepoId": "1462978464",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -224645,6 +225247,13 @@
     {
       "pluginId": "dshp_f6056707770c4c0d96f4",
       "githubRepoId": "1403369328",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_f607ed705e95597fed73",
+      "githubRepoId": "1469484623",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -226960,6 +227569,13 @@
       "compatibility": null
     },
     {
+      "pluginId": "dshp_f8b5ddd91436265ab33e",
+      "githubRepoId": "1469114758",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
       "pluginId": "dshp_f8b5efd609968493a73f",
       "githubRepoId": "1441600221",
       "packagePath": "package.json",
@@ -227340,6 +227956,13 @@
     {
       "pluginId": "dshp_f926bb4db68e29808e88",
       "githubRepoId": "1424214998",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_f9275f9802271dfa9812",
+      "githubRepoId": "1469468974",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -228306,6 +228929,13 @@
     {
       "pluginId": "dshp_fa1df141fd6281bb0989",
       "githubRepoId": "1453082926",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_fa1ee104d9454518bbbc",
+      "githubRepoId": "1464051004",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -229342,6 +229972,13 @@
     {
       "pluginId": "dshp_fb53ca94dd79854a800e",
       "githubRepoId": "1337985516",
+      "packagePath": "package.json",
+      "override": null,
+      "compatibility": null
+    },
+    {
+      "pluginId": "dshp_fb53fea31c36581fd476",
+      "githubRepoId": "1468787876",
       "packagePath": "package.json",
       "override": null,
       "compatibility": null
@@ -233335,10 +233972,10 @@
       "packagePath": "package.json",
       "override": null,
       "compatibility": {
-        "status": "blocked",
-        "reason": "  ╰─▶ Ignored build scripts: @google/genai@2.21.0, protobufjs@7.6.6   help: Run \"pnpm approve-builds\" to pick which dependencies should be allowed         to run scripts.  dsh: pnpm failed in profile directory /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-47 dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in /home/runner/work/awesome-dsh-hub/awesome-dsh-hub/.compat-home/profiles/compat-47/pnpm-workspace.yaml, then re-run",
+        "status": "installed",
+        "reason": null,
         "dshVersion": "0.1.0-rc.6",
-        "checkedAt": "2026-11-22T14:51:00.137Z",
+        "checkedAt": "2026-11-23T18:43:48.619Z",
         "sourceScope": "legacy-repo-root-only"
       }
     },
