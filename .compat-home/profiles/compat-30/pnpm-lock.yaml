@@ -35,6 +35,9 @@ importers:
       dsh-deja:
         specifier: github:vshulcz/deja-vu
         version: https://codeload.github.com/vshulcz/deja-vu/tar.gz/f188c27b49eb1efc22d5c1864da52de80810630b
+      dsh-free-search:
+        specifier: github:DDDMUC/dsh-free-search
+        version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/6f5456e59e4879810fbea511b484496eca89a093(@deepseek-ai/schemastery@3.18.5)
       dsh-harmony-next:
         specifier: github:linhay/harmony-next.skills
         version: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249
@@ -349,6 +352,41 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-nhODRKCh0AwUYj7AWn9l61aqP+nzUSGujPCxDxrL6Vvbw41zh7Lyt2oRO4l7I3CfxSz5A+xOJGw89ZZPLXuqHw==, tarball: https://codeload.github.com/vshulcz/deja-vu/tar.gz/f188c27b49eb1efc22d5c1864da52de80810630b}
     version: 0.25.0
     engines: {dsh: '>=0.2.0-rc.2', node: '>=18'}
+
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/6f5456e59e4879810fbea511b484496eca89a093:
+    resolution: {gitHosted: true, integrity: sha512-7DtOOHYMquxW1iIeTRcAbu5+bWhAk6yI0VDVEmdAZnZDQvDOwq+p3IVUHkrrkjX5hFcz5hsE+Nf7pD1ptUqdFQ==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/6f5456e59e4879810fbea511b484496eca89a093}
+    version: 0.9.87
+    engines: {dsh: '>=0.2.1-rc.2 <0.4.0-0', node: '>=20'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-ui-commands': ^0.1.7-rc.1 || ^0.2.0-rc.1 || ^0.3.0-0
+      '@deepseek-ai/dsh-client-ui-plugin-manager': ^0.1.7-rc.1 || ^0.2.0-rc.1 || ^0.3.0-0
+      '@deepseek-ai/dsh-client-ui-renderer': ^0.1.7-rc.1 || ^0.2.0-rc.1 || ^0.3.0-0
+      '@deepseek-ai/dsh-client-ui-sidebar-right': ^0.1.7-rc.1 || ^0.2.0-rc.1 || ^0.3.0-0
+      '@deepseek-ai/dsh-settings': ^0.1.7-rc.1 || ^0.2.0-rc.1 || ^0.3.0-0
+      '@deepseek-ai/dsh-tools': ^0.1.7-rc.1 || ^0.2.0-rc.1 || ^0.3.0-0
+      '@deepseek-ai/schemastery': '>=3.18.4 <4'
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-commands':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-plugin-manager':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-renderer':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-sidebar-right':
+        optional: true
+      '@deepseek-ai/dsh-settings':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/schemastery':
+        optional: true
+      react:
+        optional: true
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249:
     resolution: {gitHosted: true, integrity: sha512-E1LkQtH6JO3XE6fg1v2d0R/FWVtJrc0z+3NhvARbg5XE2glXjCFGq4q7YhV6r39iUTv8gYw+sj3yCxnohmE+pw==, tarball: https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249}
@@ -900,6 +938,10 @@ snapshots:
   dsh-deja@https://codeload.github.com/vshulcz/deja-vu/tar.gz/f188c27b49eb1efc22d5c1864da52de80810630b:
     dependencies:
       '@vshulcz/deja-vu': 0.25.0
+
+  dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/6f5456e59e4879810fbea511b484496eca89a093(@deepseek-ai/schemastery@3.18.5):
+    optionalDependencies:
+      '@deepseek-ai/schemastery': 3.18.5
 
   dsh-harmony-next@https://codeload.github.com/linhay/harmony-next.skills/tar.gz/880420ccaede758845daa3e86154c4e02e6f2249: {}
 

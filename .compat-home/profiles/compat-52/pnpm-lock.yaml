@@ -13,7 +13,7 @@ importers:
         version: https://codeload.github.com/Anionex/dsh-computer-use/tar.gz/90444cf18d994840cd1046ca1ec7b420cf7c4a59
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
-        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.9.0)(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562
       '@ljwei-stak/dsh-model-router':
         specifier: github:Alice-Marx/dsh-model-router
         version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/025076f43d488f159cc2e3ec2a421ec3f26a5f67(@aws-sdk/credential-provider-node@3.972.97)(@smithy/signature-v4@5.7.5)(zod@4.6.7)'
@@ -23,6 +23,9 @@ importers:
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/56650083e8b1ea01c625b73a4a5c15b98ef53965
+      agy-staff:
+        specifier: github:keli-wen/agy-staff
+        version: https://codeload.github.com/keli-wen/agy-staff/tar.gz/50090900874d9f0cb11dd2d82c1f374c20656541
       clearai-dsh:
         specifier: github:Clearailhc/clearai-dsh
         version: https://codeload.github.com/Clearailhc/clearai-dsh/tar.gz/9e12d68521e7f14bae7efef72b867931b8b878bf
@@ -405,6 +408,11 @@ packages:
   agent-base@9.0.0:
     resolution: {integrity: sha512-TQf59BsZnytt8GdJKLPfUZ54g/iaUL2OWDSFCCvMOhsHduDQxO8xC4PNeyIkVcA5KwL2phPSv0douC0fgWzmnA==}
     engines: {node: '>= 20'}
+
+  agy-staff@https://codeload.github.com/keli-wen/agy-staff/tar.gz/50090900874d9f0cb11dd2d82c1f374c20656541:
+    resolution: {gitHosted: true, integrity: sha512-mBZEXas3few90MQxvt6rGYHef2VWNt288k58LGtH4X4jjGf0eMkctuNRINBqiNhHLuYEu2sTiYkCJiPyYRr80A==, tarball: https://codeload.github.com/keli-wen/agy-staff/tar.gz/50090900874d9f0cb11dd2d82c1f374c20656541}
+    version: 0.9.3
+    engines: {opencode: '>=1.18.34 <2'}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -1262,7 +1270,7 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.9.0
       '@standard-schema/spec': 1.1.0
 
-  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.9.0)(@deepseek-ai/schemastery@3.19.0)':
+  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562':
     dependencies:
       '@deepseek-ai/cosmokit': 1.9.0
       '@deepseek-ai/schemastery': 3.19.0
@@ -1478,6 +1486,8 @@ snapshots:
   agent-base@7.1.4: {}
 
   agent-base@9.0.0: {}
+
+  agy-staff@https://codeload.github.com/keli-wen/agy-staff/tar.gz/50090900874d9f0cb11dd2d82c1f374c20656541: {}
 
   ansi-regex@5.0.1: {}
 

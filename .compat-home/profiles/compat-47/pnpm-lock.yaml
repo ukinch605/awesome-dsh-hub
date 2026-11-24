@@ -10,22 +10,25 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/49dd4caf259e3751f5c668817ac972487081690a(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/49dd4caf259e3751f5c668817ac972487081690a
       '@anysearch/anysearch-dsh':
         specifier: github:anysearch-team/anysearch-dsh
         version: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
-        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.8.6)(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562
       '@graysilver/dsh-evolve-modes':
         specifier: github:GraySilver/dsh-evolve-modes
         version: https://codeload.github.com/GraySilver/dsh-evolve-modes/tar.gz/1b8753fc905e440cedc06e78a20176398a8b2aff
+      '@ljwei-stak/dsh-model-route-bot':
+        specifier: github:Alice-Marx/dsh-model-router
+        version: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/519174bea6fec9ca308d1faf53a7050e92e1ebcf(@aws-sdk/credential-provider-node@3.972.96)(@deepseek-ai/schemastery@3.18.5)(@smithy/signature-v4@5.7.5)(zod@4.6.6)
       '@ljwei-stak/dsh-model-router':
         specifier: github:Alice-Marx/dsh-model-router
-        version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/8af81e8684597077286168c9297ba7c5564323be(@aws-sdk/credential-provider-node@3.972.96)(@deepseek-ai/schemastery@3.18.5)(@smithy/signature-v4@5.7.5)(zod@4.6.6)'
+        version: '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/8af81e8684597077286168c9297ba7c5564323be(@aws-sdk/credential-provider-node@3.972.96)(@smithy/signature-v4@5.7.5)(zod@4.6.6)'
       '@shengsheng/dsh-taskboard':
         specifier: github:shengsheng90/DSH-taskboard
-        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5
       agy-staff:
         specifier: github:keli-wen/agy-staff
         version: https://codeload.github.com/keli-wen/agy-staff/tar.gz/8a69f0a8a02f3d159e0e6c3ed52ce054ce814592
@@ -55,7 +58,7 @@ importers:
         version: https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/1f35ea33810e02a900b31df01f9c806f92f398df
       dsh-tokenledger:
         specifier: github:zh667/TokenLedger
-        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b
       graph-memory:
         specifier: github:adoresever/graph-memory
         version: https://codeload.github.com/adoresever/graph-memory/tar.gz/5841b1987c3967998818764c9d4238add5f3aa7c
@@ -264,6 +267,22 @@ packages:
     resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
     engines: {node: '>=18.0.0'}
 
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/519174bea6fec9ca308d1faf53a7050e92e1ebcf':
+    resolution: {gitHosted: true, integrity: sha512-OJKaWKZImsgfFzlHNKg0+zjOcP2SfHzOiPlu9g2LIM1W9mBYSM3/bJAWIAeq4J1sxUc+8KwSf6pV/VG+6zDDEw==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/519174bea6fec9ca308d1faf53a7050e92e1ebcf}
+    version: 0.82.5
+    engines: {node: '>=22.19'}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.4 || ~4.1.0
+      '@deepseek-ai/dsh-commands': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || 0.2.2-rc.5
+      '@deepseek-ai/dsh-llm': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || 0.2.2-rc.5
+      '@deepseek-ai/dsh-sandbox': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || 0.2.2-rc.5
+      '@deepseek-ai/dsh-scope': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || 0.2.2-rc.5
+      '@deepseek-ai/dsh-settings': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || 0.2.2-rc.5
+      '@deepseek-ai/dsh-tools': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || 0.2.2-rc.5
+      '@deepseek-ai/dsh-typert-protocol': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || 0.2.2-rc.5
+      '@deepseek-ai/dsh-web': 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || 0.2.2-rc.5
+      '@deepseek-ai/schemastery': ~3.18.4 || ~3.19.0
+
   '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/8af81e8684597077286168c9297ba7c5564323be':
     resolution: {gitHosted: true, integrity: sha512-ZVh7HP837Mc3HbFAMRl12ybgbEjJ3WSv5qZ7+aNX2Dc/pgXZeBzrUxuga1YG4TXHJtcu2Glt0SKX2jsUurEEMw==, tarball: https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/8af81e8684597077286168c9297ba7c5564323be}
     version: 0.76.1
@@ -379,7 +398,6 @@ packages:
       '@deepseek-ai/dsh-tools': '*'
       '@deepseek-ai/dsh-typert-protocol': '*'
       '@deepseek-ai/dsh-workspace': '*'
-      '@deepseek-ai/schemastery': ^3.18.2
       react: ^18.2.0
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
@@ -421,8 +439,6 @@ packages:
       '@deepseek-ai/dsh-typert-protocol':
         optional: true
       '@deepseek-ai/dsh-workspace':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
       react:
         optional: true
@@ -889,10 +905,6 @@ packages:
     engines: {node: '>=22'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.2
-      '@deepseek-ai/schemastery': ^3.18.1
-    peerDependenciesMeta:
-      '@deepseek-ai/schemastery':
-        optional: true
 
   ecdsa-sig-formatter@1.0.11:
     resolution: {integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==}
@@ -1033,6 +1045,9 @@ packages:
   is-fullwidth-code-point@3.0.0:
     resolution: {integrity: sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==}
     engines: {node: '>=8'}
+
+  jose@6.2.18:
+    resolution: {integrity: sha512-doV4thUwgkrycJH4yLeqwTGIIZphHl+pk7CPReuMIhYhncmgzdko85MaCG4YQFTxqMFr1/oEH32tZuKKovcDEg==}
 
   json-bigint@1.0.0:
     resolution: {integrity: sha512-SiPv/8VpZuWbvLSMtTDU8hEfrZWg/mH/nV/b4o0CYbSxu1UIQPLdwKOCIyLQX+VIPO5vrLX3i8qtqFyhdPSUSQ==}
@@ -1416,7 +1431,7 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/49dd4caf259e3751f5c668817ac972487081690a(@deepseek-ai/schemastery@3.18.5)':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/49dd4caf259e3751f5c668817ac972487081690a':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       saxes: 6.0.0
@@ -1626,7 +1641,7 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
-  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/cosmokit@1.8.6)(@deepseek-ai/schemastery@3.18.5)':
+  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562':
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.6
       '@deepseek-ai/schemastery': 3.18.5
@@ -1678,7 +1693,33 @@ snapshots:
     dependencies:
       minipass: 7.1.3
 
-  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/8af81e8684597077286168c9297ba7c5564323be(@aws-sdk/credential-provider-node@3.972.96)(@deepseek-ai/schemastery@3.18.5)(@smithy/signature-v4@5.7.5)(zod@4.6.6)':
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/519174bea6fec9ca308d1faf53a7050e92e1ebcf(@aws-sdk/credential-provider-node@3.972.96)(@deepseek-ai/schemastery@3.18.5)(@smithy/signature-v4@5.7.5)(zod@4.6.6)':
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.5
+      '@earendil-works/pi-ai': 1.3.0(@aws-sdk/credential-provider-node@3.972.96)(@smithy/signature-v4@5.7.5)(undici@7.30.2)(ws@8.22.1)(zod@4.6.6)
+      '@modelcontextprotocol/server': 2.4.0
+      better-sqlite3: 13.0.3
+      deep-view: 0.1.0
+      jose: 6.2.18
+      jsqr: 1.4.0
+      qrcode: 1.5.4
+      undici: 7.30.2
+      ws: 8.22.1
+    optionalDependencies:
+      '@lydell/node-pty': 1.2.0-beta.15
+      playwright: 1.64.1
+    transitivePeerDependencies:
+      - '@aws-sdk/credential-provider-node'
+      - '@modelcontextprotocol/sdk'
+      - '@smithy/hash-node'
+      - '@smithy/signature-v4'
+      - bufferutil
+      - kerberos
+      - supports-color
+      - utf-8-validate
+      - zod
+
+  '@ljwei-stak/dsh-model-route-bot@https://codeload.github.com/Alice-Marx/dsh-model-router/tar.gz/8af81e8684597077286168c9297ba7c5564323be(@aws-sdk/credential-provider-node@3.972.96)(@smithy/signature-v4@5.7.5)(zod@4.6.6)':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       '@earendil-works/pi-ai': 1.3.0(@aws-sdk/credential-provider-node@3.972.96)(@smithy/signature-v4@5.7.5)(undici@7.30.2)(ws@8.22.1)(zod@4.6.6)
@@ -1775,7 +1816,7 @@ snapshots:
       - react-native-b4a
       - supports-color
 
-  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5(@deepseek-ai/schemastery@3.18.5)':
+  '@shengsheng/dsh-taskboard@https://codeload.github.com/shengsheng90/DSH-taskboard/tar.gz/69a3db3b46ee04a960968af64a26f0ac901c82a5':
     dependencies:
       zod: 4.6.6
     optionalDependencies:
@@ -2103,7 +2144,7 @@ snapshots:
 
   dsh-startup-screen@https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/1f35ea33810e02a900b31df01f9c806f92f398df: {}
 
-  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b(@deepseek-ai/schemastery@3.18.5):
+  dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b:
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -2264,6 +2305,8 @@ snapshots:
   ip-address@10.7.6: {}
 
   is-fullwidth-code-point@3.0.0: {}
+
+  jose@6.2.18: {}
 
   json-bigint@1.0.0:
     dependencies:

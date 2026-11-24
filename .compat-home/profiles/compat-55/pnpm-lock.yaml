@@ -13,10 +13,10 @@ importers:
         version: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
-        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562
       '@nagi-ovo/dsh-ads':
         specifier: github:Nagi-ovo/dsh-ads
-        version: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/b201f76e3b4e6648f853079f97371ef77a52f9dd(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/b201f76e3b4e6648f853079f97371ef77a52f9dd
       '@vlln/dsh-navbar':
         specifier: github:vlln/dsh-navbar
         version: https://codeload.github.com/vlln/dsh-navbar/tar.gz/e53adfc8c837ebcb4b6a52c2c4baf7cb6e8b795e
@@ -31,7 +31,7 @@ importers:
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
       dsh-computer-use-win:
         specifier: github:Yu-tao-Li/dsh-computer-use-win
-        version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/b648c5ee0f5b9068981cb0950571de10fcd9d830(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/b648c5ee0f5b9068981cb0950571de10fcd9d830
       dsh-cost-meter:
         specifier: github:Han-1413141/dsh-cost-meter
         version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/7908318d16d5ce583f1d1cdace391e78f71b1e19
@@ -40,7 +40,7 @@ importers:
         version: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/e672a7a780f97861696c1722768d30c09ea6e660
       dsh-git-memory:
         specifier: github:seriousz158/dsh-memory
-        version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d
       dsh-marktext:
         specifier: github:Roland0511/dsh-marktext
         version: https://codeload.github.com/Roland0511/dsh-marktext/tar.gz/f8ebb6de2272edb7ebc4c542a93389bd106e72fb
@@ -56,6 +56,9 @@ importers:
       dsh-popout-sidebar:
         specifier: github:e2mcc/dsh-popout-sidebar
         version: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162
+      dsh-startup-screen:
+        specifier: github:6shenhonghong9/dsh-startup-screen
+        version: https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/872ae017ff2183d195495b26111b61f518f7b420
       dsh-unitarylab-quantum-practices:
         specifier: github:unitarylab/quantum-practices
         version: https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e
@@ -64,7 +67,7 @@ importers:
         version: https://codeload.github.com/adoresever/graph-memory/tar.gz/5841b1987c3967998818764c9d4238add5f3aa7c
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4a3097116dec6deebbd13f655ce32e196b11dfae(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4a3097116dec6deebbd13f655ce32e196b11dfae
 
 packages:
 
@@ -382,11 +385,8 @@ packages:
     hasBin: true
     peerDependencies:
       '@deepseek-ai/dsh-mcp-client': '>=0.1.0 <0.3.0 || 0.1.0-rc.2 || 0.1.0-rc.6 || 0.1.0-rc.7 || 0.2.0-rc.2 || 0.2.1-rc.2 || 0.2.2-rc.1 || 0.2.2-rc.3 || 0.2.2-rc.5'
-      '@deepseek-ai/schemastery': '>=3.18.1 <4'
     peerDependenciesMeta:
       '@deepseek-ai/dsh-mcp-client':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
 
   dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/7908318d16d5ce583f1d1cdace391e78f71b1e19:
@@ -483,6 +483,11 @@ packages:
     version: 1.0.1
     engines: {node: '>=20'}
 
+  dsh-startup-screen@https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/872ae017ff2183d195495b26111b61f518f7b420:
+    resolution: {gitHosted: true, integrity: sha512-0uL6Y+/rZN7avVqMc0Sp1zcwM4tVUE09H8lV3f3zUuSiPte71dyb18QDVyZ3HdHpfRGdXAdf3RcQ+5CGcsdZig==, tarball: https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/872ae017ff2183d195495b26111b61f518f7b420}
+    version: 1.3.1
+    engines: {node: '>=20'}
+
   dsh-unitarylab-quantum-practices@https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e:
     resolution: {gitHosted: true, integrity: sha512-+ACxEizjWHmYbA4bQSf4QBobBgHNEJzFGn+m2FdFGlTS735ohJcdITsoFg7CbIaLGBvgyuaa2Jd7G1MQ5L5F/g==, tarball: https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e}
     version: 0.1.0
@@ -525,11 +530,8 @@ packages:
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
-      '@deepseek-ai/schemastery': '>=3.0.0'
     peerDependenciesMeta:
       '@deepseek-ai/dsh-mcp-client':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
 
   ms@2.1.3:
@@ -698,7 +700,7 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.3
       '@standard-schema/spec': 1.1.0
 
-  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562(@deepseek-ai/schemastery@3.18.2)':
+  '@dsh-external/dsh-redteam-model@https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
 
@@ -716,7 +718,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.3
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@nagi-ovo/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/b201f76e3b4e6648f853079f97371ef77a52f9dd(@deepseek-ai/schemastery@3.18.2)':
+  '@nagi-ovo/dsh-ads@https://codeload.github.com/Nagi-ovo/dsh-ads/tar.gz/b201f76e3b4e6648f853079f97371ef77a52f9dd':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
 
@@ -818,7 +820,7 @@ snapshots:
     dependencies:
       zod: 4.6.7
 
-  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/b648c5ee0f5b9068981cb0950571de10fcd9d830(@deepseek-ai/schemastery@3.18.2):
+  dsh-computer-use-win@https://codeload.github.com/Yu-tao-Li/dsh-computer-use-win/tar.gz/b648c5ee0f5b9068981cb0950571de10fcd9d830:
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.2
 
@@ -838,7 +840,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d(@deepseek-ai/schemastery@3.18.2):
+  dsh-git-memory@https://codeload.github.com/seriousz158/dsh-memory/tar.gz/f7b03757f8bf546d3c007f8e9a074a847b681d3d:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
 
@@ -854,6 +856,8 @@ snapshots:
 
   dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162: {}
 
+  dsh-startup-screen@https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/872ae017ff2183d195495b26111b61f518f7b420: {}
+
   dsh-unitarylab-quantum-practices@https://codeload.github.com/unitarylab/quantum-practices/tar.gz/572a24c9b5c9787caec98810351f5cb17c82250e: {}
 
   entities@6.0.1: {}
@@ -866,7 +870,7 @@ snapshots:
 
   jsesc@3.1.0: {}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4a3097116dec6deebbd13f655ce32e196b11dfae(@deepseek-ai/schemastery@3.18.2):
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/4a3097116dec6deebbd13f655ce32e196b11dfae:
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.2
 

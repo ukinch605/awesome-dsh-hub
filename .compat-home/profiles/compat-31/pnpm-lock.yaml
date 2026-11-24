@@ -17,6 +17,9 @@ importers:
       dsh-dafeiyu:
         specifier: github:QCYTSN/dsh-dafeiyu
         version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/3bbe6e25c87c043bd1fa4b37ad99bd5dd03a3b90
+      dsh-deja:
+        specifier: github:vshulcz/deja-vu
+        version: https://codeload.github.com/vshulcz/deja-vu/tar.gz/e9825f764f76c71ad05a30ea3132ffe028a74094
       dsh-free-search:
         specifier: github:DDDMUC/dsh-free-search
         version: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/0550d06982ca4c32d32ab97c0a37eea2f2e741aa
@@ -43,6 +46,41 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  '@vshulcz/deja-vu-darwin-amd64@0.25.1':
+    resolution: {integrity: sha512-GE4YTQrvqIEbt8oEoKL7d2hy5I1dJOXRTBns/g/csSnd3cMMRU4ftUoVAMSrrhfcjBXP0jRVSHW+q0VU4i/y+w==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@vshulcz/deja-vu-darwin-arm64@0.25.1':
+    resolution: {integrity: sha512-3+nhFpDN8M9+FcgPl57tJw+Nf1BrgjCpSASuVRSph/or5xe1dWwD52iv7n4E90YKvwf/JppNorV//bo8j/mETQ==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@vshulcz/deja-vu-linux-amd64@0.25.1':
+    resolution: {integrity: sha512-NeTqE9a2pyKSdApW19r0PWfMarou/uLZ1m1jcA0hw0NWycZokKn3Pd4aWaFn+qRAJ5SC726ihqZIpcAuaCzA1A==}
+    cpu: [x64]
+    os: [linux]
+
+  '@vshulcz/deja-vu-linux-arm64@0.25.1':
+    resolution: {integrity: sha512-5wJEnFrFLf7gnmLoDayXTc+w3xU2NrrWHfeXThDm27EnU9vVlE5vnpxOdMEloNjeZp0ESGZhPBohs4ij1Z0LUw==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@vshulcz/deja-vu-windows-amd64@0.25.1':
+    resolution: {integrity: sha512-cShG50LxV+8AKVmteQ9Qe3fOpKX2FVa9iGETBWM16eQBbz8/PwlVHowrMBO83AfgSQnuarX81rhE3YQSlARdoA==}
+    cpu: [x64]
+    os: [win32]
+
+  '@vshulcz/deja-vu-windows-arm64@0.25.1':
+    resolution: {integrity: sha512-+VIHzEB0WW5pIevzaRHaCsHtAdD2bYNCQvx9gxcKNCvymZc63m+lgZJVGbFywlhDwXzQZACg9CSbSTnji1iubQ==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@vshulcz/deja-vu@0.25.1':
+    resolution: {integrity: sha512-sqWOZWGoPP7axhrFm4AxIDCEPHAK3rz55170hnWPrFMqIKlmIA0JfXWqX14J2UCt4940GnhiNTZJ4o/isVF1+g==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
@@ -66,6 +104,11 @@ packages:
       - '@deepseek-ai/cosmokit'
       - '@deepseek-ai/schemastery'
       - '@standard-schema/spec'
+
+  dsh-deja@https://codeload.github.com/vshulcz/deja-vu/tar.gz/e9825f764f76c71ad05a30ea3132ffe028a74094:
+    resolution: {gitHosted: true, integrity: sha512-dzWPTFl49WTtRTTadB3Wzvw7W310QjUlY12EfY/aamTCietPPVAlcgUkxkoqog8y7dfBxBRB5xx8kXI40AXnPA==, tarball: https://codeload.github.com/vshulcz/deja-vu/tar.gz/e9825f764f76c71ad05a30ea3132ffe028a74094}
+    version: 0.25.1
+    engines: {dsh: '>=0.2.0-rc.2', node: '>=18'}
 
   dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/0550d06982ca4c32d32ab97c0a37eea2f2e741aa:
     resolution: {gitHosted: true, integrity: sha512-k+3ygNNkXmuhL6hdq52GWbm7zXyLEVty+nocWQhY3Hc77LLQGovTDMrAHtWyhd7hmcjbYgYtPo/YEFWm1CE+iw==, tarball: https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/0550d06982ca4c32d32ab97c0a37eea2f2e741aa}
@@ -148,6 +191,33 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
+  '@vshulcz/deja-vu-darwin-amd64@0.25.1':
+    optional: true
+
+  '@vshulcz/deja-vu-darwin-arm64@0.25.1':
+    optional: true
+
+  '@vshulcz/deja-vu-linux-amd64@0.25.1':
+    optional: true
+
+  '@vshulcz/deja-vu-linux-arm64@0.25.1':
+    optional: true
+
+  '@vshulcz/deja-vu-windows-amd64@0.25.1':
+    optional: true
+
+  '@vshulcz/deja-vu-windows-arm64@0.25.1':
+    optional: true
+
+  '@vshulcz/deja-vu@0.25.1':
+    optionalDependencies:
+      '@vshulcz/deja-vu-darwin-amd64': 0.25.1
+      '@vshulcz/deja-vu-darwin-arm64': 0.25.1
+      '@vshulcz/deja-vu-linux-amd64': 0.25.1
+      '@vshulcz/deja-vu-linux-arm64': 0.25.1
+      '@vshulcz/deja-vu-windows-amd64': 0.25.1
+      '@vshulcz/deja-vu-windows-arm64': 0.25.1
+
   cosmokit@1.8.1: {}
 
   dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/2a29395619ef89fe191bfc04d29b3140c820402a:
@@ -155,6 +225,10 @@ snapshots:
       fzstd: 0.1.1
 
   dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/3bbe6e25c87c043bd1fa4b37ad99bd5dd03a3b90: {}
+
+  dsh-deja@https://codeload.github.com/vshulcz/deja-vu/tar.gz/e9825f764f76c71ad05a30ea3132ffe028a74094:
+    dependencies:
+      '@vshulcz/deja-vu': 0.25.1
 
   dsh-free-search@https://codeload.github.com/DDDMUC/dsh-free-search/tar.gz/0550d06982ca4c32d32ab97c0a37eea2f2e741aa: {}
 
