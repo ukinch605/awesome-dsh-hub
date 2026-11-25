@@ -20,6 +20,9 @@ importers:
       '@vlln/dsh-navbar':
         specifier: github:vlln/dsh-navbar
         version: https://codeload.github.com/vlln/dsh-navbar/tar.gz/e53adfc8c837ebcb4b6a52c2c4baf7cb6e8b795e
+      '@zseven-w/dsh-game-studio':
+        specifier: github:ZSeven-W/dsh-game-studio
+        version: https://codeload.github.com/ZSeven-W/dsh-game-studio/tar.gz/7d7630bfe1320327befb766501559893540ca782
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/56650083e8b1ea01c625b73a4a5c15b98ef53965
@@ -256,6 +259,12 @@ packages:
     engines: {dsh: '>=0.1.0-rc.5', node: '>=22.19.0'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
+
+  '@zseven-w/dsh-game-studio@https://codeload.github.com/ZSeven-W/dsh-game-studio/tar.gz/7d7630bfe1320327befb766501559893540ca782':
+    resolution: {gitHosted: true, integrity: sha512-6VRwAXu8WKW4Qzn6pHfE2uP9nlPFrpvf1QsfVaiZ/8JRV/fbw/Q1gmVnMxEJc3+N9qCkLwhEyGUrOyu0nm45Tg==, tarball: https://codeload.github.com/ZSeven-W/dsh-game-studio/tar.gz/7d7630bfe1320327befb766501559893540ca782}
+    version: 0.1.0-rc.6
+    engines: {node: '>=22.0.0'}
+    hasBin: true
 
   '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.15':
     resolution: {integrity: sha512-7YUb7sNxWR0ovy9zTGnNj/3+DPSS9ieLH+Telbv4+YMEYsTCGvXf+1d3Snjcu0A5D6ZXwwOD20XRBejDjKWldQ==}
@@ -622,6 +631,15 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
+  playwright-core@1.64.1:
+    resolution: {integrity: sha512-BC4s8y6SEVA6Q1rSxZTto8hI1KUI3xXlHGZgvGqP4IqPdI/a6FX9H29IDNz7vKo9l21b6LfYosScPL6M3xxyDQ==}
+    engines: {node: '>=20'}
+    hasBin: true
+
+  pngjs@7.0.0:
+    resolution: {integrity: sha512-LKWqWJRhstyYo9pGvgor/ivk2w94eSjE3RGVuzLGlr3NmD8bf7RcYGze1mNdEHRP6TRP6rMuDHk5t44hnTRyow==}
+    engines: {node: '>=14.19.0'}
+
   postcss@8.5.32:
     resolution: {integrity: sha512-LJlKCCAUFKOuZxipUdYw1NzIITEsPcgyOG9LkvRJvuKj/bRzbuRY0ARXvL0pWGpsZvn8jku+LMep2eU0seHp8g==}
     engines: {node: ^10 || ^12 || >=14}
@@ -629,6 +647,10 @@ packages:
   source-map-js@1.2.4:
     resolution: {integrity: sha512-J7ZjMvHd9O1fcT/5V09QWaaSl2BbWx3F6O08spde82Namf9UB0GxRVIPiNbVsdKkoizHiSpTodo3vp2bAy91MA==}
     engines: {node: '>=6.0.0'}
+
+  undici@7.30.2:
+    resolution: {integrity: sha512-mLyPQnHwUxaM/rideoK/+KL8DaAJLRl4aBCfmX444aCSLnIaomqPLtNRe2jdCYcsk5wZzXrDIQC8ZeYNRAYyIA==}
+    engines: {node: '>=20.18.1'}
 
   zod@4.6.6:
     resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
@@ -779,6 +801,12 @@ snapshots:
 
   '@vlln/dsh-navbar@https://codeload.github.com/vlln/dsh-navbar/tar.gz/e53adfc8c837ebcb4b6a52c2c4baf7cb6e8b795e': {}
 
+  '@zseven-w/dsh-game-studio@https://codeload.github.com/ZSeven-W/dsh-game-studio/tar.gz/7d7630bfe1320327befb766501559893540ca782':
+    dependencies:
+      playwright-core: 1.64.1
+      pngjs: 7.0.0
+      undici: 7.30.2
+
   '@zseven-w/dsh-openpencil-darwin-arm64@0.1.0-rc.15':
     optional: true
 
@@ -886,6 +914,10 @@ snapshots:
 
   picocolors@1.1.1: {}
 
+  playwright-core@1.64.1: {}
+
+  pngjs@7.0.0: {}
+
   postcss@8.5.32:
     dependencies:
       nanoid: 3.3.20
@@ -893,6 +925,8 @@ snapshots:
       source-map-js: 1.2.4
 
   source-map-js@1.2.4: {}
+
+  undici@7.30.2: {}
 
   zod@4.6.6: {}
 

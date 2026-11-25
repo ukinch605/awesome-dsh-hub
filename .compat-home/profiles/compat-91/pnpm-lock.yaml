@@ -35,6 +35,9 @@ importers:
       argo-search:
         specifier: github:taxueseek/argo
         version: https://codeload.github.com/taxueseek/argo/tar.gz/cfb71297e5d1cd16880f2c59e3b6f5234a8df30f
+      dsh-agent-compare:
+        specifier: github:lijiaqi-AI-Product-Manager/dsh-agent-compare
+        version: https://codeload.github.com/lijiaqi-AI-Product-Manager/dsh-agent-compare/tar.gz/d399819778af4fff787d25e4f2749115ddc9b57b
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
         version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/dae686faadb44bbd1e5a71f9fd618c2d2e926cee
@@ -333,6 +336,49 @@ packages:
   docx@9.7.1:
     resolution: {integrity: sha512-ilXFf9Moz47ABjFpDiA5s1w9lpb4EFSp7+5iiJSbfyYDM+bpZdAgLlSr7fW4aXhVe/E+F6QCv0EvRVFEd5CsWg==}
     engines: {node: '>=10'}
+
+  dsh-agent-compare@https://codeload.github.com/lijiaqi-AI-Product-Manager/dsh-agent-compare/tar.gz/d399819778af4fff787d25e4f2749115ddc9b57b:
+    resolution: {gitHosted: true, integrity: sha512-aHimoTFPjaPAUxDva4SCsU5C8a5umbI02tWdDV44L6m00hOKCjc+GQyXzpNqffpYexU0jl4Sutq3fH5RGtBykg==, tarball: https://codeload.github.com/lijiaqi-AI-Product-Manager/dsh-agent-compare/tar.gz/d399819778af4fff787d25e4f2749115ddc9b57b}
+    version: 3.3.0
+    engines: {dsh: '>=0.2.1-rc.3 <0.3.0-0', node: ^22.22.2 || ^24.15.0 || >=26.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.5
+      '@deepseek-ai/dsh-agent': ^0.2.1-rc.1
+      '@deepseek-ai/dsh-client-ui-chat': ^0.2.1-rc.1
+      '@deepseek-ai/dsh-client-ui-conversation': ^0.2.1-rc.1
+      '@deepseek-ai/dsh-client-ui-slots': ^0.2.1-rc.1
+      '@deepseek-ai/dsh-host-webserver': ^0.2.1-rc.1
+      '@deepseek-ai/dsh-llm': ^0.2.1-rc.1
+      '@deepseek-ai/dsh-sandbox': ^0.2.1-rc.3
+      '@deepseek-ai/dsh-subprocess': ^0.2.1-rc.3
+      '@deepseek-ai/dsh-tools': ^0.2.1-rc.1
+      '@deepseek-ai/dsh-win32-process': ^0.2.1-rc.3
+      react: ^18.3.1 || ^19.3.1
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-chat':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-host-webserver':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-sandbox':
+        optional: true
+      '@deepseek-ai/dsh-subprocess':
+        optional: true
+      '@deepseek-ai/dsh-tools':
+        optional: true
+      '@deepseek-ai/dsh-win32-process':
+        optional: true
+      react:
+        optional: true
 
   dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/dae686faadb44bbd1e5a71f9fd618c2d2e926cee:
     resolution: {gitHosted: true, integrity: sha512-bxZ6vBNWel7+rifFxdH+J9eSCnCiM/l3xRdkP9+kpx7pXPrmXMQAkjSNS3aWkY2Sn6I+RgRUv5ARrAJ8LOlaAA==, tarball: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/dae686faadb44bbd1e5a71f9fd618c2d2e926cee}
@@ -650,6 +696,11 @@ packages:
   pkce-challenge@5.0.1:
     resolution: {integrity: sha512-wQ0b/W4Fr01qtpHlqSqspcj3EhBvimsdh0KlHhH8HRZnMsEa0ea2fTULOXOS9ccQr3om+GcGRk4e+isrZWV8qQ==}
     engines: {node: '>=16.20.0'}
+
+  playwright-core@1.65.1:
+    resolution: {integrity: sha512-hqPpz7blSMPxWVdoeE1yiBSzXsKiVOd2k+kjCvmUywD2GPO2Dd9HfcWnq9NN0GHbNZDFgZ9JfBFr+X5/BLo0qw==}
+    engines: {node: '>=20'}
+    hasBin: true
 
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
@@ -1315,6 +1366,10 @@ snapshots:
       xml: 1.0.1
       xml-js: 1.6.11
 
+  dsh-agent-compare@https://codeload.github.com/lijiaqi-AI-Product-Manager/dsh-agent-compare/tar.gz/d399819778af4fff787d25e4f2749115ddc9b57b:
+    optionalDependencies:
+      playwright-core: 1.65.1
+
   dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/dae686faadb44bbd1e5a71f9fd618c2d2e926cee:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
@@ -1624,6 +1679,9 @@ snapshots:
   path-to-regexp@8.4.2: {}
 
   pkce-challenge@5.0.1: {}
+
+  playwright-core@1.65.1:
+    optional: true
 
   process-nextick-args@2.0.1: {}
 

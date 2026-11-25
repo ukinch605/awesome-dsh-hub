@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/eb891536fb4071f3e89df85f8cb810c483a1833c(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/eb891536fb4071f3e89df85f8cb810c483a1833c
       '@anysearch/anysearch-dsh':
         specifier: github:anysearch-team/anysearch-dsh
         version: https://codeload.github.com/anysearch-team/anysearch-dsh/tar.gz/d20ab97727b36b4341977e53d7c9b7d2e93d3d03
@@ -50,6 +50,9 @@ importers:
       dsh-popout-sidebar:
         specifier: github:e2mcc/dsh-popout-sidebar
         version: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162
+      dsh-purge-safe:
+        specifier: github:CallMeGuLab/dsh-purge-safe
+        version: https://codeload.github.com/CallMeGuLab/dsh-purge-safe/tar.gz/29bf73a962891cc2c543077572ebd70078897d69
       dsh-startup-screen:
         specifier: github:6shenhonghong9/dsh-startup-screen
         version: https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/7f3d2837c1aaef8293abc69093b0a35c80d0f0e8
@@ -756,6 +759,14 @@ packages:
     version: 1.0.1
     engines: {node: '>=20'}
 
+  dsh-purge-safe@https://codeload.github.com/CallMeGuLab/dsh-purge-safe/tar.gz/29bf73a962891cc2c543077572ebd70078897d69:
+    resolution: {gitHosted: true, integrity: sha512-fP+I203MWWb6b+22ZMBE5ajbXRhS+dxOSzHc8u4+eQ85YLKyl4jixzHDQWTbY4U9LSk3LvI7mDDzjl3jBgeQmg==, tarball: https://codeload.github.com/CallMeGuLab/dsh-purge-safe/tar.gz/29bf73a962891cc2c543077572ebd70078897d69}
+    version: 2.0.2
+    engines: {node: '>=18'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+
   dsh-startup-screen@https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/7f3d2837c1aaef8293abc69093b0a35c80d0f0e8:
     resolution: {gitHosted: true, integrity: sha512-IHclym0phtBGTi7uXeRFx2GrgUubudmhz0z+Yk1egTkfz7MMK2StXHCSz7ZkUqC4mGnpXTeF5/zKo7t02eaRJw==, tarball: https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/7f3d2837c1aaef8293abc69093b0a35c80d0f0e8}
     version: 1.3.0
@@ -1236,7 +1247,7 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/eb891536fb4071f3e89df85f8cb810c483a1833c(@deepseek-ai/schemastery@3.18.5)':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/eb891536fb4071f3e89df85f8cb810c483a1833c':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       saxes: 6.0.0
@@ -1724,6 +1735,8 @@ snapshots:
       - utf-8-validate
 
   dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162: {}
+
+  dsh-purge-safe@https://codeload.github.com/CallMeGuLab/dsh-purge-safe/tar.gz/29bf73a962891cc2c543077572ebd70078897d69: {}
 
   dsh-startup-screen@https://codeload.github.com/6shenhonghong9/dsh-startup-screen/tar.gz/7f3d2837c1aaef8293abc69093b0a35c80d0f0e8: {}
 
