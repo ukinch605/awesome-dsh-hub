@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@dsh-external/workflow':
         specifier: github:icetomoyo/dsh_workflow
-        version: https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f
       '@mnemon-dev/dsh-mnemon':
         specifier: github:mnemon-dev/mnemon
         version: https://codeload.github.com/mnemon-dev/mnemon/tar.gz/bbc9151234e0c4f563a0d581e4bc2d5a2d4f83ec
       '@nanmicoder/dsh-agent-teams':
         specifier: github:NanmiCoder/dsh-agent-teams
-        version: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/369c2785c473e546124ab1709664058e6ea93948(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/369c2785c473e546124ab1709664058e6ea93948
       '@zseven-w/dsh-openpencil':
         specifier: github:ZSeven-W/dsh-openpencil
         version: https://codeload.github.com/ZSeven-W/dsh-openpencil/tar.gz/6be9b76c7ddeedcb4e40dd0444846b71775819b0
@@ -32,6 +32,9 @@ importers:
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
+      dsh-windows-mcp:
+        specifier: github:helloHub1212/dsh-windows-mcp
+        version: https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/d4636a82e5fe6d2f5f8a2940b64de10ad8befc32
       last30days-skill-cn:
         specifier: github:Jesseovo/last30days-skill-cn
         version: https://codeload.github.com/Jesseovo/last30days-skill-cn/tar.gz/e0e41410de18466aceb505faee5ef998cacee1e8
@@ -117,7 +120,6 @@ packages:
       '@deepseek-ai/dsh-system-prompt': '*'
       '@deepseek-ai/dsh-tools': '*'
       '@deepseek-ai/dsh-util-values': '*'
-      '@deepseek-ai/schemastery': ^3.18.2
       react: ^18.2.0
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
@@ -163,8 +165,6 @@ packages:
       '@deepseek-ai/dsh-tools':
         optional: true
       '@deepseek-ai/dsh-util-values':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
       react:
         optional: true
@@ -549,6 +549,11 @@ packages:
       '@deepseek-ai/dsh-app-boot':
         optional: true
 
+  dsh-windows-mcp@https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/d4636a82e5fe6d2f5f8a2940b64de10ad8befc32:
+    resolution: {gitHosted: true, integrity: sha512-NgW40MhAXAAxDEJrIoLTAW1f0C1ZqK9iMfbrhzSe2HBFI5MteaPTNuElhK5YHQUN8zWTxenx86IhI2cvI8XQIw==, tarball: https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/d4636a82e5fe6d2f5f8a2940b64de10ad8befc32}
+    version: 0.2.13
+    engines: {node: '>=22'}
+
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
 
@@ -696,7 +701,7 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.6
       '@standard-schema/spec': 1.1.0
 
-  '@dsh-external/workflow@https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f(@deepseek-ai/schemastery@3.18.5)':
+  '@dsh-external/workflow@https://codeload.github.com/icetomoyo/dsh_workflow/tar.gz/44b83c182aa02d1be8a0803e8446cb495f93cd8f':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       quickjs-emscripten: 0.32.0
@@ -729,7 +734,7 @@ snapshots:
       - react
       - react-dom
 
-  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/369c2785c473e546124ab1709664058e6ea93948(@deepseek-ai/schemastery@3.18.5)':
+  '@nanmicoder/dsh-agent-teams@https://codeload.github.com/NanmiCoder/dsh-agent-teams/tar.gz/369c2785c473e546124ab1709664058e6ea93948':
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.5
 
@@ -939,6 +944,8 @@ snapshots:
       fflate: 0.8.3
       yaml: 2.9.1
       zod: 4.5.4
+
+  dsh-windows-mcp@https://codeload.github.com/helloHub1212/dsh-windows-mcp/tar.gz/d4636a82e5fe6d2f5f8a2940b64de10ad8befc32: {}
 
   emoji-regex@8.0.0: {}
 

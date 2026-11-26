@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/eb891536fb4071f3e89df85f8cb810c483a1833c(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/eb891536fb4071f3e89df85f8cb810c483a1833c
       '@dsh-external/dsh-redteam-model':
         specifier: github:SeaOf0/dsh-redteam-model
         version: https://codeload.github.com/SeaOf0/dsh-redteam-model/tar.gz/ce24bb25e35df8c8514e00e0d98f1a36d2e2a562
@@ -38,6 +38,9 @@ importers:
       dsh-popout-sidebar:
         specifier: github:e2mcc/dsh-popout-sidebar
         version: https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162
+      dsh-purge-safe:
+        specifier: github:CallMeGuLab/dsh-purge-safe
+        version: https://codeload.github.com/CallMeGuLab/dsh-purge-safe/tar.gz/29bf73a962891cc2c543077572ebd70078897d69
       dsh-tokenledger:
         specifier: github:zh667/TokenLedger
         version: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b
@@ -557,6 +560,14 @@ packages:
     version: 1.0.1
     engines: {node: '>=20'}
 
+  dsh-purge-safe@https://codeload.github.com/CallMeGuLab/dsh-purge-safe/tar.gz/29bf73a962891cc2c543077572ebd70078897d69:
+    resolution: {gitHosted: true, integrity: sha512-fP+I203MWWb6b+22ZMBE5ajbXRhS+dxOSzHc8u4+eQ85YLKyl4jixzHDQWTbY4U9LSk3LvI7mDDzjl3jBgeQmg==, tarball: https://codeload.github.com/CallMeGuLab/dsh-purge-safe/tar.gz/29bf73a962891cc2c543077572ebd70078897d69}
+    version: 2.0.2
+    engines: {node: '>=18'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+
   dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b:
     resolution: {gitHosted: true, integrity: sha512-dl09Z90KbsjLXiJGU+nnpG1xSx9ez13tgRPzq2cwRU6rEIj3kpjwR+LC/dryJxsjFdAZlQMp1ST+u6oi6x2TXQ==, tarball: https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b}
     version: 0.1.1-blue.0
@@ -845,7 +856,7 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/eb891536fb4071f3e89df85f8cb810c483a1833c(@deepseek-ai/schemastery@3.18.5)':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/eb891536fb4071f3e89df85f8cb810c483a1833c':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       saxes: 6.0.0
@@ -1212,6 +1223,8 @@ snapshots:
       - utf-8-validate
 
   dsh-popout-sidebar@https://codeload.github.com/e2mcc/dsh-popout-sidebar/tar.gz/e9a8458cb65c0a863ba5c86bf4ad272b1e0e3162: {}
+
+  dsh-purge-safe@https://codeload.github.com/CallMeGuLab/dsh-purge-safe/tar.gz/29bf73a962891cc2c543077572ebd70078897d69: {}
 
   dsh-tokenledger@https://codeload.github.com/zh667/TokenLedger/tar.gz/438d3086249d427e7185a69c5453cb1553c84f0b:
     optionalDependencies:

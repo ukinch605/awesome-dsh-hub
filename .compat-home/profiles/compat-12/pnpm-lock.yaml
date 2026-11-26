@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@anionex/dsh-vision-toolkit':
         specifier: github:Anionex/dsh-vision-toolkit
-        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/5cab6ee47c343032ca6d1739204f51eb361f5b14(@deepseek-ai/schemastery@3.18.2)
+        version: https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/5cab6ee47c343032ca6d1739204f51eb361f5b14
       '@huiliyi37/dsh-tianshu-tui':
         specifier: github:huiliyi37/dsh-tianshu-tui
         version: https://codeload.github.com/huiliyi37/dsh-tianshu-tui/tar.gz/7c7bf0accb2e476e03c2b42ac504ed364db8ce66
@@ -20,6 +20,9 @@ importers:
       dsh-pocket:
         specifier: github:shaobeichen/dsh-pocket
         version: https://codeload.github.com/shaobeichen/dsh-pocket/tar.gz/13e52db3ece072a17ee76fcd5125cebd66c809eb
+      dsh-purge:
+        specifier: github:mmparko/dsh-purge
+        version: https://codeload.github.com/mmparko/dsh-purge/tar.gz/033e6bd1e0f101352b39075ecd0d758ffef26b76
       dsh-vision-router:
         specifier: github:ysr666/dsh-vision-router
         version: https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/8de1dde08364a855213a1ceb3c6eb3bc28ac2008
@@ -383,6 +386,14 @@ packages:
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
 
+  dsh-purge@https://codeload.github.com/mmparko/dsh-purge/tar.gz/033e6bd1e0f101352b39075ecd0d758ffef26b76:
+    resolution: {gitHosted: true, integrity: sha512-KeT95rIruOL+SSR/ruvCzf5YUuQmON1ftYG/y1R22FlcrsT4pypbERFrzB7sDYDZHEhtlNWklxUtb5I0Bkj2VQ==, tarball: https://codeload.github.com/mmparko/dsh-purge/tar.gz/033e6bd1e0f101352b39075ecd0d758ffef26b76}
+    version: 1.1.71
+    engines: {node: '>=18'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+
   dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/8de1dde08364a855213a1ceb3c6eb3bc28ac2008:
     resolution: {gitHosted: true, integrity: sha512-bXlud+1+T4iA3wMFoMuqfH4josT1dznCKeYX3lysSrKKqGuXTVRyIQTMnUa9hpBQLtP5DsLk/6D89TdQv9cV+Q==, tarball: https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/8de1dde08364a855213a1ceb3c6eb3bc28ac2008}
     version: 2.1.2
@@ -726,7 +737,7 @@ packages:
 
 snapshots:
 
-  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/5cab6ee47c343032ca6d1739204f51eb361f5b14(@deepseek-ai/schemastery@3.18.2)':
+  '@anionex/dsh-vision-toolkit@https://codeload.github.com/Anionex/dsh-vision-toolkit/tar.gz/5cab6ee47c343032ca6d1739204f51eb361f5b14':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
       saxes: 6.0.0
@@ -1087,6 +1098,8 @@ snapshots:
     dependencies:
       qrcode: 1.5.4
       qrcode-terminal: 0.12.0
+
+  dsh-purge@https://codeload.github.com/mmparko/dsh-purge/tar.gz/033e6bd1e0f101352b39075ecd0d758ffef26b76: {}
 
   dsh-vision-router@https://codeload.github.com/ysr666/dsh-vision-router/tar.gz/8de1dde08364a855213a1ceb3c6eb3bc28ac2008:
     dependencies:

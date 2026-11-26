@@ -29,6 +29,9 @@ importers:
       clearai-dsh:
         specifier: github:Clearailhc/clearai-dsh
         version: https://codeload.github.com/Clearailhc/clearai-dsh/tar.gz/9e12d68521e7f14bae7efef72b867931b8b878bf
+      dsh-api-relay-audit:
+        specifier: github:toby-bridges/api-relay-audit
+        version: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/c21351f709cade291122941e00de0accc620d7be
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
@@ -485,6 +488,18 @@ packages:
 
   dijkstrajs@1.0.3:
     resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
+
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/c21351f709cade291122941e00de0accc620d7be:
+    resolution: {gitHosted: true, integrity: sha512-C7i7yNqGP39eXCwvpmPJRUJwMYZumCyEMcQErAep5CCaNjiKCODec5UHFoL03Q23meRV4lUay7Be777Rns0dPA==, tarball: https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/c21351f709cade291122941e00de0accc620d7be}
+    version: 2.5.0
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-commands': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-credentials': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-llm': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-settings': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
+      '@deepseek-ai/dsh-subprocess': 0.1.0-rc.6 || 0.1.7-rc.2 || 0.2.0-rc.2
 
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
     resolution: {gitHosted: true, integrity: sha512-aXpz1DsFOgd4cUEIeWyTubH9wORj8b/ruLaefeynSwO+M5sp4JOg/RrFj2qya9nKex3jFMdTWVGueZyhpfKDXA==, tarball: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524}
@@ -1536,6 +1551,8 @@ snapshots:
   deep-view@0.1.0: {}
 
   dijkstrajs@1.0.3: {}
+
+  dsh-api-relay-audit@https://codeload.github.com/toby-bridges/api-relay-audit/tar.gz/c21351f709cade291122941e00de0accc620d7be: {}
 
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
     dependencies:

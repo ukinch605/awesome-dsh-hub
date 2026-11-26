@@ -35,6 +35,9 @@ importers:
       deepseek-plugin-store:
         specifier: github:Ericwong5021/deepseek-plugin-store
         version: https://codeload.github.com/Ericwong5021/deepseek-plugin-store/tar.gz/b1d0b4d0bc230a3726483aa6ae6e0566cee2ff36
+      dsh-at-file:
+        specifier: github:FSMargoo/dsh-at-file
+        version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524(react@19.2.8)
       dsh-codex-subscription:
         specifier: github:WSL043/dsh-codex-subscription
         version: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/05690e4045030bf8d4a85dbd5049d866ea6cd014(zod@4.6.7)
@@ -67,7 +70,7 @@ importers:
         version: https://codeload.github.com/XDTrees/dsh-xdpool/tar.gz/ccd4db397a04d9d266a94c018ae035e66cd5aefe(ws@8.21.3)(zod@4.6.7)
       misakanet:
         specifier: github:Ikalus1988/MisakaNet
-        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/089961e0a482a12b5420b641fe5f1e628676036a(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/089961e0a482a12b5420b641fe5f1e628676036a
       open-sea-skin:
         specifier: github:d-dev0101/open-sea-skin
         version: https://codeload.github.com/d-dev0101/open-sea-skin/tar.gz/5a969094a275768f88703776f44d3d9dd7f4c765
@@ -1319,6 +1322,60 @@ packages:
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
 
+  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
+    resolution: {gitHosted: true, integrity: sha512-aXpz1DsFOgd4cUEIeWyTubH9wORj8b/ruLaefeynSwO+M5sp4JOg/RrFj2qya9nKex3jFMdTWVGueZyhpfKDXA==, tarball: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524}
+    version: 0.7.0
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1-rc.1
+      '@deepseek-ai/dsh-agent': '*'
+      '@deepseek-ai/dsh-api-remotes': '*'
+      '@deepseek-ai/dsh-client-connection': '*'
+      '@deepseek-ai/dsh-client-locale': '*'
+      '@deepseek-ai/dsh-client-runtime': '*'
+      '@deepseek-ai/dsh-client-store': '*'
+      '@deepseek-ai/dsh-client-ui-conversation': '*'
+      '@deepseek-ai/dsh-client-ui-input-trigger': '*'
+      '@deepseek-ai/dsh-client-ui-settings': '*'
+      '@deepseek-ai/dsh-client-ui-slots': '*'
+      '@deepseek-ai/dsh-llm': '*'
+      '@deepseek-ai/dsh-settings': '*'
+      '@deepseek-ai/dsh-typert-protocol': '*'
+      '@deepseek-ai/dsh-typert-registry': '*'
+      react: ^18.2.0
+    peerDependenciesMeta:
+      '@deepseek-ai/cordis':
+        optional: true
+      '@deepseek-ai/dsh-agent':
+        optional: true
+      '@deepseek-ai/dsh-api-remotes':
+        optional: true
+      '@deepseek-ai/dsh-client-connection':
+        optional: true
+      '@deepseek-ai/dsh-client-locale':
+        optional: true
+      '@deepseek-ai/dsh-client-runtime':
+        optional: true
+      '@deepseek-ai/dsh-client-store':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-conversation':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-input-trigger':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-settings':
+        optional: true
+      '@deepseek-ai/dsh-client-ui-slots':
+        optional: true
+      '@deepseek-ai/dsh-llm':
+        optional: true
+      '@deepseek-ai/dsh-settings':
+        optional: true
+      '@deepseek-ai/dsh-typert-protocol':
+        optional: true
+      '@deepseek-ai/dsh-typert-registry':
+        optional: true
+      react:
+        optional: true
+
   dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/05690e4045030bf8d4a85dbd5049d866ea6cd014:
     resolution: {gitHosted: true, integrity: sha512-QSZwuOYbvtSYDnZSHJgYNvRMMuSupHibi9D6CL/jTY5h3gLoPzTpDJwuJzx7Jqj+S8DExUTlUFUseJ3+SpAMcw==, tarball: https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/05690e4045030bf8d4a85dbd5049d866ea6cd014}
     version: 3.2.28
@@ -1790,11 +1847,8 @@ packages:
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@deepseek-ai/dsh-mcp-client': '>=0.1.0-rc.8 <0.2.0 || >=0.1.5-rc.1 <0.2.0 || >=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0'
-      '@deepseek-ai/schemastery': '>=3.0.0'
     peerDependenciesMeta:
       '@deepseek-ai/dsh-mcp-client':
-        optional: true
-      '@deepseek-ai/schemastery':
         optional: true
 
   ms@2.1.3:
@@ -3722,6 +3776,12 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
+  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524(react@19.2.8):
+    dependencies:
+      zod: 4.6.7
+    optionalDependencies:
+      react: 19.2.8
+
   dsh-codex-subscription@https://codeload.github.com/WSL043/dsh-codex-subscription/tar.gz/05690e4045030bf8d4a85dbd5049d866ea6cd014(zod@4.6.7):
     dependencies:
       '@deepseek-ai/schemastery': 3.19.0
@@ -4120,7 +4180,7 @@ snapshots:
 
   minimalistic-assert@1.0.1: {}
 
-  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/089961e0a482a12b5420b641fe5f1e628676036a(@deepseek-ai/schemastery@3.19.0):
+  misakanet@https://codeload.github.com/Ikalus1988/MisakaNet/tar.gz/089961e0a482a12b5420b641fe5f1e628676036a:
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.19.0
 
