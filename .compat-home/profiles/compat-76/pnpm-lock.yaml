@@ -34,7 +34,7 @@ importers:
         version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/bf36bf96202eea7825784b5757de7328f3a81f47(@deepseek-ai/schemastery@3.19.0)
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/bf36bf96202eea7825784b5757de7328f3a81f47
       '@uumit-ai/dsh-uumit-remote':
         specifier: github:uumit-ai/dsh-uumit-remote
         version: https://codeload.github.com/uumit-ai/dsh-uumit-remote/tar.gz/9e64809f6db492f5eff4381cb90ddbbb7164c215
@@ -62,6 +62,9 @@ importers:
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
         version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945
+      dsh-dafeiyu:
+        specifier: github:QCYTSN/dsh-dafeiyu
+        version: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a
       dsh-ego-browser:
         specifier: github:Fisfzy/dsh-ego-browser
         version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/6feb26b5157e82e5d2e31d77149d86cd8e555c80
@@ -842,6 +845,15 @@ packages:
       '@deepseek-ai/dsh-tools': '>=0.1.0-rc.6 <0.3.0'
       '@deepseek-ai/schemastery': '>=3.0.0'
       react: '>=18.0.0'
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a:
+    resolution: {gitHosted: true, integrity: sha512-hIZyZNS1nYtLlYEEtz0P120y10RS0j4TfdZuG882xIRN7z++jvdrhXlOFkNDzKkgh302b3I2ycF6/DTota05Sg==, tarball: https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a}
+    version: 0.1.23
+    engines: {node: '>=22.19'}
+    bundledDependencies:
+      - '@deepseek-ai/cosmokit'
+      - '@deepseek-ai/schemastery'
+      - '@standard-schema/spec'
 
   dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/6feb26b5157e82e5d2e31d77149d86cd8e555c80:
     resolution: {gitHosted: true, integrity: sha512-9NSqTMKTfvZcmZ1vdRC9t0gmksJkKuWYhoIfiVe5Gc9X8PrqLuwTWDUDqC73JPpqv4D5Pll7jAwJvqQ5dn1Gdw==, tarball: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/6feb26b5157e82e5d2e31d77149d86cd8e555c80}
@@ -1726,7 +1738,7 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/bf36bf96202eea7825784b5757de7328f3a81f47(@deepseek-ai/schemastery@3.19.0)':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/bf36bf96202eea7825784b5757de7328f3a81f47':
     dependencies:
       '@deepseek-ai/schemastery': 3.19.0
       '@tencent-connect/qqbot-connector': 1.2.0
@@ -1869,6 +1881,8 @@ snapshots:
     dependencies:
       '@deepseek-ai/schemastery': 3.19.0
       fzstd: 0.1.1
+
+  dsh-dafeiyu@https://codeload.github.com/QCYTSN/dsh-dafeiyu/tar.gz/084323845ab82b68d5388d5c638bec09d8544a8a: {}
 
   dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/6feb26b5157e82e5d2e31d77149d86cd8e555c80:
     dependencies:

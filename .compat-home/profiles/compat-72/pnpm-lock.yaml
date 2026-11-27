@@ -16,7 +16,7 @@ importers:
         version: https://codeload.github.com/hust-open-atom-club/oh-dsh/tar.gz/9a428a8ccfa327afed6fe83142f5e65c8367f5fa
       '@tencent-connect/dsh-qqbot':
         specifier: github:tencent-connect/dsh-qqbot
-        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c645d56639a0029bef6f3ad2d3b85dde0576863d(@deepseek-ai/schemastery@3.18.5)
+        version: https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c645d56639a0029bef6f3ad2d3b85dde0576863d
       '@uumit-ai/dsh-uumit-remote':
         specifier: github:uumit-ai/dsh-uumit-remote
         version: https://codeload.github.com/uumit-ai/dsh-uumit-remote/tar.gz/9e64809f6db492f5eff4381cb90ddbbb7164c215
@@ -28,22 +28,22 @@ importers:
         version: https://codeload.github.com/ZSeven-W/dsh-ios/tar.gz/ffa90be4c34d54848d862b1a4e0a5deacdd18a26(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
-        version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524(react@18.3.1)
+        version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
       dsh-chat-import:
         specifier: github:Nwflower/dsh-chat-import
-        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945(@deepseek-ai/schemastery@3.18.5)(react@18.3.1)
+        version: https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945
       dsh-claude-style:
         specifier: github:Nwflower/dsh-claude-style
-        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/47db9594b31cd190caead705b96960c8c7eafa8a(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/47db9594b31cd190caead705b96960c8c7eafa8a
       dsh-ego-browser:
         specifier: github:Fisfzy/dsh-ego-browser
-        version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/72f40ae97db4f6ae458afdf2d5aa5b6679d825b0(react@18.3.1)
+        version: https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/72f40ae97db4f6ae458afdf2d5aa5b6679d825b0
       dsh-fish-memory:
         specifier: github:Yuuyuko-uu/dsh-fish-memory
         version: https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/ab3a80ed5b7608887323f6cb19c976052d5c2e78
       dsh-guizang-design:
         specifier: github:op7418/dsh-guizang-design
-        version: https://codeload.github.com/op7418/dsh-guizang-design/tar.gz/e275f1e4d4a81bd4875c251d33c643c242a8a8fd(bare-buffer@3.7.1)(react@18.3.1)
+        version: https://codeload.github.com/op7418/dsh-guizang-design/tar.gz/e275f1e4d4a81bd4875c251d33c643c242a8a8fd(bare-buffer@3.7.1)
       dsh-meme:
         specifier: github:yyh-001/dsh-meme
         version: https://codeload.github.com/yyh-001/dsh-meme/tar.gz/205061ebb7c08e3ce2f879c6ab690fca03a780a6(@types/node@22.20.5)
@@ -53,6 +53,9 @@ importers:
       dsh-plugin-marketplace:
         specifier: github:YELEBAI/dsh-plugin-marketplace
         version: https://codeload.github.com/YELEBAI/dsh-plugin-marketplace/tar.gz/f468f76689fcae7e384a67f6c4116413c7212316
+      dsh-purge:
+        specifier: github:ZXEB/dsh-purge
+        version: https://codeload.github.com/ZXEB/dsh-purge/tar.gz/b5de843d20b5e61c0e0cfbd2aaf4fefefeb419ae
       dsh-purge-safe:
         specifier: github:CallMeGuLab/dsh-purge-safe
         version: https://codeload.github.com/CallMeGuLab/dsh-purge-safe/tar.gz/cc881fbd68b891772330c6b0d275b0c971794e00
@@ -699,7 +702,6 @@ packages:
       '@deepseek-ai/dsh-settings': '*'
       '@deepseek-ai/dsh-typert-protocol': '*'
       '@deepseek-ai/dsh-typert-registry': '*'
-      react: ^18.2.0
     peerDependenciesMeta:
       '@deepseek-ai/cordis':
         optional: true
@@ -730,8 +732,6 @@ packages:
       '@deepseek-ai/dsh-typert-protocol':
         optional: true
       '@deepseek-ai/dsh-typert-registry':
-        optional: true
-      react:
         optional: true
 
   dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945:
@@ -771,7 +771,6 @@ packages:
       '@deepseek-ai/dsh-settings': '>=0.1.2-rc.1'
       '@deepseek-ai/dsh-tools': '>=0.1.2-rc.1'
       '@deepseek-ai/dsh-typert-protocol': '>=0.2.2-rc.1'
-      react: ^18.2.0
       schemastery: ^3.18.0
     peerDependenciesMeta:
       '@deepseek-ai/dsh-client-locale':
@@ -787,8 +786,6 @@ packages:
       '@deepseek-ai/dsh-tools':
         optional: true
       '@deepseek-ai/dsh-typert-protocol':
-        optional: true
-      react:
         optional: true
       schemastery:
         optional: true
@@ -842,6 +839,14 @@ packages:
   dsh-purge-safe@https://codeload.github.com/CallMeGuLab/dsh-purge-safe/tar.gz/cc881fbd68b891772330c6b0d275b0c971794e00:
     resolution: {gitHosted: true, integrity: sha512-rSfTdP0thVjpjBzMZwP679VjSULSEyiaoUIJotOjDF0QEeYosgWGsz7Dhmq9Jm8YhJ4d74khEO+YQY4O569U/A==, tarball: https://codeload.github.com/CallMeGuLab/dsh-purge-safe/tar.gz/cc881fbd68b891772330c6b0d275b0c971794e00}
     version: 2.0.0
+    engines: {node: '>=18'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+
+  dsh-purge@https://codeload.github.com/ZXEB/dsh-purge/tar.gz/b5de843d20b5e61c0e0cfbd2aaf4fefefeb419ae:
+    resolution: {gitHosted: true, integrity: sha512-KxXeLYOWFK1OZyMSvufqkwzLL/gu34gGZ/9uWN4HJ6ksHVyRorpZCQX78ZRFaVwAxO3X/0ZIrUK7JJXrK2l1gw==, tarball: https://codeload.github.com/ZXEB/dsh-purge/tar.gz/b5de843d20b5e61c0e0cfbd2aaf4fefefeb419ae}
+    version: 1.1.76
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -1826,7 +1831,7 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c645d56639a0029bef6f3ad2d3b85dde0576863d(@deepseek-ai/schemastery@3.18.5)':
+  '@tencent-connect/dsh-qqbot@https://codeload.github.com/tencent-connect/dsh-qqbot/tar.gz/c645d56639a0029bef6f3ad2d3b85dde0576863d':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       '@tencent-connect/qqbot-connector': 1.2.0
@@ -2215,25 +2220,25 @@ snapshots:
 
   dijkstrajs@1.0.3: {}
 
-  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524(react@18.3.1):
+  dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
     dependencies:
       zod: 4.6.7
     optionalDependencies:
       react: 18.3.1
 
-  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945(@deepseek-ai/schemastery@3.18.5)(react@18.3.1):
+  dsh-chat-import@https://codeload.github.com/Nwflower/dsh-chat-import/tar.gz/4b946717d67ee8f41919913f50f7571a4bd44945:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       fzstd: 0.1.1
       react: 18.3.1
 
-  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/47db9594b31cd190caead705b96960c8c7eafa8a(@deepseek-ai/schemastery@3.18.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  dsh-claude-style@https://codeload.github.com/Nwflower/dsh-claude-style/tar.gz/47db9594b31cd190caead705b96960c8c7eafa8a:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/72f40ae97db4f6ae458afdf2d5aa5b6679d825b0(react@18.3.1):
+  dsh-ego-browser@https://codeload.github.com/Fisfzy/dsh-ego-browser/tar.gz/72f40ae97db4f6ae458afdf2d5aa5b6679d825b0:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.5
       schemastery: 3.18.0
@@ -2242,7 +2247,7 @@ snapshots:
 
   dsh-fish-memory@https://codeload.github.com/Yuuyuko-uu/dsh-fish-memory/tar.gz/ab3a80ed5b7608887323f6cb19c976052d5c2e78: {}
 
-  dsh-guizang-design@https://codeload.github.com/op7418/dsh-guizang-design/tar.gz/e275f1e4d4a81bd4875c251d33c643c242a8a8fd(bare-buffer@3.7.1)(react@18.3.1):
+  dsh-guizang-design@https://codeload.github.com/op7418/dsh-guizang-design/tar.gz/e275f1e4d4a81bd4875c251d33c643c242a8a8fd(bare-buffer@3.7.1):
     dependencies:
       playwright: 1.64.1
       puppeteer-core: 24.43.1(bare-buffer@3.7.1)
@@ -2269,6 +2274,8 @@ snapshots:
   dsh-plugin@https://codeload.github.com/dshplugin/dsh-plugin-hub/tar.gz/b7e99371a6e3874e53831c7ea1f2b43f64b1eb47: {}
 
   dsh-purge-safe@https://codeload.github.com/CallMeGuLab/dsh-purge-safe/tar.gz/cc881fbd68b891772330c6b0d275b0c971794e00: {}
+
+  dsh-purge@https://codeload.github.com/ZXEB/dsh-purge/tar.gz/b5de843d20b5e61c0e0cfbd2aaf4fefefeb419ae: {}
 
   dsh-see-now@https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/034d46d5f073b9a0e6536c6abd70fdcd2f43cd3d: {}
 

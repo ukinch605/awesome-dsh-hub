@@ -59,6 +59,9 @@ importers:
       dsh-memory-evolve:
         specifier: github:csyangwen/dsh-memory-evolve
         version: https://codeload.github.com/csyangwen/dsh-memory-evolve/tar.gz/44b6b3eb65a1d50ceba0afb2c13acdd4a8b81423
+      dsh-see-now:
+        specifier: github:SAOS-3624/dsh-see-now
+        version: https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/029321e8285f829f9e333ad82022bf97a2f3326b
       dsh-share:
         specifier: github:hellodigua/dsh-share
         version: https://codeload.github.com/hellodigua/dsh-share/tar.gz/b5212ef748ac56aeb4d56c6f8a86be836921114f
@@ -1094,6 +1097,17 @@ packages:
       react-dom: ^18.2.0
     peerDependenciesMeta:
       '@deepseek-ai/dsh-app-boot':
+        optional: true
+
+  dsh-see-now@https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/029321e8285f829f9e333ad82022bf97a2f3326b:
+    resolution: {gitHosted: true, integrity: sha512-add9e+6ZAG9A26WDrs7SAsEeo1uqCdtej3LN8VGA7WHG3oJWAeBxvHysvxfScncktxw6nNFJGiklsVOMCdzgfA==, tarball: https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/029321e8285f829f9e333ad82022bf97a2f3326b}
+    version: 0.2.9
+    engines: {node: '>=20'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/dsh-tools': '>=0.1.0-rc.7'
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-tools':
         optional: true
 
   dsh-share@https://codeload.github.com/hellodigua/dsh-share/tar.gz/b5212ef748ac56aeb4d56c6f8a86be836921114f:
@@ -2424,6 +2438,8 @@ snapshots:
       fflate: 0.8.3
       yaml: 2.9.1
       zod: 4.6.7
+
+  dsh-see-now@https://codeload.github.com/SAOS-3624/dsh-see-now/tar.gz/029321e8285f829f9e333ad82022bf97a2f3326b: {}
 
   dsh-share@https://codeload.github.com/hellodigua/dsh-share/tar.gz/b5212ef748ac56aeb4d56c6f8a86be836921114f: {}
 

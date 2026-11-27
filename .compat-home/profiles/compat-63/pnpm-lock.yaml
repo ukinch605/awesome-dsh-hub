@@ -35,6 +35,9 @@ importers:
       dsh-at-file:
         specifier: github:FSMargoo/dsh-at-file
         version: https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524
+      dsh-cost-meter:
+        specifier: github:Han-1413141/dsh-cost-meter
+        version: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/e0c3a93a667a5f19cf0f1a12e297af83033a4ab1
       dsh-drawai:
         specifier: github:fourzkw/dsh-drawai
         version: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/f6ca4f47d1a6f5f38f6a514a5480ae20d8844573
@@ -827,6 +830,11 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
+  acorn@8.15.0:
+    resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
   agent-base@7.1.4:
     resolution: {integrity: sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==}
     engines: {node: '>= 14'}
@@ -982,6 +990,16 @@ packages:
         optional: true
       react:
         optional: true
+
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/e0c3a93a667a5f19cf0f1a12e297af83033a4ab1:
+    resolution: {gitHosted: true, integrity: sha512-djpULmav0kIpH+ApXqMW9FDFg1dqnWcOo2jlDfWJGM9254NKGHSkI4IUp0CiWpLckNjGO7oGtmj/zKkrm+q6lQ==, tarball: https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/e0c3a93a667a5f19cf0f1a12e297af83033a4ab1}
+    version: 1.9.94
+    engines: {dsh: '>=0.2.0-rc.1 <0.3.0-0', node: '>=20'}
+    os: [darwin, linux, win32]
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/dsh-credentials': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0 || >=0.2.2-0 <0.3.0-0 || >=0.2.3-0 <0.3.0-0'
+      '@deepseek-ai/dsh-home-paths': '>=0.2.0-rc.1 <0.3.0-0 || >=0.2.1-0 <0.3.0-0 || >=0.2.2-0 <0.3.0-0 || >=0.2.3-0 <0.3.0-0'
 
   dsh-drawai@https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/f6ca4f47d1a6f5f38f6a514a5480ae20d8844573:
     resolution: {gitHosted: true, integrity: sha512-XcM1bmD9hQWi1odOd6lq4oZeuHQ0sosVB/VAuyhAC6KV08G2mESv5Uo/+nDs9Ij++SAGooGC9j2bLdZ34YweDw==, tarball: https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/f6ca4f47d1a6f5f38f6a514a5480ae20d8844573}
@@ -1761,6 +1779,9 @@ packages:
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
+  zod@4.6.6:
+    resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
+
   zod@4.6.7:
     resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
@@ -2502,6 +2523,8 @@ snapshots:
       '@zseven-w/dsh-openpencil-win32-arm64': 0.1.0-rc.15
       '@zseven-w/dsh-openpencil-win32-x64': 0.1.0-rc.15
 
+  acorn@8.15.0: {}
+
   agent-base@7.1.4: {}
 
   ansi-regex@5.0.1: {}
@@ -2578,6 +2601,11 @@ snapshots:
   dsh-at-file@https://codeload.github.com/FSMargoo/dsh-at-file/tar.gz/da602d1a8f1b417b8a1d8d4059e0f4cb1c353524:
     dependencies:
       zod: 4.4.3
+
+  dsh-cost-meter@https://codeload.github.com/Han-1413141/dsh-cost-meter/tar.gz/e0c3a93a667a5f19cf0f1a12e297af83033a4ab1:
+    dependencies:
+      acorn: 8.15.0
+      zod: 4.6.6
 
   dsh-drawai@https://codeload.github.com/fourzkw/dsh-drawai/tar.gz/f6ca4f47d1a6f5f38f6a514a5480ae20d8844573:
     dependencies:
@@ -3101,6 +3129,8 @@ snapshots:
       zod: 4.4.3
 
   zod@4.4.3: {}
+
+  zod@4.6.6: {}
 
   zod@4.6.7: {}
 
